@@ -71,7 +71,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 404);
+/******/ 	return __webpack_require__(__webpack_require__.s = 410);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -99,7 +99,7 @@ exports.default = function (instance, Constructor) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.ImageFormat = exports.ColorMatrix = exports.now = exports.Log = exports.cancelAnimationFrame = exports.requestAnimationFrame = exports.SDK = exports.EXIF = exports.ReactDOM = exports.UniformType = exports.OptionType = exports.RenderType = exports.Base64 = exports.Color = exports.SharedState = exports.Constants = exports.EventEmitter = exports.SDKUtils = exports.Vector2 = exports.ReactBEM = exports.BaseComponent = exports.Classnames = exports.BEM = exports.React = exports.Utils = exports.Promise = exports.PhotoEditorSDK = undefined;
+exports.ImageFormat = exports.ColorMatrix = exports.now = exports.Log = exports.cancelAnimationFrame = exports.requestAnimationFrame = exports.SDK = exports.EXIF = exports.ReactDOM = exports.UniformType = exports.OptionType = exports.RenderType = exports.Base64 = exports.Color = exports.SharedState = exports.Constants = exports.EventEmitter = exports.SDKUtils = exports.Vector2 = exports.ReactBEM = exports.BaseComponent = exports.Classnames = exports.BEM = exports.React = exports.Utils = exports.Promise = undefined;
 
 var _photoeditorsdk = __webpack_require__(66);
 
@@ -109,7 +109,7 @@ var _react = __webpack_require__(113);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(336);
+var _reactDom = __webpack_require__(342);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -129,19 +129,19 @@ var _baseComponent = __webpack_require__(175);
 
 var _baseComponent2 = _interopRequireDefault(_baseComponent);
 
-var _utils = __webpack_require__(263);
+var _utils = __webpack_require__(269);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _constants = __webpack_require__(249);
+var _constants = __webpack_require__(250);
 
 var _constants2 = _interopRequireDefault(_constants);
 
-var _sharedState = __webpack_require__(262);
+var _sharedState = __webpack_require__(268);
 
 var _sharedState2 = _interopRequireDefault(_sharedState);
 
-var _animationFrame = __webpack_require__(265);
+var _animationFrame = __webpack_require__(271);
 
 var _log = __webpack_require__(124);
 
@@ -177,9 +177,8 @@ var SDK = _photoeditorsdk2.default;
 var UniformType = _photoeditorsdk2.default.UniformType;
 var Vector2 = _photoeditorsdk2.default.Math.Vector2;
 
-var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(331);
+var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(337);
 
-exports.PhotoEditorSDK = _photoeditorsdk2.default;
 exports.Promise = Promise;
 exports.Utils = _utils2.default;
 exports.React = _react2.default;
@@ -216,11 +215,11 @@ exports.ImageFormat = ImageFormat;
 
 exports.__esModule = true;
 
-var _setPrototypeOf = __webpack_require__(271);
+var _setPrototypeOf = __webpack_require__(277);
 
 var _setPrototypeOf2 = _interopRequireDefault(_setPrototypeOf);
 
-var _create = __webpack_require__(270);
+var _create = __webpack_require__(276);
 
 var _create2 = _interopRequireDefault(_create);
 
@@ -812,7 +811,7 @@ var _backButtonComponent = __webpack_require__(174);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
-var _doneButtonComponent = __webpack_require__(224);
+var _doneButtonComponent = __webpack_require__(225);
 
 var _doneButtonComponent2 = _interopRequireDefault(_doneButtonComponent);
 
@@ -860,7 +859,7 @@ var ControlsComponent = function (_BaseComponent) {
 
 
   ControlsComponent.prototype._onDoneClick = function _onDoneClick(e) {
-    this.props.onSwitchControls('back');
+    this.props.onSwitchControls('home');
   };
 
   // -------------------------------------------------------------------------- RENDERING
@@ -892,9 +891,10 @@ var ControlsComponent = function (_BaseComponent) {
 
 
   ControlsComponent.prototype.renderWithBEM = function renderWithBEM() {
-    var backButton = this._hasBackButton ? _globals.ReactBEM.createElement(_backButtonComponent2.default, { onClick: this._onBackClick }) : null;
+    var forcedControl = this.props.options && this.props.options.forcedControl;
+    var backButton = this._hasBackButton && !forcedControl ? _globals.ReactBEM.createElement(_backButtonComponent2.default, { onClick: this._onBackClick }) : null;
 
-    var doneButton = this._hasDoneButton ? _globals.ReactBEM.createElement(_doneButtonComponent2.default, { onClick: this._onDoneClick }) : null;
+    var doneButton = this._hasDoneButton || forcedControl ? _globals.ReactBEM.createElement(_doneButtonComponent2.default, { onClick: this._onDoneClick }) : null;
 
     return _globals.ReactBEM.createElement(
       'div',
@@ -1224,7 +1224,9 @@ var ScrollbarComponent = function (_BaseComponent) {
   };
 
   ScrollbarComponent.prototype.fixStyles = function fixStyles() {
-    this._updateListSize();
+    if (!_globals.Utils.isMobile()) {
+      this._updateListSize();
+    }
   };
 
   // -------------------------------------------------------------------------- EVENTS
@@ -1474,6 +1476,10 @@ var ScrollbarComponent = function (_BaseComponent) {
   ScrollbarComponent.prototype.update = function update() {
     var _this2 = this;
 
+    if (_globals.Utils.isMobile()) {
+      return;
+    }
+
     var _refs = this.refs;
     var root = _refs.root;
     var list = _refs.list;
@@ -1562,6 +1568,10 @@ var ScrollbarComponent = function (_BaseComponent) {
 
 
   ScrollbarComponent.prototype.renderWithBEM = function renderWithBEM() {
+    if (_globals.Utils.isMobile()) {
+      return this.props.children;
+    }
+
     var buttonStyle = this._getButtonStyle();
     var scrollbarStyle = {
       display: this.state.buttonVisible ? 'block' : 'none'
@@ -1911,6 +1921,7 @@ var DraggableComponent = function (_BaseComponent) {
     e.stopPropagation();
 
     var mousePosition = _globals.Utils.getEventPosition(e);
+    if (!mousePosition) return;
     var mouseDiff = mousePosition.clone().subtract(this._initialMousePosition);
 
     this.props.onDrag && this.props.onDrag(mouseDiff, e);
@@ -3684,7 +3695,7 @@ module.exports = DOMProperty;
 
 'use strict';
 
-var ReactRef = __webpack_require__(374);
+var ReactRef = __webpack_require__(380);
 var ReactInstrumentation = __webpack_require__(10);
 
 var warning = __webpack_require__(6);
@@ -3908,7 +3919,7 @@ var CanvasControlsComponent = function (_BaseComponent) {
 
     var editor = this.context.editor;
 
-    var controls = editor.getAvailableControls();
+    var controls = editor.controls.getAvailable();
 
     // Check if any of the controls responds to a click
     // at the given position
@@ -4011,7 +4022,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _globals = __webpack_require__(1);
 
-var _headerComponent = __webpack_require__(225);
+var _headerComponent = __webpack_require__(226);
 
 var _headerComponent2 = _interopRequireDefault(_headerComponent);
 
@@ -4470,7 +4481,7 @@ SliderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 exports.__esModule = true;
 
-var _assign = __webpack_require__(269);
+var _assign = __webpack_require__(275);
 
 var _assign2 = _interopRequireDefault(_assign);
 
@@ -5681,11 +5692,11 @@ TopBarComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 exports.__esModule = true;
 
-var _iterator = __webpack_require__(273);
+var _iterator = __webpack_require__(279);
 
 var _iterator2 = _interopRequireDefault(_iterator);
 
-var _symbol = __webpack_require__(272);
+var _symbol = __webpack_require__(278);
 
 var _symbol2 = _interopRequireDefault(_symbol);
 
@@ -5721,7 +5732,7 @@ module.exports = function(key){
 
 "use strict";
 'use strict';
-var $at  = __webpack_require__(304)(true);
+var $at  = __webpack_require__(310)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
 __webpack_require__(132)(String, 'String', function(iterated){
@@ -5869,10 +5880,10 @@ var _assign = __webpack_require__(7);
 
 var EventConstants = __webpack_require__(22);
 var EventPluginRegistry = __webpack_require__(92);
-var ReactEventEmitterMixin = __webpack_require__(366);
+var ReactEventEmitterMixin = __webpack_require__(372);
 var ViewportMetrics = __webpack_require__(159);
 
-var getVendorPrefixedEventName = __webpack_require__(397);
+var getVendorPrefixedEventName = __webpack_require__(403);
 var isEventSupported = __webpack_require__(109);
 
 /**
@@ -6762,9 +6773,9 @@ var ItemComponent = function (_BaseComponent) {
   ItemComponent.prototype._getAbsoluteSpritePosition = function _getAbsoluteSpritePosition() {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
+    var outputDimensions = editor.getOutputDimensions();
 
-    return this.props.sprite.getPosition().clone().multiply(zoom);
+    return this.props.sprite.getPosition().clone().multiply(outputDimensions);
   };
 
   // -------------------------------------------------------------------------- LIFECYCLE
@@ -6837,9 +6848,9 @@ var ItemComponent = function (_BaseComponent) {
     var sprite = this.props.sprite;
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
 
-    var newPosition = this._initialPosition.clone().add(offset.divide(zoom));
+    var outputDimensions = editor.getOutputDimensions();
+    var newPosition = this._initialPosition.clone().add(offset.divide(outputDimensions));
 
     sprite.setPosition(newPosition);
   };
@@ -7003,7 +7014,7 @@ var SpritesCanvasControlsComponent = function (_CanvasControlsCompon) {
     // of this control
     var editor = this.context.editor;
 
-    var newOperation = editor.getOrCreateOperation('sprite', {
+    var newOperation = editor.operations.getOrCreate('sprite', {
       sprites: [selectedSprite],
       enabled: false
     });
@@ -7148,17 +7159,22 @@ var SpritesCanvasControlsComponent = function (_CanvasControlsCompon) {
 
 
   SpritesCanvasControlsComponent.prototype._getContainerStyle = function _getContainerStyle() {
-    var _context$editor$getSD = this.context.editor.getSDK().getSprite().getBounds();
+    var editor = this.context.editor;
 
-    var x = _context$editor$getSD.x;
-    var y = _context$editor$getSD.y;
-    var width = _context$editor$getSD.width;
-    var height = _context$editor$getSD.height;
+    var canvasDimensions = editor.getCanvasDimensions();
+    var outputDimensions = editor.getOutputDimensions();
+
+    var _canvasDimensions$clo = canvasDimensions.clone().divide(2).subtract(outputDimensions.clone().divide(2));
+
+    var x = _canvasDimensions$clo.x;
+    var y = _canvasDimensions$clo.y;
+
 
     return {
       left: x,
       top: y,
-      width: width, height: height
+      width: outputDimensions.x,
+      height: outputDimensions.y
     };
   };
 
@@ -7223,7 +7239,9 @@ var SpritesCanvasControlsComponent = function (_CanvasControlsCompon) {
         selected: isSelected,
         onDragStart: _this3._onSpriteDragStart,
         onDragStop: _this3._onSpriteDragStop,
-        onRemove: _this3._onSpriteRemove.bind(_this3, s) });
+        onRemove: _this3._onSpriteRemove.bind(_this3, s),
+        options: _this3.props.options,
+        ref: 'sprite-' + s.getId() });
     });
   };
 
@@ -7255,7 +7273,7 @@ var SpritesCanvasControlsComponent = function (_CanvasControlsCompon) {
         'div',
         (0, _extends3.default)({
           bem: 'b:canvasControls e:innerContainer',
-          ref: 'root'
+          ref: 'innerContainer'
         }, this._getInnerContainerProps()),
         _globals.ReactBEM.createElement(
           'div',
@@ -7418,7 +7436,7 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _globals = __webpack_require__(1);
 
-var _fileLoader = __webpack_require__(253);
+var _fileLoader = __webpack_require__(259);
 
 var _fileLoader2 = _interopRequireDefault(_fileLoader);
 
@@ -7633,7 +7651,7 @@ module.exports = function(it){
 /***/ function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(285);
+var aFunction = __webpack_require__(291);
 module.exports = function(fn, that, length){
   aFunction(fn);
   if(that === undefined)return fn;
@@ -7684,7 +7702,7 @@ module.exports = true;
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
 var anObject    = __webpack_require__(29)
-  , dPs         = __webpack_require__(300)
+  , dPs         = __webpack_require__(306)
   , enumBugKeys = __webpack_require__(76)
   , IE_PROTO    = __webpack_require__(81)('IE_PROTO')
   , Empty       = function(){ /* empty */ }
@@ -7699,7 +7717,7 @@ var createDict = function(){
     , gt     = '>'
     , iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(290).appendChild(iframe);
+  __webpack_require__(296).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -7826,7 +7844,7 @@ exports.f = __webpack_require__(15);
 /* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(309);
+__webpack_require__(315);
 var global        = __webpack_require__(24)
   , hide          = __webpack_require__(34)
   , Iterators     = __webpack_require__(35)
@@ -7931,7 +7949,7 @@ module.exports = shallowEqual;
 'use strict';
 
 var DOMLazyTree = __webpack_require__(36);
-var Danger = __webpack_require__(341);
+var Danger = __webpack_require__(347);
 var ReactMultiChildUpdateTypes = __webpack_require__(155);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstrumentation = __webpack_require__(10);
@@ -10589,7 +10607,7 @@ module.exports = validateDOMNesting;
 "use strict";
 'use strict';
 
-module.exports = __webpack_require__(346);
+module.exports = __webpack_require__(352);
 
 
 /***/ },
@@ -10611,7 +10629,7 @@ var _photoeditorsdk = __webpack_require__(66);
 
 var _photoeditorsdk2 = _interopRequireDefault(_photoeditorsdk);
 
-var _url = __webpack_require__(401);
+var _url = __webpack_require__(407);
 
 var _url2 = _interopRequireDefault(_url);
 
@@ -11011,7 +11029,7 @@ var OverviewControlsComponent = function (_ControlsComponent) {
 
     var items = [];
     var makeItem = function makeItem(identifier) {
-      var control = editor.getControl(identifier);
+      var control = editor.controls.get(identifier);
       return _globals.ReactBEM.createElement(
         'li',
         {
@@ -11045,7 +11063,7 @@ var OverviewControlsComponent = function (_ControlsComponent) {
 
           var groupItems = [];
           group.forEach(function (identifier) {
-            if (!editor.isControlEnabled(identifier)) return;
+            if (!editor.controls.isEnabled(identifier)) return;
             groupItems.push(makeItem(identifier));
           });
 
@@ -11055,7 +11073,7 @@ var OverviewControlsComponent = function (_ControlsComponent) {
         })();
       } else {
         var identifier = groupOrIdentifier;
-        if (!editor.isControlEnabled(identifier)) return;
+        if (!editor.controls.isEnabled(identifier)) return;
         items.push(makeItem(identifier));
       }
     });
@@ -11373,7 +11391,7 @@ var _modalManager = __webpack_require__(18);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _photoComponent = __webpack_require__(234);
+var _photoComponent = __webpack_require__(235);
 
 var _photoComponent2 = _interopRequireDefault(_photoComponent);
 
@@ -11542,7 +11560,6 @@ var PhotoListComponent = function (_BaseComponent) {
 
   PhotoListComponent.prototype._renderPhotos = function _renderPhotos() {
     var columns = this._renderColumns();
-
     return _globals.ReactBEM.createElement(
       'div',
       { bem: '$b:photoRoll e:row m:fullHeight' },
@@ -12049,7 +12066,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _toConsumableArray2 = __webpack_require__(275);
+var _toConsumableArray2 = __webpack_require__(281);
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
 
@@ -12394,7 +12411,7 @@ exports.default = Log;
 /* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(281), __esModule: true };
+module.exports = { "default": __webpack_require__(287), __esModule: true };
 
 /***/ },
 /* 126 */
@@ -12553,9 +12570,9 @@ var LIBRARY        = __webpack_require__(77)
   , hide           = __webpack_require__(34)
   , has            = __webpack_require__(32)
   , Iterators      = __webpack_require__(35)
-  , $iterCreate    = __webpack_require__(294)
+  , $iterCreate    = __webpack_require__(300)
   , setToStringTag = __webpack_require__(80)
-  , getPrototypeOf = __webpack_require__(302)
+  , getPrototypeOf = __webpack_require__(308)
   , ITERATOR       = __webpack_require__(15)('iterator')
   , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
   , FF_ITERATOR    = '@@iterator'
@@ -12656,7 +12673,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 
 var has          = __webpack_require__(32)
   , toIObject    = __webpack_require__(33)
-  , arrayIndexOf = __webpack_require__(287)(false)
+  , arrayIndexOf = __webpack_require__(293)(false)
   , IE_PROTO     = __webpack_require__(81)('IE_PROTO');
 
 module.exports = function(object, names){
@@ -13149,10 +13166,10 @@ module.exports = CallbackQueue;
 
 var DOMProperty = __webpack_require__(37);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMInstrumentation = __webpack_require__(358);
+var ReactDOMInstrumentation = __webpack_require__(364);
 var ReactInstrumentation = __webpack_require__(10);
 
-var quoteAttributeValueForBrowser = __webpack_require__(399);
+var quoteAttributeValueForBrowser = __webpack_require__(405);
 var warning = __webpack_require__(6);
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp('^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$');
@@ -14317,7 +14334,7 @@ module.exports = ReactClass;
 'use strict';
 
 var DOMChildrenOperations = __webpack_require__(90);
-var ReactDOMIDOperations = __webpack_require__(356);
+var ReactDOMIDOperations = __webpack_require__(362);
 
 /**
  * Abstracts away all functionality of the reconciler that requires knowledge of
@@ -14737,9 +14754,9 @@ module.exports = ReactHostComponent;
 
 'use strict';
 
-var ReactDOMSelection = __webpack_require__(360);
+var ReactDOMSelection = __webpack_require__(366);
 
-var containsNode = __webpack_require__(320);
+var containsNode = __webpack_require__(326);
 var focusNode = __webpack_require__(140);
 var getActiveElement = __webpack_require__(141);
 
@@ -14874,13 +14891,13 @@ var DOMProperty = __webpack_require__(37);
 var ReactBrowserEventEmitter = __webpack_require__(62);
 var ReactCurrentOwner = __webpack_require__(28);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMContainerInfo = __webpack_require__(352);
-var ReactDOMFeatureFlags = __webpack_require__(355);
+var ReactDOMContainerInfo = __webpack_require__(358);
+var ReactDOMFeatureFlags = __webpack_require__(361);
 var ReactElement = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(151);
 var ReactInstanceMap = __webpack_require__(51);
 var ReactInstrumentation = __webpack_require__(10);
-var ReactMarkupChecksum = __webpack_require__(369);
+var ReactMarkupChecksum = __webpack_require__(375);
 var ReactReconciler = __webpack_require__(38);
 var ReactUpdateQueue = __webpack_require__(104);
 var ReactUpdates = __webpack_require__(21);
@@ -16188,7 +16205,7 @@ module.exports = getTextContentAccessor;
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var ReactCompositeComponent = __webpack_require__(348);
+var ReactCompositeComponent = __webpack_require__(354);
 var ReactEmptyComponent = __webpack_require__(150);
 var ReactHostComponent = __webpack_require__(152);
 var ReactInstrumentation = __webpack_require__(10);
@@ -16484,19 +16501,19 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _globals = __webpack_require__(1);
 
-var _splashScreenComponent = __webpack_require__(243);
+var _splashScreenComponent = __webpack_require__(244);
 
 var _splashScreenComponent2 = _interopRequireDefault(_splashScreenComponent);
 
-var _photoRollScreenComponent = __webpack_require__(237);
+var _photoRollScreenComponent = __webpack_require__(238);
 
 var _photoRollScreenComponent2 = _interopRequireDefault(_photoRollScreenComponent);
 
-var _webcamScreenComponent = __webpack_require__(247);
+var _webcamScreenComponent = __webpack_require__(248);
 
 var _webcamScreenComponent2 = _interopRequireDefault(_webcamScreenComponent);
 
-var _editorScreenComponent = __webpack_require__(232);
+var _editorScreenComponent = __webpack_require__(233);
 
 var _editorScreenComponent2 = _interopRequireDefault(_editorScreenComponent);
 
@@ -16504,7 +16521,7 @@ var _screenComponent = __webpack_require__(40);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _modalContainerComponent = __webpack_require__(226);
+var _modalContainerComponent = __webpack_require__(227);
 
 var _modalContainerComponent2 = _interopRequireDefault(_modalContainerComponent);
 
@@ -16776,7 +16793,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _provider = __webpack_require__(257);
+var _provider = __webpack_require__(263);
 
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
@@ -16785,7 +16802,7 @@ Object.defineProperty(exports, 'Provider', {
   }
 });
 
-var _library = __webpack_require__(255);
+var _library = __webpack_require__(261);
 
 Object.defineProperty(exports, 'Library', {
   enumerable: true,
@@ -16794,7 +16811,7 @@ Object.defineProperty(exports, 'Library', {
   }
 });
 
-var _searchSuggestion = __webpack_require__(258);
+var _searchSuggestion = __webpack_require__(264);
 
 Object.defineProperty(exports, 'SearchSuggestion', {
   enumerable: true,
@@ -16803,7 +16820,7 @@ Object.defineProperty(exports, 'SearchSuggestion', {
   }
 });
 
-var _photo = __webpack_require__(256);
+var _photo = __webpack_require__(262);
 
 Object.defineProperty(exports, 'Photo', {
   enumerable: true,
@@ -18852,7 +18869,7 @@ var AdjustmentsControlsComponent = function (_ControlsComponent) {
 
     var editor = _this.context.editor;
 
-    _this._operation = editor.getOrCreateOperation('adjustments');
+    _this._operation = editor.operations.getOrCreate('adjustments');
 
     _this.state = { selectedControls: null };
     return _this;
@@ -18874,12 +18891,12 @@ var AdjustmentsControlsComponent = function (_ControlsComponent) {
     var initialOptions = this.getSharedState('initialOptions');
 
     if (!this._operation.optionsEqual(initialOptions)) {
-      editor.addHistory(this._operation, initialOptions, operationExistedBefore);
+      editor.history.add(this._operation, initialOptions, operationExistedBefore);
     }
 
     var defaultOptions = this._operation.getDefaultOptions();
     if (this._operation.optionsEqual(defaultOptions)) {
-      editor.removeOperation(this._operation);
+      editor.operations.remove(this._operation);
     }
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
@@ -19120,8 +19137,8 @@ var AdjustmentsControls = function (_Controls) {
   AdjustmentsControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var operationExistedBefore = editor.operationExists('adjustments');
-    var operation = editor.getOrCreateOperation('adjustments');
+    var operationExistedBefore = editor.operations.exists('adjustments');
+    var operation = editor.operations.getOrCreate('adjustments');
     var initialOptions = operation.serializeOptions();
 
     this.setSharedState({ operation: operation, operationExistedBefore: operationExistedBefore, initialOptions: initialOptions });
@@ -19263,9 +19280,11 @@ var BorderControlsComponent = function (_ControlsComponent) {
 
 
   BorderControlsComponent.prototype._onThicknessUpdate = function _onThicknessUpdate(thickness) {
-    this._operation.setThickness(thickness);
-
     var editor = this.context.editor;
+
+
+    var inputDimensions = this.getSharedState('inputDimensions');
+    this._operation.setThickness(thickness / inputDimensions.min());
 
     editor.render();
   };
@@ -19281,13 +19300,13 @@ var BorderControlsComponent = function (_ControlsComponent) {
     var editor = this.context.editor;
 
     if (!this.getSharedState('operationExistedBefore')) {
-      editor.removeOperation(this._operation);
+      editor.operations.remove(this._operation);
     } else {
       this._operation.set(this.getSharedState('initialOptions'));
     }
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
     editor.render();
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
@@ -19317,13 +19336,11 @@ var BorderControlsComponent = function (_ControlsComponent) {
 
 
   BorderControlsComponent.prototype.renderControls = function renderControls() {
-    var editor = this.context.editor;
-
-    var finalDimensions = editor.getFinalDimensions();
+    var inputDimensions = this.getSharedState('inputDimensions');
 
     var minThickness = 0;
-    var maxThickness = Math.round(Math.min(finalDimensions.x, finalDimensions.y) / 2);
-    var currentWidth = this._operation.getThickness();
+    var maxThickness = 0.5 * inputDimensions.min();
+    var currentWidth = this._operation.getThickness() * inputDimensions.min();
 
     return [_globals.ReactBEM.createElement(
       'div',
@@ -19425,22 +19442,25 @@ var BorderControls = function (_Controls) {
   BorderControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var inputDimensions = editor.getInputDimensions();
-    var defaultThickness = Math.min(inputDimensions.x, inputDimensions.y) * 0.05;
 
-    var operationExistedBefore = editor.operationExists('border');
-    var operation = editor.getOrCreateOperation('border', {
-      thickness: defaultThickness
+    var operationExistedBefore = editor.operations.exists('border');
+    var operation = editor.operations.getOrCreate('border', {
+      thickness: 0.05
     });
     var initialOptions = {
       color: operation.getColor().clone(),
       thickness: operation.getThickness()
     };
 
-    this.setSharedState({ operation: operation, operationExistedBefore: operationExistedBefore, initialOptions: initialOptions });
+    this.setSharedState({
+      operation: operation,
+      operationExistedBefore: operationExistedBefore,
+      initialOptions: initialOptions,
+      inputDimensions: operation.getInputDimensions()
+    });
 
-    editor.setZoom('auto', function () {
-      editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto', function () {
+      editor.features.disable('zoom', 'drag');
     });
   };
 
@@ -19457,12 +19477,12 @@ var BorderControls = function (_Controls) {
 
     var operation = this.getSharedState('operation');
 
-    editor.addHistory(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
+    editor.history.add(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
 
     operation.setEnabled(true);
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
     editor.render();
   };
 
@@ -19530,6 +19550,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _defineProperty2 = __webpack_require__(13);
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
 var _classCallCheck2 = __webpack_require__(0);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
@@ -19577,10 +19601,13 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
 
     var _this = (0, _possibleConstructorReturn3.default)(this, _SpritesCanvasControl.call.apply(_SpritesCanvasControl, [this].concat(args)));
 
+    _this._windowResized = false;
     _this._drawing = false;
-    _this._bindAll('_onMouseEnter', '_onMouseLeave', '_onMouseDown', '_onMouseMove', '_onMouseUp', '_onMouseMoveOnCanvas');
+    _this._bindAll('_onMouseEnter', '_onMouseLeave', '_onMouseDown', '_onMouseMove', '_onMouseUp', '_onMouseMoveOnCanvas', '_onWindowResize');
 
     _this._lastDrawPosition = null;
+
+    _this._events = _globals.SDKUtils.extend(_this._events, (0, _defineProperty3.default)({}, _globals.Constants.EVENTS.WINDOW_RESIZE, _this._onWindowResize));
 
     _this.state = {
       cursorVisible: false,
@@ -19598,11 +19625,32 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
 
   BrushCanvasControlsComponent.prototype.componentDidMount = function componentDidMount() {
     _SpritesCanvasControl.prototype.componentDidMount.call(this);
+    this._updateContainerRect();
+  };
 
-    this._containerBoundingRect = this.refs.root.getBoundingClientRect();
+  /**
+   * Gets called when this component has been updated
+   */
+
+
+  BrushCanvasControlsComponent.prototype.componentDidUpdate = function componentDidUpdate() {
+    if (this._windowResized) {
+      this._updateContainerRect();
+      this._windowResized = false;
+    }
   };
 
   // -------------------------------------------------------------------------- EVENTS
+
+  /**
+   * Gets called when the window has been resized
+   * @private
+   */
+
+
+  BrushCanvasControlsComponent.prototype._onWindowResize = function _onWindowResize() {
+    this._windowResized = true;
+  };
 
   /**
    * Gets called when an operation has been removed
@@ -19644,16 +19692,16 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
     this._operationExistedBeforeDraw = this.getSharedState('operationExistedBefore');
     this.setSharedState({ operationExistedBefore: true }, false);
 
-    var zoom = this.context.editor.getZoom();
+    var outputDimensions = this.context.editor.getOutputDimensions();
     var cursorPosition = this._getCursorPosition(e);
 
     var brush = this.getSharedState('brush');
-    var thickness = this.getSharedState('thickness');
+    var thickness = this.getSharedState('thickness') / outputDimensions.min();
     var color = this.getSharedState('color');
     var hardness = this.getSharedState('hardness');
     this._drawing = true;
     this._currentPath = brush.createPath(thickness, hardness, color);
-    this._currentPath.addControlPoint(cursorPosition.clone().divide(zoom));
+    this._currentPath.addControlPoint(cursorPosition.clone().divide(outputDimensions));
 
     document.addEventListener('mousemove', this._onMouseMove);
     document.addEventListener('touchmove', this._onMouseMove);
@@ -19668,12 +19716,14 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
 
 
   BrushCanvasControlsComponent.prototype._onMouseUp = function _onMouseUp() {
+    this._currentPath.setClosed(true);
+
     this._currentPath = null;
     this._drawing = false;
 
     var editor = this.context.editor;
 
-    editor.addHistory(this.getSharedState('operation'), this._optionsBeforeDraw, this._operationExistedBeforeDraw);
+    editor.history.add(this.getSharedState('operation'), this._optionsBeforeDraw, this._operationExistedBeforeDraw);
 
     document.removeEventListener('mousemove', this._onMouseMove);
     document.removeEventListener('touchmove', this._onMouseMove);
@@ -19717,7 +19767,9 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
 
 
   BrushCanvasControlsComponent.prototype._onMouseMove = function _onMouseMove(e) {
-    var zoom = this.context.editor.getZoom();
+    var outputDimensions = this.context.editor.getOutputDimensions();
+
+    var zoom = this.context.editor.zoom.get();
     var cursorPosition = this._getCursorPosition(e);
     this.setState({ cursorPosition: cursorPosition });
 
@@ -19731,14 +19783,9 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
     }
 
     if (this._drawing && shouldDraw) {
-      var _zoom = this.context.editor.getZoom();
-      this._currentPath.addControlPoint(cursorPosition.clone().divide(_zoom));
+      this._currentPath.addControlPoint(cursorPosition.clone().divide(outputDimensions));
 
-      this.getSharedState('brush').render();
-
-      var editor = this.context.editor;
-
-      editor.render();
+      this.getSharedState('brush').render(outputDimensions);
 
       this._lastDrawPosition = cursorPosition.clone();
     }
@@ -19767,11 +19814,7 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
 
 
   BrushCanvasControlsComponent.prototype._getCursorStyle = function _getCursorStyle() {
-    var editor = this.context.editor;
-
-    var zoom = editor.getZoom();
-
-    var thickness = this.getSharedState('thickness') * zoom;
+    var thickness = this.getSharedState('thickness');
     var color = this.getSharedState('color');
 
     var cursorPosition = this.state.cursorPosition;
@@ -19788,6 +19831,16 @@ var BrushCanvasControlsComponent = function (_SpritesCanvasControl) {
   };
 
   // -------------------------------------------------------------------------- MISC
+
+  /**
+   * Updates the container bounding rect
+   * @private
+   */
+
+
+  BrushCanvasControlsComponent.prototype._updateContainerRect = function _updateContainerRect() {
+    this._containerBoundingRect = this.refs.innerContainer.getBoundingClientRect();
+  };
 
   /**
    * Returns the cursor position for the given event
@@ -19972,8 +20025,8 @@ var BrushControlsComponent = function (_ControlsComponent) {
 
     var editor = this.context.editor;
 
-    editor.setZoom('auto');
-    editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto');
+    editor.features.disable('zoom', 'drag');
   };
 
   // -------------------------------------------------------------------------- EVENTS
@@ -20006,7 +20059,7 @@ var BrushControlsComponent = function (_ControlsComponent) {
     // of this control
     var editor = this.context.editor;
 
-    var newOperation = editor.getOrCreateOperation('sprite');
+    var newOperation = editor.operations.getOrCreate('sprite');
 
     var brush = newOperation.createBrush();
     newOperation.addSprite(brush);
@@ -20036,10 +20089,12 @@ var BrushControlsComponent = function (_ControlsComponent) {
         // SpriteOperation re-creates all sprites when they're mass-assigned,
         // so we need to find the new instance by matching against the previous ID
         var previousBrush = _this2.getSharedState('brush');
-        var brush = operation.getSprites().filter(function (s) {
-          return s.getId() === previousBrush.getId();
-        })[0];
-        _this2.setSharedState({ brush: brush });
+        if (previousBrush) {
+          var brush = operation.getSprites().filter(function (s) {
+            return s.getId() === previousBrush.getId();
+          })[0];
+          _this2.setSharedState({ brush: brush });
+        }
 
         // Trigger brush canvas rendering
         operation.setEnabled(true);
@@ -20110,12 +20165,13 @@ var BrushControlsComponent = function (_ControlsComponent) {
   BrushControlsComponent.prototype.renderControls = function renderControls() {
     var editor = this.context.editor;
 
+    var zoom = editor.zoom.get();
     var items = [];
 
     if (this._hasSlider) {
       var finalDimensions = editor.getFinalDimensions();
       var minThickness = 1;
-      var maxThickness = Math.round(Math.min(finalDimensions.x, finalDimensions.y) / 2);
+      var maxThickness = Math.round(finalDimensions.clone().multiply(zoom).min() / 2);
       var currentWidth = this._brushOptions.thickness;
 
       items.push(_globals.ReactBEM.createElement(
@@ -20152,8 +20208,7 @@ var BrushControlsComponent = function (_ControlsComponent) {
       { bem: 'e:cell m:colorPicker' },
       _globals.ReactBEM.createElement(_colorPickerComponent2.default, {
         initialValue: this._brushOptions.color.clone(),
-        onChange: this._onColorUpdated,
-        alpha: false })
+        onChange: this._onColorUpdated })
     ));
 
     return items;
@@ -20247,8 +20302,8 @@ var BrushControls = function (_Controls) {
 
     operation.setEnabled(true);
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
     editor.render();
   };
 
@@ -20265,19 +20320,19 @@ var BrushControls = function (_Controls) {
   BrushControls.onEnter = function onEnter(sharedState, options) {
     var editor = this.context.editor;
 
-    var finalDimensions = editor.getSDK().getFinalDimensions();
-    var operationExistedBefore = editor.operationExists('sprite');
-    var operation = editor.getOrCreateOperation('sprite');
+    var outputDimensions = editor.getOutputDimensions();
+    var operationExistedBefore = editor.operations.exists('sprite');
+    var operation = editor.operations.getOrCreate('sprite');
     var brush = operation.createBrush();
     var initialOptions = operation.serializeOptions();
     operation.addSprite(brush);
 
-    editor.render(function () {
+    editor.zoom.set('auto', function () {
       operation.setEnabled(false);
-      editor.setZoom('auto');
+      editor.render();
     });
 
-    var thickness = Math.max(finalDimensions.x, finalDimensions.y) * 0.05;
+    var thickness = outputDimensions.min() * 0.05;
     if (options.thicknessPresets && options.thicknessPresets.length > 0) {
       thickness = options.thicknessPresets[0];
     }
@@ -20556,9 +20611,28 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
 
     var _this = (0, _possibleConstructorReturn3.default)(this, _CanvasControlsCompon.call.apply(_CanvasControlsCompon, [this].concat(args)));
 
+    _this._needsStyleFixes = true;
     _this._bindAll('_onCenterDragStart', '_onCenterDrag');
     return _this;
   }
+
+  /**
+   * Fixes styles in IE
+   */
+
+
+  StraightenCanvasControlsComponent.prototype.fixStyles = function fixStyles() {
+    if (_globals.Utils.Browser.isIElte(11)) {
+      var editor = this.context.editor;
+      var container = this.refs.container;
+
+
+      var canvasDimensions = editor.getCanvasDimensions(false);
+      var cellHeight = canvasDimensions.y;
+      container.style.height = cellHeight + 'px';
+    }
+  };
+
   // -------------------------------------------------------------------------- CENTER DRAGGING
 
   /**
@@ -20568,13 +20642,13 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
 
 
   StraightenCanvasControlsComponent.prototype._onCenterDragStart = function _onCenterDragStart() {
-    var position = this.getSharedState('position');
-    var dimensions = this.getSharedState('dimensions');
+    var start = this.getSharedState('start');
+    var end = this.getSharedState('end');
 
     this._initialValues = {
-      start: position.clone(),
-      end: dimensions.clone().subtract(position),
-      size: dimensions.clone()
+      start: start.clone(),
+      end: end.clone(),
+      size: end.clone().subtract(start)
     };
   };
 
@@ -20587,19 +20661,20 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
 
   StraightenCanvasControlsComponent.prototype._onCenterDrag = function _onCenterDrag(offset) {
     var editor = this.context.editor;
-
-    offset.divide(editor.getZoom());
     var _initialValues = this._initialValues;
     var start = _initialValues.start;
     var size = _initialValues.size;
 
+    var outputDimensions = editor.getOutputDimensions();
+    var cropDifference = offset.clone().divide(outputDimensions);
 
     var minStart = new _globals.Vector2(0, 0);
-    var maxStart = editor.getFinalDimensions().subtract(size);
+    var maxStart = new _globals.Vector2(1, 1).subtract(size);
 
-    this.setSharedState({
-      position: start.clone().add(offset).clamp(minStart, maxStart)
-    });
+    var newStart = start.clone().add(cropDifference).clamp(minStart, maxStart);
+    var newEnd = newStart.clone().add(size);
+
+    this.setSharedState({ start: newStart, end: newEnd });
   };
 
   // -------------------------------------------------------------------------- KNOB DRAGGING
@@ -20614,43 +20689,42 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
   StraightenCanvasControlsComponent.prototype._onKnobDragStart = function _onKnobDragStart(optionName) {
     this._currentDragOption = optionName;
 
-    var position = this.getSharedState('position');
-    var dimensions = this.getSharedState('dimensions');
     this._initialValues = {
-      start: position.clone(),
-      end: position.clone().add(dimensions)
+      start: this.getSharedState('start').clone(),
+      end: this.getSharedState('end').clone()
     };
   };
 
   /**
    * Gets called while the user drags a knob
-   * @param {String} knob
+   * @param {String} optionName
    * @param {Vector2} offset
    * @private
    */
 
 
-  StraightenCanvasControlsComponent.prototype._onKnobDrag = function _onKnobDrag(knob, offset) {
+  StraightenCanvasControlsComponent.prototype._onKnobDrag = function _onKnobDrag(optionName, offset) {
     var editor = this.context.editor;
 
-    offset.divide(editor.getZoom());
+    var outputDimensions = editor.getOutputDimensions();
 
     var _ref = this.getSharedState('ratio') || { ratio: '*' };
 
     var ratio = _ref.ratio;
 
 
-    var newSize = this._initialValues.end.clone().subtract(this._initialValues.start);
+    var newSize = this._initialValues.end.clone().subtract(this._initialValues.start).multiply(outputDimensions);
 
     // Calculate max size and new size
     var maxSize = void 0;
-    if (knob === 'topLeft') {
+    if (optionName === 'start') {
       newSize.subtract(offset);
-      maxSize = this._initialValues.end.clone();
-    } else if (knob === 'bottomRight') {
+      maxSize = this._initialValues.end.clone().multiply(outputDimensions);
+    } else if (optionName === 'end') {
       newSize.add(offset);
-      maxSize = editor.getFinalDimensions().subtract(this._initialValues.start);
+      maxSize = new _globals.Vector2(1, 1).subtract(this._initialValues.start).multiply(outputDimensions);
     }
+
     newSize.x = Math.min(Math.max(MIN_DIMENSIONS.x, newSize.x), maxSize.x);
     if (ratio !== '*') {
       newSize.y = newSize.x / ratio;
@@ -20660,15 +20734,13 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
       newSize.x = newSize.y * ratio;
     }
 
-    var newStart = this._initialValues.start.clone();
-    if (knob === 'topLeft') {
-      newStart.copy(this._initialValues.end).subtract(newSize.clone());
+    if (optionName === 'start') {
+      var newStart = this._initialValues.end.clone().subtract(newSize.clone().divide(outputDimensions));
+      this.setSharedState({ start: newStart });
+    } else if (optionName === 'end') {
+      var newEnd = this._initialValues.start.clone().add(newSize.clone().divide(outputDimensions));
+      this.setSharedState({ end: newEnd });
     }
-
-    this.setSharedState({
-      position: newStart,
-      dimensions: newSize.clone()
-    });
   };
 
   // -------------------------------------------------------------------------- MISC
@@ -20701,36 +20773,40 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
   StraightenCanvasControlsComponent.prototype._getAreaStyles = function _getAreaStyles() {
     var editor = this.context.editor;
 
-
-    var padding = editor.getPadding();
-    var canvasDimensions = editor.getCanvasDimensions();
     var outputDimensions = editor.getOutputDimensions();
+    var canvasDimensions = editor.getCanvasDimensions();
+
+    var start = this.getSharedState('start').clone().multiply(outputDimensions).floor();
+    var end = this.getSharedState('end').clone().multiply(outputDimensions).ceil();
+    var size = end.clone().subtract(start);
 
     var offset = canvasDimensions.clone().subtract(outputDimensions).divide(2).floor();
 
-    var position = this.getSharedState('position').clone().multiply(editor.getZoom()).add(offset).add(0, padding[0]);
+    var padding = editor.getPadding();
+    start.add(offset).add(0, padding[0]);
 
-    var dimensions = this.getSharedState('dimensions').clone().multiply(editor.getZoom());
     return {
-      topLeft: this._getDimensionsStyles(position.clone()),
-      topCenter: this._getDimensionsStyles(new _globals.Vector2(dimensions.x, position.y)),
-      centerLeft: this._getDimensionsStyles(new _globals.Vector2(position.x, dimensions.y)),
-      center: this._getDimensionsStyles(dimensions.clone())
+      topLeft: this._getDimensionsStyles(start.x, start.y),
+      topCenter: this._getDimensionsStyles(size.x, start.y),
+      centerLeft: this._getDimensionsStyles(start.x, size.y),
+      center: this._getDimensionsStyles(size.x, size.y)
     };
   };
 
   /**
-   * Returns a style object for the given dimensions
-   * @param  {PhotoEditorSDK.Math.Vector2} dimensions
+   * Returns the dimensions style (width / height) for the given dimensions
+   * @param {Number} x
+   * @param {Number} y
    * @return {Object}
    * @private
    */
 
 
-  StraightenCanvasControlsComponent.prototype._getDimensionsStyles = function _getDimensionsStyles(dimensions) {
+  StraightenCanvasControlsComponent.prototype._getDimensionsStyles = function _getDimensionsStyles(x, y) {
+    // Table cells and rows can't have a width / height of 0
     return {
-      width: Math.max(1, dimensions.x) + 'px',
-      height: Math.max(1, dimensions.y) + 'px'
+      width: Math.max(1, x),
+      height: Math.max(1, y)
     };
   };
 
@@ -20742,7 +20818,6 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
 
   StraightenCanvasControlsComponent.prototype.renderWithBEM = function renderWithBEM() {
     var areaStyles = this._getAreaStyles();
-
     return _globals.ReactBEM.createElement(
       'div',
       { bem: 'b:canvasControls e:container m:full', ref: 'container' },
@@ -20783,8 +20858,8 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
               _globals.ReactBEM.createElement(
                 _draggableComponent2.default,
                 {
-                  onStart: this._onKnobDragStart.bind(this, 'topLeft'),
-                  onDrag: this._onKnobDrag.bind(this, 'topLeft') },
+                  onStart: this._onKnobDragStart.bind(this, 'start'),
+                  onDrag: this._onKnobDrag.bind(this, 'start') },
                 _globals.ReactBEM.createElement(
                   'div',
                   { bem: 'e:knob m:topLeft $b:knob' },
@@ -20794,8 +20869,8 @@ var StraightenCanvasControlsComponent = function (_CanvasControlsCompon) {
               _globals.ReactBEM.createElement(
                 _draggableComponent2.default,
                 {
-                  onStart: this._onKnobDragStart.bind(this, 'bottomRight'),
-                  onDrag: this._onKnobDrag.bind(this, 'bottomRight') },
+                  onStart: this._onKnobDragStart.bind(this, 'end'),
+                  onDrag: this._onKnobDrag.bind(this, 'end') },
                 _globals.ReactBEM.createElement(
                   'div',
                   { bem: 'e:knob m:bottomRight $b:knob' },
@@ -20914,7 +20989,7 @@ var StraightenControlsComponent = function (_ControlsComponent) {
     _this._initRatios();
 
     if (!_this.getSharedState('operationExistedBefore')) {
-      _this._selectInitialRatio(false);
+      _this._selectInitialRatio(true);
     }
     return _this;
   }
@@ -20929,17 +21004,17 @@ var StraightenControlsComponent = function (_ControlsComponent) {
 
   StraightenControlsComponent.prototype._initRatios = function _initRatios() {
     var _props$options = this.props.options;
-    var additionalRatios = _props$options.additionalRatios;
+    var ratios = _props$options.ratios;
     var replaceRatios = _props$options.replaceRatios;
     var selectableRatios = _props$options.selectableRatios;
 
-    additionalRatios = additionalRatios || [];
+    ratios = ratios || [];
 
     this._ratios = _globals.Constants.DEFAULTS.CROP_RATIOS;
     if (replaceRatios) {
-      this._ratios = additionalRatios;
+      this._ratios = ratios;
     } else {
-      this._ratios = this._ratios.concat(additionalRatios);
+      this._ratios = this._ratios.concat(ratios);
     }
 
     if (selectableRatios && selectableRatios.length) {
@@ -21040,11 +21115,11 @@ var StraightenControlsComponent = function (_ControlsComponent) {
 
 
     var operation = this.getSharedState('operation');
-    if (this.getSharedState('operationExistedBefore')) {
-      operation.set(this.getSharedState('initialOptions'));
+    if (this.getSharedState('cropOperationExistedBefore')) {
+      operation.set(this.getSharedState('initialCropOptions'));
       operation.setEnabled(true, false);
     } else {
-      editor.removeOperation(operation);
+      editor.operations.remove(operation);
     }
 
     editor.setPadding(false);
@@ -21052,9 +21127,9 @@ var StraightenControlsComponent = function (_ControlsComponent) {
     editor.setSpriteScale(1);
 
     // Enable zoom and drag again
-    editor.enableFeatures('zoom', 'drag');
+    editor.features.enable('zoom', 'drag');
 
-    editor.undoZoom();
+    editor.zoom.undo();
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
   };
@@ -21073,14 +21148,14 @@ var StraightenControlsComponent = function (_ControlsComponent) {
     var options = {
       rotation: editor.getRotation(),
       scale: editor.getSpriteScale(),
-      position: this.getSharedState('position').clone(),
-      dimensions: this.getSharedState('dimensions').clone(),
+      start: this.getSharedState('start').clone(),
+      end: this.getSharedState('end').clone(),
       enabled: true
     };
 
-    var cropOperation = editor.getOperation('crop');
-    var spriteOperation = editor.getOperation('sprite');
-    var orientationOperation = editor.getOperation('orientation');
+    var cropOperation = editor.operations.get('crop');
+    var spriteOperation = editor.operations.get('sprite');
+    var orientationOperation = editor.operations.get('orientation');
 
     if (spriteOperation) {
       spriteOperation.crop(cropOperation, options);
@@ -21106,7 +21181,7 @@ var StraightenControlsComponent = function (_ControlsComponent) {
         }
       });
     } else if (!cropOperationExistedBefore) {
-      editor.removeOperation(cropOperation);
+      editor.operations.remove(cropOperation);
     }
 
     var initialOrientationOptions = this.getSharedState('initialOrientationOptions');
@@ -21131,18 +21206,18 @@ var StraightenControlsComponent = function (_ControlsComponent) {
         }
       });
     } else if (!orientationOperationExistedBefore) {
-      editor.removeOperation(orientationOperation);
+      editor.operations.remove(orientationOperation);
     }
 
     if (historyItems.length) {
-      editor.addHistory(historyItems);
+      editor.history.add(historyItems);
     }
 
     // Enable zoom and drag again
-    editor.enableFeatures('zoom', 'drag');
+    editor.features.enable('zoom', 'drag');
 
     // Zoom to auto again
-    editor.setZoom('auto');
+    editor.zoom.set('auto');
 
     _ControlsComponent.prototype._onDoneClick.call(this, e);
   };
@@ -21218,22 +21293,27 @@ var StraightenControlsComponent = function (_ControlsComponent) {
     var name = _ref.name;
     var editor = this.context.editor;
 
-    var finalDimensions = editor.getFinalDimensions(false);
-    var dimensions = new _globals.Vector2();
+    var start = new _globals.Vector2();
+    var end = new _globals.Vector2();
 
     if (ratio === '*') {
-      dimensions.copy(finalDimensions);
+      start = new _globals.Vector2(0, 0);
+      end = new _globals.Vector2(1, 1);
     } else {
-      var canvasRatio = finalDimensions.x / finalDimensions.y;
+      var outputDimensions = editor.getOutputDimensions();
+      var canvasRatio = outputDimensions.x / outputDimensions.y;
       if (canvasRatio <= ratio) {
-        dimensions.set(finalDimensions.x, finalDimensions.x / ratio);
+        var height = 1 / outputDimensions.y * (outputDimensions.x / ratio);
+        start.set(0, (1.0 - height) / 2);
+        end.set(1.0, 1 - start.y);
       } else {
-        dimensions.set(finalDimensions.y * ratio, finalDimensions.y);
+        var width = 1 / outputDimensions.x * (ratio * outputDimensions.y);
+        start.set((1 - width) / 2, 0);
+        end.set(1 - start.x, 1.0);
       }
     }
 
-    var position = finalDimensions.clone().subtract(dimensions).divide(2);
-    this.setSharedState({ position: position, dimensions: dimensions });
+    this.setSharedState({ start: start, end: end });
   };
 
   // -------------------------------------------------------------------------- RENDERING
@@ -21386,28 +21466,28 @@ var CropTopBarComponent = function (_TopBarComponent) {
 
     var editor = this.context.editor;
 
-    var finalDimensions = editor.getFinalDimensions(false).clone();
     var operation = this.getSharedState('orientationOperation');
     var newRotation = (operation.getRotation() + degrees) % 360;
 
-    var position = this.getSharedState('position');
-    var cropDimensions = this.getSharedState('dimensions');
+    var start = this.getSharedState('start');
+    var end = this.getSharedState('end');
+    var tempStart = start.clone();
     if (direction === 'cw') {
-      position.set(finalDimensions.y - (position.y + cropDimensions.y), position.x);
+      start.set(1.0 - end.y, tempStart.x);
+      end.set(1.0 - tempStart.y, end.x);
     } else if (direction === 'ccw') {
-      position.set(position.y, finalDimensions.x - (position.x + cropDimensions.x));
+      start.set(tempStart.y, 1.0 - end.x);
+      end.set(end.y, 1.0 - tempStart.x);
     }
     operation.set({ rotation: newRotation });
 
     this.setSharedState({
       orientationRotation: newRotation,
-      position: position,
-      dimensions: cropDimensions.clone().flip()
+      start: start, end: end
     });
 
     editor.broadcastRotate(degrees);
-
-    editor.setZoom('auto');
+    editor.zoom.set('auto');
   };
 
   /**
@@ -21429,8 +21509,20 @@ var CropTopBarComponent = function (_TopBarComponent) {
     editor.setRotation(newRotation);
     operation.flip(direction);
 
-    editor.broadcastFlip(direction);
+    var start = this.getSharedState('start');
+    var end = this.getSharedState('end');
+    var tmpStart = start.clone();
+    if (direction === 'horizontal') {
+      start.set(1.0 - end.x, start.y);
+      end.set(1.0 - tmpStart.x, end.y);
+    } else if (direction === 'vertical') {
+      start.set(start.x, 1.0 - end.y);
+      end.set(end.x, 1.0 - tmpStart.y);
+    }
 
+    this.setSharedState({ start: start, end: end });
+
+    editor.broadcastFlip(direction);
     editor.render();
   };
 
@@ -21556,17 +21648,17 @@ var CropControls = function (_Controls) {
     var editor = this.context.editor;
 
 
-    var cropOperationExistedBefore = editor.operationExists('crop');
-    var cropOperation = editor.getOrCreateOperation('crop');
+    var cropOperationExistedBefore = editor.operations.exists('crop');
+    var cropOperation = editor.operations.getOrCreate('crop');
     cropOperation.setEnabled(false, false);
 
-    var orientationOperationExistedBefore = editor.operationExists('orientation');
-    var orientationOperation = editor.getOrCreateOperation('orientation');
+    var orientationOperationExistedBefore = editor.operations.exists('orientation');
+    var orientationOperation = editor.operations.getOrCreate('orientation');
 
     var defaultOptions = {
-      dimensions: editor.getFinalDimensions(false),
+      end: new _globals.Vector2(1, 1),
       rotation: 0,
-      position: new _globals.Vector2(0, 0),
+      start: new _globals.Vector2(0, 0),
       scale: 1
     };
 
@@ -21578,7 +21670,7 @@ var CropControls = function (_Controls) {
 
     editor.broadcastCrop(cropOperation, defaultOptions);
 
-    // Reset position and dimensions so that SpriteOperation gets an update and repositions
+    // Reset start and end so that SpriteOperation gets an update and repositions
     // the stickers
     cropOperation.set(defaultOptions, cropOperationExistedBefore);
 
@@ -21588,20 +21680,20 @@ var CropControls = function (_Controls) {
     editor.setSpriteScale(initialCropOptions.scale);
     editor.setRotation(initialCropOptions.rotation);
     editor.setPadding([10, 0, 58 + 10, 0]);
-    editor.setZoom('auto', function () {
+    editor.zoom.set('auto', function () {
       // Disable zoom and drag while we're cropping
-      editor.disableFeatures('zoom', 'drag');
-    });
+      editor.features.disable('zoom', 'drag');
+    }, false);
 
     this.setSharedState({
       initialCropOptions: initialCropOptions,
       initialOrientationOptions: initialOrientationOptions,
-      dimensions: initialCropOptions.dimensions.clone(),
       operation: cropOperation,
       orientationOperation: orientationOperation,
       orientationOperationExistedBefore: orientationOperationExistedBefore,
       cropOperationExistedBefore: cropOperationExistedBefore,
-      position: initialCropOptions.position.clone(),
+      start: _globals.Vector2.fromObject(initialCropOptions.start),
+      end: _globals.Vector2.fromObject(initialCropOptions.end),
       rotation: initialCropOptions.rotation,
       orientationRotation: orientationOperation.getRotation(),
       flipVertically: orientationOperation.getFlipVertically(),
@@ -21683,7 +21775,7 @@ CropControls.languageKey = 'controls.overview.crop';
 /**
  * The default options for this control
  * @type {Object}
- * @property {Object[]} [additionalRatios = []]
+ * @property {Object[]} [ratios = []]
  * @property {Boolean} [replaceRatios = false]
  * @property {String[]} [availableRatios = null]
  */
@@ -21875,13 +21967,13 @@ var FilterControlsComponent = function (_ControlsComponent) {
     if (filter !== initialOptions.filter || intensity !== initialOptions.intensity) {
       var editor = this.context.editor;
 
-      editor.addHistory(this._operation, initialOptions, this.getSharedState('operationExistedBefore'));
+      editor.history.add(this._operation, initialOptions, this.getSharedState('operationExistedBefore'));
     }
 
     if (filter.isIdentity) {
       var _editor = this.context.editor;
 
-      _editor.removeOperation(this._operation);
+      _editor.operations.remove(this._operation);
     }
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
@@ -22097,8 +22189,8 @@ var FiltersControls = function (_Controls) {
   FiltersControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var operationExistedBefore = editor.operationExists('filter');
-    var operation = editor.getOrCreateOperation('filter');
+    var operationExistedBefore = editor.operations.exists('filter');
+    var operation = editor.operations.getOrCreate('filter');
     var initialOptions = {
       filter: operation.getFilter(),
       intensity: operation.getIntensity()
@@ -22398,7 +22490,7 @@ var FocusControls = function (_Controls) {
   FocusControls.onExit = function onExit() {
     var editor = this.context.editor;
 
-    editor.enableFeatures('zoom', 'drag');
+    editor.features.enable('zoom', 'drag');
   };
 
   return FocusControls;
@@ -22519,17 +22611,17 @@ var LinearFocusControls = function (_Controls) {
   LinearFocusControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var operationExistedBefore = editor.operationExists('linear-focus');
+    var operationExistedBefore = editor.operations.exists('linear-focus');
 
-    var finalDimensions = editor.getFinalDimensions();
+    var defaultStart = new _globals.Vector2(0.49, 0.5);
+    var defaultEnd = new _globals.Vector2(0.51, 0.5);
 
-    var defaultStart = new _globals.Vector2(0.49, 0.5).multiply(finalDimensions);
-    var defaultEnd = new _globals.Vector2(0.51, 0.5).multiply(finalDimensions);
-
-    var operation = editor.getOrCreateOperation('linear-focus', {
+    var operation = editor.operations.getOrCreate('linear-focus', {
       start: defaultStart,
       end: defaultEnd
     });
+
+    var inputDimensions = operation.getInputDimensions();
 
     var start = operation.getStart().clone();
     var end = operation.getEnd().clone();
@@ -22542,7 +22634,12 @@ var LinearFocusControls = function (_Controls) {
       blurRadius: operation.getBlurRadius()
     };
 
-    this.setSharedState({ operation: operation, operationExistedBefore: operationExistedBefore, initialOptions: initialOptions });
+    this.setSharedState({
+      operation: operation,
+      operationExistedBefore: operationExistedBefore,
+      initialOptions: initialOptions,
+      inputDimensions: inputDimensions
+    });
   };
 
   /**
@@ -22703,8 +22800,8 @@ var LinearFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
 
     var editor = this.context.editor;
 
-    editor.setZoom('auto', function () {
-      editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto', function () {
+      editor.features.disable('zoom', 'drag');
       _this2._setStylesFromOptions();
     });
   };
@@ -22733,12 +22830,11 @@ var LinearFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
   LinearFocusCanvasControlsComponent.prototype._onCenterDrag = function _onCenterDrag(offset) {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
 
-    var finalDimensions = editor.getFinalDimensions();
-    var absoluteOffset = offset.clone().divide(zoom);
+    var outputDimensions = editor.getOutputDimensions();
+    var relativeOffset = offset.clone().divide(outputDimensions);
 
-    var newStart = this._initialStart.clone().add(absoluteOffset).clamp(new _globals.Vector2(0, 0), finalDimensions.subtract(this._initialDist));
+    var newStart = this._initialStart.clone().add(relativeOffset).clamp(new _globals.Vector2(0, 0), new _globals.Vector2(1, 1).subtract(this._initialDist));
     var newEnd = newStart.clone().add(this._initialDist);
 
     this._operation.set({
@@ -22773,7 +22869,6 @@ var LinearFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
   LinearFocusCanvasControlsComponent.prototype._onKnobDrag = function _onKnobDrag(offset) {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
     var outputDimensions = editor.getOutputDimensions();
 
     var newKnobPosition = this._initialKnobPosition.clone().add(offset).clamp(new _globals.Vector2(0, 0), outputDimensions);
@@ -22781,13 +22876,10 @@ var LinearFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
     var distance = newKnobPosition.clone().subtract(this.state.areaPosition);
     var newGradientRadius = distance.len() * 2;
 
-    var start = this.state.areaPosition.clone().add(-distance.y, distance.x);
-    var end = this.state.areaPosition.clone().add(distance.y, -distance.x);
+    var start = this.state.areaPosition.clone().add(-distance.y, distance.x).divide(outputDimensions);
+    var end = this.state.areaPosition.clone().add(distance.y, -distance.x).divide(outputDimensions);
     var size = end.clone().subtract(start).len();
     var gradientSize = size;
-
-    start.divide(zoom);
-    end.divide(zoom);
 
     this._operation.set({
       start: start, end: end,
@@ -22853,12 +22945,11 @@ var LinearFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
   LinearFocusCanvasControlsComponent.prototype._setStylesFromOptions = function _setStylesFromOptions() {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
     var outputDimensions = editor.getOutputDimensions();
 
-    var start = this._operation.getStart().clone().multiply(zoom);
-    var end = this._operation.getEnd().clone().multiply(zoom);
-    var size = this._operation.getSize() * zoom;
+    var start = this._operation.getStart().clone().multiply(outputDimensions);
+    var end = this._operation.getEnd().clone().multiply(outputDimensions);
+    var size = this._operation.getSize() * outputDimensions.min();
 
     var dist = end.clone().subtract(start);
     var middle = start.clone().add(dist.clone().divide(2));
@@ -23002,7 +23093,7 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
 
     _this._hasDoneButton = true;
     _this._operation = _this.getSharedState('operation');
-    _this._bindAll('_onBackClick', '_onDoneClick', '_onSliderValueChange', '_onOperationRemoved');
+    _this._bindAll('_onBackClick', '_onDoneClick', '_onBlurRadiusChange', '_onOperationRemoved');
 
     _this._events = (0, _defineProperty3.default)({}, _globals.Constants.EVENTS.OPERATION_REMOVED, _this._onOperationRemoved);
     return _this;
@@ -23026,7 +23117,7 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
     // of this control
     var editor = this.context.editor;
 
-    var newOperation = editor.getOrCreateOperation('linear-focus');
+    var newOperation = editor.operations.getOrCreate('linear-focus');
     this._operation = newOperation;
     this.setSharedState({
       operation: newOperation,
@@ -23048,13 +23139,13 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
     var editor = this.context.editor;
 
     if (!this.getSharedState('operationExistedBefore')) {
-      editor.removeOperation(this._operation);
+      editor.operations.remove(this._operation);
     } else {
       this._operation.set(this.getSharedState('initialOptions'));
     }
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
   };
@@ -23074,11 +23165,11 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
     var optionsChanged = !this._operation.optionsEqual(initialOptions);
 
     if (optionsChanged || !operationExistedBefore) {
-      editor.addHistory(this._operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
+      editor.history.add(this._operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
     }
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
 
     _ControlsComponent.prototype._onDoneClick.call(this, e);
   };
@@ -23090,8 +23181,9 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
    */
 
 
-  LinearFocusControlsComponent.prototype._onSliderValueChange = function _onSliderValueChange(value) {
-    this._operation.setBlurRadius(value);
+  LinearFocusControlsComponent.prototype._onBlurRadiusChange = function _onBlurRadiusChange(value) {
+    var inputDimensions = this.getSharedState('inputDimensions');
+    this._operation.setBlurRadius(value / inputDimensions.min());
 
     var editor = this.context.editor;
 
@@ -23107,18 +23199,22 @@ var LinearFocusControlsComponent = function (_ControlsComponent) {
 
 
   LinearFocusControlsComponent.prototype.renderControls = function renderControls() {
+    var inputDimensions = this.getSharedState('inputDimensions');
+    var shortestSide = inputDimensions.min();
+    var value = this._operation.getBlurRadius() * shortestSide;
+
     return _globals.ReactBEM.createElement(
       'div',
       { bem: 'e:cell m:slider' },
       _globals.ReactBEM.createElement(_sliderComponent2.default, {
         style: 'large',
         minValue: 0,
-        maxValue: 40,
+        maxValue: Math.min(180, Math.round(shortestSide * 0.1)),
         valueUnit: 'px',
         middleDot: false,
         label: this._t('controls.focus.blurRadius'),
-        onChange: this._onSliderValueChange,
-        value: this._operation.getBlurRadius() })
+        onChange: this._onBlurRadiusChange,
+        value: value })
     );
   };
 
@@ -23205,24 +23301,30 @@ var RadialFocusControls = function (_Controls) {
     var editor = this.context.editor;
 
 
-    var sdk = editor.getSDK();
-    var finalDimensions = sdk.getFinalDimensions();
-    var radius = Math.max(finalDimensions.x, finalDimensions.y) * 0.2;
-    var gradientRadius = radius / 2;
-    var position = finalDimensions.clone().divide(2);
+    var operationExistedBefore = editor.operations.exists('radial-focus');
+    var operation = editor.operations.getOrCreate('radial-focus');
 
-    var operationExistedBefore = editor.operationExists('radial-focus');
-    var operation = editor.getOrCreateOperation('radial-focus', {
-      radius: radius, gradientRadius: gradientRadius, position: position
-    });
+    var _operation$getOptions = operation.getOptions();
+
+    var position = _operation$getOptions.position;
+    var radius = _operation$getOptions.radius;
+    var gradientRadius = _operation$getOptions.gradientRadius;
+    var blurRadius = _operation$getOptions.blurRadius;
+
 
     var initialOptions = {
       position: position,
-      radius: radius, gradientRadius: gradientRadius,
-      blurRadius: operation.getBlurRadius()
+      radius: radius, gradientRadius: gradientRadius, blurRadius: blurRadius
     };
 
-    this.setSharedState({ operation: operation, operationExistedBefore: operationExistedBefore, initialOptions: initialOptions });
+    var inputDimensions = operation.getInputDimensions();
+
+    this.setSharedState({
+      operation: operation,
+      operationExistedBefore: operationExistedBefore,
+      initialOptions: initialOptions,
+      inputDimensions: inputDimensions
+    });
   };
 
   /**
@@ -23395,8 +23497,8 @@ var RadialFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
     _CanvasControlsCompon.prototype.componentDidMount.call(this);
     var editor = this.context.editor;
 
-    editor.setZoom('auto', function () {
-      editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto', function () {
+      editor.features.disable('zoom', 'drag');
       _this2._setStylesFromOptions();
     });
   };
@@ -23425,8 +23527,9 @@ var RadialFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
     var editor = this.context.editor;
 
 
-    var absoluteOffset = offset.clone().divide(editor.getZoom());
-    var newPosition = this._initialPosition.clone().add(absoluteOffset);
+    var outputDimensions = editor.getOutputDimensions();
+    var relativeOffset = offset.clone().divide(outputDimensions);
+    var newPosition = this._initialPosition.clone().add(relativeOffset);
 
     var newKnobPosition = this._initialKnobPosition.clone().add(offset);
 
@@ -23463,12 +23566,12 @@ var RadialFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
   RadialFocusCanvasControlsComponent.prototype._onKnobDrag = function _onKnobDrag(offset) {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
     var outputDimensions = editor.getOutputDimensions();
 
     var newKnobPosition = this._initialKnobPosition.clone().add(offset).clamp(new _globals.Vector2(0, 0), outputDimensions);
 
-    var position = this._operation.getPosition().clone().multiply(zoom);
+    var position = this._operation.getPosition().clone().multiply(outputDimensions);
+
     var radius = newKnobPosition.clone().subtract(position).abs().len();
     var gradientRadius = radius / 2;
 
@@ -23477,8 +23580,8 @@ var RadialFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
       areaDimensions: new _globals.Vector2(radius * 2, radius * 2)
     });
     this._operation.set({
-      radius: radius / zoom,
-      gradientRadius: gradientRadius / zoom
+      radius: radius / outputDimensions.min(),
+      gradientRadius: gradientRadius / outputDimensions.min()
     });
 
     editor.render();
@@ -23529,21 +23632,21 @@ var RadialFocusCanvasControlsComponent = function (_CanvasControlsCompon) {
   RadialFocusCanvasControlsComponent.prototype._setStylesFromOptions = function _setStylesFromOptions() {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
 
-    var position = this._operation.getPosition().clone();
-    var radius = this._operation.getRadius();
+    var outputDimensions = editor.getOutputDimensions();
+    var position = this._operation.getPosition().clone().multiply(outputDimensions);
+
+    var radius = this._operation.getRadius() * outputDimensions.min();
     var diameter = radius * 2;
     var areaSize = new _globals.Vector2(diameter, diameter);
-    areaSize.multiply(zoom);
 
     var newState = {
       areaDimensions: areaSize,
-      areaPosition: position.clone().multiply(zoom)
+      areaPosition: position
     };
 
     if (!this._knobChangedManually) {
-      newState.knobPosition = position.clone().add(radius, 0).multiply(zoom);
+      newState.knobPosition = position.clone().add(radius, 0);
     }
 
     this.setState(newState);
@@ -23678,7 +23781,7 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
 
     _this._hasDoneButton = true;
     _this._operation = _this.getSharedState('operation');
-    _this._bindAll('_onBackClick', '_onDoneClick', '_onSliderValueChange', '_onOperationRemoved');
+    _this._bindAll('_onBackClick', '_onDoneClick', '_onBlurRadiusChange', '_onOperationRemoved');
 
     _this._events = (0, _defineProperty3.default)({}, _globals.Constants.EVENTS.OPERATION_REMOVED, _this._onOperationRemoved);
     return _this;
@@ -23702,7 +23805,7 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
     // of this control
     var editor = this.context.editor;
 
-    var newOperation = editor.getOrCreateOperation('radial-focus');
+    var newOperation = editor.operations.getOrCreate('radial-focus');
     this._operation = newOperation;
     this.setSharedState({
       operation: newOperation,
@@ -23724,14 +23827,14 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
     var editor = this.context.editor;
 
     if (!this.getSharedState('operationExistedBefore')) {
-      editor.removeOperation(this._operation);
+      editor.operations.remove(this._operation);
     } else {
       this._operation.set(this.getSharedState('initialOptions'));
     }
 
     editor.render();
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
 
     _ControlsComponent.prototype._onBackClick.call(this, e);
   };
@@ -23751,11 +23854,11 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
     var optionsChanged = !this._operation.optionsEqual(initialOptions);
 
     if (optionsChanged || !operationExistedBefore) {
-      editor.addHistory(this._operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
+      editor.history.add(this._operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
     }
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
 
     _ControlsComponent.prototype._onDoneClick.call(this, e);
   };
@@ -23767,8 +23870,9 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
    */
 
 
-  RadialFocusControlsComponent.prototype._onSliderValueChange = function _onSliderValueChange(value) {
-    this._operation.setBlurRadius(value);
+  RadialFocusControlsComponent.prototype._onBlurRadiusChange = function _onBlurRadiusChange(value) {
+    var inputDimensions = this.getSharedState('inputDimensions');
+    this._operation.setBlurRadius(value / inputDimensions.min());
 
     var editor = this.context.editor;
 
@@ -23784,18 +23888,22 @@ var RadialFocusControlsComponent = function (_ControlsComponent) {
 
 
   RadialFocusControlsComponent.prototype.renderControls = function renderControls() {
+    var inputDimensions = this.getSharedState('inputDimensions');
+    var shortestSide = inputDimensions.min();
+    var value = this._operation.getBlurRadius() * shortestSide;
+
     return _globals.ReactBEM.createElement(
       'div',
       { bem: 'e:cell m:slider' },
       _globals.ReactBEM.createElement(_sliderComponent2.default, {
         style: 'large',
         minValue: 0,
-        maxValue: 40,
+        maxValue: Math.min(180, Math.round(shortestSide * 0.1)),
         valueUnit: 'px',
         middleDot: false,
         label: this._t('controls.focus.blurRadius'),
-        onChange: this._onSliderValueChange,
-        value: this._operation.getBlurRadius() })
+        onChange: this._onBlurRadiusChange,
+        value: value })
     );
   };
 
@@ -24314,7 +24422,7 @@ var OverviewCanvasControlsComponent = function (_CanvasControlsCompon) {
         bem: '$b:canvasControls e:innerContainer',
         ref: 'innerContainer',
         style: this._getContainerStyle(),
-        onMouseDown: this._onClick,
+        onClick: this._onClick,
         onTouchStart: this._onClick })
     );
   };
@@ -24513,7 +24621,7 @@ var NewFileButtonComponent = function (_BaseComponent) {
 
     editor.reset();
     editor.setImage(image);
-    editor.setZoom('auto');
+    editor.zoom.set('auto');
   };
 
   /**
@@ -24799,7 +24907,7 @@ var UndoButtonComponent = function (_BaseComponent) {
   UndoButtonComponent.prototype._onButtonClick = function _onButtonClick() {
     var editor = this.context.editor;
 
-    editor.undo();
+    editor.history.undo();
   };
 
   // -------------------------------------------------------------------------- RENDERING
@@ -24813,7 +24921,7 @@ var UndoButtonComponent = function (_BaseComponent) {
   UndoButtonComponent.prototype.renderWithBEM = function renderWithBEM() {
     var editor = this.context.editor;
 
-    if (!editor.historyAvailable()) return null;
+    if (!editor.history.isAvailable()) return null;
 
     return _globals.ReactBEM.createElement(_buttonComponent2.default, {
       label: this._t('editor.undo'),
@@ -24912,9 +25020,9 @@ var ZoomComponent = function (_BaseComponent) {
   ZoomComponent.prototype._onZoomOutClick = function _onZoomOutClick(e) {
     var editor = this.context.editor;
 
-    if (!editor.isFeatureEnabled('zoom')) return;
+    if (!editor.features.isEnabled('zoom')) return;
 
-    editor.zoomOut();
+    editor.zoom.zoomOut();
   };
 
   /**
@@ -24927,9 +25035,9 @@ var ZoomComponent = function (_BaseComponent) {
   ZoomComponent.prototype._onZoomInClick = function _onZoomInClick(e) {
     var editor = this.context.editor;
 
-    if (!editor.isFeatureEnabled('zoom')) return;
+    if (!editor.features.isEnabled('zoom')) return;
 
-    editor.zoomIn();
+    editor.zoom.zoomIn();
   };
 
   // -------------------------------------------------------------------------- RENDERING
@@ -24943,8 +25051,8 @@ var ZoomComponent = function (_BaseComponent) {
   ZoomComponent.prototype.renderWithBEM = function renderWithBEM() {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
-    var enabled = editor.isFeatureEnabled('zoom');
+    var zoom = editor.zoom.get();
+    var enabled = editor.features.isEnabled('zoom');
 
     return _globals.ReactBEM.createElement(
       'div',
@@ -25168,6 +25276,7 @@ var StickerItemComponent = function (_ItemComponent) {
 
     var _this = (0, _possibleConstructorReturn3.default)(this, _ItemComponent.call.apply(_ItemComponent, [this].concat(args)));
 
+    _this._bindAll('_onRotateKnobDragStart', '_onRotateKnobDrag', '_onRotateKnobDragStop');
     _this._id = _globals.SDKUtils.getUUID();
     return _this;
   }
@@ -25195,7 +25304,7 @@ var StickerItemComponent = function (_ItemComponent) {
         break;
     }
 
-    this._initialScale = sprite.getScale().clone();
+    this._initialDimensions = sprite.getDimensions().clone();
 
     this.props.onDragStart && this.props.onDragStart();
   };
@@ -25215,30 +25324,60 @@ var StickerItemComponent = function (_ItemComponent) {
     var stickerPosition = this._getAbsoluteSpritePosition();
     var newKnobPosition = this._initialPosition.clone().add(offset);
 
-    var halfDimensions = this._getStickerDimensions().divide(2);
-
-    // Calculate new rotation and scale from new knob position
+    // Calculate new rotation and dimensions from new knob position
     var knobDistanceFromCenter = newKnobPosition.clone().subtract(stickerPosition);
 
-    var initialDistanceFromCenter = this._initialPosition.clone().subtract(stickerPosition);
+    var initialKnobDistanceFromCenter = this._initialPosition.clone().subtract(stickerPosition);
 
-    var radians = void 0;
+    if (this.props.options.fixedRatio) {
+      var halfDimensions = this._getStickerDimensions().divide(2).abs();
 
-    switch (side) {
-      case 'bottom':
-        radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(halfDimensions.y, halfDimensions.x);
-        break;
-      case 'top':
-        radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(-halfDimensions.y, -halfDimensions.x);
-        break;
+      var initialDistanceFromCenter = this._initialPosition.clone().subtract(stickerPosition);
+
+      var radians = void 0;
+
+      switch (side) {
+        case 'bottom':
+          radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(halfDimensions.y, halfDimensions.x);
+          break;
+        case 'top':
+          radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(-halfDimensions.y, -halfDimensions.x);
+          break;
+      }
+
+      var newDimensions = this._initialDimensions.clone().multiply(knobDistanceFromCenter.len() / initialDistanceFromCenter.len());
+
+      sprite.set({
+        dimensions: newDimensions,
+        rotation: radians
+      });
+    } else {
+      var zoom = this.context.editor.zoom.get();
+      var rotation = sprite.getRotation();
+      var cos = Math.cos(rotation * -1);
+      var sin = Math.sin(rotation * -1);
+
+      var localDistanceToCenter = new _globals.Vector2(knobDistanceFromCenter.x * cos - knobDistanceFromCenter.y * sin, knobDistanceFromCenter.x * sin + knobDistanceFromCenter.y * cos);
+
+      var previousLocalDistanceToCenter = new _globals.Vector2(initialKnobDistanceFromCenter.x * cos - initialKnobDistanceFromCenter.y * sin, initialKnobDistanceFromCenter.x * sin + initialKnobDistanceFromCenter.y * cos);
+
+      var distanceToCenterDiff = void 0;
+
+      switch (side) {
+        case 'bottom':
+          distanceToCenterDiff = localDistanceToCenter.clone().subtract(previousLocalDistanceToCenter);
+          break;
+        case 'top':
+          distanceToCenterDiff = previousLocalDistanceToCenter.clone().subtract(localDistanceToCenter);
+          break;
+      }
+
+      var _newDimensions = this._initialDimensions.clone().add(distanceToCenterDiff.clone().divide(zoom).multiply(2));
+
+      sprite.set({
+        dimensions: _newDimensions
+      });
     }
-
-    var newScale = this._initialScale.clone().multiply(knobDistanceFromCenter.len() / initialDistanceFromCenter.len());
-
-    sprite.set({
-      scale: newScale,
-      rotation: radians
-    });
   };
 
   /**
@@ -25249,6 +25388,56 @@ var StickerItemComponent = function (_ItemComponent) {
 
   StickerItemComponent.prototype._onKnobDragStop = function _onKnobDragStop() {
     this.props.onDragStop && this.props.onDragStop();
+  };
+
+  /**
+   * Gets called when the user starts dragging the rotate knob
+   * @param  {Vector2} position
+   * @param  {Event} e
+   * @private
+   */
+
+
+  StickerItemComponent.prototype._onRotateKnobDragStart = function _onRotateKnobDragStart(position, e) {
+    this._initialPosition = this._getRotateKnobPosition();
+    this.props.onDragStart && this.props.onDragStart();
+  };
+
+  /**
+   * Gets called when the user stops dragging the rotate knob
+   * @private
+   */
+
+
+  StickerItemComponent.prototype._onRotateKnobDragStop = function _onRotateKnobDragStop() {
+    this.props.onDragStop && this.props.onDragStop();
+  };
+
+  /**
+   * Gets called while the user drags a sticker
+   * @param  {Vector2} offset
+   * @param  {Event} e
+   * @private
+   */
+
+
+  StickerItemComponent.prototype._onRotateKnobDrag = function _onRotateKnobDrag(offset, e) {
+    var sprite = this.props.sprite;
+
+    var stickerPosition = this._getAbsoluteSpritePosition();
+    var newKnobPosition = this._initialPosition.clone().add(offset);
+
+    var halfDimensions = this._getStickerDimensions().divide(2);
+
+    // Calculate new rotation and dimensions from new knob position
+    var knobDistanceFromCenter = newKnobPosition.clone().subtract(stickerPosition);
+
+    var radians = void 0;
+    radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(-halfDimensions.y, halfDimensions.x);
+
+    sprite.set({
+      rotation: radians
+    });
   };
 
   // -------------------------------------------------------------------------- STYLING
@@ -25286,6 +25475,22 @@ var StickerItemComponent = function (_ItemComponent) {
   };
 
   /**
+   * Returns the style object for the rotate knob
+   * @return {Object}
+   * @private
+   */
+
+
+  StickerItemComponent.prototype._getRotateKnobStyle = function _getRotateKnobStyle() {
+    var knobPosition = this._getRotateKnobPosition();
+
+    return {
+      left: knobPosition.x,
+      top: knobPosition.y
+    };
+  };
+
+  /**
    * Builds the style object for this sticker
    * @return {Object}
    * @private
@@ -25296,25 +25501,31 @@ var StickerItemComponent = function (_ItemComponent) {
     var sprite = this.props.sprite;
 
 
-    var stickerDimensions = this._getStickerDimensions();
-    var spritePosition = this._getAbsoluteSpritePosition().subtract(stickerDimensions.clone().divide(2));
+    var processedDimensions = this._getStickerDimensions().abs();
+    var spritePosition = this._getAbsoluteSpritePosition().subtract(processedDimensions.clone().divide(2));
 
     var degrees = sprite.getRotation() * 180 / Math.PI;
     var transform = 'rotate(' + degrees.toFixed(2) + 'deg)';
 
-    if (sprite.getFlipVertically()) {
-      transform += ' rotateX(180deg)';
+    var spriteDimensions = sprite.getDimensions();
+
+    var flipVertically = sprite.getFlipVertically();
+    if (spriteDimensions.y < 0) flipVertically = !flipVertically;
+    if (flipVertically) {
+      transform += ' scaleY(-1)';
     }
 
-    if (sprite.getFlipHorizontally()) {
-      transform += ' rotateY(180deg)';
+    var flipHorizontally = sprite.getFlipHorizontally();
+    if (spriteDimensions.x < 0) flipHorizontally = !flipHorizontally;
+    if (flipHorizontally) {
+      transform += ' scaleX(-1)';
     }
 
     return {
       top: spritePosition.y,
       left: spritePosition.x,
-      width: stickerDimensions.x,
-      height: stickerDimensions.y,
+      width: processedDimensions.x,
+      height: processedDimensions.y,
       WebkitTransform: transform,
       msTransform: transform,
       MozTransform: transform,
@@ -25336,9 +25547,32 @@ var StickerItemComponent = function (_ItemComponent) {
     var sprite = this.props.sprite;
     var editor = this.context.editor;
 
-    var image = sprite.getImage();
 
-    return new _globals.Vector2(image.width, image.height).multiply(sprite.getScale()).multiply(editor.getZoom()).abs();
+    return sprite.getDimensions().clone().multiply(editor.zoom.get());
+  };
+
+  /**
+   * Calculates the rotate button knob's position
+   * @return {PhotoEditorSDK.Math.Vector2}
+   * @private
+   */
+
+
+  StickerItemComponent.prototype._getRotateKnobPosition = function _getRotateKnobPosition() {
+    var sprite = this.props.sprite;
+
+    var stickerPosition = this._getAbsoluteSpritePosition();
+    var stickerRotation = sprite.getRotation();
+
+    // Calculate sin and cos for rotation
+    var sin = Math.sin(stickerRotation || 0);
+    var cos = Math.cos(stickerRotation || 0);
+
+    // Calculate sticker dimensions
+    var halfDimensions = this._getStickerDimensions().divide(2);
+
+    // Calculate knob position
+    return stickerPosition.clone().add(halfDimensions.x * cos + halfDimensions.y * sin, halfDimensions.x * sin - halfDimensions.y * cos);
   };
 
   /**
@@ -25424,37 +25658,23 @@ var StickerItemComponent = function (_ItemComponent) {
           _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/knobs/resize-diagonal-down.png', true) })
         )
       )];
+
+      if (!this.props.options.fixedRatio) {
+        knobs.push(_globals.ReactBEM.createElement(
+          _draggableComponent2.default,
+          {
+            onStart: this._onRotateKnobDragStart,
+            onStop: this._onRotateKnobDragStop,
+            onDrag: this._onRotateKnobDrag },
+          _globals.ReactBEM.createElement(
+            'div',
+            { bem: 'e:knob $b:knob', style: this._getRotateKnobStyle() },
+            _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/knobs/rotate.png', true) })
+          )
+        ));
+      }
     }
     return knobs;
-  };
-
-  /**
-   * Renders the SVG filters
-   * @return {ReactBEM.Element}
-   * @private
-   */
-
-
-  StickerItemComponent.prototype._renderSVGFilter = function _renderSVGFilter() {
-    var sprite = this.props.sprite;
-
-    var adjustments = sprite.getAdjustments();
-    var brightness = adjustments.getBrightness();
-    var saturation = adjustments.getSaturation();
-    var contrast = adjustments.getContrast();
-
-    var filtersSVG = '<filter id=\'pesdk-sticker-' + this._id + '-filter\'>\n        <feComponentTransfer>\n          <feFuncR type=\'linear\' intercept=\'' + brightness + '\' />\n          <feFuncG type=\'linear\' intercept=\'' + brightness + '\' />\n          <feFuncB type=\'linear\' intercept=\'' + brightness + '\' />\n        </feComponentTransfer>\n        <feColorMatrix type=\'saturate\' values=\'' + saturation + '\' />\n        <feComponentTransfer>\n          <feFuncR type=\'linear\' slope=\'' + contrast + '\' intercept=\'' + (-(0.5 * contrast) + 0.5) + '\' />\n          <feFuncG type=\'linear\' slope=\'' + contrast + '\' intercept=\'' + (-(0.5 * contrast) + 0.5) + '\' />\n          <feFuncB type=\'linear\' slope=\'' + contrast + '\' intercept=\'' + (-(0.5 * contrast) + 0.5) + '\' />\n        </feComponentTransfer>\n      </filter>';
-
-    // We added `key: Math.random()` because in Safari, dangerouslySetInnerHTML
-    // would not update without that...
-    // https://github.com/facebook/react/issues/2863
-    return _globals.ReactBEM.createElement(
-      'svg',
-      { width: '0', height: '0', 'color-interpolation-filters': 'sRGB', is: 'svg' },
-      _globals.ReactBEM.createElement('defs', { key: Math.random(), dangerouslySetInnerHTML: {
-          __html: filtersSVG
-        } })
-    );
   };
 
   /**
@@ -25469,7 +25689,6 @@ var StickerItemComponent = function (_ItemComponent) {
 
     var stickerStyle = this._getStickerStyle();
     var className = this.props.selected ? 'is-selected' : null;
-    var stickerImageStyle = { filter: 'url("#pesdk-sticker-' + this._id + '-filter")' };
 
     return _globals.ReactBEM.createElement(
       _draggableComponent2.default,
@@ -25484,16 +25703,7 @@ var StickerItemComponent = function (_ItemComponent) {
           bem: '$e:sticker',
           style: stickerStyle,
           className: className },
-        _globals.ReactBEM.createElement(
-          'svg',
-          { width: stickerStyle.width, height: stickerStyle.height, 'color-interpolation-filters': 'sRGB', is: 'svg' },
-          _globals.ReactBEM.createElement('image', {
-            xlinkHref: sprite.getImage().src,
-            width: stickerStyle.width,
-            height: stickerStyle.height,
-            style: stickerImageStyle
-          })
-        )
+        _globals.ReactBEM.createElement('img', { src: sprite.getImage().src, width: stickerStyle.width, height: stickerStyle.height })
       )
     );
   };
@@ -25511,7 +25721,6 @@ var StickerItemComponent = function (_ItemComponent) {
       _globals.ReactBEM.createElement(
         'div',
         { bem: '$e:item e:container' },
-        this._renderSVGFilter(),
         this._renderItem(),
         this._renderKnobs()
       )
@@ -25617,6 +25826,15 @@ var TextItemComponent = function (_ItemComponent) {
 
 
   TextItemComponent.prototype._onItemDoubleClick = function _onItemDoubleClick() {
+    this.enterEditMode();
+  };
+
+  /**
+   * Enters the edit mode
+   */
+
+
+  TextItemComponent.prototype.enterEditMode = function enterEditMode() {
     var _this2 = this;
 
     var sprite = this.props.sprite;
@@ -25699,7 +25917,7 @@ var TextItemComponent = function (_ItemComponent) {
     // Calculate new rotation and scale from new knob position
     var knobDistanceFromCenter = newKnobPosition.clone().subtract(spritePosition);
 
-    var boundingBox = sprite.getBoundingBox(editor.getSDK(), true);
+    var boundingBox = sprite.getBoundingBox(editor.getSDK(), editor.getOutputDimensions());
     var radians = Math.atan2(knobDistanceFromCenter.y, knobDistanceFromCenter.x) - Math.atan2(boundingBox.y, boundingBox.x / 2);
 
     sprite.setRotation(radians);
@@ -25747,7 +25965,7 @@ var TextItemComponent = function (_ItemComponent) {
 
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
+    var outputDimensions = editor.getOutputDimensions();
 
     var cos = Math.cos(textRotation);
     var sin = Math.sin(textRotation);
@@ -25756,7 +25974,7 @@ var TextItemComponent = function (_ItemComponent) {
     var position = this._getAbsoluteSpritePosition();
     var distanceToPosition = newKnobPosition.clone().subtract(position);
 
-    var newMaxWidth = Math.max((distanceToPosition.x * cos + distanceToPosition.y * sin) / zoom * 2, 100);
+    var newMaxWidth = Math.max((distanceToPosition.x * cos + distanceToPosition.y * sin) / outputDimensions.x * 2, 0.1);
     sprite.setMaxWidth(newMaxWidth);
   };
 
@@ -25804,31 +26022,6 @@ var TextItemComponent = function (_ItemComponent) {
   };
 
   /**
-   * Returns the style object for the remove knob
-   * @return {Object}
-   * @private
-   */
-
-
-  TextItemComponent.prototype._getRemoveKnobStyle = function _getRemoveKnobStyle() {
-    var sprite = this.props.sprite;
-    var editor = this.context.editor;
-
-
-    var sin = Math.sin(sprite.getRotation());
-    var cos = Math.cos(sprite.getRotation());
-
-    var boundingBox = sprite.getBoundingBox(editor.getSDK(), true);
-    var halfDimensions = boundingBox.clone().divide(2);
-    var position = sprite.getPosition().clone().multiply(editor.getZoom()).add(-halfDimensions.x * cos, -halfDimensions.x * sin);
-
-    return {
-      left: position.x,
-      top: position.y
-    };
-  };
-
-  /**
    * Returns the style object for the given text object
    * @return {Object}
    * @private
@@ -25844,7 +26037,7 @@ var TextItemComponent = function (_ItemComponent) {
     var style = sprite.getDOMStyle(sdk, outputDimensions);
 
     var spritePosition = this._getAbsoluteSpritePosition();
-    var boundingBox = sprite.getBoundingBox(editor.getSDK(), true);
+    var boundingBox = sprite.getBoundingBox(sdk, outputDimensions);
     style.height = Math.min(boundingBox.y, outputDimensions.y - spritePosition.y);
 
     return style;
@@ -25860,17 +26053,17 @@ var TextItemComponent = function (_ItemComponent) {
   TextItemComponent.prototype._getItemContainerStyle = function _getItemContainerStyle() {
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
+    var outputDimensions = editor.getOutputDimensions();
 
     var sprite = this.props.sprite;
 
-    var textPosition = sprite.getPosition().clone().multiply(zoom);
+    var textPosition = sprite.getPosition().clone().multiply(outputDimensions);
 
     var degrees = sprite.getRotation() * 180 / Math.PI;
     var transform = 'rotateZ(' + degrees.toFixed(2) + 'deg)';
     var transformOrigin = '50% 0';
 
-    var maxWidth = sprite.getMaxWidth() * zoom;
+    var maxWidth = sprite.getMaxWidth() * outputDimensions.x;
     return {
       width: maxWidth,
       left: textPosition.x,
@@ -25900,14 +26093,14 @@ var TextItemComponent = function (_ItemComponent) {
     var sprite = this.props.sprite;
     var editor = this.context.editor;
 
-    var zoom = editor.getZoom();
 
     var sin = Math.sin(sprite.getRotation());
     var cos = Math.cos(sprite.getRotation());
 
-    var boundingBox = sprite.getBoundingBox(editor.getSDK(), true);
+    var outputDimensions = editor.getOutputDimensions();
+    var boundingBox = sprite.getBoundingBox(editor.getSDK(), outputDimensions);
     var halfDimensions = boundingBox.clone().divide(2);
-    var position = sprite.getPosition().clone().multiply(zoom).add(halfDimensions.x * cos - boundingBox.y * sin, halfDimensions.x * sin + boundingBox.y * cos);
+    var position = sprite.getPosition().clone().multiply(outputDimensions).add(halfDimensions.x * cos - boundingBox.y * sin, halfDimensions.x * sin + boundingBox.y * cos);
     return position;
   };
 
@@ -25926,9 +26119,10 @@ var TextItemComponent = function (_ItemComponent) {
     var sin = Math.sin(sprite.getRotation());
     var cos = Math.cos(sprite.getRotation());
 
-    var boundingBox = sprite.getBoundingBox(editor.getSDK(), true);
+    var outputDimensions = editor.getOutputDimensions();
+    var boundingBox = sprite.getBoundingBox(editor.getSDK(), outputDimensions);
     var halfDimensions = boundingBox.clone().divide(2);
-    var position = sprite.getPosition().clone().multiply(editor.getZoom()).add(halfDimensions.x * cos, halfDimensions.x * sin);
+    var position = sprite.getPosition().clone().multiply(outputDimensions).add(halfDimensions.x * cos, halfDimensions.x * sin);
     return position;
   };
 
@@ -25966,10 +26160,6 @@ var TextItemComponent = function (_ItemComponent) {
           { bem: 'e:knob m:resize $b:knob', style: this._getResizeKnobStyle() },
           _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/knobs/resize-diagonal-up.png', true) })
         )
-      ), _globals.ReactBEM.createElement(
-        'div',
-        { bem: 'e:knob $b:knob', style: this._getRemoveKnobStyle(), onClick: this._onRemoveClick },
-        _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/knobs/remove.png', true) })
       )];
     }
     return knobs;
@@ -26144,12 +26334,12 @@ var StickerControls = function (_Controls) {
 
     var operation = this.getSharedState('operation');
 
-    editor.addHistory(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
+    editor.history.add(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
 
     operation.setEnabled(true);
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
     editor.render();
   };
 
@@ -26165,14 +26355,14 @@ var StickerControls = function (_Controls) {
   StickerControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var operation = editor.getOrCreateOperation('sprite');
-    var operationExistedBefore = editor.operationExists('sprite');
+    var operation = editor.operations.getOrCreate('sprite');
+    var operationExistedBefore = editor.operations.exists('sprite');
     var sprites = operation.getSprites();
     var stickers = operation.getSpritesOfType(Sticker);
     var initialOptions = operation.serializeOptions();
 
     operation.setEnabled(false);
-    editor.setZoom('auto');
+    editor.zoom.set('auto');
 
     this.setSharedState({
       operationExistedBefore: operationExistedBefore, operation: operation, sprites: sprites, stickers: stickers, initialOptions: initialOptions
@@ -26191,10 +26381,10 @@ var StickerControls = function (_Controls) {
 
 
   StickerControls.clickAtPosition = function clickAtPosition(position, editor) {
-    if (!editor.operationExists('sprite')) return false;
+    if (!editor.operations.exists('sprite')) return false;
 
-    var operation = editor.getOrCreateOperation('sprite');
-    var sprites = operation.getSpritesAtPosition(position).filter(function (s) {
+    var operation = editor.operations.getOrCreate('sprite');
+    var sprites = operation.getSpritesAtPosition(position, editor.getOutputDimensions()).filter(function (s) {
       return s instanceof Sticker;
     });
 
@@ -26272,7 +26462,8 @@ StickerControls.defaultOptions = {
   replaceCategories: false,
   selectableStickers: null,
   tooltips: false,
-  hideCategories: false
+  hideCategories: false,
+  fixedRatio: true
 };
 
 exports.default = StickerControls;
@@ -26484,8 +26675,8 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
 
     var editor = this.context.editor;
 
-    editor.setZoom('auto', function () {
-      editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto', function () {
+      editor.features.disable('zoom', 'drag');
     });
   };
 
@@ -26692,8 +26883,8 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
       var sprite = _this6._operation.createSticker({
         name: sticker.name,
         image: image,
-        position: editor.getFinalDimensions().divide(2),
-        scale: new _globals.Vector2(1.0, 1.0),
+        position: new _globals.Vector2(0.5, 0.5),
+        dimensions: new _globals.Vector2(image.width, image.height),
         rotation: 0
       });
       _this6._operation.addSprite(sprite);
@@ -27025,7 +27216,7 @@ var StickerControlsOverlayComponent = function (_BaseComponent) {
     return _globals.ReactBEM.createElement(
       'div',
       {
-        bem: '$b:stickerControlsOverlay' },
+        bem: '$b:spritesControlsOverlay' },
       this._renderItems()
     );
   };
@@ -27262,12 +27453,12 @@ var TextControls = function (_Controls) {
 
     var operation = this.getSharedState('operation');
 
-    editor.addHistory(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
+    editor.history.add(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
 
     operation.setEnabled(true);
 
-    editor.undoZoom();
-    editor.enableFeatures('zoom', 'drag');
+    editor.zoom.undo();
+    editor.features.enable('zoom', 'drag');
     editor.render();
   };
 
@@ -27283,8 +27474,9 @@ var TextControls = function (_Controls) {
   TextControls.onEnter = function onEnter(sharedState) {
     var editor = this.context.editor;
 
-    var operationExistedBefore = editor.operationExists('sprite');
-    var operation = editor.getOrCreateOperation('sprite');
+    var outputDimensions = editor.getOutputDimensions();
+    var operationExistedBefore = editor.operations.exists('sprite');
+    var operation = editor.operations.getOrCreate('sprite');
     var sprites = operation.getSprites();
     var initialOptions = operation.serializeOptions();
     var selectedSprite = this.getSharedState('selectedSprite');
@@ -27299,13 +27491,13 @@ var TextControls = function (_Controls) {
       var sdk = editor.getSDK();
       var renderer = sdk.getRenderer();
 
-      var finalDimensions = sdk.getFinalDimensions();
+      var maxTextureSize = renderer.getMaxTextureSize();
       var text = operation.createText({
         text: _globals.Constants.DEFAULTS.TEXT,
-        position: finalDimensions.clone().divide(2),
-        maxWidth: finalDimensions.x / 2,
-        maxHeight: renderer.getMaxTextureSize() || sdk.getFinalDimensions().y * 3,
-        fontSize: Math.round(finalDimensions.y * 0.08),
+        position: new _globals.Vector2(0.5, 0.5),
+        maxWidth: 0.5,
+        maxHeight: maxTextureSize ? maxTextureSize / outputDimensions.y : 3,
+        fontSize: 0.08,
         fontFamily: defaultFont.fontFamily,
         fontWeight: defaultFont.fontWeight,
         alignment: 'center'
@@ -27375,10 +27567,10 @@ var TextControls = function (_Controls) {
 
 
   TextControls.clickAtPosition = function clickAtPosition(position, editor) {
-    if (!editor.operationExists('sprite')) return false;
+    if (!editor.operations.exists('sprite')) return false;
 
-    var operation = editor.getOrCreateOperation('sprite');
-    var sprites = operation.getSpritesAtPosition(position).filter(function (s) {
+    var operation = editor.operations.getOrCreate('sprite');
+    var sprites = operation.getSpritesAtPosition(position, editor.getOutputDimensions()).filter(function (s) {
       return s instanceof Text;
     });
 
@@ -27486,8 +27678,84 @@ var _spritesCanvasControlsComponent = __webpack_require__(69);
 
 var _spritesCanvasControlsComponent2 = _interopRequireDefault(_spritesCanvasControlsComponent);
 
+var _textControlsOverlayComponent = __webpack_require__(224);
+
+var _textControlsOverlayComponent2 = _interopRequireDefault(_textControlsOverlayComponent);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var TextCanvasControlsComponent = function (_SpritesCanvasControl) {
+  (0, _inherits3.default)(TextCanvasControlsComponent, _SpritesCanvasControl);
+
+  function TextCanvasControlsComponent() {
+    (0, _classCallCheck3.default)(this, TextCanvasControlsComponent);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, _SpritesCanvasControl.call.apply(_SpritesCanvasControl, [this].concat(args)));
+
+    _this._bindAll('_onTextEdit');
+    return _this;
+  }
+
+  // -------------------------------------------------------------------------- EVENTS
+
+  /**
+   * Gets called when the selected item is deselected
+   * @private
+   */
+
+
+  TextCanvasControlsComponent.prototype._onItemBlur = function _onItemBlur() {
+    var sprite = this.getSharedState('selectedSprite');
+    if (sprite && sprite.getText() === '') {
+      sprite.setText(_globals.Constants.DEFAULTS.TEXT);
+      sprite._edited = false;
+    }
+  };
+
+  /**
+   * Gets called when the user removes the selected sprite
+   * @private
+   */
+
+
+  TextCanvasControlsComponent.prototype._onSpriteRemove = function _onSpriteRemove() {
+    _SpritesCanvasControl.prototype._onSpriteRemove.call(this);
+    this.props.onSwitchControls('home');
+  };
+
+  /**
+   * Gets called when the clicks the edit button
+   * @private
+   */
+
+
+  TextCanvasControlsComponent.prototype._onTextEdit = function _onTextEdit() {
+    var sprite = this.getSharedState('selectedSprite');
+    this.refs['sprite-' + sprite.getId()].enterEditMode();
+  };
+
+  /**
+   * This renders controls on top of the sprites
+   * @return {ReactBEM.Element}
+   * @private
+   */
+
+
+  TextCanvasControlsComponent.prototype._renderOverlayControls = function _renderOverlayControls() {
+    if (!this.getSharedState('selectedSprite')) return;
+
+    return _globals.ReactBEM.createElement(_textControlsOverlayComponent2.default, {
+      onTakeToFront: this._onSpriteTakeToFront,
+      onRemove: this._onSpriteRemove,
+      onEdit: this._onTextEdit });
+  };
+
+  return TextCanvasControlsComponent;
+}(_spritesCanvasControlsComponent2.default); /** @jsx ReactBEM.createElement **/
 /*
  * This file is part of PhotoEditorSDK.
  *
@@ -27501,42 +27769,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  *
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
-var TextCanvasControlsComponent = function (_SpritesCanvasControl) {
-  (0, _inherits3.default)(TextCanvasControlsComponent, _SpritesCanvasControl);
 
-  function TextCanvasControlsComponent() {
-    (0, _classCallCheck3.default)(this, TextCanvasControlsComponent);
-    return (0, _possibleConstructorReturn3.default)(this, _SpritesCanvasControl.apply(this, arguments));
-  }
-
-  // -------------------------------------------------------------------------- EVENTS
-
-  /**
-   * Gets called when the selected item is deselected
-   * @private
-   */
-  TextCanvasControlsComponent.prototype._onItemBlur = function _onItemBlur() {
-    var sprite = this.getSharedState('selectedSprite');
-    if (sprite && sprite.getText() === '') {
-      sprite.setText(_globals.Constants.DEFAULTS.TEXT);
-      sprite._edited = false;
-    }
-  };
-
-  /**
-   * Gets called when the user removes the selected sprite
-   * @param  {String} direction
-   * @private
-   */
-
-
-  TextCanvasControlsComponent.prototype._onSpriteRemove = function _onSpriteRemove() {
-    _SpritesCanvasControl.prototype._onSpriteRemove.call(this);
-    this.props.onSwitchControls('home');
-  };
-
-  return TextCanvasControlsComponent;
-}(_spritesCanvasControlsComponent2.default);
 
 exports.default = TextCanvasControlsComponent;
 
@@ -27648,8 +27881,8 @@ var TextControlsComponent = function (_ControlsComponent) {
 
     var editor = this.context.editor;
 
-    editor.setZoom('auto', function () {
-      editor.disableFeatures('zoom', 'drag');
+    editor.zoom.set('auto', function () {
+      editor.features.disable('zoom', 'drag');
     });
   };
 
@@ -27690,8 +27923,9 @@ var TextControlsComponent = function (_ControlsComponent) {
 
 
   TextControlsComponent.prototype._onFontSizeChange = function _onFontSizeChange(fontSize) {
+    var outputDimensions = this.context.editor.getOutputDimensions();
     var selectedText = this.getSharedState('selectedSprite');
-    selectedText.setFontSize(fontSize);
+    selectedText.setFontSize(fontSize / outputDimensions.y);
     this.forceUpdate();
   };
 
@@ -27817,7 +28051,7 @@ var TextControlsComponent = function (_ControlsComponent) {
     var outputDimensions = editor.getOutputDimensions();
 
     var maxFontSize = Math.round(outputDimensions.y);
-    var fontSize = selectedText.getFontSize();
+    var fontSize = Math.round(selectedText.getFontSize() * outputDimensions.y);
     return _globals.ReactBEM.createElement(_sliderOverlayComponent2.default, {
       value: fontSize,
       maxValue: maxFontSize,
@@ -27835,6 +28069,8 @@ var TextControlsComponent = function (_ControlsComponent) {
   TextControlsComponent.prototype._renderSizeItem = function _renderSizeItem() {
     var selectedText = this.getSharedState('selectedSprite');
     if (!selectedText) return;
+
+    var outputDimensions = this.context.editor.getOutputDimensions();
 
     var fontSize = selectedText.getFontSize();
     var className = this.state.mode === 'size' ? 'is-active' : null;
@@ -27856,7 +28092,7 @@ var TextControlsComponent = function (_ControlsComponent) {
           _globals.ReactBEM.createElement(
             'div',
             { bem: 'b:fontSize e:text' },
-            fontSize
+            Math.round(fontSize * outputDimensions.y)
           ),
           _globals.ReactBEM.createElement(
             'div',
@@ -27913,6 +28149,7 @@ var TextControlsComponent = function (_ControlsComponent) {
           {
             bem: '$e:button m:withLabel',
             className: className,
+            'data-identifier': 'font',
             onClick: this._switchToMode.bind(this, 'font') },
           _globals.ReactBEM.createElement(_fontPreviewComponent2.default, {
             fontFamily: selectedText.getFontFamily(),
@@ -28005,7 +28242,7 @@ var TextControlsComponent = function (_ControlsComponent) {
 
 
   TextControlsComponent.prototype.renderControls = function renderControls() {
-    var listItems = [this._renderSizeItem(), this._renderFontItem(), this._renderAlignmentItem(), _globals.ReactBEM.createElement('li', { bem: 'e:separator' }), this._renderTakeToFrontItem()];
+    var listItems = [this._renderSizeItem(), this._renderFontItem(), this._renderAlignmentItem()];
 
     var selectedText = this.getSharedState('selectedSprite');
 
@@ -28051,6 +28288,151 @@ TextControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ },
 /* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(2);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _globals = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TextControlsOverlayComponent = function (_BaseComponent) {
+  (0, _inherits3.default)(TextControlsOverlayComponent, _BaseComponent);
+
+  function TextControlsOverlayComponent() {
+    (0, _classCallCheck3.default)(this, TextControlsOverlayComponent);
+    return (0, _possibleConstructorReturn3.default)(this, _BaseComponent.apply(this, arguments));
+  }
+
+  // -------------------------------------------------------------------------- EVENTS
+
+  /**
+   * Gets called when the user clicks the `edit` item
+   * @param  {Event} e
+   * @private
+   */
+  TextControlsOverlayComponent.prototype._onEditClick = function _onEditClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    this.props.onEdit && this.props.onEdit();
+  };
+
+  /**
+   * Gets called when the user clicks the `take to front` item
+   * @param  {Event} e
+   * @private
+   */
+
+
+  TextControlsOverlayComponent.prototype._onTakeToFrontClick = function _onTakeToFrontClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    this.props.onTakeToFront && this.props.onTakeToFront();
+  };
+
+  /**
+   * Gets called when the user clicks the `remove` item
+   * @param  {Event} e
+   * @private
+   */
+
+
+  TextControlsOverlayComponent.prototype._onRemoveClick = function _onRemoveClick(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    this.props.onRemove && this.props.onRemove();
+  };
+
+  // -------------------------------------------------------------------------- RENDERING
+
+  /**
+   * Renders the items of this component
+   * @return {Array.<ReactBEM.Element>}
+   */
+
+
+  TextControlsOverlayComponent.prototype._renderItems = function _renderItems() {
+    var items = [_globals.ReactBEM.createElement(
+      'div',
+      { bem: '$e:item', onClick: this._onTakeToFrontClick.bind(this) },
+      _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/sprites/take-to-front.png', true) })
+    )];
+
+    if (_globals.Utils.isMobile()) {
+      items = items.concat([_globals.ReactBEM.createElement('div', { bem: '$e:separator' }), _globals.ReactBEM.createElement(
+        'div',
+        { bem: '$e:item', onClick: this._onEditClick.bind(this) },
+        _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/sprites/edit.png', true) })
+      )]);
+    }
+
+    items = items.concat([_globals.ReactBEM.createElement('div', { bem: '$e:separator' }), _globals.ReactBEM.createElement(
+      'div',
+      { bem: '$e:item', onClick: this._onRemoveClick.bind(this) },
+      _globals.ReactBEM.createElement('img', { bem: 'e:icon', src: this._getAssetPath('controls/sprites/remove.png', true) })
+    )]);
+
+    return items;
+  };
+
+  /**
+   * Renders this component
+   * @return {ReactBEM.Element}
+   */
+
+
+  TextControlsOverlayComponent.prototype.renderWithBEM = function renderWithBEM() {
+    return _globals.ReactBEM.createElement(
+      'div',
+      {
+        bem: '$b:spritesControlsOverlay' },
+      this._renderItems()
+    );
+  };
+
+  return TextControlsOverlayComponent;
+}(_globals.BaseComponent); /** @jsx ReactBEM.createElement **/
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+exports.default = TextControlsOverlayComponent;
+
+
+TextControlsOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
+
+/***/ },
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28126,7 +28508,7 @@ exports.default = DoneButtonComponent;
 DoneButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 225 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28229,7 +28611,7 @@ exports.default = HeaderComponent;
 HeaderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 226 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28253,19 +28635,19 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _globals = __webpack_require__(1);
 
-var _loadingModalComponent = __webpack_require__(228);
+var _loadingModalComponent = __webpack_require__(229);
 
 var _loadingModalComponent2 = _interopRequireDefault(_loadingModalComponent);
 
-var _warningModalComponent = __webpack_require__(230);
+var _warningModalComponent = __webpack_require__(231);
 
 var _warningModalComponent2 = _interopRequireDefault(_warningModalComponent);
 
-var _errorModalComponent = __webpack_require__(227);
+var _errorModalComponent = __webpack_require__(228);
 
 var _errorModalComponent2 = _interopRequireDefault(_errorModalComponent);
 
-var _progressModalComponent = __webpack_require__(229);
+var _progressModalComponent = __webpack_require__(230);
 
 var _progressModalComponent2 = _interopRequireDefault(_progressModalComponent);
 
@@ -28407,7 +28789,7 @@ exports.default = ModalContainerComponent;
 ModalContainerComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 227 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28527,7 +28909,7 @@ ErrorModalComponent.propTypes = {
 ErrorModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 228 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28612,7 +28994,7 @@ LoadingModalComponent.propTypes = {
 LoadingModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 229 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28711,7 +29093,7 @@ ProgressModalComponent.propTypes = {
 ProgressModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 230 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28802,7 +29184,7 @@ WarningModalComponent.propTypes = {
 WarningModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 231 */
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28872,7 +29254,7 @@ var CanvasComponent = function (_BaseComponent) {
 
     var sdk = editor.getSDK();
     sdk.resizeTo(this._getContainerDimensions());
-    editor.setZoom('auto');
+    editor.zoom.set('auto');
   };
 
   /**
@@ -28924,7 +29306,7 @@ var CanvasComponent = function (_BaseComponent) {
   CanvasComponent.prototype._onDragStart = function _onDragStart(e) {
     var editor = this.context.editor;
 
-    if (!editor.isFeatureEnabled('drag')) return;
+    if (!editor.features.isEnabled('drag')) return;
 
     e.preventDefault();
 
@@ -29017,7 +29399,7 @@ var CanvasComponent = function (_BaseComponent) {
       canvasContent = this.props.children;
     }
 
-    var dragEnabled = this.context.editor.isFeatureEnabled('drag');
+    var dragEnabled = this.context.editor.features.isEnabled('drag');
 
     return _globals.ReactBEM.createElement(
       'div',
@@ -29065,7 +29447,7 @@ exports.default = CanvasComponent;
 CanvasComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 232 */
+/* 233 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29097,7 +29479,7 @@ var _screenComponent = __webpack_require__(40);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _canvasComponent = __webpack_require__(231);
+var _canvasComponent = __webpack_require__(232);
 
 var _canvasComponent2 = _interopRequireDefault(_canvasComponent);
 
@@ -29109,7 +29491,7 @@ var _overview = __webpack_require__(206);
 
 var _overview2 = _interopRequireDefault(_overview);
 
-var _editor3 = __webpack_require__(250);
+var _editor3 = __webpack_require__(251);
 
 var _editor4 = _interopRequireDefault(_editor3);
 
@@ -29160,6 +29542,9 @@ var EditorScreenComponent = function (_ScreenComponent) {
     _this._editor.on('ready', _this._startEditor);
     _this._editor.on('resize', _this._onImageResize);
     _this._editor.on('render-error', _this._onRenderError);
+
+    _this._forceControls = _this.context.options.editor.forceControls;
+    _this._forceControlIndex = 0;
     return _this;
   }
 
@@ -29178,6 +29563,8 @@ var EditorScreenComponent = function (_ScreenComponent) {
     this.setImage(image);
     this._editor.render();
 
+    this._switchToNextForceControl();
+
     var options = this.context.options;
 
     if (options.responsive) {
@@ -29194,7 +29581,6 @@ var EditorScreenComponent = function (_ScreenComponent) {
     _ScreenComponent.prototype.componentWillUnmount.call(this);
 
     this._editor.dispose();
-
     var options = this.context.options;
 
     if (options.responsive) {
@@ -29210,6 +29596,36 @@ var EditorScreenComponent = function (_ScreenComponent) {
 
   EditorScreenComponent.prototype._startEditor = function _startEditor() {
     this._editor.start();
+  };
+
+  // -------------------------------------------------------------------------- FORCE CONTROLS
+
+  /**
+   * Switches to the next forced control
+   * @private
+   */
+
+
+  EditorScreenComponent.prototype._switchToNextForceControl = function _switchToNextForceControl() {
+    if (this._forceControlIndex < this._forceControls.length) {
+      var _forceControls$_force = this._forceControls[this._forceControlIndex];
+      var control = _forceControls$_force.control;
+      var options = _forceControls$_force.options;
+
+      var availableControls = this._editor.controls.getAvailable();
+      var controlObject = availableControls[control];
+
+      var fixedOptions = _globals.SDKUtils.defaults({
+        forcedControl: true
+      }, options);
+
+      if (!controlObject) {
+        throw new Error('Force controls: Could not find control with identifier `' + control + '`');
+      }
+
+      this.switchToControls(controlObject, {}, null, fixedOptions);
+      this._forceControlIndex++;
+    }
   };
 
   // -------------------------------------------------------------------------- EVENTS
@@ -29253,11 +29669,13 @@ var EditorScreenComponent = function (_ScreenComponent) {
 
       loadingModal.close();
 
-      _modalManager2.default.instance.displayWarning(_this2._t('warnings.imageResized_' + reason + '.title'), _this2._t('warnings.imageResized_' + reason + '.text', {
-        maxMegaPixels: _this2._editor.getMaxMegapixels(),
-        width: dimensions.x,
-        height: dimensions.y
-      }));
+      if (_this2.context.options.editor.displayResizeMessage) {
+        _modalManager2.default.instance.displayWarning(_this2._t('warnings.imageResized_' + reason + '.title'), _this2._t('warnings.imageResized_' + reason + '.text', {
+          maxMegaPixels: _this2._editor.getMaxMegapixels(),
+          width: dimensions.x,
+          height: dimensions.y
+        }));
+      }
     });
   };
 
@@ -29292,22 +29710,27 @@ var EditorScreenComponent = function (_ScreenComponent) {
    * @param  {Component} controls
    * @param  {Object} [initialState] = {}
    * @param  {Function} [callback]
+   * @param  {Object} [controlOptions]
    */
 
 
   EditorScreenComponent.prototype.switchToControls = function switchToControls(controls) {
     var initialState = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
     var callback = arguments.length <= 2 || arguments[2] === undefined ? null : arguments[2];
+    var controlOptions = arguments[3];
 
     var newControls = null;
     if (controls === 'back') {
       newControls = this._previousControlsStack.pop();
     } else if (controls === 'home') {
+      // When a control switches to `home`, override this action
+      // with switching to the next force control (if present)
+      if (this._forceControlIndex < this._forceControls.length) {
+        return this._switchToNextForceControl();
+      }
+
       newControls = _overview2.default;
       this._previousControlsStack = [];
-    } else if (typeof controls === 'string') {
-      var allControls = this.context.ui.getAvailableControls();
-      newControls = allControls[controls];
     } else {
       newControls = controls;
       this._previousControlsStack.push(this.state.controls);
@@ -29324,7 +29747,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
     this.state.sharedState.clear();
     this.state.sharedState.set(initialState, false);
 
-    var controlsOptions = _globals.SDKUtils.defaults(this.context.options.editor.controlsOptions[newControls.identifier], newControls.defaultOptions);
+    var controlsOptions = _globals.SDKUtils.defaults(controlOptions || this.context.options.editor.controlsOptions[newControls.identifier], newControls.defaultOptions);
 
     // If the new controls have an `onEnter` method, call it
     if (newControls.onEnter) {
@@ -29408,7 +29831,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
 
 
   EditorScreenComponent.prototype._showUndoButton = function _showUndoButton() {
-    return this._editor.historyAvailable();
+    return this._editor.history.isAvailable();
   };
 
   /**
@@ -29481,6 +29904,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
       canvasControls = _globals.ReactBEM.createElement(CanvasControlsComponent, {
         onSwitchControls: this.switchToControls,
         sharedState: this.state.sharedState,
+        options: this.state.controlsOptions,
         app: this.props.app,
         ref: 'canvasControls' });
     }
@@ -29530,7 +29954,7 @@ EditorScreenComponent.childContextTypes = {
 EditorScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ },
-/* 233 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29637,7 +30061,7 @@ exports.default = LibraryComponent;
 LibraryComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 234 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29719,7 +30143,7 @@ exports.default = PhotoComponent;
 PhotoComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 235 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29904,7 +30328,7 @@ exports.default = NoSearchResultsComponent;
 NoSearchResultsComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 236 */
+/* 237 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29914,7 +30338,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _slicedToArray2 = __webpack_require__(274);
+var _slicedToArray2 = __webpack_require__(280);
 
 var _slicedToArray3 = _interopRequireDefault(_slicedToArray2);
 
@@ -29936,7 +30360,7 @@ var _modalManager = __webpack_require__(18);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _libraryComponent = __webpack_require__(233);
+var _libraryComponent = __webpack_require__(234);
 
 var _libraryComponent2 = _interopRequireDefault(_libraryComponent);
 
@@ -30211,7 +30635,7 @@ exports.default = OverviewComponent;
 OverviewComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 237 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30239,11 +30663,11 @@ var _screenComponent = __webpack_require__(40);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _topBarComponent = __webpack_require__(240);
+var _topBarComponent = __webpack_require__(241);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _overviewComponent = __webpack_require__(236);
+var _overviewComponent = __webpack_require__(237);
 
 var _overviewComponent2 = _interopRequireDefault(_overviewComponent);
 
@@ -30251,7 +30675,7 @@ var _photoListComponent = __webpack_require__(119);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _searchResultsComponent = __webpack_require__(238);
+var _searchResultsComponent = __webpack_require__(239);
 
 var _searchResultsComponent2 = _interopRequireDefault(_searchResultsComponent);
 
@@ -30523,7 +30947,7 @@ PhotoRollScreenComponent.childContextTypes = {
 PhotoRollScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ },
-/* 238 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30551,7 +30975,7 @@ var _photoListComponent = __webpack_require__(119);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _noSearchResultsComponent = __webpack_require__(235);
+var _noSearchResultsComponent = __webpack_require__(236);
 
 var _noSearchResultsComponent2 = _interopRequireDefault(_noSearchResultsComponent);
 
@@ -30678,7 +31102,7 @@ exports.default = SearchResultsComponent;
 SearchResultsComponent.contextTypes = _photoListComponent2.default.contextTypes;
 
 /***/ },
-/* 239 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30750,7 +31174,7 @@ exports.default = TopBarButtonComponent;
 TopBarButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 240 */
+/* 241 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30778,7 +31202,7 @@ var _topBarComponent = __webpack_require__(55);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _topBarButtonComponent = __webpack_require__(239);
+var _topBarButtonComponent = __webpack_require__(240);
 
 var _topBarButtonComponent2 = _interopRequireDefault(_topBarButtonComponent);
 
@@ -30786,11 +31210,11 @@ var _invisibleUploadComponent = __webpack_require__(71);
 
 var _invisibleUploadComponent2 = _interopRequireDefault(_invisibleUploadComponent);
 
-var _topBarSearchComponent = __webpack_require__(241);
+var _topBarSearchComponent = __webpack_require__(242);
 
 var _topBarSearchComponent2 = _interopRequireDefault(_topBarSearchComponent);
 
-var _backButtonComponent = __webpack_require__(248);
+var _backButtonComponent = __webpack_require__(249);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
@@ -30968,7 +31392,7 @@ exports.default = PhotoRollTopBarComponent;
 PhotoRollTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ },
-/* 241 */
+/* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31208,7 +31632,7 @@ exports.default = TopBarSearchComponent;
 TopBarSearchComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 242 */
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31334,7 +31758,7 @@ exports.default = PhotoRollComponent;
 PhotoRollComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ },
-/* 243 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31362,15 +31786,15 @@ var _screenComponent = __webpack_require__(40);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _uploadComponent = __webpack_require__(244);
+var _uploadComponent = __webpack_require__(245);
 
 var _uploadComponent2 = _interopRequireDefault(_uploadComponent);
 
-var _webcamComponent = __webpack_require__(245);
+var _webcamComponent = __webpack_require__(246);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
-var _photoRollComponent = __webpack_require__(242);
+var _photoRollComponent = __webpack_require__(243);
 
 var _photoRollComponent2 = _interopRequireDefault(_photoRollComponent);
 
@@ -31519,7 +31943,7 @@ exports.default = SplashScreenComponent;
 SplashScreenComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31774,7 +32198,7 @@ UploadComponent.propTypes = {
 UploadComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ },
-/* 245 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31902,7 +32326,7 @@ exports.default = WebcamComponent;
 WebcamComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ },
-/* 246 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32129,7 +32553,7 @@ WebcamComponent.propTypes = {
 WebcamComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 247 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32161,7 +32585,7 @@ var _topBarComponent = __webpack_require__(55);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _webcamComponent = __webpack_require__(246);
+var _webcamComponent = __webpack_require__(247);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
@@ -32309,7 +32733,7 @@ exports.default = WebcamScreenComponent;
 WebcamScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32388,7 +32812,7 @@ exports.default = TopBarBackButtonComponent;
 TopBarBackButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -32416,9 +32840,7 @@ exports.default = {
     RENDER: 'render',
     EXPORT: 'export',
     CLOSE: 'close',
-    ZOOM: 'zoom',
     ZOOM_DONE: 'zoom:done',
-    ZOOM_UNDO: 'zoom:undo',
     OPERATION_CREATED: 'operation:created',
     OPERATION_UPDATED: 'operation:updated',
     OPERATION_REMOVED: 'operation:removed',
@@ -32711,7 +33133,7 @@ exports.default = {
 };
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32735,19 +33157,33 @@ var _inherits3 = _interopRequireDefault(_inherits2);
 
 var _globals = __webpack_require__(1);
 
-var _controls = __webpack_require__(204);
-
-var Controls = _interopRequireWildcard(_controls);
-
-var _exporter = __webpack_require__(251);
+var _exporter = __webpack_require__(257);
 
 var _exporter2 = _interopRequireDefault(_exporter);
 
-var _imageResizer = __webpack_require__(254);
+var _imageResizer = __webpack_require__(260);
 
 var _imageResizer2 = _interopRequireDefault(_imageResizer);
 
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+var _operations = __webpack_require__(255);
+
+var _operations2 = _interopRequireDefault(_operations);
+
+var _controls = __webpack_require__(252);
+
+var _controls2 = _interopRequireDefault(_controls);
+
+var _features = __webpack_require__(253);
+
+var _features2 = _interopRequireDefault(_features);
+
+var _zoom = __webpack_require__(256);
+
+var _zoom2 = _interopRequireDefault(_zoom);
+
+var _history = __webpack_require__(254);
+
+var _history2 = _interopRequireDefault(_history);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32782,24 +33218,23 @@ var Editor = function (_EventEmitter) {
     _this._ui = ui;
     _this._options = options;
     _this._mediator = mediator;
-    _this._isDefaultZoom = false;
     _this._ready = false;
-
     _this._padding = [0, 0, 0, 0];
 
     _this._initSDK();
-    _this._initOperations();
-    _this._initControls();
-    _this._initSerializers();
 
-    _this._features = {
-      drag: true,
-      zoom: true
-    };
-    _this._history = [];
-    _this._operationsMap = {};
-    _this._operationsStack = _this._sdk.getOperationsStack();
-    _this._preferredOperationOrder = _this._options.editor.operationsOrder;
+    _this._onZoom = _this._onZoom.bind(_this);
+    _this._onUndo = _this._onUndo.bind(_this);
+
+    _this.operations = new _operations2.default(_this, _this._sdk, _this._mediator);
+    _this.controls = new _controls2.default(_this, _this._sdk, _this._mediator);
+    _this.features = new _features2.default(_this, _this._sdk, _this._mediator);
+    _this.history = new _history2.default(_this, _this._sdk, _this._mediator);
+    _this.history.on('undo', _this._onUndo);
+    _this.zoom = new _zoom2.default(_this, _this._sdk, _this._mediator);
+    _this.zoom.on('set', _this._onZoom);
+
+    _this._initSerializers();
 
     // Rendering
     _this._running = false;
@@ -32807,19 +33242,9 @@ var Editor = function (_EventEmitter) {
     _this._renderCallbacks = [];
     _this._animationFrameRequest = null;
 
-    // Zoom
-    _this._previousZoom = null;
-
-    _this.setZoom = _this.setZoom.bind(_this);
-    _this.undoZoom = _this.undoZoom.bind(_this);
     _this.render = _this.render.bind(_this);
     _this._tick = _this._tick.bind(_this);
 
-    _this._mediator.on(_globals.Constants.EVENTS.RENDER, _this.render);
-    _this._mediator.on(_globals.Constants.EVENTS.ZOOM, _this.setZoom);
-    _this._mediator.on(_globals.Constants.EVENTS.ZOOM_UNDO, _this.undoZoom);
-
-    _this._fixOperationsStack();
     _this._initWatermark();
     return _this;
   }
@@ -32891,7 +33316,7 @@ var Editor = function (_EventEmitter) {
 
   Editor.prototype._initWatermark = function _initWatermark() {
     if (this._options.watermark) {
-      this._watermarkOperation = this.getOrCreateOperation('watermark', {
+      this._watermarkOperation = this.operations.getOrCreate('watermark', {
         image: this._options.watermark
       });
     }
@@ -32925,206 +33350,36 @@ var Editor = function (_EventEmitter) {
     window.sdk = this._sdk;
   };
 
-  /**
-   * Initializes the available and enabled controls
-   * @private
-   */
-
-
-  Editor.prototype._initOperations = function _initOperations() {
-    this._availableOperations = this._sdk.getOperations();
-  };
-
-  /**
-   * Since the SDK might create some operations upfront (e.g. to fix the EXIF orientation),
-   * we might have operations at array positions where they should not be. This method
-   * moves them to their appropriate position
-   * @private
-   */
-
-
-  Editor.prototype._fixOperationsStack = function _fixOperationsStack() {
-    var _this3 = this;
-
-    var stack = this._operationsStack.getStack().slice();
-    this._operationsStack.clear();
-
-    stack.forEach(function (s) {
-      _this3.addOperation(s);
-    });
-  };
-
-  /**
-   * Initializes the available and enabled controls
-   * @private
-   */
-
-
-  Editor.prototype._initControls = function _initControls() {
-    this._availableControls = _globals.SDKUtils.extend({}, Controls, this._options.extensions.controls);
-  };
-
-  // -------------------------------------------------------------------------- FEATURES
-
-  /**
-   * Checks if the feature with the given identifier is enabled
-   * @param  {String}  identifier
-   * @return {Boolean}
-   */
-
-
-  Editor.prototype.isFeatureEnabled = function isFeatureEnabled(identifier) {
-    var capitalizedIdentifier = identifier.charAt(0).toUpperCase() + identifier.slice(1);
-    var optionEnabled = this._options.editor['enable' + capitalizedIdentifier];
-    return this._features[identifier] && optionEnabled;
-  };
-
-  /**
-   * Enables the features with the given identifiers
-   * @param  {String[]} identifiers
-   */
-
-
-  Editor.prototype.enableFeatures = function enableFeatures() {
-    var _this4 = this;
-
-    for (var _len = arguments.length, identifiers = Array(_len), _key = 0; _key < _len; _key++) {
-      identifiers[_key] = arguments[_key];
-    }
-
-    identifiers.forEach(function (identifier) {
-      _this4._features[identifier] = true;
-    });
-    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_ENABLED, identifiers);
-    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_UPDATED, identifiers);
-  };
-
-  /**
-   * Disables the features with the given identifiers
-   * @param  {String[]} identifiers
-   */
-
-
-  Editor.prototype.disableFeatures = function disableFeatures() {
-    var _this5 = this;
-
-    for (var _len2 = arguments.length, identifiers = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-      identifiers[_key2] = arguments[_key2];
-    }
-
-    identifiers.forEach(function (identifier) {
-      _this5._features[identifier] = false;
-    });
-    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_DISABLED, identifiers);
-    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_UPDATED, identifiers);
-  };
-
   // -------------------------------------------------------------------------- ZOOMING
 
   /**
-   * Zooms in the editor
+   * Gets called after a new zoom level has been set. Re-renders the editor.
+   * @param  {Number} zoom
+   * @param  {Function} [callback]
+   * @private
    */
 
 
-  Editor.prototype.zoomIn = function zoomIn() {
-    var zoom = this._sdk.getZoom();
-    this.setZoom(zoom + 0.1);
-  };
+  Editor.prototype._onZoom = function _onZoom(zoom) {
+    var _this3 = this;
 
-  /**
-   * Zooms out the editor
-   */
+    var callback = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
 
-
-  Editor.prototype.zoomOut = function zoomOut() {
-    var zoom = this._sdk.getZoom();
-    this.setZoom(zoom - 0.1);
-  };
-
-  /**
-   * Switches to the previous zoom
-   */
-
-
-  Editor.prototype.undoZoom = function undoZoom() {
-    if (!this._previousZoom) return;
-    this.setZoom(this._previousZoom);
-    this._previousZoom = null;
-  };
-
-  /**
-   * Returns the current zoom level
-   * @return {Number}
-   */
-
-
-  Editor.prototype.getZoom = function getZoom() {
-    return this._sdk.getZoom();
-  };
-
-  /**
-   * Sets the zoom to the given one
-   * @param {Number} zoom
-   * @param {Function} [callback]
-   */
-
-
-  Editor.prototype.setZoom = function setZoom(zoom, callback) {
-    var _this6 = this;
-
-    if (!this._ready) {
-      return;
-    }
-    this._previousZoom = this._sdk.getZoom();
-
-    var newZoom = zoom;
-    var defaultZoom = this.getDefaultZoom();
-    if (zoom === 'auto' || newZoom === defaultZoom) {
-      newZoom = defaultZoom;
-      zoom = 'auto';
-
-      this._isDefaultZoom = true;
-    } else {
-      this._isDefaultZoom = false;
-    }
-
-    var maxZoom = Math.max(1, defaultZoom * 2);
-    var minZoom = this.getMinimumZoom();
-    newZoom = Math.max(minZoom, Math.min(maxZoom, newZoom));
-
-    this._sdk.setZoom(newZoom);
     this.fixOffset();
     this.render(function () {
-      _this6._mediator.emit(_globals.Constants.EVENTS.ZOOM_DONE);
+      _this3._mediator.emit(_globals.Constants.EVENTS.ZOOM_DONE);
       callback && callback();
     });
   };
 
   /**
-   * Returns the default zoom level
-   * @return {Number}
+   * Gets called after an undo happened
+   * @private
    */
 
 
-  Editor.prototype.getDefaultZoom = function getDefaultZoom() {
-    var finalDimensions = this.getFinalDimensions(false);
-    var canvasDimensions = this.getCanvasDimensions();
-    var defaultDimensions = _globals.SDKUtils.resizeVectorToFit(finalDimensions, canvasDimensions);
-
-    return defaultDimensions.divide(finalDimensions).x;
-  };
-
-  /**
-   * Returns the minimum zoom level
-   * @return {Number}
-   */
-
-
-  Editor.prototype.getMinimumZoom = function getMinimumZoom() {
-    var finalDimensions = this.getFinalDimensions();
-    var minimumDimensions = _globals.SDKUtils.resizeVectorToFit(finalDimensions, new _globals.Vector2(Editor.MIN_ZOOM_DIMENSIONS, Editor.MIN_ZOOM_DIMENSIONS));
-
-    return minimumDimensions.divide(finalDimensions).x;
+  Editor.prototype._onUndo = function _onUndo() {
+    this.render();
   };
 
   /**
@@ -33167,128 +33422,7 @@ var Editor = function (_EventEmitter) {
     this._sdk.setSpriteScale(spriteScale);
   };
 
-  // -------------------------------------------------------------------------- PUBLIC HISTORY API
-
-  /**
-   * Checks if there are any history items available
-   * @return {Boolean}
-   */
-
-
-  Editor.prototype.historyAvailable = function historyAvailable() {
-    return !!this._history.length;
-  };
-
-  /**
-   * Reverts the last change
-   */
-
-
-  Editor.prototype.undo = function undo() {
-    var _this7 = this;
-
-    var lastItem = this._history.pop();
-    if (lastItem) {
-      var items = [].concat(lastItem);
-
-      items.forEach(function (_ref2) {
-        var operation = _ref2.operation;
-        var existent = _ref2.existent;
-        var options = _ref2.options;
-        var undo = _ref2.undo;
-
-        if (!existent) {
-          _this7.removeOperation(operation);
-        } else {
-          operation = _this7.getOrCreateOperation(operation.constructor.identifier);
-          operation.set(options);
-          _this7._mediator.emit(_globals.Constants.EVENTS.OPERATION_UPDATED, operation);
-        }
-
-        if (typeof undo === 'function') {
-          undo(operation, options);
-        }
-
-        _this7._mediator.emit(_globals.Constants.EVENTS.HISTORY_UPDATED, operation);
-        _this7._mediator.emit(_globals.Constants.EVENTS.HISTORY_UNDO, operation);
-      });
-
-      this.render();
-    }
-  };
-
-  /**
-   * Adds the given data to the history
-   * @param {PhotoEditorSDK.Operation} operation
-   * @param {Object} options
-   * @param {Boolean} existent
-   * @param {Function} [undo]
-   * @return {Object}
-   */
-
-
-  Editor.prototype.addHistory = function addHistory(operation, options, existent) {
-    var _this8 = this;
-
-    var undo = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
-
-    var historyItem = void 0;
-    if (operation instanceof Array) {
-      var items = operation;
-      items.forEach(function (item) {
-        _this8._mediator.emit(_globals.Constants.EVENTS.HISTORY_UPDATED, item.operation);
-      });
-      this._history.push(items);
-      historyItem = items;
-    } else {
-      historyItem = {
-        operation: operation, options: options, existent: existent, undo: undo
-      };
-      this._history.push(historyItem);
-    }
-    return historyItem;
-  };
-
-  // -------------------------------------------------------------------------- PUBLIC CONTROLS API
-
-  /**
-   * Checks if the control with the given identifier is selectable
-   * @param  {String}  identifier
-   * @return {Boolean}
-   */
-
-
-  Editor.prototype.isControlEnabled = function isControlEnabled(identifier) {
-    var control = this.getControl(identifier);
-
-    if (!control) {
-      _globals.Log.info(this.constructor.name, '#isControlEnabled: Unknown control: ' + identifier);
-      return false;
-    }
-
-    return control.isAvailable && control.isAvailable(this);
-  };
-
-  /**
-   * Returns the control with the given identifier
-   * @param  {String} identifier
-   * @return {Control}
-   */
-
-
-  Editor.prototype.getControl = function getControl(identifier) {
-    return this._availableControls[identifier];
-  };
-
-  /**
-   * Returns the available controls
-   * @return {Object[]}
-   */
-
-
-  Editor.prototype.getAvailableControls = function getAvailableControls() {
-    return this._availableControls;
-  };
+  // -------------------------------------------------------------------------- MISC PRIVATE API
 
   /**
    * Checks if the control with the tool identifier is enabled
@@ -33300,110 +33434,6 @@ var Editor = function (_EventEmitter) {
   Editor.prototype.isToolEnabled = function isToolEnabled(identifier) {
     return this._options.editor.tools.indexOf(identifier) !== -1;
   };
-
-  // -------------------------------------------------------------------------- PUBLIC OPERATIONS API
-
-  /**
-   * If the operation with the given identifier already exists, it returns
-   * the existing operation. Otherwise, it creates and returns a new one.
-   * @param  {String} identifier
-   * @param  {Object} options
-   * @return {PhotoEditorSDK.Operation}
-   */
-
-
-  Editor.prototype.getOrCreateOperation = function getOrCreateOperation(identifier) {
-    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
-
-    if (this._operationsMap[identifier]) {
-      var operation = this._operationsMap[identifier];
-      return operation;
-    } else {
-      var Operation = this._availableOperations[identifier];
-      var _operation = new Operation(this._sdk, options);
-      this.addOperation(_operation);
-      return _operation;
-    }
-  };
-
-  /**
-   * Adds the given operation to the stack
-   * @param {PhotoEditorSDK.Operation} operation
-   */
-
-
-  Editor.prototype.addOperation = function addOperation(operation) {
-    var _this9 = this;
-
-    var identifier = operation.constructor.identifier;
-    operation.on('updated', function () {
-      _this9._mediator.emit(_globals.Constants.EVENTS.OPERATION_UPDATED, operation);
-    });
-    var index = this._preferredOperationOrder.indexOf(identifier);
-    if (index === -1) {
-      throw new Error('Editor#addOperation: `' + identifier + '` does not appear in `preferredOperationOrder`');
-    }
-    this._operationsStack.set(index, operation);
-    this._operationsMap[identifier] = operation;
-
-    this._mediator.emit(_globals.Constants.EVENTS.OPERATION_CREATED, operation);
-  };
-
-  /**
-   * Removes the given operation from the stack
-   * @param  {PhotoEditorSDK.Operation} operation
-   */
-
-
-  Editor.prototype.removeOperation = function removeOperation(operation) {
-    var identifier = operation.constructor.identifier;
-    var stack = this._operationsStack.getStack();
-
-    // Remove operation from map
-    if (this._operationsMap[identifier] === operation) {
-      delete this._operationsMap[identifier];
-    }
-
-    // Remove operation from stack
-    var index = stack.indexOf(operation);
-    if (index !== -1) {
-      this._operationsStack.removeAt(index);
-
-      // Set all following operations to dirty, since they might
-      // have cached stuff drawn by the removed operation
-      for (var i = index + 1; i < stack.length; i++) {
-        var _operation2 = stack[i];
-        if (!_operation2) continue;
-        _operation2.setDirty(true);
-      }
-
-      this._mediator.emit(_globals.Constants.EVENTS.OPERATION_REMOVED, operation);
-    }
-  };
-
-  /**
-   * Returns the operation with the given identifier
-   * @param  {String} identifier
-   * @return {PhotoEditorSDK.Operation}
-   */
-
-
-  Editor.prototype.getOperation = function getOperation(identifier) {
-    return this._operationsMap[identifier];
-  };
-
-  /**
-   * Checks whether an operation with the given identifier exists
-   * @param {String} identifier
-   * @return {Boolean}
-   */
-
-
-  Editor.prototype.operationExists = function operationExists(identifier) {
-    return !!this._operationsMap[identifier];
-  };
-
-  // -------------------------------------------------------------------------- MISC PRIVATE API
 
   /**
    * Returns the maximum mega pixels
@@ -33449,14 +33479,19 @@ var Editor = function (_EventEmitter) {
 
   /**
    * Returns the canvas dimensions
+   * @param  {Boolean} subtractPadding = true
    * @return {PhotoEditorSDK.Math.Vector2}
    */
 
 
   Editor.prototype.getCanvasDimensions = function getCanvasDimensions() {
+    var subtractPadding = arguments.length <= 0 || arguments[0] === undefined ? true : arguments[0];
+
     var canvas = this._sdk.getCanvas();
     var dimensions = new _globals.Vector2(canvas.offsetWidth, canvas.offsetHeight);
-    dimensions.subtract(this._padding[1] + this._padding[3], this._padding[0] + this._padding[2]);
+    if (subtractPadding) {
+      dimensions.subtract(this._padding[1] + this._padding[3], this._padding[0] + this._padding[2]);
+    }
     return dimensions;
   };
 
@@ -33480,7 +33515,7 @@ var Editor = function (_EventEmitter) {
     this._options.editor.image = image;
     this._sdk.setImage(image, exif, dimensions);
 
-    this.setZoom('auto');
+    this.zoom.set('auto');
 
     this.emit('new-image');
   };
@@ -33493,7 +33528,7 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype.export = function _export() {
-    var _this10 = this;
+    var _this4 = this;
 
     var download = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
 
@@ -33507,15 +33542,15 @@ var Editor = function (_EventEmitter) {
     var options = this._options.editor.export;
     var exporter = new _exporter2.default(this._sdk, options, download);
     return exporter.export().then(function (output) {
-      _this10.emit('export', output);
-      _this10._mediator.emit(_globals.Constants.EVENTS.EXPORT, output, _this10);
+      _this4.emit('export', output);
+      _this4._mediator.emit(_globals.Constants.EVENTS.EXPORT, output, _this4);
 
-      if (_this10._watermarkOperation) {
-        _this10._watermarkOperation.setEnabled(true);
+      if (_this4._watermarkOperation) {
+        _this4._watermarkOperation.setEnabled(true);
       }
 
       // Invalidate caches
-      _this10._sdk.setAllOperationsToDirty();
+      _this4._sdk.setAllOperationsToDirty();
 
       return output;
     });
@@ -33531,7 +33566,7 @@ var Editor = function (_EventEmitter) {
 
   Editor.prototype._initSerializers = function _initSerializers() {
     this._serializers = {
-      '1.0.0': __webpack_require__(260).default
+      '1.0.0': __webpack_require__(266).default
     };
   };
 
@@ -33597,7 +33632,7 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype.start = function start() {
-    this.setZoom('auto');
+    this.zoom.set('auto');
     this._animationFrameRequest = (0, _globals.requestAnimationFrame)(this._tick);
   };
 
@@ -33684,20 +33719,20 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype._tick = function _tick() {
-    var _this11 = this;
+    var _this5 = this;
 
     if (this._renderRequested) {
       (function () {
-        var callbacks = _this11._renderCallbacks.slice(0);
-        _this11._renderCallbacks = [];
+        var callbacks = _this5._renderCallbacks.slice(0);
+        _this5._renderCallbacks = [];
 
-        _this11._render().then(function () {
+        _this5._render().then(function () {
           callbacks.forEach(function (r) {
             return r();
           });
-          _this11._animationFrameRequest = (0, _globals.requestAnimationFrame)(_this11._tick);
+          _this5._animationFrameRequest = (0, _globals.requestAnimationFrame)(_this5._tick);
         });
-        _this11._renderRequested = false;
+        _this5._renderRequested = false;
       })();
     } else {
       this._animationFrameRequest = (0, _globals.requestAnimationFrame)(this._tick);
@@ -33711,16 +33746,16 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype._render = function _render() {
-    var _this12 = this;
+    var _this6 = this;
 
     if (!this._ready) return _globals.Promise.resolve();
 
     this._applyOffset();
 
     return this._sdk.render().then(function () {
-      _this12._lastOutputBounds = _this12._sdk.getSprite().getBounds();
+      _this6._lastOutputBounds = _this6._sdk.getSprite().getBounds();
     }).catch(function (e) {
-      _this12.emit('render-error', e);
+      _this6.emit('render-error', e);
     });
   };
 
@@ -33731,8 +33766,9 @@ var Editor = function (_EventEmitter) {
 
   Editor.prototype.reset = function reset() {
     this._sdk.reset();
-    this._history = [];
-    this._operationsMap = {};
+
+    this.history.reset();
+    this.operations.reset();
   };
 
   // -------------------------------------------------------------------------- DISPOSAL
@@ -33746,9 +33782,6 @@ var Editor = function (_EventEmitter) {
     this.stop();
 
     this._sdk.dispose();
-    this._mediator.off(_globals.Constants.EVENTS.RENDER, this.render);
-    this._mediator.off(_globals.Constants.EVENTS.ZOOM, this.setZoom);
-    this._mediator.off(_globals.Constants.EVENTS.ZOOM_UNDO, this.undoZoom);
   };
 
   // -------------------------------------------------------------------------- GETTERS / SETTERS
@@ -33784,16 +33817,6 @@ var Editor = function (_EventEmitter) {
   };
 
   /**
-   * Checks if the editor is at the default zoom level
-   * @return {Boolean}
-   */
-
-
-  Editor.prototype.isDefaultZoom = function isDefaultZoom() {
-    return this._isDefaultZoom;
-  };
-
-  /**
    * Returns the input image dimensions
    * @return {PhotoEditorSDK.Math.Vector2}s
    */
@@ -33801,16 +33824,6 @@ var Editor = function (_EventEmitter) {
 
   Editor.prototype.getInputDimensions = function getInputDimensions() {
     return this._sdk.getInputDimensions();
-  };
-
-  /**
-   * Returns the operations stack
-   * @return {PhotoEditorSDK.OperationsStack}
-   */
-
-
-  Editor.prototype.getOperationsStack = function getOperationsStack() {
-    return this._operationsStack;
   };
 
   /**
@@ -33875,7 +33888,7 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype.broadcastCrop = function broadcastCrop(operation, options) {
-    var spriteOperation = this.getOperation('sprite');
+    var spriteOperation = this.operations.get('sprite');
     if (spriteOperation) {
       spriteOperation.crop(operation, options);
     }
@@ -33888,11 +33901,11 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype.broadcastFlip = function broadcastFlip(direction) {
-    var _this13 = this;
+    var _this7 = this;
 
     var flippableOperations = ['linear-focus', 'radial-focus', 'sprite'];
     flippableOperations.forEach(function (identifier) {
-      var operation = _this13.getOperation(identifier);
+      var operation = _this7.operations.get(identifier);
       if (!operation) {
         return;
       }
@@ -33907,11 +33920,11 @@ var Editor = function (_EventEmitter) {
 
 
   Editor.prototype.broadcastRotate = function broadcastRotate(degrees) {
-    var _this14 = this;
+    var _this8 = this;
 
     var flippableOperations = ['crop', 'linear-focus', 'radial-focus', 'sprite'];
     flippableOperations.forEach(function (identifier) {
-      var operation = _this14.getOperation(identifier);
+      var operation = _this8.operations.get(identifier);
       if (!operation) {
         return;
       }
@@ -33922,12 +33935,105 @@ var Editor = function (_EventEmitter) {
   return Editor;
 }(_globals.EventEmitter);
 
-Editor.MIN_ZOOM_DIMENSIONS = 300;
-
 exports.default = Editor;
 
 /***/ },
-/* 251 */
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _controls = __webpack_require__(204);
+
+var Controls = _interopRequireWildcard(_controls);
+
+var _globals = __webpack_require__(1);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var EditorControls = function () {
+  function EditorControls(editor, sdk, mediator) {
+    (0, _classCallCheck3.default)(this, EditorControls);
+
+    this._editor = editor;
+    this._sdk = sdk;
+    this._mediator = mediator;
+
+    this._options = this._editor.getOptions();
+    this._available = _globals.SDKUtils.extend({}, Controls, this._options.extensions.controls);
+  }
+
+  /**
+   * Checks if the control with the given identifier is selectable
+   * @param  {String}  identifier
+   * @return {Boolean}
+   */
+
+
+  EditorControls.prototype.isEnabled = function isEnabled(identifier) {
+    var control = this.get(identifier);
+
+    if (!control) {
+      _globals.Log.info('EditorControls#isEnabled: Unknown control: ' + identifier);
+      return false;
+    }
+
+    return control.isAvailable && control.isAvailable(this._editor);
+  };
+
+  /**
+   * Returns the control with the given identifier
+   * @param  {String} identifier
+   * @return {Control}
+   */
+
+
+  EditorControls.prototype.get = function get(identifier) {
+    return this._available[identifier];
+  };
+
+  /**
+   * Returns the available controls
+   * @return {Object}
+   */
+
+
+  EditorControls.prototype.getAvailable = function getAvailable() {
+    return this._available;
+  };
+
+  return EditorControls;
+}();
+
+exports.default = EditorControls;
+
+/***/ },
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33943,7 +34049,661 @@ var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
 var _globals = __webpack_require__(1);
 
-var _fileDownloader = __webpack_require__(252);
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EditorFeatures = function () {
+  function EditorFeatures(editor, sdk, mediator) {
+    (0, _classCallCheck3.default)(this, EditorFeatures);
+
+    this._editor = editor;
+    this._sdk = sdk;
+    this._mediator = mediator;
+
+    this._options = this._editor.getOptions();
+
+    this._features = {
+      drag: this._options.editor.enableDrag,
+      zoom: this._options.editor.enableZoom
+    };
+  }
+
+  /**
+   * Checks if the feature with the given identifier is enabled
+   * @param  {String}  identifier
+   * @return {Boolean}
+   */
+
+
+  EditorFeatures.prototype.isEnabled = function isEnabled(identifier) {
+    var capitalizedIdentifier = identifier.charAt(0).toUpperCase() + identifier.slice(1);
+    var optionEnabled = this._options.editor['enable' + capitalizedIdentifier];
+    return this._features[identifier] && optionEnabled;
+  };
+
+  /**
+   * Enables the features with the given identifiers
+   * @param  {String[]} identifiers
+   */
+
+
+  EditorFeatures.prototype.enable = function enable() {
+    var _this = this;
+
+    for (var _len = arguments.length, identifiers = Array(_len), _key = 0; _key < _len; _key++) {
+      identifiers[_key] = arguments[_key];
+    }
+
+    identifiers.forEach(function (identifier) {
+      _this._features[identifier] = true;
+    });
+    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_ENABLED, identifiers);
+    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_UPDATED, identifiers);
+  };
+
+  /**
+   * Disables the features with the given identifiers
+   * @param  {String[]} identifiers
+   */
+
+
+  EditorFeatures.prototype.disable = function disable() {
+    var _this2 = this;
+
+    for (var _len2 = arguments.length, identifiers = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      identifiers[_key2] = arguments[_key2];
+    }
+
+    identifiers.forEach(function (identifier) {
+      _this2._features[identifier] = false;
+    });
+    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_DISABLED, identifiers);
+    this._mediator.emit(_globals.Constants.EVENTS.FEATURES_UPDATED, identifiers);
+  };
+
+  return EditorFeatures;
+}(); /*
+      * This file is part of PhotoEditorSDK.
+      *
+      * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+      * All rights reserved.
+      *
+      * Redistribution and use in source and binary forms, without
+      * modification, are permitted provided that the following license agreement
+      * is approved and a legal/financial contract was signed by the user.
+      * The license agreement can be found under following link:
+      *
+      * https://www.photoeditorsdk.com/LICENSE.txt
+      */
+
+exports.default = EditorFeatures;
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(2);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _globals = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EditorHistory = function (_EventEmitter) {
+  (0, _inherits3.default)(EditorHistory, _EventEmitter);
+
+  function EditorHistory(editor, sdk, mediator) {
+    (0, _classCallCheck3.default)(this, EditorHistory);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, _EventEmitter.call(this));
+
+    _this._editor = editor;
+    _this._sdk = sdk;
+    _this._mediator = mediator;
+
+    _this._history = [];
+    return _this;
+  }
+
+  /**
+   * Checks if there are any history items available
+   * @return {Boolean}
+   */
+
+
+  EditorHistory.prototype.isAvailable = function isAvailable() {
+    return this._history.length !== 0;
+  };
+
+  /**
+   * Adds the given data to the history
+   * @param {PhotoEditorSDK.Operation} operation
+   * @param {Object} options
+   * @param {Boolean} existent
+   * @param {Function} [undo]
+   * @return {Object}
+   */
+
+
+  EditorHistory.prototype.add = function add(operation, options, existent) {
+    var _this2 = this;
+
+    var undo = arguments.length <= 3 || arguments[3] === undefined ? null : arguments[3];
+
+    var historyItem = void 0;
+    if (operation instanceof Array) {
+      var items = operation;
+      this._history.push(items);
+      items.forEach(function (item) {
+        _this2._mediator.emit(_globals.Constants.EVENTS.HISTORY_UPDATED, item.operation);
+      });
+
+      historyItem = items;
+    } else {
+      historyItem = {
+        operation: operation, options: options, existent: existent, undo: undo
+      };
+      this._history.push(historyItem);
+      this._mediator.emit(_globals.Constants.EVENTS.HISTORY_UPDATED, operation);
+    }
+    return historyItem;
+  };
+
+  /**
+   * Reverts the last change
+   */
+
+
+  EditorHistory.prototype.undo = function undo() {
+    var _this3 = this;
+
+    var operations = this._editor.operations;
+
+    var lastItem = this._history.pop();
+    if (lastItem) {
+      var items = [].concat(lastItem);
+
+      items.forEach(function (_ref) {
+        var operation = _ref.operation;
+        var existent = _ref.existent;
+        var options = _ref.options;
+        var undo = _ref.undo;
+
+        if (!existent) {
+          operations.remove(operation);
+        } else {
+          operation = operations.getOrCreate(operation.constructor.identifier);
+          operation.set(options);
+          _this3._mediator.emit(_globals.Constants.EVENTS.OPERATION_UPDATED, operation);
+        }
+
+        if (typeof undo === 'function') {
+          undo(operation, options);
+        }
+
+        _this3._mediator.emit(_globals.Constants.EVENTS.HISTORY_UPDATED, operation);
+        _this3._mediator.emit(_globals.Constants.EVENTS.HISTORY_UNDO, operation);
+      });
+
+      this.emit('undo');
+    }
+  };
+
+  /**
+   * Resets the history
+   */
+
+
+  EditorHistory.prototype.reset = function reset() {
+    this._history = [];
+  };
+
+  return EditorHistory;
+}(_globals.EventEmitter); /*
+                           * This file is part of PhotoEditorSDK.
+                           *
+                           * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+                           * All rights reserved.
+                           *
+                           * Redistribution and use in source and binary forms, without
+                           * modification, are permitted provided that the following license agreement
+                           * is approved and a legal/financial contract was signed by the user.
+                           * The license agreement can be found under following link:
+                           *
+                           * https://www.photoeditorsdk.com/LICENSE.txt
+                           */
+
+exports.default = EditorHistory;
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _globals = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var EditorOperations = function () {
+  function EditorOperations(editor, sdk, mediator) {
+    (0, _classCallCheck3.default)(this, EditorOperations);
+
+    this._editor = editor;
+    this._sdk = sdk;
+    this._mediator = mediator;
+
+    this._available = this._sdk.getOperations();
+    this._map = {};
+    this._stack = this._sdk.getOperationsStack();
+    this._preferredOrder = this._editor.getOptions().editor.operationsOrder;
+
+    this._fixStack();
+  }
+
+  /**
+   * Checks whether an operation with the given identifier exists
+   * @param {String} identifier
+   * @return {Boolean}
+   */
+
+
+  EditorOperations.prototype.exists = function exists(identifier) {
+    return !!this._map[identifier];
+  };
+
+  /**
+   * Adds the given operation to the stack
+   * @param {PhotoEditorSDK.Operation} operation
+   */
+
+
+  EditorOperations.prototype.add = function add(operation) {
+    var _this = this;
+
+    var identifier = operation.constructor.identifier;
+    operation.on('updated', function () {
+      _this._mediator.emit(_globals.Constants.EVENTS.OPERATION_UPDATED, operation);
+    });
+    var index = this._preferredOrder.indexOf(identifier);
+    if (index === -1) {
+      throw new Error('EditorOperations#add: `' + identifier + '` does not appear in `preferredOperationOrder`');
+    }
+    this._stack.set(index, operation);
+    this._map[identifier] = operation;
+
+    this._mediator.emit(_globals.Constants.EVENTS.OPERATION_CREATED, operation);
+  };
+
+  /**
+   * Removes the given operation from the stack
+   * @param  {PhotoEditorSDK.Operation} operation
+   */
+
+
+  EditorOperations.prototype.remove = function remove(operation) {
+    var identifier = operation.constructor.identifier;
+    var stack = this._stack.getStack();
+
+    // Remove operation from map
+    if (this._map[identifier] === operation) {
+      delete this._map[identifier];
+    }
+
+    // Remove operation from stack
+    var index = stack.indexOf(operation);
+    if (index !== -1) {
+      this._stack.removeAt(index);
+
+      // Set all following operations to dirty, since they might
+      // have cached stuff drawn by the removed operation
+      for (var i = index + 1; i < stack.length; i++) {
+        var _operation = stack[i];
+        if (!_operation) continue;
+        _operation.setDirty(true);
+      }
+
+      this._mediator.emit(_globals.Constants.EVENTS.OPERATION_REMOVED, operation);
+    }
+  };
+
+  /**
+   * Returns the operation with the given identifier
+   * @param  {String} identifier
+   * @return {PhotoEditorSDK.Operation}
+   */
+
+
+  EditorOperations.prototype.get = function get(identifier) {
+    return this._map[identifier];
+  };
+
+  /**
+   * If the operation with the given identifier already exists, it returns
+   * the existing operation. Otherwise, it creates and returns a new one.
+   * @param  {String} identifier
+   * @param  {Object} options
+   * @return {PhotoEditorSDK.Operation}
+   */
+
+
+  EditorOperations.prototype.getOrCreate = function getOrCreate(identifier) {
+    var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+
+    if (this._map[identifier]) {
+      var operation = this._map[identifier];
+      return operation;
+    } else {
+      var Operation = this._available[identifier];
+      var _operation2 = new Operation(this._sdk, options);
+      this.add(_operation2);
+      return _operation2;
+    }
+  };
+
+  /**
+   * Returns the operations stack
+   * @return {PhotoEditorSDK.OperationsStack}
+   */
+
+
+  EditorOperations.prototype.getStack = function getStack() {
+    return this._stack;
+  };
+
+  /**
+   * Resets the operations
+   */
+
+
+  EditorOperations.prototype.reset = function reset() {
+    this._map = {};
+  };
+
+  /**
+   * Since the SDK might create some operations upfront (e.g. to fix the EXIF orientation),
+   * we might have operations at array positions where they should not be. This method
+   * moves them to their appropriate position
+   * @private
+   */
+
+
+  EditorOperations.prototype._fixStack = function _fixStack() {
+    var _this2 = this;
+
+    var stack = this._stack.getStack().slice();
+    this._stack.clear();
+
+    stack.forEach(function (s) {
+      _this2.add(s);
+    });
+  };
+
+  return EditorOperations;
+}(); /*
+      * This file is part of PhotoEditorSDK.
+      *
+      * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+      * All rights reserved.
+      *
+      * Redistribution and use in source and binary forms, without
+      * modification, are permitted provided that the following license agreement
+      * is approved and a legal/financial contract was signed by the user.
+      * The license agreement can be found under following link:
+      *
+      * https://www.photoeditorsdk.com/LICENSE.txt
+      */
+
+exports.default = EditorOperations;
+
+/***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _possibleConstructorReturn2 = __webpack_require__(3);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(2);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _globals = __webpack_require__(1);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MIN_ZOOM_DIMENSIONS = 300; /*
+                                * This file is part of PhotoEditorSDK.
+                                *
+                                * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+                                * All rights reserved.
+                                *
+                                * Redistribution and use in source and binary forms, without
+                                * modification, are permitted provided that the following license agreement
+                                * is approved and a legal/financial contract was signed by the user.
+                                * The license agreement can be found under following link:
+                                *
+                                * https://www.photoeditorsdk.com/LICENSE.txt
+                                */
+
+var EditorZoom = function (_EventEmitter) {
+  (0, _inherits3.default)(EditorZoom, _EventEmitter);
+
+  function EditorZoom(editor, sdk, mediator) {
+    (0, _classCallCheck3.default)(this, EditorZoom);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, _EventEmitter.call(this));
+
+    _this._editor = editor;
+    _this._sdk = sdk;
+    _this._mediator = mediator;
+
+    _this._isDefaultZoom = false;
+    _this._zoom = _this._sdk.getZoom();
+    _this._options = _this._editor.getOptions();
+
+    _this._zoomLevels = [1, 2, 3, 4, 5, 6.25, 8.33, 12.5, 16.66, 25, 33.33, 50, 66.66, 100, 200, 300, 400, 500, 600, 700, 800, 1200, 1600, 3200].map(function (z) {
+      return z / 100;
+    });
+    return _this;
+  }
+
+  /**
+   * Zooms in the editor
+   */
+
+
+  EditorZoom.prototype.zoomIn = function zoomIn() {
+    var newZoom = this._getClosestZoomLevel(this._zoom + 0.001, +1);
+    if (!newZoom) return this._zoomLevels[this._zoomLevels.length - 1];
+    this.set(newZoom);
+  };
+
+  /**
+   * Zooms out the editor
+   */
+
+
+  EditorZoom.prototype.zoomOut = function zoomOut() {
+    var newZoom = this._getClosestZoomLevel(this._zoom - 0.001, -1);
+    if (!newZoom) return this._zoomLevels[0];
+    this.set(newZoom);
+  };
+
+  /**
+   * Returns the closest zoom level to the given one
+   * @param  {Number} zoomLevel
+   * @param  {Number} direction
+   * @return {Number}
+   * @private
+   */
+
+
+  EditorZoom.prototype._getClosestZoomLevel = function _getClosestZoomLevel(zoomLevel, direction) {
+    if (direction === -1) {
+      return this._zoomLevels.filter(function (l) {
+        return l < zoomLevel;
+      }).pop();
+    } else if (direction === 1) {
+      return this._zoomLevels.filter(function (l) {
+        return l > zoomLevel;
+      })[0];
+    }
+  };
+
+  /**
+   * Switches to the previous zoom
+   */
+
+
+  EditorZoom.prototype.undo = function undo() {
+    if (!this._previousZoom) return;
+    this.set(this._previousZoom);
+    this._previousZoom = null;
+  };
+
+  /**
+   * Sets the zoom to the given one
+   * @param {Number} zoom
+   * @param {Function} [callback]
+   * @param {Boolean} [considerMinimum = true]
+   */
+
+
+  EditorZoom.prototype.set = function set(zoom, callback) {
+    var considerMinimum = arguments.length <= 2 || arguments[2] === undefined ? true : arguments[2];
+
+    if (!this._editor.isReady()) {
+      return;
+    }
+    this._previousZoom = this._zoom;
+
+    var newZoom = zoom;
+    var defaultZoom = this.getDefault();
+    if (zoom === 'auto' || newZoom === defaultZoom) {
+      newZoom = defaultZoom;
+      zoom = 'auto';
+
+      this._isDefaultZoom = true;
+    } else {
+      this._isDefaultZoom = false;
+    }
+
+    var maxZoom = Math.max(1, defaultZoom * 2);
+    var minZoom = considerMinimum ? this.getMinimum() : 0;
+    newZoom = Math.max(minZoom, Math.min(maxZoom, newZoom));
+
+    this._zoom = newZoom;
+    this._sdk.setZoom(this._zoom);
+    this._sdk.setTextureQuality(Math.min(this._zoom, 1));
+    this.emit('set', this._zoom, callback);
+  };
+
+  /**
+   * Returns the default zoom level
+   * @return {Number}
+   */
+
+
+  EditorZoom.prototype.getDefault = function getDefault() {
+    var finalDimensions = this._editor.getFinalDimensions(false);
+    var canvasDimensions = this._editor.getCanvasDimensions();
+    var defaultDimensions = _globals.SDKUtils.resizeVectorToFit(finalDimensions, canvasDimensions);
+
+    return defaultDimensions.divide(finalDimensions).x;
+  };
+
+  /**
+   * Returns the minimum zoom level
+   * @return {Number}
+   */
+
+
+  EditorZoom.prototype.getMinimum = function getMinimum() {
+    var finalDimensions = this._editor.getFinalDimensions();
+    var minimumDimensions = _globals.SDKUtils.resizeVectorToFit(finalDimensions, new _globals.Vector2(MIN_ZOOM_DIMENSIONS, MIN_ZOOM_DIMENSIONS));
+
+    return minimumDimensions.divide(finalDimensions).x;
+  };
+
+  /**
+   * Checks if the editor is at the default zoom level
+   * @return {Boolean}
+   */
+
+
+  EditorZoom.prototype.isDefault = function isDefault() {
+    return this._isDefaultZoom;
+  };
+
+  /**
+   * Returns the current zoom level
+   * @return {Number}
+   */
+
+
+  EditorZoom.prototype.get = function get() {
+    return this._zoom;
+  };
+
+  return EditorZoom;
+}(_globals.EventEmitter);
+
+exports.default = EditorZoom;
+
+/***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _classCallCheck2 = __webpack_require__(0);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _globals = __webpack_require__(1);
+
+var _fileDownloader = __webpack_require__(258);
 
 var _fileDownloader2 = _interopRequireDefault(_fileDownloader);
 
@@ -33983,7 +34743,7 @@ var Exporter = function () {
 
     var renderType = this._getRenderType();
 
-    return this._sdk.export(renderType, this._options.format).then(function (data) {
+    return this._sdk.export(renderType, this._options.format, this._options.quality).then(function (data) {
       if (_this._download) {
         _this._downloadData(renderType, data);
       }
@@ -34002,10 +34762,10 @@ var Exporter = function () {
   Exporter.prototype._downloadData = function _downloadData(renderType, data) {
     switch (renderType) {
       case _globals.RenderType.DATAURL:
-        _fileDownloader2.default.downloadDataURL(data);
+        _fileDownloader2.default.downloadDataURL(data, this._options.fileBasename);
         break;
       case _globals.RenderType.MSBLOB:
-        _fileDownloader2.default.downloadMSBlob(data);
+        _fileDownloader2.default.downloadMSBlob(data, this._options.fileBasename);
         break;
     }
   };
@@ -34036,7 +34796,7 @@ var Exporter = function () {
 exports.default = Exporter;
 
 /***/ },
-/* 252 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34149,7 +34909,7 @@ var FileDownloader = function () {
 exports.default = FileDownloader;
 
 /***/ },
-/* 253 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34266,7 +35026,7 @@ var FileLoader = function (_EventEmitter) {
 exports.default = FileLoader;
 
 /***/ },
-/* 254 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34409,7 +35169,7 @@ var ImageResizer = function () {
 exports.default = ImageResizer;
 
 /***/ },
-/* 255 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34449,7 +35209,7 @@ var Library = function Library(data) {
 exports.default = Library;
 
 /***/ },
-/* 256 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34490,7 +35250,7 @@ var Photo = function Photo(library, data) {
 exports.default = Photo;
 
 /***/ },
-/* 257 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34578,7 +35338,7 @@ var Provider = function () {
 exports.default = Provider;
 
 /***/ },
-/* 258 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34619,7 +35379,7 @@ var SearchSuggestion = function SearchSuggestion(data) {
 exports.default = SearchSuggestion;
 
 /***/ },
-/* 259 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34670,7 +35430,7 @@ var Deserializer = function () {
     }).then(function () {
       return _this._deserializeOperations();
     }).then(function () {
-      return _this._editor.setZoom('auto');
+      return _this._editor.zoom.set('auto');
     });
   };
 
@@ -34759,15 +35519,13 @@ var Deserializer = function () {
 
   Deserializer.prototype._deserializeCropOperation = function _deserializeCropOperation(operation) {
     var options = operation.options;
+    var scale = options.scale;
+    var rotation = options.rotation;
 
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var start = _globals.Vector2.fromObject(options.start).multiply(inputDimensions);
-    var end = _globals.Vector2.fromObject(options.end).multiply(inputDimensions);
-    this._editor.getOrCreateOperation('crop', {
-      position: start,
-      dimensions: end.clone().subtract(start),
-      scale: options.scale,
-      rotation: options.rotation
+    var start = _globals.Vector2.fromObject(options.start);
+    var end = _globals.Vector2.fromObject(options.end);
+    this._editor.operations.getOrCreate('crop', {
+      start: start, end: end, scale: scale, rotation: rotation
     });
     return Promise.resolve();
   };
@@ -34783,11 +35541,7 @@ var Deserializer = function () {
   Deserializer.prototype._deserializeOrientationOperation = function _deserializeOrientationOperation(operation) {
     var options = operation.options;
 
-    this._editor.getOrCreateOperation('orientation', {
-      flipVertically: options.flipVertically,
-      flipHorizontally: options.flipHorizontally,
-      rotation: options.rotation
-    });
+    this._editor.operations.getOrCreate('orientation', options);
   };
 
   /**
@@ -34816,7 +35570,7 @@ var Deserializer = function () {
       throw new Error('Unknown filter \'' + options.name + '\'');
     }
 
-    this._editor.getOrCreateOperation('filter', {
+    this._editor.operations.getOrCreate('filter', {
       filter: new FilterClass(),
       intensity: options.intensity
     });
@@ -34842,7 +35596,7 @@ var Deserializer = function () {
       operationOptions[key] = value + defaultValue;
     }
 
-    this._editor.getOrCreateOperation('adjustments', operationOptions);
+    this._editor.operations.getOrCreate('adjustments', operationOptions);
   };
 
   /**
@@ -34858,7 +35612,7 @@ var Deserializer = function () {
 
     var options = operation.options;
 
-    var spriteOperation = this._editor.getOrCreateOperation('sprite');
+    var spriteOperation = this._editor.operations.getOrCreate('sprite');
     var promises = options.sprites.map(function (sprite) {
       switch (sprite.type) {
         case 'sticker':
@@ -34889,9 +35643,6 @@ var Deserializer = function () {
     var _this5 = this;
 
     var SpriteOperation = _globals.SDK.Operations.SpriteOperation;
-
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-
     var options = sprite.options;
 
     var stickers = this._stickerManager.getStickersForCategory('all');
@@ -34911,13 +35662,15 @@ var Deserializer = function () {
       var image = new window.Image();
       image.addEventListener('load', function () {
         var adjustments = SpriteOperation.Sticker.prototype.availableOptions.adjustments.structure;
+        var rotation = options.rotation;
+        var flipHorizontally = options.flipHorizontally;
+        var flipVertically = options.flipVertically;
+
         resolve(operation.createSticker({
           image: image,
-          position: _globals.Vector2.fromObject(options.position).multiply(inputDimensions),
-          scale: _globals.Vector2.fromObject(options.dimensions).divide(image.width, image.height),
-          rotation: options.rotation,
-          flipHorizontally: options.flipHorizontally,
-          flipVertically: options.flipVertically,
+          position: _globals.Vector2.fromObject(options.position),
+          dimensions: _globals.Vector2.fromObject(options.dimensions),
+          rotation: rotation, flipHorizontally: flipHorizontally, flipVertically: flipVertically,
           adjustments: {
             brightness: options.adjustments.brightness + adjustments.brightness.default,
             saturation: options.adjustments.saturation + adjustments.saturation.default,
@@ -34939,25 +35692,23 @@ var Deserializer = function () {
 
 
   Deserializer.prototype._deserializeText = function _deserializeText(operation, text) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var shortestSide = Math.min(inputDimensions.x, inputDimensions.y);
-
     var options = text.options;
+    var fontSize = options.fontSize;
+    var lineHeight = options.lineHeight;
+    var fontFamily = options.fontFamily;
+    var fontWeight = options.fontWeight;
+    var alignment = options.alignment;
+    var rotation = options.rotation;
+    var maxWidth = options.maxWidth;
     var color = options.color;
     var backgroundColor = options.backgroundColor;
 
     return Promise.resolve(operation.createText({
+      fontSize: fontSize, lineHeight: lineHeight, fontFamily: fontFamily, fontWeight: fontWeight, alignment: alignment, rotation: rotation, maxWidth: maxWidth,
       text: options.text,
-      fontSize: Math.round(options.fontSize * inputDimensions.y),
-      lineHeight: options.lineHeight,
-      fontFamily: options.fontFamily,
-      fontWeight: options.fontWeight,
-      alignment: options.alignment,
-      color: new _globals.Color(color[0], color[1], color[2], color[3]),
-      backgroundColor: new _globals.Color(backgroundColor[0], backgroundColor[1], backgroundColor[2], backgroundColor[3]),
-      position: _globals.Vector2.fromObject(options.position).multiply(inputDimensions),
-      rotation: options.rotation,
-      maxWidth: options.maxWidth * shortestSide
+      color: _globals.Color.fromArray(color),
+      backgroundColor: _globals.Color.fromArray(backgroundColor),
+      position: _globals.Vector2.fromObject(options.position)
     }));
   };
 
@@ -34971,9 +35722,6 @@ var Deserializer = function () {
 
 
   Deserializer.prototype._deserializeBrush = function _deserializeBrush(operation, brush) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var shortestSide = Math.min(inputDimensions.x, inputDimensions.y);
-
     var options = brush.options;
     var paths = options.paths;
 
@@ -34985,9 +35733,9 @@ var Deserializer = function () {
       var points = path.points;
 
       var colorObject = new _globals.Color(color[0], color[1], color[2], color[3]);
-      var pathObject = brushObject.createPath(shortestSide * size, 1, colorObject);
+      var pathObject = brushObject.createPath(size, 1, colorObject);
       points.forEach(function (point) {
-        pathObject.addControlPoint(_globals.Vector2.fromObject(point).multiply(inputDimensions));
+        pathObject.addControlPoint(_globals.Vector2.fromObject(point));
       });
     });
     return Promise.resolve(brushObject);
@@ -35002,28 +35750,36 @@ var Deserializer = function () {
 
 
   Deserializer.prototype._deserializeFocusOperation = function _deserializeFocusOperation(operation) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var shortestSide = Math.min(inputDimensions.x, inputDimensions.y);
-
     var options = operation.options.options;
 
     switch (operation.options.type) {
       case 'radial':
-        this._editor.getOrCreateOperation('radial-focus', {
-          position: _globals.Vector2.fromObject(options.position).multiply(inputDimensions),
-          radius: options.radius * shortestSide,
-          gradientRadius: options.gradientRadius * shortestSide,
-          blurRadius: options.blurRadius * shortestSide
-        });
+        {
+          var position = options.position;
+          var radius = options.radius;
+          var gradientRadius = options.gradientRadius;
+          var blurRadius = options.blurRadius;
+
+          this._editor.operations.getOrCreate('radial-focus', {
+            position: _globals.Vector2.fromObject(position),
+            radius: radius, gradientRadius: gradientRadius, blurRadius: blurRadius
+          });
+        }
         break;
       case 'linear':
-        this._editor.getOrCreateOperation('linear-focus', {
-          start: _globals.Vector2.fromObject(options.start).multiply(inputDimensions),
-          end: _globals.Vector2.fromObject(options.end).multiply(inputDimensions),
-          size: options.size * shortestSide,
-          gradientSize: options.gradientSize * shortestSide,
-          blurRadius: options.blurRadius * shortestSide
-        });
+        {
+          var start = options.start;
+          var end = options.end;
+          var size = options.size;
+          var gradientSize = options.gradientSize;
+          var _blurRadius = options.blurRadius;
+
+          this._editor.operations.getOrCreate('linear-focus', {
+            start: _globals.Vector2.fromObject(start),
+            end: _globals.Vector2.fromObject(end),
+            size: size, gradientSize: gradientSize, blurRadius: _blurRadius
+          });
+        }
         break;
     }
   };
@@ -35037,16 +35793,13 @@ var Deserializer = function () {
 
 
   Deserializer.prototype._deserializeBorderOperation = function _deserializeBorderOperation(operation) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var shortestSide = Math.min(inputDimensions.x, inputDimensions.y);
-
     var _operation$options = operation.options;
     var color = _operation$options.color;
     var size = _operation$options.size;
 
-    this._editor.getOrCreateOperation('border', {
-      color: new _globals.Color(color[0], color[1], color[2], color[3]),
-      thickness: size * shortestSide
+    this._editor.operations.getOrCreate('border', {
+      color: _globals.Color.fromArray(color),
+      thickness: size
     });
   };
 
@@ -35062,7 +35815,7 @@ var Deserializer = function () {
     var operationFound = false;
     var inputDimensions = this._editor.getInputDimensions();
 
-    this._editor.getOperationsStack().forEach(function (op) {
+    this._editor.operations.getStack().forEach(function (op) {
       if (op === operation) operationFound = true;
       if (operationFound) return;
       inputDimensions = op.getNewDimensions(inputDimensions);
@@ -35089,7 +35842,7 @@ var Deserializer = function () {
 exports.default = Deserializer;
 
 /***/ },
-/* 260 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35103,11 +35856,11 @@ var _classCallCheck2 = __webpack_require__(0);
 
 var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 
-var _serializer = __webpack_require__(261);
+var _serializer = __webpack_require__(267);
 
 var _serializer2 = _interopRequireDefault(_serializer);
 
-var _deserializer = __webpack_require__(259);
+var _deserializer = __webpack_require__(265);
 
 var _deserializer2 = _interopRequireDefault(_deserializer);
 
@@ -35166,7 +35919,7 @@ exports.default = Serialization;
 Serialization.version = '1.0.0';
 
 /***/ },
-/* 261 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35183,6 +35936,20 @@ var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 var _globals = __webpack_require__(1);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var TWICE_PI = Math.PI * 2; /*
+                             * This file is part of PhotoEditorSDK.
+                             *
+                             * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
+                             * All rights reserved.
+                             *
+                             * Redistribution and use in source and binary forms, without
+                             * modification, are permitted provided that the following license agreement
+                             * is approved and a legal/financial contract was signed by the user.
+                             * The license agreement can be found under following link:
+                             *
+                             * https://www.photoeditorsdk.com/LICENSE.txt
+                             */
 
 var Serializer = function () {
   function Serializer(editor) {
@@ -35235,7 +36002,7 @@ var Serializer = function () {
       return Promise.resolve(data);
     }
 
-    var sdk = new _globals.PhotoEditorSDK('webgl', { image: image });
+    var sdk = new _globals.SDK('webgl', { image: image });
 
     return sdk.export(_globals.RenderType.DATA_URL, _globals.ImageFormat.PNG).then(function (dataUrl) {
       var width = image.width;
@@ -35262,7 +36029,7 @@ var Serializer = function () {
     var _this = this;
 
     var operations = [];
-    var stack = this._editor.getOperationsStack();
+    var stack = this._editor.operations.getStack();
     stack.forEach(function (operation) {
       operations.push(_this._serializeOperation(operation));
     });
@@ -35310,20 +36077,11 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeCropOperation = function _serializeCropOperation(operation) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var position = operation.getPosition().clone().divide(inputDimensions);
-    var dimensions = operation.getDimensions().clone().divide(inputDimensions);
-
-    var twicePI = Math.PI * 2;
-    var positiveRotation = (operation.getRotation() + twicePI) % twicePI;
+    var options = operation.serializeOptions(['start', 'end', 'rotation', 'scale']);
+    options.rotation = (options.rotation + TWICE_PI) % TWICE_PI;
     return {
       type: 'crop',
-      options: {
-        start: position.toObject(),
-        end: position.clone().add(dimensions).toObject(),
-        scale: operation.getScale(),
-        rotation: positiveRotation
-      }
+      options: options
     };
   };
 
@@ -35423,29 +36181,21 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeSticker = function _serializeSticker(operation, sprite) {
-    var dimensions = this._editor.getFinalDimensions();
-    var bounds = sprite.getDisplayObject().getLocalBounds();
     var adjustments = sprite.getAdjustments();
-    var options = adjustments.availableOptions;
 
-    var twicePI = Math.PI * 2;
-    var positiveRotation = (sprite.getRotation() + twicePI) % twicePI;
+    var options = sprite.serializeOptions(['name', 'position', 'dimensions', 'flipVertically', 'flipHorizontally', 'rotation']);
+    options.rotation = (options.rotation + TWICE_PI) % TWICE_PI;
+
+    var adjustmentsOptions = adjustments.availableOptions;
+    options.adjustments = {
+      brightness: adjustments.getBrightness() - adjustmentsOptions.brightness.default,
+      saturation: adjustments.getSaturation() - adjustmentsOptions.saturation.default,
+      contrast: adjustments.getContrast() - adjustmentsOptions.contrast.default
+    };
 
     return {
       type: 'sticker',
-      options: {
-        name: sprite.getName(),
-        position: sprite.getPosition().clone().divide(dimensions).toObject(),
-        dimensions: new _globals.Vector2(bounds.width, bounds.height).multiply(sprite.getScale()).toObject(),
-        flipVertically: sprite.getFlipVertically(),
-        flipHorizontally: sprite.getFlipHorizontally(),
-        rotation: positiveRotation,
-        adjustments: {
-          brightness: adjustments.getBrightness() - options.brightness.default,
-          saturation: adjustments.getSaturation() - options.saturation.default,
-          contrast: adjustments.getContrast() - options.contrast.default
-        }
-      }
+      options: options
     };
   };
 
@@ -35459,27 +36209,12 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeText = function _serializeText(operation, sprite) {
-    var dimensions = this._editor.getFinalDimensions();
-    var shortestSide = Math.min(dimensions.x, dimensions.y);
-
-    var twicePI = Math.PI * 2;
-    var positiveRotation = (sprite.getRotation() + twicePI) % twicePI;
+    var options = sprite.serializeOptions(['fontSize', 'lineHeight', 'fontFamily', 'fontWeight', 'alignment', 'color', 'backgroundColor', 'position', 'rotation', 'text', 'maxWidth']);
+    options.rotation = (options.rotation + TWICE_PI) % TWICE_PI;
 
     return {
       type: 'text',
-      options: {
-        fontSize: sprite.getFontSize() / dimensions.y,
-        lineHeight: sprite.getLineHeight(),
-        fontFamily: sprite.getFontFamily(),
-        fontWeight: sprite.getFontWeight(),
-        alignment: sprite.getAlignment(),
-        color: sprite.getColor().toGLColor(),
-        backgroundColor: sprite.getBackgroundColor().toGLColor(),
-        position: sprite.getPosition().clone().divide(dimensions).toObject(),
-        rotation: positiveRotation,
-        text: sprite.getText(),
-        maxWidth: sprite.getMaxWidth() / shortestSide
-      }
+      options: options
     };
   };
 
@@ -35493,19 +36228,19 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeBrush = function _serializeBrush(operation, sprite) {
-    var inputDimensions = this._getInputDimensionsForOperation(operation);
-    var shortestSide = Math.min(inputDimensions.x, inputDimensions.y);
     return {
       type: 'brush',
       options: {
         paths: sprite.getPaths().map(function (path) {
-          return {
-            color: path.getColor().toGLColor(),
-            size: path.getBrush().height / shortestSide,
-            points: path.getControlPoints().map(function (point) {
-              return point.getPosition().clone().divide(inputDimensions).toObject();
-            })
-          };
+          var options = path.serializeOptions(['color', 'thickness']);
+
+          options.size = options.thickness;
+          delete options.thickness;
+
+          options.points = path.getControlPoints().map(function (point) {
+            return point.getPosition().toObject();
+          });
+          return options;
         })
       }
     };
@@ -35520,19 +36255,11 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeRadialFocusOperation = function _serializeRadialFocusOperation(operation) {
-    var dimensions = this._editor.getFinalDimensions();
-    var shortestSide = Math.min(dimensions.x, dimensions.y);
-
     return {
       type: 'focus',
       options: {
         type: 'radial',
-        options: {
-          position: operation.getPosition().clone().divide(dimensions).toObject(),
-          radius: operation.getRadius() / shortestSide,
-          gradientRadius: operation.getGradientRadius() / shortestSide,
-          blurRadius: operation.getBlurRadius() / shortestSide
-        }
+        options: operation.serializeOptions(['position', 'radius', 'gradientRadius', 'blurRadius'])
       }
     };
   };
@@ -35546,20 +36273,11 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeLinearFocusOperation = function _serializeLinearFocusOperation(operation) {
-    var dimensions = this._editor.getFinalDimensions();
-    var shortestSide = Math.min(dimensions.x, dimensions.y);
-
     return {
       type: 'focus',
       options: {
         type: 'linear',
-        options: {
-          start: operation.getStart().clone().divide(dimensions).toObject(),
-          end: operation.getEnd().clone().divide(dimensions).toObject(),
-          blurRadius: operation.getBlurRadius() / shortestSide,
-          size: operation.getSize() / shortestSide,
-          gradientSize: operation.getGradientSize() / shortestSide
-        }
+        options: operation.serializeOptions(['start', 'end', 'blurRadius', 'size', 'gradientSize'])
       }
     };
   };
@@ -35573,15 +36291,15 @@ var Serializer = function () {
 
 
   Serializer.prototype._serializeBorderOperation = function _serializeBorderOperation(operation) {
-    var dimensions = this._editor.getFinalDimensions();
-    var shortestSide = Math.min(dimensions.x, dimensions.y);
+    var options = operation.serializeOptions(['color', 'thickness']);
+
+    // `thickness` is called `size` in schema
+    options.size = options.thickness;
+    delete options.thickness;
 
     return {
       type: 'border',
-      options: {
-        color: operation.getColor().toGLColor(),
-        size: operation.getThickness() / shortestSide
-      }
+      options: options
     };
   };
 
@@ -35597,7 +36315,7 @@ var Serializer = function () {
     var operationFound = false;
     var inputDimensions = this._editor.getInputDimensions();
 
-    this._editor.getOperationsStack().forEach(function (op) {
+    this._editor.operations.getStack().forEach(function (op) {
       if (op === operation) operationFound = true;
       if (operationFound) return;
       inputDimensions = op.getNewDimensions(inputDimensions);
@@ -35607,24 +36325,12 @@ var Serializer = function () {
   };
 
   return Serializer;
-}(); /*
-      * This file is part of PhotoEditorSDK.
-      *
-      * Copyright (C) 2016 9elements GmbH <contact@9elements.com>
-      * All rights reserved.
-      *
-      * Redistribution and use in source and binary forms, without
-      * modification, are permitted provided that the following license agreement
-      * is approved and a legal/financial contract was signed by the user.
-      * The license agreement can be found under following link:
-      *
-      * https://www.photoeditorsdk.com/LICENSE.txt
-      */
+}();
 
 exports.default = Serializer;
 
 /***/ },
-/* 262 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35746,7 +36452,7 @@ var SharedState = function (_EventEmitter) {
 exports.default = SharedState;
 
 /***/ },
-/* 263 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35764,7 +36470,7 @@ var _log = __webpack_require__(124);
 
 var _log2 = _interopRequireDefault(_log);
 
-var _browser = __webpack_require__(264);
+var _browser = __webpack_require__(270);
 
 var _browser2 = _interopRequireDefault(_browser);
 
@@ -35815,6 +36521,8 @@ var UIUtils = {
     var x = e.clientX;
     var y = e.clientY;
     if (e.type.indexOf('touch') !== -1) {
+      if (!e.touches.length) return;
+
       x = e.touches[0].clientX;
       y = e.touches[0].clientY;
     }
@@ -36038,7 +36746,7 @@ var UIUtils = {
 exports.default = UIUtils;
 
 /***/ },
-/* 264 */
+/* 270 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -36091,7 +36799,7 @@ exports.default = {
 };
 
 /***/ },
-/* 265 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36142,55 +36850,55 @@ exports.cancelAnimationFrame = cAF;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(169)))
 
 /***/ },
-/* 266 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(276), __esModule: true };
-
-/***/ },
-/* 267 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(277), __esModule: true };
-
-/***/ },
-/* 268 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(278), __esModule: true };
-
-/***/ },
-/* 269 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(279), __esModule: true };
-
-/***/ },
-/* 270 */
-/***/ function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(280), __esModule: true };
-
-/***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(282), __esModule: true };
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(283), __esModule: true };
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = { "default": __webpack_require__(284), __esModule: true };
 
 /***/ },
-/* 274 */
+/* 275 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(285), __esModule: true };
+
+/***/ },
+/* 276 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(286), __esModule: true };
+
+/***/ },
+/* 277 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(288), __esModule: true };
+
+/***/ },
+/* 278 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(289), __esModule: true };
+
+/***/ },
+/* 279 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(290), __esModule: true };
+
+/***/ },
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36198,11 +36906,11 @@ module.exports = { "default": __webpack_require__(284), __esModule: true };
 
 exports.__esModule = true;
 
-var _isIterable2 = __webpack_require__(268);
+var _isIterable2 = __webpack_require__(274);
 
 var _isIterable3 = _interopRequireDefault(_isIterable2);
 
-var _getIterator2 = __webpack_require__(267);
+var _getIterator2 = __webpack_require__(273);
 
 var _getIterator3 = _interopRequireDefault(_getIterator2);
 
@@ -36247,7 +36955,7 @@ exports.default = function () {
 }();
 
 /***/ },
-/* 275 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36255,7 +36963,7 @@ exports.default = function () {
 
 exports.__esModule = true;
 
-var _from = __webpack_require__(266);
+var _from = __webpack_require__(272);
 
 var _from2 = _interopRequireDefault(_from);
 
@@ -36274,75 +36982,75 @@ exports.default = function (arr) {
 };
 
 /***/ },
-/* 276 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(59);
-__webpack_require__(308);
+__webpack_require__(314);
 module.exports = __webpack_require__(14).Array.from;
 
 /***/ },
-/* 277 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(88);
 __webpack_require__(59);
-module.exports = __webpack_require__(306);
+module.exports = __webpack_require__(312);
 
 /***/ },
-/* 278 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(88);
 __webpack_require__(59);
-module.exports = __webpack_require__(307);
+module.exports = __webpack_require__(313);
 
 /***/ },
-/* 279 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(310);
+__webpack_require__(316);
 module.exports = __webpack_require__(14).Object.assign;
 
 /***/ },
-/* 280 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(311);
+__webpack_require__(317);
 var $Object = __webpack_require__(14).Object;
 module.exports = function create(P, D){
   return $Object.create(P, D);
 };
 
 /***/ },
-/* 281 */
+/* 287 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(312);
+__webpack_require__(318);
 var $Object = __webpack_require__(14).Object;
 module.exports = function defineProperty(it, key, desc){
   return $Object.defineProperty(it, key, desc);
 };
 
 /***/ },
-/* 282 */
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(313);
+__webpack_require__(319);
 module.exports = __webpack_require__(14).Object.setPrototypeOf;
 
 /***/ },
-/* 283 */
+/* 289 */
 /***/ function(module, exports, __webpack_require__) {
 
-__webpack_require__(315);
-__webpack_require__(314);
-__webpack_require__(316);
-__webpack_require__(317);
+__webpack_require__(321);
+__webpack_require__(320);
+__webpack_require__(322);
+__webpack_require__(323);
 module.exports = __webpack_require__(14).Symbol;
 
 /***/ },
-/* 284 */
+/* 290 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(59);
@@ -36350,7 +37058,7 @@ __webpack_require__(88);
 module.exports = __webpack_require__(87).f('iterator');
 
 /***/ },
-/* 285 */
+/* 291 */
 /***/ function(module, exports) {
 
 module.exports = function(it){
@@ -36359,20 +37067,20 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 286 */
+/* 292 */
 /***/ function(module, exports) {
 
 module.exports = function(){ /* empty */ };
 
 /***/ },
-/* 287 */
+/* 293 */
 /***/ function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = __webpack_require__(33)
   , toLength  = __webpack_require__(137)
-  , toIndex   = __webpack_require__(305);
+  , toIndex   = __webpack_require__(311);
 module.exports = function(IS_INCLUDES){
   return function($this, el, fromIndex){
     var O      = toIObject($this)
@@ -36391,7 +37099,7 @@ module.exports = function(IS_INCLUDES){
 };
 
 /***/ },
-/* 288 */
+/* 294 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36405,7 +37113,7 @@ module.exports = function(object, index, value){
 };
 
 /***/ },
-/* 289 */
+/* 295 */
 /***/ function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
@@ -36425,13 +37133,13 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 290 */
+/* 296 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(24).document && document.documentElement;
 
 /***/ },
-/* 291 */
+/* 297 */
 /***/ function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
@@ -36444,7 +37152,7 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 292 */
+/* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
@@ -36454,7 +37162,7 @@ module.exports = Array.isArray || function isArray(arg){
 };
 
 /***/ },
-/* 293 */
+/* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
@@ -36471,7 +37179,7 @@ module.exports = function(iterator, fn, value, entries){
 };
 
 /***/ },
-/* 294 */
+/* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36490,7 +37198,7 @@ module.exports = function(Constructor, NAME, next){
 };
 
 /***/ },
-/* 295 */
+/* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
 var ITERATOR     = __webpack_require__(15)('iterator')
@@ -36516,7 +37224,7 @@ module.exports = function(exec, skipClosing){
 };
 
 /***/ },
-/* 296 */
+/* 302 */
 /***/ function(module, exports) {
 
 module.exports = function(done, value){
@@ -36524,7 +37232,7 @@ module.exports = function(done, value){
 };
 
 /***/ },
-/* 297 */
+/* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
 var getKeys   = __webpack_require__(45)
@@ -36539,7 +37247,7 @@ module.exports = function(object, el){
 };
 
 /***/ },
-/* 298 */
+/* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
 var META     = __webpack_require__(58)('meta')
@@ -36597,7 +37305,7 @@ var meta = module.exports = {
 };
 
 /***/ },
-/* 299 */
+/* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36636,7 +37344,7 @@ module.exports = !$assign || __webpack_require__(43)(function(){
 } : $assign;
 
 /***/ },
-/* 300 */
+/* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
 var dP       = __webpack_require__(25)
@@ -36654,7 +37362,7 @@ module.exports = __webpack_require__(30) ? Object.defineProperties : function de
 };
 
 /***/ },
-/* 301 */
+/* 307 */
 /***/ function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
@@ -36679,7 +37387,7 @@ module.exports.f = function getOwnPropertyNames(it){
 
 
 /***/ },
-/* 302 */
+/* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
@@ -36697,7 +37405,7 @@ module.exports = Object.getPrototypeOf || function(O){
 };
 
 /***/ },
-/* 303 */
+/* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
@@ -36727,7 +37435,7 @@ module.exports = {
 };
 
 /***/ },
-/* 304 */
+/* 310 */
 /***/ function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(83)
@@ -36749,7 +37457,7 @@ module.exports = function(TO_STRING){
 };
 
 /***/ },
-/* 305 */
+/* 311 */
 /***/ function(module, exports, __webpack_require__) {
 
 var toInteger = __webpack_require__(83)
@@ -36761,7 +37469,7 @@ module.exports = function(index, length){
 };
 
 /***/ },
-/* 306 */
+/* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(29)
@@ -36773,7 +37481,7 @@ module.exports = __webpack_require__(14).getIterator = function(it){
 };
 
 /***/ },
-/* 307 */
+/* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
 var classof   = __webpack_require__(128)
@@ -36787,7 +37495,7 @@ module.exports = __webpack_require__(14).isIterable = function(it){
 };
 
 /***/ },
-/* 308 */
+/* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36795,13 +37503,13 @@ module.exports = __webpack_require__(14).isIterable = function(it){
 var ctx            = __webpack_require__(74)
   , $export        = __webpack_require__(31)
   , toObject       = __webpack_require__(84)
-  , call           = __webpack_require__(293)
-  , isArrayIter    = __webpack_require__(291)
+  , call           = __webpack_require__(299)
+  , isArrayIter    = __webpack_require__(297)
   , toLength       = __webpack_require__(137)
-  , createProperty = __webpack_require__(288)
+  , createProperty = __webpack_require__(294)
   , getIterFn      = __webpack_require__(138);
 
-$export($export.S + $export.F * !__webpack_require__(295)(function(iter){ Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(301)(function(iter){ Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike/*, mapfn = undefined, thisArg = undefined*/){
     var O       = toObject(arrayLike)
@@ -36831,13 +37539,13 @@ $export($export.S + $export.F * !__webpack_require__(295)(function(iter){ Array.
 
 
 /***/ },
-/* 309 */
+/* 315 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
-var addToUnscopables = __webpack_require__(286)
-  , step             = __webpack_require__(296)
+var addToUnscopables = __webpack_require__(292)
+  , step             = __webpack_require__(302)
   , Iterators        = __webpack_require__(35)
   , toIObject        = __webpack_require__(33);
 
@@ -36871,16 +37579,16 @@ addToUnscopables('values');
 addToUnscopables('entries');
 
 /***/ },
-/* 310 */
+/* 316 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(31);
 
-$export($export.S + $export.F, 'Object', {assign: __webpack_require__(299)});
+$export($export.S + $export.F, 'Object', {assign: __webpack_require__(305)});
 
 /***/ },
-/* 311 */
+/* 317 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(31)
@@ -36888,7 +37596,7 @@ var $export = __webpack_require__(31)
 $export($export.S, 'Object', {create: __webpack_require__(78)});
 
 /***/ },
-/* 312 */
+/* 318 */
 /***/ function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(31);
@@ -36896,21 +37604,21 @@ var $export = __webpack_require__(31);
 $export($export.S + $export.F * !__webpack_require__(30), 'Object', {defineProperty: __webpack_require__(25).f});
 
 /***/ },
-/* 313 */
+/* 319 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
 var $export = __webpack_require__(31);
-$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(303).set});
+$export($export.S, 'Object', {setPrototypeOf: __webpack_require__(309).set});
 
 /***/ },
-/* 314 */
+/* 320 */
 /***/ function(module, exports) {
 
 
 
 /***/ },
-/* 315 */
+/* 321 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36921,7 +37629,7 @@ var global         = __webpack_require__(24)
   , DESCRIPTORS    = __webpack_require__(30)
   , $export        = __webpack_require__(31)
   , redefine       = __webpack_require__(136)
-  , META           = __webpack_require__(298).KEY
+  , META           = __webpack_require__(304).KEY
   , $fails         = __webpack_require__(43)
   , shared         = __webpack_require__(82)
   , setToStringTag = __webpack_require__(80)
@@ -36929,15 +37637,15 @@ var global         = __webpack_require__(24)
   , wks            = __webpack_require__(15)
   , wksExt         = __webpack_require__(87)
   , wksDefine      = __webpack_require__(86)
-  , keyOf          = __webpack_require__(297)
-  , enumKeys       = __webpack_require__(289)
-  , isArray        = __webpack_require__(292)
+  , keyOf          = __webpack_require__(303)
+  , enumKeys       = __webpack_require__(295)
+  , isArray        = __webpack_require__(298)
   , anObject       = __webpack_require__(29)
   , toIObject      = __webpack_require__(33)
   , toPrimitive    = __webpack_require__(85)
   , createDesc     = __webpack_require__(46)
   , _create        = __webpack_require__(78)
-  , gOPNExt        = __webpack_require__(301)
+  , gOPNExt        = __webpack_require__(307)
   , $GOPD          = __webpack_require__(133)
   , $DP            = __webpack_require__(25)
   , $keys          = __webpack_require__(45)
@@ -37151,19 +37859,19 @@ setToStringTag(Math, 'Math', true);
 setToStringTag(global.JSON, 'JSON', true);
 
 /***/ },
-/* 316 */
+/* 322 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(86)('asyncIterator');
 
 /***/ },
-/* 317 */
+/* 323 */
 /***/ function(module, exports, __webpack_require__) {
 
 __webpack_require__(86)('observable');
 
 /***/ },
-/* 318 */
+/* 324 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37200,7 +37908,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ },
-/* 319 */
+/* 325 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37217,7 +37925,7 @@ module.exports = camelize;
 
 'use strict';
 
-var camelize = __webpack_require__(318);
+var camelize = __webpack_require__(324);
 
 var msPattern = /^-ms-/;
 
@@ -37245,7 +37953,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ },
-/* 320 */
+/* 326 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37262,7 +37970,7 @@ module.exports = camelizeStyleName;
  * 
  */
 
-var isTextNode = __webpack_require__(328);
+var isTextNode = __webpack_require__(334);
 
 /*eslint-disable no-bitwise */
 
@@ -37290,7 +37998,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ },
-/* 321 */
+/* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37422,7 +38130,7 @@ function createArrayFromMixed(obj) {
 module.exports = createArrayFromMixed;
 
 /***/ },
-/* 322 */
+/* 328 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37443,8 +38151,8 @@ module.exports = createArrayFromMixed;
 
 var ExecutionEnvironment = __webpack_require__(9);
 
-var createArrayFromMixed = __webpack_require__(321);
-var getMarkupWrap = __webpack_require__(323);
+var createArrayFromMixed = __webpack_require__(327);
+var getMarkupWrap = __webpack_require__(329);
 var invariant = __webpack_require__(4);
 
 /**
@@ -37511,7 +38219,7 @@ function createNodesFromMarkup(markup, handleScript) {
 module.exports = createNodesFromMarkup;
 
 /***/ },
-/* 323 */
+/* 329 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37611,7 +38319,7 @@ function getMarkupWrap(nodeName) {
 module.exports = getMarkupWrap;
 
 /***/ },
-/* 324 */
+/* 330 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37655,7 +38363,7 @@ function getUnboundedScrollPosition(scrollable) {
 module.exports = getUnboundedScrollPosition;
 
 /***/ },
-/* 325 */
+/* 331 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37693,7 +38401,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ },
-/* 326 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37710,7 +38418,7 @@ module.exports = hyphenate;
 
 'use strict';
 
-var hyphenate = __webpack_require__(325);
+var hyphenate = __webpack_require__(331);
 
 var msPattern = /^ms-/;
 
@@ -37737,7 +38445,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ },
-/* 327 */
+/* 333 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37765,7 +38473,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ },
-/* 328 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37782,7 +38490,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(327);
+var isNode = __webpack_require__(333);
 
 /**
  * @param {*} object The object to check.
@@ -37795,7 +38503,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ },
-/* 329 */
+/* 335 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37851,7 +38559,7 @@ function mapObject(object, callback, context) {
 module.exports = mapObject;
 
 /***/ },
-/* 330 */
+/* 336 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -37886,7 +38594,7 @@ function memoizeStringOnly(callback) {
 module.exports = memoizeStringOnly;
 
 /***/ },
-/* 331 */
+/* 337 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -37925,7 +38633,7 @@ module.exports = memoizeStringOnly;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)))
 
 /***/ },
-/* 332 */
+/* 338 */
 /***/ function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -38460,10 +39168,10 @@ module.exports = memoizeStringOnly;
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(403)(module), __webpack_require__(169)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(409)(module), __webpack_require__(169)))
 
 /***/ },
-/* 333 */
+/* 339 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -38554,7 +39262,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ },
-/* 334 */
+/* 340 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -38646,28 +39354,28 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ },
-/* 335 */
+/* 341 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 
-exports.decode = exports.parse = __webpack_require__(333);
-exports.encode = exports.stringify = __webpack_require__(334);
+exports.decode = exports.parse = __webpack_require__(339);
+exports.encode = exports.stringify = __webpack_require__(340);
 
 
 /***/ },
-/* 336 */
+/* 342 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 'use strict';
 
-module.exports = __webpack_require__(349);
+module.exports = __webpack_require__(355);
 
 
 /***/ },
-/* 337 */
+/* 343 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38697,7 +39405,7 @@ var AutoFocusUtils = {
 module.exports = AutoFocusUtils;
 
 /***/ },
-/* 338 */
+/* 344 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38717,9 +39425,9 @@ module.exports = AutoFocusUtils;
 var EventConstants = __webpack_require__(22);
 var EventPropagators = __webpack_require__(50);
 var ExecutionEnvironment = __webpack_require__(9);
-var FallbackCompositionState = __webpack_require__(344);
-var SyntheticCompositionEvent = __webpack_require__(382);
-var SyntheticInputEvent = __webpack_require__(385);
+var FallbackCompositionState = __webpack_require__(350);
+var SyntheticCompositionEvent = __webpack_require__(388);
+var SyntheticInputEvent = __webpack_require__(391);
 
 var keyOf = __webpack_require__(26);
 
@@ -39091,7 +39799,7 @@ var BeforeInputEventPlugin = {
 module.exports = BeforeInputEventPlugin;
 
 /***/ },
-/* 339 */
+/* 345 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39112,10 +39820,10 @@ var CSSProperty = __webpack_require__(142);
 var ExecutionEnvironment = __webpack_require__(9);
 var ReactInstrumentation = __webpack_require__(10);
 
-var camelizeStyleName = __webpack_require__(319);
-var dangerousStyleValue = __webpack_require__(392);
-var hyphenateStyleName = __webpack_require__(326);
-var memoizeStringOnly = __webpack_require__(330);
+var camelizeStyleName = __webpack_require__(325);
+var dangerousStyleValue = __webpack_require__(398);
+var hyphenateStyleName = __webpack_require__(332);
+var memoizeStringOnly = __webpack_require__(336);
 var warning = __webpack_require__(6);
 
 var processStyleName = memoizeStringOnly(function (styleName) {
@@ -39302,7 +40010,7 @@ var CSSPropertyOperations = {
 module.exports = CSSPropertyOperations;
 
 /***/ },
-/* 340 */
+/* 346 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39633,7 +40341,7 @@ var ChangeEventPlugin = {
 module.exports = ChangeEventPlugin;
 
 /***/ },
-/* 341 */
+/* 347 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39655,7 +40363,7 @@ var _prodInvariant = __webpack_require__(5);
 var DOMLazyTree = __webpack_require__(36);
 var ExecutionEnvironment = __webpack_require__(9);
 
-var createNodesFromMarkup = __webpack_require__(322);
+var createNodesFromMarkup = __webpack_require__(328);
 var emptyFunction = __webpack_require__(16);
 var invariant = __webpack_require__(4);
 
@@ -39687,7 +40395,7 @@ var Danger = {
 module.exports = Danger;
 
 /***/ },
-/* 342 */
+/* 348 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39720,7 +40428,7 @@ var DefaultEventPluginOrder = [keyOf({ ResponderEventPlugin: null }), keyOf({ Si
 module.exports = DefaultEventPluginOrder;
 
 /***/ },
-/* 343 */
+/* 349 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39831,7 +40539,7 @@ var EnterLeaveEventPlugin = {
 module.exports = EnterLeaveEventPlugin;
 
 /***/ },
-/* 344 */
+/* 350 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39932,7 +40640,7 @@ PooledClass.addPoolingTo(FallbackCompositionState);
 module.exports = FallbackCompositionState;
 
 /***/ },
-/* 345 */
+/* 351 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40147,7 +40855,7 @@ var HTMLDOMPropertyConfig = {
 module.exports = HTMLDOMPropertyConfig;
 
 /***/ },
-/* 346 */
+/* 352 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40168,14 +40876,14 @@ var _assign = __webpack_require__(7);
 
 var ReactChildren = __webpack_require__(145);
 var ReactComponent = __webpack_require__(96);
-var ReactPureComponent = __webpack_require__(372);
+var ReactPureComponent = __webpack_require__(378);
 var ReactClass = __webpack_require__(146);
-var ReactDOMFactories = __webpack_require__(354);
+var ReactDOMFactories = __webpack_require__(360);
 var ReactElement = __webpack_require__(20);
 var ReactPropTypes = __webpack_require__(157);
 var ReactVersion = __webpack_require__(158);
 
-var onlyChild = __webpack_require__(398);
+var onlyChild = __webpack_require__(404);
 var warning = __webpack_require__(6);
 
 var createElement = ReactElement.createElement;
@@ -40242,7 +40950,7 @@ var React = {
 module.exports = React;
 
 /***/ },
-/* 347 */
+/* 353 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40400,7 +41108,7 @@ module.exports = ReactChildReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)))
 
 /***/ },
-/* 348 */
+/* 354 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40430,7 +41138,7 @@ var ReactNodeTypes = __webpack_require__(156);
 var ReactPropTypeLocations = __webpack_require__(102);
 var ReactReconciler = __webpack_require__(38);
 
-var checkReactTypeSpec = __webpack_require__(391);
+var checkReactTypeSpec = __webpack_require__(397);
 var emptyObject = __webpack_require__(47);
 var invariant = __webpack_require__(4);
 var shallowEqual = __webpack_require__(89);
@@ -41350,7 +42058,7 @@ var ReactCompositeComponent = {
 module.exports = ReactCompositeComponent;
 
 /***/ },
-/* 349 */
+/* 355 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41370,15 +42078,15 @@ module.exports = ReactCompositeComponent;
 'use strict';
 
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDefaultInjection = __webpack_require__(365);
+var ReactDefaultInjection = __webpack_require__(371);
 var ReactMount = __webpack_require__(154);
 var ReactReconciler = __webpack_require__(38);
 var ReactUpdates = __webpack_require__(21);
 var ReactVersion = __webpack_require__(158);
 
-var findDOMNode = __webpack_require__(393);
+var findDOMNode = __webpack_require__(399);
 var getHostComponentFromComposite = __webpack_require__(163);
-var renderSubtreeIntoContainer = __webpack_require__(400);
+var renderSubtreeIntoContainer = __webpack_require__(406);
 var warning = __webpack_require__(6);
 
 ReactDefaultInjection.inject();
@@ -41457,7 +42165,7 @@ if (false) {
 module.exports = ReactDOM;
 
 /***/ },
-/* 350 */
+/* 356 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41487,7 +42195,7 @@ var ReactDOMButton = {
 module.exports = ReactDOMButton;
 
 /***/ },
-/* 351 */
+/* 357 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41509,8 +42217,8 @@ module.exports = ReactDOMButton;
 var _prodInvariant = __webpack_require__(5),
     _assign = __webpack_require__(7);
 
-var AutoFocusUtils = __webpack_require__(337);
-var CSSPropertyOperations = __webpack_require__(339);
+var AutoFocusUtils = __webpack_require__(343);
+var CSSPropertyOperations = __webpack_require__(345);
 var DOMLazyTree = __webpack_require__(36);
 var DOMNamespaces = __webpack_require__(91);
 var DOMProperty = __webpack_require__(37);
@@ -41520,16 +42228,16 @@ var EventPluginHub = __webpack_require__(49);
 var EventPluginRegistry = __webpack_require__(92);
 var ReactBrowserEventEmitter = __webpack_require__(62);
 var ReactComponentBrowserEnvironment = __webpack_require__(147);
-var ReactDOMButton = __webpack_require__(350);
+var ReactDOMButton = __webpack_require__(356);
 var ReactDOMComponentFlags = __webpack_require__(148);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMInput = __webpack_require__(357);
-var ReactDOMOption = __webpack_require__(359);
+var ReactDOMInput = __webpack_require__(363);
+var ReactDOMOption = __webpack_require__(365);
 var ReactDOMSelect = __webpack_require__(149);
-var ReactDOMTextarea = __webpack_require__(362);
+var ReactDOMTextarea = __webpack_require__(368);
 var ReactInstrumentation = __webpack_require__(10);
-var ReactMultiChild = __webpack_require__(370);
-var ReactServerRenderingTransaction = __webpack_require__(375);
+var ReactMultiChild = __webpack_require__(376);
+var ReactServerRenderingTransaction = __webpack_require__(381);
 
 var emptyFunction = __webpack_require__(16);
 var escapeTextContentForBrowser = __webpack_require__(64);
@@ -42518,7 +43226,7 @@ _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mi
 module.exports = ReactDOMComponent;
 
 /***/ },
-/* 352 */
+/* 358 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42557,7 +43265,7 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 module.exports = ReactDOMContainerInfo;
 
 /***/ },
-/* 353 */
+/* 359 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42623,7 +43331,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 module.exports = ReactDOMEmptyComponent;
 
 /***/ },
-/* 354 */
+/* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42642,7 +43350,7 @@ module.exports = ReactDOMEmptyComponent;
 
 var ReactElement = __webpack_require__(20);
 
-var mapObject = __webpack_require__(329);
+var mapObject = __webpack_require__(335);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -42805,7 +43513,7 @@ var ReactDOMFactories = mapObject({
 module.exports = ReactDOMFactories;
 
 /***/ },
-/* 355 */
+/* 361 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -42829,7 +43537,7 @@ var ReactDOMFeatureFlags = {
 module.exports = ReactDOMFeatureFlags;
 
 /***/ },
-/* 356 */
+/* 362 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -42869,7 +43577,7 @@ var ReactDOMIDOperations = {
 module.exports = ReactDOMIDOperations;
 
 /***/ },
-/* 357 */
+/* 363 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43122,7 +43830,7 @@ function _handleChange(event) {
 module.exports = ReactDOMInput;
 
 /***/ },
-/* 358 */
+/* 364 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43149,7 +43857,7 @@ if (false) {
 module.exports = { debugTool: debugTool };
 
 /***/ },
-/* 359 */
+/* 365 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43278,7 +43986,7 @@ var ReactDOMOption = {
 module.exports = ReactDOMOption;
 
 /***/ },
-/* 360 */
+/* 366 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43297,7 +44005,7 @@ module.exports = ReactDOMOption;
 
 var ExecutionEnvironment = __webpack_require__(9);
 
-var getNodeForCharacterOffset = __webpack_require__(396);
+var getNodeForCharacterOffset = __webpack_require__(402);
 var getTextContentAccessor = __webpack_require__(165);
 
 /**
@@ -43496,7 +44204,7 @@ var ReactDOMSelection = {
 module.exports = ReactDOMSelection;
 
 /***/ },
-/* 361 */
+/* 367 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43673,7 +44381,7 @@ _assign(ReactDOMTextComponent.prototype, {
 module.exports = ReactDOMTextComponent;
 
 /***/ },
-/* 362 */
+/* 368 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43834,7 +44542,7 @@ function _handleChange(event) {
 module.exports = ReactDOMTextarea;
 
 /***/ },
-/* 363 */
+/* 369 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43976,7 +44684,7 @@ module.exports = {
 };
 
 /***/ },
-/* 364 */
+/* 370 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44050,7 +44758,7 @@ var ReactDefaultBatchingStrategy = {
 module.exports = ReactDefaultBatchingStrategy;
 
 /***/ },
-/* 365 */
+/* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44067,24 +44775,24 @@ module.exports = ReactDefaultBatchingStrategy;
 
 'use strict';
 
-var BeforeInputEventPlugin = __webpack_require__(338);
-var ChangeEventPlugin = __webpack_require__(340);
-var DefaultEventPluginOrder = __webpack_require__(342);
-var EnterLeaveEventPlugin = __webpack_require__(343);
-var HTMLDOMPropertyConfig = __webpack_require__(345);
+var BeforeInputEventPlugin = __webpack_require__(344);
+var ChangeEventPlugin = __webpack_require__(346);
+var DefaultEventPluginOrder = __webpack_require__(348);
+var EnterLeaveEventPlugin = __webpack_require__(349);
+var HTMLDOMPropertyConfig = __webpack_require__(351);
 var ReactComponentBrowserEnvironment = __webpack_require__(147);
-var ReactDOMComponent = __webpack_require__(351);
+var ReactDOMComponent = __webpack_require__(357);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactDOMEmptyComponent = __webpack_require__(353);
-var ReactDOMTreeTraversal = __webpack_require__(363);
-var ReactDOMTextComponent = __webpack_require__(361);
-var ReactDefaultBatchingStrategy = __webpack_require__(364);
-var ReactEventListener = __webpack_require__(367);
-var ReactInjection = __webpack_require__(368);
-var ReactReconcileTransaction = __webpack_require__(373);
-var SVGDOMPropertyConfig = __webpack_require__(377);
-var SelectEventPlugin = __webpack_require__(378);
-var SimpleEventPlugin = __webpack_require__(379);
+var ReactDOMEmptyComponent = __webpack_require__(359);
+var ReactDOMTreeTraversal = __webpack_require__(369);
+var ReactDOMTextComponent = __webpack_require__(367);
+var ReactDefaultBatchingStrategy = __webpack_require__(370);
+var ReactEventListener = __webpack_require__(373);
+var ReactInjection = __webpack_require__(374);
+var ReactReconcileTransaction = __webpack_require__(379);
+var SVGDOMPropertyConfig = __webpack_require__(383);
+var SelectEventPlugin = __webpack_require__(384);
+var SimpleEventPlugin = __webpack_require__(385);
 
 var alreadyInjected = false;
 
@@ -44140,7 +44848,7 @@ module.exports = {
 };
 
 /***/ },
-/* 366 */
+/* 372 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44179,7 +44887,7 @@ var ReactEventEmitterMixin = {
 module.exports = ReactEventEmitterMixin;
 
 /***/ },
-/* 367 */
+/* 373 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44205,7 +44913,7 @@ var ReactDOMComponentTree = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(21);
 
 var getEventTarget = __webpack_require__(108);
-var getUnboundedScrollPosition = __webpack_require__(324);
+var getUnboundedScrollPosition = __webpack_require__(330);
 
 /**
  * Find the deepest React component completely containing the root of the
@@ -44342,7 +45050,7 @@ var ReactEventListener = {
 module.exports = ReactEventListener;
 
 /***/ },
-/* 368 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44384,7 +45092,7 @@ var ReactInjection = {
 module.exports = ReactInjection;
 
 /***/ },
-/* 369 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44401,7 +45109,7 @@ module.exports = ReactInjection;
 
 'use strict';
 
-var adler32 = __webpack_require__(390);
+var adler32 = __webpack_require__(396);
 
 var TAG_END = /\/?>/;
 var COMMENT_START = /^<\!\-\-/;
@@ -44440,7 +45148,7 @@ var ReactMarkupChecksum = {
 module.exports = ReactMarkupChecksum;
 
 /***/ },
-/* 370 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44466,10 +45174,10 @@ var ReactMultiChildUpdateTypes = __webpack_require__(155);
 
 var ReactCurrentOwner = __webpack_require__(28);
 var ReactReconciler = __webpack_require__(38);
-var ReactChildReconciler = __webpack_require__(347);
+var ReactChildReconciler = __webpack_require__(353);
 
 var emptyFunction = __webpack_require__(16);
-var flattenChildren = __webpack_require__(394);
+var flattenChildren = __webpack_require__(400);
 var invariant = __webpack_require__(4);
 
 /**
@@ -44899,7 +45607,7 @@ var ReactMultiChild = {
 module.exports = ReactMultiChild;
 
 /***/ },
-/* 371 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44999,7 +45707,7 @@ var ReactOwner = {
 module.exports = ReactOwner;
 
 /***/ },
-/* 372 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45047,7 +45755,7 @@ ReactPureComponent.prototype.isPureReactComponent = true;
 module.exports = ReactPureComponent;
 
 /***/ },
-/* 373 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45231,7 +45939,7 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 module.exports = ReactReconcileTransaction;
 
 /***/ },
-/* 374 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45248,7 +45956,7 @@ module.exports = ReactReconcileTransaction;
 
 'use strict';
 
-var ReactOwner = __webpack_require__(371);
+var ReactOwner = __webpack_require__(377);
 
 var ReactRef = {};
 
@@ -45317,7 +46025,7 @@ ReactRef.detachRefs = function (instance, element) {
 module.exports = ReactRef;
 
 /***/ },
-/* 375 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45339,7 +46047,7 @@ var _assign = __webpack_require__(7);
 var PooledClass = __webpack_require__(27);
 var Transaction = __webpack_require__(53);
 var ReactInstrumentation = __webpack_require__(10);
-var ReactServerUpdateQueue = __webpack_require__(376);
+var ReactServerUpdateQueue = __webpack_require__(382);
 
 /**
  * Executed within the scope of the `Transaction` instance. Consider these as
@@ -45413,7 +46121,7 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 module.exports = ReactServerRenderingTransaction;
 
 /***/ },
-/* 376 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45560,7 +46268,7 @@ var ReactServerUpdateQueue = function () {
 module.exports = ReactServerUpdateQueue;
 
 /***/ },
-/* 377 */
+/* 383 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -45868,7 +46576,7 @@ Object.keys(ATTRS).forEach(function (key) {
 module.exports = SVGDOMPropertyConfig;
 
 /***/ },
-/* 378 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46070,7 +46778,7 @@ var SelectEventPlugin = {
 module.exports = SelectEventPlugin;
 
 /***/ },
-/* 379 */
+/* 385 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46093,17 +46801,17 @@ var EventConstants = __webpack_require__(22);
 var EventListener = __webpack_require__(139);
 var EventPropagators = __webpack_require__(50);
 var ReactDOMComponentTree = __webpack_require__(8);
-var SyntheticAnimationEvent = __webpack_require__(380);
-var SyntheticClipboardEvent = __webpack_require__(381);
+var SyntheticAnimationEvent = __webpack_require__(386);
+var SyntheticClipboardEvent = __webpack_require__(387);
 var SyntheticEvent = __webpack_require__(23);
-var SyntheticFocusEvent = __webpack_require__(384);
-var SyntheticKeyboardEvent = __webpack_require__(386);
+var SyntheticFocusEvent = __webpack_require__(390);
+var SyntheticKeyboardEvent = __webpack_require__(392);
 var SyntheticMouseEvent = __webpack_require__(63);
-var SyntheticDragEvent = __webpack_require__(383);
-var SyntheticTouchEvent = __webpack_require__(387);
-var SyntheticTransitionEvent = __webpack_require__(388);
+var SyntheticDragEvent = __webpack_require__(389);
+var SyntheticTouchEvent = __webpack_require__(393);
+var SyntheticTransitionEvent = __webpack_require__(394);
 var SyntheticUIEvent = __webpack_require__(52);
-var SyntheticWheelEvent = __webpack_require__(389);
+var SyntheticWheelEvent = __webpack_require__(395);
 
 var emptyFunction = __webpack_require__(16);
 var getEventCharCode = __webpack_require__(106);
@@ -46709,7 +47417,7 @@ var SimpleEventPlugin = {
 module.exports = SimpleEventPlugin;
 
 /***/ },
-/* 380 */
+/* 386 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46754,7 +47462,7 @@ SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 module.exports = SyntheticAnimationEvent;
 
 /***/ },
-/* 381 */
+/* 387 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46798,7 +47506,7 @@ SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 module.exports = SyntheticClipboardEvent;
 
 /***/ },
-/* 382 */
+/* 388 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46840,7 +47548,7 @@ SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface
 module.exports = SyntheticCompositionEvent;
 
 /***/ },
-/* 383 */
+/* 389 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46882,7 +47590,7 @@ SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 module.exports = SyntheticDragEvent;
 
 /***/ },
-/* 384 */
+/* 390 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46924,7 +47632,7 @@ SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 module.exports = SyntheticFocusEvent;
 
 /***/ },
-/* 385 */
+/* 391 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46967,7 +47675,7 @@ SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 module.exports = SyntheticInputEvent;
 
 /***/ },
-/* 386 */
+/* 392 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46987,7 +47695,7 @@ module.exports = SyntheticInputEvent;
 var SyntheticUIEvent = __webpack_require__(52);
 
 var getEventCharCode = __webpack_require__(106);
-var getEventKey = __webpack_require__(395);
+var getEventKey = __webpack_require__(401);
 var getEventModifierState = __webpack_require__(107);
 
 /**
@@ -47057,7 +47765,7 @@ SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 module.exports = SyntheticKeyboardEvent;
 
 /***/ },
-/* 387 */
+/* 393 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47108,7 +47816,7 @@ SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 module.exports = SyntheticTouchEvent;
 
 /***/ },
-/* 388 */
+/* 394 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47153,7 +47861,7 @@ SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 module.exports = SyntheticTransitionEvent;
 
 /***/ },
-/* 389 */
+/* 395 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47213,7 +47921,7 @@ SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 module.exports = SyntheticWheelEvent;
 
 /***/ },
-/* 390 */
+/* 396 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -47263,7 +47971,7 @@ function adler32(data) {
 module.exports = adler32;
 
 /***/ },
-/* 391 */
+/* 397 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47357,7 +48065,7 @@ module.exports = checkReactTypeSpec;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)))
 
 /***/ },
-/* 392 */
+/* 398 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47442,7 +48150,7 @@ function dangerousStyleValue(name, value, component) {
 module.exports = dangerousStyleValue;
 
 /***/ },
-/* 393 */
+/* 399 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47508,7 +48216,7 @@ function findDOMNode(componentOrElement) {
 module.exports = findDOMNode;
 
 /***/ },
-/* 394 */
+/* 400 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47589,7 +48297,7 @@ module.exports = flattenChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(48)))
 
 /***/ },
-/* 395 */
+/* 401 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47697,7 +48405,7 @@ function getEventKey(nativeEvent) {
 module.exports = getEventKey;
 
 /***/ },
-/* 396 */
+/* 402 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -47777,7 +48485,7 @@ function getNodeForCharacterOffset(root, offset) {
 module.exports = getNodeForCharacterOffset;
 
 /***/ },
-/* 397 */
+/* 403 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47884,7 +48592,7 @@ function getVendorPrefixedEventName(eventName) {
 module.exports = getVendorPrefixedEventName;
 
 /***/ },
-/* 398 */
+/* 404 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47928,7 +48636,7 @@ function onlyChild(children) {
 module.exports = onlyChild;
 
 /***/ },
-/* 399 */
+/* 405 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47960,7 +48668,7 @@ function quoteAttributeValueForBrowser(value) {
 module.exports = quoteAttributeValueForBrowser;
 
 /***/ },
-/* 400 */
+/* 406 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -47982,7 +48690,7 @@ var ReactMount = __webpack_require__(154);
 module.exports = ReactMount.renderSubtreeIntoContainer;
 
 /***/ },
-/* 401 */
+/* 407 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48009,8 +48717,8 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 'use strict';
 
-var punycode = __webpack_require__(332);
-var util = __webpack_require__(402);
+var punycode = __webpack_require__(338);
+var util = __webpack_require__(408);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -48085,7 +48793,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(335);
+    querystring = __webpack_require__(341);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -48721,7 +49429,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ },
-/* 402 */
+/* 408 */
 /***/ function(module, exports) {
 
 "use strict";
@@ -48744,7 +49452,7 @@ module.exports = {
 
 
 /***/ },
-/* 403 */
+/* 409 */
 /***/ function(module, exports) {
 
 module.exports = function(module) {
@@ -48770,7 +49478,7 @@ module.exports = function(module) {
 
 
 /***/ },
-/* 404 */
+/* 410 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -48874,6 +49582,9 @@ var ReactUI = function (_EventEmitter) {
    * @param  {Boolean} [options.editor.enableDrag = true] - Should dragging the canvas be enabled?
    * @param  {Boolean} [options.editor.enableZoom = true] - Should zooming be enabled?
    * @param  {Boolean} [options.editor.smoothDownscaling = false] - Toggles smooth downscaling
+   * @param  {Boolean} [options.editor.displayResizeMessage = true] - Should a message be displayed
+   *                                                       when the image has been scaled down
+   *                                                       for performance?
    * @param  {String[]} [options.editor.tools] - The enabled tools. Available are: `crop`, `rotation`,
    *                                    `flip`, `filter`, `brightness`, `saturation`, `contrast`,
    *                                    `clarity`, `exposure`, `shadows`, `highlights`, `text`,
@@ -48890,6 +49601,9 @@ var ReactUI = function (_EventEmitter) {
    * @param  {Object} [options.editor.controlsOptions] - Options that are passed to specific controls. See
    *                                            the documentation for each control to learn more
    *                                            about available values.
+   * @param {Object[]} [options.editor.forceControls] - An array of objects specifying the controls
+   *                                                  the user needs to use before being able to
+   *                                                  use the actual editor.
    *
    * @param  {Object} [options.editor.maxMegaPixels] - Maximum amount of megapixels per device type
    * @param  {Number} [options.editor.maxMegaPixels.desktop = 10]
@@ -48900,6 +49614,11 @@ var ReactUI = function (_EventEmitter) {
    * @param  {String} [options.editor.export.format = 'image/png'] - The export format. Available formats
    * @param  {PhotoEditorSDK.RenderType} [options.editor.export.type] - The export type (image or data url)
    * @param  {Boolean} [options.editor.export.download] - Should the result be presented as a download?
+   * @param  {String} [options.editor.export.fileBasename = 'photoeditorsdk-export'] - The basename
+   *                                                      of the exported file (file extension will
+   *                                                      be added automatically)
+   * @param {Number} [options.editor.export.quality = 0.8] - The export quality (0...1, only supported
+   *                                                for JPG images)
    *
    * @param  {Object} [options.assets]
    * @param  {String} [options.assets.baseUrl = '/assets'] - Path that is prepended to all asset paths
@@ -49023,7 +49742,9 @@ var ReactUI = function (_EventEmitter) {
       enableZoom: true,
       enableDrag: true,
       smoothDownscaling: false,
+      displayResizeMessage: true,
       maxMegaPixels: {},
+      forceControls: [],
       tools: ['crop', 'filter', 'brightness', 'saturation', 'contrast', 'clarity', 'exposure', 'shadows', 'highlights', 'text', 'sticker', 'brush', 'radial-focus', 'linear-focus', 'border'],
       controlsOrder: ['crop', ['filter', 'adjustments'], ['text', 'sticker', 'brush'], ['focus', 'border']],
       operationsOrder: [
@@ -49048,7 +49769,9 @@ var ReactUI = function (_EventEmitter) {
       showButton: true,
       format: 'image/png',
       type: _globals.RenderType.IMAGE,
-      download: true
+      download: true,
+      fileBasename: 'photoeditorsdk-export',
+      quality: 0.8
     });
 
     this._options.photoRoll = _globals.SDKUtils.defaults(this._options.photoRoll || {}, {
@@ -49310,8 +50033,8 @@ var ReactComponent = function (_React$Component) {
 ReactUI.ReactComponent = ReactComponent;
 
 // Extend PhotoEditorSDK object
-_globals.PhotoEditorSDK.UI = _globals.PhotoEditorSDK.UI || {};
-_globals.PhotoEditorSDK.UI.ReactUI = ReactUI;
+_globals.SDK.UI = _globals.SDK.UI || {};
+_globals.SDK.UI.ReactUI = ReactUI;
 
 module.exports = ReactUI;
 
