@@ -1,3 +1,5 @@
+> :rotating_light: *Please note:* This repository only contains completed builds. In order to access our source code repository, please [order a license](https://www.photoeditorsdk.com/license/new). Please see [LICENSE](https://github.com/imgly/imgly-sdk-html5/blob/master/LICENSE.md) for licensing details. :rotating_light:
+
 <p align="center">
   <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
 </p>
@@ -23,68 +25,11 @@ Visit [our website](https://www.photoeditorsdk.com/documentation/html5/getting-s
   <img src="http://static.photoeditorsdk.com/html5-editor.gif" />
 </p>
 
-## Examples
-See the examples folder for implementation examples or play with the [demo on our website](https://www.photoeditorsdk.com/).
-
-## Setting up the development environment
-
-### Mac OSX
-
-```shell
-$ xcode-select --install
-$ brew install libtiff jpeg libpng cairo
-$ npm install -g gulp
-$ npm install
-```
-
-### All other environments
-
-```shell
-$ npm install -g gulp
-$ npm install
-```
-
-## Running the tests
-
-### Canvas tests
-
-```shell
-$ npm test
-```
-
-### WebGL tests (very rudimentary)
-
-```shell
-$ npm run test-webgl
-```
-
-### Run code coverage
-
-```shell
-$ npm run coverage
-```
-
-## Creating a new release
-
-First, create a [GitHub API token](https://help.github.com/articles/creating-an-access-token-for-command-line-use/) and write it to `.github-token`. Then run
-
-```shell
-$ npm run release
-```
-
-## Building the documentation
-
-```shell
-$ gulp jsdoc
-```
-
-The documentation will be in the `doc` directory.
-
 ### License
 Please see [LICENSE](https://github.com/imgly/imgly-sdk-html5/blob/master/LICENSE.md) for licensing details.
 
 ### Authors and Contributors
-Made 2013-2016 by @9elements: Sascha Gehlich ([@saschagehlich](https://github.com/saschagehlich)), Johannes Emerich ([@knuton](https://github.com/knuton)), Carsten Przyluczky ([@K4stor](https://github.com/K4stor)), Sebastian Deutsch ([@sebastiandeutsch](https://github.com/sebastiandeutsch))
+Made 2013-2016 by @9elements
 
 ### Support or Contact
 Contact contact@photoeditorsdk.com for support requests or to upgrade to an enterprise licence.
