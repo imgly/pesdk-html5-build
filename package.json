@@ -1,0 +1,12 @@
+{
+  "name": "pesdk-html5",
+  "version": "3.5.0",
+  "description": "The most comprehensive photo editor SDK for HTML5",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:imgly/pesdk-html5-build.git",
+    "type": "git"
+  },
+  "author": "PhotoEditorSDK (9elements GmbH) <contact@9elements.com>",
+  "license": "SEE LICENSE IN LICENSE.md"
+}
