@@ -26,7 +26,7 @@ window.onload = function () {
 
         var _this = _possibleConstructorReturn(this, _ReactUI$PhotoRoll$Pr.call.apply(_ReactUI$PhotoRoll$Pr, [this].concat(args)));
 
-        _this._url = 'http://static.photoeditorsdk.com/unsplash.json';
+        _this._url = 'http://d3czpaw5gb5xgh.cloudfront.net/unsplash.json';
         return _this;
       }
 
@@ -40,7 +40,7 @@ window.onload = function () {
       UnsplashProvider.prototype.getLibraries = function getLibraries() {
         return Promise.resolve([new ReactUI.PhotoRoll.Library({
           name: 'Photos',
-          coverImage: 'http://static.photoeditorsdk.com/unsplash/thumb/ZsB2MbzSHjI.jpg'
+          coverImage: 'http://d3czpaw5gb5xgh.cloudfront.net/thumb/ZsB2MbzSHjI.jpg'
         })]);
       };
 
@@ -54,7 +54,7 @@ window.onload = function () {
       UnsplashProvider.prototype.getSearchSuggestions = function getSearchSuggestions() {
         return Promise.resolve([new ReactUI.PhotoRoll.SearchSuggestion({
           query: 'Nature',
-          coverImage: 'http://static.photoeditorsdk.com/unsplash/thumb/Z_br8TOcCpE.jpg'
+          coverImage: 'http://d3czpaw5gb5xgh.cloudfront.net/thumb/Z_br8TOcCpE.jpg'
         })]);
       };
 
