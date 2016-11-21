@@ -1,3 +1,45 @@
+# 3.5.2
+
+## Editor
+
+### Features
+
+* Add an optional `Selective Blur` feature that allows users to blur parts of the image using a
+  brush. Can be enabled using `editor: { tools: ['selective-blur'] }`.
+* Add an optional `Gamma correction` feature under `Adjustments`. Can be enabled using
+  `editor: { tools: ['gamma'] }`.
+* Due to changes to our feature set, our serialization schema has been updated to version `1.0.1`.
+  The new `schema.json` can be found [here](http://static.photoeditorsdk.com/serialization/schema-1.0.1.json).
+* Decrease brush step, making large brushes look smoother
+* Add output dimensions to crop control
+* Allow `dimensions` option for crop ratios, causing the resulting image to be exactly of the given
+  dimensions (Needs to be a `PhotoEditorSDK.Math.Vector2`)
+* Add a preloader (can be disabled using the `editor.preloader` option)
+
+### Bugfixes
+
+* Fix crop rotation deserialization issues
+* Fix `smoothUpscaling` option for intermittent render textures
+* Fix knob dragging of linear focus controls
+
+## SDK
+
+### Features
+
+* Add `dimensions` option (of type `PhotoEditorSDK.Math.Vector2) to `CropOperation`
+* Add `gamma` option to `AdjustmentsOperation`
+
+### Bugfixes
+
+* Fix SDK disposal (`PhotoEditorSDK#dispose` now correctly disposes all textures and shaders)
+
+## Engine
+
+### Bugfixes
+
+* Only use `highp` shader precision when it's available
+
+
 # 3.5.1
 
 This version of PhotoEditorSDK for HTML5 contains a *lot* of memory management improvements, fixing
