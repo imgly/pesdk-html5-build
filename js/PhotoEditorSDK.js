@@ -8807,7 +8807,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 module.exports = {
 	"name": "photoeditorsdk",
-	"version": "3.5.2",
+	"version": "3.5.3",
 	"description": "The most comprehensive photo editor SDK for HTML5",
 	"repository": "http://github.com/imgly/pesdk-html5",
 	"author": "Photo Editor SDK <contact@photoeditorsdk.com>",
