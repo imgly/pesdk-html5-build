@@ -156,7 +156,7 @@ window.onload = function () {
   myImage.addEventListener('load', function () {
     run()
   })
-  myImage.src = 'test.jpg'
+  myImage.src = 'test.png'
 
   /**
    * Handle links
