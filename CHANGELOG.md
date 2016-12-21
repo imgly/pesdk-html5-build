@@ -1,3 +1,36 @@
+# 3.6.0
+
+## Editor
+
+:rotating_light: **Please note:** From this version on, you will need an API key to use PhotoEditorSDK
+for HTML5. Please [log in to your account](https://www.photoeditorsdk.com) to obtain an API key and
+specify it using the `apiKey` option.
+
+### Features
+
+* Implement licensing check and `apiKey` option
+
+### Bugfixes
+
+* Fix filter history / undo
+* Fix text height calculation (now uses DOM element measuring when available)
+* Fix crop and rotation compensation for sprites
+* Fix very small brushes
+* Fix splash screen assets being preloaded incorrectly
+
+## Engine
+
+### Bugfixes
+
+* Fix a bug that caused Quads to be disposed incorrectly
+
+## SDK
+
+### Bugfixes
+
+* Fix selective blur feature in combination with other texture units
+* Fix selective blur for canvas
+
 # 3.5.2
 
 ## Editor

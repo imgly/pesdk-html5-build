@@ -131,8 +131,9 @@ window.onload = function () {
     editor = new ReactUI({
       container: document.querySelector('#container'),
       logLevel: 'info',
+      apiKey: 'your-api-key',
       editor: {
-        // image: myImage,
+        image: myImage,
         preferredRenderer: preferredRenderer || 'webgl'
       },
       photoRoll: {
