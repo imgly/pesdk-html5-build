@@ -1,3 +1,32 @@
+# 3.6.1
+
+## Editor
+
+### Features
+
+* New frames feature replaces the old border feature
+* We got rid of the "apply" button - instead, we introduced "Default" options for all controls
+* Only one focus operation is allowed at a time, so we updated the focus controls
+* Font list is now scrollable
+* Google Fonts are preloaded correctly, making sure the font previews are rendered correctly
+* Displaying a warning when font loading fails
+* Don't reload fonts every time the text controls are opened
+
+### Bugfixes
+
+* Crop ratios are now grouped correctly
+* Fix crop assets preloading
+* Fix text height calculation
+* Rotating a crop with fixed pixel values does no longer flip the crop
+
+## SDK
+
+### Bugfixes
+
+* Fix crop with pixel values
+* Fix export of transparent images, un-premultiply alpha
+* Fix gamma rendering in combination with brightness and contrast
+
 # 3.6.0
 
 ## Editor
@@ -30,6 +59,10 @@ specify it using the `apiKey` option.
 
 * Fix selective blur feature in combination with other texture units
 * Fix selective blur for canvas
+
+# 3.5.3
+
+* Removed React and ReactDOM dependencies from source code, they now need to be installed manually.
 
 # 3.5.2
 
