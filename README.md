@@ -29,7 +29,7 @@ Visit [our website](https://www.photoeditorsdk.com/documentation/html5/getting-s
 Please see [LICENSE](https://github.com/imgly/pesdk-html5/blob/master/LICENSE.md) for licensing details.
 
 ### Authors and Contributors
-Made 2013-2016 by @9elements
+Made 2013-2017 by @9elements
 
 ### Support or Contact
 Contact contact@photoeditorsdk.com for support requests or to upgrade to an enterprise licence.
