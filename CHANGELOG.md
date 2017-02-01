@@ -1,3 +1,11 @@
+# 3.6.2
+
+## Editor
+
+### Bugfixes
+
+* Fix text height calculation in Firefox < 45.0
+
 # 3.6.1
 
 ## Editor
