@@ -1,7 +1,7 @@
 > :rotating_light: *Please note:* This repository only contains completed builds. In order to access our source code repository, please [order a license](https://www.photoeditorsdk.com/license/new). Please see [LICENSE](https://github.com/imgly/pesdk-html5/blob/master/LICENSE.md) for licensing details. :rotating_light:
 
 <p align="center">
-  <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
+  <img src="http://static.photoeditorsdk.com/logo.png" />
 </p>
 <p align="center">
   <img src="https://circleci.com/gh/imgly/pesdk-html5/tree/develop.svg?style=shield&circle-token=62c63a2edc1d8f02fe583ac943ddf37846fdd210" />
