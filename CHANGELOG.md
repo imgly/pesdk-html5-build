@@ -1,3 +1,11 @@
+# 3.6.4
+
+## Editor
+
+### Bugfixes
+
+* Fix rotation not being applied when cropping the whole image
+
 # 3.6.2
 
 ## Editor
