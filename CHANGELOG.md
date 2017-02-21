@@ -1,3 +1,11 @@
+# 3.6.5
+
+## Editor
+
+### Bugfixes
+
+* Fix SVG filters in combination with `<base>` tags
+
 # 3.6.4
 
 ## Editor
