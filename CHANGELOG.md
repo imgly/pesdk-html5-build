@@ -1,3 +1,11 @@
+# 3.6.6
+
+## Editor
+
+### Bugfixes
+
+* Fix force crop / force controls
+
 # 3.6.5
 
 ## Editor
