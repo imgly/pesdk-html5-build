@@ -22,7 +22,7 @@ Visit [our website](https://www.photoeditorsdk.com/documentation/html5/getting-s
 ## Preview
 
 <p align="center">
-  <img src="http://static.photoeditorsdk.com/html5-editor.gif" />
+  <img src="http://static.photoeditorsdk.com/html5-editor.gif?new" />
 </p>
 
 ### License
