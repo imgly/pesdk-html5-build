@@ -1,3 +1,11 @@
+# 3.6.7
+
+## Editor
+
+### Bugfixes
+
+* `smoothDownscaling` option now works propertly again for both the editor and stickers
+
 # 3.6.6
 
 ## Editor
