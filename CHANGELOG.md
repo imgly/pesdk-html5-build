@@ -1,3 +1,14 @@
+# 3.6.8
+
+## Editor
+
+### Bugfixes
+
+* Fix a bug that caused sticker controls to break when switching between stickers
+* Fix a bug that caused editor to crash when exiting the crop control after clicking the `original`
+  option
+* Hide crop straighten control when `original` option is active
+
 # 3.6.7
 
 ## Editor
