@@ -1,3 +1,14 @@
+# 3.6.9
+
+## Editor
+
+### Bugfixes
+
+* Fixed sticker loading from external JSON
+* Sticker category labels are not resolved using the language objects anymore. Instead, it's using
+  the `label` property of a category
+* Base URL is no longer prepended to absolute asset URLs
+
 # 3.6.8
 
 ## Editor
