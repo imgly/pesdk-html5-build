@@ -1,3 +1,13 @@
+# 3.6.10
+
+## Editor
+
+### Bugfixes
+
+* Fixed a bug that caused text items to switch text when being taken to front
+* Fixed a bug that caused foreground and background color to not get updated when switching between
+  text items
+
 # 3.6.9
 
 ## Editor
