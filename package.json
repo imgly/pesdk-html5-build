@@ -1,5 +1,5 @@
 {
-  "name": "pesdk-html5",
+  "name": "photoeditorsdk",
   "version": "3.6.10",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
