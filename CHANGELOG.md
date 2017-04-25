@@ -1,3 +1,11 @@
+# 3.6.11
+
+## Editor
+
+### Bugfixes
+
+* Fixed `editor.controlOptions.crop.selectableRatios` option
+
 # 3.6.10
 
 ## Editor

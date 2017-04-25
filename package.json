@@ -1,6 +1,6 @@
 {
   "name": "photoeditorsdk",
-  "version": "3.6.10",
+  "version": "3.6.11",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "repository": {
