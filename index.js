@@ -1,1 +1,1 @@
-module.exports = require('./js/PhotoEditorSDK.min')
+module.exports = require('./js/PhotoEditorSDK')
