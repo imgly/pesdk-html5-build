@@ -11,7 +11,7 @@
 </p>
 
 ## PhotoEditor SDK for HTML5.
-The [PhotoEditor SDK] (https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) for HTML5 is a **fully customizable** photo editor which you can integrate into your HTML5 app within minutes.
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) for HTML5 is a **fully customizable** photo editor which you can integrate into your HTML5 app within minutes.
 It contains the most important photo editing tools;
 Auto-Enhance, Crop, Rotate, Focus, Brightness, Contrast, Saturation, and more.
 It also features state-of-the-art photo filters, designed and calibrated with a lot of love.
