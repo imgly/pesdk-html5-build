@@ -1,3 +1,12 @@
+# 3.6.12
+
+## Editor
+
+### Bugfixes
+
+* Fix cross origin issue when using frames
+* Fix crop rotation when no crop ratio is selected
+
 # 3.6.11
 
 ## Editor
