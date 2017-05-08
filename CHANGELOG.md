@@ -1,3 +1,11 @@
+# 3.6.13
+
+## Editor
+
+### Bugfixes
+
+* Fix text and sticker items not draggable when brush has been drawn on top of them
+
 # 3.6.12
 
 ## Editor
