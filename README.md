@@ -19,14 +19,17 @@ A Text editor with an elegant and simple to use interface allows adding text ins
 
 Visit [our website](https://www.photoeditorsdk.com/documentation/html5/getting-started/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) for tutorials on how to integrate and customize the editor.
 
+## License
+The PhotoEditorSDK is a product of 9elements GmbH. 
+Please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=Android-Demo). Please see the included [LICENSE](LICENSE.md) for licensing details.
+
+
 ## Preview
 
 <p align="center">
   <img src="http://static.photoeditorsdk.com/html5-editor.gif?new" />
 </p>
 
-### License
-Please see [LICENSE](https://github.com/imgly/pesdk-html5/blob/master/LICENSE.md) for licensing details.
 
 ### Authors and Contributors
 Made 2013-2017 by @9elements
