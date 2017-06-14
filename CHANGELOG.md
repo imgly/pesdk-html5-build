@@ -1,3 +1,13 @@
+# 3.6.14
+
+## Editor
+
+* Added `snapRotation` and `snapRotationTolerance` to sticker controls. These options allow you
+  to specify values for rotation snapping. `snapRotation` defines the rotation interval (in degrees)
+  at which the rotation should snap while `snapRotationTolerance` defines the tolerance around the
+  `snapRotation` at which it should snap.
+* Fixed exposed `ReactComponent`. For an example on how to use it, [click here](https://github.com/imgly/pesdk-react-demo).
+
 # 3.6.13
 
 ## Editor
