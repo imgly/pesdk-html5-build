@@ -1,4 +1,4 @@
-> :rotating_light: *Please note:* This repository only contains completed builds. In order to access our source code repository, please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5). Please see [LICENSE](https://github.com/imgly/pesdk-html5/blob/master/LICENSE.md) for licensing details. :rotating_light:
+> :rotating_light: *Please note:* This repository only contains completed builds. In order to access our source code repository, please [order a license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5). Please see [LICENSE](https://github.com/imgly/pesdk-html5/blob/master/LICENSE.md) for licensing details. :rotating_light:
 
 <p align="center">
   <img src="http://static.photoeditorsdk.com/logo.png" />
@@ -14,17 +14,17 @@
 
 ## Overview 
 
-The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) is a powerful and multifaceted tool which enables you to equip your website or application with high-performant photo editing capabilities. The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) is written in HTML5 and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires. 
+The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5) is a powerful and multifaceted tool which enables you to equip your website or application with high-performant photo editing capabilities. The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5) is written in HTML5 and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires. 
 
-The SDK ships with a large variety of filters, covering all state of the art style- and mood settings. All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see [Features](https://github.com/imgly/pesdk-html5-build/blob/master/README.md#features) for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5).
+The SDK ships with a large variety of filters, covering all state of the art style- and mood settings. All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see [Features](https://github.com/imgly/pesdk-html5-build/blob/master/README.md#features) for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5).
 
 
 ## License
-The PhotoEditorSDK is a product of 9elements GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) before releasing your app. A commercial license is required if you would like to integrate the SDK into any website or service, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free service. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
+The PhotoEditorSDK is a product of 9elements GmbH. Please make sure that you have a commercial [license](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5) before releasing your app. A commercial license is required if you would like to integrate the SDK into any website or service, regardless of whether you monetize directly (paid app, subscription, service fee), indirectly (advertising, etc.) or are developing a free service. Every license for the PhotoEditor SDK is valid for one product only unless the products are closely related.
 
 If you’d like to use the PhotoEditor SDK for a charitable project, you can do so free of charge. However, please contact us anyway, so we can evaluate whether you qualify for a non-commercial license or not and handle your request accordingly. 
 
-Please [get in touch](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE](LICENSE.md) for licensing details.
+Please [get in touch](https://www.photoeditorsdk.com/pricing#contact/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5) if you’d like to purchase a commercial license or require further information on our pricing and services. Please see the included [LICENSE](LICENSE.md) for licensing details.
 
 
 ## Features
@@ -52,9 +52,9 @@ Please [get in touch](https://www.photoeditorsdk.com/pricing#contact/?utm_campai
 
 ## Documentation
 
-For a detailed documentation, please take a look [here](http://docs.photoeditorsdk.com/guides/html5/v3_6/introduction/overview/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5).
+For a detailed documentation, please take a look [here](http://docs.photoeditorsdk.com/guides/html5/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5).
 
 
 ## Author
 
-9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5)
+9elements GmbH, [@PhotoEditorSDK](https://twitter.com/PhotoEditorSDK), [www.photoeditorsdk.com](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build&utm_term=HTML5)
