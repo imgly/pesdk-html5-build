@@ -16,7 +16,7 @@
 
 The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) is a powerful and multifaceted tool which enables you to equip your website or application with high-performant photo editing capabilities. The [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5) is written in HTML5 and can easily be customized to entirely blend with your CI and provide your users with the exact feature set your use-case requires. 
 
-The SDK ships with a large variety of filters, covering all state of the art style- and mood settings. All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see [Features](https://github.com/imgly/pesdk-html5-build/master/README.md#Features) for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5).
+The SDK ships with a large variety of filters, covering all state of the art style- and mood settings. All operations are non-destructive which allows for fast and uncomplicated revision of the creatives at any given time and creates an intuitive and creative workflow for your users. Please see [Features](https://github.com/imgly/pesdk-html5-build/blob/master/README.md#features) for a detailed list of the photo editing tools included in the [PhotoEditor SDK](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_term=HTML5).
 
 
 ## License
