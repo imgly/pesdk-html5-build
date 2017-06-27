@@ -1,3 +1,9 @@
+# 3.6.15
+
+## Fixed
+
+* Fixed stickers not resized correctly when `fixedRatio` is set to `false`
+
 # 3.6.14
 
 ## Editor
