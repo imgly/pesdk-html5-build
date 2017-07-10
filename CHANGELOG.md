@@ -1,3 +1,15 @@
+# 3.6.16
+
+## Fixed
+
+* Fixed mipmap generation when texture dimensions change from POT to non-POT
+* Zoom is now reset to previous level when leaving controls
+* Added workaround for Safari WebGL bug when using SVG stickers
+
+## Added
+
+* Add translation key for zoom
+
 # 3.6.15
 
 ## Fixed
