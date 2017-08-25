@@ -1,3 +1,9 @@
+# 3.6.17
+
+## Fixed
+
+* Fixed sticker category selection
+
 # 3.6.16
 
 ## Fixed
