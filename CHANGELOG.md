@@ -1,3 +1,47 @@
+# 4.0.0
+
+PhotoEditorSDK for HTML5 v4.0.0 comes with an all-new user interface designed
+and optimized for desktop browsers!
+
+This version contains many API changes. Please refer to our documentation for
+the new API: Click [here](https://docs.photoeditorsdk.com/guides/html5/v4-ReactUI)
+for the ReactUI and [here](https://docs.photoeditorsdk.com/guides/html5/v4-DesktopUI)
+for our new DesktopUI.
+
+**Please note:** With version 4.0.0, you will need to pass in your license file
+as a string using the `license` option - both to our UIs as well as the SDK
+itself (in case you're using the PhotoEditorSDK class manually). You can obtain
+your license, please sign in on our [website](https://www.photoeditorsdk.com/login).
+
+## Added
+
+* Our UIs now have the ability to load custom font faces from .woff files
+* Added a new `overlay` operation that places an asset onto the image with
+  a specific blend mode
+* Added two new blur operations: `gaussian` (blurs the whole image) and `linear`
+  (linear gradient blur). The previous `linear` blur is now called `mirrored`.
+* Added a 3D Lookup Table filter that can apply color filters using a 3D LUT
+  image. All our default filters are based on this technology now. This also
+  means that you can now use your iOS and Android filters on HTML5 as well.
+  Please refer to our [documentation](https://docs.photoeditorsdk.com/guides/html5/v4-DesktopUI/features/filters)
+  to learn more about this feature and how to create your own filters.
+* Added a new serialization format (3.0.0) which has been designed for cross-
+  platform serialization.
+* Our new UI adds controls for various new internal features such as sticker
+  opacity and sticker tinting.
+
+## Changed
+
+* Replaced our default sticker packs with two new sticker packs: `emoticons`
+  and `shapes`
+* `linear` focus is now called `mirrored`
+
+## Known bugs
+
+* Serialization definition is not final yet
+* SVG Stickers don't work in IE11
+
+
 # 3.6.17
 
 ## Fixed
