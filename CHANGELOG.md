@@ -1,3 +1,9 @@
+# 4.0.1
+
+## Fixed
+
+* Transform control works again
+
 # 4.0.0
 
 PhotoEditorSDK for HTML5 v4.0.0 comes with an all-new user interface designed
