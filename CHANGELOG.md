@@ -48,6 +48,7 @@ your license, please sign in on our [website](https://www.photoeditorsdk.com/log
 
 * Fixed sticker category selection
 
+
 # 3.6.16
 
 ## Fixed
