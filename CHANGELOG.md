@@ -1,3 +1,16 @@
+# 4.0.2
+
+## Fixed
+
+* Fixed deserialization
+* Fixed shapes in IE11
+* DesktopUI: Invalid HEX color values are handled correctly now
+
+## Changed
+
+* ReactUI: Better initial sticker dimensions
+* Changed default names for shape stickers
+
 # 4.0.1
 
 ## Fixed
