@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://camo.githubusercontent.com/4c4c8d90e242619972a11baa3c33acaaeb9bad00/687474703a2f2f692e696d6775722e636f6d2f666748314852742e706e67" />
+  <a target="_blank" href="https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=Side_Projects&utm_content=HTML5"><img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/></a>
 </p>
 <p align="center">
   <img src="https://circleci.com/gh/imgly/pesdk-html5/tree/develop.svg?style=shield&circle-token=62c63a2edc1d8f02fe583ac943ddf37846fdd210" />
