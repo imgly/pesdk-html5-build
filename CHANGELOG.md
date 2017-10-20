@@ -1,3 +1,17 @@
+# 4.0.3
+
+## Fixed
+
+* Fixed force controls not working when image is changed
+* Fixed text sprite anchor in ReactUI
+* Fixed tinted frames not clearing intermediate buffer when using canvas renderer
+* Fixed transform controls not working when canceling switching controls
+* Fixed sticker categories loaded from external source not taking `replaceCategories` option into
+  account
+* Fixed default category label for frame categories
+* Fixed sticker category label translation
+* Fixed stickers not being re-scaled when image with different dimensions is loaded
+
 # 4.0.2
 
 ## Fixed
