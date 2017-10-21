@@ -1,3 +1,10 @@
+# 4.0.4
+
+## Fixed
+
+* Fix stickers being drawn over default stickers when loading stickers from external resource
+  and setting `replaceCategories` to `true`.
+
 # 4.0.3
 
 ## Fixed
