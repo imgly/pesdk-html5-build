@@ -1,3 +1,19 @@
+# 4.1.0
+
+## Fixed
+
+* ReactUI: Fixed default options for force controls feature
+* ReactUI / DesktopUI: Fixed some IE9 bugs
+* ReactUI / DesktopUI: Fixed text scaling issues in combination with transform tool
+* ReactUI: Fixed sticker and text selection
+* ReactUI: Fix text edit mode default text
+* DesktopUI: Fixed transitions for slow browsers
+* DesktopUI: Fixed brush size when zooming
+
+## Changed
+
+* ReactUI / DesktopUI: Pre-rotate text using Canvas2D for more crispy pixels
+
 # 4.0.4
 
 ## Fixed
