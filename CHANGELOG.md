@@ -1,3 +1,10 @@
+# 4.1.1
+
+## Fixed
+
+* DesktopUI: Fixed switch to default control causing an uncaught exception when initial image needs
+  to be resized
+
 # 4.1.0
 
 ## Fixed
