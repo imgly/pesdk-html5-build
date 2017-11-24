@@ -1,3 +1,9 @@
+# 4.1.2
+
+## Fixed
+
+* Fixed mip-maps not being re-generated when using `smoothDownscaling` and changing input image
+
 # 4.1.1
 
 ## Fixed
