@@ -1,3 +1,6 @@
+# 4.1.3
+
+* Fixed `selective-blur` feature
 # 4.1.2
 
 ## Fixed
