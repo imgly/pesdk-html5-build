@@ -1,6 +1,13 @@
+# 4.1.4
+
+### Fixed
+
+* Fixed bug in RequestAnimationFrame polyfill which cause an  `illegal invocation` error
+
 # 4.1.3
 
 * Fixed `selective-blur` feature
+
 # 4.1.2
 
 ## Fixed
