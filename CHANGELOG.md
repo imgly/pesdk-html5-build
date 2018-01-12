@@ -1,10 +1,18 @@
+# 4.1.5
+
+## Fixed
+
+* Fixed bug when deserialisation in DesktopUI did not return a promise
+
 # 4.1.4
 
-### Fixed
+## Fixed
 
 * Fixed bug in RequestAnimationFrame polyfill which cause an  `illegal invocation` error
 
 # 4.1.3
+
+## Fixed
 
 * Fixed `selective-blur` feature
 
