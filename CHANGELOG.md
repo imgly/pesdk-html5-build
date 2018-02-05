@@ -1,3 +1,68 @@
+# 4.2.1
+
+Added
+-----
+
+*   \[[PESDK-1859](https://imglysdk.atlassian.net/browse/PESDK-1859)\] \- Added better error when license is not a string
+*   \[[PESDK-1872](https://imglysdk.atlassian.net/browse/PESDK-1872)\] \- Added examples for ServerUI/NodeUI
+*   \[[PESDK-1893](https://imglysdk.atlassian.net/browse/PESDK-1893)\] \- Added npm compatibility when sdk is installed via npm
+*   \[[PESDK-1900](https://imglysdk.atlassian.net/browse/PESDK-1900)\] \- Added 'image.uri' field to serialization and deserializer can use it to fetch remote images
+
+# 4.2.0
+
+Fixed
+---
+
+*   \[[PESDK-1030](https://imglysdk.atlassian.net/browse/PESDK-1030)\] \- Fixed an issue when editing stickers on iOS Safari in ReactUi
+*   \[[PESDK-1186](https://imglysdk.atlassian.net/browse/PESDK-1186)\] \- Fixed an issue where webcam access was broken on Edge
+*   \[[PESDK-1193](https://imglysdk.atlassian.net/browse/PESDK-1193)\] \- Fixed an issue when adding a sticker blocked the menu on IE11 in DesktopUi
+*   \[[PESDK-1251](https://imglysdk.atlassian.net/browse/PESDK-1251)\] \- Fixed an issue where text was scaled wrong after transform
+*   \[[PESDK-1252](https://imglysdk.atlassian.net/browse/PESDK-1252)\] \- Fixed issue where square aspect ratio lead to non identical image width and height in ReactUi
+*   \[[PESDK-1438](https://imglysdk.atlassian.net/browse/PESDK-1438)\] \- Fixed an issue where parts of text where missing under certain circumstances in DesktopUi
+*   \[[PESDK-1482](https://imglysdk.atlassian.net/browse/PESDK-1482)\] \- Fixed an issue where image output was blank after adding sticker and cropping
+*   \[[PESDK-1523](https://imglysdk.atlassian.net/browse/PESDK-1523)\] \- Fixed IndexSizeError when going out of bounds in the canvas sticker toolbar on IE11 in ReactUi
+*   \[[PESDK-1535](https://imglysdk.atlassian.net/browse/PESDK-1535)\] \- Fixed an issue where screen was frozen after image export in DesktopUi
+*   \[[PESDK-1551](https://imglysdk.atlassian.net/browse/PESDK-1551)\] \- Fixed issue when trying to upload unsupported files in the photoroll in the ReactUi
+*   \[[PESDK-1641](https://imglysdk.atlassian.net/browse/PESDK-1641)\] \- Fixed an issue where text controls were cropped at the image boundaries in ReactUi
+*   \[[PESDK-1654](https://imglysdk.atlassian.net/browse/PESDK-1654)\] \- Fixed jumping text when going into or leaving text edit mode
+*   \[[PESDK-1657](https://imglysdk.atlassian.net/browse/PESDK-1657)\] \- Fixed an issue where text or sticker vanished after changing to brush
+*   \[[PESDK-1658](https://imglysdk.atlassian.net/browse/PESDK-1658)\] \- Fixed sprite ordering issue when brush was behind text
+*   \[[PESDK-1662](https://imglysdk.atlassian.net/browse/PESDK-1662)\] \- Fixed issue when dragging textfield didn't stop
+*   \[[PESDK-1670](https://imglysdk.atlassian.net/browse/PESDK-1670)\] \- Fixed error case when dragging and dropping images from another browser window into library in DesktopUi
+*   \[[PESDK-1681](https://imglysdk.atlassian.net/browse/PESDK-1681)\] \- Fixed an issue with duplicate text while color was changed
+*   \[[PESDK-1682](https://imglysdk.atlassian.net/browse/PESDK-1682)\] \- Fixed a bug where text appeared twice
+*   \[[PESDK-1683](https://imglysdk.atlassian.net/browse/PESDK-1683)\] \- Fixed issue when Text and Sticker disappeared when switching to brush
+*   \[[PESDK-1684](https://imglysdk.atlassian.net/browse/PESDK-1684)\] \- Fixed issue when Text is not centered
+*   \[[PESDK-1685](https://imglysdk.atlassian.net/browse/PESDK-1685)\] \- Fixed an issue where Brushes were duplicated when Zooming in ReactUi
+*   \[[PESDK-1703](https://imglysdk.atlassian.net/browse/PESDK-1703)\] \- Fixed issue where brush moved into in foreground by clicking on text
+*   \[[PESDK-1766](https://imglysdk.atlassian.net/browse/PESDK-1766)\] \- Fixed a bug where menu overlay background was not showing on IE in the DesktopUi
+*   \[[PESDK-1767](https://imglysdk.atlassian.net/browse/PESDK-1767)\] \- Fixed a bug where transform tool was not accessible
+*   \[[PESDK-1776](https://imglysdk.atlassian.net/browse/PESDK-1776)\] \- Fixed a bug where text font is initially set to serif because it was not updated after loading
+*   \[[PESDK-1788](https://imglysdk.atlassian.net/browse/PESDK-1788)\] \- Fixed bug where requestAnimationFrame was not bound to window when generating stylesheets
+*   \[[PESDK-1789](https://imglysdk.atlassian.net/browse/PESDK-1789)\] \- Fixed issue where editor.deserialize(state) did not return Promise as stated in docs
+*   \[[PESDK-1802](https://imglysdk.atlassian.net/browse/PESDK-1802)\] \- Fixed bug where requestAnimationFrame was not bound correctly to window
+
+
+Changed
+-----
+
+*   \[[PESDK-1656](https://imglysdk.atlassian.net/browse/PESDK-1656)\] \- Changed behaviour of text-dropdown menu when there is only 1 option
+*   \[[PESDK-1860](https://imglysdk.atlassian.net/browse/PESDK-1860)\] \- Refactored SDK into packages/modules, such that every tool can be loaded as needed (see docs)
+
+
+Added
+-----
+
+*   \[[PESDK-1192](https://imglysdk.atlassian.net/browse/PESDK-1192)\] \- Added PNG Fallback for SVG sticker to account for IE11 issues
+*   \[[PESDK-1203](https://imglysdk.atlassian.net/browse/PESDK-1203)\] \- Added reset button to adjustment tool in DesktopUi
+*   \[[PESDK-1579](https://imglysdk.atlassian.net/browse/PESDK-1579)\] \- Added api documentation for all emumerations
+*   \[[PESDK-1749](https://imglysdk.atlassian.net/browse/PESDK-1749)\] \- Added support for React 16.02 and shipping it as default version
+*   \[[PESDK-1752](https://imglysdk.atlassian.net/browse/PESDK-1752)\] \- Added Text Background Color Option to DesktopUI
+*   \[[PESDK-1765](https://imglysdk.atlassian.net/browse/PESDK-1765)\] \- Added possible to check for changed in the OperationStack (see api docs)
+*   \[[PESDK-1777](https://imglysdk.atlassian.net/browse/PESDK-1777)\] \- Added TextMetrics to the SDK thus allowing more accurate Text Rendering (see docs)
+*   \[[PESDK-1803](https://imglysdk.atlassian.net/browse/PESDK-1803)\] \- Added option to transfer JFIF header / DPI metadata from original to exported image
+
+
 # 4.1.5
 
 ## Fixed

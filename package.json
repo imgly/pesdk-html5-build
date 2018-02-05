@@ -1,6 +1,7 @@
+
 {
   "name": "photoeditorsdk",
-  "version": "4.1.5",
+  "version": "4.2.1",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "repository": {
@@ -8,10 +9,20 @@
     "type": "git"
   },
   "assets": ["assets"],
-  "author": "PhotoEditorSDK (9elements GmbH) <contact@img.ly>",
+  "keywords": [
+    "photo",
+    "image",
+    "photoeditor",
+    "webgl",
+    "canvas"
+  ],
+  "author": "PhotoEditorSDK (9elements GmbH) <contact@9elements.com>",
   "license": "SEE LICENSE IN LICENSE.md",
-  "dependencies": {
-    "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "react-dom": "^15.0.0 || ^16.0.0"
+  },
+  "scripts": {
+    "publish:npm": "npm publish"
   }
 }

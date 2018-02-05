@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <img src="https://travis-ci.com/imgly/pesdk-html5.svg?token=E7tp54keqjqNCg4gssJL&branch=develop" />
   <a href="https://pesdk-slack.herokuapp.com/">
     <img src="https://pesdk-slack.herokuapp.com/badge.svg" alt="Slack Status" />
   </a>
