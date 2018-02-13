@@ -1,3 +1,10 @@
+# 4.2.3
+
+Fixed
+-----------
+
+*   \[[PESDK-1927](https://imglysdk.atlassian.net/browse/PESDK-1927)\] \- Fixed issues that were introduced by changing to the correct `.min.js` fileextension. Non-minified extension is now reintroduced to provide backwards compatiblity for now.
+
 # 4.2.2
 
 Fixed
