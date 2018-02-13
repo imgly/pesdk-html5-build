@@ -1,1 +1,1 @@
-module.exports = require('./js/PhotoEditorSDK.UI.DesktopUI')
+module.exports = require('./js/PhotoEditorSDK.UI.DesktopUI.min')

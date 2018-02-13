@@ -1,3 +1,12 @@
+# 4.2.2
+
+Fixed
+-----------
+
+*   \[[PESDK-1899](https://imglysdk.atlassian.net/browse/PESDK-1899)\] \- Refactored examples and sized them down
+*   \[[PESDK-1924](https://imglysdk.atlassian.net/browse/PESDK-1924)\] \- Added prop-types to static build and not as dependency anymore
+*   \[[PESDK-1925](https://imglysdk.atlassian.net/browse/PESDK-1925)\] \- Changed the naming of the JS files in the production build to reflect their status minified status to `*.min.js`
+
 # 4.2.1
 
 Added

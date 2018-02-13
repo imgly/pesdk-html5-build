@@ -1,1 +1,1 @@
-module.exports = require('./js/PhotoEditorSDK.UI.ReactUI')
+module.exports = require('./js/PhotoEditorSDK.UI.ReactUI.min')
