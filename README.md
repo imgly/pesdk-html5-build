@@ -2,12 +2,6 @@
   <img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
 </p>
 
-<p align="center">
-  <a href="https://pesdk-slack.herokuapp.com/">
-    <img src="https://pesdk-slack.herokuapp.com/badge.svg" alt="Slack Status" />
-  </a>
-</p>
-
 ## PhotoEditor SDK for HTML5.
 The PhotoEditor SDK for HTML5 is a **fully customizable** photo editor which you can integrate into your HTML5 app within minutes.
 It contains the most important photo editing tools;
