@@ -1,0 +1,55 @@
+{
+  "version": "3.0.0",
+  "operations": [
+    {
+      "type": "sprite",
+      "options": {
+        "sprites": [
+          {
+            "type": "text",
+            "options": {
+              "fontSize": 0.08,
+              "lineHeight": 1.1,
+              "alignment": "center",
+              "color": {
+                "rgba": [
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "backgroundColor": {
+                "rgba": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "position": {
+                "x": 0.5,
+                "y": 0.5
+              },
+              "rotation": 0,
+              "text": "It works",
+              "maxWidth": 0.75,
+              "fontIdentifier": "imgly_font_open_sans_bold",
+              "flipHorizontally": false,
+              "flipVertically": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "platform": "html5",
+    "version": "4.2.0",
+    "createdAt": "2018-01-29T18:34:48Z"
+  },
+  "image": {
+    "width": 1920,
+    "height": 1280
+  }
+}

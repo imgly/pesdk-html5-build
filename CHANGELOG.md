@@ -1,3 +1,31 @@
+# 4.3.0
+
+Fixed
+---
+
+*   \[[PESDK-1772](https://imglysdk.atlassian.net/browse/PESDK-1772)\] \- Fixed issue with frame Labels overlapping
+*   \[[PESDK-1814](https://imglysdk.atlassian.net/browse/PESDK-1814)\] \- Added webcam support for Internet Explorer
+*   \[[PESDK-1822](https://imglysdk.atlassian.net/browse/PESDK-1822)\] \- Fixed error in deserializer when merging with defaults
+*   \[[PESDK-1908](https://imglysdk.atlassian.net/browse/PESDK-1908)\] \- Fixed Sprite Canvas Controls not clickable on iOS Safari
+*   \[[PESDK-1932](https://imglysdk.atlassian.net/browse/PESDK-1932)\] \- Fixed issue when redo text only worked by clicking into the picture in DesktopUI
+*   \[[PESDK-1933](https://imglysdk.atlassian.net/browse/PESDK-1933)\] \- Fixed Brush doesn't paint issue after Redo in DesktopUI
+*   \[[PESDK-1934](https://imglysdk.atlassian.net/browse/PESDK-1934)\] \- Fixed error thrown when deleting word in library search on DesktopUI
+*   \[[PESDK-1966](https://imglysdk.atlassian.net/browse/PESDK-1966)\] \- Focus Undo Redo lead to not expected operations
+*   \[[PESDK-2004](https://imglysdk.atlassian.net/browse/PESDK-2004)\] \- Fixed issue with updated canvas size and zoom levels being incorrect after transform undo or redo
+*   \[[PESDK-1983](https://imglysdk.atlassian.net/browse/PESDK-1983)\] \- Fixed 3D Lut Filter Image Canvas Renderer Bug causing divergence from webgl renderer in some cases
+
+Added
+-----
+
+*   \[[PESDK-1910](https://imglysdk.atlassian.net/browse/PESDK-1910)\] \- Added REDO feature in DesktopUI
+*   \[[PESDK-1912](https://imglysdk.atlassian.net/browse/PESDK-1912)\] \- Added packages for photoeditorsdk and photoeditorsdk-server
+*   \[[PESDK-1919](https://imglysdk.atlassian.net/browse/PESDK-1919)\] \- Added platform specific suffix in webpack for overrides
+*   \[[PESDK-1942](https://imglysdk.atlassian.net/browse/PESDK-1942)\] \- Added support for JPEG Buffers for NodeJS Target
+*   \[[PESDK-1931](https://imglysdk.atlassian.net/browse/PESDK-1931)\] \- Added ability to launch desktop ui with image that is not completely loaded without crash
+*   \[[PESDK-1937](https://imglysdk.atlassian.net/browse/PESDK-1937)\] \- Added possibility to initialize SDK with \`incomplete\` image for the DesktopUI
+*   \[[PESDK-1939](https://imglysdk.atlassian.net/browse/PESDK-1939)\] \- Added possibility to load watermarkImage in developer example
+
+
 # 4.2.3
 
 Fixed

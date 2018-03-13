@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- React Dependencies for the SDK UI -->
+    <script src="../../js/vendor/react.production.min.js"></script>
+    <script src="../../js/vendor/react-dom.production.min.js"></script>
+    <script src="../../js/vendor/prop-types.min.js"></script>
+    <!-- PhotoEditor SDK-->
+    <script src="../../js/PhotoEditorSDK.min.js"></script>
+    <!-- PhotoEditor SDK UI -->
+    <script src="../../js/PhotoEditorSDK.UI.DesktopUI.min.js"></script>
+    <!-- <link rel="stylesheet" href="/photoeditorsdk/css/PhotoEditorSDK.UI.DesktopUI.min.css" /> -->
+  </head>
+
+  <body>
+    <div id="editor" style="width: 100vw; height: 100vh;"></div>
+    <script>
+      window.onload = function () {
+        PhotoEditorSDK.Loaders.ImageLoader.load('../shared/assets/example.jpg')
+          .then((image) => {
+            var container = document.getElementById('editor')
+            var editor = new PhotoEditorSDK.UI.DesktopUI({
+            container: container,
+            license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
+            editor: {
+              image: image
+            },
+            assets: {
+              baseUrl: '/photoeditorsdk/assets' // <-- This should be the absolute path to your `assets` directory
+            }
+          })
+        })
+      }
+    </script>
+  </body>
+</html>

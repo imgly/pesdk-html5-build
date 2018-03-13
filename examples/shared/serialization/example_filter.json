@@ -1,0 +1,21 @@
+{
+  "version": "3.0.0",
+  "operations": [
+    {
+      "type": "filter",
+      "options": {
+        "intensity": 1,
+        "identifier": "imgly_lut_bw"
+      }
+    }
+  ],
+  "meta": {
+    "platform": "html5",
+    "version": "4.2.0",
+    "createdAt": "2018-01-30T12:43:59Z"
+  },
+  "image": {
+    "width": 1920,
+    "height": 1280
+  }
+}
