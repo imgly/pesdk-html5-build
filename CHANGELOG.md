@@ -1,3 +1,9 @@
+# 4.3.1
+Fixed
+---
+
+*   \[[PESDK-2037](https://imglysdk.atlassian.net/browse/PESDK-2037)\] \- Fixed issue with webpack and module resolution
+
 # 4.3.0
 
 Fixed
