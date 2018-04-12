@@ -16,12 +16,12 @@
     <div id="editor" style="width: 100vw; height: 100vh;"></div>
     <script>
       window.onload = function () {
-        PhotoEditorSDK.Loaders.ImageLoader.load('../shared/assets/example.jpg')
-          .then((image) => {
+        var image = new Image()
+        image.onload = function () {
             var container = document.getElementById('editor')
             var editor = new PhotoEditorSDK.UI.DesktopUI({
             container: container,
-            license: 'YOUR_LICENSE', // <-- Please replace this with your license. Please make sure this is in *string* format, not *object*.
+            license: '{"owner":"Imgly Inc.","version":"2.1", ...}', // <-- Please replace this with your license.
             editor: {
               image: image
             },
@@ -29,7 +29,8 @@
               baseUrl: '/photoeditorsdk/assets' // <-- This should be the absolute path to your `assets` directory
             }
           })
-        })
+        }
+        image.src = '../shared/assets/example.jpg'
       }
     </script>
   </body>

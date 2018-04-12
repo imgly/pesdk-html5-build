@@ -1,3 +1,47 @@
+# 4.4.0
+Fixed
+---
+*   [[PESDK-1935](https://imglysdk.atlassian.net/browse/PESDK-1935)] -         Fixed wrong rotated crop frame after after UNDO
+
+*   [[PESDK-1959](https://imglysdk.atlassian.net/browse/PESDK-1959)] -         Fixed selected filter no updated on UI when de-serializing an image
+
+*   [[PESDK-1991](https://imglysdk.atlassian.net/browse/PESDK-1991)] -         Fixed editor crashing after focus undo
+
+*   [[PESDK-1992](https://imglysdk.atlassian.net/browse/PESDK-1992)] -         Fixed editor crash after text undo and redo
+
+*   [[PESDK-1993](https://imglysdk.atlassian.net/browse/PESDK-1993)] -         Fixed text line spacing redo not working
+
+*   [[PESDK-1995](https://imglysdk.atlassian.net/browse/PESDK-1995)] -         Fixed undo/redo not available for gaussian blur
+
+*   [[PESDK-1996](https://imglysdk.atlassian.net/browse/PESDK-1996)] -         Fixed inconsistent undo/redo when changing the editor image
+
+*   [[PESDK-2032](https://imglysdk.atlassian.net/browse/PESDK-2032)] -         Fixed focus controls UI not working when clicking redo button
+
+*   [[PESDK-2034](https://imglysdk.atlassian.net/browse/PESDK-2034)] -         Fixed rotation redo while in transform tool
+
+*   [[PESDK-2047](https://imglysdk.atlassian.net/browse/PESDK-2047)] -         Fixed text redo unavailable after text deletion
+
+*   [[PESDK-2048](https://imglysdk.atlassian.net/browse/PESDK-2048)] -         Fixed redo not available on sticker tool
+
+*   [[PESDK-2114](https://imglysdk.atlassian.net/browse/PESDK-2114)] -         Fixed some minor bugs in the adjustments shader which led to some false behvaior
+*   [[PESDK-2028](https://imglysdk.atlassian.net/browse/PESDK-2028)] -         Fixed bug in SDKUtils.deepDefaults
+*   [[PESDK-2038](https://imglysdk.atlassian.net/browse/PESDK-2038)] -         Fixed blur canvas/webgl renderer difference with mobile
+
+
+Changed
+---
+
+*   [[PESDK-2014](https://imglysdk.atlassian.net/browse/PESDK-2014)] -         Increased slider knob bigger touch area
+
+*   [[PESDK-2064](https://imglysdk.atlassian.net/browse/PESDK-2064)] -         Made slider more accessible
+
+Added
+---
+
+*   [[PESDK-1971](https://imglysdk.atlassian.net/browse/PESDK-1971)] -         Implemented forceCrop in editorOptions for DesktopUI
+
+*   [[PESDK-2075](https://imglysdk.atlassian.net/browse/PESDK-2075)] -         Added ability to load stickers at runtime
+
 # 4.3.1
 Fixed
 ---

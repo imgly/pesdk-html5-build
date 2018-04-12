@@ -80,6 +80,7 @@ window.editorConfig = JSON.flatten({
     photoroll: false,
     maxMegaPixelsOnDesktop: 10,
     maxMegaPixelsOnMobile: 5,
+    forceCrop: true,
     export: {
       fileBasename: 'photoeditorsdk_download',
       format: 'image/jpeg'

@@ -1,10 +1,12 @@
-/* global editorConfig, dat */
+/* global editorConfig, dat, PhotoEditorDesktopUI */
 window.addEventListener('load', function () {
   var gui = new dat.GUI({ closeOnTop: true, autoPlace: true })
   var dataFolder = gui.addFolder('Data')
   var uiFolder = gui.addFolder('UI')
   var sdkFolder = gui.addFolder('General')
   var editorFolder = gui.addFolder('Editor')
+  var availableRatiosFolder = editorFolder.addFolder('Available Ratios')
+  var availableRatios = {}
 
   gui.remember(editorConfig)
 
@@ -33,6 +35,7 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.displayWelcomeMessage'))
   controllers.push(editorFolder.add(editorConfig, 'editor.displayResizeMessage'))
   controllers.push(editorFolder.add(editorConfig, 'editor.transparent'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.forceCrop'))
   controllers.push(editorFolder.add(editorConfig, 'editor.zoom', [0.5, 1.0, 1.5, 2.0]))
   controllers.push(editorFolder.add(editorConfig, 'editor.pixelRatio', [1, 2, 4]))
   controllers.push(editorFolder.add(editorConfig, 'editor.renderMode', ['dynamic', 'export']))
@@ -43,6 +46,33 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.export.fileBasename'))
 
   // controllers.push(editorFolder.add(editorConfig, 'library', ['unsplash', 'example']))
+
+  // Get the current availableRatios, based on the default ones
+  PhotoEditorDesktopUI.Constants.DEFAULTS.TRANSFORM_RATIO_CATEGORIES
+    .forEach(function (category) {
+      category.ratios.forEach(function (ratio) {
+        var editorConfigRatios = editorConfig['editor.controlsOptions.transform.availableRatios']
+        availableRatios[ratio.identifier] = editorConfigRatios
+          ? editorConfigRatios.indexOf(ratio.identifier) >= 0 : true
+      })
+    })
+
+  // Called when a ratio is enabled/disabled
+  var updateAvailableRatios = function () {
+    editorConfig['editor.controlsOptions.transform.availableRatios'] = []
+    Object.keys(availableRatios).forEach(function (identifier) {
+      availableRatios[identifier] &&
+        editorConfig['editor.controlsOptions.transform.availableRatios'].push(identifier)
+    })
+  }
+
+  // Add a GUI item for each ratio
+  Object.keys(availableRatios).forEach(function (identifier) {
+    controllers.push(
+      availableRatiosFolder.add(availableRatios, identifier)
+      .onChange(updateAvailableRatios)
+    )
+  })
 
   controllers.forEach(function (controller) {
     controller.onFinishChange(function () {
