@@ -1,3 +1,12 @@
+# 4.5.0
+
+Fixed
+---
+
+*   [[PESDK-2076](https://imglysdk.atlassian.net/browse/PESDK-2076)]  - Fixed tap event firing twice on sprite controls in Android
+
+*   [[PESDK-2306](https://imglysdk.atlassian.net/browse/PESDK-2306)]  - Fixed setting availableFilters to an empty array in options throws error
+
 # 4.4.0
 Fixed
 ---
