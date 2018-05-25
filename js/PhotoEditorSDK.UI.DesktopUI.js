@@ -7946,8 +7946,8 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
           },
           mediaBase: {
             uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_alien.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_alien.png'],
-            width: 62,
-            height: 58
+            width: 1000,
+            height: 935
           }
         }
       }, {
@@ -7960,9 +7960,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 64
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_angel.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_angel.png'],
-            width: 62,
-            height: 64
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_angel.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_angel.png']
           }
         }
       }, {
@@ -7975,9 +7973,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_angry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_angry.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_angry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_angry.png']
           }
         }
       }, {
@@ -7990,9 +7986,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_anxious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_anxious.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_anxious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_anxious.png']
           }
         }
       }, {
@@ -8005,9 +7999,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_asleep.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_asleep.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_asleep.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_asleep.png']
           }
         }
       }, {
@@ -8020,9 +8012,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_attention.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_attention.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_attention.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_attention.png']
           }
         }
       }, {
@@ -8035,9 +8025,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 42
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_baby_chicken.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_baby_chicken.png'],
-            width: 61,
-            height: 42
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_baby_chicken.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_baby_chicken.png']
           }
         }
       }, {
@@ -8050,9 +8038,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_batman.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_batman.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_batman.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_batman.png']
           }
         }
       }, {
@@ -8065,9 +8051,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 59
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_beer.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_beer.png'],
-            width: 62,
-            height: 59
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_beer.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_beer.png']
           }
         }
       }, {
@@ -8080,9 +8064,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_blush.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_blush.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_blush.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_blush.png']
           }
         }
       }, {
@@ -8095,9 +8077,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_boxer.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_boxer.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_boxer.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_boxer.png']
           }
         }
       }, {
@@ -8110,9 +8090,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 63
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_business.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_business.png'],
-            width: 60,
-            height: 63
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_business.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_business.png']
           }
         }
       }, {
@@ -8125,9 +8103,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 55
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_chicken.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_chicken.png'],
-            width: 63,
-            height: 55
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_chicken.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_chicken.png']
           }
         }
       }, {
@@ -8140,9 +8116,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_cool.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_cool.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_cool.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_cool.png']
           }
         }
       }, {
@@ -8155,9 +8129,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_cry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_cry.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_cry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_cry.png']
           }
         }
       }, {
@@ -8170,9 +8142,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_deceased.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_deceased.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_deceased.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_deceased.png']
           }
         }
       }, {
@@ -8185,9 +8155,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_devil.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_devil.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_devil.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_devil.png']
           }
         }
       }, {
@@ -8200,9 +8168,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_duckface.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_duckface.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_duckface.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_duckface.png']
           }
         }
       }, {
@@ -8215,9 +8181,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 61
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_furious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_furious.png'],
-            width: 62,
-            height: 61
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_furious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_furious.png']
           }
         }
       }, {
@@ -8230,9 +8194,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_grin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_grin.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_grin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_grin.png']
           }
         }
       }, {
@@ -8245,9 +8207,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_guitar.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_guitar.png'],
-            width: 64,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_guitar.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_guitar.png']
           }
         }
       }, {
@@ -8260,9 +8220,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_harry_potter.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_harry_potter.png'],
-            width: 64,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_harry_potter.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_harry_potter.png']
           }
         }
       }, {
@@ -8275,9 +8233,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_hippie.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_hippie.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_hippie.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_hippie.png']
           }
         }
       }, {
@@ -8290,9 +8246,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_hitman.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_hitman.png'],
-            width: 64,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_hitman.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_hitman.png']
           }
         }
       }, {
@@ -8305,9 +8259,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 64
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_humourous.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_humourous.png'],
-            width: 64,
-            height: 64
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_humourous.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_humourous.png']
           }
         }
       }, {
@@ -8320,9 +8272,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_idea.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_idea.png'],
-            width: 64,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_idea.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_idea.png']
           }
         }
       }, {
@@ -8335,9 +8285,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_impatient.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_impatient.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_impatient.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_impatient.png']
           }
         }
       }, {
@@ -8350,9 +8298,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_kiss.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_kiss.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_kiss.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_kiss.png']
           }
         }
       }, {
@@ -8365,9 +8311,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_kisses.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_kisses.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_kisses.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_kisses.png']
           }
         }
       }, {
@@ -8380,9 +8324,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_laugh.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_laugh.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_laugh.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_laugh.png']
           }
         }
       }, {
@@ -8395,9 +8337,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_loud_cry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_loud_cry.png'],
-            width: 64,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_loud_cry.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_loud_cry.png']
           }
         }
       }, {
@@ -8410,9 +8350,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_loving.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_loving.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_loving.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_loving.png']
           }
         }
       }, {
@@ -8425,9 +8363,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_masked.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_masked.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_masked.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_masked.png']
           }
         }
       }, {
@@ -8440,9 +8376,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 54
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_music.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_music.png'],
-            width: 62,
-            height: 54
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_music.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_music.png']
           }
         }
       }, {
@@ -8450,14 +8384,10 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
         defaultName: 'Nerd',
         images: {
           mediaThumb: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_nerd.svg', 'stickers/emoticons/stickers/thumbs/imgly_sticker_emoticons_nerd.png'],
-            width: 64,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_nerd.svg', 'stickers/emoticons/stickers/thumbs/imgly_sticker_emoticons_nerd.png']
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_nerd.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_nerd.png'],
-            width: 64,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_nerd.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_nerd.png']
           }
         }
       }, {
@@ -8470,9 +8400,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_ninja.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_ninja.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_ninja.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_ninja.png']
           }
         }
       }, {
@@ -8485,9 +8413,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_not_speaking_to_you.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_not_speaking_to_you.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_not_speaking_to_you.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_not_speaking_to_you.png']
           }
         }
       }, {
@@ -8500,9 +8426,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 41
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_pig.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_pig.png'],
-            width: 63,
-            height: 41
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_pig.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_pig.png']
           }
         }
       }, {
@@ -8515,9 +8439,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_pumpkin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_pumpkin.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_pumpkin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_pumpkin.png']
           }
         }
       }, {
@@ -8530,9 +8452,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_question.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_question.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_question.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_question.png']
           }
         }
       }, {
@@ -8545,9 +8465,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 47
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_rabbit.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_rabbit.png'],
-            width: 65,
-            height: 47
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_rabbit.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_rabbit.png']
           }
         }
       }, {
@@ -8555,14 +8473,10 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
         defaultName: 'Sad',
         images: {
           mediaThumb: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sad.svg', 'stickers/emoticons/stickers/thumbs/imgly_sticker_emoticons_sad.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sad.svg', 'stickers/emoticons/stickers/thumbs/imgly_sticker_emoticons_sad.png']
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sad.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sad.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sad.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sad.png']
           }
         }
       }, {
@@ -8575,9 +8489,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sick.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sick.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sick.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sick.png']
           }
         }
       }, {
@@ -8590,9 +8502,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 64
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_skateboard.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_skateboard.png'],
-            width: 62,
-            height: 64
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_skateboard.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_skateboard.png']
           }
         }
       }, {
@@ -8605,9 +8515,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 62
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_skull.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_skull.png'],
-            width: 62,
-            height: 62
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_skull.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_skull.png']
           }
         }
       }, {
@@ -8620,9 +8528,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sleepy.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sleepy.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sleepy.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sleepy.png']
           }
         }
       }, {
@@ -8635,9 +8541,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_smile.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_smile.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_smile.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_smile.png']
           }
         }
       }, {
@@ -8650,9 +8554,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_smoking.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_smoking.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_smoking.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_smoking.png']
           }
         }
       }, {
@@ -8665,9 +8567,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 59
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sobbing.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sobbing.png'],
-            width: 62,
-            height: 59
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sobbing.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sobbing.png']
           }
         }
       }, {
@@ -8680,9 +8580,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 64
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_star.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_star.png'],
-            width: 64,
-            height: 64
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_star.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_star.png']
           }
         }
       }, {
@@ -8695,9 +8593,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_steaming_furious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_steaming_furious.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_steaming_furious.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_steaming_furious.png']
           }
         }
       }, {
@@ -8710,9 +8606,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sunbathing.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sunbathing.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_sunbathing.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_sunbathing.png']
           }
         }
       }, {
@@ -8725,9 +8619,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_tired.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_tired.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_tired.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_tired.png']
           }
         }
       }, {
@@ -8740,9 +8632,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_tongue_out_wink.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_tongue_out_wink.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_tongue_out_wink.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_tongue_out_wink.png']
           }
         }
       }, {
@@ -8755,9 +8645,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wave.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wave.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wave.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wave.png']
           }
         }
       }, {
@@ -8770,9 +8658,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wide_grin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wide_grin.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wide_grin.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wide_grin.png']
           }
         }
       }, {
@@ -8785,9 +8671,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 58
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wink.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wink.png'],
-            width: 62,
-            height: 58
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wink.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wink.png']
           }
         }
       }, {
@@ -8800,9 +8684,7 @@ module.exports = { "default": __webpack_require__(197), __esModule: true };
             height: 60
           },
           mediaBase: {
-            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wrestler.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wrestler.png'],
-            width: 62,
-            height: 60
+            uris: ['stickers/emoticons/stickers/imgly_sticker_emoticons_wrestler.svg', 'stickers/emoticons/stickers/base/imgly_sticker_emoticons_wrestler.png']
           }
         }
       }]
@@ -48546,11 +48428,6 @@ var TransformControls = function (_BaseControls) {
         ratio = dimensions.x / dimensions.y;
       }
 
-      var ratioFraction = void 0;
-      if (ratio !== '*') {
-        ratioFraction = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["Utils"].findIntegerFraction(ratio);
-      }
-
       // Maximum transform size (relative)
       var maxTransformSize = new Vector2();
       maxTransformSize.x = horizontalSide === 'left' ? end.x : 1.0 - start.x;
@@ -48568,18 +48445,10 @@ var TransformControls = function (_BaseControls) {
       // The minimum dimensions
       var minUIDimensions = MIN_DIMENSIONS.clone().divide(editor.zoom.targetLevel);
       var minDimensions = new Vector2(Math.min(minUIDimensions.x, imageDimensions.x * 0.1), Math.min(minUIDimensions.y, imageDimensions.y * 0.1));
-      if (ratio !== '*') {
-        minDimensions.divide(ratioFraction).round().multiply(ratioFraction);
-      }
 
       // Clamp width
       size.x = Math.min(Math.max(minDimensions.x, size.x), maxSize.x);
       if (ratio !== '*') {
-        // This makes sure we snap to a size that exactly fits our ratio
-        var maxMultiplier = Math.floor(imageDimensions.x / ratioFraction.x);
-        size.x = Math.max(1, Math.min(maxMultiplier, Math.round(size.x / ratioFraction.x))) * ratioFraction.x;
-
-        // Calculate new height by width
         size.y = size.x / ratio;
       }
 
@@ -49447,6 +49316,7 @@ var TransformCanvasControlsComponent = function (_CanvasControlsCompon) {
         __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["React"].createElement(
           OuterTransformContainer,
           {
+            className: test ? 'js-outerTransformContainer' : undefined,
             visible: this.state.visible,
             innerRef: function innerRef(el) {
               _this4._transformContainer = el;
@@ -50218,8 +50088,6 @@ var TransformControlsComponent = function (_ControlsComponent) {
         ratio = dimensions.x / dimensions.y;
       }
 
-      var ratioFraction = ratio && __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["Utils"].findIntegerFraction(ratio);
-
       if (!ratio || ratio === '*') {
         start = new Vector2(0, 0);
         end = new Vector2(1, 1);
@@ -50230,15 +50098,13 @@ var TransformControlsComponent = function (_ControlsComponent) {
         var width = void 0,
             height = void 0;
         if (outputRatio <= ratio) {
-          var maxHeight = Math.floor(inputDimensions.x / ratioFraction.x) * ratioFraction.y;
-          height = Math.floor(Math.min(maxHeight, inputDimensions.y) / ratioFraction.y) * ratioFraction.y;
+          height = inputDimensions.x / ratio;
           width = height * ratio;
-          start.set((inputDimensions.x - width) / 2, (inputDimensions.y - height) / 2).floor();
+          start.set((inputDimensions.x - width) / 2, (inputDimensions.y - height) / 2);
         } else {
-          var maxWidth = Math.floor(inputDimensions.y / ratioFraction.y) * ratioFraction.x;
-          width = Math.floor(Math.min(maxWidth, inputDimensions.x) / ratioFraction.x) * ratioFraction.x;
+          width = inputDimensions.y * ratio;
           height = width / ratio;
-          start.set((inputDimensions.x - width) / 2, (inputDimensions.y - height) / 2).floor();
+          start.set((inputDimensions.x - width) / 2, (inputDimensions.y - height) / 2);
         }
 
         end.copy(start).add(width, height);
@@ -50743,9 +50609,6 @@ var TransformDimensionsComponent = function (_SharedStateComponent) {
       var requestedDimensions = size.clone().multiply(inputDimensions);
       requestedDimensions[prop] = Math.min(inputDimensions[prop], value);
       if (ratio !== '*') {
-        var ratioFraction = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["Utils"].findIntegerFraction(ratio);
-        requestedDimensions[prop] = Math.max(1, Math.round(requestedDimensions[prop] / ratioFraction[prop])) * ratioFraction[prop];
-
         if (prop === 'x') {
           requestedDimensions.y = requestedDimensions.x / ratio;
         } else {

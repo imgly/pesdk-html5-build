@@ -1,3 +1,15 @@
+Release notes - Photoeditor SDK - Version html5-4.6.0
+
+# 4.6.0
+
+Fixed
+---
+
+*   [[PESDK-1572](https://imglysdk.atlassian.net/browse/PESDK-1572)] - Fixed loading transparent PNGs from library
+*   [[PESDK-1965](https://imglysdk.atlassian.net/browse/PESDK-1965)] - Fixed DesktopUI only cropping exact pixel ratios
+*   [[PESDK-2375](https://imglysdk.atlassian.net/browse/PESDK-2375)] - Fixed SVG sticker blurry if resized to be larger than input image
+*   [[PESDK-2375](https://imglysdk.atlassian.net/browse/PESDK-2516)] - Fixed smoothDownscaling not being applied to sprites
+
 # 4.5.0
 
 Fixed
