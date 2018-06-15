@@ -4683,11 +4683,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  */
 
 
-var _googleFontLoader = __webpack_require__(167);
+var _googleFontLoader = __webpack_require__(170);
 
 var _googleFontLoader2 = _interopRequireDefault(_googleFontLoader);
 
-var _fileFontLoader = __webpack_require__(170);
+var _fileFontLoader = __webpack_require__(173);
 
 var _fileFontLoader2 = _interopRequireDefault(_fileFontLoader);
 
@@ -5200,7 +5200,7 @@ var _frameManager = __webpack_require__(48);
 
 var _frameManager2 = _interopRequireDefault(_frameManager);
 
-var _overlayManager = __webpack_require__(173);
+var _overlayManager = __webpack_require__(176);
 
 var _overlayManager2 = _interopRequireDefault(_overlayManager);
 
@@ -5332,17 +5332,30 @@ var v200Deserializer = function (_PreviousDeserializer) {
       // Version 2.0 and up: Crop operation is now called transform operation
       return _get(v200Deserializer.prototype.__proto__ || Object.getPrototypeOf(v200Deserializer.prototype), '_deserializeCropOperation', this).call(this, operationData).then(function (operation) {
         if (!operation) return;
-        var orientationData = _this2._data.operations.orientation;
 
+        var orientationData = _this2._data.operations.find(function (op) {
+          return op.type === 'orientation';
+        });
         if (orientationData) {
           var options = orientationData.options;
+          var rotation = options.rotation,
+              flipHorizontally = options.flipHorizontally,
+              flipVertically = options.flipVertically;
+
+
+          if (rotation === 90 || rotation === 270) {
+            if (!flipHorizontally && flipVertically || flipHorizontally && !flipVertically) {
+              flipHorizontally = !flipHorizontally;
+              flipVertically = !flipVertically;
+            }
+          }
 
           operation.rotate(options.rotation);
-          if (options.flipHorizontally) {
+          if (flipHorizontally) {
             operation.flip('horizontal');
             operation.setRotation(operation.getRotation() * -1);
           }
-          if (options.flipVertically) {
+          if (flipVertically) {
             operation.flip('vertical');
             operation.setRotation(operation.getRotation() * -1);
           }
@@ -9032,10 +9045,10 @@ var Editor = function (_EventEmitter) {
     value: function _initSerializers() {
       this._serializers = {
         '1.0.0': __webpack_require__(165).default,
-        '1.0.1': __webpack_require__(171).default,
-        '2.0.0': __webpack_require__(172).default,
-        '2.0.1': __webpack_require__(174).default,
-        '3.0.0': __webpack_require__(177).default
+        '1.0.1': __webpack_require__(174).default,
+        '2.0.0': __webpack_require__(175).default,
+        '2.0.1': __webpack_require__(177).default,
+        '3.0.0': __webpack_require__(180).default
       };
     }
 
@@ -10887,6 +10900,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _regenerator = __webpack_require__(166);
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
 /*
  * This file is part of PhotoEditorSDK.
@@ -10912,7 +10929,7 @@ var _stickerManager = __webpack_require__(11);
 
 var _stickerManager2 = _interopRequireDefault(_stickerManager);
 
-var _brushManager = __webpack_require__(166);
+var _brushManager = __webpack_require__(169);
 
 var _brushManager2 = _interopRequireDefault(_brushManager);
 
@@ -10929,6 +10946,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -11033,20 +11052,54 @@ var v100Deserializer = function () {
 
   }, {
     key: '_deserializeOperations',
-    value: function _deserializeOperations() {
-      var _this3 = this;
+    value: function () {
+      var _ref = _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+        var operations, instances, i, operation, instance;
+        return _regenerator2.default.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                operations = this._data.operations;
+                instances = [];
+                i = 0;
 
-      var promises = this._data.operations.map(function (operation) {
-        return _this3._deserializeOperation(operation).then(function (instance) {
-          if (instance) {
-            _this3._editor.getMediator().emit(_globals.Constants.EVENTS.OPERATION_UPDATED, instance);
+              case 3:
+                if (!(i < operations.length)) {
+                  _context.next = 12;
+                  break;
+                }
+
+                operation = operations[i];
+                _context.next = 7;
+                return this._deserializeOperation(operation);
+
+              case 7:
+                instance = _context.sent;
+
+                instances.push(instance);
+
+              case 9:
+                i++;
+                _context.next = 3;
+                break;
+
+              case 12:
+                return _context.abrupt('return', instances);
+
+              case 13:
+              case 'end':
+                return _context.stop();
+            }
           }
-          return instance;
-        });
-      });
+        }, _callee, this);
+      }));
 
-      return Promise.all(promises);
-    }
+      function _deserializeOperations() {
+        return _ref.apply(this, arguments);
+      }
+
+      return _deserializeOperations;
+    }()
 
     /**
      * Deserializes the given operation
@@ -11134,7 +11187,7 @@ var v100Deserializer = function () {
   }, {
     key: '_deserializeFilterOperation',
     value: function _deserializeFilterOperation(operation) {
-      var _this4 = this;
+      var _this3 = this;
 
       var options = operation.options;
 
@@ -11145,7 +11198,7 @@ var v100Deserializer = function () {
       }
 
       return this._filterManager.instantiateFilterWithIdentifier(options.name).then(function (filter) {
-        var filterOperation = _this4._editor.operations.getOrCreate('filter');
+        var filterOperation = _this3._editor.operations.getOrCreate('filter');
         filterOperation.set({
           identifier: options.name,
           filter: filter,
@@ -11200,7 +11253,7 @@ var v100Deserializer = function () {
   }, {
     key: '_deserializeSpriteOperation',
     value: function _deserializeSpriteOperation(operation) {
-      var _this5 = this;
+      var _this4 = this;
 
       var options = operation.options;
 
@@ -11208,7 +11261,7 @@ var v100Deserializer = function () {
       if (!spriteOperation) return Promise.resolve();
 
       var promises = options.sprites.map(function (sprite) {
-        return _this5._deserializeSprite(spriteOperation, sprite);
+        return _this4._deserializeSprite(spriteOperation, sprite);
       }).filter(function (p) {
         return p;
       });
@@ -11252,7 +11305,7 @@ var v100Deserializer = function () {
   }, {
     key: '_deserializeSticker',
     value: function _deserializeSticker(operation, sprite) {
-      var _this6 = this;
+      var _this5 = this;
 
       var SpriteOperation = _globals.SDK.Operations.SpriteOperation;
       var options = sprite.options;
@@ -11294,7 +11347,7 @@ var v100Deserializer = function () {
           resolve(operation.createSticker(stickerOptions));
         });
         image.crossOrigin = 'Anonymous';
-        image.src = _this6._editor.getUI().getAssetPath(url);
+        image.src = _this5._editor.getUI().getAssetPath(url);
       });
     }
 
@@ -11353,7 +11406,7 @@ var v100Deserializer = function () {
   }, {
     key: '_deserializeBrush',
     value: function _deserializeBrush(operation, brush) {
-      var _this7 = this;
+      var _this6 = this;
 
       var options = brush.options;
       var paths = options.paths;
@@ -11361,7 +11414,7 @@ var v100Deserializer = function () {
 
       var brushSprite = operation.createBrush();
       paths.forEach(function (path) {
-        _this7._deserializeBrushPath(brushSprite, path);
+        _this6._deserializeBrushPath(brushSprite, path);
       });
       return Promise.resolve(brushSprite);
     }
@@ -11530,7 +11583,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontObserver = __webpack_require__(168);
+var _fontObserver = __webpack_require__(171);
 
 var _fontObserver2 = _interopRequireDefault(_fontObserver);
 
@@ -11904,11 +11957,11 @@ var _jsonLoader = __webpack_require__(21);
 
 var _jsonLoader2 = _interopRequireDefault(_jsonLoader);
 
-var _preloader = __webpack_require__(185);
+var _preloader = __webpack_require__(188);
 
 var _preloader2 = _interopRequireDefault(_preloader);
 
-var _photoRoll = __webpack_require__(186);
+var _photoRoll = __webpack_require__(189);
 
 var PhotoRoll = _interopRequireWildcard(_photoRoll);
 
@@ -12089,15 +12142,20 @@ var ReactUI = function (_EventEmitter) {
   }, {
     key: '_render',
     value: function _render() {
+      var _this2 = this;
+
       var component = _globals.React.createElement(_appComponent2.default, {
         ui: this,
         mediator: this._mediator,
+        ref: function ref(c) {
+          _this2._component = c;
+        },
         options: this._options });
 
       if (this._options.renderReturnsComponent) {
         return component;
       } else {
-        this._component = _globals.ReactDOM.render(component, this._options.container);
+        _globals.ReactDOM.render(component, this._options.container);
       }
     }
 
@@ -12312,8 +12370,8 @@ var ReactUI = function (_EventEmitter) {
     key: '_initLanguage',
     value: function _initLanguage() {
       this._languages = _globals.SDKUtils.deepDefaults(this._options.extensions.languages, {
-        de: __webpack_require__(191),
-        en: __webpack_require__(192)
+        de: __webpack_require__(194),
+        en: __webpack_require__(195)
       });
       this._language = this._languages[this._options.language];
       if (!this._language) {
@@ -16695,7 +16753,7 @@ var _screenComponent = __webpack_require__(8);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _modalContainerComponent = __webpack_require__(180);
+var _modalContainerComponent = __webpack_require__(183);
 
 var _modalContainerComponent2 = _interopRequireDefault(_modalContainerComponent);
 
@@ -36054,6 +36112,787 @@ Serialization.version = '1.0.0';
 /* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(167);
+
+
+/***/ }),
+/* 167 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// This method of obtaining a reference to the global object needs to be
+// kept identical to the way it is obtained in runtime.js
+var g = (function() { return this })() || Function("return this")();
+
+// Use `getOwnPropertyNames` because not all browsers support calling
+// `hasOwnProperty` on the global `self` object in a worker. See #183.
+var hadRuntime = g.regeneratorRuntime &&
+  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
+
+// Save the old regeneratorRuntime in case it needs to be restored later.
+var oldRuntime = hadRuntime && g.regeneratorRuntime;
+
+// Force reevalutation of runtime.js.
+g.regeneratorRuntime = undefined;
+
+module.exports = __webpack_require__(168);
+
+if (hadRuntime) {
+  // Restore the original runtime.
+  g.regeneratorRuntime = oldRuntime;
+} else {
+  // Remove the global property added by runtime.js.
+  try {
+    delete g.regeneratorRuntime;
+  } catch(e) {
+    g.regeneratorRuntime = undefined;
+  }
+}
+
+
+/***/ }),
+/* 168 */
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+!(function(global) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  var inModule = typeof module === "object";
+  var runtime = global.regeneratorRuntime;
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    }
+    // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+    return;
+  }
+
+  // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  runtime.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  runtime.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  runtime.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration. If the Promise is rejected, however, the
+          // result for this iteration will be rejected with the same
+          // reason. Note that rejections of yielded Promises are not
+          // thrown back into the generator function, as is the case
+          // when an awaited Promise is rejected. This difference in
+          // behavior between yield and await is important, because it
+          // allows the consumer to decide what to do with the yielded
+          // rejection (swallow it and continue, manually .throw it back
+          // into the generator, abandon iteration, whatever). With
+          // await, by contrast, there is no opportunity to examine the
+          // rejection reason outside the generator function, so the
+          // only option is to throw it from the await expression, and
+          // let the generator function handle the exception.
+          result.value = unwrapped;
+          resolve(result);
+        }, reject);
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  runtime.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList)
+    );
+
+    return runtime.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  runtime.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+})(
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() { return this })() || Function("return this")()
+);
+
+
+/***/ }),
+/* 169 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 
@@ -36163,7 +37002,7 @@ var BrushManager = function () {
 exports.default = BrushManager;
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36282,7 +37121,7 @@ var GoogleFontLoader = function (_BaseFontLoader) {
 exports.default = GoogleFontLoader;
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36307,7 +37146,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontRuler = __webpack_require__(169);
+var _fontRuler = __webpack_require__(172);
 
 var _fontRuler2 = _interopRequireDefault(_fontRuler);
 
@@ -36367,7 +37206,7 @@ var FontObserver = function () {
 exports.default = FontObserver;
 
 /***/ }),
-/* 169 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36485,7 +37324,7 @@ var FontRuler = function () {
 exports.default = FontRuler;
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36563,7 +37402,7 @@ var FileFontLoader = function (_BaseFontLoader) {
 exports.default = FileFontLoader;
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36643,7 +37482,7 @@ exports.default = Serialization;
 Serialization.version = '1.0.1';
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36723,7 +37562,7 @@ exports.default = Serialization;
 Serialization.version = '2.0.0';
 
 /***/ }),
-/* 173 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36814,192 +37653,6 @@ var OverlayManager = function () {
 exports.default = OverlayManager;
 
 /***/ }),
-/* 174 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var _serializer = __webpack_require__(175);
-
-var _serializer2 = _interopRequireDefault(_serializer);
-
-var _deserializer = __webpack_require__(176);
-
-var _deserializer2 = _interopRequireDefault(_deserializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Serialization = function () {
-  function Serialization(editor) {
-    _classCallCheck(this, Serialization);
-
-    this._editor = editor;
-  }
-
-  /**
-   * Serializes the editor state
-   * @return {Promise}
-   */
-
-
-  _createClass(Serialization, [{
-    key: 'serialize',
-    value: function serialize() {
-      var serializer = new _serializer2.default(this._editor);
-      return serializer.serialize.apply(serializer, arguments);
-    }
-
-    /**
-     * Deserializes the given data
-     * @param  {Object} data
-     * @return {Promise}
-     */
-
-  }, {
-    key: 'deserialize',
-    value: function deserialize(data) {
-      var deserializer = new _deserializer2.default(this._editor, data);
-      return deserializer.deserialize();
-    }
-  }]);
-
-  return Serialization;
-}();
-
-exports.default = Serialization;
-
-
-Serialization.version = '2.0.1';
-
-/***/ }),
-/* 175 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _serializer = __webpack_require__(30);
-
-var _serializer2 = _interopRequireDefault(_serializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var v201Serializer = function (_PreviousSerializer) {
-  _inherits(v201Serializer, _PreviousSerializer);
-
-  function v201Serializer() {
-    _classCallCheck(this, v201Serializer);
-
-    return _possibleConstructorReturn(this, (v201Serializer.__proto__ || Object.getPrototypeOf(v201Serializer)).apply(this, arguments));
-  }
-
-  return v201Serializer;
-}(_serializer2.default);
-
-exports.default = v201Serializer;
-
-
-v201Serializer.version = '2.0.0';
-
-/***/ }),
-/* 176 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _deserializer = __webpack_require__(31);
-
-var _deserializer2 = _interopRequireDefault(_deserializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var v201Deserializer = function (_PreviousDeserializer) {
-  _inherits(v201Deserializer, _PreviousDeserializer);
-
-  function v201Deserializer() {
-    _classCallCheck(this, v201Deserializer);
-
-    return _possibleConstructorReturn(this, (v201Deserializer.__proto__ || Object.getPrototypeOf(v201Deserializer)).apply(this, arguments));
-  }
-
-  return v201Deserializer;
-}(_deserializer2.default);
-
-exports.default = v201Deserializer;
-
-
-v201Deserializer.version = '2.0.1';
-
-/***/ }),
 /* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -37077,10 +37730,196 @@ var Serialization = function () {
 exports.default = Serialization;
 
 
-Serialization.version = '3.0.0';
+Serialization.version = '2.0.1';
 
 /***/ }),
 /* 178 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _serializer = __webpack_require__(30);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var v201Serializer = function (_PreviousSerializer) {
+  _inherits(v201Serializer, _PreviousSerializer);
+
+  function v201Serializer() {
+    _classCallCheck(this, v201Serializer);
+
+    return _possibleConstructorReturn(this, (v201Serializer.__proto__ || Object.getPrototypeOf(v201Serializer)).apply(this, arguments));
+  }
+
+  return v201Serializer;
+}(_serializer2.default);
+
+exports.default = v201Serializer;
+
+
+v201Serializer.version = '2.0.0';
+
+/***/ }),
+/* 179 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _deserializer = __webpack_require__(31);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var v201Deserializer = function (_PreviousDeserializer) {
+  _inherits(v201Deserializer, _PreviousDeserializer);
+
+  function v201Deserializer() {
+    _classCallCheck(this, v201Deserializer);
+
+    return _possibleConstructorReturn(this, (v201Deserializer.__proto__ || Object.getPrototypeOf(v201Deserializer)).apply(this, arguments));
+  }
+
+  return v201Deserializer;
+}(_deserializer2.default);
+
+exports.default = v201Deserializer;
+
+
+v201Deserializer.version = '2.0.1';
+
+/***/ }),
+/* 180 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var _serializer = __webpack_require__(181);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+var _deserializer = __webpack_require__(182);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Serialization = function () {
+  function Serialization(editor) {
+    _classCallCheck(this, Serialization);
+
+    this._editor = editor;
+  }
+
+  /**
+   * Serializes the editor state
+   * @return {Promise}
+   */
+
+
+  _createClass(Serialization, [{
+    key: 'serialize',
+    value: function serialize() {
+      var serializer = new _serializer2.default(this._editor);
+      return serializer.serialize.apply(serializer, arguments);
+    }
+
+    /**
+     * Deserializes the given data
+     * @param  {Object} data
+     * @return {Promise}
+     */
+
+  }, {
+    key: 'deserialize',
+    value: function deserialize(data) {
+      var deserializer = new _deserializer2.default(this._editor, data);
+      return deserializer.deserialize();
+    }
+  }]);
+
+  return Serialization;
+}();
+
+exports.default = Serialization;
+
+
+Serialization.version = '3.0.0';
+
+/***/ }),
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37413,7 +38252,7 @@ exports.default = v300Serializer;
 v300Serializer.version = '3.0.0';
 
 /***/ }),
-/* 179 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37824,7 +38663,7 @@ exports.default = v300Deserializer;
 v300Deserializer.version = '3.0.0';
 
 /***/ }),
-/* 180 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37840,19 +38679,19 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _loadingModalComponent = __webpack_require__(181);
+var _loadingModalComponent = __webpack_require__(184);
 
 var _loadingModalComponent2 = _interopRequireDefault(_loadingModalComponent);
 
-var _warningModalComponent = __webpack_require__(182);
+var _warningModalComponent = __webpack_require__(185);
 
 var _warningModalComponent2 = _interopRequireDefault(_warningModalComponent);
 
-var _errorModalComponent = __webpack_require__(183);
+var _errorModalComponent = __webpack_require__(186);
 
 var _errorModalComponent2 = _interopRequireDefault(_errorModalComponent);
 
-var _progressModalComponent = __webpack_require__(184);
+var _progressModalComponent = __webpack_require__(187);
 
 var _progressModalComponent2 = _interopRequireDefault(_progressModalComponent);
 
@@ -38011,7 +38850,7 @@ exports.default = ModalContainerComponent;
 ModalContainerComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 181 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38096,7 +38935,7 @@ LoadingModalComponent.propTypes = {
 LoadingModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 182 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38187,7 +39026,7 @@ WarningModalComponent.propTypes = {
 WarningModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 183 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38308,7 +39147,7 @@ ErrorModalComponent.propTypes = {
 ErrorModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 184 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38407,7 +39246,7 @@ ProgressModalComponent.propTypes = {
 ProgressModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 185 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38577,7 +39416,7 @@ var Preloader = function (_EventEmitter) {
 exports.default = Preloader;
 
 /***/ }),
-/* 186 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38587,7 +39426,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _provider = __webpack_require__(187);
+var _provider = __webpack_require__(190);
 
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
@@ -38596,7 +39435,7 @@ Object.defineProperty(exports, 'Provider', {
   }
 });
 
-var _library = __webpack_require__(188);
+var _library = __webpack_require__(191);
 
 Object.defineProperty(exports, 'Library', {
   enumerable: true,
@@ -38605,7 +39444,7 @@ Object.defineProperty(exports, 'Library', {
   }
 });
 
-var _searchSuggestion = __webpack_require__(189);
+var _searchSuggestion = __webpack_require__(192);
 
 Object.defineProperty(exports, 'SearchSuggestion', {
   enumerable: true,
@@ -38614,7 +39453,7 @@ Object.defineProperty(exports, 'SearchSuggestion', {
   }
 });
 
-var _photo = __webpack_require__(190);
+var _photo = __webpack_require__(193);
 
 Object.defineProperty(exports, 'Photo', {
   enumerable: true,
@@ -38626,7 +39465,7 @@ Object.defineProperty(exports, 'Photo', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 187 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38720,7 +39559,7 @@ var Provider = function () {
 exports.default = Provider;
 
 /***/ }),
-/* 188 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38757,7 +39596,7 @@ var Library = function Library(data) {
 exports.default = Library;
 
 /***/ }),
-/* 189 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38795,7 +39634,7 @@ var SearchSuggestion = function SearchSuggestion(data) {
 exports.default = SearchSuggestion;
 
 /***/ }),
-/* 190 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38833,13 +39672,13 @@ var Photo = function Photo(library, data) {
 exports.default = Photo;
 
 /***/ }),
-/* 191 */
+/* 194 */
 /***/ (function(module, exports) {
 
 module.exports = {"controls":{"overview":{"filters":"Filter","adjustments":"Korrekturen","transform":"Zuschneiden","blur":"Weichzeichnen","frame":"Rahmen","sticker":"Sticker","text":"Text","brush":"Malen","focus":"Focus","selective-blur":"Sel. Unschärfe"},"text":{"foreground":"Vordergrund","background":"Hintergrund","size":"Größe","font":"Schriftart","alignment":"Ausrichtung","takeToFront":"Nach oben","defaultText":"Doppelklick zum Bearbeiten!"},"adjustments":{"brightness":"Helligkeit","contrast":"Kontrast","saturation":"Sättigung","gamma":"Gamma","exposure":"Belichtung","shadows":"Schatten","highlights":"Lichter","clarity":"Klarheit"},"transform":{"none":"Original","rotation":"Drehung"},"focus":{"none":"Original","radial":"Kreisförmig","mirrored":"Gespiegelt","blurRadius":"Radius"},"selectiveBlur":{"blurRadius":"Radius","size":"Dicke"},"filters":{"intensity":"Intensität","filters":{"identity":"Original"}},"sticker":{"flip":"Spiegeln","flip-v":"Spiegeln (V)","flip-h":"Spiegeln (H)","takeToFront":"Nach oben","categories":{"all":"Alle"}},"brush":{"size":"Dicke","color":"Farbe"},"frame":{"noFrame":"Kein Rahmen","scale":"Größe"}},"webcam":{"headline":"Mache ein Foto!"},"editor":{"headline":"Foto editieren","new":"Neu","backgroundImage":"Hintergrundbild","undo":"Rückgängig","export":"Speichern","zoom":"Zoom"},"splash":{"upload":{"button":"Lade ein Foto hoch","description":"Klicke hier, um ein Foto von deinem Rechner hochzuladen oder lade es per Drag-and-Drop hoch"},"webcam":{"headline":"Webcam","description":"Klicke hier, um ein Foto mit deiner Webcam zu machen"},"photoRoll":{"headline":"Kostenloses Bildmaterial","description":"Suche dir eines von tausenden Stock Photos aus."}},"photoRoll":{"search":{"placeholder":"Nach Fotos suchen","noSearchResults":"Entschuldigung, aber wir konnten für <strong>\"${query}\"</strong> leider keine Ergebnisse finden.","results":{"headline":"Suchergebnisse für \"${query}\""}}},"generic":{"back":"Zurück","cancel":"Abbrechen","color":"Farbe"},"loading":{"resizing":"Bild wird bearbeitet...","exporting":"Exportiere...","loading":"Lade..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Bild verkleinert","text":"Da dein Bild die maximale Größe von ${maxMegaPixels} Megapixeln überschreitet, wurde es auf ${width}x${height} Pixel verkleinert."},"imageResized_maxDimensions":{"title":"Bild verkleinert","text":"Aufgrund von Hardware-Beschränkungen wurde das Bild auf ${width}x${height} Pixel verkleinert."}},"errors":{"imageLoadFail":{"title":"Bild konnte nicht geladen werden","text":"Beim Laden des Bildes unter ${path} ist ein Fehler aufgetreten."},"webcamUnavailable":{"title":"Webcam nicht verfügbar","text":"Webcam-Bild kann nicht dargestellt werden. (Fehler: ${error})"},"webcamNotSupported":{"title":"Webcam nicht unterstützt","text":"Dein Browser unterstützt das Webcam-Feature leider noch nicht."},"renderingError":{"title":"Rendering-Fehler","text":"Beim Rendern des Bildes ist ein Fehler aufgetreten."},"context_lost":{"title":"Es ist ein Fehler aufgetreten","text":"Dein Browser hat zu lange gebraucht, um das Bild zu generieren. Bitte versuche es noch einmal."},"context_lost_limit":{"title":"Es ist ein Fehler aufgetreten","text":"Bild-Generierung ist mehrmals fehlgeschlagen."},"loadingStickersFailed":{"title":"Laden der Sticker fehlgeschlagen"},"loadingFontsFailed":{"title":"Laden der Schriftarten fehlgeschlagen","text":"Einige Schriftarten sind möglicherweise nicht verfügbar."},"photoRollLoadFail":{"title":"Laden der Photo Roll fehlgeschlagen","text":"Die Photo Roll konnte nicht geladen werden: ${error}"},"invalidFileType":{"text":"Der Dateityp ${fileType} wird nicht unterstützt."},"title":"Es ist ein Fehler aufgetreten"}}
 
 /***/ }),
-/* 192 */
+/* 195 */
 /***/ (function(module, exports) {
 
 module.exports = {"controls":{"overview":{"filters":"Filters","adjustments":"Adjust","transform":"Transform","focus":"Focus","frame":"Frame","sticker":"Sticker","text":"Text","brush":"Brush","selective-blur":"Selective Blur"},"text":{"foreground":"Foreground","background":"Background","size":"Size","font":"Font","alignment":"Alignment","takeToFront":"To Front","defaultText":"Double-click to edit"},"adjustments":{"brightness":"Brightness","contrast":"Contrast","saturation":"Saturation","exposure":"Exposure","gamma":"Gamma","shadows":"Shadows","highlights":"Highlights","clarity":"Clarity"},"transform":{"none":"Original","rotation":"Rotation"},"focus":{"none":"None","radial":"Radial","mirrored":"Mirrored","blurRadius":"Blur radius"},"selectiveBlur":{"blurRadius":"Blur radius","size":"Size"},"filter":{"intensity":"Intensity","filters":{"identity":"None"}},"sticker":{"flip":"Flip","flip-v":"Flip (V)","flip-h":"Flip (H)","takeToFront":"To Front","categories":{"all":"All"}},"brush":{"size":"Size","color":"Color"},"frame":{"noFrame":"No Frame","scale":"Scale"}},"webcam":{"headline":"Take a photo!"},"editor":{"headline":"Edit Photo","new":"New","backgroundImage":"Background Image","undo":"Undo","export":"Export","zoom":"Zoom"},"splash":{"upload":{"button":"Upload your image","description":"Upload a picture from your library or just drag and drop"},"webcam":{"headline":"Webcam","description":"Take a picture with your webcam or phone"},"photoRoll":{"headline":"Free stock footage","description":"Select from thousands of Free Stock Photos"}},"photoRoll":{"search":{"placeholder":"Search for photos","noSearchResults":"Sorry, but we couldn't find any photos for <strong>\"${query}\"</strong>.","results":{"headline":"Search results for \"${query}\""}}},"generic":{"back":"Back","cancel":"Cancel","color":"Color"},"loading":{"resizing":"Resizing...","exporting":"Exporting...","loading":"Loading..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Image resized","text":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels."},"imageResized_maxDimensions":{"title":"Image resized","text":"Due to hardware limitations your image has been resized to ${width}x${height} pixels."}},"errors":{"imageLoadFail":{"title":"Failed to load image","text":"Failed to load the image at ${path}"},"webcamUnavailable":{"title":"Webcam unavailable","text":"Unable to display webcam image (Error: ${error})"},"webcamNotSupported":{"title":"Webcam not supported","text":"The webcam feature is not supported by your browser."},"renderingError":{"title":"Error while rendering","text":"An error has occurred while rendering the image."},"context_lost":{"title":"An error has occurred","text":"Your browser took too long to render the image. Please try applying less operations."},"context_lost_limit":{"title":"An error has occurred","text":"Your browser failed multiple times while rendering the image."},"loadingStickersFailed":{"title":"Failed to load stickers"},"loadingFontsFailed":{"title":"Failed to load fonts","text":"Some fonts might not be available."},"photoRollLoadFail":{"title":"Failed to load Photo Roll","text":"Failed to load photos for the photo roll: ${error}"},"invalidFileType":{"text":"The file type ${fileType} is not supported."},"title":"An error has occurred"}}

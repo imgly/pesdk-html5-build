@@ -1,4 +1,15 @@
-Release notes - Photoeditor SDK - Version html5-4.6.0
+# 4.7.0
+
+Fixed
+---
+
+*   [[PESDK-2551](https://imglysdk.atlassian.net/browse/PESDK-2551)] - Fixed deserialization of crop + orientation operation
+*   [[PESDK-2737](https://imglysdk.atlassian.net/browse/PESDK-2737)] - Fixed ui._component null because of ReactDOM.render in some circumstances
+
+Added
+---
+
+*   [[PESDK-2415](https://imglysdk.atlassian.net/browse/PESDK-2415)] - Documented PESDK Server AWS EC2 Deployment
 
 # 4.6.0
 
