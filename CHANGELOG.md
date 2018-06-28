@@ -1,3 +1,15 @@
+# 4.8.0
+
+Fixed
+---
+
+*   [[PESDK-2738](https://imglysdk.atlassian.net/browse/PESDK-2738)] - Fixed 'Reset Defaults' button on transform tool unexpected behaviour
+
+Changed
+---
+
+*   [[PESDK-2314](https://imglysdk.atlassian.net/browse/PESDK-2314)] - Improved logging and debugging
+
 # 4.7.0
 
 Fixed
