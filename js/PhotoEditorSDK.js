@@ -70,32 +70,32 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 127);
+/******/ 	return __webpack_require__(__webpack_require__.s = 156);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(147), __esModule: true };
+module.exports = { "default": __webpack_require__(176), __esModule: true };
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(164), __esModule: true };
+module.exports = { "default": __webpack_require__(193), __esModule: true };
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(149), __esModule: true };
+module.exports = { "default": __webpack_require__(178), __esModule: true };
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(152), __esModule: true };
+module.exports = { "default": __webpack_require__(181), __esModule: true };
 
 /***/ }),
 /* 4 */
@@ -116,10 +116,22 @@ module.exports = { "default": __webpack_require__(152), __esModule: true };
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-module.exports = __webpack_require__(128).default;
+module.exports = __webpack_require__(157).default;
 
 /***/ }),
 /* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(212), __esModule: true };
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(201), __esModule: true };
+
+/***/ }),
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -133,7 +145,7 @@ module.exports = __webpack_require__(128).default;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives_stack__ = __webpack_require__(238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives_stack__ = __webpack_require__(267);
 
 
 
@@ -282,40 +294,40 @@ Filter.PrimitivesStack = __WEBPACK_IMPORTED_MODULE_5__primitives_stack__["a" /* 
 /* harmony default export */ __webpack_exports__["a"] = (Filter);
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brightness__ = __webpack_require__(240);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brightness__ = __webpack_require__(269);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Brightness", function() { return __WEBPACK_IMPORTED_MODULE_0__brightness__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contrast__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__contrast__ = __webpack_require__(271);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Contrast", function() { return __WEBPACK_IMPORTED_MODULE_1__contrast__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__color_matrix__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__color_matrix__ = __webpack_require__(273);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ColorMatrixPrimitive", function() { return __WEBPACK_IMPORTED_MODULE_2__color_matrix__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__desaturation__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__desaturation__ = __webpack_require__(275);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Desaturation", function() { return __WEBPACK_IMPORTED_MODULE_3__desaturation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gamma__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gamma__ = __webpack_require__(277);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Gamma", function() { return __WEBPACK_IMPORTED_MODULE_4__gamma__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__glow__ = __webpack_require__(250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__glow__ = __webpack_require__(279);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Glow", function() { return __WEBPACK_IMPORTED_MODULE_5__glow__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gobblin__ = __webpack_require__(252);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__gobblin__ = __webpack_require__(281);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Gobblin", function() { return __WEBPACK_IMPORTED_MODULE_6__gobblin__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__grayscale__ = __webpack_require__(254);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__grayscale__ = __webpack_require__(283);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Grayscale", function() { return __WEBPACK_IMPORTED_MODULE_7__grayscale__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lookup_table__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lookup_table__ = __webpack_require__(145);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LookupTable", function() { return __WEBPACK_IMPORTED_MODULE_8__lookup_table__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lookup_table_image__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lookup_table_image__ = __webpack_require__(286);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LookupTableImage", function() { return __WEBPACK_IMPORTED_MODULE_9__lookup_table_image__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__saturation__ = __webpack_require__(259);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__saturation__ = __webpack_require__(288);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Saturation", function() { return __WEBPACK_IMPORTED_MODULE_10__saturation__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__soft_color_overlay__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__soft_color_overlay__ = __webpack_require__(290);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "SoftColorOverlay", function() { return __WEBPACK_IMPORTED_MODULE_11__soft_color_overlay__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__tone_curve__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__tone_curve__ = __webpack_require__(292);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ToneCurve", function() { return __WEBPACK_IMPORTED_MODULE_12__tone_curve__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__x400__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__x400__ = __webpack_require__(293);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "X400", function() { return __WEBPACK_IMPORTED_MODULE_13__x400__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__3d_lookup_table_image__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__3d_lookup_table_image__ = __webpack_require__(295);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ThreeDLookupTableImage", function() { return __WEBPACK_IMPORTED_MODULE_14__3d_lookup_table_image__["a"]; });
 /* @module */
 /*
@@ -355,28 +367,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(183), __esModule: true };
-
-/***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BATCH_SIZE; });
 /* unused harmony export VERTEX_SIZE */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return VERTEX_BYTE_SIZE; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_log__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_color__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_math_matrix__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_math_rectangle__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_math_vector2__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_event_emitter__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_gl_utils__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_log__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_color__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_math_matrix__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_math_rectangle__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_math_vector2__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_event_emitter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_gl_utils__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__constants__ = __webpack_require__(31);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__lib_color__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_2__lib_math_matrix__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return __WEBPACK_IMPORTED_MODULE_4__lib_math_vector2__["a"]; });
@@ -418,7 +424,7 @@ var VERTEX_BYTE_SIZE = VERTEX_SIZE * 4;
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 var core = module.exports = { version: '2.5.3' };
@@ -426,12 +432,12 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var store = __webpack_require__(64)('wks');
-var uid = __webpack_require__(47);
-var Symbol = __webpack_require__(12).Symbol;
+var store = __webpack_require__(83)('wks');
+var uid = __webpack_require__(64);
+var Symbol = __webpack_require__(14).Symbol;
 var USE_SYMBOL = typeof Symbol == 'function';
 
 var $exports = module.exports = function (name) {
@@ -443,7 +449,7 @@ $exports.store = store;
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -542,25 +548,13 @@ var Primitive = function (_Configurable) {
 /* harmony default export */ __webpack_exports__["a"] = (Primitive);
 
 /***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
-
-
-/***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(12);
-var core = __webpack_require__(9);
-var ctx = __webpack_require__(26);
-var hide = __webpack_require__(19);
+var global = __webpack_require__(14);
+var core = __webpack_require__(10);
+var ctx = __webpack_require__(36);
+var hide = __webpack_require__(26);
 var PROTOTYPE = 'prototype';
 
 var $export = function (type, name, source) {
@@ -622,9 +616,243 @@ module.exports = $export;
 
 /***/ }),
 /* 14 */
+/***/ (function(module, exports) {
+
+// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+var global = module.exports = typeof window != 'undefined' && window.Math == Math
+  ? window : typeof self != 'undefined' && self.Math == Math ? self
+  // eslint-disable-next-line no-new-func
+  : Function('return this')();
+if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
+
+
+/***/ }),
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(17);
+module.exports = { "default": __webpack_require__(196), __esModule: true };
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Randomizer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+/* global Date */
+
+var Randomizer = function () {
+  function Randomizer(seed) {
+    _classCallCheck(this, Randomizer);
+
+    this._seed = seed === undefined ? Randomizer.TimeSeed() : seed;
+  }
+
+  _createClass(Randomizer, [{
+    key: "seed",
+    value: function seed(value) {
+      this._seed = value === undefined ? Randomizer.TimeSeed() : value;
+    }
+  }, {
+    key: "next",
+    value: function next() {
+      var seed = this._seed | 0;
+      var highPass = seed / Randomizer.SEED_DIVIDER | 0;
+      var lowPass = seed % Randomizer.SEED_DIVIDER | 0;
+
+      seed = Randomizer.SEED_LOW_MULTIPLY * lowPass - Randomizer.SEED_HIGH_MULTIPLY * highPass;
+
+      if (seed <= 0) {
+        seed += Randomizer.MAX;
+      }
+
+      if (seed === -1) {
+        seed = Randomizer.MAX - 1;
+      }
+
+      this._seed = seed;
+
+      return seed;
+    }
+  }, {
+    key: "nextInRange",
+    value: function nextInRange(min, max) {
+      if (max === undefined) {
+        max = min;
+        min = 0;
+      }
+
+      return min + this.next() % (max - min + 1);
+    }
+  }, {
+    key: "nextBool",
+    value: function nextBool() {
+      var falseChance = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var trueChance = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
+      return this.nextInRange(falseChance + trueChance - 1) >= falseChance;
+    }
+  }, {
+    key: "pickNext",
+    value: function pickNext(array) {
+      if (!Array.isArray(array)) {
+        return null;
+      }
+
+      return array[this.next() % array.length];
+    }
+  }], [{
+    key: "TimeSeed",
+    value: function TimeSeed() {
+      return Date.now();
+    }
+  }]);
+
+  return Randomizer;
+}();
+Randomizer.MAX = 2147483647;
+Randomizer.SEED_DIVIDER = 127773;
+Randomizer.SEED_LOW_MULTIPLY = 16807;
+Randomizer.SEED_HIGH_MULTIPLY = 2836;
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RectangleInsets; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__);
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var RectangleInsets = function () {
+  function RectangleInsets() {
+    var top = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var left = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var bottom = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+    var right = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
+
+    _classCallCheck(this, RectangleInsets);
+
+    this.top = top;
+    this.left = left;
+    this.bottom = bottom;
+    this.right = right;
+  }
+
+  _createClass(RectangleInsets, [{
+    key: 'multiply',
+    value: function multiply(a) {
+      this.top *= a;
+      this.left *= a;
+      this.bottom *= a;
+      this.right *= a;
+    }
+  }, {
+    key: 'toObject',
+    value: function toObject() {
+      return _extends({}, this);
+    }
+  }, {
+    key: 'equals',
+    value: function equals(r) {
+      var eps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+      return Math.abs(r.top - this.top) <= eps && Math.abs(r.left - this.left) <= eps && Math.abs(r.bottom - this.bottom) <= eps && Math.abs(r.right - this.right) <= eps;
+    }
+  }, {
+    key: 'scale',
+    value: function scale() {
+      var sx = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var sy = arguments[1];
+
+      if (sy === undefined) {
+        sy = sx;
+      }
+
+      this.top *= sy;
+      this.bottom *= sy;
+      this.left *= sx;
+      this.right *= sx;
+
+      return this;
+    }
+  }, {
+    key: 'clone',
+    value: function clone() {
+      return new RectangleInsets(this.top, this.left, this.bottom, this.right);
+    }
+  }, {
+    key: 'applyToRectangle',
+    value: function applyToRectangle(rect) {
+      return new Rectangle(rect.x + this.left, rect.y + this.top, rect.width - this.left - this.right, rect.height - this.top - this.bottom);
+    }
+  }], [{
+    key: 'ZERO',
+    get: function get() {
+      return new RectangleInsets(0, 0, 0, 0);
+    }
+  }]);
+
+  return RectangleInsets;
+}();
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(24);
 module.exports = function (it) {
   if (!isObject(it)) throw TypeError(it + ' is not an object!');
   return it;
@@ -632,15 +860,290 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 15 */
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowSingle; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_row__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_element__ = __webpack_require__(43);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+var TextDesignRowSingle = function (_TextDesignRow) {
+  _inherits(TextDesignRowSingle, _TextDesignRow);
+
+  function TextDesignRowSingle() {
+    _classCallCheck(this, TextDesignRowSingle);
+
+    return _possibleConstructorReturn(this, (TextDesignRowSingle.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowSingle)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignRowSingle, [{
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      var _serializeOptions = this.serializeOptions(),
+          attributes = _serializeOptions.attributes,
+          imageInsets = _serializeOptions.imageInsets,
+          size = _serializeOptions.size,
+          width = _serializeOptions.width;
+      // Get the line as a single string
+
+
+      var text = this.getWords().joined(1)[0] || '';
+
+      // Create a TextDesignFont and calculate dimensions to fit the text in the
+      // row width
+      var fontIdentifier = attributes.fontIdentifier;
+      var font = new __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__["a" /* TextDesignFont */]({ text: text, fontIdentifier: fontIdentifier });
+      font.fitWidth(this._getTextFrame().width);
+
+      // Update the row's height in _size
+      var height = font.getTextMetrics().height + imageInsets.top + imageInsets.bottom;
+      size.height = height;
+
+      // Offset the text frame
+      var frame = this._getTextFrame();
+
+      var layoutElement = new __WEBPACK_IMPORTED_MODULE_9__text_design_element__["a" /* TextDesignElement */]({ text: text, frame: frame, font: font });
+
+      return [layoutElement];
+    }
+  }]);
+
+  return TextDesignRowSingle;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_row__["a" /* TextDesignRow */]);
+
+TextDesignRowSingle.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_row__["a" /* TextDesignRow */].prototype.availableOptions, {
+  imageInsets: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_7__rectangle_insets__["a" /* RectangleInsets */]() }
+});
+
+/***/ }),
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AssetManager; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_regenerator__ = __webpack_require__(354);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_regenerator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+
+
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default.a(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default.a.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* global HTMLImageElement, WEBPACK */
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var Image = void 0;
+if (true) {
+  Image = window.Image;
+}
+
+var TextDesignAssetManager = function (_Configurable) {
+  _inherits(TextDesignAssetManager, _Configurable);
+
+  function TextDesignAssetManager() {
+    _classCallCheck(this, TextDesignAssetManager);
+
+    return _possibleConstructorReturn(this, (TextDesignAssetManager.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignAssetManager)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignAssetManager, [{
+    key: 'loadImages',
+    value: function () {
+      var _ref = _asyncToGenerator(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_regenerator___default.a.mark(function _callee(images) {
+        var loaded, i, image;
+        return __WEBPACK_IMPORTED_MODULE_4_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                loaded = [];
+                i = 0;
+
+              case 2:
+                if (!(i < images.length)) {
+                  _context.next = 10;
+                  break;
+                }
+
+                image = images[i];
+                _context.next = 6;
+                return this.addImage(image.path, image.fullPath, image.image);
+
+              case 6:
+                loaded.push(image);
+
+              case 7:
+                i++;
+                _context.next = 2;
+                break;
+
+              case 10:
+                return _context.abrupt('return', loaded);
+
+              case 11:
+              case 'end':
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function loadImages(_x) {
+        return _ref.apply(this, arguments);
+      }
+
+      return loadImages;
+    }()
+  }, {
+    key: 'addImage',
+    value: function addImage(path, fullPath, image) {
+      var images = this.getImages();
+
+      if (!image) {
+        return new __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+          image = new Image();
+          image.onload = function () {
+            images[path] = { fullPath: fullPath, image: image };
+            resolve({ fullPath: fullPath, image: image });
+          };
+          image.onerror = reject;
+          image.src = fullPath;
+        });
+      } else {
+        images[path] = { fullPath: fullPath, image: image };
+        return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default.a.resolve({ fullPath: fullPath, image: image });
+      }
+    }
+  }, {
+    key: 'getImage',
+    value: function getImage(path) {
+      var images = this.getImages();
+      var image = images[path];
+      return image ? image.image : null;
+    }
+  }, {
+    key: 'getVariation',
+    value: function getVariation(identifier) {
+      return this.getFonts()[identifier];
+    }
+  }, {
+    key: 'addFont',
+    value: function addFont(identifier, fontVariation) {
+      var fonts = this.getFonts();
+      fonts[identifier] = fontVariation;
+
+      return fontVariation;
+    }
+  }]);
+
+  return TextDesignAssetManager;
+}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Configurable"]);
+
+TextDesignAssetManager.prototype.availableOptions = {
+  images: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].OBJECT, default: {} },
+  fonts: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].OBJECT, default: {} }
+};
+
+var AssetManager = new TextDesignAssetManager();
+
+/***/ }),
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(14);
-var IE8_DOM_DEFINE = __webpack_require__(86);
-var toPrimitive = __webpack_require__(60);
+var anObject = __webpack_require__(18);
+var IE8_DOM_DEFINE = __webpack_require__(109);
+var toPrimitive = __webpack_require__(79);
 var dP = Object.defineProperty;
 
-exports.f = __webpack_require__(18) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
+exports.f = __webpack_require__(25) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -654,27 +1157,27 @@ exports.f = __webpack_require__(18) ? Object.defineProperty : function definePro
 
 
 /***/ }),
-/* 16 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_assign__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__base64__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__base64__ = __webpack_require__(50);
 
 
 
@@ -778,6 +1281,127 @@ var ArrayUtils = function () {
       return arr.filter(function (v, i, arr) {
         return !func(v, i, arr);
       });
+    }
+
+    /**
+     * Finds the index first element of the Array to which the supplied function returns
+     * a true value. If the element is not found it returns -1.
+     *
+     * @param {Array} array
+     * @param {Function} func
+     * @returns {number}
+     */
+
+  }, {
+    key: 'findIndex',
+    value: function findIndex(array, func) {
+      for (var i = 0; i < array.length; i++) {
+        if (func(array[i])) {
+          return i;
+        }
+      }
+
+      return -1;
+    }
+
+    /**
+     * Finds the first element of the Array to which the supplied function returns
+     * a true value and returns it. Otherwise it returns undefined.
+     *
+     * @param {Array} array
+     * @param {Function} func
+     * @returns {any}
+     */
+
+  }, {
+    key: 'find',
+    value: function find(array, func) {
+      for (var i = 0; i < array.length; i++) {
+        if (func(array[i])) {
+          return array[i];
+        }
+      }
+
+      return undefined;
+    }
+
+    /**
+     * Flattens the given multidimensional array
+     *
+     * @return {Array}
+     */
+
+  }, {
+    key: 'flatten',
+    value: function flatten(array) {
+      return array.reduce(function (flat, toFlatten) {
+        return flat.concat(Array.isArray(toFlatten) ? Utils.Array.flatten(toFlatten) : toFlatten);
+      }, []);
+    }
+
+    /**
+     * Returns and array containing the numbers going from `start` (inclusive) to
+     * `end` (exclusive)
+     *
+     * @param {number} start
+     * @param {number} end
+     * @returns Array
+     */
+
+  }, {
+    key: 'range',
+    value: function range(start, end) {
+      var arr = [];
+
+      if (end > start) {
+        for (var i = start; i < end; i++) {
+          arr.push(i);
+        }
+      }
+
+      return arr;
+    }
+
+    /**
+     * Returns an array consisting of the value `val` repeated `n` times.
+     *
+     * @param {any} val
+     * @param {number} n
+     * @returns {Array}
+     */
+
+  }, {
+    key: 'repeat',
+    value: function repeat(val, n) {
+      var arr = [];
+
+      for (var i = 0; i < n; i++) {
+        arr[i] = val;
+      }
+
+      return arr;
+    }
+
+    /**
+     * Returns an array which is an array of arrays of equally positioned items in both arrays,
+     * e.g, zip([1, 2, 3], [4, 5, 6]) = [[1, 4], [2, 5], [3, 6]]
+     *
+     * @param {Array} a
+     * @param {Array} b
+     * @returns {Array}
+     */
+
+  }, {
+    key: 'zip',
+    value: function zip(a, b) {
+      var len = Math.min(a.length, b.length);
+      var arr = [];
+
+      for (var i = 0; i < len; i++) {
+        arr[i] = [a[i], b[i]];
+      }
+
+      return arr;
     }
   }]);
 
@@ -1218,19 +1842,6 @@ var Utils = function () {
     }
 
     /**
-     * Flattens the given multidimensional array
-     * @return {Array}
-     */
-
-  }, {
-    key: 'flatten',
-    value: function flatten(array) {
-      return array.reduce(function (flat, toFlatten) {
-        return flat.concat(Array.isArray(toFlatten) ? Utils.flatten(toFlatten) : toFlatten);
-      }, []);
-    }
-
-    /**
      * Creates a canvas DOM element (browser) or a node-canvas canvas (node)
      * @return {Canvas}
      */
@@ -1530,10 +2141,122 @@ Utils.Array = ArrayUtils;
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Utils);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(41)))
 
 /***/ }),
-/* 17 */
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SizeValue; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var SizeValue = function () {
+  function SizeValue() {
+    var width = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+    var height = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+
+    _classCallCheck(this, SizeValue);
+
+    this.width = width;
+    this.height = height;
+  }
+
+  _createClass(SizeValue, [{
+    key: 'set',
+    value: function set(width, height) {
+      this.width = width;
+      this.height = height;
+    }
+  }, {
+    key: 'aspect',
+    value: function aspect() {
+      return this.width / this.height;
+    }
+  }, {
+    key: 'rectangle',
+    value: function rectangle(x, y) {
+      return new Rectangle(x, y, this.width, this.height);
+    }
+  }, {
+    key: 'clone',
+    value: function clone() {
+      return new SizeValue(this.width, this.height);
+    }
+  }, {
+    key: 'scale',
+    value: function scale(sx, sy) {
+      if (sy === undefined) {
+        sy = sx;
+      }
+
+      this.width *= sx;
+      this.height *= sy;
+
+      return this;
+    }
+  }, {
+    key: 'copy',
+    value: function copy(size) {
+      this.width = size.width;
+      this.height = size.height;
+
+      return this;
+    }
+  }, {
+    key: 'fitInWidthWithOther',
+    value: function fitInWidthWithOther(width) {
+      var otherSizeValue = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : new SizeValue();
+
+      this.copy(SizeValue.fitTwoInWidth(width, this, otherSizeValue)[0]);
+      return this;
+    }
+  }], [{
+    key: 'fitTwoInWidth',
+    value: function fitTwoInWidth(width, size1, size2) {
+      var crossRatio = size1.width * size2.height + size1.height * size2.width;
+      var a = size2.height * width / crossRatio;
+
+      var newWidth1 = size1.width * a;
+      var newHeight = size1.height * a;
+
+      return [new SizeValue(newWidth1, newHeight), new SizeValue(width - newWidth1, newHeight)];
+    }
+  }]);
+
+  return SizeValue;
+}();
+
+/***/ }),
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -1542,22 +2265,22 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 18 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(27)(function () {
+module.exports = !__webpack_require__(37)(function () {
   return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 19 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(15);
-var createDesc = __webpack_require__(35);
-module.exports = __webpack_require__(18) ? function (object, key, value) {
+var dP = __webpack_require__(21);
+var createDesc = __webpack_require__(46);
+module.exports = __webpack_require__(25) ? function (object, key, value) {
   return dP.f(object, key, createDesc(1, value));
 } : function (object, key, value) {
   object[key] = value;
@@ -1566,7 +2289,7 @@ module.exports = __webpack_require__(18) ? function (object, key, value) {
 
 
 /***/ }),
-/* 20 */
+/* 27 */
 /***/ (function(module, exports) {
 
 var hasOwnProperty = {}.hasOwnProperty;
@@ -1576,30 +2299,36 @@ module.exports = function (it, key) {
 
 
 /***/ }),
-/* 21 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(89);
-var defined = __webpack_require__(58);
+var IObject = __webpack_require__(112);
+var defined = __webpack_require__(77);
 module.exports = function (it) {
   return IObject(defined(it));
 };
 
 
 /***/ }),
-/* 22 */
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(183), __esModule: true };
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export Logger */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_json_stringify__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_json_stringify__ = __webpack_require__(199);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_json_stringify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_json_stringify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sdk_core_lib_utils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sdk_core_lib_utils__ = __webpack_require__(22);
 
 
 
@@ -1687,14 +2416,14 @@ var Logger = function () {
   _createClass(Logger, [{
     key: 'getLevelIndexByName',
     value: function getLevelIndexByName(levelName) {
-      return this._levels.findIndex(function (l) {
+      return __WEBPACK_IMPORTED_MODULE_3__sdk_core_lib_utils__["a" /* default */].Array.findIndex(this._levels, function (l) {
         return l.name === levelName;
       });
     }
   }, {
     key: 'getLevelObjectByName',
     value: function getLevelObjectByName(levelName) {
-      return this._levels.find(function (l) {
+      return __WEBPACK_IMPORTED_MODULE_3__sdk_core_lib_utils__["a" /* default */].Array.find(this._levels, function (l) {
         return l.name === levelName;
       });
     }
@@ -1878,7 +2607,7 @@ var Logger = function () {
       var baseTexture = _texture.getBaseTexture();
       var renderers = baseTexture.getRenderers();
 
-      var glRenderer = renderers.find(function (r) {
+      var glRenderer = __WEBPACK_IMPORTED_MODULE_3__sdk_core_lib_utils__["a" /* default */].Array.find(renderers, function (r) {
         return r && r.constructor.type === 'WebGL';
       });
 
@@ -1948,10 +2677,10 @@ var Logger = function () {
 var Log = new Logger('warn');
 
 /* harmony default export */ __webpack_exports__["a"] = (Log);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(100)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(123)))
 
 /***/ }),
-/* 23 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2095,19 +2824,19 @@ var RenderType = {
 };
 
 /***/ }),
-/* 24 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_set_immediate__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_set_immediate__ = __webpack_require__(223);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_set_immediate___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_set_immediate__);
 
 
@@ -2475,20 +3204,394 @@ var root = typeof global === 'undefined' ? window : global;
 var _Promise = typeof __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a !== 'undefined' ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default.a : promiseFactory();
 root.Promise = root.Promise || _Promise;
 /* harmony default export */ __webpack_exports__["a"] = (_Promise);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(41)))
 
 /***/ }),
-/* 25 */
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Words; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__);
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+var Words = function () {
+  function Words(text) {
+    _classCallCheck(this, Words);
+
+    this.words = [];
+
+    if (text) {
+      this.splitIntoWords(text);
+    }
+  }
+
+  /**
+   * Splits the given text into words, which are stores in the `words` array,
+   * and returned a copy.
+   *
+   * @param {String} text
+   * @returns {Array<String>}
+   */
+
+
+  _createClass(Words, [{
+    key: 'splitIntoWords',
+    value: function splitIntoWords(text) {
+      this.words = text.match(/\S+/g) || [];
+
+      return [].concat(_toConsumableArray(this.words));
+    }
+
+    /**
+     * Gets the list of words.
+     *
+     * @returns {Array<String>}
+     */
+
+  }, {
+    key: 'get',
+    value: function get() {
+      return [].concat(_toConsumableArray(this.words));
+    }
+  }, {
+    key: 'getWord',
+    value: function getWord(index) {
+      return this.words[index];
+    }
+  }, {
+    key: 'set',
+    value: function set(words) {
+      this.words = [].concat(_toConsumableArray(words));
+
+      return this;
+    }
+
+    /**
+     * Returns a new Words instance, initialized with the sliced words of the
+     * current instance, from `start` (including) to `end` (excluding).
+     *
+     * @param {Number} start
+     * @param {Number} end
+     * @returns Words
+     * @memberof Words
+     */
+
+  }, {
+    key: 'slice',
+    value: function slice(start, end) {
+      return Words.fromWords(this.words.slice(start, end));
+    }
+
+    /**
+     * Gets the list of words converted to lower case characters.
+     *
+     * @returns {Array<String>}
+     * @memberof Words
+     */
+
+  }, {
+    key: 'getLowerCase',
+    value: function getLowerCase() {
+      return this.words.map(function (w) {
+        return w.toLowerCase();
+      });
+    }
+
+    /**
+     * Gets the list of words converted to upper case characters.
+     *
+     * @returns {Array<String>}
+     * @memberof Words
+     */
+
+  }, {
+    key: 'getUpperCase',
+    value: function getUpperCase() {
+      return this.words.map(function (w) {
+        return w.toUpperCase();
+      });
+    }
+
+    /**
+     * Returns the number of words.
+     *
+     * @returns {Number}
+     */
+
+  }, {
+    key: 'size',
+    value: function size() {
+      return this.words.length;
+    }
+
+    /**
+     * Returns the number of characters contained in all the words.
+     *
+     * @returns {Number}
+     * @memberof Words
+     */
+
+  }, {
+    key: 'countNumberOfCharacters',
+    value: function countNumberOfCharacters() {
+      return this.words.reduce(function (acc, s) {
+        return acc + s.length;
+      }, 0);
+    }
+
+    /**
+     *  Divides the list of words into a list of a given number of lines.
+     *
+     * @param {Number} numberOfLines
+     * @returns {Array<String>}
+     * @memberof Words
+     */
+
+  }, {
+    key: 'joined',
+    value: function joined(numberOfLines) {
+      var _this = this;
+
+      var numberOfWords = this.size();
+      var wordsPerLine = Math.floor(numberOfWords / numberOfLines);
+      var extraWords = numberOfWords % numberOfLines;
+
+      var lineStartPos = 0;
+      var lineEndPos = 0;
+      return __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Utils"].Array.range(0, numberOfLines).map(function (i) {
+        lineStartPos = lineEndPos;
+        var numOfWordsInLine = wordsPerLine + (i < extraWords ? 1 : 0);
+        lineEndPos = Math.min(lineStartPos + numOfWordsInLine, numberOfWords);
+
+        return __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Utils"].Array.range(lineStartPos, lineEndPos).reduce(function (line, j) {
+          return line + (j === lineStartPos ? '' : ' ') + _this.words[j];
+        }, '');
+      });
+    }
+
+    /**
+     * Returns a Words instance with the given words.∑
+     *
+     * @static
+     * @param {Array<String>} words
+     * @returns Words
+     */
+
+  }], [{
+    key: 'fromWords',
+    value: function fromWords(words) {
+      var result = new Words();
+      result.words = [].concat(_toConsumableArray(words));
+
+      return result;
+    }
+  }]);
+
+  return Words;
+}();
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export drawImageRect */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return fillRect; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return strokeRect; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return fillRectPunctuated; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return drawImageWithCapInsets; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return drawImageFrame; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__);
+
+
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable___default()(Object(arr))) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Math"].Rectangle,
+    Vector2 = __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Math"].Vector2;
+
+
+var drawImageRect = function drawImageRect(context, image, srcRect, destRect) {
+  context.drawImage(image, srcRect.x, srcRect.y, srcRect.width, srcRect.height, destRect.x, destRect.y, destRect.width, destRect.height);
+};
+
+var fillRect = function fillRect(context, rect, color) {
+  var compositeOperation = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'source-over';
+
+  context.save();
+  context.fillStyle = color.toRGBA();
+  context.globalCompositeOperation = compositeOperation;
+  context.fillRect(rect.x, rect.y, rect.width, rect.height);
+  context.restore();
+};
+
+var strokeRect = function strokeRect(context, rect, color) {
+  var lineWidth = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 4;
+
+  context.save();
+  context.strokeStyle = color.toRGBA();
+  context.lineWidth = lineWidth;
+  context.strokeRect(rect.x, rect.y, rect.width, rect.height);
+  context.restore();
+};
+
+var fillRectPunctuated = function fillRectPunctuated(context, rect, color) {
+  var compositeOperation = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 'source-over';
+
+  context.save();
+
+  var radius = rect.height / 2;
+
+  var centerY = rect.y + radius;
+  var centerX = rect.x + radius;
+  var endX = rect.x + rect.width;
+
+  context.fillStyle = color.toRGBA();
+  context.globalCompositeOperation = compositeOperation;
+
+  while (centerX < endX) {
+    context.beginPath();
+    context.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+    context.fill();
+
+    centerX += radius * 4;
+  }
+
+  context.restore();
+};
+
+var buildCapRectangle = function buildCapRectangle(rectangle, capInsets) {
+  var center = capInsets.applyToRectangle(rectangle);
+  var x = rectangle.x,
+      y = rectangle.y,
+      width = rectangle.width,
+      height = rectangle.height;
+
+
+  var corners = [Rectangle.FromDiagonalPoints(new Vector2(0, 0), new Vector2(center.x, center.y)), Rectangle.FromDiagonalPoints(new Vector2(0, center.y + center.height), new Vector2(center.x, height)), Rectangle.FromDiagonalPoints(new Vector2(center.x + center.width, center.y + center.height), new Vector2(width, height)), Rectangle.FromDiagonalPoints(new Vector2(center.x + center.width, 0), new Vector2(width, center.y))].map(function (r) {
+    return r.translate(x, y);
+  });
+
+  var bars = [Rectangle.FromDiagonalPoints(new Vector2(center.x, 0), new Vector2(center.x + center.width, center.y)), Rectangle.FromDiagonalPoints(new Vector2(0, center.y), new Vector2(center.x, center.y + center.height)), Rectangle.FromDiagonalPoints(new Vector2(center.x, center.y + center.height), new Vector2(center.x + center.width, height)), Rectangle.FromDiagonalPoints(new Vector2(center.x + center.width, center.y), new Vector2(width, center.y + center.height))].map(function (r) {
+    return r.translate(x, y);
+  });
+
+  return { corners: corners, bars: bars, center: center };
+};
+
+var drawImageWithCapInsets = function drawImageWithCapInsets(context, image, destRect, capInsets) {
+  var imageWidth = image.naturalWidth || image.width;
+  var imageHeight = image.naturalHeight || image.height;
+
+  // Divide the source rectangle into cap sections
+  var capSource = buildCapRectangle(new Rectangle(0, 0, imageWidth, imageHeight), capInsets);
+
+  // Divide the destination rect into cap sections
+  var capDest = buildCapRectangle(destRect, capInsets);
+
+  drawImageRect(context, image, capSource.center, capDest.center);
+  __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Utils"].Array.zip(capSource.corners, capDest.corners).forEach(function (_ref) {
+    var _ref2 = _slicedToArray(_ref, 2),
+        src = _ref2[0],
+        dst = _ref2[1];
+
+    return drawImageRect(context, image, src, dst);
+  });
+  __WEBPACK_IMPORTED_MODULE_2_photoeditorsdk_core__["Utils"].Array.zip(capSource.bars, capDest.bars).forEach(function (_ref3) {
+    var _ref4 = _slicedToArray(_ref3, 2),
+        src = _ref4[0],
+        dst = _ref4[1];
+
+    return drawImageRect(context, image, src, dst);
+  });
+};
+
+var drawImageFrame = function drawImageFrame(context, image, frame, color) {
+  var compositeMode = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 'source-atop';
+
+  context.save();
+
+  if (color) {
+    context.globalAlpha = color.a;
+  }
+
+  context.drawImage(image, frame.x, frame.y, frame.width, frame.height);
+
+  if (color) {
+    context.globalAlpha = 1;
+  }
+
+  if (color) {
+    var c = color.clone();
+    c.a = 1;
+    fillRect(context, frame, c, compositeMode);
+  }
+
+  context.restore();
+};
+
+/***/ }),
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(130), __esModule: true };
+module.exports = { "default": __webpack_require__(159), __esModule: true };
 
 /***/ }),
-/* 26 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(46);
+var aFunction = __webpack_require__(63);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -2510,7 +3613,7 @@ module.exports = function (fn, that, length) {
 
 
 /***/ }),
-/* 27 */
+/* 37 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -2523,42 +3626,36 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 28 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = {};
 
 
 /***/ }),
-/* 29 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(139), __esModule: true };
+module.exports = { "default": __webpack_require__(168), __esModule: true };
 
 /***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(154), __esModule: true };
-
-/***/ }),
-/* 31 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__engine__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_base64__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_event_emitter__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_configurable__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_color__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_log__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_gl_utils__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_license_checker__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_async_animation_frame__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__engine__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__lib_base64__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lib_event_emitter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_configurable__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_color__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_log__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_gl_utils__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_license_checker__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_async_animation_frame__ = __webpack_require__(245);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "requestAnimationFrame", function() { return __WEBPACK_IMPORTED_MODULE_11__shared_async_animation_frame__["b"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "cancelAnimationFrame", function() { return __WEBPACK_IMPORTED_MODULE_11__shared_async_animation_frame__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Engine", function() { return __WEBPACK_IMPORTED_MODULE_0__engine__["a"]; });
@@ -2572,7 +3669,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GLUtils", function() { return __WEBPACK_IMPORTED_MODULE_9__lib_gl_utils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Base64", function() { return __WEBPACK_IMPORTED_MODULE_2__lib_base64__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LicenseChecker", function() { return __WEBPACK_IMPORTED_MODULE_10__lib_license_checker__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_math___ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_math___ = __webpack_require__(136);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Vector2", function() { return __WEBPACK_IMPORTED_MODULE_12__lib_math___["Vector2"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Vector3", function() { return __WEBPACK_IMPORTED_MODULE_12__lib_math___["Vector3"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Rectangle", function() { return __WEBPACK_IMPORTED_MODULE_12__lib_math___["Rectangle"]; });
@@ -2616,7 +3713,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 32 */
+/* 41 */
 /***/ (function(module, exports) {
 
 var g;
@@ -2643,7 +3740,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 33 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3032,15 +4129,259 @@ var Vector2 = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Vector2);
 
 /***/ }),
-/* 34 */
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignElement; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var TextDesignElement = function (_Configurable) {
+  _inherits(TextDesignElement, _Configurable);
+
+  function TextDesignElement() {
+    _classCallCheck(this, TextDesignElement);
+
+    return _possibleConstructorReturn(this, (TextDesignElement.__proto__ || __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignElement)).apply(this, arguments));
+  }
+
+  return TextDesignElement;
+}(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["Configurable"]);
+
+TextDesignElement.prototype.availableOptions = {
+  text: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  frame: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  font: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].OBJECT, default: null }
+};
+
+/***/ }),
+/* 44 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignMasked; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_masked_row_type__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_rows_masked_text_design_row_multiline__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+// TODO: TextDesignRowMultiline
+
+var TextDesignMasked = function (_TextDesign) {
+  _inherits(TextDesignMasked, _TextDesign);
+
+  function TextDesignMasked() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignMasked);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignMasked.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMasked)).call.apply(_ref, [this].concat(args)));
+
+    _this._rowType = __WEBPACK_IMPORTED_MODULE_9__models_masked_row_type__["a" /* RowType */].Box;
+
+    _this._alignmentRandomizer = new __WEBPACK_IMPORTED_MODULE_12__models_randomizer__["a" /* Randomizer */](0);
+    _this._isMaskedRandomizer = new __WEBPACK_IMPORTED_MODULE_12__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._alignmentRandomizer);
+    _this._seedPool.push(_this._isMaskedRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignMasked, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return [__WEBPACK_IMPORTED_MODULE_9__models_masked_row_type__["a" /* RowType */].Box.getImagePath()];
+    }
+  }, {
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignMasked.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMasked.prototype), '_modifiedText', this).call(this, text).toLowerCase();
+    }
+  }, {
+    key: '_modifiedLines',
+    value: function _modifiedLines(lines) {
+      var words = new __WEBPACK_IMPORTED_MODULE_8__text_words__["a" /* Words */]();
+      words.set([lines.reduce(function (acc, line) {
+        return '' + acc + (acc === '' ? '' : '\n') + line.joined(1)[0];
+      }, '')]);
+      return [words];
+    }
+  }, {
+    key: '_layoutRows',
+    value: function _layoutRows(lines, width) {
+      var rows = _get(TextDesignMasked.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMasked.prototype), '_layoutRows', this).call(this, lines, width);
+      var firstRow = rows[0];
+
+      if (firstRow && this.getSquareLayout()) {
+        var size = firstRow.getSize();
+        size.height = size.width;
+      }
+
+      return rows;
+    }
+  }, {
+    key: 'getAlignment',
+    value: function getAlignment() {
+      return this._alignmentRandomizer.pickNext(this.constructor.ValidAlignments || TextDesignMasked.ValidAlignments);
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var alignment = this.getAlignment();
+      var rowType = this._rowType;
+      var image = __WEBPACK_IMPORTED_MODULE_11__text_design_asset_manager__["a" /* AssetManager */].getImage(rowType.getImagePath());
+
+      attributes.setAlignment(alignment);
+
+      var row = new __WEBPACK_IMPORTED_MODULE_10__models_rows_masked_text_design_row_multiline__["a" /* TextDesignRowMultiline */]({
+        words: words,
+        width: width,
+        attributes: attributes,
+        image: image,
+        imageInsets: rowType.insetsForWidth(width),
+        capInsets: rowType.getCapInsets(),
+        backgroundColor: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].WHITE,
+        centerOffset: 0,
+        textScaleFactor: 0.7,
+        isMasked: this._isMaskedRandomizer.nextBool()
+      });
+
+      if (this._rowType === __WEBPACK_IMPORTED_MODULE_9__models_masked_row_type__["a" /* RowType */].Box) {
+        row.serverImageSmoothingFix = true;
+      }
+
+      var rowSize = row.getSize();
+
+      if (this.getSquareLayout()) {
+        rowSize.height = rowSize.width;
+      } else {
+        rowSize.height = Math.max(rowSize.height, rowSize.width * rowType.getMinimumHeightRatio());
+      }
+
+      return row;
+    }
+  }]);
+
+  return TextDesignMasked;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design__["a" /* TextDesign */]);
+
+TextDesignMasked.defaultFontIdentifiers = ['imgly_font_galano_grotesque_bold'];
+TextDesignMasked.Alignment = {
+  Left: 'left',
+  Center: 'center',
+  Right: 'right'
+};
+TextDesignMasked.ValidAlignments = [TextDesignMasked.Alignment.Left, TextDesignMasked.Alignment.Center, TextDesignMasked.Alignment.Right];
+TextDesignMasked.identifier = 'imgly_text_design_masked';
+TextDesignMasked.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design__["a" /* TextDesign */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignMasked.defaultFontIdentifiers },
+  squareLayout: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true }
+});
+
+/***/ }),
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $at = __webpack_require__(131)(true);
+var $at = __webpack_require__(160)(true);
 
 // 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(85)(String, 'String', function (iterated) {
+__webpack_require__(108)(String, 'String', function (iterated) {
   this._t = String(iterated); // target
   this._i = 0;                // next index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
@@ -3056,7 +4397,7 @@ __webpack_require__(85)(String, 'String', function (iterated) {
 
 
 /***/ }),
-/* 35 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = function (bitmap, value) {
@@ -3070,12 +4411,12 @@ module.exports = function (bitmap, value) {
 
 
 /***/ }),
-/* 36 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(88);
-var enumBugKeys = __webpack_require__(65);
+var $keys = __webpack_require__(111);
+var enumBugKeys = __webpack_require__(84);
 
 module.exports = Object.keys || function keys(O) {
   return $keys(O, enumBugKeys);
@@ -3083,7 +4424,7 @@ module.exports = Object.keys || function keys(O) {
 
 
 /***/ }),
-/* 37 */
+/* 48 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -3094,18 +4435,18 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 38 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.13 ToObject(argument)
-var defined = __webpack_require__(58);
+var defined = __webpack_require__(77);
 module.exports = function (it) {
   return Object(defined(it));
 };
 
 
 /***/ }),
-/* 39 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3218,13 +4559,13 @@ var Base64 = {
 /* harmony default export */ __webpack_exports__["a"] = (Base64);
 
 /***/ }),
-/* 40 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
@@ -3684,6 +5025,36 @@ var Color = function () {
     get: function get() {
       return new Color(0, 0, 0, 1);
     }
+
+    /**
+     * @type {PhotoEditorSDK.Color}
+     */
+
+  }, {
+    key: 'RED',
+    get: function get() {
+      return new Color(1, 0, 0, 1);
+    }
+
+    /**
+     * @type {PhotoEditorSDK.Color}
+     */
+
+  }, {
+    key: 'BLUE',
+    get: function get() {
+      return new Color(0, 0, 1, 1);
+    }
+
+    /**
+     * @type {PhotoEditorSDK.Color}
+     */
+
+  }, {
+    key: 'GREEN',
+    get: function get() {
+      return new Color(0, 1, 0, 1);
+    }
   }]);
 
   return Color;
@@ -3692,13 +5063,13 @@ var Color = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Color);
 
 /***/ }),
-/* 41 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_log__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_log__ = __webpack_require__(30);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -3904,11 +5275,11 @@ var EventEmitter = function () {
 /* harmony default export */ __webpack_exports__["a"] = (EventEmitter);
 
 /***/ }),
-/* 42 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
@@ -3918,7 +5289,7 @@ var EventEmitter = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(9);
 
 
 
@@ -4505,13 +5876,13 @@ BaseTexture.id = 0;
 /* harmony default export */ __webpack_exports__["a"] = (BaseTexture);
 
 /***/ }),
-/* 43 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -4519,10 +5890,10 @@ BaseTexture.id = 0;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_configurable__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shaders_shader__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shaders_texture_shader__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_configurable__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shaders_shader__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shaders_texture_shader__ = __webpack_require__(95);
 
 
 
@@ -4866,13 +6237,13 @@ var Filter = function (_Configurable) {
 /* harmony default export */ __webpack_exports__["a"] = (Filter);
 
 /***/ }),
-/* 44 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
@@ -4880,18 +6251,18 @@ var Filter = function (_Configurable) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_log_js__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__event_emitter__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__math_vector2__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__color__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__math_color_matrix__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__constants__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_log_js__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__event_emitter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__math_vector2__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__color__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__math_color_matrix__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__constants__ = __webpack_require__(31);
 
 
 
@@ -5483,7 +6854,11 @@ var Configurable = function (_EventEmitter) {
 
           // Configurable options
           case __WEBPACK_IMPORTED_MODULE_14__constants__["OptionType"].CONFIGURABLE:
-            this._options[optionName].set(value);
+            if (value instanceof Configurable) {
+              this._options[optionName] = value;
+            } else {
+              this._options[optionName].set(value);
+            }
             break;
 
           // Array options
@@ -5541,1070 +6916,13 @@ var Configurable = function (_EventEmitter) {
 /* harmony default export */ __webpack_exports__["a"] = (Configurable);
 
 /***/ }),
-/* 45 */
-/***/ (function(module, exports) {
-
-module.exports = true;
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports) {
-
-var id = 0;
-var px = Math.random();
-module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-};
-
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var def = __webpack_require__(15).f;
-var has = __webpack_require__(20);
-var TAG = __webpack_require__(10)('toStringTag');
-
-module.exports = function (it, tag, stat) {
-  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
-};
-
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(136);
-var global = __webpack_require__(12);
-var hide = __webpack_require__(19);
-var Iterators = __webpack_require__(28);
-var TO_STRING_TAG = __webpack_require__(10)('toStringTag');
-
-var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
-  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
-  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +
-  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +
-  'TextTrackList,TouchList').split(',');
-
-for (var i = 0; i < DOMIterables.length; i++) {
-  var NAME = DOMIterables[i];
-  var Collection = global[NAME];
-  var proto = Collection && Collection.prototype;
-  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
-  Iterators[NAME] = Iterators.Array;
-}
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports) {
-
-exports.f = {}.propertyIsEnumerable;
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__managers_canvas_filter_manager__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__managers_webgl_filter_manager__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__display_display_object__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__display_container__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__textures_base_texture__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__textures_texture__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__textures_render_texture__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_webgl_render_target__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_canvas_render_target__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__sprites_sprite__ = __webpack_require__(191);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shaders___ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shaders_shader__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__filters_filter__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__filters__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__utils_pixel_array_image__ = __webpack_require__(110);
-/* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The heart of PhotoEditorSDK. Handles all the rendering in a scene-graph fashion
- * @namespace PhotoEditorSDK.Engine
- */
-var Engine = {
-  WebGLRenderer: __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */],
-  CanvasRenderer: __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__["a" /* default */],
-  WebGLFilterManager: __WEBPACK_IMPORTED_MODULE_3__managers_webgl_filter_manager__["a" /* default */],
-  CanvasFilterManager: __WEBPACK_IMPORTED_MODULE_2__managers_canvas_filter_manager__["a" /* default */],
-  DisplayObject: __WEBPACK_IMPORTED_MODULE_4__display_display_object__["a" /* default */],
-  Container: __WEBPACK_IMPORTED_MODULE_5__display_container__["a" /* default */],
-  BaseTexture: __WEBPACK_IMPORTED_MODULE_6__textures_base_texture__["a" /* default */],
-  Texture: __WEBPACK_IMPORTED_MODULE_7__textures_texture__["a" /* default */],
-  RenderTexture: __WEBPACK_IMPORTED_MODULE_8__textures_render_texture__["a" /* default */],
-  WebGLRenderTarget: __WEBPACK_IMPORTED_MODULE_9__utils_webgl_render_target__["a" /* default */],
-  CanvasRenderTarget: __WEBPACK_IMPORTED_MODULE_10__utils_canvas_render_target__["a" /* default */],
-  Sprite: __WEBPACK_IMPORTED_MODULE_11__sprites_sprite__["a" /* default */],
-  Shaders: __WEBPACK_IMPORTED_MODULE_12__shaders___["a" /* default */],
-  Shader: __WEBPACK_IMPORTED_MODULE_13__shaders_shader__["a" /* default */],
-  Filter: __WEBPACK_IMPORTED_MODULE_14__filters_filter__["a" /* default */],
-  Filters: __WEBPACK_IMPORTED_MODULE_15__filters__,
-  PixelArrayImage: __WEBPACK_IMPORTED_MODULE_16__utils_pixel_array_image__["a" /* default */],
-
-  /**
-   * If WebGL is supported, this returns a WebGLRenderer and falls back to CanvasRenderer
-   * @param  {Number} width
-   * @param  {Number} height
-   * @param  {Object} [options = {} ]
-   * @return {(PhotoEditorSDK.Engine.WebGLRenderer|PhotoEditorSDK.Engine.CanvasRenderer)}
-   */
-  autoDetectRenderer: function autoDetectRenderer(width, height) {
-    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-    if (__WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */].isSupported()) {
-      return new __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */](width, height, options);
-    } else {
-      return new __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__["a" /* default */](width, height, options);
-    }
-  }
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Engine);
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(175), __esModule: true };
-
-/***/ }),
-/* 53 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__ = __webpack_require__(42);
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-
-
-
-/**
- * A canvas render target that you can render to.
- * Canvas equivalent of {@link PhotoEditorSDK.Engine.WebGLRenderTarget}
- * @class
- * @memberof PhotoEditorSDK.Engine
- */
-
-var CanvasRenderTarget = function () {
-  /**
-   * Creates a CanvasRenderTarget
-   * @param  {Number} width
-   * @param  {Number} height
-   * @param  {Number} pixelRatio
-   * @param  {HTMLCanvasElement} canvas
-   * @param  {CanvasRenderingContext2D} context
-   */
-  function CanvasRenderTarget(width, height, pixelRatio, canvas, context) {
-    _classCallCheck(this, CanvasRenderTarget);
-
-    this._width = width;
-    this._height = height;
-    this._pixelRatio = pixelRatio;
-
-    this._baseTexture = new __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */]();
-    this._canvas = canvas || this._createCanvas();
-    this._context = context || this._canvas.getContext('2d');
-    this._baseTexture.setSource(this._canvas);
-
-    this._canvas.width = this._width * this._pixelRatio;
-    this._canvas.height = this._height * this._pixelRatio;
-    this._filterStack = [{
-      renderTarget: this,
-      filter: []
-    }];
-  }
-
-  /**
-   * Creates a canvas
-   * @return {Canvas}
-   * @private
-   */
-
-
-  _createClass(CanvasRenderTarget, [{
-    key: '_createCanvas',
-    value: function _createCanvas() {
-      return __WEBPACK_IMPORTED_MODULE_1__globals__["i" /* Utils */].createCanvas();
-    }
-
-    /**
-     * Clears this CanvasRenderTarget
-     */
-
-  }, {
-    key: 'clear',
-    value: function clear() {
-      var ctx = this._context;
-      ctx.setTransform(1, 0, 0, 1, 0, 0);
-      ctx.clearRect(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio);
-    }
-
-    /**
-     * Resizes this canvas buffer to the given dimensions
-     * @param  {PhotoEditorSDK.Math.Vector2} dimensions
-     */
-
-  }, {
-    key: 'resizeTo',
-    value: function resizeTo(dimensions) {
-      this._baseTexture.resizeTo(dimensions);
-
-      if (this._width !== dimensions.x) {
-        this._width = dimensions.x;
-        this._canvas.width = this._width * this._pixelRatio;
-      }
-
-      if (this._height !== dimensions.y) {
-        this._height = dimensions.y;
-        this._canvas.height = this._height * this._pixelRatio;
-      }
-    }
-
-    /**
-     * Returns the canvas
-     * @return {HTMLCanvasElement}
-     */
-
-  }, {
-    key: 'getCanvas',
-    value: function getCanvas() {
-      return this._canvas;
-    }
-
-    /**
-     * Returns the rendering context
-     * @return {CanvasRenderingContext2D} [description]
-     */
-
-  }, {
-    key: 'getContext',
-    value: function getContext() {
-      return this._context;
-    }
-
-    /**
-     * Returns the filter stack
-     * @return {Object[]}
-     */
-
-  }, {
-    key: 'getFilterStack',
-    value: function getFilterStack() {
-      return this._filterStack;
-    }
-
-    /**
-     * Returns the width
-     * @return {Number}
-     */
-
-  }, {
-    key: 'getWidth',
-    value: function getWidth() {
-      return this._width;
-    }
-
-    /**
-     * Returns the height
-     * @return {Number}
-     */
-
-  }, {
-    key: 'getHeight',
-    value: function getHeight() {
-      return this._height;
-    }
-
-    /**
-     * Returns the pixel ratio
-     * @return {Number}
-     */
-
-  }, {
-    key: 'getPixelRatio',
-    value: function getPixelRatio() {
-      return this._pixelRatio;
-    }
-
-    /**
-     * Sets the pixel ratio
-     * @param {Number} pixelRatio
-     */
-
-  }, {
-    key: 'setPixelRatio',
-    value: function setPixelRatio(pixelRatio) {
-      this._pixelRatio = pixelRatio;
-    }
-
-    /**
-     * Returns the dimensions
-     * @return {PhotoEditorSDK.Math.Vector2}
-     */
-
-  }, {
-    key: 'getDimensions',
-    value: function getDimensions() {
-      return new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height);
-    }
-
-    /**
-     * Returns the base texture
-     * @return {PhotoEditorSDK.Engine.BaseTexture}
-     */
-
-  }, {
-    key: 'getBaseTexture',
-    value: function getBaseTexture() {
-      return this._baseTexture;
-    }
-
-    /**
-     * Cleans up this canvas buffer
-     */
-
-  }, {
-    key: 'dispose',
-    value: function dispose() {
-      this._canvas = null;
-      this._context = null;
-    }
-  }]);
-
-  return CanvasRenderTarget;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (CanvasRenderTarget);
-
-/***/ }),
-/* 54 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__ = __webpack_require__(42);
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-
-
-
-/**
- * An object that you can render to. WebGL equivalent of {@link PhotoEditorSDK.Engine.CanvasRenderTarget}
- * @class
- * @memberof PhotoEditorSDK.Engine
- */
-/* istanbul ignore next */
-
-var WebGLRenderTarget = function () {
-  /**
-   * Creates a WebGLRenderTarget
-   * @param  {PhotoEditorSDK.Engine.BaseRenderer}  renderer
-   * @param  {Number}  width
-   * @param  {Number}  height
-   * @param  {Number}  pixelRatio
-   * @param  {Boolean} [isRoot = false]
-   */
-  function WebGLRenderTarget(renderer, width, height, pixelRatio) {
-    var isRoot = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-    _classCallCheck(this, WebGLRenderTarget);
-
-    this._renderer = renderer;
-    this._gl = renderer.getContext();
-    this._width = width;
-    this._height = height;
-    this._frame = null;
-    this._pixelRatio = pixelRatio;
-    this._projectionMatrix = new __WEBPACK_IMPORTED_MODULE_1__globals__["g" /* Matrix */]();
-    this._mipMapping = false;
-
-    this._baseTexture = new __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */]();
-    var frame = this._baseTexture.getFrame();
-    frame.width = width;
-    frame.height = height;
-    this._baseTexture.setPixelRatio(pixelRatio);
-    this._baseTexture.setLoaded(true);
-
-    // `null` means render to canvas directly
-    this._framebuffer = null;
-    this._isRoot = isRoot;
-    this._filterStack = [{
-      renderTarget: this,
-      filter: []
-    }];
-
-    if (!isRoot) {
-      this._initFrameBuffer();
-    }
-  }
-
-  /**
-   * Resizes this WebGLRenderTarget to the given dimensions
-   * @param  {PhotoEditorSDK.Math.Vector2} dimensions
-   */
-
-
-  _createClass(WebGLRenderTarget, [{
-    key: 'resizeTo',
-    value: function resizeTo(dimensions) {
-      this._width = dimensions.x | 0; // rounded
-      this._height = dimensions.y | 0; // rounded
-
-      this._baseTexture.resizeTo(dimensions);
-
-      if (!this._isRoot) {
-        this._resizeTexture();
-      }
-
-      this._baseTexture.setMinFilter(this._getMinFilter());
-      this._baseTexture.setMagFilter(this._getMagFilter());
-
-      this._calculateProjectionMatrix();
-    }
-
-    /**
-     * Returns the downsampling filter
-     * @return {Number}
-     * @private
-     */
-
-  }, {
-    key: '_getMinFilter',
-    value: function _getMinFilter() {
-      var minFilter = __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].DefaultMinFilter;
-      if (this._mipMapping) {
-        minFilter = __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].TrilinearFilter;
-      }
-      return minFilter;
-    }
-
-    /**
-     * Returns the upsampling filter
-     * @return {Number}
-     * @private
-     */
-
-  }, {
-    key: '_getMagFilter',
-    value: function _getMagFilter() {
-      return __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].DefaultMagFilter;
-    }
-
-    /**
-     * Resizes the FBO's texture to the current dimensions
-     * @private
-     */
-
-  }, {
-    key: '_resizeTexture',
-    value: function _resizeTexture() {
-      var gl = this._gl;
-      gl.bindTexture(gl.TEXTURE_2D, this._texture);
-
-      var realWidth = this._width * this._pixelRatio;
-      var realHeight = this._height * this._pixelRatio;
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, realWidth, realHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
-
-      var dimensions = new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height);
-      if (__WEBPACK_IMPORTED_MODULE_1__globals__["i" /* Utils */].isPowerOfTwo(dimensions)) {
-        __WEBPACK_IMPORTED_MODULE_1__globals__["f" /* Log */].info('WebGLRenderTarget', 'Mip-mapping enabled');
-        this._mipMapping = true;
-      } else {
-        this._mipMapping = false;
-      }
-
-      this._baseTexture.setMipMappingEnabled(this._mipMapping);
-    }
-
-    /**
-     * Binds the framebuffer and resizes the viewport
-     */
-
-  }, {
-    key: 'activate',
-    value: function activate() {
-      var gl = this._gl;
-      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
-
-      this._calculateProjectionMatrix();
-
-      gl.viewport(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio);
-      gl.disable(gl.STENCIL_TEST);
-    }
-
-    /**
-     * Clears the framebuffer
-     */
-
-  }, {
-    key: 'clear',
-    value: function clear() {
-      var color = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : __WEBPACK_IMPORTED_MODULE_1__globals__["b" /* Color */].TRANSPARENT;
-
-      var gl = this._gl;
-      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
-
-      __WEBPACK_IMPORTED_MODULE_1__globals__["e" /* GLUtils */].checkFramebufferStatus('WebGLRenderTarget#clear', gl);
-
-      gl.clearColor.apply(gl, color.toGLColor());
-      gl.clear(gl.COLOR_BUFFER_BIT);
-    }
-
-    /**
-     * Calculates the projection matrix for this render target
-     * @private
-     */
-
-  }, {
-    key: '_calculateProjectionMatrix',
-    value: function _calculateProjectionMatrix() {
-      var projectionMatrix = this._projectionMatrix;
-      projectionMatrix.reset();
-
-      var frame = this._frame || new __WEBPACK_IMPORTED_MODULE_1__globals__["h" /* Rectangle */](0, 0, this._width, this._height);
-
-      var x = frame.x,
-          y = frame.y;
-
-      if (!this._isRoot) {
-        projectionMatrix.a = 1 / this._width * 2;
-        projectionMatrix.d = 1 / this._height * 2;
-
-        projectionMatrix.tx = -1 - x * projectionMatrix.a;
-        projectionMatrix.ty = -1 - y * projectionMatrix.d;
-      } else {
-        projectionMatrix.a = 1 / this._width * 2;
-        projectionMatrix.d = -1 / this._height * 2;
-
-        projectionMatrix.tx = -1 - x * projectionMatrix.a;
-        projectionMatrix.ty = 1 - y * projectionMatrix.d;
-      }
-    }
-
-    /**
-     * Initializes the WebGL FBO and Texture for this WebGLRenderTarget
-     * @private
-     */
-
-  }, {
-    key: '_initFrameBuffer',
-    value: function _initFrameBuffer() {
-      var gl = this._gl;
-
-      // Init the FBO
-      this._framebuffer = gl.createFramebuffer();
-
-      // Create the texture
-      this._texture = gl.createTexture();
-      gl.bindTexture(gl.TEXTURE_2D, this._texture);
-
-      // Bind texture to FBO
-      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
-      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, this._texture, 0);
-
-      this._baseTexture.setGLTextureForRenderer(this._texture, this._renderer);
-      this.resizeTo(new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height));
-
-      __WEBPACK_IMPORTED_MODULE_1__globals__["e" /* GLUtils */].checkFramebufferStatus('WebGLRenderTarget#_initFramebuffer', gl);
-    }
-
-    /**
-     * Returns the projection matrix
-     * @return {PhotoEditorSDK.Math.Matrix}
-     */
-
-  }, {
-    key: 'getProjectionMatrix',
-    value: function getProjectionMatrix() {
-      return this._projectionMatrix;
-    }
-
-    /**
-     * Returns the texture
-     * @return {PhotoEditorSDK.Engine.Texture}
-     */
-
-  }, {
-    key: 'getTexture',
-    value: function getTexture() {
-      return this._texture;
-    }
-
-    /**
-     * Returns the frame
-     * @return {PhotoEditorSDK.Math.Rectangle}
-     */
-
-  }, {
-    key: 'getFrame',
-    value: function getFrame() {
-      return this._frame;
-    }
-
-    /**
-     * Sets the frame
-     * @param {PhotoEditorSDK.Math.Rectangle} frame
-     */
-
-  }, {
-    key: 'setFrame',
-    value: function setFrame(frame) {
-      this._frame = frame;
-    }
-
-    /**
-     * Returns the filter stack
-     * @return {Object[]}
-     */
-
-  }, {
-    key: 'getFilterStack',
-    value: function getFilterStack() {
-      return this._filterStack;
-    }
-
-    /**
-     * Returns the current pixel ratio
-     * @return {Number}
-     */
-
-  }, {
-    key: 'getPixelRatio',
-    value: function getPixelRatio() {
-      return this._pixelRatio;
-    }
-
-    /**
-     * Sets the pixel ratio
-     * @param {Number} pixelRatio
-     */
-
-  }, {
-    key: 'setPixelRatio',
-    value: function setPixelRatio(pixelRatio) {
-      this._pixelRatio = pixelRatio;
-
-      if (!this._isRoot) {
-        this._resizeTexture();
-      }
-    }
-
-    /**
-     * Returns the base texture
-     * @return {PhotoEditorSDK.Engine.BaseTexture}
-     */
-
-  }, {
-    key: 'getBaseTexture',
-    value: function getBaseTexture() {
-      return this._baseTexture;
-    }
-
-    /**
-     * Disposes this WebGLRenderTarget
-     */
-
-  }, {
-    key: 'dispose',
-    value: function dispose() {
-      var gl = this._gl;
-      this._baseTexture.disposeGLTexturesForRenderer(this._renderer);
-      gl.deleteTexture(this._texture);
-      gl.deleteFramebuffer(this._framebuffer);
-    }
-  }]);
-
-  return WebGLRenderTarget;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (WebGLRenderTarget);
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* eslint-disable */
-
-/*!
-StackBlur - a fast almost Gaussian Blur For Canvas
-
-Version:  0.5
-Author:   Mario Klingemann
-Contact:  mario@quasimondo.com
-Website:  http://www.quasimondo.com/StackBlurForCanvas
-Twitter:  @quasimondo
-
-In case you find this class useful - especially in commercial projects -
-I am not totally unhappy for a small donation to my PayPal account
-mario@quasimondo.de
-
-Or support me on flattr:
-https://flattr.com/thing/72791/StackBlur-a-fast-almost-Gaussian-Blur-Effect-for-CanvasJavascript
-
-Copyright (c) 2010 Mario Klingemann
-
-Permission is hereby granted, free of charge, to any person
-obtaining a copy of this software and associated documentation
-files (the "Software"), to deal in the Software without
-restriction, including without limitation the rights to use,
-copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the
-Software is furnished to do so, subject to the following
-conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-@license
-*/
-
-var mul_table = [512, 512, 456, 512, 328, 456, 335, 512, 405, 328, 271, 456, 388, 335, 292, 512, 454, 405, 364, 328, 298, 271, 496, 456, 420, 388, 360, 335, 312, 292, 273, 512, 482, 454, 428, 405, 383, 364, 345, 328, 312, 298, 284, 271, 259, 496, 475, 456, 437, 420, 404, 388, 374, 360, 347, 335, 323, 312, 302, 292, 282, 273, 265, 512, 497, 482, 468, 454, 441, 428, 417, 405, 394, 383, 373, 364, 354, 345, 337, 328, 320, 312, 305, 298, 291, 284, 278, 271, 265, 259, 507, 496, 485, 475, 465, 456, 446, 437, 428, 420, 412, 404, 396, 388, 381, 374, 367, 360, 354, 347, 341, 335, 329, 323, 318, 312, 307, 302, 297, 292, 287, 282, 278, 273, 269, 265, 261, 512, 505, 497, 489, 482, 475, 468, 461, 454, 447, 441, 435, 428, 422, 417, 411, 405, 399, 394, 389, 383, 378, 373, 368, 364, 359, 354, 350, 345, 341, 337, 332, 328, 324, 320, 316, 312, 309, 305, 301, 298, 294, 291, 287, 284, 281, 278, 274, 271, 268, 265, 262, 259, 257, 507, 501, 496, 491, 485, 480, 475, 470, 465, 460, 456, 451, 446, 442, 437, 433, 428, 424, 420, 416, 412, 408, 404, 400, 396, 392, 388, 385, 381, 377, 374, 370, 367, 363, 360, 357, 354, 350, 347, 344, 341, 338, 335, 332, 329, 326, 323, 320, 318, 315, 312, 310, 307, 304, 302, 299, 297, 294, 292, 289, 287, 285, 282, 280, 278, 275, 273, 271, 269, 267, 265, 263, 261, 259];
-
-var shg_table = [9, 11, 12, 13, 13, 14, 14, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24];
-
-function stackBlurCanvasRGBA(imageData, top_x, top_y, width, height, radius) {
-  if (isNaN(radius) || radius < 1) {
-    return;
-  }
-  radius |= 0;
-
-  var pixels = imageData.data;
-
-  var x, y, i, p, yp, yi, yw, r_sum, g_sum, b_sum, a_sum, r_out_sum, g_out_sum, b_out_sum, a_out_sum, r_in_sum, g_in_sum, b_in_sum, a_in_sum, pr, pg, pb, pa, rbs;
-
-  var div = radius + radius + 1;
-  var widthMinus1 = width - 1;
-  var heightMinus1 = height - 1;
-  var radiusPlus1 = radius + 1;
-  var sumFactor = radiusPlus1 * (radiusPlus1 + 1) / 2;
-
-  var stackStart = new BlurStack();
-  var stackEnd;
-  var stack = stackStart;
-  for (i = 1; i < div; i++) {
-    stack = stack.next = new BlurStack();
-    if (i == radiusPlus1) stackEnd = stack;
-  }
-  stack.next = stackStart;
-  var stackIn = null;
-  var stackOut = null;
-
-  yw = yi = 0;
-
-  var mul_sum = mul_table[radius];
-  var shg_sum = shg_table[radius];
-
-  for (y = 0; y < height; y++) {
-    r_in_sum = g_in_sum = b_in_sum = a_in_sum = r_sum = g_sum = b_sum = a_sum = 0;
-
-    r_out_sum = radiusPlus1 * (pr = pixels[yi]);
-    g_out_sum = radiusPlus1 * (pg = pixels[yi + 1]);
-    b_out_sum = radiusPlus1 * (pb = pixels[yi + 2]);
-    a_out_sum = radiusPlus1 * (pa = pixels[yi + 3]);
-
-    r_sum += sumFactor * pr;
-    g_sum += sumFactor * pg;
-    b_sum += sumFactor * pb;
-    a_sum += sumFactor * pa;
-
-    stack = stackStart;
-
-    for (i = 0; i < radiusPlus1; i++) {
-      stack.r = pr;
-      stack.g = pg;
-      stack.b = pb;
-      stack.a = pa;
-      stack = stack.next;
-    }
-
-    for (i = 1; i < radiusPlus1; i++) {
-      p = yi + ((widthMinus1 < i ? widthMinus1 : i) << 2);
-      r_sum += (stack.r = pr = pixels[p]) * (rbs = radiusPlus1 - i);
-      g_sum += (stack.g = pg = pixels[p + 1]) * rbs;
-      b_sum += (stack.b = pb = pixels[p + 2]) * rbs;
-      a_sum += (stack.a = pa = pixels[p + 3]) * rbs;
-
-      r_in_sum += pr;
-      g_in_sum += pg;
-      b_in_sum += pb;
-      a_in_sum += pa;
-
-      stack = stack.next;
-    }
-
-    stackIn = stackStart;
-    stackOut = stackEnd;
-    for (x = 0; x < width; x++) {
-      pixels[yi + 3] = pa = a_sum * mul_sum >> shg_sum;
-      if (pa !== 0) {
-        pa = 255 / pa;
-        pixels[yi] = (r_sum * mul_sum >> shg_sum) * pa;
-        pixels[yi + 1] = (g_sum * mul_sum >> shg_sum) * pa;
-        pixels[yi + 2] = (b_sum * mul_sum >> shg_sum) * pa;
-      } else {
-        pixels[yi] = pixels[yi + 1] = pixels[yi + 2] = 0;
-      }
-
-      r_sum -= r_out_sum;
-      g_sum -= g_out_sum;
-      b_sum -= b_out_sum;
-      a_sum -= a_out_sum;
-
-      r_out_sum -= stackIn.r;
-      g_out_sum -= stackIn.g;
-      b_out_sum -= stackIn.b;
-      a_out_sum -= stackIn.a;
-
-      p = yw + ((p = x + radius + 1) < widthMinus1 ? p : widthMinus1) << 2;
-
-      r_in_sum += stackIn.r = pixels[p];
-      g_in_sum += stackIn.g = pixels[p + 1];
-      b_in_sum += stackIn.b = pixels[p + 2];
-      a_in_sum += stackIn.a = pixels[p + 3];
-
-      r_sum += r_in_sum;
-      g_sum += g_in_sum;
-      b_sum += b_in_sum;
-      a_sum += a_in_sum;
-
-      stackIn = stackIn.next;
-
-      r_out_sum += pr = stackOut.r;
-      g_out_sum += pg = stackOut.g;
-      b_out_sum += pb = stackOut.b;
-      a_out_sum += pa = stackOut.a;
-
-      r_in_sum -= pr;
-      g_in_sum -= pg;
-      b_in_sum -= pb;
-      a_in_sum -= pa;
-
-      stackOut = stackOut.next;
-
-      yi += 4;
-    }
-    yw += width;
-  }
-
-  for (x = 0; x < width; x++) {
-    g_in_sum = b_in_sum = a_in_sum = r_in_sum = g_sum = b_sum = a_sum = r_sum = 0;
-
-    yi = x << 2;
-    r_out_sum = radiusPlus1 * (pr = pixels[yi]);
-    g_out_sum = radiusPlus1 * (pg = pixels[yi + 1]);
-    b_out_sum = radiusPlus1 * (pb = pixels[yi + 2]);
-    a_out_sum = radiusPlus1 * (pa = pixels[yi + 3]);
-
-    r_sum += sumFactor * pr;
-    g_sum += sumFactor * pg;
-    b_sum += sumFactor * pb;
-    a_sum += sumFactor * pa;
-
-    stack = stackStart;
-
-    for (i = 0; i < radiusPlus1; i++) {
-      stack.r = pr;
-      stack.g = pg;
-      stack.b = pb;
-      stack.a = pa;
-      stack = stack.next;
-    }
-
-    yp = width;
-
-    for (i = 1; i <= radius; i++) {
-      yi = yp + x << 2;
-
-      r_sum += (stack.r = pr = pixels[yi]) * (rbs = radiusPlus1 - i);
-      g_sum += (stack.g = pg = pixels[yi + 1]) * rbs;
-      b_sum += (stack.b = pb = pixels[yi + 2]) * rbs;
-      a_sum += (stack.a = pa = pixels[yi + 3]) * rbs;
-
-      r_in_sum += pr;
-      g_in_sum += pg;
-      b_in_sum += pb;
-      a_in_sum += pa;
-
-      stack = stack.next;
-
-      if (i < heightMinus1) {
-        yp += width;
-      }
-    }
-
-    yi = x;
-    stackIn = stackStart;
-    stackOut = stackEnd;
-    for (y = 0; y < height; y++) {
-      p = yi << 2;
-      pixels[p + 3] = pa = a_sum * mul_sum >> shg_sum;
-      if (pa > 0) {
-        pa = 255 / pa;
-        pixels[p] = (r_sum * mul_sum >> shg_sum) * pa;
-        pixels[p + 1] = (g_sum * mul_sum >> shg_sum) * pa;
-        pixels[p + 2] = (b_sum * mul_sum >> shg_sum) * pa;
-      } else {
-        pixels[p] = pixels[p + 1] = pixels[p + 2] = 0;
-      }
-
-      r_sum -= r_out_sum;
-      g_sum -= g_out_sum;
-      b_sum -= b_out_sum;
-      a_sum -= a_out_sum;
-
-      r_out_sum -= stackIn.r;
-      g_out_sum -= stackIn.g;
-      b_out_sum -= stackIn.b;
-      a_out_sum -= stackIn.a;
-
-      p = x + ((p = y + radiusPlus1) < heightMinus1 ? p : heightMinus1) * width << 2;
-
-      r_sum += r_in_sum += stackIn.r = pixels[p];
-      g_sum += g_in_sum += stackIn.g = pixels[p + 1];
-      b_sum += b_in_sum += stackIn.b = pixels[p + 2];
-      a_sum += a_in_sum += stackIn.a = pixels[p + 3];
-
-      stackIn = stackIn.next;
-
-      r_out_sum += pr = stackOut.r;
-      g_out_sum += pg = stackOut.g;
-      b_out_sum += pb = stackOut.b;
-      a_out_sum += pa = stackOut.a;
-
-      r_in_sum -= pr;
-      g_in_sum -= pg;
-      b_in_sum -= pb;
-      a_in_sum -= pa;
-
-      stackOut = stackOut.next;
-
-      yi += width;
-    }
-  }
-}
-
-function BlurStack() {
-  this.r = 0;
-  this.g = 0;
-  this.b = 0;
-  this.a = 0;
-  this.next = null;
-}
-
-module.exports = {
-  stackBlurCanvasRGBA: stackBlurCanvasRGBA
-};
-
-/***/ }),
 /* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -7005,6 +7323,2326 @@ var Sprite = function (_Configurable) {
 
 /***/ }),
 /* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignBlocks; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_rows_blocks_text_design_row_triple__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_text_design_banderole__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_rows_masked_text_design_row_masked__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_text_design_attributes__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+
+var TextDesignBlocks = function (_TextDesign) {
+  _inherits(TextDesignBlocks, _TextDesign);
+
+  function TextDesignBlocks() {
+    _classCallCheck(this, TextDesignBlocks);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (TextDesignBlocks.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocks)).call(this, args));
+
+    _this.getImagePaths = function () {
+      var banderoles = _this.getBanderoles();
+      return banderoles && banderoles.map(function (b) {
+        return b.getImagePath();
+      }) || [];
+    };
+
+    _this.onImagesLoaded = function () {
+      var banderoles = _this.getBanderoles();
+      banderoles && banderoles.forEach(function (b) {
+        var image = __WEBPACK_IMPORTED_MODULE_14__text_design_asset_manager__["a" /* AssetManager */].getImage(b.getImagePath());
+        if (!image) {
+          __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["Log"].warn('TextDesignBlocks#onImagesLoaded: Image not found \'' + b.getImagePath() + '\'');
+          return;
+        }
+
+        b.setImage(image);
+      });
+    };
+
+    _this._rowTypeLessThan3WordsRandomizer = new __WEBPACK_IMPORTED_MODULE_15__models_randomizer__["a" /* Randomizer */](0);
+    _this._rowTypeMoreThan3WordsRandomizer = new __WEBPACK_IMPORTED_MODULE_15__models_randomizer__["a" /* Randomizer */](0);
+    _this._banderolesRandomizer = new __WEBPACK_IMPORTED_MODULE_15__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool = [].concat(_toConsumableArray(_this._seedPool), [_this._rowTypeLessThan3WordsRandomizer, _this._rowTypeMoreThan3WordsRandomizer, _this._banderolesRandomizer]);
+    return _this;
+  }
+
+  _createClass(TextDesignBlocks, [{
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignBlocks.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocks.prototype), '_modifiedText', this).call(this, text).toUpperCase();
+    }
+  }, {
+    key: 'generateLayoutData',
+    value: function generateLayoutData(text, width) {
+      this._options.hasMaskedText = false;
+      return _get(TextDesignBlocks.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocks.prototype), 'generateLayoutData', this).call(this, text, width);
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      if (words.size() < 3) {
+        var isMasked = this._rowTypeLessThan3WordsRandomizer.nextInRange(0, 2) === 0;
+        return this._layoutRow(words, width, attributes, isMasked);
+      } else {
+        var randomValue = this._rowTypeMoreThan3WordsRandomizer.nextInRange(0, 3);
+
+        switch (randomValue) {
+          case 0:
+            return new __WEBPACK_IMPORTED_MODULE_9__models_rows_blocks_text_design_row_triple__["a" /* TextDesignRowTriple */]({
+              words: words,
+              width: width,
+              attributes: attributes,
+              orientation: __WEBPACK_IMPORTED_MODULE_9__models_rows_blocks_text_design_row_triple__["a" /* TextDesignRowTriple */].Orientations.Left
+            });
+
+          case 1:
+            return new __WEBPACK_IMPORTED_MODULE_9__models_rows_blocks_text_design_row_triple__["a" /* TextDesignRowTriple */]({
+              words: words,
+              width: width,
+              attributes: attributes,
+              orientation: __WEBPACK_IMPORTED_MODULE_9__models_rows_blocks_text_design_row_triple__["a" /* TextDesignRowTriple */].Orientations.Right
+            });
+
+          case 2:
+            return this._layoutRow(words, width, attributes, true);
+
+          case 3:
+            return new __WEBPACK_IMPORTED_MODULE_11__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: words, width: width, attributes: attributes });
+
+          default:
+            throw new Error('TextDesignBlocks#_randomLayoutRow: Invalid randomValue generated: ' + randomValue + '.');
+        }
+      }
+    }
+  }, {
+    key: '_layoutRow',
+    value: function _layoutRow(words, width, attributes, isMasked) {
+      if (this.getHasMaskedText()) {
+        isMasked = false;
+      }
+
+      if (isMasked) {
+        this.setHasMaskedText(true);
+        var banderole = this._banderolesRandomizer.pickNext(this.getBanderoles());
+
+        var row = new __WEBPACK_IMPORTED_MODULE_12__models_rows_masked_text_design_row_masked__["a" /* TextDesignRowMasked */]({
+          words: words,
+          width: width,
+          attributes: new __WEBPACK_IMPORTED_MODULE_13__models_text_design_attributes__["a" /* TextDesignAttributes */]({ alignment: 'left', fontIdentifier: banderole.getFontIdentifier() }),
+          image: banderole.getImage(),
+          imageInsets: banderole.insetsForWidth(width),
+          capInsets: null,
+          backgroundColor: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["Color"].WHITE
+        });
+
+        // Fix: We need to disable image smoothing on server to render the rectangle
+        if (banderole.getNeedsImageSmoothingFix()) {
+          row.serverImageSmoothingFix = true;
+        }
+
+        return row;
+      } else {
+        return new __WEBPACK_IMPORTED_MODULE_11__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: words, width: width, attributes: attributes });
+      }
+    }
+  }]);
+
+  return TextDesignBlocks;
+}(__WEBPACK_IMPORTED_MODULE_8__text_design__["a" /* TextDesign */]);
+
+TextDesignBlocks.defaultFontIdentifiers = ['imgly_font_campton_bold'];
+TextDesignBlocks.identifier = 'imgly_text_design_blocks';
+TextDesignBlocks.defaultBanderoles = [__WEBPACK_IMPORTED_MODULE_10__models_text_design_banderole__["a" /* TextDesignBanderole */].Rectangle, __WEBPACK_IMPORTED_MODULE_10__models_text_design_banderole__["a" /* TextDesignBanderole */].Small];
+TextDesignBlocks.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__text_design__["a" /* TextDesign */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignBlocks.defaultFontIdentifiers },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.025 / 3 },
+  hasMaskedText: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  banderoles: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignBlocks.defaultBanderoles }
+});
+
+/***/ }),
+/* 58 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesign; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_number_max_safe_integer__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_number_max_safe_integer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_number_max_safe_integer__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_randomizer__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_text_design_layout_data__ = __webpack_require__(353);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_text_design_attributes__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+
+
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+var MAXIMUM_NUMBER_OF_TRIES = 10;
+var MIN_LINE_COUNT_OF_RANDOM = 4;
+var RANDOM_ADDITIONAL_LINE_PERCENTAGE = 0.4;
+
+var TextDesign = function (_Configurable) {
+  _inherits(TextDesign, _Configurable);
+
+  function TextDesign(options) {
+    _classCallCheck(this, TextDesign);
+
+    var _this = _possibleConstructorReturn(this, (TextDesign.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesign)).call(this, options));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_8__models_rectangle_insets__["a" /* RectangleInsets */]();
+
+    _this._background = null;
+
+    _this._fontRandomizer = new __WEBPACK_IMPORTED_MODULE_7__models_randomizer__["a" /* Randomizer */](0);
+    _this._lineNumberRandomizer = new __WEBPACK_IMPORTED_MODULE_7__models_randomizer__["a" /* Randomizer */](0);
+    _this._wordsPerLineRandomizer = new __WEBPACK_IMPORTED_MODULE_7__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool = [_this._fontRandomizer, _this._lineNumberRandomizer, _this._wordsPerLineRandomizer];
+    return _this;
+  }
+
+  _createClass(TextDesign, [{
+    key: 'seed',
+    value: function seed(value) {
+      this._seedPool.forEach(function (s) {
+        return s.seed(value);
+      });
+    }
+  }, {
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return [];
+    }
+  }, {
+    key: 'onImagesLoaded',
+    value: function onImagesLoaded() {}
+  }, {
+    key: 'getMaximumNumberOfTries',
+    value: function getMaximumNumberOfTries() {
+      return MAXIMUM_NUMBER_OF_TRIES;
+    }
+  }, {
+    key: 'getMinLineCountOfRandom',
+    value: function getMinLineCountOfRandom() {
+      return MIN_LINE_COUNT_OF_RANDOM;
+    }
+  }, {
+    key: 'getRandomAdditionalLinePercentage',
+    value: function getRandomAdditionalLinePercentage() {
+      return RANDOM_ADDITIONAL_LINE_PERCENTAGE;
+    }
+  }, {
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      return this._fontRandomizer.pickNext(this.getFontIdentifiers());
+    }
+  }, {
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return text.replace('\n', ' ').replace('\t', ' ');
+    }
+  }, {
+    key: '_minimumNumberOfLines',
+    value: function _minimumNumberOfLines(words) {
+      return Math.ceil(Math.sqrt(words.size()));
+    }
+  }, {
+    key: '_maximumNumberOfLines',
+    value: function _maximumNumberOfLines(words) {
+      return words.size();
+    }
+  }, {
+    key: '_calculatedNumberOfLines',
+    value: function _calculatedNumberOfLines(words) {
+      var lineCount = this._minimumNumberOfLines(words);
+
+      if (words.size() >= this.getMinLineCountOfRandom()) {
+        var max = Math.floor(Math.max(1, lineCount * this.getRandomAdditionalLinePercentage()));
+        lineCount += this._lineNumberRandomizer.nextInRange(0, max);
+      }
+
+      return Math.min(lineCount, this._maximumNumberOfLines(words));
+    }
+  }, {
+    key: '_randomizedNumberOfWordsPerLine',
+    value: function _randomizedNumberOfWordsPerLine(numberOfLines, numberOfWords) {
+      var _this2 = this;
+
+      if (numberOfLines > numberOfWords) {
+        __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesign#_randomizedNumberOfWordsPerLine: Invalid number of lines');
+        return numberOfWords;
+      }
+
+      var wordsPerLine = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].Array.repeat(1, numberOfLines);
+
+      __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].Array.range(numberOfLines, numberOfWords).forEach(function (_) {
+        var index = _this2._wordsPerLineRandomizer.nextInRange(0, numberOfLines - 1);
+        wordsPerLine[index] += 1;
+      });
+
+      return wordsPerLine;
+    }
+  }, {
+    key: '_textLines',
+    value: function _textLines(text) {
+      var words = new __WEBPACK_IMPORTED_MODULE_9__text_words__["a" /* Words */](text);
+
+      var numberOfLines = this._calculatedNumberOfLines(words);
+      var numberOfWordsPerLine = this._randomizedNumberOfWordsPerLine(numberOfLines, words.size());
+
+      return numberOfWordsPerLine.reduce(function (acc, numOfWordsInLine) {
+        return {
+          index: acc.index + numOfWordsInLine,
+          lines: [].concat(_toConsumableArray(acc.lines), [words.slice(acc.index, Math.min(acc.index + numOfWordsInLine, words.size()))])
+        };
+      }, { index: 0, lines: [] }).lines;
+    }
+  }, {
+    key: '_validTextLines',
+    value: function _validTextLines(text) {
+      var textLines = this._textLines(text);
+
+      var indexOfLineWithLassThan3Chars = 0;
+      do {
+        indexOfLineWithLassThan3Chars = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].Array.findIndex(textLines, function (words) {
+          return words.countNumberOfCharacters() < 3;
+        });
+
+        if (indexOfLineWithLassThan3Chars >= 0) {
+          var lineBefore = textLines[indexOfLineWithLassThan3Chars - 1];
+          var lineAfter = textLines[indexOfLineWithLassThan3Chars + 1];
+
+          var charCountOfLineBefore = lineBefore ? lineBefore.countNumberOfCharacters() : __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_number_max_safe_integer___default.a;
+          var charCountOfLineAfter = lineAfter ? lineAfter.countNumberOfCharacters() : __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_number_max_safe_integer___default.a;
+
+          if (charCountOfLineBefore < charCountOfLineAfter && lineBefore) {
+            lineBefore.words = [].concat(_toConsumableArray(lineBefore.words), _toConsumableArray(textLines[indexOfLineWithLassThan3Chars].words));
+            textLines = [].concat(_toConsumableArray(textLines.slice(0, indexOfLineWithLassThan3Chars)), _toConsumableArray(textLines.slice(indexOfLineWithLassThan3Chars + 1)));
+          } else if (lineAfter) {
+            lineAfter.words = [].concat(_toConsumableArray(textLines[indexOfLineWithLassThan3Chars].words), _toConsumableArray(lineAfter.words));
+            textLines = [].concat(_toConsumableArray(textLines.slice(0, indexOfLineWithLassThan3Chars)), _toConsumableArray(textLines.slice(indexOfLineWithLassThan3Chars + 1)));
+          }
+        }
+      } while (indexOfLineWithLassThan3Chars > -1 && textLines.length > 1);
+
+      return textLines;
+    }
+  }, {
+    key: '_modifiedLines',
+    value: function _modifiedLines(lines) {
+      return lines;
+    }
+  }, {
+    key: '_getBackground',
+    value: function _getBackground() {
+      return this._background;
+    }
+  }, {
+    key: 'generateLayoutData',
+    value: function generateLayoutData(text, width) {
+      var updatedText = this._modifiedText(text);
+      var lines = this._modifiedLines(this._validTextLines(updatedText));
+
+      var insetWidth = width * (1 - this._relativeInsets.left - this._relativeInsets.right);
+      var rows = this._layoutRows(lines, insetWidth);
+
+      return new __WEBPACK_IMPORTED_MODULE_10__models_text_design_layout_data__["a" /* TextDesignLayoutData */]({
+        text: updatedText,
+        relativeInsets: this._relativeInsets.clone(),
+        relativeLineSpacing: this.getRelativeLineSpacing(),
+        background: this._background || this._getBackground(),
+        lines: lines,
+        rows: rows,
+        width: width
+      });
+    }
+  }, {
+    key: '_layoutRows',
+    value: function _layoutRows(lines, width) {
+      var _this3 = this;
+
+      return lines.map(function (line, index) {
+        return _this3._randomLayoutRow(line, index, width, new __WEBPACK_IMPORTED_MODULE_11__models_text_design_attributes__["a" /* TextDesignAttributes */]({ fontIdentifier: _this3._fontForRow(index, line) })).layout();
+      });
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      return new __WEBPACK_IMPORTED_MODULE_12__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: words, width: width, attributes: attributes });
+    }
+  }]);
+
+  return TextDesign;
+}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Configurable"]);
+
+TextDesign.defaultFontIdentifiers = [];
+TextDesign.identifier = 'text-design';
+TextDesign.prototype.availableOptions = {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: [] },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 }
+};
+
+/***/ }),
+/* 59 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRow; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__size_value__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_attributes__ = __webpack_require__(75);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignRow = function (_Configurable) {
+  _inherits(TextDesignRow, _Configurable);
+
+  function TextDesignRow(options) {
+    _classCallCheck(this, TextDesignRow);
+
+    var _this = _possibleConstructorReturn(this, (TextDesignRow.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRow)).call(this, options));
+
+    _this.setSize(new __WEBPACK_IMPORTED_MODULE_5__size_value__["a" /* SizeValue */](_this.getWidth(), 0));
+
+    _this.serverImageSmoothingFix = false;
+    return _this;
+  }
+
+  /**
+   * Returns the full-frame of the row; origin is always (0, 0).
+   *
+   * @returns {PhotoEditorSDK.Math.Rectangle}
+   * @memberof TextDesignRow
+   */
+
+
+  _createClass(TextDesignRow, [{
+    key: '_getFrame',
+    value: function _getFrame() {
+      var size = this.getSize();
+      return new Rectangle(0, 0, size.width, size.height);
+    }
+
+    /**
+     * Returns the text-drawable portion of the frame.
+     *
+     * @returns {PhotoEditorSDK.Math.Rectangle}
+     * @memberof TextDesignRow
+     */
+
+  }, {
+    key: '_getTextFrame',
+    value: function _getTextFrame() {
+      return this._getFrame();
+    }
+
+    /**
+     * Returns the textFrame for a given element.
+     *
+     * @param {TextDesignElement} element
+     * @returns {PhotoEditorSDK.Math.Rectangle}
+     */
+
+  }, {
+    key: '_getTextFrameForElement',
+    value: function _getTextFrameForElement(element) {
+      return element.getFrame().clone();
+    }
+  }, {
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Log"].warn('TextDesignRow is an abstract class.');
+    }
+  }, {
+    key: '_getLayoutElements',
+    value: function _getLayoutElements() {
+      if (this._options.elements.length <= 0) {
+        this.layout();
+      }
+
+      return this.getElements();
+    }
+  }, {
+    key: '_fontSize',
+    value: function _fontSize(element) {
+      __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Log"].warn('TextDesignRow#_fontSize not implemented. @TODO: Is it necessary?');
+      return 0;
+    }
+  }, {
+    key: 'layout',
+    value: function layout() {
+      this.setElements(this._calculateLayoutElements());
+      return this;
+    }
+  }, {
+    key: 'textFrame',
+    value: function textFrame(element, fontSize) {
+      return element.getFrame().clone();
+    }
+  }, {
+    key: 'willRender',
+    value: function willRender(context) {}
+  }, {
+    key: 'didRender',
+    value: function didRender(context) {}
+  }, {
+    key: 'render',
+    value: function render(context) {
+      var _this2 = this;
+
+      context.save();
+
+      this._getLayoutElements().forEach(function (element) {
+        var _element$serializeOpt = element.serializeOptions(),
+            text = _element$serializeOpt.text,
+            frame = _element$serializeOpt.frame,
+            font = _element$serializeOpt.font;
+
+        var attributes = _this2.getAttributes();
+
+        font.draw(context, frame.x, frame.y, {
+          textColor: attributes.getTextColor().toRGBA(),
+          alignment: attributes.getAlignment()
+        });
+      });
+
+      context.restore();
+    }
+  }]);
+
+  return TextDesignRow;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+TextDesignRow.prototype.availableOptions = {
+  words: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  width: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 100 },
+  attributes: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].CONFIGURABLE, default: new __WEBPACK_IMPORTED_MODULE_6__text_design_attributes__["a" /* TextDesignAttributes */]() },
+  shearingAngle: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  elements: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].ARRAY, default: [] },
+  size: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null }
+};
+
+/***/ }),
+/* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignFont; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_size_value__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_asset_manager__ = __webpack_require__(20);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var TextDesignFont = function (_Configurable) {
+  _inherits(TextDesignFont, _Configurable);
+
+  function TextDesignFont(options) {
+    _classCallCheck(this, TextDesignFont);
+
+    var _this = _possibleConstructorReturn(this, (TextDesignFont.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignFont)).call(this, options));
+
+    var fontVariation = __WEBPACK_IMPORTED_MODULE_8__text_design_asset_manager__["a" /* AssetManager */].getVariation(_this.getFontIdentifier());
+    if (!fontVariation) {
+      __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignFont: Unable to find font \'' + _this._fontIdentifier + '\'');
+    }
+
+    _this.set({ fontVariation: fontVariation });
+
+    _this._metrics = null;
+
+    _this._canvas = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].createCanvas();
+    _this._context = _this._canvas.getContext('2d');
+
+    _this._isDirty = true;
+    return _this;
+  }
+
+  _createClass(TextDesignFont, [{
+    key: '_onOptionsChange',
+    value: function _onOptionsChange() {
+      this._isDirty = true;
+    }
+  }, {
+    key: 'setOption',
+    value: function setOption(optionName, value) {
+      var update = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var initial = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+      _get(TextDesignFont.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignFont.prototype), 'setOption', this).call(this, optionName, value, update, initial);
+
+      if (optionName === 'fontIdentifier' && !initial) {
+        this.updateFontVariation();
+      }
+    }
+
+    /**
+     * Updates the font variation for the current font identifier.
+     *
+     */
+
+  }, {
+    key: 'updateFontVariation',
+    value: function updateFontVariation() {
+      var fontVariation = __WEBPACK_IMPORTED_MODULE_8__text_design_asset_manager__["a" /* AssetManager */].getVariation(this.getFontIdentifier());
+      if (!fontVariation) {
+        __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignFont: Unable to find font \'' + this._fontIdentifier + '\'');
+      }
+
+      this.setFontVariation(fontVariation);
+      return fontVariation;
+    }
+  }, {
+    key: 'setOptions',
+    value: function setOptions() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      this._options = _extends({}, this._options, options);
+
+      this._isDirty = true;
+    }
+  }, {
+    key: '_applyTextOptions',
+    value: function _applyTextOptions() {
+      var ctx = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this._context;
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      var _options$options = _extends({}, this._options, options),
+          fontSize = _options$options.fontSize,
+          fontVariation = _options$options.fontVariation,
+          lineHeight = _options$options.lineHeight,
+          textColor = _options$options.textColor,
+          alignment = _options$options.alignment;
+
+      var _fontVariation$serial = fontVariation.serializeOptions(),
+          fontStyle = _fontVariation$serial.fontStyle,
+          fontWeight = _fontVariation$serial.fontWeight,
+          fontFamily = _fontVariation$serial.fontFamily;
+
+      ctx.font = fontStyle + ' ' + fontWeight + ' ' + fontSize + 'px/' + lineHeight + ' ' + fontFamily;
+
+      ctx.fillStyle = textColor;
+      ctx.textBaseline = 'alphabetic'; // textBaseline
+      ctx.textAlign = alignment || 'left';
+    }
+  }, {
+    key: 'getTextMetrics',
+    value: function getTextMetrics() {
+      if (!this._metrics || this._isDirty) {
+        this._calculateTextMetrics();
+      }
+
+      return _extends({}, this._metrics);
+    }
+  }, {
+    key: 'getSizeValue',
+    value: function getSizeValue() {
+      if (!this._metrics || this._isDirty) {
+        this._calculateTextMetrics();
+      }
+
+      return new __WEBPACK_IMPORTED_MODULE_7__models_size_value__["a" /* SizeValue */](this._metrics.width, this._metrics.height);
+    }
+  }, {
+    key: 'fitWidth',
+    value: function fitWidth(width) {
+      var variation = this.getFontVariation();
+
+      if (!variation) {
+        __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignFont#fitText: missing font variation');
+        return;
+      }
+
+      this._applyTextOptions(this._context, { fontSize: 50 });
+
+      var measuredWidth = this._context.measureText(this.getText()).width;
+      var scale = width / measuredWidth;
+      var fontSize = Math.floor(scale * 50);
+
+      this.setFontSize(fontSize);
+
+      this._calculateTextMetrics();
+
+      return this.getTextMetrics();
+    }
+  }, {
+    key: 'fitHeight',
+    value: function fitHeight(height) {
+      var variation = this.getFontVariation();
+
+      if (!variation) {
+        __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignFont#fitText: missing font variation');
+        return;
+      }
+
+      var measuredHeight = this._calculateTextMetrics({ fontSize: 50 }).height;
+      var scale = height / measuredHeight;
+      var fontSize = Math.floor(scale * 50);
+
+      this.setFontSize(fontSize);
+      this._calculateTextMetrics();
+
+      return this.getTextMetrics();
+    }
+  }, {
+    key: '_calculateTextMetrics',
+    value: function _calculateTextMetrics() {
+      var overrideOptions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      var canvas = this._canvas;
+      var ctx = this._context;
+      var options = _extends({}, this._options, overrideOptions);
+      var text = this.getText();
+
+      this._applyTextOptions(ctx, options);
+
+      var textWidth = Math.ceil(ctx.measureText(text).width);
+      var canvasWidth = Math.floor(textWidth + options.fontSize * 2);
+      var canvasHeight = Math.floor(options.fontSize * 3);
+
+      canvas.width = canvasWidth;
+      canvas.height = canvasHeight;
+
+      var xPos = Math.floor(options.fontSize);
+      var yPos = Math.floor(canvasHeight * (3 / 5));
+
+      this._applyTextOptions(ctx, options);
+      ctx.fillText(text, xPos, yPos);
+
+      var pixels = ctx.getImageData(0, 0, canvas.width, canvas.height).data;
+
+      var ascender = getAscender(pixels, canvasWidth, canvasHeight, yPos, this._options.excludeAccents);
+      var descender = getDescender(pixels, canvasWidth, canvasHeight, yPos, this._options.excludeAccents);
+      var width = textWidth;
+      var height = ascender + descender;
+
+      this._metrics = {
+        width: width,
+        height: height,
+        ascender: ascender,
+        descender: descender
+      };
+
+      this._isDirty = false;
+
+      return _extends({}, this._metrics);
+    }
+  }, {
+    key: 'draw',
+    value: function draw() {
+      var ctx = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this._context;
+      var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
+      var options = arguments[3];
+      var debug = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+      ctx.save();
+
+      if (!this._metrics || this._isDirty) {
+        this._calculateTextMetrics();
+      }
+
+      this._applyTextOptions(ctx, options);
+
+      ctx.fillText(this.getText(), x, y + this._metrics.ascender);
+
+      if (debug) {
+        drawRect(ctx, x, y, this._metrics.width, this._metrics.height);
+        hLine(ctx, y + this._metrics.ascender, x, x + this._metrics.width);
+      }
+
+      ctx.restore();
+    }
+  }]);
+
+  return TextDesignFont;
+}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Configurable"]);
+
+var getPixel = function getPixel(data, x, y, width) {
+  var index = y * (width * 4) + x * 4;
+  var pixel = {
+    r: data[index],
+    g: data[index + 1],
+    b: data[index + 2],
+    a: data[index + 3]
+  };
+  return pixel;
+};
+
+var isTransparent = function isTransparent(pixel) {
+  return pixel.a <= 254;
+};
+
+var isBlankScanline = function isBlankScanline(data, y, width) {
+  var isBlank = true;
+  for (var x = 0; x < width; x++) {
+    var pixel = getPixel(data, x, y, width);
+    if (!isTransparent(pixel)) {
+      isBlank = false;
+      break;
+    }
+  }
+
+  return isBlank;
+};
+
+var getDescender = function getDescender(pixels, width, height, startY) {
+  var exitOnFirstBlank = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+  var descender = 0;
+  for (var y = startY + 1; y < height; y++) {
+    if (!isBlankScanline(pixels, y, width)) {
+      descender = y - startY + 1;
+    } else if (exitOnFirstBlank) {
+      break;
+    }
+  }
+
+  return descender;
+};
+
+var getAscender = function getAscender(pixels, width, height, startY) {
+  var exitOnFirstBlank = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+  var ascender = 0;
+  for (var y = startY - 1; y >= 0; y--) {
+    if (!isBlankScanline(pixels, y, width)) {
+      ascender = startY - y;
+    } else if (exitOnFirstBlank) {
+      break;
+    }
+  }
+
+  return ascender;
+};
+
+var strokeLine = function strokeLine(ctx, fromX, fromY, toX, toY) {
+  ctx.beginPath();
+  ctx.moveTo(fromX, fromY);
+  ctx.lineTo(toX, toY);
+  ctx.stroke();
+};
+
+var hLine = function hLine(ctx, y, xmin, xmax) {
+  var color = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 'red';
+
+  ctx.save();
+  ctx.strokeStyle = color;
+  strokeLine(ctx, xmin, y, xmax, y);
+  ctx.restore();
+};
+
+var drawRect = function drawRect(ctx, x, y, width, height) {
+  var color = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 'blue';
+
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.strokeRect(x, y, width, height);
+  ctx.restore();
+};
+
+TextDesignFont.prototype.availableOptions = {
+  text: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  fontIdentifier: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'imgly_font_open_sans_bold' },
+  fontVariation: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  lineHeight: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  fontSize: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 22 },
+  textColor: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'black' },
+  strokeStyle: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'black' },
+  outlineWidth: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  textBaseline: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'alphabetic' },
+  excludeAccents: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false }
+};
+
+/***/ }),
+/* 61 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RowType; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__ = __webpack_require__(17);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+var RowType = function (_Configurable) {
+  _inherits(RowType, _Configurable);
+
+  function RowType() {
+    _classCallCheck(this, RowType);
+
+    return _possibleConstructorReturn(this, (RowType.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(RowType)).apply(this, arguments));
+  }
+
+  _createClass(RowType, [{
+    key: 'insetsForWidth',
+    value: function insetsForWidth(width) {
+      var insets = this.getRelativeInsets().clone();
+      return insets.scale(width);
+    }
+  }]);
+
+  return RowType;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+RowType.prototype.availableOptions = {
+  imagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  minimumHeightRatio: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  sizeToFitContent: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true },
+  capInsets: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */]() },
+  relativeInsets: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */]() }
+};
+
+RowType.Box = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_black_background.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.1, 0.1, 0.1, 0.1)
+});
+
+RowType.Badge1 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_badge1.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.3, 0.18, 0.2, 0.18)
+});
+
+RowType.Badge2 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_badge2.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.3, 0.18, 0.2, 0.18)
+});
+
+RowType.Badge3 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_badge3.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.3, 0.18, 0.2, 0.18)
+});
+
+RowType.Badge4 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_badge4.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.3, 0.18, 0.2, 0.18)
+});
+
+RowType.SpeechBubble1 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_speech_bubble_small2.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.04, 0.07, 0.12, 0.07),
+  capInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](19 * 3, 57 * 3, 41 * 3, 17 * 3)
+});
+
+RowType.SpeechBubble2 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_speech_bubble3.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.04, 0.07, 0.12, 0.07),
+  capInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](2 * 3, 35 * 3, 29 * 3, 5 * 3)
+});
+
+RowType.SpeechBubble3 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_speech_bubble_small.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.165664675, 0.2, 0.165664675, 0.2),
+  minimumHeightRatio: 0.7
+});
+
+RowType.SpeechBubble4 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_speech_bubble4.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.124800224, 0.2, 0.291200523, 0.2),
+  minimumHeightRatio: 0.7
+});
+
+RowType.SpeechBubble5 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_speech_bubble5.png',
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.114892823, 0.27, 0.15984926, 0.27)
+});
+
+RowType.Watercolor1 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_watercolor_01.png',
+  minimumHeightRatio: 0.7,
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.2, 0.25, 0.2, 0.25)
+});
+
+RowType.Watercolor2 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_watercolor_02.png',
+  minimumHeightRatio: 0.7,
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.08, 0.25, 0.3, 0.25)
+});
+
+RowType.Watercolor3 = new RowType({
+  imagePath: 'text-design/images/imgly_text_design_asset_watercolor_03.png',
+  minimumHeightRatio: 0.7,
+  relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.1, 0.2, 0.15, 0.2)
+});
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+module.exports = true;
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+module.exports = function (it) {
+  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
+  return it;
+};
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports) {
+
+var id = 0;
+var px = Math.random();
+module.exports = function (key) {
+  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+};
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var def = __webpack_require__(21).f;
+var has = __webpack_require__(27);
+var TAG = __webpack_require__(11)('toStringTag');
+
+module.exports = function (it, tag, stat) {
+  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
+};
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(165);
+var global = __webpack_require__(14);
+var hide = __webpack_require__(26);
+var Iterators = __webpack_require__(38);
+var TO_STRING_TAG = __webpack_require__(11)('toStringTag');
+
+var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
+  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
+  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +
+  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +
+  'TextTrackList,TouchList').split(',');
+
+for (var i = 0; i < DOMIterables.length; i++) {
+  var NAME = DOMIterables[i];
+  var Collection = global[NAME];
+  var proto = Collection && Collection.prototype;
+  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
+  Iterators[NAME] = Iterators.Array;
+}
+
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports) {
+
+exports.f = {}.propertyIsEnumerable;
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__managers_canvas_filter_manager__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__managers_webgl_filter_manager__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__display_display_object__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__display_container__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__textures_base_texture__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__textures_texture__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__textures_render_texture__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_webgl_render_target__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__utils_canvas_render_target__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__sprites_sprite__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__shaders___ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shaders_shader__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__filters_filter__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__filters__ = __webpack_require__(226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__utils_pixel_array_image__ = __webpack_require__(131);
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * The heart of PhotoEditorSDK. Handles all the rendering in a scene-graph fashion
+ * @namespace PhotoEditorSDK.Engine
+ */
+var Engine = {
+  WebGLRenderer: __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */],
+  CanvasRenderer: __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__["a" /* default */],
+  WebGLFilterManager: __WEBPACK_IMPORTED_MODULE_3__managers_webgl_filter_manager__["a" /* default */],
+  CanvasFilterManager: __WEBPACK_IMPORTED_MODULE_2__managers_canvas_filter_manager__["a" /* default */],
+  DisplayObject: __WEBPACK_IMPORTED_MODULE_4__display_display_object__["a" /* default */],
+  Container: __WEBPACK_IMPORTED_MODULE_5__display_container__["a" /* default */],
+  BaseTexture: __WEBPACK_IMPORTED_MODULE_6__textures_base_texture__["a" /* default */],
+  Texture: __WEBPACK_IMPORTED_MODULE_7__textures_texture__["a" /* default */],
+  RenderTexture: __WEBPACK_IMPORTED_MODULE_8__textures_render_texture__["a" /* default */],
+  WebGLRenderTarget: __WEBPACK_IMPORTED_MODULE_9__utils_webgl_render_target__["a" /* default */],
+  CanvasRenderTarget: __WEBPACK_IMPORTED_MODULE_10__utils_canvas_render_target__["a" /* default */],
+  Sprite: __WEBPACK_IMPORTED_MODULE_11__sprites_sprite__["a" /* default */],
+  Shaders: __WEBPACK_IMPORTED_MODULE_12__shaders___["a" /* default */],
+  Shader: __WEBPACK_IMPORTED_MODULE_13__shaders_shader__["a" /* default */],
+  Filter: __WEBPACK_IMPORTED_MODULE_14__filters_filter__["a" /* default */],
+  Filters: __WEBPACK_IMPORTED_MODULE_15__filters__,
+  PixelArrayImage: __WEBPACK_IMPORTED_MODULE_16__utils_pixel_array_image__["a" /* default */],
+
+  /**
+   * If WebGL is supported, this returns a WebGLRenderer and falls back to CanvasRenderer
+   * @param  {Number} width
+   * @param  {Number} height
+   * @param  {Object} [options = {} ]
+   * @return {(PhotoEditorSDK.Engine.WebGLRenderer|PhotoEditorSDK.Engine.CanvasRenderer)}
+   */
+  autoDetectRenderer: function autoDetectRenderer(width, height) {
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+    if (__WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */].isSupported()) {
+      return new __WEBPACK_IMPORTED_MODULE_1__renderers_webgl_webgl_renderer__["a" /* default */](width, height, options);
+    } else {
+      return new __WEBPACK_IMPORTED_MODULE_0__renderers_canvas_canvas_renderer__["a" /* default */](width, height, options);
+    }
+  }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Engine);
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(204), __esModule: true };
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(206), __esModule: true };
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(208), __esModule: true };
+
+/***/ }),
+/* 72 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__ = __webpack_require__(53);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+/**
+ * A canvas render target that you can render to.
+ * Canvas equivalent of {@link PhotoEditorSDK.Engine.WebGLRenderTarget}
+ * @class
+ * @memberof PhotoEditorSDK.Engine
+ */
+
+var CanvasRenderTarget = function () {
+  /**
+   * Creates a CanvasRenderTarget
+   * @param  {Number} width
+   * @param  {Number} height
+   * @param  {Number} pixelRatio
+   * @param  {HTMLCanvasElement} canvas
+   * @param  {CanvasRenderingContext2D} context
+   */
+  function CanvasRenderTarget(width, height, pixelRatio, canvas, context) {
+    _classCallCheck(this, CanvasRenderTarget);
+
+    this._width = width;
+    this._height = height;
+    this._pixelRatio = pixelRatio;
+
+    this._baseTexture = new __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */]();
+    this._canvas = canvas || this._createCanvas();
+    this._context = context || this._canvas.getContext('2d');
+    this._baseTexture.setSource(this._canvas);
+
+    this._canvas.width = this._width * this._pixelRatio;
+    this._canvas.height = this._height * this._pixelRatio;
+    this._filterStack = [{
+      renderTarget: this,
+      filter: []
+    }];
+  }
+
+  /**
+   * Creates a canvas
+   * @return {Canvas}
+   * @private
+   */
+
+
+  _createClass(CanvasRenderTarget, [{
+    key: '_createCanvas',
+    value: function _createCanvas() {
+      return __WEBPACK_IMPORTED_MODULE_1__globals__["i" /* Utils */].createCanvas();
+    }
+
+    /**
+     * Clears this CanvasRenderTarget
+     */
+
+  }, {
+    key: 'clear',
+    value: function clear() {
+      var ctx = this._context;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio);
+    }
+
+    /**
+     * Resizes this canvas buffer to the given dimensions
+     * @param  {PhotoEditorSDK.Math.Vector2} dimensions
+     */
+
+  }, {
+    key: 'resizeTo',
+    value: function resizeTo(dimensions) {
+      this._baseTexture.resizeTo(dimensions);
+
+      if (this._width !== dimensions.x) {
+        this._width = dimensions.x;
+        this._canvas.width = this._width * this._pixelRatio;
+      }
+
+      if (this._height !== dimensions.y) {
+        this._height = dimensions.y;
+        this._canvas.height = this._height * this._pixelRatio;
+      }
+    }
+
+    /**
+     * Returns the canvas
+     * @return {HTMLCanvasElement}
+     */
+
+  }, {
+    key: 'getCanvas',
+    value: function getCanvas() {
+      return this._canvas;
+    }
+
+    /**
+     * Returns the rendering context
+     * @return {CanvasRenderingContext2D} [description]
+     */
+
+  }, {
+    key: 'getContext',
+    value: function getContext() {
+      return this._context;
+    }
+
+    /**
+     * Returns the filter stack
+     * @return {Object[]}
+     */
+
+  }, {
+    key: 'getFilterStack',
+    value: function getFilterStack() {
+      return this._filterStack;
+    }
+
+    /**
+     * Returns the width
+     * @return {Number}
+     */
+
+  }, {
+    key: 'getWidth',
+    value: function getWidth() {
+      return this._width;
+    }
+
+    /**
+     * Returns the height
+     * @return {Number}
+     */
+
+  }, {
+    key: 'getHeight',
+    value: function getHeight() {
+      return this._height;
+    }
+
+    /**
+     * Returns the pixel ratio
+     * @return {Number}
+     */
+
+  }, {
+    key: 'getPixelRatio',
+    value: function getPixelRatio() {
+      return this._pixelRatio;
+    }
+
+    /**
+     * Sets the pixel ratio
+     * @param {Number} pixelRatio
+     */
+
+  }, {
+    key: 'setPixelRatio',
+    value: function setPixelRatio(pixelRatio) {
+      this._pixelRatio = pixelRatio;
+    }
+
+    /**
+     * Returns the dimensions
+     * @return {PhotoEditorSDK.Math.Vector2}
+     */
+
+  }, {
+    key: 'getDimensions',
+    value: function getDimensions() {
+      return new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height);
+    }
+
+    /**
+     * Returns the base texture
+     * @return {PhotoEditorSDK.Engine.BaseTexture}
+     */
+
+  }, {
+    key: 'getBaseTexture',
+    value: function getBaseTexture() {
+      return this._baseTexture;
+    }
+
+    /**
+     * Cleans up this canvas buffer
+     */
+
+  }, {
+    key: 'dispose',
+    value: function dispose() {
+      this._canvas = null;
+      this._context = null;
+    }
+  }]);
+
+  return CanvasRenderTarget;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (CanvasRenderTarget);
+
+/***/ }),
+/* 73 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__ = __webpack_require__(53);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+/**
+ * An object that you can render to. WebGL equivalent of {@link PhotoEditorSDK.Engine.CanvasRenderTarget}
+ * @class
+ * @memberof PhotoEditorSDK.Engine
+ */
+/* istanbul ignore next */
+
+var WebGLRenderTarget = function () {
+  /**
+   * Creates a WebGLRenderTarget
+   * @param  {PhotoEditorSDK.Engine.BaseRenderer}  renderer
+   * @param  {Number}  width
+   * @param  {Number}  height
+   * @param  {Number}  pixelRatio
+   * @param  {Boolean} [isRoot = false]
+   */
+  function WebGLRenderTarget(renderer, width, height, pixelRatio) {
+    var isRoot = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+    _classCallCheck(this, WebGLRenderTarget);
+
+    this._renderer = renderer;
+    this._gl = renderer.getContext();
+    this._width = width;
+    this._height = height;
+    this._frame = null;
+    this._pixelRatio = pixelRatio;
+    this._projectionMatrix = new __WEBPACK_IMPORTED_MODULE_1__globals__["g" /* Matrix */]();
+    this._mipMapping = false;
+
+    this._baseTexture = new __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */]();
+    var frame = this._baseTexture.getFrame();
+    frame.width = width;
+    frame.height = height;
+    this._baseTexture.setPixelRatio(pixelRatio);
+    this._baseTexture.setLoaded(true);
+
+    // `null` means render to canvas directly
+    this._framebuffer = null;
+    this._isRoot = isRoot;
+    this._filterStack = [{
+      renderTarget: this,
+      filter: []
+    }];
+
+    if (!isRoot) {
+      this._initFrameBuffer();
+    }
+  }
+
+  /**
+   * Resizes this WebGLRenderTarget to the given dimensions
+   * @param  {PhotoEditorSDK.Math.Vector2} dimensions
+   */
+
+
+  _createClass(WebGLRenderTarget, [{
+    key: 'resizeTo',
+    value: function resizeTo(dimensions) {
+      this._width = dimensions.x | 0; // rounded
+      this._height = dimensions.y | 0; // rounded
+
+      this._baseTexture.resizeTo(dimensions);
+
+      if (!this._isRoot) {
+        this._resizeTexture();
+      }
+
+      this._baseTexture.setMinFilter(this._getMinFilter());
+      this._baseTexture.setMagFilter(this._getMagFilter());
+
+      this._calculateProjectionMatrix();
+    }
+
+    /**
+     * Returns the downsampling filter
+     * @return {Number}
+     * @private
+     */
+
+  }, {
+    key: '_getMinFilter',
+    value: function _getMinFilter() {
+      var minFilter = __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].DefaultMinFilter;
+      if (this._mipMapping) {
+        minFilter = __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].TrilinearFilter;
+      }
+      return minFilter;
+    }
+
+    /**
+     * Returns the upsampling filter
+     * @return {Number}
+     * @private
+     */
+
+  }, {
+    key: '_getMagFilter',
+    value: function _getMagFilter() {
+      return __WEBPACK_IMPORTED_MODULE_2__textures_base_texture__["a" /* default */].DefaultMagFilter;
+    }
+
+    /**
+     * Resizes the FBO's texture to the current dimensions
+     * @private
+     */
+
+  }, {
+    key: '_resizeTexture',
+    value: function _resizeTexture() {
+      var gl = this._gl;
+      gl.bindTexture(gl.TEXTURE_2D, this._texture);
+
+      var realWidth = this._width * this._pixelRatio;
+      var realHeight = this._height * this._pixelRatio;
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, realWidth, realHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+
+      var dimensions = new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height);
+      if (__WEBPACK_IMPORTED_MODULE_1__globals__["i" /* Utils */].isPowerOfTwo(dimensions)) {
+        __WEBPACK_IMPORTED_MODULE_1__globals__["f" /* Log */].info('WebGLRenderTarget', 'Mip-mapping enabled');
+        this._mipMapping = true;
+      } else {
+        this._mipMapping = false;
+      }
+
+      this._baseTexture.setMipMappingEnabled(this._mipMapping);
+    }
+
+    /**
+     * Binds the framebuffer and resizes the viewport
+     */
+
+  }, {
+    key: 'activate',
+    value: function activate() {
+      var gl = this._gl;
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
+
+      this._calculateProjectionMatrix();
+
+      gl.viewport(0, 0, this._width * this._pixelRatio, this._height * this._pixelRatio);
+      gl.disable(gl.STENCIL_TEST);
+    }
+
+    /**
+     * Clears the framebuffer
+     */
+
+  }, {
+    key: 'clear',
+    value: function clear() {
+      var color = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : __WEBPACK_IMPORTED_MODULE_1__globals__["b" /* Color */].TRANSPARENT;
+
+      var gl = this._gl;
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
+
+      __WEBPACK_IMPORTED_MODULE_1__globals__["e" /* GLUtils */].checkFramebufferStatus('WebGLRenderTarget#clear', gl);
+
+      gl.clearColor.apply(gl, color.toGLColor());
+      gl.clear(gl.COLOR_BUFFER_BIT);
+    }
+
+    /**
+     * Calculates the projection matrix for this render target
+     * @private
+     */
+
+  }, {
+    key: '_calculateProjectionMatrix',
+    value: function _calculateProjectionMatrix() {
+      var projectionMatrix = this._projectionMatrix;
+      projectionMatrix.reset();
+
+      var frame = this._frame || new __WEBPACK_IMPORTED_MODULE_1__globals__["h" /* Rectangle */](0, 0, this._width, this._height);
+
+      var x = frame.x,
+          y = frame.y;
+
+      if (!this._isRoot) {
+        projectionMatrix.a = 1 / this._width * 2;
+        projectionMatrix.d = 1 / this._height * 2;
+
+        projectionMatrix.tx = -1 - x * projectionMatrix.a;
+        projectionMatrix.ty = -1 - y * projectionMatrix.d;
+      } else {
+        projectionMatrix.a = 1 / this._width * 2;
+        projectionMatrix.d = -1 / this._height * 2;
+
+        projectionMatrix.tx = -1 - x * projectionMatrix.a;
+        projectionMatrix.ty = 1 - y * projectionMatrix.d;
+      }
+    }
+
+    /**
+     * Initializes the WebGL FBO and Texture for this WebGLRenderTarget
+     * @private
+     */
+
+  }, {
+    key: '_initFrameBuffer',
+    value: function _initFrameBuffer() {
+      var gl = this._gl;
+
+      // Init the FBO
+      this._framebuffer = gl.createFramebuffer();
+
+      // Create the texture
+      this._texture = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, this._texture);
+
+      // Bind texture to FBO
+      gl.bindFramebuffer(gl.FRAMEBUFFER, this._framebuffer);
+      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, this._texture, 0);
+
+      this._baseTexture.setGLTextureForRenderer(this._texture, this._renderer);
+      this.resizeTo(new __WEBPACK_IMPORTED_MODULE_1__globals__["k" /* Vector2 */](this._width, this._height));
+
+      __WEBPACK_IMPORTED_MODULE_1__globals__["e" /* GLUtils */].checkFramebufferStatus('WebGLRenderTarget#_initFramebuffer', gl);
+    }
+
+    /**
+     * Returns the projection matrix
+     * @return {PhotoEditorSDK.Math.Matrix}
+     */
+
+  }, {
+    key: 'getProjectionMatrix',
+    value: function getProjectionMatrix() {
+      return this._projectionMatrix;
+    }
+
+    /**
+     * Returns the texture
+     * @return {PhotoEditorSDK.Engine.Texture}
+     */
+
+  }, {
+    key: 'getTexture',
+    value: function getTexture() {
+      return this._texture;
+    }
+
+    /**
+     * Returns the frame
+     * @return {PhotoEditorSDK.Math.Rectangle}
+     */
+
+  }, {
+    key: 'getFrame',
+    value: function getFrame() {
+      return this._frame;
+    }
+
+    /**
+     * Sets the frame
+     * @param {PhotoEditorSDK.Math.Rectangle} frame
+     */
+
+  }, {
+    key: 'setFrame',
+    value: function setFrame(frame) {
+      this._frame = frame;
+    }
+
+    /**
+     * Returns the filter stack
+     * @return {Object[]}
+     */
+
+  }, {
+    key: 'getFilterStack',
+    value: function getFilterStack() {
+      return this._filterStack;
+    }
+
+    /**
+     * Returns the current pixel ratio
+     * @return {Number}
+     */
+
+  }, {
+    key: 'getPixelRatio',
+    value: function getPixelRatio() {
+      return this._pixelRatio;
+    }
+
+    /**
+     * Sets the pixel ratio
+     * @param {Number} pixelRatio
+     */
+
+  }, {
+    key: 'setPixelRatio',
+    value: function setPixelRatio(pixelRatio) {
+      this._pixelRatio = pixelRatio;
+
+      if (!this._isRoot) {
+        this._resizeTexture();
+      }
+    }
+
+    /**
+     * Returns the base texture
+     * @return {PhotoEditorSDK.Engine.BaseTexture}
+     */
+
+  }, {
+    key: 'getBaseTexture',
+    value: function getBaseTexture() {
+      return this._baseTexture;
+    }
+
+    /**
+     * Disposes this WebGLRenderTarget
+     */
+
+  }, {
+    key: 'dispose',
+    value: function dispose() {
+      var gl = this._gl;
+      this._baseTexture.disposeGLTexturesForRenderer(this._renderer);
+      gl.deleteTexture(this._texture);
+      gl.deleteFramebuffer(this._framebuffer);
+    }
+  }]);
+
+  return WebGLRenderTarget;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (WebGLRenderTarget);
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* eslint-disable */
+
+/*!
+StackBlur - a fast almost Gaussian Blur For Canvas
+
+Version:  0.5
+Author:   Mario Klingemann
+Contact:  mario@quasimondo.com
+Website:  http://www.quasimondo.com/StackBlurForCanvas
+Twitter:  @quasimondo
+
+In case you find this class useful - especially in commercial projects -
+I am not totally unhappy for a small donation to my PayPal account
+mario@quasimondo.de
+
+Or support me on flattr:
+https://flattr.com/thing/72791/StackBlur-a-fast-almost-Gaussian-Blur-Effect-for-CanvasJavascript
+
+Copyright (c) 2010 Mario Klingemann
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+@license
+*/
+
+var mul_table = [512, 512, 456, 512, 328, 456, 335, 512, 405, 328, 271, 456, 388, 335, 292, 512, 454, 405, 364, 328, 298, 271, 496, 456, 420, 388, 360, 335, 312, 292, 273, 512, 482, 454, 428, 405, 383, 364, 345, 328, 312, 298, 284, 271, 259, 496, 475, 456, 437, 420, 404, 388, 374, 360, 347, 335, 323, 312, 302, 292, 282, 273, 265, 512, 497, 482, 468, 454, 441, 428, 417, 405, 394, 383, 373, 364, 354, 345, 337, 328, 320, 312, 305, 298, 291, 284, 278, 271, 265, 259, 507, 496, 485, 475, 465, 456, 446, 437, 428, 420, 412, 404, 396, 388, 381, 374, 367, 360, 354, 347, 341, 335, 329, 323, 318, 312, 307, 302, 297, 292, 287, 282, 278, 273, 269, 265, 261, 512, 505, 497, 489, 482, 475, 468, 461, 454, 447, 441, 435, 428, 422, 417, 411, 405, 399, 394, 389, 383, 378, 373, 368, 364, 359, 354, 350, 345, 341, 337, 332, 328, 324, 320, 316, 312, 309, 305, 301, 298, 294, 291, 287, 284, 281, 278, 274, 271, 268, 265, 262, 259, 257, 507, 501, 496, 491, 485, 480, 475, 470, 465, 460, 456, 451, 446, 442, 437, 433, 428, 424, 420, 416, 412, 408, 404, 400, 396, 392, 388, 385, 381, 377, 374, 370, 367, 363, 360, 357, 354, 350, 347, 344, 341, 338, 335, 332, 329, 326, 323, 320, 318, 315, 312, 310, 307, 304, 302, 299, 297, 294, 292, 289, 287, 285, 282, 280, 278, 275, 273, 271, 269, 267, 265, 263, 261, 259];
+
+var shg_table = [9, 11, 12, 13, 13, 14, 14, 15, 15, 15, 15, 16, 16, 16, 16, 17, 17, 17, 17, 17, 17, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 22, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 23, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24, 24];
+
+function stackBlurCanvasRGBA(imageData, top_x, top_y, width, height, radius) {
+  if (isNaN(radius) || radius < 1) {
+    return;
+  }
+  radius |= 0;
+
+  var pixels = imageData.data;
+
+  var x, y, i, p, yp, yi, yw, r_sum, g_sum, b_sum, a_sum, r_out_sum, g_out_sum, b_out_sum, a_out_sum, r_in_sum, g_in_sum, b_in_sum, a_in_sum, pr, pg, pb, pa, rbs;
+
+  var div = radius + radius + 1;
+  var widthMinus1 = width - 1;
+  var heightMinus1 = height - 1;
+  var radiusPlus1 = radius + 1;
+  var sumFactor = radiusPlus1 * (radiusPlus1 + 1) / 2;
+
+  var stackStart = new BlurStack();
+  var stackEnd;
+  var stack = stackStart;
+  for (i = 1; i < div; i++) {
+    stack = stack.next = new BlurStack();
+    if (i == radiusPlus1) stackEnd = stack;
+  }
+  stack.next = stackStart;
+  var stackIn = null;
+  var stackOut = null;
+
+  yw = yi = 0;
+
+  var mul_sum = mul_table[radius];
+  var shg_sum = shg_table[radius];
+
+  for (y = 0; y < height; y++) {
+    r_in_sum = g_in_sum = b_in_sum = a_in_sum = r_sum = g_sum = b_sum = a_sum = 0;
+
+    r_out_sum = radiusPlus1 * (pr = pixels[yi]);
+    g_out_sum = radiusPlus1 * (pg = pixels[yi + 1]);
+    b_out_sum = radiusPlus1 * (pb = pixels[yi + 2]);
+    a_out_sum = radiusPlus1 * (pa = pixels[yi + 3]);
+
+    r_sum += sumFactor * pr;
+    g_sum += sumFactor * pg;
+    b_sum += sumFactor * pb;
+    a_sum += sumFactor * pa;
+
+    stack = stackStart;
+
+    for (i = 0; i < radiusPlus1; i++) {
+      stack.r = pr;
+      stack.g = pg;
+      stack.b = pb;
+      stack.a = pa;
+      stack = stack.next;
+    }
+
+    for (i = 1; i < radiusPlus1; i++) {
+      p = yi + ((widthMinus1 < i ? widthMinus1 : i) << 2);
+      r_sum += (stack.r = pr = pixels[p]) * (rbs = radiusPlus1 - i);
+      g_sum += (stack.g = pg = pixels[p + 1]) * rbs;
+      b_sum += (stack.b = pb = pixels[p + 2]) * rbs;
+      a_sum += (stack.a = pa = pixels[p + 3]) * rbs;
+
+      r_in_sum += pr;
+      g_in_sum += pg;
+      b_in_sum += pb;
+      a_in_sum += pa;
+
+      stack = stack.next;
+    }
+
+    stackIn = stackStart;
+    stackOut = stackEnd;
+    for (x = 0; x < width; x++) {
+      pixels[yi + 3] = pa = a_sum * mul_sum >> shg_sum;
+      if (pa !== 0) {
+        pa = 255 / pa;
+        pixels[yi] = (r_sum * mul_sum >> shg_sum) * pa;
+        pixels[yi + 1] = (g_sum * mul_sum >> shg_sum) * pa;
+        pixels[yi + 2] = (b_sum * mul_sum >> shg_sum) * pa;
+      } else {
+        pixels[yi] = pixels[yi + 1] = pixels[yi + 2] = 0;
+      }
+
+      r_sum -= r_out_sum;
+      g_sum -= g_out_sum;
+      b_sum -= b_out_sum;
+      a_sum -= a_out_sum;
+
+      r_out_sum -= stackIn.r;
+      g_out_sum -= stackIn.g;
+      b_out_sum -= stackIn.b;
+      a_out_sum -= stackIn.a;
+
+      p = yw + ((p = x + radius + 1) < widthMinus1 ? p : widthMinus1) << 2;
+
+      r_in_sum += stackIn.r = pixels[p];
+      g_in_sum += stackIn.g = pixels[p + 1];
+      b_in_sum += stackIn.b = pixels[p + 2];
+      a_in_sum += stackIn.a = pixels[p + 3];
+
+      r_sum += r_in_sum;
+      g_sum += g_in_sum;
+      b_sum += b_in_sum;
+      a_sum += a_in_sum;
+
+      stackIn = stackIn.next;
+
+      r_out_sum += pr = stackOut.r;
+      g_out_sum += pg = stackOut.g;
+      b_out_sum += pb = stackOut.b;
+      a_out_sum += pa = stackOut.a;
+
+      r_in_sum -= pr;
+      g_in_sum -= pg;
+      b_in_sum -= pb;
+      a_in_sum -= pa;
+
+      stackOut = stackOut.next;
+
+      yi += 4;
+    }
+    yw += width;
+  }
+
+  for (x = 0; x < width; x++) {
+    g_in_sum = b_in_sum = a_in_sum = r_in_sum = g_sum = b_sum = a_sum = r_sum = 0;
+
+    yi = x << 2;
+    r_out_sum = radiusPlus1 * (pr = pixels[yi]);
+    g_out_sum = radiusPlus1 * (pg = pixels[yi + 1]);
+    b_out_sum = radiusPlus1 * (pb = pixels[yi + 2]);
+    a_out_sum = radiusPlus1 * (pa = pixels[yi + 3]);
+
+    r_sum += sumFactor * pr;
+    g_sum += sumFactor * pg;
+    b_sum += sumFactor * pb;
+    a_sum += sumFactor * pa;
+
+    stack = stackStart;
+
+    for (i = 0; i < radiusPlus1; i++) {
+      stack.r = pr;
+      stack.g = pg;
+      stack.b = pb;
+      stack.a = pa;
+      stack = stack.next;
+    }
+
+    yp = width;
+
+    for (i = 1; i <= radius; i++) {
+      yi = yp + x << 2;
+
+      r_sum += (stack.r = pr = pixels[yi]) * (rbs = radiusPlus1 - i);
+      g_sum += (stack.g = pg = pixels[yi + 1]) * rbs;
+      b_sum += (stack.b = pb = pixels[yi + 2]) * rbs;
+      a_sum += (stack.a = pa = pixels[yi + 3]) * rbs;
+
+      r_in_sum += pr;
+      g_in_sum += pg;
+      b_in_sum += pb;
+      a_in_sum += pa;
+
+      stack = stack.next;
+
+      if (i < heightMinus1) {
+        yp += width;
+      }
+    }
+
+    yi = x;
+    stackIn = stackStart;
+    stackOut = stackEnd;
+    for (y = 0; y < height; y++) {
+      p = yi << 2;
+      pixels[p + 3] = pa = a_sum * mul_sum >> shg_sum;
+      if (pa > 0) {
+        pa = 255 / pa;
+        pixels[p] = (r_sum * mul_sum >> shg_sum) * pa;
+        pixels[p + 1] = (g_sum * mul_sum >> shg_sum) * pa;
+        pixels[p + 2] = (b_sum * mul_sum >> shg_sum) * pa;
+      } else {
+        pixels[p] = pixels[p + 1] = pixels[p + 2] = 0;
+      }
+
+      r_sum -= r_out_sum;
+      g_sum -= g_out_sum;
+      b_sum -= b_out_sum;
+      a_sum -= a_out_sum;
+
+      r_out_sum -= stackIn.r;
+      g_out_sum -= stackIn.g;
+      b_out_sum -= stackIn.b;
+      a_out_sum -= stackIn.a;
+
+      p = x + ((p = y + radiusPlus1) < heightMinus1 ? p : heightMinus1) * width << 2;
+
+      r_sum += r_in_sum += stackIn.r = pixels[p];
+      g_sum += g_in_sum += stackIn.g = pixels[p + 1];
+      b_sum += b_in_sum += stackIn.b = pixels[p + 2];
+      a_sum += a_in_sum += stackIn.a = pixels[p + 3];
+
+      stackIn = stackIn.next;
+
+      r_out_sum += pr = stackOut.r;
+      g_out_sum += pg = stackOut.g;
+      b_out_sum += pb = stackOut.b;
+      a_out_sum += pa = stackOut.a;
+
+      r_in_sum -= pr;
+      g_in_sum -= pg;
+      b_in_sum -= pb;
+      a_in_sum -= pa;
+
+      stackOut = stackOut.next;
+
+      yi += width;
+    }
+  }
+}
+
+function BlurStack() {
+  this.r = 0;
+  this.g = 0;
+  this.b = 0;
+  this.a = 0;
+  this.next = null;
+}
+
+module.exports = {
+  stackBlurCanvasRGBA: stackBlurCanvasRGBA
+};
+
+/***/ }),
+/* 75 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignAttributes; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
+
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var TextDesignAttributes = function (_Configurable) {
+  _inherits(TextDesignAttributes, _Configurable);
+
+  function TextDesignAttributes() {
+    _classCallCheck(this, TextDesignAttributes);
+
+    return _possibleConstructorReturn(this, (TextDesignAttributes.__proto__ || __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignAttributes)).apply(this, arguments));
+  }
+
+  return TextDesignAttributes;
+}(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["Configurable"]);
+
+TextDesignAttributes.prototype.availableOptions = {
+  tintColor: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].COLOR, default: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["Color"].BLACK },
+  textColor: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].COLOR, default: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["Color"].BLACK },
+  alignment: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].STRING, default: 'left', available: ['left', 'center', 'right'] },
+  lineSpacing: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  fontIdentifier: { type: __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__["OptionType"].STRING, default: 'imgly_font_open_sans_bold' }
+};
+
+/***/ }),
+/* 76 */
 /***/ (function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -7016,7 +9654,7 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 58 */
+/* 77 */
 /***/ (function(module, exports) {
 
 // 7.2.1 RequireObjectCoercible(argument)
@@ -7027,11 +9665,11 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 59 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(17);
-var document = __webpack_require__(12).document;
+var isObject = __webpack_require__(24);
+var document = __webpack_require__(14).document;
 // typeof document.createElement is 'object' in old IE
 var is = isObject(document) && isObject(document.createElement);
 module.exports = function (it) {
@@ -7040,11 +9678,11 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 60 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(17);
+var isObject = __webpack_require__(24);
 // instead of the ES6 spec version, we didn't implement @@toPrimitive case
 // and the second argument - flag - preferred type is a string
 module.exports = function (it, S) {
@@ -7058,27 +9696,27 @@ module.exports = function (it, S) {
 
 
 /***/ }),
-/* 61 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(14);
-var dPs = __webpack_require__(133);
-var enumBugKeys = __webpack_require__(65);
-var IE_PROTO = __webpack_require__(63)('IE_PROTO');
+var anObject = __webpack_require__(18);
+var dPs = __webpack_require__(162);
+var enumBugKeys = __webpack_require__(84);
+var IE_PROTO = __webpack_require__(82)('IE_PROTO');
 var Empty = function () { /* empty */ };
 var PROTOTYPE = 'prototype';
 
 // Create object with fake `null` prototype: use iframe Object with cleared prototype
 var createDict = function () {
   // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(59)('iframe');
+  var iframe = __webpack_require__(78)('iframe');
   var i = enumBugKeys.length;
   var lt = '<';
   var gt = '>';
   var iframeDocument;
   iframe.style.display = 'none';
-  __webpack_require__(90).appendChild(iframe);
+  __webpack_require__(113).appendChild(iframe);
   iframe.src = 'javascript:'; // eslint-disable-line no-script-url
   // createDict = iframe.contentWindow.Object;
   // html.removeChild(iframe);
@@ -7105,11 +9743,11 @@ module.exports = Object.create || function create(O, Properties) {
 
 
 /***/ }),
-/* 62 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(57);
+var toInteger = __webpack_require__(76);
 var min = Math.min;
 module.exports = function (it) {
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -7117,21 +9755,21 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 63 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var shared = __webpack_require__(64)('keys');
-var uid = __webpack_require__(47);
+var shared = __webpack_require__(83)('keys');
+var uid = __webpack_require__(64);
 module.exports = function (key) {
   return shared[key] || (shared[key] = uid(key));
 };
 
 
 /***/ }),
-/* 64 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(12);
+var global = __webpack_require__(14);
 var SHARED = '__core-js_shared__';
 var store = global[SHARED] || (global[SHARED] = {});
 module.exports = function (key) {
@@ -7140,7 +9778,7 @@ module.exports = function (key) {
 
 
 /***/ }),
-/* 65 */
+/* 84 */
 /***/ (function(module, exports) {
 
 // IE 8- don't enum bug keys
@@ -7150,21 +9788,21 @@ module.exports = (
 
 
 /***/ }),
-/* 66 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.f = __webpack_require__(10);
+exports.f = __webpack_require__(11);
 
 
 /***/ }),
-/* 67 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(12);
-var core = __webpack_require__(9);
-var LIBRARY = __webpack_require__(45);
-var wksExt = __webpack_require__(66);
-var defineProperty = __webpack_require__(15).f;
+var global = __webpack_require__(14);
+var core = __webpack_require__(10);
+var LIBRARY = __webpack_require__(62);
+var wksExt = __webpack_require__(85);
+var defineProperty = __webpack_require__(21).f;
 module.exports = function (name) {
   var $Symbol = core.Symbol || (core.Symbol = LIBRARY ? {} : global.Symbol || {});
   if (name.charAt(0) != '_' && !(name in $Symbol)) defineProperty($Symbol, name, { value: wksExt.f(name) });
@@ -7172,25 +9810,25 @@ module.exports = function (name) {
 
 
 /***/ }),
-/* 68 */
+/* 87 */
 /***/ (function(module, exports) {
 
 exports.f = Object.getOwnPropertySymbols;
 
 
 /***/ }),
-/* 69 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var pIE = __webpack_require__(50);
-var createDesc = __webpack_require__(35);
-var toIObject = __webpack_require__(21);
-var toPrimitive = __webpack_require__(60);
-var has = __webpack_require__(20);
-var IE8_DOM_DEFINE = __webpack_require__(86);
+var pIE = __webpack_require__(67);
+var createDesc = __webpack_require__(46);
+var toIObject = __webpack_require__(28);
+var toPrimitive = __webpack_require__(79);
+var has = __webpack_require__(27);
+var IE8_DOM_DEFINE = __webpack_require__(109);
 var gOPD = Object.getOwnPropertyDescriptor;
 
-exports.f = __webpack_require__(18) ? gOPD : function getOwnPropertyDescriptor(O, P) {
+exports.f = __webpack_require__(25) ? gOPD : function getOwnPropertyDescriptor(O, P) {
   O = toIObject(O);
   P = toPrimitive(P, true);
   if (IE8_DOM_DEFINE) try {
@@ -7201,12 +9839,12 @@ exports.f = __webpack_require__(18) ? gOPD : function getOwnPropertyDescriptor(O
 
 
 /***/ }),
-/* 70 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(37);
-var TAG = __webpack_require__(10)('toStringTag');
+var cof = __webpack_require__(48);
+var TAG = __webpack_require__(11)('toStringTag');
 // ES3 wrong here
 var ARG = cof(function () { return arguments; }()) == 'Arguments';
 
@@ -7230,13 +9868,13 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 71 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var classof = __webpack_require__(70);
-var ITERATOR = __webpack_require__(10)('iterator');
-var Iterators = __webpack_require__(28);
-module.exports = __webpack_require__(9).getIteratorMethod = function (it) {
+var classof = __webpack_require__(89);
+var ITERATOR = __webpack_require__(11)('iterator');
+var Iterators = __webpack_require__(38);
+module.exports = __webpack_require__(10).getIteratorMethod = function (it) {
   if (it != undefined) return it[ITERATOR]
     || it['@@iterator']
     || Iterators[classof(it)];
@@ -7244,14 +9882,14 @@ module.exports = __webpack_require__(9).getIteratorMethod = function (it) {
 
 
 /***/ }),
-/* 72 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ctx = __webpack_require__(26);
-var invoke = __webpack_require__(158);
-var html = __webpack_require__(90);
-var cel = __webpack_require__(59);
-var global = __webpack_require__(12);
+var ctx = __webpack_require__(36);
+var invoke = __webpack_require__(187);
+var html = __webpack_require__(113);
+var cel = __webpack_require__(78);
+var global = __webpack_require__(14);
 var process = global.process;
 var setTask = global.setImmediate;
 var clearTask = global.clearImmediate;
@@ -7290,7 +9928,7 @@ if (!setTask || !clearTask) {
     delete queue[id];
   };
   // Node.js 0.8-
-  if (__webpack_require__(37)(process) == 'process') {
+  if (__webpack_require__(48)(process) == 'process') {
     defer = function (id) {
       process.nextTick(ctx(run, id, 1));
     };
@@ -7334,13 +9972,13 @@ module.exports = {
 
 
 /***/ }),
-/* 73 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 25.4.1.5 NewPromiseCapability(C)
-var aFunction = __webpack_require__(46);
+var aFunction = __webpack_require__(63);
 
 function PromiseCapability(C) {
   var resolve, reject;
@@ -7359,13 +9997,13 @@ module.exports.f = function (C) {
 
 
 /***/ }),
-/* 74 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // most Object methods by ES6 should accept primitives
 var $export = __webpack_require__(13);
-var core = __webpack_require__(9);
-var fails = __webpack_require__(27);
+var core = __webpack_require__(10);
+var fails = __webpack_require__(37);
 module.exports = function (KEY, exec) {
   var fn = (core.Object || {})[KEY] || Object[KEY];
   var exp = {};
@@ -7375,26 +10013,14 @@ module.exports = function (KEY, exec) {
 
 
 /***/ }),
-/* 75 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(167), __esModule: true };
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(172), __esModule: true };
-
-/***/ }),
-/* 77 */
+/* 94 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_canvas_render_target__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_canvas_render_target__ = __webpack_require__(72);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -7589,7 +10215,7 @@ var CanvasFilterManager = function () {
 /* harmony default export */ __webpack_exports__["a"] = (CanvasFilterManager);
 
 /***/ }),
-/* 78 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7599,8 +10225,8 @@ var CanvasFilterManager = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shader__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shader__ = __webpack_require__(96);
 
 
 
@@ -7666,13 +10292,13 @@ var TextureShader = function (_Shader) {
  */
 
 
-TextureShader.defaultVertexSource = __webpack_require__(186);
+TextureShader.defaultVertexSource = __webpack_require__(215);
 
 /**
  * The default fragment shader source code
  * @type {String}
  */
-TextureShader.defaultFragmentSource = __webpack_require__(187);
+TextureShader.defaultFragmentSource = __webpack_require__(216);
 
 var matrix = new __WEBPACK_IMPORTED_MODULE_3__globals__["g" /* Matrix */]();
 
@@ -7699,16 +10325,16 @@ TextureShader.defaultUniforms = {
 /* harmony default export */ __webpack_exports__["a"] = (TextureShader);
 
 /***/ }),
-/* 79 */
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_keys__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constants__ = __webpack_require__(31);
 
 
 
@@ -8106,13 +10732,13 @@ var Shader = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Shader);
 
 /***/ }),
-/* 80 */
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -8546,15 +11172,15 @@ var DisplayObject = function () {
 /* harmony default export */ __webpack_exports__["a"] = (DisplayObject);
 
 /***/ }),
-/* 81 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_webgl_render_target__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_quad__ = __webpack_require__(188);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_webgl_render_target__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_quad__ = __webpack_require__(217);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -8822,18 +11448,18 @@ var WebGLFilterManager = function () {
 /* harmony default export */ __webpack_exports__["a"] = (WebGLFilterManager);
 
 /***/ }),
-/* 82 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base64__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array_stream__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__jpeg_constants__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__jpeg_jfif_data__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__jpeg_exif_data__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__base64__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array_stream__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__jpeg_constants__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__jpeg_jfif_data__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__jpeg_exif_data__ = __webpack_require__(250);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -9196,7 +11822,7 @@ var EXIF = function () {
 /* harmony default export */ __webpack_exports__["a"] = (EXIF);
 
 /***/ }),
-/* 83 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9446,7 +12072,7 @@ var ArrayStream = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ArrayStream);
 
 /***/ }),
-/* 84 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9520,21 +12146,994 @@ var EXIF_TAGS = {
 });
 
 /***/ }),
-/* 85 */
+/* 102 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignBanderole; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__ = __webpack_require__(17);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var TextDesignBanderole = function (_Configurable) {
+  _inherits(TextDesignBanderole, _Configurable);
+
+  function TextDesignBanderole() {
+    _classCallCheck(this, TextDesignBanderole);
+
+    return _possibleConstructorReturn(this, (TextDesignBanderole.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBanderole)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignBanderole, [{
+    key: 'insetsForWidth',
+    value: function insetsForWidth(width) {
+      return this.getRelativeInsets().clone().scale(width);
+    }
+  }], [{
+    key: 'Small',
+    get: function get() {
+      return new TextDesignBanderole({
+        imagePath: 'text-design/images/imgly_text_design_asset_banderole_small.png',
+        fontIdentifier: 'imgly_font_campton_bold',
+        relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.05, 0.2, 0.05, 0.2)
+      });
+    }
+  }, {
+    key: 'Rectangle',
+    get: function get() {
+      return new TextDesignBanderole({
+        imagePath: 'text-design/images/imgly_text_design_asset_black_background.png',
+        fontIdentifier: 'imgly_font_campton_bold',
+        relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.05, 0.05, 0.05, 0.05),
+        needsImageSmoothingFix: true
+      });
+    }
+  }, {
+    key: 'Celebrate1',
+    get: function get() {
+      return new TextDesignBanderole({
+        imagePath: 'text-design/images/imgly_text_design_asset_celebrate_01.png',
+        fontIdentifier: 'imgly_font_rasa_500',
+        relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.05, 0.2, 0.05, 0.2)
+      });
+    }
+  }, {
+    key: 'Celebrate2',
+    get: function get() {
+      return new TextDesignBanderole({
+        imagePath: 'text-design/images/imgly_text_design_asset_celebrate_02.png',
+        fontIdentifier: 'imgly_font_rasa_500',
+        relativeInsets: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */](0.05, 0.2, 0.05, 0.2)
+      });
+    }
+  }]);
+
+  return TextDesignBanderole;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+TextDesignBanderole.prototype.availableOptions = {
+  image: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].IMAGE, default: null },
+  imagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: null },
+  relativeInsets: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */]() },
+  fontIdentifier: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: 'imgly_font_open_sans_bold' },
+  needsImageSmoothingFix: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false }
+};
+
+/***/ }),
+/* 103 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowMasked; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_canvas__ = __webpack_require__(34);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+var TextDesignRowMasked = function (_TextDesignRowSingle) {
+  _inherits(TextDesignRowMasked, _TextDesignRowSingle);
+
+  function TextDesignRowMasked() {
+    _classCallCheck(this, TextDesignRowMasked);
+
+    return _possibleConstructorReturn(this, (TextDesignRowMasked.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowMasked)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignRowMasked, [{
+    key: '_getTextColor',
+    value: function _getTextColor() {
+      if (this.getAutoAdjustTextColor() && !this.getIsMasked()) {
+        if (this.getBackgroundColor().equals(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].WHITE)) {
+          return __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].BLACK;
+        } else {
+          return __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].WHITE;
+        }
+      }
+
+      return this.getAttributes().getTextColor().clone();
+    }
+  }, {
+    key: '_getTextFrame',
+    value: function _getTextFrame() {
+      return this.getImageInsets().applyToRectangle(this._getFrame());
+    }
+  }, {
+    key: '_getTextFrameForElement',
+    value: function _getTextFrameForElement(element) {
+      var frame = _get(TextDesignRowMasked.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowMasked.prototype), '_getTextFrameForElement', this).call(this, element);
+      var imageInsets = this.getImageInsets();
+
+      if (this.getIsMasked() || this.getIsUsedInInvertedLayout()) {
+        frame.y -= imageInsets.top;
+      }
+
+      return frame;
+    }
+  }, {
+    key: 'willRender',
+    value: function willRender(context) {
+      // If needed, disable smoothing on server
+
+      var attributes = this.getAttributes();
+      attributes.setTextColor(this._getTextColor());
+
+      var image = this.getImage();
+
+      if (image) {
+        var capInsets = this.getCapInsets();
+        var frame = this._getFrame();
+
+        if (capInsets && !capInsets.equals(__WEBPACK_IMPORTED_MODULE_7__rectangle_insets__["a" /* RectangleInsets */].ZERO)) {
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["b" /* drawImageWithCapInsets */])(context, image, frame, capInsets);
+        } else {
+          context.drawImage(image, frame.x, frame.y, frame.width, frame.height);
+        }
+
+        Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, frame, this.getBackgroundColor(), 'source-atop');
+      }
+
+      if ((this.getIsMasked() || this.getIsUsedInInvertedLayout()) && image) {
+        context.save();
+        context.globalCompositeOperation = 'destination-out';
+      }
+    }
+  }, {
+    key: 'didRender',
+    value: function didRender(context) {
+      _get(TextDesignRowMasked.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowMasked.prototype), 'didRender', this).call(this, context);
+
+      if (this.getIsMasked() || this.getIsUsedInInvertedLayout()) {
+        context.restore();
+      }
+    }
+  }]);
+
+  return TextDesignRowMasked;
+}(__WEBPACK_IMPORTED_MODULE_8__default_text_design_row_single__["a" /* TextDesignRowSingle */]);
+
+TextDesignRowMasked.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__default_text_design_row_single__["a" /* TextDesignRowSingle */].prototype.availableOptions, {
+  image: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].IMAGE, default: null },
+  capInsets: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_7__rectangle_insets__["a" /* RectangleInsets */]() },
+  backgroundColor: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].COLOR, default: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].WHITE },
+  autoAdjustTextColor: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true },
+  isMasked: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true },
+  isUsedInInvertedLayout: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false }
+});
+
+/***/ }),
+/* 104 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowImage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_element__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__size_value__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_canvas__ = __webpack_require__(34);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignRowImage = function (_TextDesignRowSingle) {
+  _inherits(TextDesignRowImage, _TextDesignRowSingle);
+
+  function TextDesignRowImage() {
+    _classCallCheck(this, TextDesignRowImage);
+
+    return _possibleConstructorReturn(this, (TextDesignRowImage.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowImage)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignRowImage, [{
+    key: 'getImageSize',
+    value: function getImageSize() {
+      var leftImage = this.getLeftImage();
+      var rightImage = this.getRightImage();
+      var words = this.getWords();
+      var attributes = this.getAttributes();
+      var fontIdentifier = attributes.getFontIdentifier();
+
+      var imageSize = leftImage ? new __WEBPACK_IMPORTED_MODULE_10__size_value__["a" /* SizeValue */](leftImage.width, leftImage.height) : new __WEBPACK_IMPORTED_MODULE_10__size_value__["a" /* SizeValue */]();
+      var text = words.joined(1)[0];
+
+      if (!text) {
+        return imageSize;
+      }
+
+      var font = new __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__["a" /* TextDesignFont */]({ text: text, fontIdentifier: fontIdentifier, fontSize: 50 });
+      var textSize = font.getSizeValue();
+
+      var imageCount = rightImage ? 2 : 1;
+      imageSize.scale(imageCount, 1);
+
+      var newImageSize = imageSize.clone().fitInWidthWithOther(this._getFrame().width, textSize);
+
+      newImageSize.scale(1 / imageCount, 1);
+
+      return newImageSize;
+    }
+  }, {
+    key: '_getTextFrame',
+    value: function _getTextFrame() {
+      var textFrame = _get(TextDesignRowImage.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowImage.prototype), '_getTextFrame', this).call(this).clone();
+      var imageSize = this.getImageSize();
+      var rightImage = this.getRightImage();
+      var imagePosition = this.getImagePosition();
+
+      if (!rightImage) {
+        if (imagePosition === TextDesignRowImage.ImagePosition.Left) {
+          textFrame.x += imageSize.width;
+        }
+      } else {
+        textFrame.x += imageSize.width;
+        textFrame.width -= 2 * imageSize.width;
+      }
+      return textFrame;
+    }
+  }, {
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      var elements = _get(TextDesignRowImage.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowImage.prototype), '_calculateLayoutElements', this).call(this);
+      var frame = this._getFrame();
+      var rightImage = this.getRightImage();
+      var imageSize = this.getImageSize();
+      var imagePosition = this.getImagePosition();
+      var textFrame = this._getTextFrame();
+      var attributes = this.getAttributes();
+      var fontIdentifier = attributes.getFontIdentifier();
+
+      var font = new __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__["a" /* TextDesignFont */]({ text: 'stickerClock', fontIdentifier: fontIdentifier });
+      font.fitWidth(this._getTextFrame().width);
+
+      var leftImageRect = new Rectangle().set(frame.x, frame.y, imageSize.width, imageSize.height);
+
+      if (!rightImage && imagePosition === TextDesignRowImage.ImagePosition.Right) {
+        leftImageRect.x += textFrame.width;
+      }
+
+      elements.push(new __WEBPACK_IMPORTED_MODULE_9__text_design_element__["a" /* TextDesignElement */]({ text: 'stickerClock', frame: leftImageRect, font: font }));
+
+      if (rightImage) {
+        var firstElement = elements[0];
+
+        if (firstElement) {
+          var rightImageRect = leftImageRect.clone();
+          rightImageRect.translate(firstElement.getFrame().width + rightImageRect.width, 0);
+          elements.push(new __WEBPACK_IMPORTED_MODULE_9__text_design_element__["a" /* TextDesignElement */]({ text: 'stickerClock', frame: rightImageRect, font: font }));
+        }
+      }
+
+      return elements;
+    }
+  }, {
+    key: 'render',
+    value: function render(context) {
+      var elements = this._getLayoutElements();
+      var attributes = this.getAttributes();
+      var textColor = attributes.getTextColor();
+      var leftImage = this.getLeftImage();
+      var rightImage = this.getRightImage();
+
+      var layoutElement = elements[0];
+      var secondElement = elements[1];
+
+      var _layoutElement$serial = layoutElement.serializeOptions(),
+          font = _layoutElement$serial.font;
+
+      var textFrame = this._getTextFrameForElement(layoutElement);
+
+      font.draw(context, textFrame.x, textFrame.y, {
+        textColor: attributes.getTextColor().toRGBA(),
+        alignment: attributes.getAlignment()
+      });
+
+      if (leftImage) {
+        var dest = secondElement.getFrame();
+        context.drawImage(leftImage, dest.x, dest.y, dest.width, dest.height);
+        Object(__WEBPACK_IMPORTED_MODULE_11__utils_canvas__["c" /* fillRect */])(context, dest, textColor, 'source-atop');
+      }
+
+      if (elements.length > 2) {
+        var rightElement = elements[2];
+        var rightElementFrame = rightElement.getFrame().clone();
+
+        context.drawImage(rightImage, rightElementFrame.x, rightElementFrame.y, rightElementFrame.width, rightElementFrame.height);
+        Object(__WEBPACK_IMPORTED_MODULE_11__utils_canvas__["c" /* fillRect */])(context, rightElementFrame, textColor, 'source-atop');
+      }
+    }
+  }]);
+
+  return TextDesignRowImage;
+}(__WEBPACK_IMPORTED_MODULE_7__default_text_design_row_single__["a" /* TextDesignRowSingle */]);
+
+TextDesignRowImage.ImagePosition = {
+  Left: 'LEFT',
+  right: 'RIGHT'
+};
+TextDesignRowImage.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__default_text_design_row_single__["a" /* TextDesignRowSingle */].prototype.availableOptions, {
+  leftImage: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].IMAGE, default: null },
+  rightImage: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].IMAGE, default: null },
+  imagePosition: {
+    type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING,
+    default: TextDesignRowImage.ImagePosition.Left,
+    available: [TextDesignRowImage.ImagePosition.Left, TextDesignRowImage.ImagePosition.Right]
+  }
+});
+
+/***/ }),
+/* 105 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowMultiline; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_row_masked__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_element__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_text_renderer__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_text_design_font_multiline__ = __webpack_require__(363);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+var TextDesignRowMultiline = function (_TextDesignRowMasked) {
+  _inherits(TextDesignRowMultiline, _TextDesignRowMasked);
+
+  function TextDesignRowMultiline() {
+    _classCallCheck(this, TextDesignRowMultiline);
+
+    return _possibleConstructorReturn(this, (TextDesignRowMultiline.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowMultiline)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignRowMultiline, [{
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      var words = this.getWords();
+      var textFrame = this._getTextFrame();
+      var attributes = this.getAttributes();
+      var fontIdentifier = attributes.getFontIdentifier();
+      var imageInsets = this.getImageInsets();
+
+      var font = new __WEBPACK_IMPORTED_MODULE_8__text_text_design_font__["a" /* TextDesignFont */]({ text: words.getWord(0), fontIdentifier: fontIdentifier });
+      font.fitWidth(textFrame.width);
+
+      var element = new __WEBPACK_IMPORTED_MODULE_7__text_design_element__["a" /* TextDesignElement */]({ text: words.getWord(0), frame: textFrame, font: font });
+
+      element.setFrame(this._getTextFrameForElement(element));
+
+      // is  this.getSize().height already calculated here?
+      var size = this.getSize();
+      if (this.getSizeToFitContent() || size.height <= 1) {
+        size.height = imageInsets.top + element.getFrame().height + imageInsets.bottom;
+      }
+
+      size.height = Math.max(size.height, this.getMinimumHeight());
+
+      return [element];
+    }
+  }, {
+    key: '_getTextFrameForElement',
+    value: function _getTextFrameForElement(element) {
+      var words = this.getWords();
+      var text = words.getWord(0);
+      var attributes = this.getAttributes();
+      var fontIdentifier = attributes.getFontIdentifier();
+      var imageInsets = this.getImageInsets();
+
+      var insettedRect = this.getImageInsets().applyToRectangle(this._getFrame()).scale(this.getTextScaleFactor());
+
+      var font = new __WEBPACK_IMPORTED_MODULE_10__text_text_design_font_multiline__["a" /* TextDesignFontMultiline */]({
+        text: text,
+        fontIdentifier: fontIdentifier,
+        alignment: attributes.getAlignment(),
+        lineHeight: 1 // attributes.getLineSpacing()
+      });
+
+      font.fitInFrame(insettedRect);
+
+      var textSize = font.getSize();
+
+      insettedRect.height = textSize.height;
+
+      var stringHeight = textSize.height * this.getRowScaleFactor();
+
+      if (this.getSizeToFitContent()) {
+        stringHeight += imageInsets.top + imageInsets.bottom;
+      }
+
+      var frame = this._getFrame();
+      var alignment = attributes.getAlignment();
+      if (this.getCenteredVertically()) {
+        insettedRect.y = frame.height / 2 - stringHeight / 2 + imageInsets.top;
+      } else {
+        switch (alignment) {
+          case 'left':
+            insettedRect.y = frame.height - stringHeight - imageInsets.bottom;
+            break;
+
+          case 'center':
+            insettedRect.y = frame.height / 2 - stringHeight / 2 + stringHeight * this.getCenterOffset();
+            insettedRect.x = (frame.width - insettedRect.width) / 2;
+            break;
+
+          case 'right':
+            insettedRect.x = frame.width - insettedRect.width - imageInsets.right;
+            break;
+
+          default:
+            break;
+        }
+      }
+
+      return insettedRect; // insettedRect.scale(this.getTextScaleFactor())
+    }
+  }, {
+    key: 'render',
+    value: function render(context) {
+      var _this2 = this;
+
+      context.save();
+
+      this._getLayoutElements().forEach(function (element) {
+        var _element$serializeOpt = element.serializeOptions(),
+            text = _element$serializeOpt.text,
+            frame = _element$serializeOpt.frame;
+
+        var attributes = _this2.getAttributes();
+        var fontIdentifier = attributes.getFontIdentifier();
+
+        var fontMultiline = new __WEBPACK_IMPORTED_MODULE_10__text_text_design_font_multiline__["a" /* TextDesignFontMultiline */]({
+          text: text,
+          fontIdentifier: fontIdentifier,
+          alignment: attributes.getAlignment(),
+          lineHeight: 1, // attributes.getLineSpacing(),
+          textColor: attributes.getTextColor().toRGBA()
+        });
+
+        frame = _this2._getTextFrameForElement(element);
+
+        fontMultiline.fitInFrame(frame);
+
+        fontMultiline.draw(context, frame.x, frame.y);
+      });
+
+      context.restore();
+    }
+  }]);
+
+  return TextDesignRowMultiline;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_row_masked__["a" /* TextDesignRowMasked */]);
+
+TextDesignRowMultiline.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_row_masked__["a" /* TextDesignRowMasked */].prototype.availableOptions, {
+  centerOffset: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  sizeToFitContent: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  textScaleFactor: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.95 },
+  rowScaleFactor: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  minimumHeight: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  centeredVertically: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false }
+});
+
+/***/ }),
+/* 106 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignMaskedSpeechBubble; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+var TextDesignMaskedSpeechBubble = function (_TextDesignMasked) {
+  _inherits(TextDesignMaskedSpeechBubble, _TextDesignMasked);
+
+  function TextDesignMaskedSpeechBubble() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignMaskedSpeechBubble);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignMaskedSpeechBubble.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMaskedSpeechBubble)).call.apply(_ref, [this].concat(args)));
+
+    _this._possibleRowTypes = [__WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].SpeechBubble1, __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].SpeechBubble3];
+
+    _this._rowTypesRandomizer = new __WEBPACK_IMPORTED_MODULE_9__models_randomizer__["a" /* Randomizer */](0);
+    _this._isMaskedRandomizer = new __WEBPACK_IMPORTED_MODULE_9__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._rowTypesRandomizer);
+    _this._seedPool.push(_this._isMaskedRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignMaskedSpeechBubble, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return this._possibleRowTypes.map(function (rowType) {
+        return rowType.getImagePath();
+      });
+    }
+  }, {
+    key: '_rowTypes',
+    value: function _rowTypes(words) {
+      return this._possibleRowTypes;
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      this._rowType = this._rowTypesRandomizer.pickNext(this._rowTypes(words));
+
+      attributes.setLineSpacing(0.9);
+
+      var row = _get(TextDesignMaskedSpeechBubble.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMaskedSpeechBubble.prototype), '_randomLayoutRow', this).call(this, words, index, width, attributes);
+
+      row.set({
+        textScaleFactor: 1,
+        minimumHeight: width * this._rowType.getMinimumHeightRatio(),
+        sizeToFitContent: this._rowType.getSizeToFitContent(),
+        centeredVertically: true
+      });
+
+      return row;
+    }
+  }]);
+
+  return TextDesignMaskedSpeechBubble;
+}(__WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */]);
+
+TextDesignMaskedSpeechBubble.defaultFontIdentifiers = ['imgly_font_panton_black_caps', 'imgly_font_panton_light_caps', 'imgly_font_panton_black_italic_caps', 'imgly_font_panton_light_italic_caps'];
+TextDesignMaskedSpeechBubble.identifier = 'imgly_text_design_masked_speech_bubble';
+TextDesignMaskedSpeechBubble.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignMaskedSpeechBubble.defaultFontIdentifiers },
+  squareLayout: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  alignment: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'left', available: __WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */].ValidAlignments }
+});
+
+/***/ }),
+/* 107 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticlesBackground; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_background__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_canvas__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_particle__ = __webpack_require__(370);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignParticlesBackground = function (_TextDesignBackground) {
+  _inherits(TextDesignParticlesBackground, _TextDesignBackground);
+
+  function TextDesignParticlesBackground() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignParticlesBackground);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignParticlesBackground.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticlesBackground)).call.apply(_ref, [this].concat(args)));
+
+    _this._MAX_TRIES = 1000;
+    _this._PRECISION = 1000;
+    return _this;
+  }
+
+  _createClass(TextDesignParticlesBackground, [{
+    key: 'render',
+    value: function render(context, size, relativeInsets, color, randomizer) {
+      var _options = this._options,
+          imagePaths = _options.imagePaths,
+          relativeParticleSize = _options.relativeParticleSize;
+
+
+      if (imagePaths.length <= 0) {
+        return;
+      }
+
+      var aspect = size.width / size.height;
+
+      var textRect = new Rectangle(Math.round(relativeInsets.left * this._PRECISION), Math.round(relativeInsets.top * this._PRECISION * aspect), this._PRECISION, this._PRECISION);
+
+      textRect.width -= textRect.x + Math.round(relativeInsets.right * this._PRECISION);
+      textRect.height -= textRect.y + Math.round(relativeInsets.bottom * this._PRECISION * aspect);
+
+      var particles = [];
+
+      var count = 0;
+      var tryCount = 0;
+
+      while (count < this.getParticleCount() && tryCount < this._MAX_TRIES) {
+        var radius = relativeParticleSize / 2;
+        var minX = Math.round(radius * this._PRECISION);
+        var minY = Math.round(radius * this._PRECISION * aspect);
+
+        var maxX = Math.floor(this._PRECISION) - minX;
+        var maxY = Math.floor(this._PRECISION) - minY;
+
+        var randomValueX = randomizer.nextInRange(minX, maxX);
+        var randomValueY = randomizer.nextInRange(minY, maxY);
+
+        var frame = new Rectangle(randomValueX - minX, randomValueY - minY, 2 * minX, 2 * minY);
+
+        if (!frame.intersects(textRect) && !this.hasCollision(particles, frame)) {
+          particles.push(new __WEBPACK_IMPORTED_MODULE_9__text_design_particle__["a" /* TextDesignParticle */]({ frame: frame }));
+          count += 1;
+        }
+
+        tryCount += 1;
+      }
+
+      for (var i = 0; i < particles.length; i++) {
+        var particle = particles[i];
+        var randomImagePath = randomizer.pickNext(imagePaths);
+        var randomImage = __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__["a" /* AssetManager */].getImage(randomImagePath);
+        var opacity = randomizer.nextInRange(140, 230) / 255; // (55 + randomizer.next() % 35) / 100
+
+        var scaleX = size.width / this._PRECISION;
+        var scaleY = size.height / this._PRECISION;
+
+        var destination = particle.getContentFrame();
+        destination.x *= scaleX;
+        destination.y *= scaleY;
+        destination.width *= scaleX;
+        destination.height *= scaleY;
+
+        var finalColor = color.clone();
+        finalColor.a = opacity;
+
+        Object(__WEBPACK_IMPORTED_MODULE_8__utils_canvas__["a" /* drawImageFrame */])(context, randomImage, destination, finalColor, 'source-atop');
+      }
+    }
+  }, {
+    key: 'hasCollision',
+    value: function hasCollision(particles, rect) {
+      for (var i = 0; i < particles.length; i++) {
+        if (rect.intersects(particles[i].getFrame())) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+  }]);
+
+  return TextDesignParticlesBackground;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_background__["a" /* TextDesignBackground */]);
+
+TextDesignParticlesBackground.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_background__["a" /* TextDesignBackground */].prototype.availableOptions, {
+  particleCount: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 50 },
+  relativeParticleSize: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.08 },
+  imagePaths: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: [] }
+});
+
+/***/ }),
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var LIBRARY = __webpack_require__(45);
+var LIBRARY = __webpack_require__(62);
 var $export = __webpack_require__(13);
-var redefine = __webpack_require__(87);
-var hide = __webpack_require__(19);
-var has = __webpack_require__(20);
-var Iterators = __webpack_require__(28);
-var $iterCreate = __webpack_require__(132);
-var setToStringTag = __webpack_require__(48);
-var getPrototypeOf = __webpack_require__(91);
-var ITERATOR = __webpack_require__(10)('iterator');
+var redefine = __webpack_require__(110);
+var hide = __webpack_require__(26);
+var has = __webpack_require__(27);
+var Iterators = __webpack_require__(38);
+var $iterCreate = __webpack_require__(161);
+var setToStringTag = __webpack_require__(65);
+var getPrototypeOf = __webpack_require__(114);
+var ITERATOR = __webpack_require__(11)('iterator');
 var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
 var FF_ITERATOR = '@@iterator';
 var KEYS = 'keys';
@@ -9597,29 +13196,29 @@ module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCE
 
 
 /***/ }),
-/* 86 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(18) && !__webpack_require__(27)(function () {
-  return Object.defineProperty(__webpack_require__(59)('div'), 'a', { get: function () { return 7; } }).a != 7;
+module.exports = !__webpack_require__(25) && !__webpack_require__(37)(function () {
+  return Object.defineProperty(__webpack_require__(78)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
-/* 87 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(19);
+module.exports = __webpack_require__(26);
 
 
 /***/ }),
-/* 88 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var has = __webpack_require__(20);
-var toIObject = __webpack_require__(21);
-var arrayIndexOf = __webpack_require__(134)(false);
-var IE_PROTO = __webpack_require__(63)('IE_PROTO');
+var has = __webpack_require__(27);
+var toIObject = __webpack_require__(28);
+var arrayIndexOf = __webpack_require__(163)(false);
+var IE_PROTO = __webpack_require__(82)('IE_PROTO');
 
 module.exports = function (object, names) {
   var O = toIObject(object);
@@ -9636,11 +13235,11 @@ module.exports = function (object, names) {
 
 
 /***/ }),
-/* 89 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(37);
+var cof = __webpack_require__(48);
 // eslint-disable-next-line no-prototype-builtins
 module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
   return cof(it) == 'String' ? it.split('') : Object(it);
@@ -9648,21 +13247,21 @@ module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
 
 
 /***/ }),
-/* 90 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var document = __webpack_require__(12).document;
+var document = __webpack_require__(14).document;
 module.exports = document && document.documentElement;
 
 
 /***/ }),
-/* 91 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(20);
-var toObject = __webpack_require__(38);
-var IE_PROTO = __webpack_require__(63)('IE_PROTO');
+var has = __webpack_require__(27);
+var toObject = __webpack_require__(49);
+var IE_PROTO = __webpack_require__(82)('IE_PROTO');
 var ObjectProto = Object.prototype;
 
 module.exports = Object.getPrototypeOf || function (O) {
@@ -9675,12 +13274,12 @@ module.exports = Object.getPrototypeOf || function (O) {
 
 
 /***/ }),
-/* 92 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.7 / 15.2.3.4 Object.getOwnPropertyNames(O)
-var $keys = __webpack_require__(88);
-var hiddenKeys = __webpack_require__(65).concat('length', 'prototype');
+var $keys = __webpack_require__(111);
+var hiddenKeys = __webpack_require__(84).concat('length', 'prototype');
 
 exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
   return $keys(O, hiddenKeys);
@@ -9688,17 +13287,17 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O) {
 
 
 /***/ }),
-/* 93 */
+/* 116 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 94 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // call something on iterator step with safe closing on error
-var anObject = __webpack_require__(14);
+var anObject = __webpack_require__(18);
 module.exports = function (iterator, fn, value, entries) {
   try {
     return entries ? fn(anObject(value)[0], value[1]) : fn(value);
@@ -9712,12 +13311,12 @@ module.exports = function (iterator, fn, value, entries) {
 
 
 /***/ }),
-/* 95 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // check on default Array iterator
-var Iterators = __webpack_require__(28);
-var ITERATOR = __webpack_require__(10)('iterator');
+var Iterators = __webpack_require__(38);
+var ITERATOR = __webpack_require__(11)('iterator');
 var ArrayProto = Array.prototype;
 
 module.exports = function (it) {
@@ -9726,13 +13325,13 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 96 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.3.20 SpeciesConstructor(O, defaultConstructor)
-var anObject = __webpack_require__(14);
-var aFunction = __webpack_require__(46);
-var SPECIES = __webpack_require__(10)('species');
+var anObject = __webpack_require__(18);
+var aFunction = __webpack_require__(63);
+var SPECIES = __webpack_require__(11)('species');
 module.exports = function (O, D) {
   var C = anObject(O).constructor;
   var S;
@@ -9741,7 +13340,7 @@ module.exports = function (O, D) {
 
 
 /***/ }),
-/* 97 */
+/* 120 */
 /***/ (function(module, exports) {
 
 module.exports = function (exec) {
@@ -9754,12 +13353,12 @@ module.exports = function (exec) {
 
 
 /***/ }),
-/* 98 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(14);
-var isObject = __webpack_require__(17);
-var newPromiseCapability = __webpack_require__(73);
+var anObject = __webpack_require__(18);
+var isObject = __webpack_require__(24);
+var newPromiseCapability = __webpack_require__(92);
 
 module.exports = function (C, x) {
   anObject(C);
@@ -9772,10 +13371,10 @@ module.exports = function (C, x) {
 
 
 /***/ }),
-/* 99 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ITERATOR = __webpack_require__(10)('iterator');
+var ITERATOR = __webpack_require__(11)('iterator');
 var SAFE_CLOSING = false;
 
 try {
@@ -9800,7 +13399,7 @@ module.exports = function (exec, skipClosing) {
 
 
 /***/ }),
-/* 100 */
+/* 123 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -9990,25 +13589,13 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 101 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(177), __esModule: true };
-
-/***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = { "default": __webpack_require__(179), __esModule: true };
-
-/***/ }),
-/* 103 */
+/* 124 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector2__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector2__ = __webpack_require__(42);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -10217,13 +13804,13 @@ var Matrix = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Matrix);
 
 /***/ }),
-/* 104 */
+/* 125 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector2__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector2__ = __webpack_require__(42);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -10339,6 +13926,34 @@ var Rectangle = function () {
         return x === this.x && y === this.y && width === this.width && height === this.height;
       }
     }
+  }, {
+    key: 'translate',
+    value: function translate(tx, ty) {
+      if (tx instanceof __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */]) {
+        ty = tx.y;
+        tx = tx.x;
+      }
+
+      this.x += tx;
+      this.y += ty;
+
+      return this;
+    }
+  }, {
+    key: 'scale',
+    value: function scale(sx, sy) {
+      if (sx instanceof __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */]) {
+        sy = sx.y;
+        sx = sx.x;
+      } else if (sy === undefined) {
+        sy = sx;
+      }
+
+      this.width *= sx;
+      this.height *= sy;
+
+      return this;
+    }
 
     /**
      * Rounds this rectangle's values
@@ -10364,6 +13979,32 @@ var Rectangle = function () {
     value: function getSize() {
       return new __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */](this.width, this.height);
     }
+  }, {
+    key: 'insetBy',
+    value: function insetBy(dx, dy) {
+      this.x += dx;
+      this.y += dy;
+
+      this.width -= 2 * dx;
+      this.height -= 2 * dy;
+
+      return this;
+    }
+  }, {
+    key: 'intersects',
+    value: function intersects(rect) {
+      var p1 = new __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */](this.x, this.y);
+      var p2 = new __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */](this.x + this.width, this.y + this.height);
+
+      var q1 = new __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */](rect.x, rect.y);
+      var q2 = new __WEBPACK_IMPORTED_MODULE_1__vector2__["a" /* default */](rect.x + rect.width, rect.y + rect.height);
+
+      if (q1.x > p2.x || p1.x > q2.x || q2.y < p1.y || p2.y < q1.y) {
+        return false;
+      }
+
+      return true;
+    }
 
     /**
      * Returns a string representation of this rectangle
@@ -10375,6 +14016,22 @@ var Rectangle = function () {
     value: function toString() {
       return 'Rectangle({ x: ' + this.x + ', y: ' + this.y + ', width: ' + this.width + ', height: ' + this.height + ' })';
     }
+  }], [{
+    key: 'FromDiagonalPoints',
+    value: function FromDiagonalPoints(p1, p2) {
+      var inverted = false;
+
+      if (p2.x - p1.x < 0) {
+        inverted = true;
+      }
+
+      var topLeft = inverted ? p2 : p1;
+      var bottomRight = inverted ? p1 : p2;
+      var width = bottomRight.x - topLeft.x;
+      var height = bottomRight.y - topLeft.y;
+
+      return new Rectangle(topLeft.x, topLeft.y, width, height);
+    }
   }]);
 
   return Rectangle;
@@ -10383,13 +14040,13 @@ var Rectangle = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Rectangle);
 
 /***/ }),
-/* 105 */
+/* 126 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_log__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_log__ = __webpack_require__(30);
 
 
 function _defineProperty(obj, key, value) { if (key in obj) { __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -10433,13 +14090,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { __WEBPACK_IMPORTED
 });
 
 /***/ }),
-/* 106 */
+/* 127 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -10462,7 +14119,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  */
 
 
-var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(107);
+var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(128);
 
 /**
  * Hooks into a rendering context (WebGLRenderingContext or CanvasRenderingContext2D),
@@ -10605,7 +14262,7 @@ var ContextPerformanceHook = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ContextPerformanceHook);
 
 /***/ }),
-/* 107 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -10641,10 +14298,10 @@ var ContextPerformanceHook = function () {
 
 }).call(this);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(100)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(123)))
 
 /***/ }),
-/* 108 */
+/* 129 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10656,8 +14313,8 @@ var ContextPerformanceHook = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_utils__ = __webpack_require__(181);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_utils__ = __webpack_require__(210);
 
 
 
@@ -10995,7 +14652,7 @@ var BaseRenderer = function (_EventEmitter) {
 /* harmony default export */ __webpack_exports__["a"] = (BaseRenderer);
 
 /***/ }),
-/* 109 */
+/* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11096,7 +14753,7 @@ var ObjectRenderer = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ObjectRenderer);
 
 /***/ }),
-/* 110 */
+/* 131 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11168,13 +14825,13 @@ var PixelArrayImage = function () {
 /* harmony default export */ __webpack_exports__["a"] = (PixelArrayImage);
 
 /***/ }),
-/* 111 */
+/* 132 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -11182,8 +14839,8 @@ var PixelArrayImage = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__display_object__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__display_object__ = __webpack_require__(97);
 
 
 
@@ -11526,7 +15183,7 @@ var Container = function (_DisplayObject) {
 /* harmony default export */ __webpack_exports__["a"] = (Container);
 
 /***/ }),
-/* 112 */
+/* 133 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11538,9 +15195,9 @@ var Container = function (_DisplayObject) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__base_texture__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_texture_uvs__ = __webpack_require__(189);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__base_texture__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils_texture_uvs__ = __webpack_require__(218);
 
 
 
@@ -11799,13 +15456,13 @@ var Texture = function (_EventEmitter) {
 /* harmony default export */ __webpack_exports__["a"] = (Texture);
 
 /***/ }),
-/* 113 */
+/* 134 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color__ = __webpack_require__(51);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -12241,14 +15898,14 @@ var ColorMatrix = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ColorMatrix);
 
 /***/ }),
-/* 114 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_url__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_url__ = __webpack_require__(237);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_url___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_url__);
 
 
@@ -12460,19 +16117,19 @@ var JSONLoader = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["a"] = (JSONLoader);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(41)))
 
 /***/ }),
-/* 115 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vector2__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector3__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rectangle__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__matrix__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__color_matrix__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vector2__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vector3__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__rectangle__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__matrix__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__color_matrix__ = __webpack_require__(134);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Vector2", function() { return __WEBPACK_IMPORTED_MODULE_0__vector2__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Vector3", function() { return __WEBPACK_IMPORTED_MODULE_1__vector3__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Rectangle", function() { return __WEBPACK_IMPORTED_MODULE_2__rectangle__["a"]; });
@@ -12506,12 +16163,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 116 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__exif_orientation_operation__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__exif_orientation_operation__ = __webpack_require__(247);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ExifOrientationOperation", function() { return __WEBPACK_IMPORTED_MODULE_0__exif_orientation_operation__["a"]; });
 /* @module */
 /*
@@ -12535,7 +16192,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 117 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12547,12 +16204,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_log__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__engine___ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_configurable__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_performance_test__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_log__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__engine___ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_configurable__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_performance_test__ = __webpack_require__(139);
 
 
 
@@ -12906,13 +16563,13 @@ Operation.identifier = null;
 /* harmony default export */ __webpack_exports__["a"] = (Operation);
 
 /***/ }),
-/* 118 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(40);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -12936,7 +16593,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 /* istanbul ignore next */
-var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(107);
+var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(128);
 
 /**
  * A simple class that tracks the time between start and end and renders it as FPS
@@ -12981,7 +16638,7 @@ var PerformanceTest = function () {
 /* harmony default export */ __webpack_exports__["a"] = (PerformanceTest);
 
 /***/ }),
-/* 119 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12993,9 +16650,9 @@ var PerformanceTest = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__event_emitter__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__event_emitter__ = __webpack_require__(52);
 
 
 
@@ -13375,13 +17032,13 @@ var OperationsStack = function (_EventEmitter) {
 /* harmony default export */ __webpack_exports__["a"] = (OperationsStack);
 
 /***/ }),
-/* 120 */
+/* 141 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"photoeditorsdk","version":"4.8.0","description":"The most comprehensive photo editor SDK for HTML5","repository":"http://github.com/imgly/pesdk-html5","author":"PhotoEditorSDK (9elements GmbH) <contact@photoeditorsdk.com>","license":"SEE LICENSE IN LICENSE.md","bin":{},"scripts":{"start":"npm run watch","release":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_RELEASE=true webpack --progress --colors && cross-env npm run prerender-desktop-css && rimraf build/examples/qa-* && rimraf build/examples/ci-* && rimraf build/**/dev.*","release:production":"cross-env ENV=production npm run release && rm -rf build/examples/shared","release:test":"cross-env ENV=test PESDK_CLEAN=true PESDK_ASSETS=true webpack && npm run prerender-desktop-css","release:development":"cross-env ENV=development PESDK_CLEAN=true PESDK_ASSETS=true npm run release","lint":"eslint --ext .jsx,.js src/js","lint:test":"eslint --ext .jsx,.js test","lint:sdk":"eslint --ext .jsx,.js src/js/sdk","lint:ui":"eslint --ext .jsx,.js src/js/ui","lint:ui:react-ui":"eslint --ext .jsx,.js src/js/ui/react-ui","lint:ui:desktop-ui":"eslint --ext .jsx,.js src/js/ui/desktop-ui","build":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true webpack","rebuild":"cross-env PESDK_ASSETS=true webpack --progress --color","clean":"rimraf build/* doc/* dist/*","watch":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_SERVE=true webpack --watch --progress --colors","watch:test":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true ENV=test webpack --watch --progress --colors","watch:production":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_SERVE=true webpack --watch --progress --colors","test":"npm run test:sdk && npm run test:ui && npm run test:ui:react-ui && npm run test:desktop-ui && npm run server","test:ui":"cross-env ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/ui","test:sdk":"cross-env ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/sdk","test:ui:react-ui":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/react-ui/support/helpers test/shared/run-server.js \"test/react-ui/*.test.js\" \"test/react-ui/**/*.test.js\"","test:ui:desktop-ui":"cross-env ENV=test node --stack-size=65500  node_modules/.bin/mocha --require test/desktop-ui/support/helpers test/shared/run-server.js \"test/desktop-ui/*.test.js\" \"test/desktop-ui/**/*.test.js\"","test:server":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/sdk/support/modules --require test/server/support/helpers test/shared/run-server.js \"test/server/*.test.js\" \"test/server/**/*.test.js\"","test:comparison":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/sdk/support/modules --require test/comparison/support/helpers \"test/comparison/*.test.js\" \"test/comparison/**/*.test.js\"","test:webgl":"cross-env RENDERER=webgl ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/sdk","jsdoc":"rimraf doc/photoeditorsdk && jsdoc -c config/jsdoc/jsdoc.json -r","jsdoc:server":"rimraf doc/photoeditorsdk-server && jsdoc -c config/jsdoc/jsdoc.server.json -r","render-filter-previews":"node scripts/run render-filter-previews","prerender-desktop-css":"node scripts/run render-desktop-ui-css","dist:sdk":"rimraf dist/photoeditorsdk && cp -r build/photoeditorsdk/ dist/photoeditorsdk && find dist/photoeditorsdk -d 2 -name '*.min.*'  | sed 'p;s/.min././' | xargs -n2 cp && npm run jsdoc","dist:server":"rimraf dist/photoeditorsdk-server && cp -r build/photoeditorsdk-server/ dist/photoeditorsdk-server && find dist/photoeditorsdk-server -d 2 -name '*.min.*'  | sed 's/.min././' | xargs -n1 rm && npm run jsdoc:server","precommit":"true","prepush":"npm run lint"},"devDependencies":{"adonis":"git://github.com/imgly/adonis.git#v1.0.1","ajv":"^5.5.1","babel-core":"^6.26.0","babel-eslint":"^8.2.1","babel-loader":"^7.1.2","babel-minify-webpack-plugin":"^0.2.0","babel-plugin-external-helpers":"^6.22.0","babel-plugin-transform-adonis-hash":"^0.4.0","babel-plugin-transform-class-properties":"^6.19.0","babel-plugin-transform-es2015-classes":"^6.6.4","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-plugin-transform-proto-to-assign":"^6.26.0","babel-plugin-transform-runtime":"^6.6.0","babel-preset-env":"^1.6.1","babel-preset-es2015":"^6.6.0","babel-preset-minify":"^0.2.0","babel-preset-react":"^6.5.0","babel-preset-stage-3":"^6.24.1","babel-register":"^6.26.0","babel-runtime":"^6.26.0","chai":"^3.4.0","chai-as-promised":"^5.1.0","chromedriver":"^2.37.0","chalk":"^2.4.1","circular-json-es6":"^2.0.2","classnames":"^2.1.3","clean-webpack-plugin":"^0.1.16","compass-mixins":"^0.12.8","copy-webpack-plugin":"^4.3.0","cross-env":"^5.1.1","css-loader":"^0.28.7","del":"^2.0.0","djv":"^1.2.0","eslint":"^4.16.0","eslint-config-standard":"^11.0.0","eslint-plugin-import":"^2.10.0","eslint-plugin-mocha":"^5.0.0","eslint-plugin-node":"^6.0.1","eslint-plugin-promise":"^3.7.0","eslint-plugin-standard":"^3.0.1","express":"^4.16.2","extract-text-webpack-plugin":"^3.0.2","husky":"^0.14.3","inquirer":"^0.11.4","inquirer-path":"^1.0.0-beta5","isomorphic-fetch":"^2.2.1","jaguarjs-jsdoc":"git://github.com/imgly/jaguarjs-jsdoc.git#master","jsdoc":"^3.5.5","json-loader":"^0.5.7","lodash":"^4.17.4","minimist":"^1.2.0","mkdirp":"^0.5.1","mocha":"^3.5.3","nightwatch":"git://github.com/imgly/nightwatch.git#feature/file-upload-and-multiple-selectors","node-sass":"^4.7.2","node-static":"^0.7.10","optimize-css-assets-webpack-plugin":"^3.2.0","performance-now":"^0.2.0","pixelmatch":"^4.0.2","pngjs":"^3.3.2","preprocess-loader":"^0.2.2","pretty-error":"^2.0.0","prompt":"^1.0.0","prop-types":"^15.6.0","raw-loader":"^0.5.1","react":"^16.2.0","react-dom":"^16.2.0","rembrandt":"^0.1.3","rimraf":"^2.6.2","sass-loader":"^6.0.6","selenium-server-standalone-jar":"3.4.0","should":"^4.3.0","sinon":"^1.17.3","sinon-chai":"^2.14.0","standard":"^9.0.2","standard-loader":"^6.0.1","stats.js":"^0.16.0","style-loader":"^0.13.1","term-img2":"^2.0.1","transform-loader":"^0.2.2","uglifyjs-webpack-plugin":"^1.2.5","vinyl-source-stream":"0.1.1","webpack":"^3.10.0","webpack-notifier":"^1.2.1"},"standard":{"globals":["describe","context","before","beforeEach","after","afterEach","it","expect"],"parser":"babel-eslint"},"dependencies":{"canvas":"git://github.com/imgly/node-canvas.git#v2.0.0-alpha.9","gl":"^4.0.4","request":"^2.83.0"}}
+module.exports = {"name":"photoeditorsdk","version":"4.9.0","description":"The most comprehensive photo editor SDK for HTML5","repository":"http://github.com/imgly/pesdk-html5","author":"PhotoEditorSDK (9elements GmbH) <contact@photoeditorsdk.com>","license":"SEE LICENSE IN LICENSE.md","bin":{},"scripts":{"start":"npm run watch","release":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_RELEASE=true webpack --progress --colors && cross-env npm run prerender-desktop-css && rimraf build/examples/qa-* && rimraf build/examples/ci-* && rimraf build/**/dev.*","release:production":"cross-env ENV=production npm run release && rm -rf build/examples/shared","release:test":"cross-env ENV=test PESDK_CLEAN=true PESDK_ASSETS=true webpack && npm run prerender-desktop-css","release:development":"cross-env ENV=development PESDK_CLEAN=true PESDK_ASSETS=true npm run release","lint":"eslint --ext .jsx,.js src/js","lint:test":"eslint --ext .jsx,.js test","lint:sdk":"eslint --ext .jsx,.js src/js/sdk","lint:ui":"eslint --ext .jsx,.js src/js/ui","lint:ui:react-ui":"eslint --ext .jsx,.js src/js/ui/react-ui","lint:ui:desktop-ui":"eslint --ext .jsx,.js src/js/ui/desktop-ui","build":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true webpack","rebuild":"cross-env PESDK_ASSETS=true webpack --progress --color","clean":"rimraf build/* doc/* dist/*","watch":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_SERVE=true webpack --watch --progress --colors","watch:test":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true ENV=test webpack --watch --progress --colors","watch:production":"cross-env PESDK_CLEAN=true PESDK_ASSETS=true PESDK_SERVE=true webpack --watch --progress --colors","test":"npm run test:sdk && npm run test:ui && npm run test:ui:react-ui && npm run test:desktop-ui && npm run server","test:ui":"cross-env ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/ui","test:sdk":"cross-env ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/sdk","test:ui:react-ui":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/react-ui/support/helpers test/shared/run-server.js \"test/react-ui/*.test.js\" \"test/react-ui/**/*.test.js\"","test:ui:desktop-ui":"cross-env ENV=test node --stack-size=65500  node_modules/.bin/mocha --require test/desktop-ui/support/helpers test/shared/run-server.js \"test/desktop-ui/*.test.js\" \"test/desktop-ui/**/*.test.js\"","test:server":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/sdk/support/modules --require test/server/support/helpers test/shared/run-server.js \"test/server/*.test.js\" \"test/server/**/*.test.js\"","test:comparison":"cross-env ENV=test node --stack-size=65500 node_modules/.bin/mocha --require test/sdk/support/modules --require test/comparison/support/helpers \"test/comparison/*.test.js\" \"test/comparison/**/*.test.js\"","test:webgl":"cross-env RENDERER=webgl ENV=test node_modules/.bin/mocha --require test/sdk/support/modules --require test/sdk/support/helpers test/sdk","jsdoc":"rimraf doc/photoeditorsdk && jsdoc -c config/jsdoc/jsdoc.json -r","jsdoc:server":"rimraf doc/photoeditorsdk-server && jsdoc -c config/jsdoc/jsdoc.server.json -r","render-filter-previews":"node scripts/run render-filter-previews","prerender-desktop-css":"node scripts/run render-desktop-ui-css","dist:sdk":"rimraf dist/photoeditorsdk && cp -r build/photoeditorsdk/ dist/photoeditorsdk && find dist/photoeditorsdk -d 2 -name '*.min.*'  | sed 'p;s/.min././' | xargs -n2 cp && npm run jsdoc","dist:server":"rimraf dist/photoeditorsdk-server && cp -r build/photoeditorsdk-server/ dist/photoeditorsdk-server && find dist/photoeditorsdk-server -d 2 -name '*.min.*'  | sed 's/.min././' | xargs -n1 rm && npm run jsdoc:server","precommit":"true","prepush":"npm run lint"},"devDependencies":{"adonis":"git://github.com/imgly/adonis.git#v1.0.1","ajv":"^5.5.1","babel-core":"^6.26.0","babel-eslint":"^8.2.1","babel-loader":"^7.1.2","babel-minify-webpack-plugin":"^0.2.0","babel-plugin-external-helpers":"^6.22.0","babel-plugin-transform-adonis-hash":"^0.4.0","babel-plugin-transform-class-properties":"^6.19.0","babel-plugin-transform-es2015-classes":"^6.6.4","babel-plugin-transform-object-rest-spread":"^6.26.0","babel-plugin-transform-proto-to-assign":"^6.26.0","babel-plugin-transform-runtime":"^6.6.0","babel-preset-env":"^1.6.1","babel-preset-es2015":"^6.6.0","babel-preset-minify":"^0.2.0","babel-preset-react":"^6.5.0","babel-preset-stage-3":"^6.24.1","babel-register":"^6.26.0","babel-runtime":"^6.26.0","chai":"^3.4.0","chai-as-promised":"^5.1.0","chalk":"^2.4.1","chromedriver":"^2.37.0","circular-json-es6":"^2.0.2","classnames":"^2.1.3","clean-webpack-plugin":"^0.1.16","compass-mixins":"^0.12.8","copy-webpack-plugin":"^4.3.0","cross-env":"^5.1.1","css-loader":"^0.28.7","del":"^2.0.0","djv":"^1.2.0","eslint":"^4.16.0","eslint-config-standard":"^11.0.0","eslint-plugin-import":"^2.10.0","eslint-plugin-mocha":"^5.0.0","eslint-plugin-node":"^6.0.1","eslint-plugin-promise":"^3.7.0","eslint-plugin-standard":"^3.0.1","express":"^4.16.2","extract-text-webpack-plugin":"^3.0.2","husky":"^0.14.3","inquirer":"^0.11.4","inquirer-path":"^1.0.0-beta5","isomorphic-fetch":"^2.2.1","jaguarjs-jsdoc":"git://github.com/imgly/jaguarjs-jsdoc.git#master","jsdoc":"^3.5.5","json-loader":"^0.5.7","lodash":"^4.17.4","minimist":"^1.2.0","mkdirp":"^0.5.1","mocha":"^3.5.3","nightwatch":"git://github.com/imgly/nightwatch.git#feature/file-upload-and-multiple-selectors","node-sass":"^4.7.2","node-static":"^0.7.10","optimize-css-assets-webpack-plugin":"^3.2.0","performance-now":"^0.2.0","pixelmatch":"^4.0.2","pngjs":"^3.3.2","preprocess-loader":"^0.2.2","pretty-error":"^2.0.0","prompt":"^1.0.0","prop-types":"^15.6.0","raw-loader":"^0.5.1","react":"^16.2.0","react-dom":"^16.2.0","rembrandt":"^0.1.3","rimraf":"^2.6.2","sass-loader":"^6.0.6","selenium-server-standalone-jar":"3.4.0","should":"^4.3.0","sinon":"^1.17.3","sinon-chai":"^2.14.0","standard":"^9.0.2","standard-loader":"^6.0.1","stats.js":"^0.16.0","style-loader":"^0.13.1","term-img2":"^2.0.1","transform-loader":"^0.2.2","uglifyjs-webpack-plugin":"^1.2.5","vinyl-source-stream":"0.1.1","webpack":"^3.10.0","webpack-notifier":"^1.2.1"},"standard":{"globals":["describe","context","before","beforeEach","after","afterEach","it","expect"],"parser":"babel-eslint"},"dependencies":{"canvas":"git://github.com/Automattic/node-canvas.git#v2.0.0-alpha.12","gl":"^4.0.4","opn":"^5.3.0","request":"^2.83.0"}}
 
 /***/ }),
-/* 121 */
+/* 142 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13436,7 +17093,7 @@ var AdjustmentsFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (AdjustmentsFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(AdjustmentsFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(232);
+    _this._fragmentSource = __webpack_require__(261);
     return _this;
   }
 
@@ -13531,13 +17188,13 @@ AdjustmentsFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (AdjustmentsFilter);
 
 /***/ }),
-/* 122 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -13547,7 +17204,7 @@ AdjustmentsFilter.prototype.availableOptions = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vendor_stack_blur__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vendor_stack_blur__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__vendor_stack_blur___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__vendor_stack_blur__);
 
 
@@ -13599,7 +17256,7 @@ var BlurFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = BlurFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(BlurFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(236);
+    _this._fragmentSource = __webpack_require__(265);
 
     _this._lastBlurRadius = null;
     _this._lastDimensions = new Vector2(0, 0);
@@ -13689,7 +17346,7 @@ BlurFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (BlurFilter);
 
 /***/ }),
-/* 123 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -13703,7 +17360,7 @@ BlurFilter.prototype.availableOptions = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(7);
 
 
 
@@ -13791,11 +17448,11 @@ IdentityFilter.identifier = 'identity';
 /* harmony default export */ __webpack_exports__["a"] = (IdentityFilter);
 
 /***/ }),
-/* 124 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
@@ -13807,7 +17464,7 @@ IdentityFilter.identifier = 'identity';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(12);
 
 
 
@@ -13856,7 +17513,7 @@ var LookupTableFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = LookupTableFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(LookupTableFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(256);
+    _this._fragmentSource = __webpack_require__(285);
     return _this;
   }
 
@@ -14018,13 +17675,13 @@ var LookupTable = function (_Primitive) {
 /* harmony default export */ __webpack_exports__["a"] = (LookupTable);
 
 /***/ }),
-/* 125 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -14034,10 +17691,10 @@ var LookupTable = function (_Primitive) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__brush_path__ = __webpack_require__(313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__brush_path__ = __webpack_require__(342);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__sprite__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__brush_brushes_brush__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__brush_brushes_radial_brush__ = __webpack_require__(315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__brush_brushes_brush__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__brush_brushes_radial_brush__ = __webpack_require__(344);
 
 
 
@@ -14488,7 +18145,7 @@ var BrushSprite = function (_Sprite) {
     key: 'dispose',
     value: function dispose() {
       _get(BrushSprite.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(BrushSprite.prototype), 'dispose', this).call(this);
-      this._texture.getBaseTexture().dispose();
+      this._texture && this._texture.getBaseTexture().dispose();
     }
   }]);
 
@@ -14539,7 +18196,7 @@ BrushSprite.Brushes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrushSprite);
 
 /***/ }),
-/* 126 */
+/* 147 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14690,7 +18347,1487 @@ Brush.prototype.availableOptions = {
 };
 
 /***/ }),
-/* 127 */
+/* 148 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016 9elements GbmH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var MaskFilter = function (_Engine$Filter) {
+  _inherits(MaskFilter, _Engine$Filter);
+
+  function MaskFilter() {
+    _classCallCheck(this, MaskFilter);
+
+    var _this = _possibleConstructorReturn(this, (MaskFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(MaskFilter)).call(this));
+
+    _this._fragmentSource = __webpack_require__(345);
+    return _this;
+  }
+
+  /**
+   * Applies this filter to the given inputTarget and renders it to
+   * the given outputTarget using the CanvasRenderer
+   * @param  {PhotoEditorSDK.Engine.CanvasRenderer} renderer
+   * @param  {PhotoEditorSDK.Engine.RenderTarget} inputTarget
+   * @param  {PhotoEditorSDK.Engine.RenderTarget} outputTarget
+   * @param  {Boolean} clear = false
+   * @private
+   */
+
+
+  _createClass(MaskFilter, [{
+    key: '_applyCanvas',
+    value: function _applyCanvas(renderer, inputTarget, outputTarget) {
+      var clear = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+      var inputCanvas = inputTarget.getCanvas();
+
+      var inputContext = inputTarget.getContext();
+      var outputContext = outputTarget.getContext();
+
+      var _options = this._options,
+          maskCanvas = _options.maskCanvas,
+          filterCanvas = _options.filterCanvas;
+
+      var maskContext = maskCanvas.getContext('2d');
+      var filterContext = filterCanvas.getContext('2d');
+
+      var maskPixels = maskContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height).data;
+      var existingImageData = inputContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height);
+      var existingPixels = existingImageData.data;
+      var newPixels = filterContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height).data;
+
+      var alpha = void 0;
+      for (var i = 0; i < inputCanvas.width * inputCanvas.height * 4; i += 4) {
+        alpha = maskPixels[i] / 255;
+
+        existingPixels[i] = alpha * newPixels[i] + (1 - alpha) * existingPixels[i];
+        existingPixels[i + 1] = alpha * newPixels[i + 1] + (1 - alpha) * existingPixels[i + 1];
+        existingPixels[i + 2] = alpha * newPixels[i + 2] + (1 - alpha) * existingPixels[i + 2];
+      }
+
+      outputContext.putImageData(existingImageData, 0, 0);
+    }
+  }]);
+
+  return MaskFilter;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Engine"].Filter);
+
+MaskFilter.prototype.availableOptions = {
+  maskImage: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1, uniformType: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["UniformType"].INT },
+  maskCanvas: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  filterImage: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 2, uniformType: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["UniformType"].INT },
+  filterCanvas: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (MaskFilter);
+
+/***/ }),
+/* 149 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_splitter__ = __webpack_require__(150);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var Vector2 = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Math"].Vector2;
+
+var TextRenderer = function () {
+  function TextRenderer(text, operation) {
+    _classCallCheck(this, TextRenderer);
+
+    this._text = text;
+    this._operation = operation;
+    this._textOptions = {};
+
+    this.rotation = 0;
+
+    this._createCanvas();
+    this._createTexture();
+  }
+
+  /**
+   * Creates the canvas and initializes the text splitter
+   * @private
+   */
+
+
+  _createClass(TextRenderer, [{
+    key: '_createCanvas',
+    value: function _createCanvas() {
+      this._canvas = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Utils"].createCanvas();
+      this._context = this._canvas.getContext('2d');
+      this._textSplitter = new __WEBPACK_IMPORTED_MODULE_2__text_splitter__["a" /* default */](this._context);
+
+      this._finalCanvas = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Utils"].createCanvas();
+      this._finalContext = this._finalCanvas.getContext('2d');
+    }
+
+    /**
+     * Creates the texture
+     * @private
+     */
+
+  }, {
+    key: '_createTexture',
+    value: function _createTexture() {
+      this._texture = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Engine"].Texture.fromCanvas(this._canvas);
+      this._finalTexture = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Engine"].Texture.fromCanvas(this._finalCanvas);
+    }
+
+    /**
+     * Applies the text options on the given context
+     * @param  {Object} textOptions
+     * @param  {CanvasRenderingContext2D} context
+     * @private
+     */
+
+  }, {
+    key: '_applyTextOptions',
+    value: function _applyTextOptions(textOptions, context) {
+      context.font = this._text.getFontStyle() + ' ' + this._text.getFontWeight() + ' ' + textOptions.fontSize + 'px ' + '"' + this._text.getFontFamily() + '"';
+
+      context.textBaseline = 'top';
+      context.textAlign = this._text.getAlignment();
+      context.fillStyle = this._text.getColor().toRGBA();
+
+      context.strokeStyle = this._text.getOutlineColor().toRGBA();
+      var outlineWidth = this._text.getOutlineWidth();
+      if (outlineWidth > 0) {
+        context.lineWidth = outlineWidth;
+      }
+    }
+
+    /**
+     * Iterate over all lines and split them into multiple lines, depending
+     * on the width they need
+     * @param {Number} maxWidth
+     * @return {Array.<string>}
+     * @private
+     */
+
+  }, {
+    key: '_buildOutputLines',
+    value: function _buildOutputLines(maxWidth) {
+      this._textSplitter.setText(this._text.getText());
+      this._textSplitter.setMaxWidth(maxWidth);
+      return this._textSplitter.getLines();
+    }
+
+    /**
+     * Draws the given line onto context at the given Y position
+     * @param  {String} text
+     * @param  {Number} y
+     * @private
+     */
+
+  }, {
+    key: '_renderTextLine',
+    value: function _renderTextLine(text, y) {
+      var textAlignment = this._text.getAlignment();
+      var drawPosition = new Vector2(0, y); // Left alignment
+
+      switch (textAlignment) {
+        case 'center':
+          drawPosition.x = this._canvas.width / 2;
+          break;
+        case 'right':
+          drawPosition.x = this._canvas.width;
+          break;
+      }
+
+      this._context.fillText(text, drawPosition.x, drawPosition.y);
+      var outlineWidth = this._text.getOutlineWidth();
+      if (outlineWidth > 0) {
+        this._context.miterLimit = 2;
+        this._context.strokeText(text, drawPosition.x, drawPosition.y);
+      }
+    }
+
+    /**
+     * Renders this sprite
+     * @param  {PhotoEditorSDK} sdk
+     * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
+     */
+
+  }, {
+    key: 'update',
+    value: function update(sdk, inputDimensions) {
+      var textOptions = this.calculateFontStyles(sdk, inputDimensions);
+      if (textOptions) {
+        var _calculateText2 = this._calculateText(sdk, textOptions, inputDimensions),
+            dimensions = _calculateText2.dimensions,
+            lines = _calculateText2.lines;
+
+        this._renderText(sdk, dimensions, lines, textOptions, inputDimensions);
+        this._updateFinalTexture();
+      }
+    }
+
+    /**
+     * Renders the rotated text on the final texture
+     * @private
+     */
+
+  }, {
+    key: '_updateFinalTexture',
+    value: function _updateFinalTexture() {
+      var _canvas = this._canvas,
+          width = _canvas.width,
+          height = _canvas.height;
+
+      var rotation = this.rotation;
+      var cos = Math.cos(rotation);
+      var sin = Math.sin(rotation);
+
+      var finalDimensions = new Vector2(Math.abs(width * cos) + Math.abs(height * sin), Math.abs(width * sin) + Math.abs(height * cos));
+
+      this._finalCanvas.width = finalDimensions.x;
+      this._finalCanvas.height = finalDimensions.y;
+
+      this._finalContext.save();
+      this._finalContext.translate(this._finalCanvas.width / 2, this._finalCanvas.height / 2);
+      this._finalContext.rotate(rotation);
+      this._finalContext.drawImage(this._canvas, -width / 2, -height / 2);
+      this._finalContext.restore();
+    }
+
+    /**
+     * Renders the text
+     * @param  {PhotoEditorSDK} sdk
+     * @param  {Vector2} dimensions
+     * @param  {Array.<String>} lines
+     * @param  {Object} textOptions
+     * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
+     * @private
+     */
+
+  }, {
+    key: '_renderText',
+    value: function _renderText(sdk, dimensions, lines, textOptions, inputDimensions) {
+      // Resize the canvas
+      this._canvas.width = dimensions.x;
+      this._canvas.height = dimensions.y;
+
+      if (this._text.getMaxHeight()) {
+        this._canvas.height = Math.min(this._text.getMaxHeight() * inputDimensions.y, this._canvas.height);
+      }
+
+      // Update the context
+      this._context = this._canvas.getContext('2d');
+
+      // Render background color
+      this._context.fillStyle = this._text.getBackgroundColor().toRGBA();
+      this._context.fillRect(0, 0, dimensions.x, dimensions.y);
+
+      // Apply text options
+      this._applyTextOptions(textOptions, this._context);
+
+      // Draw lines
+      for (var lineNum = 0; lineNum < lines.length; lineNum++) {
+        var line = lines[lineNum];
+        this._renderTextLine(line, textOptions.topPadding + textOptions.lineHeight * lineNum);
+      }
+    }
+
+    /**
+     * Calculates the actual font size and line height
+     * @param  {PhotoEditorSDK} sdk
+     * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
+     */
+
+  }, {
+    key: 'calculateFontStyles',
+    value: function calculateFontStyles(sdk, inputDimensions) {
+      var fontFamily = this._text.getFontFamily();
+      var fontSize = this._text.getFontSize() * inputDimensions.y;
+      var textHeight = this._text.getAbsoluteTextHeight(inputDimensions);
+      var lineHeight = textHeight * this._text.getLineHeight();
+      var topPadding = textHeight * (this._text.getLineHeight() - 1.0) / 2.0;
+
+      var textOptions = { fontFamily: fontFamily, fontSize: fontSize, lineHeight: lineHeight, topPadding: topPadding };
+      if (this._textOptions.fontFamily !== fontFamily || this._textOptions.fontSize !== fontSize || this._textOptions.lineHeight !== lineHeight) {
+        this._textOptions = textOptions;
+      }
+
+      return textOptions;
+    }
+
+    /**
+     * Calculates the dimensions and new lines according to max width
+     * @param  {PhotoEditorSDK} sdk
+     * @param  {Object} textOptions
+     * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_calculateText',
+    value: function _calculateText(sdk, textOptions, inputDimensions) {
+      // Calculate max width
+      var maxWidth = this._text.getMaxWidth() * inputDimensions.x;
+
+      // Apply text options
+      this._applyTextOptions(textOptions, this._context);
+
+      // Calculate bounding box
+      var dimensions = new Vector2();
+      var lines = this._text.getText().split('\n');
+      if (typeof maxWidth !== 'undefined') {
+        // Calculate the bounding box
+        dimensions.x = maxWidth;
+        lines = this._buildOutputLines(maxWidth);
+      } else {
+        for (var lineNum = 0; lineNum < lines.length; lineNum++) {
+          var line = lines[lineNum];
+          dimensions.x = Math.max(dimensions.x, this._context.measureText(line).width);
+        }
+      }
+
+      // Calculate boundingbox height
+      var lineHeight = textOptions.lineHeight;
+
+      dimensions.y = lines.length * lineHeight;
+
+      return { dimensions: dimensions, lines: lines };
+    }
+
+    /**
+     * Returns this renderer's texture
+     * @return {Engine.Texture}
+     */
+
+  }, {
+    key: 'getTexture',
+    value: function getTexture() {
+      return this._texture;
+    }
+
+    /**
+     * Returns this renderer's final texture containing the rotated text
+     * @return {Engine.Texture}
+     */
+
+  }, {
+    key: 'getFinalTexture',
+    value: function getFinalTexture() {
+      return this._finalTexture;
+    }
+
+    /**
+     * Returns the dimensions for this text
+     * @param  {PhotoEditorSDK} sdk
+     * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
+     * @return {Vector2}
+     */
+
+  }, {
+    key: 'getDimensions',
+    value: function getDimensions(sdk, inputDimensions) {
+      var textOptions = this.calculateFontStyles(sdk, inputDimensions);
+
+      var _calculateText3 = this._calculateText(sdk, textOptions, inputDimensions),
+          dimensions = _calculateText3.dimensions;
+
+      return dimensions;
+    }
+
+    /**
+     * Disposes this text renderer
+     */
+
+  }, {
+    key: 'dispose',
+    value: function dispose() {
+      if (this._measurementElement) {
+        document.body.removeChild(this._measurementElement);
+      }
+
+      if (this._texture) {
+        this._texture.getBaseTexture().dispose();
+        this._texture = null;
+      }
+
+      if (this._finalTexture) {
+        this._finalTexture.getBaseTexture().dispose();
+        this._finalTexture = null;
+      }
+    }
+  }]);
+
+  return TextRenderer;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (TextRenderer);
+
+/***/ }),
+/* 150 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var TextSplitter = function () {
+  function TextSplitter(context) {
+    _classCallCheck(this, TextSplitter);
+
+    this._context = context;
+    this._lastFontStyle = {};
+  }
+
+  /**
+   * Returns the lines that fit the maxWidth
+   * @return {Array.<String>}
+   */
+
+
+  _createClass(TextSplitter, [{
+    key: 'getLines',
+    value: function getLines() {
+      var _this = this;
+
+      var lines = [];
+      var newLineWords = [];
+
+      // Iterate over lines
+      var linesCount = this._lines.length;
+      for (var l = 0; l < linesCount; l++) {
+        var line = this._lines[l];
+
+        // Iterate over words
+        var words = this._buildWords(line);
+        var wordsCount = words.length;
+        for (var w = 0; w < wordsCount; w++) {
+          var word = words[w];
+
+          // Check if line is too wide for the maxwidth
+          var currentLine = newLineWords.concat(word).join('').replace(/\s+$/i, '');
+          var width = this._getWidth(currentLine);
+          if (width > this._maxWidth) {
+            // If there have been words before this one, start
+            // a new line
+            if (newLineWords.length > 0) {
+              // Line too long -> line ended
+              lines.push(newLineWords.join(''));
+
+              // Start a new line with the word
+              newLineWords = [word];
+            }
+
+            // If the next word is too long (without trailing spaces), split it up
+            var _word = word.replace(/\s+$/i, '');
+            if (this._getWidth(_word) > this._maxWidth) {
+              var splitWord = this._splitWord(word);
+              lines = lines.concat(splitWord.lines);
+              if (splitWord.rest) {
+                newLineWords = [splitWord.rest];
+              }
+            }
+          } else {
+            newLineWords.push(word);
+          }
+        }
+
+        lines.push(newLineWords.join(''));
+
+        newLineWords = [];
+      }
+
+      return lines.map(function (line) {
+        return _this._trimLine(line, _this._context.textAlign);
+      });
+    }
+
+    /**
+     * Removes whitespaces based on alignment.
+     * If the newline ends or begins with one or more whitespaces than remove the first/last depending on the aligment.
+     * @param {String} line
+     * @param {String} alignment
+     * @return {String} line
+     */
+
+  }, {
+    key: '_trimLine',
+    value: function _trimLine(line, alignment) {
+      return line; // FIXME: not supported by textarea yet. Enable later
+      // switch (alignment) {
+      //   case 'right':
+      //     return line.replace(/\s{1}$/, '')
+      //   case 'left':
+      //     return line.replace(/^\s{1}/, '')
+      //   case 'center':
+      //   default:
+      //     return line
+      // }
+    }
+
+    /**
+     * Builds an array of words from the given line
+     * @param  {String} line
+     * @return {Array.<String>}
+     * @private
+     */
+
+  }, {
+    key: '_buildWords',
+    value: function _buildWords(line) {
+      var words = [];
+      var word = '';
+
+      var len = line.length;
+      for (var i = 0; i < len; i++) {
+        var char = line[i];
+        word += char;
+        if (char === ' ' || char === '-' || i === len - 1) {
+          words.push(word);
+          word = '';
+        }
+      }
+
+      return words;
+    }
+
+    /**
+     * Splits up the given word to fit the max width
+     * @param  {String} word
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_splitWord',
+    value: function _splitWord(word) {
+      var response = {
+        lines: [],
+        rest: null
+      };
+
+      var wordLength = word.length;
+      var chars = [];
+      for (var c = 0; c < wordLength; c++) {
+        var char = word[c];
+        if (this._getWidth(chars.concat(char).join('')) > this._maxWidth) {
+          if (chars.length > 0) {
+            response.lines.push(chars.join(''));
+          }
+          chars = [char];
+        } else {
+          chars.push(char);
+        }
+
+        if (c === wordLength - 1 && chars.length > 0) {
+          response.rest = chars.join('');
+        }
+      }
+
+      return response;
+    }
+
+    /**
+     * Checks if the font style changed from the last call
+     * @return {Boolean}
+     * @private
+     */
+
+  }, {
+    key: '_fontStyleChanged',
+    value: function _fontStyleChanged() {
+      if (this._context.font !== this._lastFontStyle) {
+        this._lastFontStyle = this._context.font;
+        return true;
+      }
+      return false;
+    }
+
+    /**
+     * Returns the measured width for the given string
+     * @param  {String} string
+     * @return {Number}
+     * @private
+     */
+
+  }, {
+    key: '_getWidth',
+    value: function _getWidth(string) {
+      return this._context.measureText(string).width;
+    }
+
+    /**
+     * Sets the text
+     * @param {String} text
+     */
+
+  }, {
+    key: 'setText',
+    value: function setText(text) {
+      this._text = text;
+      this._lines = text.split('\n');
+    }
+
+    /**
+     * Sets the max width
+     * @param {Number} maxWidth
+     */
+
+  }, {
+    key: 'setMaxWidth',
+    value: function setMaxWidth(maxWidth) {
+      this._maxWidth = maxWidth;
+    }
+  }]);
+
+  return TextSplitter;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (TextSplitter);
+
+/***/ }),
+/* 151 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignCelebrate; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_blocks__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_text_design_banderole__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_rows_image_text_design_row_image__ = __webpack_require__(104);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+var TextDesignCelebrate = function (_TextDesignBlocks) {
+  _inherits(TextDesignCelebrate, _TextDesignBlocks);
+
+  function TextDesignCelebrate() {
+    _classCallCheck(this, TextDesignCelebrate);
+
+    return _possibleConstructorReturn(this, (TextDesignCelebrate.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignCelebrate)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignCelebrate, [{
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      var fonts = this.getFontIdentifiers();
+      return fonts[index % fonts.length];
+    }
+  }, {
+    key: '_minimumNumberOfLines',
+    value: function _minimumNumberOfLines(words) {
+      return Math.max(Math.floor(_get(TextDesignCelebrate.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignCelebrate.prototype), '_minimumNumberOfLines', this).call(this, words) * 0.7), 1);
+    }
+  }, {
+    key: '_maximumNumberOfLines',
+    value: function _maximumNumberOfLines(words) {
+      return Math.max(Math.floor(words.countNumberOfCharacters() / 5), 1);
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      return this._createSingleRow(TextDesignCelebrate.RowType.Single, words, width, attributes);
+    }
+  }, {
+    key: '_createSingleRow',
+    value: function _createSingleRow(rowType, words, width, attributes) {
+      var fontIdentifier = attributes.getFontIdentifier();
+
+      var updatedWords = fontIdentifier === 'imgly_font_amberlight' || fontIdentifier === 'imgly_font_handycheera_regular' ? new __WEBPACK_IMPORTED_MODULE_10__text_words__["a" /* Words */]().set(words.getLowerCase()) : words;
+
+      // TODO: SingleImage
+      switch (rowType) {
+        case TextDesignCelebrate.RowType.Single:
+          return new __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: updatedWords, width: width, attributes: attributes });
+        case TextDesignCelebrate.RowType.SingleImage:
+          return new __WEBPACK_IMPORTED_MODULE_11__models_rows_image_text_design_row_image__["a" /* TextDesignRowImage */]({ words: updatedWords, width: width, attributes: attributes });
+        default:
+          __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignCelebrate#_createSingleRow: Invalid row type \'' + rowType + '\'');
+          return null;
+      }
+    }
+  }]);
+
+  return TextDesignCelebrate;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design_blocks__["a" /* TextDesignBlocks */]);
+
+TextDesignCelebrate.defaultFontIdentifiers = ['imgly_font_handycheera_regular', 'imgly_font_rasa_regular'];
+TextDesignCelebrate.defaultBanderoles = [__WEBPACK_IMPORTED_MODULE_9__models_text_design_banderole__["a" /* TextDesignBanderole */].Celebrate1, __WEBPACK_IMPORTED_MODULE_9__models_text_design_banderole__["a" /* TextDesignBanderole */].Celebrate2];
+TextDesignCelebrate.identifier = 'imgly_text_design_celebrate';
+TextDesignCelebrate.RowType = {
+  Single: 'SINGLE',
+  SingleImage: 'SINGLE_IMAGE'
+};
+TextDesignCelebrate.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design_blocks__["a" /* TextDesignBlocks */].prototype.availableOptions, {
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.01875 },
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignCelebrate.defaultFontIdentifiers },
+  banderoles: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignCelebrate.defaultBanderoles }
+});
+
+/***/ }),
+/* 152 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowSingleImage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__default_text_design_row__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_attributes__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_element__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_text_design_font__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_canvas__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__size_value__ = __webpack_require__(23);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+
+var TextDesignRowSingleImage = function (_TextDesignRow) {
+  _inherits(TextDesignRowSingleImage, _TextDesignRow);
+
+  function TextDesignRowSingleImage() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignRowSingleImage);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignRowSingleImage.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowSingleImage)).call.apply(_ref, [this].concat(args)));
+
+    _this.setSize(new __WEBPACK_IMPORTED_MODULE_12__size_value__["a" /* SizeValue */](_this.getWidth(), _this.getHeight()));
+    return _this;
+  }
+
+  _createClass(TextDesignRowSingleImage, [{
+    key: '_getImageFrame',
+    value: function _getImageFrame() {
+      var imageRect = this._getTextFrame().clone();
+      var image = this.getImage();
+      // TODO: drawingModeAspectFit
+      if (this.getDrawingModeAspectFit() && image) {
+        var ratio = Math.min(imageRect.width / image.width, imageRect.height / image.height);
+        var newWidth = image.width * ratio;
+        var newHeight = image.height * ratio;
+
+        imageRect.x += (imageRect.width - newWidth) / 2;
+        imageRect.y += (imageRect.height - newHeight) / 2;
+        imageRect.width = newWidth;
+        imageRect.height = newHeight;
+      }
+
+      return imageRect;
+    }
+  }, {
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      return [new __WEBPACK_IMPORTED_MODULE_9__text_design_element__["a" /* TextDesignElement */]({
+        text: '', frame: this._getImageFrame(), font: new __WEBPACK_IMPORTED_MODULE_10__text_text_design_font__["a" /* TextDesignFont */]()
+      })];
+    }
+  }, {
+    key: 'render',
+    value: function render(context) {
+      var image = this.getImage();
+      var imageFrame = this._getImageFrame();
+      var attributes = this.getAttributes();
+      var textColor = attributes.getTextColor();
+
+      Object(__WEBPACK_IMPORTED_MODULE_11__utils_canvas__["a" /* drawImageFrame */])(context, image, imageFrame, textColor);
+    }
+  }]);
+
+  return TextDesignRowSingleImage;
+}(__WEBPACK_IMPORTED_MODULE_6__default_text_design_row__["a" /* TextDesignRow */]);
+
+TextDesignRowSingleImage.RowImages = {
+  decorative1: 'text-design/images/imgly_text_design_asset_decorative_01.png',
+  decorative2: 'text-design/images/imgly_text_design_asset_decorative_02.png',
+  decorative3: 'text-design/images/imgly_text_design_asset_decorative_05.png',
+  decorative4: 'text-design/images/imgly_text_design_asset_decorative_06.png',
+  celebrate1: 'text-design/images/imgly_text_design_asset_celebrate_03.png',
+  celebrate2: 'text-design/images/imgly_text_design_asset_celebrate_04.png',
+  celebrate3: 'text-design/images/imgly_text_design_asset_celebrate_05.png'
+};
+TextDesignRowSingleImage.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__default_text_design_row__["a" /* TextDesignRow */].prototype.availableOptions, {
+  words: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_7__text_words__["a" /* Words */]() },
+  height: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  image: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].IMAGE, default: null },
+  imagePath: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].STRING, default: TextDesignRowSingleImage.RowImages.decorative1 },
+  drawingModeAspectFit: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  attributes: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].CONFIGURABLE, default: new __WEBPACK_IMPORTED_MODULE_8__text_design_attributes__["a" /* TextDesignAttributes */]() }
+});
+
+/***/ }),
+/* 153 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignEqualWidth; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_background_text_design_equal_width_background__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+var TextDesignEqualWidth = function (_TextDesign) {
+  _inherits(TextDesignEqualWidth, _TextDesign);
+
+  function TextDesignEqualWidth() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignEqualWidth);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignEqualWidth.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidth)).call.apply(_ref, [this].concat(args)));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_9__models_rectangle_insets__["a" /* RectangleInsets */](0.1, 0.1, 0.1, 0.1);
+    _this._alreadyContainsARowWithScriptFont = false;
+
+    _this._backgroundsRandomizer = new __WEBPACK_IMPORTED_MODULE_12__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._backgroundsRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignEqualWidth, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].Array.flatten(__WEBPACK_IMPORTED_MODULE_10__models_background_text_design_equal_width_background__["a" /* TextDesignEqualWidthBackground */].Backgrounds.map(function (b) {
+        return b.getImagePaths();
+      }));
+    }
+  }, {
+    key: '_getBackground',
+    value: function _getBackground() {
+      return this._backgroundsRandomizer.pickNext(__WEBPACK_IMPORTED_MODULE_10__models_background_text_design_equal_width_background__["a" /* TextDesignEqualWidthBackground */].Backgrounds);
+    }
+  }, {
+    key: 'generateLayoutData',
+    value: function generateLayoutData(text, width) {
+      this._alreadyContainsARowWithScriptFont = false;
+      this._background = this._getBackground();
+      return _get(TextDesignEqualWidth.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidth.prototype), 'generateLayoutData', this).call(this, text, width);
+    }
+  }, {
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignEqualWidth.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidth.prototype), '_modifiedText', this).call(this, text).toUpperCase();
+    }
+  }, {
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      var fontIdentifier = _get(TextDesignEqualWidth.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidth.prototype), '_fontForRow', this).call(this, index, words);
+
+      if (fontIdentifier === 'imgly_font_petit_formal_script') {
+        if (this._alreadyContainsARowWithScriptFont) {
+          fontIdentifier = 'imgly_font_bungee_inline';
+        }
+        this._alreadyContainsARowWithScriptFont = true;
+      }
+
+      return fontIdentifier;
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var lowercase = attributes.getFontIdentifier() === 'imgly_font_petit_formal_script';
+
+      return new __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({
+        words: lowercase ? new __WEBPACK_IMPORTED_MODULE_11__text_words__["a" /* Words */]().set(words.getLowerCase()) : words,
+        width: width,
+        attributes: attributes
+      });
+    }
+  }]);
+
+  return TextDesignEqualWidth;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design__["a" /* TextDesign */]);
+
+TextDesignEqualWidth.identifier = 'imgly_text_design_equal_width';
+TextDesignEqualWidth.defaultFontIdentifiers = ['imgly_font_ultra', 'imgly_font_bungee_inline', 'imgly_font_petit_formal_script'];
+TextDesignEqualWidth.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design__["a" /* TextDesign */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignEqualWidth.defaultFontIdentifiers },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.025 }
+});
+
+/***/ }),
+/* 154 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignBackground; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var TextDesignBackground = function (_Configurable) {
+  _inherits(TextDesignBackground, _Configurable);
+
+  function TextDesignBackground() {
+    _classCallCheck(this, TextDesignBackground);
+
+    return _possibleConstructorReturn(this, (TextDesignBackground.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBackground)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignBackground, [{
+    key: 'render',
+    value: function render(context, size, relativeInsets, color, randomizer) {
+      __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Log"].warn('TextDesignBackground#render: Abstract class');
+    }
+  }]);
+
+  return TextDesignBackground;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+TextDesignBackground.prototype.availableOptions = {};
+
+/***/ }),
+/* 155 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignSunshine; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_is_iterable__ = __webpack_require__(70);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_is_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_is_iterable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_get_iterator__ = __webpack_require__(71);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_get_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_get_iterator__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_design__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__models_rows_image_text_design_row_image__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_get_iterator___default()(arr), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_is_iterable___default()(Object(arr))) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_7_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+
+var TextDesignSunshine = function (_TextDesign) {
+  _inherits(TextDesignSunshine, _TextDesign);
+
+  function TextDesignSunshine() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignSunshine);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignSunshine.__proto__ || __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSunshine)).call.apply(_ref, [this].concat(args)));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_13__models_rectangle_insets__["a" /* RectangleInsets */](0, 0.3, 0, 0.3);
+
+    _this._INVALID_FONTS_IF_LESS_THEN_5_CHARS = ['imgly_font_montserrat_light'];
+
+    _this._INVALID_FONTS_IF_LESS_THEN_4_CHARS = ['imgly_font_montserrat_light', 'imgly_font_hello_sunshine', 'imgly_font_hello_sunshine_italic'];
+
+    _this._lineCount = 0;
+
+    _this._decorativeRowCreated = false;
+
+    _this._useImageRowRandomizer = new __WEBPACK_IMPORTED_MODULE_17__models_randomizer__["a" /* Randomizer */](0);
+    _this._rowTypeRandomizer = new __WEBPACK_IMPORTED_MODULE_17__models_randomizer__["a" /* Randomizer */](0);
+    _this._lineDecorativeTypeRandomizer = new __WEBPACK_IMPORTED_MODULE_17__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._useImageRowRandomizer);
+    _this._seedPool.push(_this._rowTypeRandomizer);
+    _this._seedPool.push(_this._lineDecorativeTypeRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignSunshine, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return [].concat(_toConsumableArray(TextDesignSunshine.DecoratorImages), _toConsumableArray(TextDesignSunshine.RowImages));
+    }
+  }, {
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      var _this2 = this;
+
+      var numOfCharacters = words.countNumberOfCharacters();
+
+      var fonts = this.getFontIdentifiers();
+
+      if (numOfCharacters < 4) {
+        fonts = fonts.filter(function (font) {
+          return _this2._INVALID_FONTS_IF_LESS_THEN_4_CHARS.indexOf(font) < 0;
+        });
+      } else if (numOfCharacters < 5) {
+        fonts = fonts.filter(function (font) {
+          return _this2._INVALID_FONTS_IF_LESS_THEN_5_CHARS.indexOf(font) < 0;
+        });
+      }
+
+      return fonts[index % fonts.length];
+    }
+  }, {
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignSunshine.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSunshine.prototype), '_modifiedText', this).call(this, text).toUpperCase();
+    }
+  }, {
+    key: '_modifiedLines',
+    value: function _modifiedLines(lines) {
+      this._lineCount = lines.length;
+      return lines;
+    }
+  }, {
+    key: 'generateLayoutData',
+    value: function generateLayoutData(text, width) {
+      this._decorativeRowCreated = false;
+      return _get(TextDesignSunshine.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSunshine.prototype), 'generateLayoutData', this).call(this, text, width);
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var fontIdentifier = attributes.getFontIdentifier();
+
+      var modifiedWords = words;
+
+      switch (fontIdentifier) {
+        case 'imgly_font_hello_sunshine':
+          modifiedWords = new __WEBPACK_IMPORTED_MODULE_14__text_words__["a" /* Words */]().set(words.getLowerCase());
+          break;
+
+        case 'imgly_font_hello_sunshine_italic':
+          modifiedWords = new __WEBPACK_IMPORTED_MODULE_14__text_words__["a" /* Words */]().set(words.getLowerCase());
+          break;
+
+        case 'imgly_font_hello_sunshine_marker':
+          modifiedWords = new __WEBPACK_IMPORTED_MODULE_14__text_words__["a" /* Words */]().set(words.getUpperCase());
+          break;
+
+        default:
+          break;
+      }
+
+      // const modifiedWords = R.cond([
+      //   [R.equals('imgly_font_hello_sunshine'), R.always(new Words().set(words.getLowerCase()))],
+      //   [R.equals('imgly_font_hello_sunshine_italic'), R.always(new Words().set(words.getLowerCase()))],
+      //   [R.equals('imgly_font_hello_sunshine_marker'), R.always(new Words().set(words.getUpperCase()))],
+      //   [R.T, R.always(words)]
+      // ])(fontIdentifier)
+
+      var noDecorations = this.getDecorativeRowsInTheMiddleOnly() && (index === 0 || index === this._lineCount - 1);
+
+      if (this._useImageRowRandomizer.nextBool() || this._decorativeRowCreated || noDecorations) {
+        return new __WEBPACK_IMPORTED_MODULE_11__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: modifiedWords, width: width, attributes: attributes });
+      } else {
+        this._decorativeRowCreated = true;
+
+        var _randomDecoratorImage = this._randomDecoratorImages(),
+            _randomDecoratorImage2 = _slicedToArray(_randomDecoratorImage, 2),
+            leftImage = _randomDecoratorImage2[0],
+            rightImage = _randomDecoratorImage2[1];
+
+        return new __WEBPACK_IMPORTED_MODULE_16__models_rows_image_text_design_row_image__["a" /* TextDesignRowImage */]({
+          words: words,
+          width: width,
+          attributes: attributes,
+          leftImage: leftImage,
+          rightImage: rightImage
+        });
+      }
+    }
+  }, {
+    key: '_layoutRows',
+    value: function _layoutRows(lines, width) {
+      var elements = _get(TextDesignSunshine.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_8_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSunshine.prototype), '_layoutRows', this).call(this, lines, width);
+
+      if (!this.getDecorationsVisible()) {
+        return elements;
+      }
+
+      var formHeight = 25;
+      var firstRow = new __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */]({
+        width: width,
+        height: formHeight,
+        image: __WEBPACK_IMPORTED_MODULE_12__text_design_asset_manager__["a" /* AssetManager */].getImage(this._rowTypeRandomizer.pickNext(TextDesignSunshine.RowImages))
+      }).layout();
+
+      var lastRow = new __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */]({
+        width: width,
+        height: formHeight,
+        image: __WEBPACK_IMPORTED_MODULE_12__text_design_asset_manager__["a" /* AssetManager */].getImage(this._rowTypeRandomizer.pickNext(TextDesignSunshine.RowImages))
+      }).layout();
+
+      return [firstRow].concat(_toConsumableArray(elements), [lastRow]);
+    }
+  }, {
+    key: '_randomDecoratorImages',
+    value: function _randomDecoratorImages() {
+      if (this._lineDecorativeTypeRandomizer.nextInRange(0, 1)) {
+        return TextDesignSunshine.DecoratorImages.slice(0, 2).map(function (path) {
+          return __WEBPACK_IMPORTED_MODULE_12__text_design_asset_manager__["a" /* AssetManager */].getImage(path);
+        });
+      } else {
+        return TextDesignSunshine.DecoratorImages.slice(2).map(function (path) {
+          return __WEBPACK_IMPORTED_MODULE_12__text_design_asset_manager__["a" /* AssetManager */].getImage(path);
+        });
+      }
+    }
+  }]);
+
+  return TextDesignSunshine;
+}(__WEBPACK_IMPORTED_MODULE_10__text_design__["a" /* TextDesign */]);
+
+TextDesignSunshine.defaultFontIdentifiers = ['imgly_font_hello_sunshine_marker', 'imgly_font_hello_sunshine', 'imgly_font_hello_sunshine_italic', 'imgly_font_montserrat_light'];
+TextDesignSunshine.identifier = 'imgly_text_design_sunshine';
+TextDesignSunshine.RowImages = [__WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.decorative1, __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.decorative2, __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.decorative3, __WEBPACK_IMPORTED_MODULE_15__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.decorative4];
+TextDesignSunshine.DecoratorImages = ['text-design/images/imgly_text_design_asset_decorative_03.png', 'text-design/images/imgly_text_design_asset_decorative_04.png', 'text-design/images/imgly_text_design_asset_decorative_07.png', 'text-design/images/imgly_text_design_asset_decorative_08.png'];
+TextDesignSunshine.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_10__text_design__["a" /* TextDesign */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignSunshine.defaultFontIdentifiers },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.025 / 3 * 4 },
+  decorationsVisible: { type: __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true },
+  decorativeRowsInTheMiddleOnly: { type: __WEBPACK_IMPORTED_MODULE_9_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false }
+});
+
+/***/ }),
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* @module */
@@ -14712,31 +19849,31 @@ Brush.prototype.availableOptions = {
  * @namespace PhotoEditorSDK.UI
  */
 module.exports = __webpack_require__(4);
-__webpack_require__(230);
+__webpack_require__(259);
 
 /***/ }),
-/* 128 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sdk__ = __webpack_require__(129);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_math___ = __webpack_require__(115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__operations___ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__engine___ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_color__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__operations_operation__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_event_emitter__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_env__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_operations_stack__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_exif__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_configurable__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_log__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_loaders__ = __webpack_require__(228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__constants__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__lib_base64__ = __webpack_require__(39);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sdk__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_math___ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__operations___ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__engine___ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_color__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__operations_operation__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_event_emitter__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_env__ = __webpack_require__(256);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_operations_stack__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_exif__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_configurable__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__shared_log__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__shared_loaders__ = __webpack_require__(257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__lib_base64__ = __webpack_require__(50);
 /* @module */
 /*
  * This file is part of PhotoEditorSDK.
@@ -14762,7 +19899,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  * @name PhotoEditorSDK.version
  * @internal Keep in sync with package.json
  */
-__WEBPACK_IMPORTED_MODULE_0__sdk__["a" /* default */].version = __webpack_require__(120).version;
+__WEBPACK_IMPORTED_MODULE_0__sdk__["a" /* default */].version = __webpack_require__(141).version;
 
 // Namespaces
 
@@ -14824,13 +19961,13 @@ __WEBPACK_IMPORTED_MODULE_0__sdk__["a" /* default */].UI = {};
 /* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__sdk__["a" /* default */]);
 
 /***/ }),
-/* 129 */
+/* 158 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
@@ -14838,17 +19975,17 @@ __WEBPACK_IMPORTED_MODULE_0__sdk__["a" /* default */].UI = {};
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__globals__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__operations___ = __webpack_require__(116);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_operations_stack__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_version_checker__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__lib_exif__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_image_exporter__ = __webpack_require__(222);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lib_performance_test__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__globals__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__operations___ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lib_operations_stack__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__lib_version_checker__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__lib_exif__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__lib_image_exporter__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__lib_performance_test__ = __webpack_require__(139);
 
 
 
@@ -14901,7 +20038,8 @@ var Rectangle = __WEBPACK_IMPORTED_MODULE_7__globals__["Rectangle"],
     EventEmitter = __WEBPACK_IMPORTED_MODULE_7__globals__["EventEmitter"],
     Vector2 = __WEBPACK_IMPORTED_MODULE_7__globals__["Vector2"],
     Log = __WEBPACK_IMPORTED_MODULE_7__globals__["Log"],
-    Base64 = __WEBPACK_IMPORTED_MODULE_7__globals__["Base64"];
+    Base64 = __WEBPACK_IMPORTED_MODULE_7__globals__["Base64"],
+    Color = __WEBPACK_IMPORTED_MODULE_7__globals__["Color"];
 var RenderType = Constants.RenderType,
     ImageFormat = Constants.ImageFormat,
     Events = Constants.Events,
@@ -14947,7 +20085,7 @@ var PhotoEditorSDK = function (_EventEmitter) {
     _this._onOperationUpdate = _this._onOperationUpdate.bind(_this);
     _this._onContextRestored = _this._onContextRestored.bind(_this);
 
-    var _require = __webpack_require__(120),
+    var _require = __webpack_require__(141),
         version = _require.version;
 
     _this.version = version;
@@ -14962,6 +20100,7 @@ var PhotoEditorSDK = function (_EventEmitter) {
       image: null,
       canvas: null,
       transparent: false,
+      clearColor: Color.TRANSPARENT,
       textureQuality: 1,
       zoom: 1,
       spriteScale: 1,
@@ -15524,7 +20663,8 @@ var PhotoEditorSDK = function (_EventEmitter) {
         canvas: this._options.canvas,
         pixelRatio: this._options.pixelRatio,
         debug: this._options.debug,
-        transparent: this._options.transparent
+        transparent: this._options.transparent,
+        clearColor: this._options.clearColor
       };
 
       var width = void 0,
@@ -16070,20 +21210,20 @@ var PhotoEditorSDK = function (_EventEmitter) {
 /* harmony default export */ __webpack_exports__["a"] = (PhotoEditorSDK);
 
 /***/ }),
-/* 130 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(34);
-__webpack_require__(49);
-module.exports = __webpack_require__(66).f('iterator');
+__webpack_require__(45);
+__webpack_require__(66);
+module.exports = __webpack_require__(85).f('iterator');
 
 
 /***/ }),
-/* 131 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(57);
-var defined = __webpack_require__(58);
+var toInteger = __webpack_require__(76);
+var defined = __webpack_require__(77);
 // true  -> String#at
 // false -> String#codePointAt
 module.exports = function (TO_STRING) {
@@ -16102,18 +21242,18 @@ module.exports = function (TO_STRING) {
 
 
 /***/ }),
-/* 132 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var create = __webpack_require__(61);
-var descriptor = __webpack_require__(35);
-var setToStringTag = __webpack_require__(48);
+var create = __webpack_require__(80);
+var descriptor = __webpack_require__(46);
+var setToStringTag = __webpack_require__(65);
 var IteratorPrototype = {};
 
 // 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(19)(IteratorPrototype, __webpack_require__(10)('iterator'), function () { return this; });
+__webpack_require__(26)(IteratorPrototype, __webpack_require__(11)('iterator'), function () { return this; });
 
 module.exports = function (Constructor, NAME, next) {
   Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
@@ -16122,14 +21262,14 @@ module.exports = function (Constructor, NAME, next) {
 
 
 /***/ }),
-/* 133 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var dP = __webpack_require__(15);
-var anObject = __webpack_require__(14);
-var getKeys = __webpack_require__(36);
+var dP = __webpack_require__(21);
+var anObject = __webpack_require__(18);
+var getKeys = __webpack_require__(47);
 
-module.exports = __webpack_require__(18) ? Object.defineProperties : function defineProperties(O, Properties) {
+module.exports = __webpack_require__(25) ? Object.defineProperties : function defineProperties(O, Properties) {
   anObject(O);
   var keys = getKeys(Properties);
   var length = keys.length;
@@ -16141,14 +21281,14 @@ module.exports = __webpack_require__(18) ? Object.defineProperties : function de
 
 
 /***/ }),
-/* 134 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // false -> Array#indexOf
 // true  -> Array#includes
-var toIObject = __webpack_require__(21);
-var toLength = __webpack_require__(62);
-var toAbsoluteIndex = __webpack_require__(135);
+var toIObject = __webpack_require__(28);
+var toLength = __webpack_require__(81);
+var toAbsoluteIndex = __webpack_require__(164);
 module.exports = function (IS_INCLUDES) {
   return function ($this, el, fromIndex) {
     var O = toIObject($this);
@@ -16170,10 +21310,10 @@ module.exports = function (IS_INCLUDES) {
 
 
 /***/ }),
-/* 135 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(57);
+var toInteger = __webpack_require__(76);
 var max = Math.max;
 var min = Math.min;
 module.exports = function (index, length) {
@@ -16183,21 +21323,21 @@ module.exports = function (index, length) {
 
 
 /***/ }),
-/* 136 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var addToUnscopables = __webpack_require__(137);
-var step = __webpack_require__(138);
-var Iterators = __webpack_require__(28);
-var toIObject = __webpack_require__(21);
+var addToUnscopables = __webpack_require__(166);
+var step = __webpack_require__(167);
+var Iterators = __webpack_require__(38);
+var toIObject = __webpack_require__(28);
 
 // 22.1.3.4 Array.prototype.entries()
 // 22.1.3.13 Array.prototype.keys()
 // 22.1.3.29 Array.prototype.values()
 // 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(85)(Array, 'Array', function (iterated, kind) {
+module.exports = __webpack_require__(108)(Array, 'Array', function (iterated, kind) {
   this._t = toIObject(iterated); // target
   this._i = 0;                   // next index
   this._k = kind;                // kind
@@ -16224,14 +21364,14 @@ addToUnscopables('entries');
 
 
 /***/ }),
-/* 137 */
+/* 166 */
 /***/ (function(module, exports) {
 
 module.exports = function () { /* empty */ };
 
 
 /***/ }),
-/* 138 */
+/* 167 */
 /***/ (function(module, exports) {
 
 module.exports = function (done, value) {
@@ -16240,48 +21380,48 @@ module.exports = function (done, value) {
 
 
 /***/ }),
-/* 139 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(140);
-__webpack_require__(93);
-__webpack_require__(145);
-__webpack_require__(146);
-module.exports = __webpack_require__(9).Symbol;
+__webpack_require__(169);
+__webpack_require__(116);
+__webpack_require__(174);
+__webpack_require__(175);
+module.exports = __webpack_require__(10).Symbol;
 
 
 /***/ }),
-/* 140 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // ECMAScript 6 symbols shim
-var global = __webpack_require__(12);
-var has = __webpack_require__(20);
-var DESCRIPTORS = __webpack_require__(18);
+var global = __webpack_require__(14);
+var has = __webpack_require__(27);
+var DESCRIPTORS = __webpack_require__(25);
 var $export = __webpack_require__(13);
-var redefine = __webpack_require__(87);
-var META = __webpack_require__(141).KEY;
-var $fails = __webpack_require__(27);
-var shared = __webpack_require__(64);
-var setToStringTag = __webpack_require__(48);
-var uid = __webpack_require__(47);
-var wks = __webpack_require__(10);
-var wksExt = __webpack_require__(66);
-var wksDefine = __webpack_require__(67);
-var enumKeys = __webpack_require__(142);
-var isArray = __webpack_require__(143);
-var anObject = __webpack_require__(14);
-var isObject = __webpack_require__(17);
-var toIObject = __webpack_require__(21);
-var toPrimitive = __webpack_require__(60);
-var createDesc = __webpack_require__(35);
-var _create = __webpack_require__(61);
-var gOPNExt = __webpack_require__(144);
-var $GOPD = __webpack_require__(69);
-var $DP = __webpack_require__(15);
-var $keys = __webpack_require__(36);
+var redefine = __webpack_require__(110);
+var META = __webpack_require__(170).KEY;
+var $fails = __webpack_require__(37);
+var shared = __webpack_require__(83);
+var setToStringTag = __webpack_require__(65);
+var uid = __webpack_require__(64);
+var wks = __webpack_require__(11);
+var wksExt = __webpack_require__(85);
+var wksDefine = __webpack_require__(86);
+var enumKeys = __webpack_require__(171);
+var isArray = __webpack_require__(172);
+var anObject = __webpack_require__(18);
+var isObject = __webpack_require__(24);
+var toIObject = __webpack_require__(28);
+var toPrimitive = __webpack_require__(79);
+var createDesc = __webpack_require__(46);
+var _create = __webpack_require__(80);
+var gOPNExt = __webpack_require__(173);
+var $GOPD = __webpack_require__(88);
+var $DP = __webpack_require__(21);
+var $keys = __webpack_require__(47);
 var gOPD = $GOPD.f;
 var dP = $DP.f;
 var gOPN = gOPNExt.f;
@@ -16404,11 +21544,11 @@ if (!USE_NATIVE) {
 
   $GOPD.f = $getOwnPropertyDescriptor;
   $DP.f = $defineProperty;
-  __webpack_require__(92).f = gOPNExt.f = $getOwnPropertyNames;
-  __webpack_require__(50).f = $propertyIsEnumerable;
-  __webpack_require__(68).f = $getOwnPropertySymbols;
+  __webpack_require__(115).f = gOPNExt.f = $getOwnPropertyNames;
+  __webpack_require__(67).f = $propertyIsEnumerable;
+  __webpack_require__(87).f = $getOwnPropertySymbols;
 
-  if (DESCRIPTORS && !__webpack_require__(45)) {
+  if (DESCRIPTORS && !__webpack_require__(62)) {
     redefine(ObjectProto, 'propertyIsEnumerable', $propertyIsEnumerable, true);
   }
 
@@ -16482,7 +21622,7 @@ $JSON && $export($export.S + $export.F * (!USE_NATIVE || $fails(function () {
 });
 
 // 19.4.3.4 Symbol.prototype[@@toPrimitive](hint)
-$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(19)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
+$Symbol[PROTOTYPE][TO_PRIMITIVE] || __webpack_require__(26)($Symbol[PROTOTYPE], TO_PRIMITIVE, $Symbol[PROTOTYPE].valueOf);
 // 19.4.3.5 Symbol.prototype[@@toStringTag]
 setToStringTag($Symbol, 'Symbol');
 // 20.2.1.9 Math[@@toStringTag]
@@ -16492,18 +21632,18 @@ setToStringTag(global.JSON, 'JSON', true);
 
 
 /***/ }),
-/* 141 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var META = __webpack_require__(47)('meta');
-var isObject = __webpack_require__(17);
-var has = __webpack_require__(20);
-var setDesc = __webpack_require__(15).f;
+var META = __webpack_require__(64)('meta');
+var isObject = __webpack_require__(24);
+var has = __webpack_require__(27);
+var setDesc = __webpack_require__(21).f;
 var id = 0;
 var isExtensible = Object.isExtensible || function () {
   return true;
 };
-var FREEZE = !__webpack_require__(27)(function () {
+var FREEZE = !__webpack_require__(37)(function () {
   return isExtensible(Object.preventExtensions({}));
 });
 var setMeta = function (it) {
@@ -16551,13 +21691,13 @@ var meta = module.exports = {
 
 
 /***/ }),
-/* 142 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
-var getKeys = __webpack_require__(36);
-var gOPS = __webpack_require__(68);
-var pIE = __webpack_require__(50);
+var getKeys = __webpack_require__(47);
+var gOPS = __webpack_require__(87);
+var pIE = __webpack_require__(67);
 module.exports = function (it) {
   var result = getKeys(it);
   var getSymbols = gOPS.f;
@@ -16572,23 +21712,23 @@ module.exports = function (it) {
 
 
 /***/ }),
-/* 143 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.2.2 IsArray(argument)
-var cof = __webpack_require__(37);
+var cof = __webpack_require__(48);
 module.exports = Array.isArray || function isArray(arg) {
   return cof(arg) == 'Array';
 };
 
 
 /***/ }),
-/* 144 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // fallback for IE11 buggy Object.getOwnPropertyNames with iframe and window
-var toIObject = __webpack_require__(21);
-var gOPN = __webpack_require__(92).f;
+var toIObject = __webpack_require__(28);
+var gOPN = __webpack_require__(115).f;
 var toString = {}.toString;
 
 var windowNames = typeof window == 'object' && window && Object.getOwnPropertyNames
@@ -16608,64 +21748,64 @@ module.exports.f = function getOwnPropertyNames(it) {
 
 
 /***/ }),
-/* 145 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(67)('asyncIterator');
+__webpack_require__(86)('asyncIterator');
 
 
 /***/ }),
-/* 146 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(67)('observable');
+__webpack_require__(86)('observable');
 
 
 /***/ }),
-/* 147 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(148);
-var $Object = __webpack_require__(9).Object;
+__webpack_require__(177);
+var $Object = __webpack_require__(10).Object;
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
 };
 
 
 /***/ }),
-/* 148 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(13);
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-$export($export.S + $export.F * !__webpack_require__(18), 'Object', { defineProperty: __webpack_require__(15).f });
+$export($export.S + $export.F * !__webpack_require__(25), 'Object', { defineProperty: __webpack_require__(21).f });
 
 
 /***/ }),
-/* 149 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(150);
-module.exports = __webpack_require__(9).Object.setPrototypeOf;
+__webpack_require__(179);
+module.exports = __webpack_require__(10).Object.setPrototypeOf;
 
 
 /***/ }),
-/* 150 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.19 Object.setPrototypeOf(O, proto)
 var $export = __webpack_require__(13);
-$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(151).set });
+$export($export.S, 'Object', { setPrototypeOf: __webpack_require__(180).set });
 
 
 /***/ }),
-/* 151 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Works with __proto__ only. Old v8 can't work with null proto objects.
 /* eslint-disable no-proto */
-var isObject = __webpack_require__(17);
-var anObject = __webpack_require__(14);
+var isObject = __webpack_require__(24);
+var anObject = __webpack_require__(18);
 var check = function (O, proto) {
   anObject(O);
   if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
@@ -16674,7 +21814,7 @@ module.exports = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
     function (test, buggy, set) {
       try {
-        set = __webpack_require__(26)(Function.call, __webpack_require__(69).f(Object.prototype, '__proto__').set, 2);
+        set = __webpack_require__(36)(Function.call, __webpack_require__(88).f(Object.prototype, '__proto__').set, 2);
         set(test, []);
         buggy = !(test instanceof Array);
       } catch (e) { buggy = true; }
@@ -16690,59 +21830,59 @@ module.exports = {
 
 
 /***/ }),
-/* 152 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(153);
-var $Object = __webpack_require__(9).Object;
+__webpack_require__(182);
+var $Object = __webpack_require__(10).Object;
 module.exports = function create(P, D) {
   return $Object.create(P, D);
 };
 
 
 /***/ }),
-/* 153 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(13);
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', { create: __webpack_require__(61) });
+$export($export.S, 'Object', { create: __webpack_require__(80) });
 
 
 /***/ }),
-/* 154 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(93);
-__webpack_require__(34);
-__webpack_require__(49);
-__webpack_require__(155);
-__webpack_require__(162);
-__webpack_require__(163);
-module.exports = __webpack_require__(9).Promise;
+__webpack_require__(116);
+__webpack_require__(45);
+__webpack_require__(66);
+__webpack_require__(184);
+__webpack_require__(191);
+__webpack_require__(192);
+module.exports = __webpack_require__(10).Promise;
 
 
 /***/ }),
-/* 155 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var LIBRARY = __webpack_require__(45);
-var global = __webpack_require__(12);
-var ctx = __webpack_require__(26);
-var classof = __webpack_require__(70);
+var LIBRARY = __webpack_require__(62);
+var global = __webpack_require__(14);
+var ctx = __webpack_require__(36);
+var classof = __webpack_require__(89);
 var $export = __webpack_require__(13);
-var isObject = __webpack_require__(17);
-var aFunction = __webpack_require__(46);
-var anInstance = __webpack_require__(156);
-var forOf = __webpack_require__(157);
-var speciesConstructor = __webpack_require__(96);
-var task = __webpack_require__(72).set;
-var microtask = __webpack_require__(159)();
-var newPromiseCapabilityModule = __webpack_require__(73);
-var perform = __webpack_require__(97);
-var promiseResolve = __webpack_require__(98);
+var isObject = __webpack_require__(24);
+var aFunction = __webpack_require__(63);
+var anInstance = __webpack_require__(185);
+var forOf = __webpack_require__(186);
+var speciesConstructor = __webpack_require__(119);
+var task = __webpack_require__(91).set;
+var microtask = __webpack_require__(188)();
+var newPromiseCapabilityModule = __webpack_require__(92);
+var perform = __webpack_require__(120);
+var promiseResolve = __webpack_require__(121);
 var PROMISE = 'Promise';
 var TypeError = global.TypeError;
 var process = global.process;
@@ -16756,7 +21896,7 @@ var USE_NATIVE = !!function () {
   try {
     // correct subclassing with @@species support
     var promise = $Promise.resolve(1);
-    var FakePromise = (promise.constructor = {})[__webpack_require__(10)('species')] = function (exec) {
+    var FakePromise = (promise.constructor = {})[__webpack_require__(11)('species')] = function (exec) {
       exec(empty, empty);
     };
     // unhandled rejections tracking support, NodeJS Promise without it fails @@species test
@@ -16905,7 +22045,7 @@ if (!USE_NATIVE) {
     this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
     this._n = false;          // <- notify
   };
-  Internal.prototype = __webpack_require__(160)($Promise.prototype, {
+  Internal.prototype = __webpack_require__(189)($Promise.prototype, {
     // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
     then: function then(onFulfilled, onRejected) {
       var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
@@ -16936,9 +22076,9 @@ if (!USE_NATIVE) {
 }
 
 $export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
-__webpack_require__(48)($Promise, PROMISE);
-__webpack_require__(161)(PROMISE);
-Wrapper = __webpack_require__(9)[PROMISE];
+__webpack_require__(65)($Promise, PROMISE);
+__webpack_require__(190)(PROMISE);
+Wrapper = __webpack_require__(10)[PROMISE];
 
 // statics
 $export($export.S + $export.F * !USE_NATIVE, PROMISE, {
@@ -16956,7 +22096,7 @@ $export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
     return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
   }
 });
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(99)(function (iter) {
+$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(122)(function (iter) {
   $Promise.all(iter)['catch'](empty);
 })), PROMISE, {
   // 25.4.4.1 Promise.all(iterable)
@@ -17003,7 +22143,7 @@ $export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(99)(function
 
 
 /***/ }),
-/* 156 */
+/* 185 */
 /***/ (function(module, exports) {
 
 module.exports = function (it, Constructor, name, forbiddenField) {
@@ -17014,15 +22154,15 @@ module.exports = function (it, Constructor, name, forbiddenField) {
 
 
 /***/ }),
-/* 157 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ctx = __webpack_require__(26);
-var call = __webpack_require__(94);
-var isArrayIter = __webpack_require__(95);
-var anObject = __webpack_require__(14);
-var toLength = __webpack_require__(62);
-var getIterFn = __webpack_require__(71);
+var ctx = __webpack_require__(36);
+var call = __webpack_require__(117);
+var isArrayIter = __webpack_require__(118);
+var anObject = __webpack_require__(18);
+var toLength = __webpack_require__(81);
+var getIterFn = __webpack_require__(90);
 var BREAK = {};
 var RETURN = {};
 var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
@@ -17045,7 +22185,7 @@ exports.RETURN = RETURN;
 
 
 /***/ }),
-/* 158 */
+/* 187 */
 /***/ (function(module, exports) {
 
 // fast apply, http://jsperf.lnkit.com/fast-apply/5
@@ -17067,15 +22207,15 @@ module.exports = function (fn, args, that) {
 
 
 /***/ }),
-/* 159 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var global = __webpack_require__(12);
-var macrotask = __webpack_require__(72).set;
+var global = __webpack_require__(14);
+var macrotask = __webpack_require__(91).set;
 var Observer = global.MutationObserver || global.WebKitMutationObserver;
 var process = global.process;
 var Promise = global.Promise;
-var isNode = __webpack_require__(37)(process) == 'process';
+var isNode = __webpack_require__(48)(process) == 'process';
 
 module.exports = function () {
   var head, last, notify;
@@ -17141,10 +22281,10 @@ module.exports = function () {
 
 
 /***/ }),
-/* 160 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var hide = __webpack_require__(19);
+var hide = __webpack_require__(26);
 module.exports = function (target, src, safe) {
   for (var key in src) {
     if (safe && target[key]) target[key] = src[key];
@@ -17154,16 +22294,16 @@ module.exports = function (target, src, safe) {
 
 
 /***/ }),
-/* 161 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var global = __webpack_require__(12);
-var core = __webpack_require__(9);
-var dP = __webpack_require__(15);
-var DESCRIPTORS = __webpack_require__(18);
-var SPECIES = __webpack_require__(10)('species');
+var global = __webpack_require__(14);
+var core = __webpack_require__(10);
+var dP = __webpack_require__(21);
+var DESCRIPTORS = __webpack_require__(25);
+var SPECIES = __webpack_require__(11)('species');
 
 module.exports = function (KEY) {
   var C = typeof core[KEY] == 'function' ? core[KEY] : global[KEY];
@@ -17175,17 +22315,17 @@ module.exports = function (KEY) {
 
 
 /***/ }),
-/* 162 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 // https://github.com/tc39/proposal-promise-finally
 
 var $export = __webpack_require__(13);
-var core = __webpack_require__(9);
-var global = __webpack_require__(12);
-var speciesConstructor = __webpack_require__(96);
-var promiseResolve = __webpack_require__(98);
+var core = __webpack_require__(10);
+var global = __webpack_require__(14);
+var speciesConstructor = __webpack_require__(119);
+var promiseResolve = __webpack_require__(121);
 
 $export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
   var C = speciesConstructor(this, core.Promise || global.Promise);
@@ -17202,15 +22342,15 @@ $export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
 
 
 /***/ }),
-/* 163 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // https://github.com/tc39/proposal-promise-try
 var $export = __webpack_require__(13);
-var newPromiseCapability = __webpack_require__(73);
-var perform = __webpack_require__(97);
+var newPromiseCapability = __webpack_require__(92);
+var perform = __webpack_require__(120);
 
 $export($export.S, 'Promise', { 'try': function (callbackfn) {
   var promiseCapability = newPromiseCapability.f(this);
@@ -17221,22 +22361,22 @@ $export($export.S, 'Promise', { 'try': function (callbackfn) {
 
 
 /***/ }),
-/* 164 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(165);
-module.exports = __webpack_require__(9).Object.getPrototypeOf;
+__webpack_require__(194);
+module.exports = __webpack_require__(10).Object.getPrototypeOf;
 
 
 /***/ }),
-/* 165 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.9 Object.getPrototypeOf(O)
-var toObject = __webpack_require__(38);
-var $getPrototypeOf = __webpack_require__(91);
+var toObject = __webpack_require__(49);
+var $getPrototypeOf = __webpack_require__(114);
 
-__webpack_require__(74)('getPrototypeOf', function () {
+__webpack_require__(93)('getPrototypeOf', function () {
   return function getPrototypeOf(it) {
     return $getPrototypeOf(toObject(it));
   };
@@ -17244,7 +22384,7 @@ __webpack_require__(74)('getPrototypeOf', function () {
 
 
 /***/ }),
-/* 166 */
+/* 195 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17256,11 +22396,11 @@ __webpack_require__(74)('getPrototypeOf', function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_context_performance_hook__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_renderer__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_canvas_render_target__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__managers_canvas_filter_manager__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_context_performance_hook__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_renderer__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_canvas_render_target__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__managers_canvas_filter_manager__ = __webpack_require__(94);
 
 
 
@@ -17506,30 +22646,30 @@ CanvasRenderer.type = 'Canvas2D';
 /* harmony default export */ __webpack_exports__["a"] = (CanvasRenderer);
 
 /***/ }),
-/* 167 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(34);
-__webpack_require__(168);
-module.exports = __webpack_require__(9).Array.from;
+__webpack_require__(45);
+__webpack_require__(197);
+module.exports = __webpack_require__(10).Array.from;
 
 
 /***/ }),
-/* 168 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var ctx = __webpack_require__(26);
+var ctx = __webpack_require__(36);
 var $export = __webpack_require__(13);
-var toObject = __webpack_require__(38);
-var call = __webpack_require__(94);
-var isArrayIter = __webpack_require__(95);
-var toLength = __webpack_require__(62);
-var createProperty = __webpack_require__(169);
-var getIterFn = __webpack_require__(71);
+var toObject = __webpack_require__(49);
+var call = __webpack_require__(117);
+var isArrayIter = __webpack_require__(118);
+var toLength = __webpack_require__(81);
+var createProperty = __webpack_require__(198);
+var getIterFn = __webpack_require__(90);
 
-$export($export.S + $export.F * !__webpack_require__(99)(function (iter) { Array.from(iter); }), 'Array', {
+$export($export.S + $export.F * !__webpack_require__(122)(function (iter) { Array.from(iter); }), 'Array', {
   // 22.1.2.1 Array.from(arrayLike, mapfn = undefined, thisArg = undefined)
   from: function from(arrayLike /* , mapfn = undefined, thisArg = undefined */) {
     var O = toObject(arrayLike);
@@ -17559,13 +22699,13 @@ $export($export.S + $export.F * !__webpack_require__(99)(function (iter) { Array
 
 
 /***/ }),
-/* 169 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var $defineProperty = __webpack_require__(15);
-var createDesc = __webpack_require__(35);
+var $defineProperty = __webpack_require__(21);
+var createDesc = __webpack_require__(46);
 
 module.exports = function (object, index, value) {
   if (index in object) $defineProperty.f(object, index, createDesc(0, value));
@@ -17574,16 +22714,16 @@ module.exports = function (object, index, value) {
 
 
 /***/ }),
-/* 170 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(171), __esModule: true };
+module.exports = { "default": __webpack_require__(200), __esModule: true };
 
 /***/ }),
-/* 171 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var core = __webpack_require__(9);
+var core = __webpack_require__(10);
 var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
 module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
   return $JSON.stringify.apply($JSON, arguments);
@@ -17591,39 +22731,39 @@ module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
 
 
 /***/ }),
-/* 172 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(173);
-module.exports = __webpack_require__(9).Object.assign;
+__webpack_require__(202);
+module.exports = __webpack_require__(10).Object.assign;
 
 
 /***/ }),
-/* 173 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.3.1 Object.assign(target, source)
 var $export = __webpack_require__(13);
 
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(174) });
+$export($export.S + $export.F, 'Object', { assign: __webpack_require__(203) });
 
 
 /***/ }),
-/* 174 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 // 19.1.2.1 Object.assign(target, source, ...)
-var getKeys = __webpack_require__(36);
-var gOPS = __webpack_require__(68);
-var pIE = __webpack_require__(50);
-var toObject = __webpack_require__(38);
-var IObject = __webpack_require__(89);
+var getKeys = __webpack_require__(47);
+var gOPS = __webpack_require__(87);
+var pIE = __webpack_require__(67);
+var toObject = __webpack_require__(49);
+var IObject = __webpack_require__(112);
 var $assign = Object.assign;
 
 // should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(27)(function () {
+module.exports = !$assign || __webpack_require__(37)(function () {
   var A = {};
   var B = {};
   // eslint-disable-next-line no-undef
@@ -17650,22 +22790,22 @@ module.exports = !$assign || __webpack_require__(27)(function () {
 
 
 /***/ }),
-/* 175 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(176);
-module.exports = __webpack_require__(9).Object.keys;
+__webpack_require__(205);
+module.exports = __webpack_require__(10).Object.keys;
 
 
 /***/ }),
-/* 176 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(38);
-var $keys = __webpack_require__(36);
+var toObject = __webpack_require__(49);
+var $keys = __webpack_require__(47);
 
-__webpack_require__(74)('keys', function () {
+__webpack_require__(93)('keys', function () {
   return function keys(it) {
     return $keys(toObject(it));
   };
@@ -17673,22 +22813,22 @@ __webpack_require__(74)('keys', function () {
 
 
 /***/ }),
-/* 177 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(49);
-__webpack_require__(34);
-module.exports = __webpack_require__(178);
+__webpack_require__(66);
+__webpack_require__(45);
+module.exports = __webpack_require__(207);
 
 
 /***/ }),
-/* 178 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var classof = __webpack_require__(70);
-var ITERATOR = __webpack_require__(10)('iterator');
-var Iterators = __webpack_require__(28);
-module.exports = __webpack_require__(9).isIterable = function (it) {
+var classof = __webpack_require__(89);
+var ITERATOR = __webpack_require__(11)('iterator');
+var Iterators = __webpack_require__(38);
+module.exports = __webpack_require__(10).isIterable = function (it) {
   var O = Object(it);
   return O[ITERATOR] !== undefined
     || '@@iterator' in O
@@ -17698,21 +22838,21 @@ module.exports = __webpack_require__(9).isIterable = function (it) {
 
 
 /***/ }),
-/* 179 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(49);
-__webpack_require__(34);
-module.exports = __webpack_require__(180);
+__webpack_require__(66);
+__webpack_require__(45);
+module.exports = __webpack_require__(209);
 
 
 /***/ }),
-/* 180 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var anObject = __webpack_require__(14);
-var get = __webpack_require__(71);
-module.exports = __webpack_require__(9).getIterator = function (it) {
+var anObject = __webpack_require__(18);
+var get = __webpack_require__(90);
+module.exports = __webpack_require__(10).getIterator = function (it) {
   var iterFn = get(it);
   if (typeof iterFn != 'function') throw TypeError(it + ' is not iterable!');
   return anObject(iterFn.call(it));
@@ -17720,7 +22860,7 @@ module.exports = __webpack_require__(9).getIterator = function (it) {
 
 
 /***/ }),
-/* 181 */
+/* 210 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -17810,13 +22950,13 @@ var Utils = {
 /* harmony default export */ __webpack_exports__["a"] = (Utils);
 
 /***/ }),
-/* 182 */
+/* 211 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -17824,16 +22964,16 @@ var Utils = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_renderer__ = __webpack_require__(108);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_webgl_render_target__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__object_renderers_object_renderer__ = __webpack_require__(109);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__object_renderers_sprite_renderer__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shaders_texture_shader__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__display_display_object__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__managers_webgl_filter_manager__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__utils_context_performance_hook__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__utils_pixel_array_image__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_renderer__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_webgl_render_target__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__object_renderers_object_renderer__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__object_renderers_sprite_renderer__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shaders_texture_shader__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__display_display_object__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__managers_webgl_filter_manager__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__utils_context_performance_hook__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__utils_pixel_array_image__ = __webpack_require__(131);
 
 
 
@@ -18485,25 +23625,25 @@ WebGLRenderer.type = 'WebGL';
 /* harmony default export */ __webpack_exports__["a"] = (WebGLRenderer);
 
 /***/ }),
-/* 183 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(184);
-var $Object = __webpack_require__(9).Object;
+__webpack_require__(213);
+var $Object = __webpack_require__(10).Object;
 module.exports = function getOwnPropertyDescriptor(it, key) {
   return $Object.getOwnPropertyDescriptor(it, key);
 };
 
 
 /***/ }),
-/* 184 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-var toIObject = __webpack_require__(21);
-var $getOwnPropertyDescriptor = __webpack_require__(69).f;
+var toIObject = __webpack_require__(28);
+var $getOwnPropertyDescriptor = __webpack_require__(88).f;
 
-__webpack_require__(74)('getOwnPropertyDescriptor', function () {
+__webpack_require__(93)('getOwnPropertyDescriptor', function () {
   return function getOwnPropertyDescriptor(it, key) {
     return $getOwnPropertyDescriptor(toIObject(it), key);
   };
@@ -18511,13 +23651,13 @@ __webpack_require__(74)('getOwnPropertyDescriptor', function () {
 
 
 /***/ }),
-/* 185 */
+/* 214 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -18525,8 +23665,8 @@ __webpack_require__(74)('getOwnPropertyDescriptor', function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__object_renderer__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__object_renderer__ = __webpack_require__(130);
 
 
 
@@ -18893,19 +24033,19 @@ var SpriteRenderer = function (_ObjectRenderer) {
 /* harmony default export */ __webpack_exports__["a"] = (SpriteRenderer);
 
 /***/ }),
-/* 186 */
+/* 215 */
 /***/ (function(module, exports) {
 
 module.exports = "attribute vec2 a_position;\nattribute vec2 a_texCoord;\nattribute vec4 a_color;\nvarying vec2 v_texCoord;\nvarying vec4 v_color;\nuniform mat3 u_projMatrix;\n\nvoid main() {\n  gl_Position = vec4((u_projMatrix * vec3(a_position, 1)).xy, 0, 1);\n  v_texCoord = a_texCoord;\n  v_color = vec4(a_color.rgb * a_color.a, a_color.a);\n}\n"
 
 /***/ }),
-/* 187 */
+/* 216 */
 /***/ (function(module, exports) {
 
 module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nvarying vec4 v_color;\n\nvoid main() {\n  gl_FragColor = texture2D(u_image, v_texCoord) * v_color;\n}\n"
 
 /***/ }),
-/* 188 */
+/* 217 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19061,13 +24201,13 @@ var Quad = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Quad);
 
 /***/ }),
-/* 189 */
+/* 218 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(9);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19168,7 +24308,7 @@ var TextureUVs = function () {
 /* harmony default export */ __webpack_exports__["a"] = (TextureUVs);
 
 /***/ }),
-/* 190 */
+/* 219 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19180,13 +24320,13 @@ var TextureUVs = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__texture__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_texture__ = __webpack_require__(42);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_webgl_render_target__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_canvas_render_target__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__managers_webgl_filter_manager__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__managers_canvas_filter_manager__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__texture__ = __webpack_require__(133);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_texture__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_webgl_render_target__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utils_canvas_render_target__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__managers_webgl_filter_manager__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__managers_canvas_filter_manager__ = __webpack_require__(94);
 
 
 
@@ -19448,7 +24588,7 @@ var RenderTexture = function (_Texture) {
 /* harmony default export */ __webpack_exports__["a"] = (RenderTexture);
 
 /***/ }),
-/* 191 */
+/* 220 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19460,9 +24600,9 @@ var RenderTexture = function (_Texture) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__display_container__ = __webpack_require__(111);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_pot_renderer__ = __webpack_require__(192);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__display_container__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_pot_renderer__ = __webpack_require__(221);
 
 
 
@@ -19918,13 +25058,13 @@ var Sprite = function (_Container) {
 /* harmony default export */ __webpack_exports__["a"] = (Sprite);
 
 /***/ }),
-/* 192 */
+/* 221 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(40);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -19982,6 +25122,7 @@ var POTRenderer = function () {
       var newDimensions = this._renderTexture.getDimensions();
       this._sprite.setTexture(inputTexture);
       this._sprite.updateTransform();
+      this._renderTexture.clear();
       this._renderTexture.render(this._container);
 
       this._updateSprite(renderer, inputSprite, textureDimensions, newDimensions);
@@ -20049,11 +25190,11 @@ var POTRenderer = function () {
 /* harmony default export */ __webpack_exports__["a"] = (POTRenderer);
 
 /***/ }),
-/* 193 */
+/* 222 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__texture_shader__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__texture_shader__ = __webpack_require__(95);
 /* @module */
 /*
  * This file is part of PhotoEditorSDK.
@@ -20076,25 +25217,25 @@ var POTRenderer = function () {
 });
 
 /***/ }),
-/* 194 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(195), __esModule: true };
+module.exports = { "default": __webpack_require__(224), __esModule: true };
 
 /***/ }),
-/* 195 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(196);
-module.exports = __webpack_require__(9).setImmediate;
+__webpack_require__(225);
+module.exports = __webpack_require__(10).setImmediate;
 
 
 /***/ }),
-/* 196 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(13);
-var $task = __webpack_require__(72);
+var $task = __webpack_require__(91);
 $export($export.G + $export.B, {
   setImmediate: $task.set,
   clearImmediate: $task.clear
@@ -20102,18 +25243,18 @@ $export($export.G + $export.B, {
 
 
 /***/ }),
-/* 197 */
+/* 226 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unpremultiply_filter__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__unpremultiply_filter__ = __webpack_require__(227);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "UnpremultiplyFilter", function() { return __WEBPACK_IMPORTED_MODULE_0__unpremultiply_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color_overlay_filter__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__color_overlay_filter__ = __webpack_require__(229);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ColorOverlayFilter", function() { return __WEBPACK_IMPORTED_MODULE_1__color_overlay_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tint_filter__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tint_filter__ = __webpack_require__(231);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "TintFilter", function() { return __WEBPACK_IMPORTED_MODULE_2__tint_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__overlay_filter__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__overlay_filter__ = __webpack_require__(233);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "OverlayFilter", function() { return __WEBPACK_IMPORTED_MODULE_3__overlay_filter__["a"]; });
 /* @module */
 /*
@@ -20139,7 +25280,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 198 */
+/* 227 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20149,7 +25290,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(54);
 
 
 
@@ -20187,7 +25328,7 @@ var UnpremultiplyFilter = function (_Filter) {
 
     var _this = _possibleConstructorReturn(this, (UnpremultiplyFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default()(UnpremultiplyFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(199);
+    _this._fragmentSource = __webpack_require__(228);
     return _this;
   }
 
@@ -20197,13 +25338,13 @@ var UnpremultiplyFilter = function (_Filter) {
 /* harmony default export */ __webpack_exports__["a"] = (UnpremultiplyFilter);
 
 /***/ }),
-/* 199 */
+/* 228 */
 /***/ (function(module, exports) {
 
 module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nvarying vec4 v_color;\n\nvoid main() {\n  vec4 color = texture2D(u_image, v_texCoord);\n  gl_FragColor = vec4(color.a > 0. ? color.rgb / color.a : vec3(0), color.a);\n}\n"
 
 /***/ }),
-/* 200 */
+/* 229 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20215,8 +25356,8 @@ module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nvarying 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(54);
 
 
 
@@ -20267,7 +25408,7 @@ var ColorOverlayFilter = function (_Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = ColorOverlayFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(ColorOverlayFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(201);
+    _this._fragmentSource = __webpack_require__(230);
     return _this;
   }
 
@@ -20334,13 +25475,13 @@ ColorOverlayFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (ColorOverlayFilter);
 
 /***/ }),
-/* 201 */
+/* 230 */
 /***/ (function(module, exports) {
 
 module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nuniform vec4 u_color;\n\nvoid main() {\n  vec4 color = texture2D(u_image, v_texCoord);\n  gl_FragColor = vec4(mix(color.rgb, u_color.rgb, u_color.a), color.a) * color.a;\n}\n"
 
 /***/ }),
-/* 202 */
+/* 231 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20352,8 +25493,8 @@ module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(54);
 
 
 
@@ -20404,7 +25545,7 @@ var TintFilter = function (_Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = TintFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TintFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(203);
+    _this._fragmentSource = __webpack_require__(232);
     return _this;
   }
 
@@ -20493,13 +25634,13 @@ TintFilter.MODES = {
 /* harmony default export */ __webpack_exports__["a"] = (TintFilter);
 
 /***/ }),
-/* 203 */
+/* 232 */
 /***/ (function(module, exports) {
 
 module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nuniform vec4 u_color;\nuniform int u_mode;\n\nvec3 W = vec3(0.2125, 0.7154, 0.0721);\n\nvoid main() {\n  vec4 color = texture2D(u_image, v_texCoord);\n  if (u_mode == 0) {\n    gl_FragColor = color * color.a;\n  } else if (u_mode == 1) {\n    gl_FragColor = vec4(mix(color.rgb, u_color.rgb, u_color.a), color.a) * color.a;\n  } else if (u_mode == 2) {\n    float luminance = dot(color.rgb, W);\n    vec3 colorized = vec3(luminance) * u_color.rgb;\n    gl_FragColor = vec4(mix(color.rgb, colorized, u_color.a), color.a) * color.a;\n  }\n}\n"
 
 /***/ }),
-/* 204 */
+/* 233 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20511,8 +25652,8 @@ module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter__ = __webpack_require__(54);
 
 
 
@@ -20566,7 +25707,7 @@ var OverlayFilter = function (_Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = OverlayFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(OverlayFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(205);
+    _this._fragmentSource = __webpack_require__(234);
 
     _this._lastImage = null;
     return _this;
@@ -20749,29 +25890,29 @@ OverlayFilter.BLEND_MODES = {
 /* harmony default export */ __webpack_exports__["a"] = (OverlayFilter);
 
 /***/ }),
-/* 205 */
+/* 234 */
 /***/ (function(module, exports) {
 
 module.exports = "uniform sampler2D u_image;\nvarying vec2 v_texCoord;\nuniform sampler2D u_overlayImage;\nuniform int u_blendMode;\nuniform float u_alpha;\n\nconst float EPSILON = 0.000001;\n\nvec4 overlay(vec4 a, vec4 b) {\n    vec3 result = mix(\n          1.0 - 2.0 * (1.0 - a.rgb) * (1.0 - b.rgb),\n          2.0 * a.rgb * b.rgb,\n          vec3(a.r < 0.5, a.g < 0.5, a.b < 0.5)\n      );\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 hardLight(vec4 b, vec4 a) {\n    vec3 result = mix(\n          1.0 - 2.0 * (1.0 - a.rgb) * (1.0 - b.rgb),\n          2.0 * a.rgb * b.rgb,\n          vec3(a.r < 0.5, a.g < 0.5, a.b < 0.5)\n      );\n    return mix(b, vec4(result, b.a), u_alpha * a.a);\n}\n\nvec4 softLight(vec4 a, vec4 b) {\n    vec3 result = mix(\n          2.0 * a.rgb * (1.0 - b.rgb) + (2.0 * b.rgb - 1.0) * sqrt(a.rgb),\n          2.0 * a.rgb * b.rgb + a.rgb * a.rgb * (1.0 - 2.0 * b.rgb),\n          vec3(b.r < 0.5, b.g < 0.5, b.b < 0.5)\n      );\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 multiply(vec4 a, vec4 b) {\n    vec3 result = a.rgb * b.rgb;\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 darken(vec4 a, vec4 b) {\n    vec3 result = min(a.rgb, b.rgb);\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 lighten(vec4 a, vec4 b) {\n    vec3 result = max(a.rgb, b.rgb);\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 screen(vec4 a, vec4 b) {\n    vec3 result = 1.0 - (1.0 - a.rgb) * (1.0 - b.rgb);\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 colorBurn(vec4 a, vec4 b) {\n    vec3 result = clamp(1.0 - (1.0 - a.rgb) / max(b.rgb, EPSILON), 0.0, 1.0);\n    return mix(a, vec4(result, a.a), u_alpha * b.a);\n}\n\nvec4 normal(vec4 a, vec4 b) {\n    return mix(a, vec4(b.rgb, a.a), 1.0);\n}\n\nvoid main() {\n  vec4 color = texture2D(u_image, v_texCoord);\n  vec4 overlayColor = texture2D(u_overlayImage, v_texCoord);\n\n  vec4 resultColor;\n  if (u_blendMode == 0) {\n    resultColor = normal(color, overlayColor);\n  } else if (u_blendMode == 1) {\n    resultColor = overlay(color, overlayColor);\n  } else if (u_blendMode == 2) {\n    resultColor = hardLight(color, overlayColor);\n  } else if (u_blendMode == 3) {\n    resultColor = softLight(color, overlayColor);\n  } else if (u_blendMode == 4) {\n    resultColor = multiply(color, overlayColor);\n  } else if (u_blendMode == 5) {\n    resultColor = darken(color, overlayColor);\n  } else if (u_blendMode == 6) {\n    resultColor = lighten(color, overlayColor);\n  } else if (u_blendMode == 7) {\n    resultColor = screen(color, overlayColor);\n  } else if (u_blendMode == 8) {\n    resultColor = colorBurn(color, overlayColor);\n  }\n  gl_FragColor = vec4(resultColor.rgb * resultColor.a, resultColor.a);\n}\n"
 
 /***/ }),
-/* 206 */
+/* 235 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vendor_jsbn__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_base64__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_loaders_json_loader__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__vendor_sha256__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__vendor_jsbn__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_base64__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_loaders_json_loader__ = __webpack_require__(135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__vendor_sha256__ = __webpack_require__(244);
 
 
 
@@ -21142,7 +26283,7 @@ var L = function () {
 /* harmony default export */ __webpack_exports__["a"] = (L);
 
 /***/ }),
-/* 207 */
+/* 236 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -22581,7 +27722,7 @@ BigInteger.prototype.square = bnSquare;
 /* harmony default export */ __webpack_exports__["a"] = (BigInteger);
 
 /***/ }),
-/* 208 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22608,8 +27749,8 @@ BigInteger.prototype.square = bnSquare;
 
 
 
-var punycode = __webpack_require__(209);
-var util = __webpack_require__(211);
+var punycode = __webpack_require__(238);
+var util = __webpack_require__(240);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -22684,7 +27825,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(212);
+    querystring = __webpack_require__(241);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -23320,7 +28461,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ }),
-/* 209 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -23856,10 +28997,10 @@ Url.prototype.parseHost = function() {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(210)(module), __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(239)(module), __webpack_require__(41)))
 
 /***/ }),
-/* 210 */
+/* 239 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -23887,7 +29028,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 211 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23910,18 +29051,18 @@ module.exports = {
 
 
 /***/ }),
-/* 212 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(213);
-exports.encode = exports.stringify = __webpack_require__(214);
+exports.decode = exports.parse = __webpack_require__(242);
+exports.encode = exports.stringify = __webpack_require__(243);
 
 
 /***/ }),
-/* 213 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24012,7 +29153,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 214 */
+/* 243 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24104,7 +29245,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 215 */
+/* 244 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24310,7 +29451,7 @@ function sha256(s) {
 
 
 /***/ }),
-/* 216 */
+/* 245 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24366,10 +29507,10 @@ if (!cAF) {
 }
 
 
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(41)))
 
 /***/ }),
-/* 217 */
+/* 246 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24791,7 +29932,7 @@ var Vector3 = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Vector3);
 
 /***/ }),
-/* 218 */
+/* 247 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -24803,10 +29944,10 @@ var Vector3 = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_math_vector2__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__operation__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__globals__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_promise__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__lib_math_vector2__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__operation__ = __webpack_require__(138);
 
 
 
@@ -25007,13 +30148,13 @@ ExifOrientationOperation.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (ExifOrientationOperation);
 
 /***/ }),
-/* 219 */
+/* 248 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__globals__ = __webpack_require__(40);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25095,14 +30236,14 @@ var VersionChecker = function () {
 /* harmony default export */ __webpack_exports__["a"] = (VersionChecker);
 
 /***/ }),
-/* 220 */
+/* 249 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_stream__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_stream__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(101);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25258,15 +30399,15 @@ var JFIFData = function () {
 /* harmony default export */ __webpack_exports__["a"] = (JFIFData);
 
 /***/ }),
-/* 221 */
+/* 250 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_stream__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array_stream__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__constants__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(22);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -25541,7 +30682,7 @@ var EXIFData = function () {
 /* harmony default export */ __webpack_exports__["a"] = (EXIFData);
 
 /***/ }),
-/* 222 */
+/* 251 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25551,15 +30692,15 @@ var EXIFData = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__constants__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__engine__ = __webpack_require__(51);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__exif__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__configurable__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__constants__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__engine__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__exif__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__configurable__ = __webpack_require__(55);
 
 
 
@@ -25882,10 +31023,10 @@ ImageExporter.prototype.availableOptions = {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (ImageExporter);
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(223).Buffer))
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(252).Buffer))
 
 /***/ }),
-/* 223 */
+/* 252 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25899,9 +31040,9 @@ ImageExporter.prototype.availableOptions = {
 
 
 
-var base64 = __webpack_require__(224)
-var ieee754 = __webpack_require__(225)
-var isArray = __webpack_require__(226)
+var base64 = __webpack_require__(253)
+var ieee754 = __webpack_require__(254)
+var isArray = __webpack_require__(255)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -27679,10 +32820,10 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(32)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(41)))
 
 /***/ }),
-/* 224 */
+/* 253 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27803,7 +32944,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 225 */
+/* 254 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -27893,7 +33034,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 226 */
+/* 255 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -27904,7 +33045,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 227 */
+/* 256 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27993,29 +33134,29 @@ var Env = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Env);
 
 /***/ }),
-/* 228 */
+/* 257 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__image_loader__ = __webpack_require__(229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__image_loader__ = __webpack_require__(258);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ImageLoader", function() { return __WEBPACK_IMPORTED_MODULE_0__image_loader__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__json_loader__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__json_loader__ = __webpack_require__(135);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "JSONLoader", function() { return __WEBPACK_IMPORTED_MODULE_1__json_loader__["a"]; });
 // export { default as FileLoader } from './file-loader'
 
 
 
 /***/ }),
-/* 229 */
+/* 258 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__ = __webpack_require__(70);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_is_iterable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__ = __webpack_require__(71);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_get_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_promise__);
 
 
@@ -28108,26 +33249,26 @@ var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = [
 });
 
 /***/ }),
-/* 230 */
+/* 259 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adjustments_operation__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blur_operation__ = __webpack_require__(235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter_operation__ = __webpack_require__(237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__frame_operation__ = __webpack_require__(300);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linear_focus_operation__ = __webpack_require__(301);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mirrored_focus_operation__ = __webpack_require__(304);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__orientation_operation__ = __webpack_require__(307);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__overlay_operation__ = __webpack_require__(308);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__radial_focus_operation__ = __webpack_require__(309);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__selective_blur_operation__ = __webpack_require__(312);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__sprite_operation__ = __webpack_require__(318);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__transform_operation__ = __webpack_require__(323);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__watermark_operation__ = __webpack_require__(325);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__adjustments_operation__ = __webpack_require__(260);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blur_operation__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter_operation__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__frame_operation__ = __webpack_require__(329);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__linear_focus_operation__ = __webpack_require__(330);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mirrored_focus_operation__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__orientation_operation__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__overlay_operation__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__radial_focus_operation__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__selective_blur_operation__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__sprite_operation__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__transform_operation__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__watermark_operation__ = __webpack_require__(378);
 /* @module */
 /*
  * This file is part of PhotoEditorSDK.
@@ -28165,13 +33306,13 @@ __WEBPACK_IMPORTED_MODULE_0_photoeditorsdk_core___default.a.AllOperations = Oper
 /* harmony default export */ __webpack_exports__["default"] = (Operations);
 
 /***/ }),
-/* 231 */
+/* 260 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -28181,8 +33322,8 @@ __WEBPACK_IMPORTED_MODULE_0_photoeditorsdk_core___default.a.AllOperations = Oper
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_filters_adjustments_filter__ = __webpack_require__(121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clarity_filter__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_filters_adjustments_filter__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clarity_filter__ = __webpack_require__(262);
 
 
 
@@ -28355,13 +33496,13 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.Adjustmen
 /* harmony default export */ __webpack_exports__["a"] = (AdjustmentsOperation);
 
 /***/ }),
-/* 232 */
+/* 261 */
 /***/ (function(module, exports) {
 
 module.exports = "precision highp float;\n\nvarying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nuniform float u_gamma;\nuniform float u_shadows;\nuniform float u_highlights;\n\nuniform mat4 u_colorMatrix;\nuniform vec4 u_colorOffset;\n\nconst float EPSILON = 0.0000001;\n\nfloat calculateLuminance(vec3 rgb) {\n    // This is the luminance calculation part of the RGB to HSL formular.\n    vec4 p = mix(\n        vec4(rgb.gb, 0.0, -1.0 / 3.0),\n        vec4(rgb.bg, -1.0, 2.0 / 3.0),\n        vec4(rgb.g < rgb.b)\n    );\n\n    vec4 q = mix(\n        vec4(rgb.r, p.yzx),\n        vec4(p.xyw, rgb.r),\n        vec4(rgb.r < p.x)\n    );\n\n    float croma = q.x - min(q.w, q.y);\n    float luminance = q.x - croma * 0.5;\n    return luminance;\n}\n\nvoid main() {\n\n  vec4 color = clamp(texture2D(u_image, v_texCoord), 0.0, 1.0);\n  color.rgb /= max(color.a, EPSILON); // Revert premultiplied alpha\n\n  // Apply gamma\n  if (u_gamma != 1.0) {\n    color.rgb = pow(color.rgb, vec3(1.0 / max(u_gamma, EPSILON)));\n  }\n\n  // Apply shadows and highlights\n  float luminance = calculateLuminance(color.rgb);\n\n  float shadow = u_shadows >= 0.0\n    ? clamp(\n          pow(luminance, 1.0 / (u_shadows + 1.0))\n          + pow(luminance, 2.0 / (u_shadows + 1.0)) * -0.76\n          - luminance\n    , 0.0, max(u_shadows, 1.0))\n    : -clamp(\n          pow(luminance, 1.0 / (-u_shadows + 1.0))\n          + pow(luminance, 2.0 / (-u_shadows + 1.0)) * -0.76\n          - luminance\n    , 0.0, max(-u_shadows, 1.0));\n\n  float highlight = u_highlights < 0.0\n    ? clamp(\n          1.0\n          - pow(1.0 - luminance, 1.0 / (1.0 - u_highlights))\n          - pow(1.0 - luminance, 2.0 / (1.0 - u_highlights)) * -0.8\n          - luminance\n     , -1.0, 0.0)\n    : -clamp(\n          1.0\n          - pow(1.0 - luminance, 1.0 / (1.0 + u_highlights))\n          - pow(1.0 - luminance, 2.0 / (1.0 + u_highlights)) * -0.8\n          - luminance\n     , -1.0, 0.0);\n\n  // Bright color need more contrast and dark color need more brightness.\n  // This is to keep saturatation because the color information of a dark colors is lost.\n  float shadowContrast   = shadow * luminance * luminance;\n  float shadowBrightness = shadow - shadowContrast;\n  color.rgb = clamp((luminance + highlight + shadowContrast) * ((color.rgb + shadowBrightness) / max(luminance, EPSILON)), 0.0, 1.0);\n\n  // Apply Color Matrix\n  color = clamp(color * u_colorMatrix + u_colorOffset, 0.0, 1.0);\n\n  color.rgb *= color.a; // Do premultiplie alpha\n\n  gl_FragColor = color;\n}\n"
 
 /***/ }),
-/* 233 */
+/* 262 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28415,7 +33556,7 @@ var ClarityFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (ClarityFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(ClarityFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(234);
+    _this._fragmentSource = __webpack_require__(263);
     return _this;
   }
 
@@ -28545,19 +33686,19 @@ ClarityFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (ClarityFilter);
 
 /***/ }),
-/* 234 */
+/* 263 */
 /***/ (function(module, exports) {
 
 module.exports = "precision mediump float;\n\n// Input Image with config WRAP_S and WRAP_T: CLAMP_TO_EDGE\nuniform sampler2D u_image;\n\n// Size of one pixel == vec2(1.0 / u_image.width, 1.0 / u_image.height)\nuniform vec2 u_pixelDimension;\n\n// Range (-1.0 - 1.0)\nuniform float u_clarity;\n\nvarying vec2 v_texCoord;\n\nuniform mat4 u_colorMatrix;\nuniform vec4 u_colorOffset;\n\nconst float EPSILON = 0.000001;\n\nvoid main() {\n    vec4 color = texture2D(u_image, v_texCoord);\n\n    vec4 mergedColor = color;\n    mergedColor += texture2D(u_image, v_texCoord + vec2(-u_pixelDimension.x, -u_pixelDimension.y));\n    mergedColor += texture2D(u_image, v_texCoord + vec2(-u_pixelDimension.x,                 0.0));\n    mergedColor += texture2D(u_image, v_texCoord + vec2(-u_pixelDimension.x,  u_pixelDimension.y));\n\n    mergedColor += texture2D(u_image, v_texCoord + vec2(                0.0, -u_pixelDimension.y));\n    mergedColor += texture2D(u_image, v_texCoord + vec2(                0.0,  u_pixelDimension.y));\n\n    mergedColor += texture2D(u_image, v_texCoord + vec2( u_pixelDimension.x, -u_pixelDimension.y));\n    mergedColor += texture2D(u_image, v_texCoord + vec2( u_pixelDimension.x,                 0.0));\n    mergedColor += texture2D(u_image, v_texCoord + vec2( u_pixelDimension.x,  u_pixelDimension.y));\n\n    mergedColor /= 9.0;\n\n    color.rgb /= max(color.a, EPSILON);       // Revert premultiplied alpha\n    mergedColor.rgb /= max(mergedColor.a, EPSILON); // Revert premultiplied alpha\n\n    float grayValue = clamp(color.r * 0.3 + color.g * 0.59 + color.b * 0.1, 0.111111, 0.999999);\n    // 1.0 and 0.0 result in white not black, therefore we clamp\n\n    // Here we create a function that will map values below 0.1 to 0. Values above 0.2 will be mapped to 1,\n    // and for values between 0.1 and 0.2 it will produce a gradient.\n    // The funtion is mirror at 0.5, meaning values between 0.8 and 0.9 will result in a decending gradient.\n    // And values above 0.9 will be mapped to 0.\n    float frequenceFactor = min(smoothstep(1.0 - grayValue, 0.0, 0.11), smoothstep(grayValue, 0.0, 0.11));\n\n    // here we apply the high pass filter. Its strength is determined by the uniform ,\n    // and the frequence factor. That means the only the mid tones are affected by this filter.\n    // Clarity input is ranging from -1 to 1. But we want to strengthen the effect.\n    // Therefore we see this little magic number '3.7'.\n    color = clamp(color + clamp((color - mergedColor) * u_clarity * 3.7 * frequenceFactor, 0.0, 10.0), 0.0, 1.0);\n\n    // apply exposure but only to the mid tones.\n    color.rgb = color.rgb * pow(2.0, u_clarity * 0.27 * frequenceFactor);\n\n    // apply contrast and desaturation matrix\n\n\n    color = clamp(color * u_colorMatrix + u_colorOffset, 0.0, 1.0);\n\n    color.rgb *= color.a; // Do premultiplie alpha\n\n    gl_FragColor = clamp(color, 0.0, 1.0);\n}\n"
 
 /***/ }),
-/* 235 */
+/* 264 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -28567,7 +33708,7 @@ module.exports = "precision mediump float;\n\n// Input Image with config WRAP_S 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_filters_blur_filter__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_filters_blur_filter__ = __webpack_require__(143);
 
 
 
@@ -28766,21 +33907,21 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.BlurOpera
 /* harmony default export */ __webpack_exports__["a"] = (BlurOperation);
 
 /***/ }),
-/* 236 */
+/* 265 */
 /***/ (function(module, exports) {
 
 module.exports = "/*\n * Based on evanw's glfx.js tilt shift shader:\n * https://github.com/evanw/glfx.js/blob/master/src/filters/blur/tiltshift.js\n * @license\n */\n\nuniform sampler2D u_image;\nuniform float u_blurRadius;\nuniform vec2 u_delta;\nuniform vec2 u_texSize;\nvarying vec2 v_texCoord;\n\nfloat random(vec2 co)\n{\n    highp float a = 12.9898;\n    highp float b = 78.233;\n    highp float c = 43758.5453;\n    highp float dt = dot(co.xy,vec2(a,b));\n    highp float sn = mod(dt, 3.14);\n    return fract(sin(sn) * c);\n}\n\nvoid main() {\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    float offset = random(gl_FragCoord.xy / u_texSize.xy);\n    float radius = u_blurRadius;\n\n    for (float t = -30.0; t <= 30.0; t++) {\n        float percent = (t + offset - 0.5) / 30.0;\n        float weight = 1.0 - abs(percent);\n\n        // Somehow `sample` is a keyword in headless-gl\n        vec4 _sample = texture2D(u_image, v_texCoord + u_delta * percent * radius / u_texSize);\n\n        _sample.rgb *= _sample.a;\n\n        color += _sample * weight;\n        total += weight;\n    }\n\n    gl_FragColor = color / total;\n    gl_FragColor.rgb /= gl_FragColor.a + 0.00001;\n}\n"
 
 /***/ }),
-/* 237 */
+/* 266 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
@@ -28790,10 +33931,10 @@ module.exports = "/*\n * Based on evanw's glfx.js tilt shift shader:\n * https:/
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__filters_identity_filter__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__filters_primitives__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__filters__ = __webpack_require__(268);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__filters_filter__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__filters_identity_filter__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__filters_primitives__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__filters__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__filters_filter__ = __webpack_require__(7);
 
 
 
@@ -29005,7 +34146,7 @@ __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default.a.Operations.FilterOpe
 /* harmony default export */ __webpack_exports__["a"] = (FilterOperation);
 
 /***/ }),
-/* 238 */
+/* 267 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29057,7 +34198,7 @@ var BlendFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (BlendFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(BlendFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(239);
+    _this._fragmentSource = __webpack_require__(268);
     return _this;
   }
 
@@ -29303,13 +34444,13 @@ var PrimitivesStack = function () {
 /* harmony default export */ __webpack_exports__["a"] = (PrimitivesStack);
 
 /***/ }),
-/* 239 */
+/* 268 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform sampler2D u_filteredImage;\nuniform float u_intensity;\n\nvoid main() {\n  vec4 color0 = texture2D(u_image, v_texCoord);\n  vec4 color1 = texture2D(u_filteredImage, v_texCoord);\n  gl_FragColor = mix(color0, color1, u_intensity);\n}\n"
 
 /***/ }),
-/* 240 */
+/* 269 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29323,7 +34464,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -29363,7 +34504,7 @@ var BrightnessFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (BrightnessFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(BrightnessFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(241);
+    _this._fragmentSource = __webpack_require__(270);
     return _this;
   }
 
@@ -29473,13 +34614,13 @@ Brightness.prototype.availableOptions = BrightnessFilter.prototype.availableOpti
 /* harmony default export */ __webpack_exports__["a"] = (Brightness);
 
 /***/ }),
-/* 241 */
+/* 270 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform float u_brightness;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  gl_FragColor = vec4((texColor.rgb + vec3(u_brightness) * texColor.a), texColor.a);;\n}\n"
 
 /***/ }),
-/* 242 */
+/* 271 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29493,7 +34634,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -29533,7 +34674,7 @@ var ContrastFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (ContrastFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(ContrastFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(243);
+    _this._fragmentSource = __webpack_require__(272);
     return _this;
   }
 
@@ -29641,13 +34782,13 @@ Contrast.prototype.availableOptions = ContrastFilter.prototype.availableOptions;
 /* harmony default export */ __webpack_exports__["a"] = (Contrast);
 
 /***/ }),
-/* 243 */
+/* 272 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform float u_contrast;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  gl_FragColor = vec4(((texColor.rgb - vec3(0.5)) * u_contrast + vec3(0.5) * texColor.a), texColor.a);\n}\n"
 
 /***/ }),
-/* 244 */
+/* 273 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29661,7 +34802,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -29702,7 +34843,7 @@ var ColorMatrixFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (ColorMatrixFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(ColorMatrixFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(245);
+    _this._fragmentSource = __webpack_require__(274);
     return _this;
   }
 
@@ -29813,13 +34954,13 @@ ColorMatrixPrimitive.prototype.availableOptions = ColorMatrixFilter.prototype.av
 /* harmony default export */ __webpack_exports__["a"] = (ColorMatrixPrimitive);
 
 /***/ }),
-/* 245 */
+/* 274 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform mat4 u_colorMatrix;\nuniform vec4 u_colorMatrixOffset;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  gl_FragColor = texColor * u_colorMatrix + u_colorMatrixOffset;\n}\n"
 
 /***/ }),
-/* 246 */
+/* 275 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29833,7 +34974,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -29873,7 +35014,7 @@ var DesaturationFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (DesaturationFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(DesaturationFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(247);
+    _this._fragmentSource = __webpack_require__(276);
     return _this;
   }
 
@@ -29981,13 +35122,13 @@ Desaturation.prototype.availableOptions = DesaturationFilter.prototype.available
 /* harmony default export */ __webpack_exports__["a"] = (Desaturation);
 
 /***/ }),
-/* 247 */
+/* 276 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform float u_desaturation;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  vec3 grayXfer = vec3(0.3, 0.59, 0.11);\n  vec3 gray = vec3(dot(grayXfer, texColor.xyz));\n  gl_FragColor = vec4(mix(texColor.xyz, gray, u_desaturation) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 248 */
+/* 277 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30001,7 +35142,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -30040,7 +35181,7 @@ var GammaFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (GammaFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(GammaFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(249);
+    _this._fragmentSource = __webpack_require__(278);
     return _this;
   }
 
@@ -30160,13 +35301,13 @@ Gamma.prototype.availableOptions = GammaFilter.prototype.availableOptions;
 /* harmony default export */ __webpack_exports__["a"] = (Gamma);
 
 /***/ }),
-/* 249 */
+/* 278 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform vec3 u_gamma;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  vec3 rgb = vec3(texColor.r, texColor.g, texColor.b);\n  rgb = pow(rgb, u_gamma);\n  gl_FragColor = vec4(rgb * texColor.a, texColor.a);;\n}\n"
 
 /***/ }),
-/* 250 */
+/* 279 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30180,7 +35321,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -30220,7 +35361,7 @@ var GlowFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (GlowFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(GlowFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(251);
+    _this._fragmentSource = __webpack_require__(280);
     return _this;
   }
 
@@ -30341,13 +35482,13 @@ Glow.prototype.availableOptions = GlowFilter.prototype.availableOptions;
 /* harmony default export */ __webpack_exports__["a"] = (Glow);
 
 /***/ }),
-/* 251 */
+/* 280 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nuniform vec3 u_color;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n\n  vec2 textureCoord = v_texCoord - vec2(0.5, 0.5);\n  textureCoord /= 0.75;\n\n  float d = 1.0 - dot(textureCoord, textureCoord);\n  d = clamp(d, 0.2, 1.0);\n  vec3 newColor = texColor.rgb * d * u_color.rgb;\n  gl_FragColor = vec4(vec3(newColor) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 252 */
+/* 281 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30361,7 +35502,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nunifor
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -30401,7 +35542,7 @@ var GobblinFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (GobblinFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(GobblinFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(253);
+    _this._fragmentSource = __webpack_require__(282);
     return _this;
   }
 
@@ -30478,13 +35619,13 @@ var Gobblin = function (_Primitive) {
 /* harmony default export */ __webpack_exports__["a"] = (Gobblin);
 
 /***/ }),
-/* 253 */
+/* 282 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  texColor.b = texColor.g * 0.33;\n  texColor.r = texColor.r * 0.6;\n  texColor.b += texColor.r * 0.33;\n  texColor.g = texColor.g * 0.7;\n  gl_FragColor = texColor;\n}\n"
 
 /***/ }),
-/* 254 */
+/* 283 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30498,7 +35639,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nvoid m
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -30538,7 +35679,7 @@ var GrayscaleFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (GrayscaleFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(GrayscaleFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(255);
+    _this._fragmentSource = __webpack_require__(284);
     return _this;
   }
 
@@ -30615,23 +35756,23 @@ var Grayscale = function (_Primitive) {
 /* harmony default export */ __webpack_exports__["a"] = (Grayscale);
 
 /***/ }),
-/* 255 */
+/* 284 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nvec3 W = vec3(0.2125, 0.7154, 0.0721);\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  float luminance = dot(texColor.rgb, W);\n  gl_FragColor = vec4(vec3(luminance) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 256 */
+/* 285 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform sampler2D u_lookupTable;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  float r = texture2D(u_lookupTable, vec2(texColor.r, 0.0)).r;\n  float g = texture2D(u_lookupTable, vec2(texColor.g, 0.0)).g;\n  float b = texture2D(u_lookupTable, vec2(texColor.b, 0.0)).b;\n\n  gl_FragColor = vec4(vec3(r, g, b) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 257 */
+/* 286 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
@@ -30643,7 +35784,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(12);
 
 
 
@@ -30691,7 +35832,7 @@ var LookupTableImageFilter = function (_Engine$Filter) {
     var _this = _possibleConstructorReturn(this, (LookupTableImageFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(LookupTableImageFilter)).call(this));
 
     _this._precomputeQuads();
-    _this._fragmentSource = __webpack_require__(258);
+    _this._fragmentSource = __webpack_require__(287);
     return _this;
   }
 
@@ -30905,13 +36046,13 @@ LookupTableImage.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (LookupTableImage);
 
 /***/ }),
-/* 258 */
+/* 287 */
 /***/ (function(module, exports) {
 
 module.exports = "/**\n * Based off of GPUImage's LookupFilter:\n * https://github.com/BradLarson/GPUImage/blob/master/framework/Source/GPUImageLookupFilter.m\n */\n\nvarying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform sampler2D u_lookupTable;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  float blueColor = texColor.b * 63.0;\n\n  vec2 quad1;\n  quad1.y = floor(floor(blueColor) / 8.0);\n  quad1.x = floor(blueColor) - (quad1.y * 8.0);\n\n  vec2 quad2;\n  quad2.y = floor(ceil(blueColor) / 8.0);\n  quad2.x = ceil(blueColor) - (quad2.y * 8.0);\n\n  vec2 texCoord1;\n  texCoord1.x = (quad1.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * texColor.r);\n  texCoord1.y = (quad1.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * texColor.g);\n\n  vec2 texCoord2;\n  texCoord2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * texColor.r);\n  texCoord2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * texColor.g);\n\n  vec4 newColor1 = texture2D(u_lookupTable, texCoord1);\n  vec4 newColor2 = texture2D(u_lookupTable, texCoord2);\n\n  vec4 newColor = mix(newColor1, newColor2, fract(blueColor));\n  gl_FragColor = mix(texColor, vec4(newColor.rgb, texColor.w), texColor.a);\n}\n"
 
 /***/ }),
-/* 259 */
+/* 288 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30925,7 +36066,7 @@ module.exports = "/**\n * Based off of GPUImage's LookupFilter:\n * https://gith
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -30965,7 +36106,7 @@ var SaturationFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (SaturationFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(SaturationFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(260);
+    _this._fragmentSource = __webpack_require__(289);
     return _this;
   }
 
@@ -31073,13 +36214,13 @@ Saturation.prototype.availableOptions = SaturationFilter.prototype.availableOpti
 /* harmony default export */ __webpack_exports__["a"] = (Saturation);
 
 /***/ }),
-/* 260 */
+/* 289 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform float u_saturation;\n\nconst vec3 luminanceWeighting = vec3(0.2125, 0.7154, 0.0721);\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  float luminance = dot(texColor.rgb, luminanceWeighting);\n\n  vec3 greyScaleColor = vec3(luminance);\n\n  gl_FragColor = vec4(mix(greyScaleColor, texColor.rgb, u_saturation) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 261 */
+/* 290 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31093,7 +36234,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -31133,7 +36274,7 @@ var SoftColorOverlayFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (SoftColorOverlayFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(SoftColorOverlayFilter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(262);
+    _this._fragmentSource = __webpack_require__(291);
     return _this;
   }
 
@@ -31238,13 +36379,13 @@ SoftColorOverlay.prototype.availableOptions = SoftColorOverlayFilter.prototype.a
 /* harmony default export */ __webpack_exports__["a"] = (SoftColorOverlay);
 
 /***/ }),
-/* 262 */
+/* 291 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform vec3 u_color;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  vec4 overlayVec4 = vec4(u_color, texColor.a);\n  gl_FragColor = max(overlayVec4 * texColor.a, texColor);\n}\n"
 
 /***/ }),
-/* 263 */
+/* 292 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31258,7 +36399,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lookup_table__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lookup_table__ = __webpack_require__(145);
 
 
 
@@ -31521,7 +36662,7 @@ ToneCurve.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (ToneCurve);
 
 /***/ }),
-/* 264 */
+/* 293 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31535,7 +36676,7 @@ ToneCurve.prototype.availableOptions = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitive__ = __webpack_require__(12);
 
 
 
@@ -31575,7 +36716,7 @@ var X400Filter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (X400Filter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(X400Filter)).call(this));
 
-    _this._fragmentSource = __webpack_require__(265);
+    _this._fragmentSource = __webpack_require__(294);
     return _this;
   }
 
@@ -31657,17 +36798,17 @@ var X400 = function (_Primitive) {
 /* harmony default export */ __webpack_exports__["a"] = (X400);
 
 /***/ }),
-/* 265 */
+/* 294 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nvoid main() {\n  vec4 texColor = texture2D(u_image, v_texCoord);\n  float gray = texColor.r * 0.3 + texColor.g * 0.3 + texColor.b * 0.3;\n  gray -= 0.2;\n  gray = clamp(gray, 0.0, 1.0);\n  gray += 0.15;\n  gray *= 1.4;\n  gl_FragColor = vec4(vec3(gray) * texColor.a, texColor.a);\n}\n"
 
 /***/ }),
-/* 266 */
+/* 295 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
@@ -31679,7 +36820,7 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\n\nvoid m
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__primitive__ = __webpack_require__(12);
 
 
 
@@ -31728,7 +36869,7 @@ var ThreeDLookupTableImageFilter = function (_Engine$Filter) {
     var _this = _possibleConstructorReturn(this, (ThreeDLookupTableImageFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(ThreeDLookupTableImageFilter)).call(this));
 
     _this._precomputeQuads();
-    _this._fragmentSource = __webpack_require__(267);
+    _this._fragmentSource = __webpack_require__(296);
     return _this;
   }
 
@@ -32015,80 +37156,80 @@ LookupTableImage.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (LookupTableImage);
 
 /***/ }),
-/* 267 */
+/* 296 */
 /***/ (function(module, exports) {
 
 module.exports = "precision highp float;\n\nuniform sampler2D u_image;\n\nuniform sampler2D u_lookupTable;\n\nuniform float u_resolution;     // Texture-Resolution, must be power of 2: 64, 128, 256, 512, 1024, 2048, 4096\nuniform float u_horizontalTileCount; // Horizontal Blue Tiles\nuniform float u_verticalTileCount; // Vertical Blue Tiles\n\nvarying vec2 v_texCoord;\n\nconst float EPSILON = 0.000001;\n\n// Try to get the exact pixel of the lut map image\nvec3 lutColor(int texPosX, int texPosY) {\n    return texture2D(u_lookupTable, (0.5 / u_resolution) + vec2(float(texPosX), float(texPosY)) / u_resolution).rgb;\n}\n\nvec3 bilinearInterpolate(vec3 cRfGf, vec3 cRfGc, vec3 cRcGf, vec3 cRcGc, float redFract, float greenFract) {\n    return mix(mix(cRfGf, cRcGf, redFract), mix(cRfGc, cRcGc, redFract), greenFract);\n}\n\nvoid main() {\n    vec4 inputColor = clamp(texture2D(u_image, v_texCoord.xy), 0.0, 1.0);\n\n    vec3 sourceColor = vec3(inputColor.rgb / max(inputColor.a, EPSILON)); \n\n    vec3 ranges = vec3(\n        floor(u_resolution / u_horizontalTileCount - 1.0),\n        floor(u_resolution / u_verticalTileCount - 1.0),\n        floor(u_horizontalTileCount * u_horizontalTileCount - 1.0)\n    );\n    \n    vec3 tmp = sourceColor * ranges;\n    ivec3 floors = ivec3(tmp);\n    ivec3 ceils = ivec3(ceil(tmp));\n    vec3 fracts = fract(tmp);\n\n    // Map tile index to tile pixel pos.\n    ivec2 pixelsPerTile = ivec2(\n        u_resolution / u_horizontalTileCount, \n        u_resolution / u_verticalTileCount\n      );\n\n    ivec2 tileFloor; // Blue tile index\n    tileFloor.y = floors.z / int(u_horizontalTileCount);\n    tileFloor.x = (floors.z - (tileFloor.y * int(u_horizontalTileCount)));\n\n    ivec2 tileCeil; // Blue tile index\n    tileCeil.y = ceils.z / int(u_horizontalTileCount);\n    tileCeil.x = (ceils.z - (tileCeil.y * int(u_horizontalTileCount)));\n    \n    tileFloor *= pixelsPerTile;\n    tileCeil *= pixelsPerTile; \n    \n    \n    // Interpolate between red and green\n    vec3 lutColorFB = bilinearInterpolate(\n        lutColor(tileFloor.x + floors.x, tileFloor.y + floors.y),\n        lutColor(tileFloor.x + floors.x, tileFloor.y + ceils.y),\n        lutColor(tileFloor.x + ceils.x,  tileFloor.y + floors.y),\n        lutColor(tileFloor.x + ceils.x,  tileFloor.y + ceils.y),\n        fracts.x, fracts.y\n    );\n    vec3 lutColorCB = bilinearInterpolate(\n        lutColor(tileCeil.x + floors.x, tileCeil.y + floors.y),\n        lutColor(tileCeil.x + floors.x, tileCeil.y + ceils.y),\n        lutColor(tileCeil.x + ceils.x,  tileCeil.y + floors.y),\n        lutColor(tileCeil.x + ceils.x,  tileCeil.y + ceils.y),\n        fracts.x, fracts.y\n    );\n\n    // Interpolate between the blue values\n    vec3 interpolation = mix(lutColorFB, lutColorCB, fracts.z);\n\n    // Round Color Values to prevent that for ex. 254.999999 is cutting to 254 instead of 255;\n    interpolation = clamp(floor(interpolation * 255. + .5) / 255., 0.0, 1.0);\n\n    gl_FragColor = vec4(interpolation.rgb * inputColor.a, inputColor.a);\n}\n"
 
 /***/ }),
-/* 268 */
+/* 297 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identity_filter__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__identity_filter__ = __webpack_require__(144);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IdentityFilter", function() { return __WEBPACK_IMPORTED_MODULE_0__identity_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__a15_filter__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__a15_filter__ = __webpack_require__(298);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "A15Filter", function() { return __WEBPACK_IMPORTED_MODULE_1__a15_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breeze_filter__ = __webpack_require__(270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breeze_filter__ = __webpack_require__(299);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BreezeFilter", function() { return __WEBPACK_IMPORTED_MODULE_2__breeze_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bw_filter__ = __webpack_require__(271);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bw_filter__ = __webpack_require__(300);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BWFilter", function() { return __WEBPACK_IMPORTED_MODULE_3__bw_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bwhard_filter__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bwhard_filter__ = __webpack_require__(301);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BWHardFilter", function() { return __WEBPACK_IMPORTED_MODULE_4__bwhard_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__celsius_filter__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__celsius_filter__ = __webpack_require__(302);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "CelsiusFilter", function() { return __WEBPACK_IMPORTED_MODULE_5__celsius_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__chest_filter__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__chest_filter__ = __webpack_require__(303);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ChestFilter", function() { return __WEBPACK_IMPORTED_MODULE_6__chest_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fixie_filter__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__fixie_filter__ = __webpack_require__(304);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "FixieFilter", function() { return __WEBPACK_IMPORTED_MODULE_7__fixie_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__food_filter__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__food_filter__ = __webpack_require__(305);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "FoodFilter", function() { return __WEBPACK_IMPORTED_MODULE_8__food_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__fridge_filter__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__fridge_filter__ = __webpack_require__(306);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "FridgeFilter", function() { return __WEBPACK_IMPORTED_MODULE_9__fridge_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__front_filter__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__front_filter__ = __webpack_require__(307);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "FrontFilter", function() { return __WEBPACK_IMPORTED_MODULE_10__front_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__glam_filter__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__glam_filter__ = __webpack_require__(308);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GlamFilter", function() { return __WEBPACK_IMPORTED_MODULE_11__glam_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gobblin_filter__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__gobblin_filter__ = __webpack_require__(309);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "GobblinFilter", function() { return __WEBPACK_IMPORTED_MODULE_12__gobblin_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__k1_filter__ = __webpack_require__(281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__k1_filter__ = __webpack_require__(310);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "K1Filter", function() { return __WEBPACK_IMPORTED_MODULE_13__k1_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__k2_filter__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__k2_filter__ = __webpack_require__(311);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "K2Filter", function() { return __WEBPACK_IMPORTED_MODULE_14__k2_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__k6_filter__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__k6_filter__ = __webpack_require__(312);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "K6Filter", function() { return __WEBPACK_IMPORTED_MODULE_15__k6_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__kdynamic_filter__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__kdynamic_filter__ = __webpack_require__(313);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "KDynamicFilter", function() { return __WEBPACK_IMPORTED_MODULE_16__kdynamic_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lenin_filter__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__lenin_filter__ = __webpack_require__(314);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LeninFilter", function() { return __WEBPACK_IMPORTED_MODULE_17__lenin_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__lomo_filter__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__lomo_filter__ = __webpack_require__(315);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LomoFilter", function() { return __WEBPACK_IMPORTED_MODULE_18__lomo_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__mellow_filter__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__mellow_filter__ = __webpack_require__(316);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MellowFilter", function() { return __WEBPACK_IMPORTED_MODULE_19__mellow_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__metal_filter__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__metal_filter__ = __webpack_require__(317);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MetalFilter", function() { return __WEBPACK_IMPORTED_MODULE_20__metal_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__morning_filter__ = __webpack_require__(289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__morning_filter__ = __webpack_require__(318);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MorningFilter", function() { return __WEBPACK_IMPORTED_MODULE_21__morning_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__orchid_filter__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__orchid_filter__ = __webpack_require__(319);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "OrchidFilter", function() { return __WEBPACK_IMPORTED_MODULE_22__orchid_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pola_filter__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pola_filter__ = __webpack_require__(320);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "PolaFilter", function() { return __WEBPACK_IMPORTED_MODULE_23__pola_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pola669_filter__ = __webpack_require__(292);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pola669_filter__ = __webpack_require__(321);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Pola669Filter", function() { return __WEBPACK_IMPORTED_MODULE_24__pola669_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__quozi_filter__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__quozi_filter__ = __webpack_require__(322);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "QuoziFilter", function() { return __WEBPACK_IMPORTED_MODULE_25__quozi_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__semired_filter__ = __webpack_require__(294);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__semired_filter__ = __webpack_require__(323);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "SemiredFilter", function() { return __WEBPACK_IMPORTED_MODULE_26__semired_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__sunny_filter__ = __webpack_require__(295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__sunny_filter__ = __webpack_require__(324);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "SunnyFilter", function() { return __WEBPACK_IMPORTED_MODULE_27__sunny_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__texas_filter__ = __webpack_require__(296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__texas_filter__ = __webpack_require__(325);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "TexasFilter", function() { return __WEBPACK_IMPORTED_MODULE_28__texas_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__x400_filter__ = __webpack_require__(297);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__x400_filter__ = __webpack_require__(326);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "X400Filter", function() { return __WEBPACK_IMPORTED_MODULE_29__x400_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__lut_filter__ = __webpack_require__(298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__lut_filter__ = __webpack_require__(327);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "LUTFilter", function() { return __WEBPACK_IMPORTED_MODULE_30__lut_filter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__3d_lut_filter__ = __webpack_require__(299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__3d_lut_filter__ = __webpack_require__(328);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "ThreeDLUTFilter", function() { return __WEBPACK_IMPORTED_MODULE_31__3d_lut_filter__["a"]; });
 /* @module */
 /*
@@ -32144,7 +37285,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 269 */
+/* 298 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32154,8 +37295,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32238,7 +37379,7 @@ A15Filter.identifier = 'a15';
 /* harmony default export */ __webpack_exports__["a"] = (A15Filter);
 
 /***/ }),
-/* 270 */
+/* 299 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32248,8 +37389,8 @@ A15Filter.identifier = 'a15';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32330,7 +37471,7 @@ BreezeFilter.identifier = 'breeze';
 /* harmony default export */ __webpack_exports__["a"] = (BreezeFilter);
 
 /***/ }),
-/* 271 */
+/* 300 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32340,8 +37481,8 @@ BreezeFilter.identifier = 'breeze';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32410,7 +37551,7 @@ BWFilter.identifier = 'bw';
 /* harmony default export */ __webpack_exports__["a"] = (BWFilter);
 
 /***/ }),
-/* 272 */
+/* 301 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32420,8 +37561,8 @@ BWFilter.identifier = 'bw';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32493,7 +37634,7 @@ BWHardFilter.identifier = 'bwhard';
 /* harmony default export */ __webpack_exports__["a"] = (BWHardFilter);
 
 /***/ }),
-/* 273 */
+/* 302 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32503,8 +37644,8 @@ BWHardFilter.identifier = 'bwhard';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32579,7 +37720,7 @@ CelsiusFilter.identifier = 'celsius';
 /* harmony default export */ __webpack_exports__["a"] = (CelsiusFilter);
 
 /***/ }),
-/* 274 */
+/* 303 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32589,8 +37730,8 @@ CelsiusFilter.identifier = 'celsius';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32666,7 +37807,7 @@ ChestFilter.identifier = 'chest';
 /* harmony default export */ __webpack_exports__["a"] = (ChestFilter);
 
 /***/ }),
-/* 275 */
+/* 304 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32676,8 +37817,8 @@ ChestFilter.identifier = 'chest';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32753,7 +37894,7 @@ FixieFilter.identifier = 'fixie';
 /* harmony default export */ __webpack_exports__["a"] = (FixieFilter);
 
 /***/ }),
-/* 276 */
+/* 305 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32763,8 +37904,8 @@ FixieFilter.identifier = 'fixie';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32839,7 +37980,7 @@ FoodFilter.identifier = 'food';
 /* harmony default export */ __webpack_exports__["a"] = (FoodFilter);
 
 /***/ }),
-/* 277 */
+/* 306 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32849,8 +37990,8 @@ FoodFilter.identifier = 'food';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -32926,7 +38067,7 @@ FridgeFilter.identifier = 'fridge';
 /* harmony default export */ __webpack_exports__["a"] = (FridgeFilter);
 
 /***/ }),
-/* 278 */
+/* 307 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32936,8 +38077,8 @@ FridgeFilter.identifier = 'fridge';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33013,7 +38154,7 @@ FrontFilter.identifier = 'front';
 /* harmony default export */ __webpack_exports__["a"] = (FrontFilter);
 
 /***/ }),
-/* 279 */
+/* 308 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33023,8 +38164,8 @@ FrontFilter.identifier = 'front';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33103,7 +38244,7 @@ GlamFilter.identifier = 'glam';
 /* harmony default export */ __webpack_exports__["a"] = (GlamFilter);
 
 /***/ }),
-/* 280 */
+/* 309 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33113,8 +38254,8 @@ GlamFilter.identifier = 'glam';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33183,7 +38324,7 @@ GobblinFilter.identifier = 'gobblin';
 /* harmony default export */ __webpack_exports__["a"] = (GobblinFilter);
 
 /***/ }),
-/* 281 */
+/* 310 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33193,8 +38334,8 @@ GobblinFilter.identifier = 'gobblin';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33271,7 +38412,7 @@ K1Filter.identifier = 'k1';
 /* harmony default export */ __webpack_exports__["a"] = (K1Filter);
 
 /***/ }),
-/* 282 */
+/* 311 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33283,8 +38424,8 @@ K1Filter.identifier = 'k1';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(8);
 
 
 
@@ -33362,7 +38503,7 @@ K2Filter.identifier = 'k2';
 /* harmony default export */ __webpack_exports__["a"] = (K2Filter);
 
 /***/ }),
-/* 283 */
+/* 312 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33372,8 +38513,8 @@ K2Filter.identifier = 'k2';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33445,7 +38586,7 @@ K6Filter.identifier = 'k6';
 /* harmony default export */ __webpack_exports__["a"] = (K6Filter);
 
 /***/ }),
-/* 284 */
+/* 313 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33455,8 +38596,8 @@ K6Filter.identifier = 'k6';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33533,7 +38674,7 @@ KDynamicFilter.identifier = 'kdynamic';
 /* harmony default export */ __webpack_exports__["a"] = (KDynamicFilter);
 
 /***/ }),
-/* 285 */
+/* 314 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33543,8 +38684,8 @@ KDynamicFilter.identifier = 'kdynamic';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33625,7 +38766,7 @@ LeninFilter.identifier = 'lenin';
 /* harmony default export */ __webpack_exports__["a"] = (LeninFilter);
 
 /***/ }),
-/* 286 */
+/* 315 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33635,8 +38776,8 @@ LeninFilter.identifier = 'lenin';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33707,7 +38848,7 @@ LomoFilter.identifier = 'lomo';
 /* harmony default export */ __webpack_exports__["a"] = (LomoFilter);
 
 /***/ }),
-/* 287 */
+/* 316 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33717,8 +38858,8 @@ LomoFilter.identifier = 'lomo';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33793,7 +38934,7 @@ MellowFilter.identifier = 'mellow';
 /* harmony default export */ __webpack_exports__["a"] = (MellowFilter);
 
 /***/ }),
-/* 288 */
+/* 317 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33805,8 +38946,8 @@ MellowFilter.identifier = 'mellow';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(8);
 
 
 
@@ -33884,7 +39025,7 @@ MetalFilter.identifier = 'metal';
 /* harmony default export */ __webpack_exports__["a"] = (MetalFilter);
 
 /***/ }),
-/* 289 */
+/* 318 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33894,8 +39035,8 @@ MetalFilter.identifier = 'metal';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -33972,7 +39113,7 @@ MorningFilter.identifier = 'morning';
 /* harmony default export */ __webpack_exports__["a"] = (MorningFilter);
 
 /***/ }),
-/* 290 */
+/* 319 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33982,8 +39123,8 @@ MorningFilter.identifier = 'morning';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34071,7 +39212,7 @@ OrchidFilter.identifier = 'orchid';
 /* harmony default export */ __webpack_exports__["a"] = (OrchidFilter);
 
 /***/ }),
-/* 291 */
+/* 320 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34081,8 +39222,8 @@ OrchidFilter.identifier = 'orchid';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34165,7 +39306,7 @@ PolaFilter.identifier = 'pola';
 /* harmony default export */ __webpack_exports__["a"] = (PolaFilter);
 
 /***/ }),
-/* 292 */
+/* 321 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34175,8 +39316,8 @@ PolaFilter.identifier = 'pola';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34259,7 +39400,7 @@ Pola669Filter.identifier = 'pola669';
 /* harmony default export */ __webpack_exports__["a"] = (Pola669Filter);
 
 /***/ }),
-/* 293 */
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34269,8 +39410,8 @@ Pola669Filter.identifier = 'pola669';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34351,7 +39492,7 @@ QuoziFilter.identifier = 'quozi';
 /* harmony default export */ __webpack_exports__["a"] = (QuoziFilter);
 
 /***/ }),
-/* 294 */
+/* 323 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34361,8 +39502,8 @@ QuoziFilter.identifier = 'quozi';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34439,7 +39580,7 @@ SemiredFilter.identifier = 'semired';
 /* harmony default export */ __webpack_exports__["a"] = (SemiredFilter);
 
 /***/ }),
-/* 295 */
+/* 324 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34449,8 +39590,8 @@ SemiredFilter.identifier = 'semired';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34531,7 +39672,7 @@ SunnyFilter.identifier = 'sunny';
 /* harmony default export */ __webpack_exports__["a"] = (SunnyFilter);
 
 /***/ }),
-/* 296 */
+/* 325 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34541,8 +39682,8 @@ SunnyFilter.identifier = 'sunny';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34617,7 +39758,7 @@ TexasFilter.identifier = 'texas';
 /* harmony default export */ __webpack_exports__["a"] = (TexasFilter);
 
 /***/ }),
-/* 297 */
+/* 326 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34627,8 +39768,8 @@ TexasFilter.identifier = 'texas';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_create__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__primitives__ = __webpack_require__(8);
 
 
 
@@ -34697,7 +39838,7 @@ X400Filter.identifier = 'x400';
 /* harmony default export */ __webpack_exports__["a"] = (X400Filter);
 
 /***/ }),
-/* 298 */
+/* 327 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34709,8 +39850,8 @@ X400Filter.identifier = 'x400';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(8);
 
 
 
@@ -34801,7 +39942,7 @@ LUTFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (LUTFilter);
 
 /***/ }),
-/* 299 */
+/* 328 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -34813,8 +39954,8 @@ LUTFilter.prototype.availableOptions = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__filter__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__primitives__ = __webpack_require__(8);
 
 
 
@@ -34914,17 +40055,17 @@ ThreeDLUTFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (ThreeDLUTFilter);
 
 /***/ }),
-/* 300 */
+/* 329 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__ = __webpack_require__(35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_symbol_iterator__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_symbol__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__);
@@ -35510,13 +40651,13 @@ __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core___default.a.Operations.FrameOper
 /* harmony default export */ __webpack_exports__["a"] = (FrameOperation);
 
 /***/ }),
-/* 301 */
+/* 330 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -35526,7 +40667,7 @@ __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core___default.a.Operations.FrameOper
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linear_focus_filter__ = __webpack_require__(302);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__linear_focus_filter__ = __webpack_require__(331);
 
 
 
@@ -35802,7 +40943,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.LinearFoc
 /* harmony default export */ __webpack_exports__["a"] = (LinearFocusOperation);
 
 /***/ }),
-/* 302 */
+/* 331 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35816,7 +40957,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.LinearFoc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__);
 
 
@@ -35864,7 +41005,7 @@ var LinearFocusFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = LinearFocusFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(LinearFocusFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(303);
+    _this._fragmentSource = __webpack_require__(332);
 
     _this._lastBlurRadius = null;
     _this._lastControlPoint1 = new Vector2();
@@ -36011,19 +41152,19 @@ LinearFocusFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (LinearFocusFilter);
 
 /***/ }),
-/* 303 */
+/* 332 */
 /***/ (function(module, exports) {
 
 module.exports = "/*!\n * Based on evanw's glfx.js tilt shift shader:\n * https://github.com/evanw/glfx.js/blob/master/src/filters/blur/tiltshift.js\n */\n\nuniform sampler2D u_image;\nuniform float u_blurRadius;\nuniform vec2 u_controlPoint1;\nuniform vec2 u_controlPoint2;\nuniform vec2 u_delta;\nuniform vec2 u_texSize;\nvarying vec2 v_texCoord;\n\nfloat random(vec2 co)\n{\n    highp float a = 12.9898;\n    highp float b = 78.233;\n    highp float c = 43758.5453;\n    highp float dt = dot(co.xy,vec2(a,b));\n    highp float sn = mod(dt, 3.14);\n    return fract(sin(sn) * c);\n}\n\nvoid main() {\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    vec2 vector = u_controlPoint2 - u_controlPoint1;\n    float offset = random(gl_FragCoord.xy / u_texSize.xy);\n\n    float radius = smoothstep(0.0, 1.0,\n      abs(\n        clamp(dot(v_texCoord - u_controlPoint1, vector) / dot(vector, vector), 0.0, 1.0)\n      )\n    ) * u_blurRadius;\n\n    for (float t = -30.0; t <= 30.0; t++) {\n      float percent = (t + offset - 0.5) / 30.0;\n      float weight = 1.0 - abs(percent);\n      vec4 _sample = texture2D(u_image, v_texCoord + u_delta * percent * radius / u_texSize);\n\n      _sample.rgb *= _sample.a;\n\n      color += _sample * weight;\n      total += weight;\n    }\n\n    gl_FragColor = color / total;\n    gl_FragColor.rgb /= gl_FragColor.a + 0.00001;\n}\n"
 
 /***/ }),
-/* 304 */
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -36033,7 +41174,7 @@ module.exports = "/*!\n * Based on evanw's glfx.js tilt shift shader:\n * https:
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mirrored_focus_filter__ = __webpack_require__(305);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__mirrored_focus_filter__ = __webpack_require__(334);
 
 
 
@@ -36320,7 +41461,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.MirroredF
 /* harmony default export */ __webpack_exports__["a"] = (MirroredFocusOperation);
 
 /***/ }),
-/* 305 */
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36334,7 +41475,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.MirroredF
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__);
 
 
@@ -36382,7 +41523,7 @@ var MirroredFocusFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = MirroredFocusFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(MirroredFocusFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(306);
+    _this._fragmentSource = __webpack_require__(335);
 
     _this._lastBlurRadius = null;
     _this._lastGradientRadius = null;
@@ -36547,13 +41688,13 @@ MirroredFocusFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (MirroredFocusFilter);
 
 /***/ }),
-/* 306 */
+/* 335 */
 /***/ (function(module, exports) {
 
 module.exports = "/*\n * Based on evanw's glfx.js tilt shift shader:\n * https://github.com/evanw/glfx.js/blob/master/src/filters/blur/tiltshift.js\n * @license\n */\n\nuniform sampler2D u_image;\nuniform float u_blurRadius;\nuniform float u_gradientSize;\nuniform float u_size;\nuniform vec2 u_start;\nuniform vec2 u_end;\nuniform vec2 u_delta;\nuniform vec2 u_texSize;\nvarying vec2 v_texCoord;\n\nfloat random(vec2 co)\n{\n    highp float a = 12.9898;\n    highp float b = 78.233;\n    highp float c = 43758.5453;\n    highp float dt = dot(co.xy,vec2(a,b));\n    highp float sn = mod(dt, 3.14);\n    return fract(sin(sn) * c);\n}\n\nvoid main() {\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    float offset = random(gl_FragCoord.xy / u_texSize.xy);\n\n    vec2 normal = normalize(vec2(u_start.y - u_end.y, u_end.x - u_start.x));\n    float radius = smoothstep(0.0, 1.0,\n      (abs(\n        dot(v_texCoord * u_texSize - u_start, normal)\n      ) - u_size) / u_gradientSize\n    ) * u_blurRadius;\n\n    for (float t = -30.0; t <= 30.0; t++) {\n        float percent = (t + offset - 0.5) / 30.0;\n        float weight = 1.0 - abs(percent);\n        vec4 _sample = texture2D(u_image, v_texCoord + u_delta * percent * radius / u_texSize);\n\n        _sample.rgb *= _sample.a;\n\n        color += _sample * weight;\n        total += weight;\n    }\n\n    gl_FragColor = color / total;\n    gl_FragColor.rgb /= gl_FragColor.a + 0.00001;\n}\n"
 
 /***/ }),
-/* 307 */
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36732,15 +41873,15 @@ __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default.a.Operations.Orientati
 /* harmony default export */ __webpack_exports__["a"] = (OrientationOperation);
 
 /***/ }),
-/* 308 */
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_keys__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
@@ -36984,13 +42125,13 @@ __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default.a.Operations.OverlayOp
 /* harmony default export */ __webpack_exports__["a"] = (OverlayOperation);
 
 /***/ }),
-/* 309 */
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -37000,7 +42141,7 @@ __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default.a.Operations.OverlayOp
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radial_focus_filter__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radial_focus_filter__ = __webpack_require__(339);
 
 
 
@@ -37269,7 +42410,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.RadialFoc
 /* harmony default export */ __webpack_exports__["a"] = (RadialFocusOperation);
 
 /***/ }),
-/* 310 */
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -37283,7 +42424,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.RadialFoc
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__shared_vendor_stack_blur__);
 
 
@@ -37331,7 +42472,7 @@ var RadialFocusFilter = function (_Engine$Filter) {
 
     var _this = _possibleConstructorReturn(this, (_ref = RadialFocusFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(RadialFocusFilter)).call.apply(_ref, [this].concat(args)));
 
-    _this._fragmentSource = __webpack_require__(311);
+    _this._fragmentSource = __webpack_require__(340);
 
     _this._lastBlurRadius = null;
     _this._lastGradientRadius = null;
@@ -37486,19 +42627,19 @@ RadialFocusFilter.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (RadialFocusFilter);
 
 /***/ }),
-/* 311 */
+/* 340 */
 /***/ (function(module, exports) {
 
 module.exports = "/*\n * Based on evanw's glfx.js tilt shift shader:\n * https://github.com/evanw/glfx.js/blob/master/src/filters/blur/tiltshift.js\n * @license\n */\n\nuniform sampler2D u_image;\nuniform float u_radius;\nuniform float u_blurRadius;\nuniform float u_gradientRadius;\nuniform vec2 u_position;\nuniform vec2 u_delta;\nuniform vec2 u_texSize;\nvarying vec2 v_texCoord;\n\nfloat random(vec2 co)\n{\n    highp float a = 12.9898;\n    highp float b = 78.233;\n    highp float c = 43758.5453;\n    highp float dt = dot(co.xy,vec2(a,b));\n    highp float sn = mod(dt, 3.14);\n    return fract(sin(sn) * c);\n}\n\nvoid main() {\n    vec4 color = vec4(0.0);\n    float total = 0.0;\n\n    float offset = random(gl_FragCoord.xy / u_texSize.xy);\n    float radius = smoothstep(\n      0.0, 1.0,\n      (abs(\n        distance(v_texCoord * u_texSize, u_position)\n      ) - u_radius) / (u_gradientRadius * 2.0)\n    ) * u_blurRadius;\n    for (float t = -30.0; t <= 30.0; t++) {\n        float percent = (t + offset - 0.5) / 30.0;\n        float weight = 1.0 - abs(percent);\n        vec4 _sample = texture2D(u_image, v_texCoord + u_delta * percent * radius / u_texSize);\n\n        _sample.rgb *= _sample.a;\n\n        color += _sample * weight;\n        total += weight;\n    }\n\n    gl_FragColor = color / total;\n    gl_FragColor.rgb /= gl_FragColor.a + 0.00001;\n}\n"
 
 /***/ }),
-/* 312 */
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -37508,9 +42649,9 @@ module.exports = "/*\n * Based on evanw's glfx.js tilt shift shader:\n * https:/
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_sprites_brush_sprite__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_filters_blur_filter__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_filters_mask_filter__ = __webpack_require__(316);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_sprites_brush_sprite__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_filters_blur_filter__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_filters_mask_filter__ = __webpack_require__(148);
 
 
 
@@ -37862,13 +43003,13 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.Selective
 /* harmony default export */ __webpack_exports__["a"] = (SelectiveBlurOperation);
 
 /***/ }),
-/* 313 */
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -37878,7 +43019,7 @@ __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default.a.Operations.Selective
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_point__ = __webpack_require__(314);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__control_point__ = __webpack_require__(343);
 
 
 
@@ -38166,7 +43307,7 @@ Path.prototype.availableOptions = {
 /* harmony default export */ __webpack_exports__["a"] = (Path);
 
 /***/ }),
-/* 314 */
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38295,7 +43436,7 @@ var ControlPoint = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ControlPoint);
 
 /***/ }),
-/* 315 */
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38309,7 +43450,7 @@ var ControlPoint = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__brush__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__brush__ = __webpack_require__(147);
 
 
 
@@ -38414,136 +43555,21 @@ RadialBrush.prototype.availableOptions = __WEBPACK_IMPORTED_MODULE_4_photoeditor
 });
 
 /***/ }),
-/* 316 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-
-
-
-
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
-
-/* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016 9elements GbmH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-
-
-var MaskFilter = function (_Engine$Filter) {
-  _inherits(MaskFilter, _Engine$Filter);
-
-  function MaskFilter() {
-    _classCallCheck(this, MaskFilter);
-
-    var _this = _possibleConstructorReturn(this, (MaskFilter.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(MaskFilter)).call(this));
-
-    _this._fragmentSource = __webpack_require__(317);
-    return _this;
-  }
-
-  /**
-   * Applies this filter to the given inputTarget and renders it to
-   * the given outputTarget using the CanvasRenderer
-   * @param  {PhotoEditorSDK.Engine.CanvasRenderer} renderer
-   * @param  {PhotoEditorSDK.Engine.RenderTarget} inputTarget
-   * @param  {PhotoEditorSDK.Engine.RenderTarget} outputTarget
-   * @param  {Boolean} clear = false
-   * @private
-   */
-
-
-  _createClass(MaskFilter, [{
-    key: '_applyCanvas',
-    value: function _applyCanvas(renderer, inputTarget, outputTarget) {
-      var clear = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
-
-      var inputCanvas = inputTarget.getCanvas();
-
-      var inputContext = inputTarget.getContext();
-      var outputContext = outputTarget.getContext();
-
-      var _options = this._options,
-          maskCanvas = _options.maskCanvas,
-          filterCanvas = _options.filterCanvas;
-
-      var maskContext = maskCanvas.getContext('2d');
-      var filterContext = filterCanvas.getContext('2d');
-
-      var maskPixels = maskContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height).data;
-      var existingImageData = inputContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height);
-      var existingPixels = existingImageData.data;
-      var newPixels = filterContext.getImageData(0, 0, inputCanvas.width, inputCanvas.height).data;
-
-      var alpha = void 0;
-      for (var i = 0; i < inputCanvas.width * inputCanvas.height * 4; i += 4) {
-        alpha = maskPixels[i] / 255;
-
-        existingPixels[i] = alpha * newPixels[i] + (1 - alpha) * existingPixels[i];
-        existingPixels[i + 1] = alpha * newPixels[i + 1] + (1 - alpha) * existingPixels[i + 1];
-        existingPixels[i + 2] = alpha * newPixels[i + 2] + (1 - alpha) * existingPixels[i + 2];
-      }
-
-      outputContext.putImageData(existingImageData, 0, 0);
-    }
-  }]);
-
-  return MaskFilter;
-}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Engine"].Filter);
-
-MaskFilter.prototype.availableOptions = {
-  maskImage: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1, uniformType: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["UniformType"].INT },
-  maskCanvas: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
-  filterImage: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 2, uniformType: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["UniformType"].INT },
-  filterCanvas: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null }
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (MaskFilter);
-
-/***/ }),
-/* 317 */
+/* 345 */
 /***/ (function(module, exports) {
 
 module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform sampler2D u_filterImage;\nuniform sampler2D u_maskImage;\n\nvoid main() {\n  vec4 color0 = texture2D(u_image, v_texCoord);\n  vec4 color1 = texture2D(u_filterImage, v_texCoord);\n  vec4 mask = texture2D(u_maskImage, v_texCoord);\n  gl_FragColor = mix(color0, color1, mask);\n}\n"
 
 /***/ }),
-/* 318 */
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
@@ -38554,9 +43580,11 @@ module.exports = "varying vec2 v_texCoord;\nuniform sampler2D u_image;\nuniform 
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_sprite__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__sprites_sticker_sprite__ = __webpack_require__(319);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__sprites_text_sprite__ = __webpack_require__(320);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_sprites_brush_sprite__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_filters_mask_filter__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__sprites_sticker_sprite__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__sprites_text_sprite__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_sprites_brush_sprite__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__sprites_text_design_sprite__ = __webpack_require__(349);
 
 
 
@@ -38597,6 +43625,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+
+
+var Vector2 = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Math"].Vector2;
 
 /**
  * An operation that can draw sprites (text and stickers) on the canvas
@@ -38768,7 +43800,7 @@ var SpriteOperation = function (_Operation) {
   }, {
     key: 'createSticker',
     value: function createSticker(options) {
-      return new __WEBPACK_IMPORTED_MODULE_8__sprites_sticker_sprite__["a" /* default */](this, options);
+      return new __WEBPACK_IMPORTED_MODULE_9__sprites_sticker_sprite__["a" /* default */](this, options);
     }
 
     /**
@@ -38780,7 +43812,7 @@ var SpriteOperation = function (_Operation) {
   }, {
     key: 'createText',
     value: function createText(options) {
-      return new __WEBPACK_IMPORTED_MODULE_9__sprites_text_sprite__["a" /* default */](this, options);
+      return new __WEBPACK_IMPORTED_MODULE_10__sprites_text_sprite__["a" /* default */](this, options);
     }
 
     /**
@@ -38792,7 +43824,12 @@ var SpriteOperation = function (_Operation) {
   }, {
     key: 'createBrush',
     value: function createBrush(options) {
-      return new __WEBPACK_IMPORTED_MODULE_10__shared_sprites_brush_sprite__["a" /* default */](this, options);
+      return new __WEBPACK_IMPORTED_MODULE_11__shared_sprites_brush_sprite__["a" /* default */](this, options);
+    }
+  }, {
+    key: 'createTextDesign',
+    value: function createTextDesign(options) {
+      return new __WEBPACK_IMPORTED_MODULE_12__sprites_text_design_sprite__["a" /* default */](this, options);
     }
 
     /**
@@ -38858,6 +43895,31 @@ var SpriteOperation = function (_Operation) {
       var sprites = this._options.sprites;
 
       var inputDimensions = inputTexture.getDimensions().clone().floor();
+
+      // TODO: generalize for more than 1 masked sprite
+      var containerFirst = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Container();
+      var containerMasked = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Container();
+      var containerRest = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Container();
+
+      containerFirst.addChild(this._sprite);
+
+      var current = containerFirst;
+      var color = null;
+      var textDesignSprite = null;
+      sprites.forEach(function (s) {
+        if (current === containerMasked) {
+          current = containerRest;
+        }
+
+        if (s.getInverted && s.getInverted()) {
+          current = containerMasked;
+          color = s.getColor && s.getColor() || null;
+          textDesignSprite = s;
+        }
+
+        current.addChild(s.getDisplayObject());
+      });
+
       return __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Promise"].all(sprites.map(function (s) {
         return s.validateSettings();
       })).then(function () {
@@ -38865,9 +43927,60 @@ var SpriteOperation = function (_Operation) {
           return sprite.update(_this2._sdk, inputDimensions);
         });
       }).then(function () {
-        _this2._renderTexture.clear();
-        _this2._renderTexture.render(container);
+        if (containerMasked.getChildren().length > 0) {
+          _this2._renderTexture.render(containerFirst);
+
+          var newContainer = _this2._renderMaskedTextDesignSprite(textDesignSprite);
+          _this2._renderTexture.render(newContainer);
+          _this2._renderTexture.render(containerRest);
+        } else {
+          _this2._renderTexture.clear();
+          _this2._renderTexture.render(containerFirst);
+          _this2._renderTexture.render(containerMasked);
+          _this2._renderTexture.render(containerRest);
+        }
+        // this._renderTexture.render(container)
+        container.addChild(_this2._sprite);
+        sprites.forEach(function (s) {
+          return container.addChild(s.getDisplayObject());
+        });
       });
+    }
+  }, {
+    key: '_renderMaskedTextDesignSprite',
+    value: function _renderMaskedTextDesignSprite(textDesignSprite) {
+      var color = textDesignSprite.getColor();
+      var canvas = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].createCanvas();
+      var frame = this._sdk.getSprite().getTexture().getFrame();
+      var width = frame.width;
+      var height = frame.height;
+      __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].ensureCanvasDimensions(canvas, new Vector2(width, height));
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = color.toRGBA();
+      ctx.fillRect(0, 0, width, height);
+      ctx.globalCompositeOperation = 'destination-out';
+
+      // const textDesignCanvas = sprite._canvas
+      var sprite = textDesignSprite.getDisplayObject();
+      sprite._renderCanvas({
+        getCurrentRenderTarget: function getCurrentRenderTarget() {
+          return {
+            getPixelRatio: function getPixelRatio() {
+              return 1;
+            }
+          };
+        },
+        getContext: function getContext() {
+          return ctx;
+        }
+      });
+
+      var container = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Container();
+      var newSprite = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Sprite(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Engine"].Texture.fromCanvas(canvas));
+
+      container.addChild(newSprite);
+
+      return container;
     }
 
     /**
@@ -38972,9 +44085,10 @@ var SpriteOperation = function (_Operation) {
   return SpriteOperation;
 }(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Operation"]);
 
-SpriteOperation.StickerSprite = __WEBPACK_IMPORTED_MODULE_8__sprites_sticker_sprite__["a" /* default */];
-SpriteOperation.TextSprite = __WEBPACK_IMPORTED_MODULE_9__sprites_text_sprite__["a" /* default */];
-SpriteOperation.BrushSprite = __WEBPACK_IMPORTED_MODULE_10__shared_sprites_brush_sprite__["a" /* default */];
+SpriteOperation.StickerSprite = __WEBPACK_IMPORTED_MODULE_9__sprites_sticker_sprite__["a" /* default */];
+SpriteOperation.TextSprite = __WEBPACK_IMPORTED_MODULE_10__sprites_text_sprite__["a" /* default */];
+SpriteOperation.BrushSprite = __WEBPACK_IMPORTED_MODULE_11__shared_sprites_brush_sprite__["a" /* default */];
+SpriteOperation.TextDesignSprite = __WEBPACK_IMPORTED_MODULE_12__sprites_text_design_sprite__["a" /* default */];
 
 /**
  * A unique string that identifies this operation. Can be used to select
@@ -39007,11 +44121,13 @@ SpriteOperation.prototype.availableOptions = {
         // Create sprite from the given options
         switch (sprite.type) {
           case 'text':
-            return new __WEBPACK_IMPORTED_MODULE_9__sprites_text_sprite__["a" /* default */](_this4, spriteData);
+            return new __WEBPACK_IMPORTED_MODULE_10__sprites_text_sprite__["a" /* default */](_this4, spriteData);
           case 'sticker':
-            return new __WEBPACK_IMPORTED_MODULE_8__sprites_sticker_sprite__["a" /* default */](_this4, spriteData);
+            return new __WEBPACK_IMPORTED_MODULE_9__sprites_sticker_sprite__["a" /* default */](_this4, spriteData);
           case 'brush':
-            return new __WEBPACK_IMPORTED_MODULE_10__shared_sprites_brush_sprite__["a" /* default */](_this4, spriteData);
+            return new __WEBPACK_IMPORTED_MODULE_11__shared_sprites_brush_sprite__["a" /* default */](_this4, spriteData);
+          case 'text-design':
+            return new __WEBPACK_IMPORTED_MODULE_12__sprites_text_design_sprite__["a" /* default */](_this4, spriteData);
           default:
             __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].error(_this4.constructor.name, 'Invalid sprite type: ' + sprite.type);
         }
@@ -39044,13 +44160,13 @@ __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default.a.Operations.SpriteOpe
 /* harmony default export */ __webpack_exports__["a"] = (SpriteOperation);
 
 /***/ }),
-/* 319 */
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -39061,7 +44177,7 @@ __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default.a.Operations.SpriteOpe
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_sprite__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_filters_adjustments_filter__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_filters_adjustments_filter__ = __webpack_require__(142);
 
 
 
@@ -39417,7 +44533,7 @@ var StickerSprite = function (_Sprite) {
     key: 'dispose',
     value: function dispose() {
       _get(StickerSprite.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(StickerSprite.prototype), 'dispose', this).call(this);
-      this._inputTexture.getBaseTexture().dispose();
+      this._inputTexture && this._inputTexture.getBaseTexture().dispose();
       this._inputTexture = null;
       this._options.adjustments.off('updated', this._onOptionsChange);
     }
@@ -39458,13 +44574,13 @@ StickerSprite.type = 'sticker';
 /* harmony default export */ __webpack_exports__["a"] = (StickerSprite);
 
 /***/ }),
-/* 320 */
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
@@ -39475,7 +44591,7 @@ StickerSprite.type = 'sticker';
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_sprite__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_text_renderer__ = __webpack_require__(321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_text_renderer__ = __webpack_require__(149);
 
 
 
@@ -39808,20 +44924,58 @@ TextSprite.type = 'text';
 /* harmony default export */ __webpack_exports__["a"] = (TextSprite);
 
 /***/ }),
-/* 321 */
+/* 349 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__text_splitter__ = __webpack_require__(322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_sprite__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_models_randomizer__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_layout_text_design_blocks__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_layout_text_design_blocks_condensed__ = __webpack_require__(358);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__text_design_layout_text_design_blocks_light__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_design_layout_text_design_celebrate__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__text_design_layout_text_design_celebrate_simple__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__text_design_layout_text_design_equal_width__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__text_design_layout_text_design_equal_width_fat__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__text_design_layout_text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__text_design_layout_text_design_masked_badge__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__text_design_layout_text_design_masked_speech_bubble__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__text_design_layout_text_design_masked_speech_bubble_comic__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__text_design_layout_text_design_multiline__ = __webpack_require__(366);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__text_design_layout_text_design_watercolor__ = __webpack_require__(367);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__text_design_layout_text_design_sunshine__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__text_design_layout_text_design_particles__ = __webpack_require__(368);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__text_design_layout_text_design_rotated__ = __webpack_require__(373);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__text_design_text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__text_design_text_design_renderer__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__text_design_models_size_value__ = __webpack_require__(23);
+
+
+
+
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* @module */
 /*
@@ -39840,20 +44994,2038 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
-var Vector2 = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Math"].Vector2;
 
-var TextRenderer = function () {
-  function TextRenderer(text, operation) {
-    _classCallCheck(this, TextRenderer);
 
-    this._text = text;
-    this._operation = operation;
-    this._textOptions = {};
 
-    this.rotation = 0;
 
-    this._createCanvas();
-    this._createTexture();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var Vector2 = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Math"].Vector2;
+
+var TextDesignSprite = function (_Sprite) {
+  _inherits(TextDesignSprite, _Sprite);
+
+  function TextDesignSprite(operation, options) {
+    _classCallCheck(this, TextDesignSprite);
+
+    var _this = _possibleConstructorReturn(this, (TextDesignSprite.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSprite)).call(this, operation, options));
+
+    _this._renderer = new __WEBPACK_IMPORTED_MODULE_25__text_design_text_design_renderer__["a" /* TextDesignRenderer */]();
+    _this._canvas = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].createCanvas();
+    _this._context = _this._canvas.getContext('2d');
+    _this._texture = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Engine"].Texture.fromCanvas(_this._canvas);
+    _this._sprite.setTexture(_this._texture);
+    _this._aspect = 1;
+
+    if (_this.getSeed() < 0) {
+      _this.setSeed(__WEBPACK_IMPORTED_MODULE_7__text_design_models_randomizer__["a" /* Randomizer */].TimeSeed());
+    }
+    return _this;
+  }
+
+  _createClass(TextDesignSprite, [{
+    key: 'seed',
+    value: function seed(value) {
+      this.setSeed(value || __WEBPACK_IMPORTED_MODULE_7__text_design_models_randomizer__["a" /* Randomizer */].TimeSeed());
+    }
+  }, {
+    key: '_updateLayout',
+    value: function _updateLayout() {
+      var layout = this.getLayout();
+
+      if (!layout) {
+        return null;
+      }
+
+      this._renderer.createLayout(layout, this.getText(), this.getSeed());
+
+      this._aspect = this._renderer.calculateAspect();
+
+      this._isLayoutDirty = false;
+
+      return true;
+    }
+
+    /**
+     * Applies a transform with the given options
+     * @param  {PhotoEditorSDK.Operations.TransformOperation.TransformChange} transformChange
+     */
+
+  }, {
+    key: 'applyTransform',
+    value: function applyTransform(transformChange) {
+      var newOptions = {};
+      newOptions.rotation = transformChange.applyToRotation(this.getRotation());
+      newOptions.position = transformChange.applyToRelativePoint(this.getPosition());
+      if (this._options.dimensions) {
+        newOptions.width = transformChange.applyToRelativeSize(this.getWidth());
+      }
+      this.set(newOptions, false);
+    }
+  }, {
+    key: 'update',
+    value: function update(sdk, inputDimensions) {
+      if (this._isLayoutDirty && !this._updateLayout()) {
+        return;
+      }
+
+      // Transform relative width to (unzoomed) width in pixels
+      var width = this.getWidth() * inputDimensions.min() / sdk.getTextureScale();
+
+      var height = width / this._aspect;
+
+      __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].ensureCanvasDimensions(this._canvas, new Vector2(width, height));
+
+      this._context.clearRect(0, 0, this._canvas.width, this._canvas.height);
+
+      this._renderer.draw(this._context, new __WEBPACK_IMPORTED_MODULE_26__text_design_models_size_value__["a" /* SizeValue */](width, height), this.getColor(), this.getInverted());
+
+      this.setDimensions(new Vector2(width, height));
+
+      this._texture.getBaseTexture().update();
+
+      // Upload texture
+      var renderer = sdk.getRenderer();
+
+      /* istanbul ignore next */
+      if (renderer.isOfType(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["RendererType"].WEBGL)) {
+        renderer.updateTexture(this._texture.getBaseTexture());
+      }
+
+      _get(TextDesignSprite.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSprite.prototype), 'update', this).call(this, sdk, inputDimensions);
+    }
+
+    /**
+     * Checks if the given option has the given value
+     * @param  {String} optionName
+     * @param  {*} value
+     * @return {Boolean}
+     * @private
+     */
+
+  }, {
+    key: '_optionEquals',
+    value: function _optionEquals(optionName, value) {
+      if (optionName === 'layout') {
+        var layout = this._options.layout;
+
+        if (!layout && value || !value && layout) {
+          return false;
+        }
+
+        if (!value.constructor || !layout.constructor) {
+          return false;
+        }
+
+        if (layout.constructor.identifier !== value.constructor.identifier) {
+          return false;
+        }
+
+        return true;
+      }
+
+      return _get(TextDesignSprite.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSprite.prototype), '_optionEquals', this).call(this, optionName, value);
+    }
+
+    /**
+     * Returns a serialized version of this configurable
+     * @param {String[]} keys
+     * @param {Boolean} toObject = false
+     * @return {Object}
+     */
+
+  }, {
+    key: 'serializeOptions',
+    value: function serializeOptions(keys) {
+      var toObject = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+      var options = _get(TextDesignSprite.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignSprite.prototype), 'serializeOptions', this).call(this, keys, toObject);
+      if (!keys) options.type = 'text-design';
+      return options;
+    }
+  }]);
+
+  return TextDesignSprite;
+}(__WEBPACK_IMPORTED_MODULE_6__shared_sprite__["a" /* default */]);
+
+/* harmony default export */ __webpack_exports__["a"] = (TextDesignSprite);
+
+
+TextDesignSprite.Layouts = {
+  TextDesignBlocks: __WEBPACK_IMPORTED_MODULE_8__text_design_layout_text_design_blocks__["a" /* TextDesignBlocks */],
+  TextDesignBlocksCondensed: __WEBPACK_IMPORTED_MODULE_9__text_design_layout_text_design_blocks_condensed__["a" /* TextDesignBlocksCondensed */],
+  TextDesignBlocksLight: __WEBPACK_IMPORTED_MODULE_10__text_design_layout_text_design_blocks_light__["a" /* TextDesignBlocksLight */],
+  TextDesignCelebrate: __WEBPACK_IMPORTED_MODULE_11__text_design_layout_text_design_celebrate__["a" /* TextDesignCelebrate */],
+  TextDesignCelebrateSimple: __WEBPACK_IMPORTED_MODULE_12__text_design_layout_text_design_celebrate_simple__["a" /* TextDesignCelebrateSimple */],
+  TextDesignEqualWidth: __WEBPACK_IMPORTED_MODULE_13__text_design_layout_text_design_equal_width__["a" /* TextDesignEqualWidth */],
+  TextDesignEqualWidthFat: __WEBPACK_IMPORTED_MODULE_14__text_design_layout_text_design_equal_width_fat__["a" /* TextDesignEqualWidthFat */],
+  TextDesignMasked: __WEBPACK_IMPORTED_MODULE_15__text_design_layout_text_design_masked__["a" /* TextDesignMasked */],
+  TextDesignMaskedBadge: __WEBPACK_IMPORTED_MODULE_16__text_design_layout_text_design_masked_badge__["a" /* TextDesignMaskedBadge */],
+  TextDesignMaskedSpeechBubble: __WEBPACK_IMPORTED_MODULE_17__text_design_layout_text_design_masked_speech_bubble__["a" /* TextDesignMaskedSpeechBubble */],
+  TextDesignMaskedSpeechBubbleComic: __WEBPACK_IMPORTED_MODULE_18__text_design_layout_text_design_masked_speech_bubble_comic__["a" /* TextDesignMaskedSpeechBubbleComic */],
+  TextDesignMultiline: __WEBPACK_IMPORTED_MODULE_19__text_design_layout_text_design_multiline__["a" /* TextDesignMultiline */],
+  TextDesignWatercolor: __WEBPACK_IMPORTED_MODULE_20__text_design_layout_text_design_watercolor__["a" /* TextDesignWatercolor */],
+  TextDesignSunshine: __WEBPACK_IMPORTED_MODULE_21__text_design_layout_text_design_sunshine__["a" /* TextDesignSunshine */],
+  TextDesignParticles: __WEBPACK_IMPORTED_MODULE_22__text_design_layout_text_design_particles__["a" /* TextDesignParticles */],
+  TextDesignRotated: __WEBPACK_IMPORTED_MODULE_23__text_design_layout_text_design_rotated__["a" /* TextDesignRotated */]
+};
+
+TextDesignSprite.AssetManager = __WEBPACK_IMPORTED_MODULE_24__text_design_text_design_asset_manager__["a" /* AssetManager */];
+
+TextDesignSprite.prototype.availableOptions = {
+  id: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].STRING, default: function _default() {
+      return __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].getUUID();
+    } },
+  position: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].VECTOR2, default: new Vector2(0.5, 0.5) },
+  dimensions: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].VECTOR2, default: Vector2.NULL },
+  anchor: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].VECTOR2, default: new Vector2(0.0, 0.0) },
+  pivot: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].VECTOR2, default: new Vector2(0.5, 0.5) },
+  rotation: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  flipHorizontally: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  flipVertically: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+
+  layout: {
+    type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].OBJECT,
+    default: null,
+    setter: function setter(layout) {
+      this._isLayoutDirty = true;
+
+      return layout;
+    }
+  },
+  text: {
+    type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].STRING,
+    default: '',
+    setter: function setter(text) {
+      this._isLayoutDirty = true;
+
+      return text;
+    }
+  },
+  color: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].COLOR, default: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Color"].BLACK },
+  width: {
+    type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER,
+    default: 0.8,
+    setter: function setter(width) {
+      // this._isLayoutDirty = true
+
+      return width;
+    }
+  },
+  inverted: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  seed: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: -1 }
+};
+
+/***/ }),
+/* 350 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = { "default": __webpack_require__(351), __esModule: true };
+
+/***/ }),
+/* 351 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(352);
+module.exports = 0x1fffffffffffff;
+
+
+/***/ }),
+/* 352 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// 20.1.2.6 Number.MAX_SAFE_INTEGER
+var $export = __webpack_require__(13);
+
+$export($export.S, 'Number', { MAX_SAFE_INTEGER: 0x1fffffffffffff });
+
+
+/***/ }),
+/* 353 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignLayoutData; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__rows_default_text_design_row__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__size_value__ = __webpack_require__(23);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignLayoutData = function (_Configurable) {
+  _inherits(TextDesignLayoutData, _Configurable);
+
+  function TextDesignLayoutData() {
+    _classCallCheck(this, TextDesignLayoutData);
+
+    return _possibleConstructorReturn(this, (TextDesignLayoutData.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignLayoutData)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignLayoutData, [{
+    key: 'getSize',
+    value: function getSize() {
+      var rows = this.getRows();
+      var width = this.getWidth();
+      var lineCount = rows.length - 1;
+      var height = rows.reduce(function (acc, row) {
+        return acc + row.getSize().height;
+      }, 0);
+
+      height += (lineCount + 1) * this.getRelativeLineSpacing() * width;
+
+      var insets = this.getRelativeInsets().clone().scale(width);
+      height += insets.top + insets.bottom;
+
+      return new __WEBPACK_IMPORTED_MODULE_7__size_value__["a" /* SizeValue */](width, height);
+    }
+  }]);
+
+  return TextDesignLayoutData;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+TextDesignLayoutData.prototype.availableOptions = {
+  text: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  lines: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].ARRAY, default: [] },
+  relativeInsets: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: new __WEBPACK_IMPORTED_MODULE_5__rectangle_insets__["a" /* RectangleInsets */]() },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  rows: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: [] },
+  background: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  width: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 }
+};
+
+/***/ }),
+/* 354 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(355);
+
+
+/***/ }),
+/* 355 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// This method of obtaining a reference to the global object needs to be
+// kept identical to the way it is obtained in runtime.js
+var g = (function() { return this })() || Function("return this")();
+
+// Use `getOwnPropertyNames` because not all browsers support calling
+// `hasOwnProperty` on the global `self` object in a worker. See #183.
+var hadRuntime = g.regeneratorRuntime &&
+  Object.getOwnPropertyNames(g).indexOf("regeneratorRuntime") >= 0;
+
+// Save the old regeneratorRuntime in case it needs to be restored later.
+var oldRuntime = hadRuntime && g.regeneratorRuntime;
+
+// Force reevalutation of runtime.js.
+g.regeneratorRuntime = undefined;
+
+module.exports = __webpack_require__(356);
+
+if (hadRuntime) {
+  // Restore the original runtime.
+  g.regeneratorRuntime = oldRuntime;
+} else {
+  // Remove the global property added by runtime.js.
+  try {
+    delete g.regeneratorRuntime;
+  } catch(e) {
+    g.regeneratorRuntime = undefined;
+  }
+}
+
+
+/***/ }),
+/* 356 */
+/***/ (function(module, exports) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+!(function(global) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  var inModule = typeof module === "object";
+  var runtime = global.regeneratorRuntime;
+  if (runtime) {
+    if (inModule) {
+      // If regeneratorRuntime is defined globally and we're in a module,
+      // make the exports object identical to regeneratorRuntime.
+      module.exports = runtime;
+    }
+    // Don't bother evaluating the rest of this file if the runtime was
+    // already defined globally.
+    return;
+  }
+
+  // Define the runtime globally (as expected by generated code) as either
+  // module.exports (if we're in a module) or a new, empty object.
+  runtime = global.regeneratorRuntime = inModule ? module.exports : {};
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  runtime.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  runtime.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  runtime.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  runtime.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return Promise.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return Promise.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration. If the Promise is rejected, however, the
+          // result for this iteration will be rejected with the same
+          // reason. Note that rejections of yielded Promises are not
+          // thrown back into the generator function, as is the case
+          // when an awaited Promise is rejected. This difference in
+          // behavior between yield and await is important, because it
+          // allows the consumer to decide what to do with the yielded
+          // rejection (swallow it and continue, manually .throw it back
+          // into the generator, abandon iteration, whatever). With
+          // await, by contrast, there is no opportunity to examine the
+          // rejection reason outside the generator function, so the
+          // only option is to throw it from the await expression, and
+          // let the generator function handle the exception.
+          result.value = unwrapped;
+          resolve(result);
+        }, reject);
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new Promise(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  runtime.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  runtime.async = function(innerFn, outerFn, self, tryLocsList) {
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList)
+    );
+
+    return runtime.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        if (delegate.iterator.return) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  runtime.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  runtime.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+})(
+  // In sloppy mode, unbound `this` refers to the global object, fallback to
+  // Function constructor if we're in global strict mode. That is sadly a form
+  // of indirect eval which violates Content Security Policy.
+  (function() { return this })() || Function("return this")()
+);
+
+
+/***/ }),
+/* 357 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowTriple; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__default_text_design_row__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_text_design_font__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_element__ = __webpack_require__(43);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignRowTriple = function (_TextDesignRow) {
+  _inherits(TextDesignRowTriple, _TextDesignRow);
+
+  function TextDesignRowTriple() {
+    _classCallCheck(this, TextDesignRowTriple);
+
+    return _possibleConstructorReturn(this, (TextDesignRowTriple.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowTriple)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignRowTriple, [{
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      if (this.getWords().size() <= 0) {
+        return [];
+      }
+
+      var _serializeOptions = this.serializeOptions(),
+          orientation = _serializeOptions.orientation,
+          width = _serializeOptions.width,
+          size = _serializeOptions.size,
+          relativeRowOffset = _serializeOptions.relativeRowOffset,
+          attributes = _serializeOptions.attributes;
+
+      var fontIdentifier = attributes.fontIdentifier;
+
+      var wordGroups = this.getWords().joined(3);
+
+      var lines = orientation === TextDesignRowTriple.Orientations.Left ? [wordGroups[0], wordGroups[1], wordGroups[2]] : [wordGroups[1], wordGroups[2], wordGroups[0]];
+
+      // Dummy fonts for calculating relationships between elements dimensions
+      var dummyFonts = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].Array.range(0, 2).map(function (i) {
+        return new __WEBPACK_IMPORTED_MODULE_7__text_text_design_font__["a" /* TextDesignFont */]({
+          text: lines[i],
+          fontIdentifier: fontIdentifier,
+          fontSize: 60
+        });
+      });
+
+      var dummySizes = dummyFonts.map(function (font) {
+        return font.getSizeValue();
+      });
+
+      // Find out which one has the largest width
+      var largestWidthIndex = dummySizes[0].width > dummySizes[1].width ? 0 : 1;
+      var smallestWidthIndex = (largestWidthIndex + 1) % 2;
+
+      // Resize the smallest width piece to match the largest one
+      dummyFonts[smallestWidthIndex].fitWidth(dummySizes[largestWidthIndex].width);
+      dummySizes[smallestWidthIndex] = dummyFonts[smallestWidthIndex].getSizeValue();
+
+      // Get the final height of the "dummy" row
+      var dummyHeight = (dummySizes[smallestWidthIndex].height + dummySizes[largestWidthIndex].height) / (1 - relativeRowOffset);
+
+      // Dummy font for the single row calculations
+      var dummySingleRowFont = new __WEBPACK_IMPORTED_MODULE_7__text_text_design_font__["a" /* TextDesignFont */]({ text: lines[2], fontIdentifier: fontIdentifier });
+
+      // Fit the single row to the double row's height and get the width
+      dummySingleRowFont.fitHeight(dummyHeight);
+      var dummySingleRowWidth = dummySingleRowFont.getSizeValue().width;
+      var dummyDoubleRowWidth = dummySizes[largestWidthIndex].width;
+
+      // Calculate the actual width of single and double rows, based on the given row width
+      var scale = width / (dummySingleRowWidth + dummyDoubleRowWidth);
+      var singleRowWidth = scale * dummySingleRowWidth;
+      var doubleRowWidth = scale * dummyDoubleRowWidth;
+
+      // Calculate the heights
+      var rowHeight = scale * dummyHeight;
+      var offset = relativeRowOffset * rowHeight;
+
+      size.set(width, rowHeight);
+
+      // Final fonts
+      var fonts = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].Array.range(0, 3).map(function (i) {
+        return new __WEBPACK_IMPORTED_MODULE_7__text_text_design_font__["a" /* TextDesignFont */]({ text: lines[i], fontIdentifier: fontIdentifier });
+      });
+
+      fonts[0].fitWidth(doubleRowWidth);
+      fonts[1].fitWidth(doubleRowWidth);
+      fonts[2].fitWidth(singleRowWidth);
+
+      // Calculate the frames
+      var doubleRowX = orientation === TextDesignRowTriple.Orientations.Left ? 0 : singleRowWidth;
+      var singleRowX = orientation === TextDesignRowTriple.Orientations.Left ? doubleRowWidth : 0;
+
+      var xOffsets = [doubleRowX, doubleRowX, singleRowX];
+      var yOffsets = [0, fonts[0].getSizeValue().height + offset, 0];
+
+      var frames = fonts.map(function (font, i) {
+        return new Rectangle(xOffsets[i], yOffsets[i], font.getSizeValue().width, font.getSizeValue().height);
+      });
+
+      return fonts.map(function (font, i) {
+        return new __WEBPACK_IMPORTED_MODULE_8__text_design_element__["a" /* TextDesignElement */]({
+          text: lines[i],
+          font: fonts[i],
+          frame: frames[i]
+        });
+      });
+    }
+  }]);
+
+  return TextDesignRowTriple;
+}(__WEBPACK_IMPORTED_MODULE_6__default_text_design_row__["a" /* TextDesignRow */]);
+
+TextDesignRowTriple.Orientations = {
+  Right: 'RIGHT',
+  Left: 'LEFT'
+};
+TextDesignRowTriple.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__default_text_design_row__["a" /* TextDesignRow */].prototype.availableOptions, {
+  orientation: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].STRING, default: TextDesignRowTriple.Orientations.Left, available: [TextDesignRowTriple.Orientations.Right, TextDesignRowTriple.Orientations.Left] },
+  relativeRowOffset: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.05 }
+});
+
+/***/ }),
+/* 358 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignBlocksCondensed; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_blocks__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var TextDesignBlocksCondensed = function (_TextDesignBlocks) {
+  _inherits(TextDesignBlocksCondensed, _TextDesignBlocks);
+
+  function TextDesignBlocksCondensed() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignBlocksCondensed);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignBlocksCondensed.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocksCondensed)).call.apply(_ref, [this].concat(args)));
+
+    _this._exclusiveFont = null;
+    return _this;
+  }
+
+  _createClass(TextDesignBlocksCondensed, [{
+    key: 'generateLayoutData',
+    value: function generateLayoutData(text, width) {
+      this._exclusiveFont = this._fontRandomizer.pickNext(this.getFontIdentifiers());
+      return _get(TextDesignBlocksCondensed.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocksCondensed.prototype), 'generateLayoutData', this).call(this, text, width);
+    }
+  }, {
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      return this._exclusiveFont || _get(TextDesignBlocksCondensed.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocksCondensed.prototype), '_fontForRow', this).call(this, index, words);
+    }
+  }, {
+    key: '_layoutRow',
+    value: function _layoutRow(words, width, attributes, isMasked) {
+      return new __WEBPACK_IMPORTED_MODULE_8__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: words, width: width, attributes: attributes });
+    }
+  }]);
+
+  return TextDesignBlocksCondensed;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design_blocks__["a" /* TextDesignBlocks */]);
+
+TextDesignBlocksCondensed.defaultFontIdentifiers = ['imgly_font_ostrich_sans_heavy', 'imgly_font_ostrich_sans_bold', 'imgly_font_ostrich_sans_black'];
+TextDesignBlocksCondensed.identifier = 'imgly_text_design_blocks_condensed';
+TextDesignBlocksCondensed.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design_blocks__["a" /* TextDesignBlocks */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignBlocksCondensed.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 359 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignBlocksLight; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_blocks__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var TextDesignBlocksLight = function (_TextDesignBlocks) {
+  _inherits(TextDesignBlocksLight, _TextDesignBlocks);
+
+  function TextDesignBlocksLight() {
+    _classCallCheck(this, TextDesignBlocksLight);
+
+    return _possibleConstructorReturn(this, (TextDesignBlocksLight.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignBlocksLight)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignBlocksLight, [{
+    key: '_layoutRow',
+    value: function _layoutRow(words, width, attributes, isMasked) {
+      return new __WEBPACK_IMPORTED_MODULE_7__models_rows_default_text_design_row_single__["a" /* TextDesignRowSingle */]({ words: words, width: width, attributes: attributes });
+    }
+  }]);
+
+  return TextDesignBlocksLight;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_blocks__["a" /* TextDesignBlocks */]);
+
+TextDesignBlocksLight.defaultFontIdentifiers = ['imgly_font_summer_font_light'];
+TextDesignBlocksLight.identifier = 'imgly_text_design_blocks_light';
+TextDesignBlocksLight.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_blocks__["a" /* TextDesignBlocks */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignBlocksLight.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 360 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignCelebrateSimple; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_blocks__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_rows_default_text_design_row_single__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_text_design_banderole__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__text_words__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_rows_image_text_design_row_image__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__text_design_celebrate__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__models_rows_image_text_design_row_single_image__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+var TextDesignCelebrateSimple = function (_TextDesignCelebrate) {
+  _inherits(TextDesignCelebrateSimple, _TextDesignCelebrate);
+
+  function TextDesignCelebrateSimple() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignCelebrateSimple);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignCelebrateSimple.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignCelebrateSimple)).call.apply(_ref, [this].concat(args)));
+
+    _this.getImagePaths = function () {
+      var banderoles = _this.getBanderoles();
+      return [].concat(_toConsumableArray(banderoles && banderoles.map(function (b) {
+        return b.getImagePath();
+      }) || []), _toConsumableArray(_this._celebrateTypes));
+    };
+
+    _this.onImagesLoaded = function () {
+      var banderoles = _this.getBanderoles();
+      banderoles && banderoles.forEach(function (b) {
+        var image = __WEBPACK_IMPORTED_MODULE_15__text_design_asset_manager__["a" /* AssetManager */].getImage(b.getImagePath());
+        if (!image) {
+          __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["Log"].warn('TextDesignBlocks#onImagesLoaded: Image not found \'' + b.getImagePath() + '\'');
+          return;
+        }
+
+        b.setImage(image);
+      });
+    };
+
+    _this._celebrateTypes = [__WEBPACK_IMPORTED_MODULE_14__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.celebrate1, __WEBPACK_IMPORTED_MODULE_14__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.celebrate2, __WEBPACK_IMPORTED_MODULE_14__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */].RowImages.celebrate3];
+
+    _this._exclusiveFont = null;
+
+    _this._typeRandomizer = new __WEBPACK_IMPORTED_MODULE_16__models_randomizer__["a" /* Randomizer */](0);
+    _this._useMaskedRandomizer = new __WEBPACK_IMPORTED_MODULE_16__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._typeRandomizer);
+    _this._seedPool.push(_this._useMaskedRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignCelebrateSimple, [{
+    key: '_fontForRow',
+    value: function _fontForRow(index, words) {
+      var fonts = this.getFontIdentifiers();
+      return fonts[index % (fonts.length - 1)];
+    }
+  }, {
+    key: '_layoutRows',
+    value: function _layoutRows(lines, width) {
+      var imagePath = this._typeRandomizer.pickNext(this._celebrateTypes);
+      var image = __WEBPACK_IMPORTED_MODULE_15__text_design_asset_manager__["a" /* AssetManager */].getImage(imagePath);
+
+      if (!image) {
+        __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["Log"].warn('TextDesignCelebrateSimple#_layoutRows: Image not fount \'' + imagePath + '\'');
+      }
+
+      var firstRow = new __WEBPACK_IMPORTED_MODULE_14__models_rows_image_text_design_row_single_image__["a" /* TextDesignRowSingleImage */]({
+        width: width,
+        height: width * 0.5,
+        drawingModeAspectFit: true,
+        image: image
+      }).layout();
+
+      var rows = _get(TextDesignCelebrateSimple.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignCelebrateSimple.prototype), '_layoutRows', this).call(this, lines, width);
+
+      return [firstRow].concat(_toConsumableArray(rows));
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var numberOfCharacters = words.countNumberOfCharacters();
+
+      var maximumNumberOfCharacters = 13;
+      var minimumNumberOfCharacters = 4;
+
+      if (numberOfCharacters < minimumNumberOfCharacters) {
+        attributes.setFontIdentifier('imgly_font_rasa_regular');
+      }
+
+      var isMasked = this._useMaskedRandomizer.nextBool(2, 1);
+
+      if (numberOfCharacters < maximumNumberOfCharacters && isMasked && !this.getHasMaskedText()) {
+        return this._layoutRow(words, width, attributes, true);
+      }
+
+      return _get(TextDesignCelebrateSimple.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignCelebrateSimple.prototype), '_randomLayoutRow', this).call(this, words, index, width, attributes);
+    }
+  }]);
+
+  return TextDesignCelebrateSimple;
+}(__WEBPACK_IMPORTED_MODULE_13__text_design_celebrate__["a" /* TextDesignCelebrate */]);
+
+TextDesignCelebrateSimple.identifier = 'imgly_text_design_celebrate_simple';
+TextDesignCelebrateSimple.defaultFontIdentifiers = ['imgly_font_amberlight', 'imgly_font_rasa_regular', 'imgly_font_rasa_500'];
+TextDesignCelebrateSimple.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_13__text_design_celebrate__["a" /* TextDesignCelebrate */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignCelebrateSimple.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 361 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignEqualWidthBackground; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__text_design_background__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils_canvas__ = __webpack_require__(34);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignEqualWidthBackground = function (_TextDesignBackground) {
+  _inherits(TextDesignEqualWidthBackground, _TextDesignBackground);
+
+  function TextDesignEqualWidthBackground() {
+    _classCallCheck(this, TextDesignEqualWidthBackground);
+
+    return _possibleConstructorReturn(this, (TextDesignEqualWidthBackground.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidthBackground)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignEqualWidthBackground, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      var _options = this._options,
+          topImagePath = _options.topImagePath,
+          bottomImagePath = _options.bottomImagePath,
+          leftImagePath = _options.leftImagePath,
+          rightImagePath = _options.rightImagePath;
+
+
+      return [topImagePath, bottomImagePath, leftImagePath, rightImagePath].filter(function (path) {
+        return path !== '';
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render(context, size, relativeInsets, color, randomizer) {
+      var absoluteInsets = relativeInsets.clone().scale(size.width);
+      var frame = size.rectangle(0, 0);
+
+      var topImage = __WEBPACK_IMPORTED_MODULE_6__text_design_asset_manager__["a" /* AssetManager */].getImage(this.getTopImagePath());
+      var leftImage = __WEBPACK_IMPORTED_MODULE_6__text_design_asset_manager__["a" /* AssetManager */].getImage(this.getLeftImagePath());
+      var rightImage = __WEBPACK_IMPORTED_MODULE_6__text_design_asset_manager__["a" /* AssetManager */].getImage(this.getRightImagePath());
+      var bottomImage = __WEBPACK_IMPORTED_MODULE_6__text_design_asset_manager__["a" /* AssetManager */].getImage(this.getBottomImagePath());
+
+      if (topImage) {
+        var aspect = topImage.width / topImage.height;
+
+        var destHeight = absoluteInsets.top * this.getTopImageFillRate();
+        var destWidth = destHeight * aspect;
+
+        var xCenter = frame.width / 2;
+        var xOrigin = xCenter - destWidth / 2;
+
+        var topFrame = new Rectangle(xOrigin, 0, destWidth, destHeight);
+
+        Object(__WEBPACK_IMPORTED_MODULE_7__utils_canvas__["a" /* drawImageFrame */])(context, topImage, topFrame, color);
+      }
+
+      if (bottomImage) {
+        var _aspect = bottomImage.width / bottomImage.height;
+
+        var _destHeight = absoluteInsets.bottom * this.getBottomImageFillRate();
+        var _destWidth = _destHeight * _aspect;
+
+        var _xCenter = frame.width / 2;
+        var _xOrigin = _xCenter - _destWidth / 2;
+
+        var bottomFrame = new Rectangle(_xOrigin, frame.height - _destHeight, _destWidth, _destHeight);
+        Object(__WEBPACK_IMPORTED_MODULE_7__utils_canvas__["a" /* drawImageFrame */])(context, bottomImage, bottomFrame, color);
+      }
+
+      if (leftImage) {
+        var _aspect2 = leftImage.width / leftImage.height;
+
+        var _destWidth2 = absoluteInsets.left * this.getLeftImageFillRate();
+        var _destHeight2 = _destWidth2 / _aspect2;
+
+        var yCenter = frame.height / 2;
+        var yOrigin = yCenter - _destHeight2 / 2;
+
+        var leftFrame = new Rectangle(0, yOrigin, _destWidth2, _destHeight2);
+        Object(__WEBPACK_IMPORTED_MODULE_7__utils_canvas__["a" /* drawImageFrame */])(context, leftImage, leftFrame, color);
+      }
+
+      if (rightImage) {
+        var _aspect3 = rightImage.width / rightImage.height;
+
+        var _destWidth3 = absoluteInsets.right * this.getRightImageFillRate();
+        var _destHeight3 = _destWidth3 / _aspect3;
+
+        var _yCenter = frame.height / 2;
+        var _yOrigin = _yCenter - _destHeight3 / 2;
+
+        var rightFrame = new Rectangle(frame.width - _destWidth3, _yOrigin, _destWidth3, _destHeight3);
+        Object(__WEBPACK_IMPORTED_MODULE_7__utils_canvas__["a" /* drawImageFrame */])(context, rightImage, rightFrame, color);
+      }
+    }
+  }]);
+
+  return TextDesignEqualWidthBackground;
+}(__WEBPACK_IMPORTED_MODULE_5__text_design_background__["a" /* TextDesignBackground */]);
+
+TextDesignEqualWidthBackground.prototype.availableOptions = {
+  topImagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  leftImagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  bottomImagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  rightImagePath: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  topImageFillRate: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  leftImageFillRate: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  bottomImageFillRate: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  rightImageFillRate: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 }
+};
+
+TextDesignEqualWidthBackground.Backgrounds = [new TextDesignEqualWidthBackground({
+  topImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background1_1.png',
+  leftImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background1_2.png',
+  rightImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background1_2.png',
+  bottomImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background1_3.png',
+  topImageFillRate: 0.8,
+  leftImageFillRate: 0.6,
+  rightImageFillRate: 0.6,
+  bottomImageFillRate: 0.8
+}), new TextDesignEqualWidthBackground({
+  leftImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background2_1.png',
+  rightImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background2_1.png',
+  bottomImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background2_2.png',
+  leftImageFillRate: 0.6,
+  rightImageFillRate: 0.6,
+  bottomImageFillRate: 0.6
+}), new TextDesignEqualWidthBackground({
+  topImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background3_1.png',
+  bottomImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background3_2.png',
+  topImageFillRate: 0.6,
+  bottomImageFillRate: 0.6
+}), new TextDesignEqualWidthBackground({
+  topImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background4_1.png',
+  leftImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background4_3.png',
+  rightImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background4_3.png',
+  bottomImagePath: 'text-design/images/imgly_xib_image_text_design_equal_width_background4_2.png',
+  topImageFillRate: 0.1,
+  leftImageFillRate: 0.6,
+  rightImageFillRate: 0.6,
+  bottomImageFillRate: 0.6
+})];
+
+/***/ }),
+/* 362 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignEqualWidthFat; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_equal_width__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_rectangle_insets__ = __webpack_require__(17);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var TextDesignEqualWidthFat = function (_TextDesignEqualWidth) {
+  _inherits(TextDesignEqualWidthFat, _TextDesignEqualWidth);
+
+  function TextDesignEqualWidthFat() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignEqualWidthFat);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignEqualWidthFat.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignEqualWidthFat)).call.apply(_ref, [this].concat(args)));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_7__models_rectangle_insets__["a" /* RectangleInsets */]();
+    return _this;
+  }
+
+  _createClass(TextDesignEqualWidthFat, [{
+    key: '_getBackground',
+    value: function _getBackground() {
+      return null;
+    }
+  }]);
+
+  return TextDesignEqualWidthFat;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_equal_width__["a" /* TextDesignEqualWidth */]);
+
+TextDesignEqualWidthFat.defaultFontIdentifiers = ['imgly_font_ultra'];
+TextDesignEqualWidthFat.identifier = 'imgly_text_design_equal_width_fat';
+TextDesignEqualWidthFat.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_equal_width__["a" /* TextDesignEqualWidth */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignEqualWidthFat.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 363 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignFontMultiline; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_text_splitter__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_size_value__ = __webpack_require__(23);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var Vector2 = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Math"].Vector2;
+
+
+var TextDesignFontMultiline = function (_Configurable) {
+  _inherits(TextDesignFontMultiline, _Configurable);
+
+  function TextDesignFontMultiline(options) {
+    _classCallCheck(this, TextDesignFontMultiline);
+
+    var _this = _possibleConstructorReturn(this, (TextDesignFontMultiline.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignFontMultiline)).call(this, options));
+
+    _this._textOptions = {};
+    _this._createCanvas();
+    return _this;
   }
 
   /**
@@ -39862,27 +47034,46 @@ var TextRenderer = function () {
    */
 
 
-  _createClass(TextRenderer, [{
+  _createClass(TextDesignFontMultiline, [{
     key: '_createCanvas',
     value: function _createCanvas() {
-      this._canvas = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Utils"].createCanvas();
+      this._canvas = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].createCanvas();
       this._context = this._canvas.getContext('2d');
-      this._textSplitter = new __WEBPACK_IMPORTED_MODULE_2__text_splitter__["a" /* default */](this._context);
+      this._textSplitter = new __WEBPACK_IMPORTED_MODULE_8__text_text_splitter__["a" /* default */](this._context);
 
-      this._finalCanvas = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Utils"].createCanvas();
+      this._finalCanvas = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].createCanvas();
       this._finalContext = this._finalCanvas.getContext('2d');
+
+      this.updateFontVariation();
+    }
+  }, {
+    key: 'setOption',
+    value: function setOption(optionName, value) {
+      var update = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+      var initial = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+      _get(TextDesignFontMultiline.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignFontMultiline.prototype), 'setOption', this).call(this, optionName, value, update, initial);
+
+      if (optionName === 'fontIdentifier' && !initial) {
+        this.updateFontVariation();
+      }
     }
 
     /**
-     * Creates the texture
-     * @private
+     * Updates the font variation for the current font identifier.
+     *
      */
 
   }, {
-    key: '_createTexture',
-    value: function _createTexture() {
-      this._texture = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Engine"].Texture.fromCanvas(this._canvas);
-      this._finalTexture = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Engine"].Texture.fromCanvas(this._finalCanvas);
+    key: 'updateFontVariation',
+    value: function updateFontVariation() {
+      var fontVariation = __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__["a" /* AssetManager */].getVariation(this.getFontIdentifier());
+      if (!fontVariation) {
+        __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignFont: Unable to find font \'' + this._fontIdentifier + '\'');
+      }
+
+      this.setFontVariation(fontVariation);
+      return fontVariation;
     }
 
     /**
@@ -39891,21 +47082,45 @@ var TextRenderer = function () {
      * @param  {CanvasRenderingContext2D} context
      * @private
      */
+    // _applyTextOptions (textOptions, context) {
+    // context.font = this._text.getFontStyle() + ' ' + this._text.getFontWeight() + ' ' +
+    //   textOptions.fontSize + 'px ' + '"' +
+    //   this._text.getFontFamily() + '"'
+
+    //   context.textBaseline = 'top'
+    //   context.textAlign = this._text.getAlignment()
+    //   context.fillStyle = this._text.getColor().toRGBA()
+
+    //   context.strokeStyle = this._text.getOutlineColor().toRGBA()
+    //   const outlineWidth = this._text.getOutlineWidth()
+    //   if (outlineWidth > 0) {
+    //     context.lineWidth = outlineWidth
+    //   }
+    // }
 
   }, {
     key: '_applyTextOptions',
-    value: function _applyTextOptions(textOptions, context) {
-      context.font = this._text.getFontStyle() + ' ' + this._text.getFontWeight() + ' ' + textOptions.fontSize + 'px ' + '"' + this._text.getFontFamily() + '"';
+    value: function _applyTextOptions() {
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var ctx = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this._context;
 
-      context.textBaseline = 'top';
-      context.textAlign = this._text.getAlignment();
-      context.fillStyle = this._text.getColor().toRGBA();
+      var _options$options = _extends({}, this._options, options),
+          fontSize = _options$options.fontSize,
+          fontVariation = _options$options.fontVariation,
+          lineHeight = _options$options.lineHeight,
+          textColor = _options$options.textColor,
+          alignment = _options$options.alignment;
 
-      context.strokeStyle = this._text.getOutlineColor().toRGBA();
-      var outlineWidth = this._text.getOutlineWidth();
-      if (outlineWidth > 0) {
-        context.lineWidth = outlineWidth;
-      }
+      var _fontVariation$serial = fontVariation.serializeOptions(),
+          fontStyle = _fontVariation$serial.fontStyle,
+          fontWeight = _fontVariation$serial.fontWeight,
+          fontFamily = _fontVariation$serial.fontFamily;
+
+      ctx.font = fontStyle + ' ' + fontWeight + ' ' + fontSize + 'px ' + '"' + fontFamily + '"';
+
+      ctx.fillStyle = textColor;
+      ctx.textBaseline = 'top'; // textBaseline
+      ctx.textAlign = alignment || 'left';
     }
 
     /**
@@ -39919,7 +47134,7 @@ var TextRenderer = function () {
   }, {
     key: '_buildOutputLines',
     value: function _buildOutputLines(maxWidth) {
-      this._textSplitter.setText(this._text.getText());
+      this._textSplitter.setText(this.getText());
       this._textSplitter.setMaxWidth(maxWidth);
       return this._textSplitter.getLines();
     }
@@ -39934,7 +47149,7 @@ var TextRenderer = function () {
   }, {
     key: '_renderTextLine',
     value: function _renderTextLine(text, y) {
-      var textAlignment = this._text.getAlignment();
+      var textAlignment = this.getAlignment();
       var drawPosition = new Vector2(0, y); // Left alignment
 
       switch (textAlignment) {
@@ -39947,11 +47162,6 @@ var TextRenderer = function () {
       }
 
       this._context.fillText(text, drawPosition.x, drawPosition.y);
-      var outlineWidth = this._text.getOutlineWidth();
-      if (outlineWidth > 0) {
-        this._context.miterLimit = 2;
-        this._context.strokeText(text, drawPosition.x, drawPosition.y);
-      }
     }
 
     /**
@@ -39962,45 +47172,52 @@ var TextRenderer = function () {
 
   }, {
     key: 'update',
-    value: function update(sdk, inputDimensions) {
-      var textOptions = this.calculateFontStyles(sdk, inputDimensions);
+    value: function update() {
+      var textOptions = this.calculateFontStyles();
       if (textOptions) {
-        var _calculateText2 = this._calculateText(sdk, textOptions, inputDimensions),
+        var _calculateText2 = this._calculateText(textOptions),
             dimensions = _calculateText2.dimensions,
             lines = _calculateText2.lines;
 
-        this._renderText(sdk, dimensions, lines, textOptions, inputDimensions);
-        this._updateFinalTexture();
+        this._dimensions = dimensions;
+        this._renderText(dimensions, lines, textOptions);
       }
     }
-
-    /**
-     * Renders the rotated text on the final texture
-     * @private
-     */
-
   }, {
-    key: '_updateFinalTexture',
-    value: function _updateFinalTexture() {
-      var _canvas = this._canvas,
-          width = _canvas.width,
-          height = _canvas.height;
+    key: 'draw',
+    value: function draw(ctx) {
+      var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+      var y = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
 
-      var rotation = this.rotation;
-      var cos = Math.cos(rotation);
-      var sin = Math.sin(rotation);
+      this.update();
 
-      var finalDimensions = new Vector2(Math.abs(width * cos) + Math.abs(height * sin), Math.abs(width * sin) + Math.abs(height * cos));
-
-      this._finalCanvas.width = finalDimensions.x;
-      this._finalCanvas.height = finalDimensions.y;
-
-      this._finalContext.save();
-      this._finalContext.translate(this._finalCanvas.width / 2, this._finalCanvas.height / 2);
-      this._finalContext.rotate(rotation);
-      this._finalContext.drawImage(this._canvas, -width / 2, -height / 2);
-      this._finalContext.restore();
+      ctx.drawImage(this._canvas, x, y, this._dimensions.x, this._dimensions.y);
     }
+
+    // /**
+    //  * Renders the rotated text on the final texture
+    //  * @private
+    //  */
+    // _updateFinalTexture () {
+    //   const { width, height } = this._canvas
+    //   const rotation = this.rotation
+    //   const cos = Math.cos(rotation)
+    //   const sin = Math.sin(rotation)
+
+    //   const finalDimensions = new Vector2(
+    //     Math.abs(width * cos) + Math.abs(height * sin),
+    //     Math.abs(width * sin) + Math.abs(height * cos)
+    //   )
+
+    //   this._finalCanvas.width = finalDimensions.x
+    //   this._finalCanvas.height = finalDimensions.y
+
+    //   this._finalContext.save()
+    //   this._finalContext.translate(this._finalCanvas.width / 2, this._finalCanvas.height / 2)
+    //   this._finalContext.rotate(rotation)
+    //   this._finalContext.drawImage(this._canvas, -width / 2, -height / 2)
+    //   this._finalContext.restore()
+    // }
 
     /**
      * Renders the text
@@ -40014,21 +47231,22 @@ var TextRenderer = function () {
 
   }, {
     key: '_renderText',
-    value: function _renderText(sdk, dimensions, lines, textOptions, inputDimensions) {
+    value: function _renderText(dimensions, lines, textOptions) {
       // Resize the canvas
+
       this._canvas.width = dimensions.x;
       this._canvas.height = dimensions.y;
 
-      if (this._text.getMaxHeight()) {
-        this._canvas.height = Math.min(this._text.getMaxHeight() * inputDimensions.y, this._canvas.height);
-      }
+      // if (this._text.getMaxHeight()) {
+
+      //   this._canvas.height = Math.min(
+      //     this._text.getMaxHeight(),
+      //     this._canvas.height
+      //   )
+      // }
 
       // Update the context
       this._context = this._canvas.getContext('2d');
-
-      // Render background color
-      this._context.fillStyle = this._text.getBackgroundColor().toRGBA();
-      this._context.fillRect(0, 0, dimensions.x, dimensions.y);
 
       // Apply text options
       this._applyTextOptions(textOptions, this._context);
@@ -40039,6 +47257,12 @@ var TextRenderer = function () {
         this._renderTextLine(line, textOptions.topPadding + textOptions.lineHeight * lineNum);
       }
     }
+  }, {
+    key: 'getFontFamily',
+    value: function getFontFamily() {
+      var variation = this.getFontVariation();
+      return variation.getFontFamily();
+    }
 
     /**
      * Calculates the actual font size and line height
@@ -40048,19 +47272,45 @@ var TextRenderer = function () {
 
   }, {
     key: 'calculateFontStyles',
-    value: function calculateFontStyles(sdk, inputDimensions) {
-      var fontFamily = this._text.getFontFamily();
-      var fontSize = this._text.getFontSize() * inputDimensions.y;
-      var textHeight = this._text.getAbsoluteTextHeight(inputDimensions);
-      var lineHeight = textHeight * this._text.getLineHeight();
-      var topPadding = textHeight * (this._text.getLineHeight() - 1.0) / 2.0;
+    value: function calculateFontStyles() {
+      var fontFamily = this.getFontFamily();
+      var fontSize = this.getFontSize();
+      var textHeight = this.getAbsoluteTextHeight();
+      var lineHeight = textHeight * this.getLineHeight();
+      var topPadding = textHeight * (this.getLineHeight() - 1.0) / 2.0;
 
-      var textOptions = { fontFamily: fontFamily, fontSize: fontSize, lineHeight: lineHeight, topPadding: topPadding };
-      if (this._textOptions.fontFamily !== fontFamily || this._textOptions.fontSize !== fontSize || this._textOptions.lineHeight !== lineHeight) {
-        this._textOptions = textOptions;
-      }
+      var textOptions = { fontFamily: fontFamily, fontSize: fontSize, textHeight: textHeight, lineHeight: lineHeight, topPadding: topPadding };
+      this._textOptions = _extends({}, textOptions);
+      // if (this._textOptions.fontFamily !== fontFamily ||
+      //     this._textOptions.fontSize !== fontSize ||
+      //     this._textOptions.lineHeight !== lineHeight) {
+      //   this._textOptions = textOptions
+      // }
 
       return textOptions;
+    }
+  }, {
+    key: 'getTextMetrics',
+    value: function getTextMetrics() {
+      var variation = this.getFontVariation();
+      return variation.getTextMetrics();
+    }
+  }, {
+    key: 'getAbsoluteTextHeight',
+    value: function getAbsoluteTextHeight() {
+      var actualFontSize = this.getFontSize();
+      var textMetrics = this.getTextMetrics();
+
+      if (textMetrics) {
+        // The text height for the current font size is calculated
+        // using the given font metrics.
+        var scale = 1 / textMetrics.unitsPerEm * actualFontSize;
+        var ascent = textMetrics.ascender * scale;
+        var descent = textMetrics.descender * scale;
+        return ascent + Math.abs(descent);
+      } else {
+        return actualFontSize * this.getLineHeight() * 1.1;
+      }
     }
 
     /**
@@ -40074,16 +47324,17 @@ var TextRenderer = function () {
 
   }, {
     key: '_calculateText',
-    value: function _calculateText(sdk, textOptions, inputDimensions) {
+    value: function _calculateText(textOptions) {
       // Calculate max width
-      var maxWidth = this._text.getMaxWidth() * inputDimensions.x;
+      // let maxWidth = this.getMaxWidth()
 
       // Apply text options
       this._applyTextOptions(textOptions, this._context);
 
       // Calculate bounding box
       var dimensions = new Vector2();
-      var lines = this._text.getText().split('\n');
+      var lines = this.getText().split('\n');
+      var maxWidth = void 0;
       if (typeof maxWidth !== 'undefined') {
         // Calculate the bounding box
         dimensions.x = maxWidth;
@@ -40104,28 +47355,6 @@ var TextRenderer = function () {
     }
 
     /**
-     * Returns this renderer's texture
-     * @return {Engine.Texture}
-     */
-
-  }, {
-    key: 'getTexture',
-    value: function getTexture() {
-      return this._texture;
-    }
-
-    /**
-     * Returns this renderer's final texture containing the rotated text
-     * @return {Engine.Texture}
-     */
-
-  }, {
-    key: 'getFinalTexture',
-    value: function getFinalTexture() {
-      return this._finalTexture;
-    }
-
-    /**
      * Returns the dimensions for this text
      * @param  {PhotoEditorSDK} sdk
      * @param  {PhotoEditorSDK.Math.Vector2} inputDimensions
@@ -40134,44 +47363,1192 @@ var TextRenderer = function () {
 
   }, {
     key: 'getDimensions',
-    value: function getDimensions(sdk, inputDimensions) {
-      var textOptions = this.calculateFontStyles(sdk, inputDimensions);
+    value: function getDimensions() {
+      var textOptions = this.calculateFontStyles();
 
-      var _calculateText3 = this._calculateText(sdk, textOptions, inputDimensions),
+      var _calculateText3 = this._calculateText(textOptions),
           dimensions = _calculateText3.dimensions;
 
       return dimensions;
     }
-
-    /**
-     * Disposes this text renderer
-     */
-
   }, {
-    key: 'dispose',
-    value: function dispose() {
-      if (this._measurementElement) {
-        document.body.removeChild(this._measurementElement);
-      }
-      this._texture.getBaseTexture().dispose();
-      this._texture = null;
-      this._finalTexture.getBaseTexture().dispose();
-      this._finalTexture = null;
+    key: 'fitMaxHeight',
+    value: function fitMaxHeight() {
+      this.update();
+      var dimensions = this.getDimensions();
+      var lines = this.getText().split('\n');
+      var scale = this.getMaxHeight() / dimensions.y;
+    }
+  }, {
+    key: 'fitMaxWidth',
+    value: function fitMaxWidth() {
+      var width = this.getDimensions().x;
+      var scale = this.getMaxWidth() / width;
+
+      this.setFontSize(this.getFontSize() * scale);
+      this._textOptions.fontSize = this.getFontSize();
+    }
+  }, {
+    key: 'fitInFrame',
+    value: function fitInFrame(frame) {
+      this.setMaxWidth(frame.width);
+      this.setMaxHeight(frame.height);
+
+      this.fitMaxWidth();
+      this.fitMaxHeight();
+    }
+  }, {
+    key: 'getSize',
+    value: function getSize() {
+      var dimensions = this.getDimensions();
+      return new __WEBPACK_IMPORTED_MODULE_9__models_size_value__["a" /* SizeValue */](dimensions.x, dimensions.y);
     }
   }]);
 
-  return TextRenderer;
-}();
+  return TextDesignFontMultiline;
+}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Configurable"]);
 
-/* harmony default export */ __webpack_exports__["a"] = (TextRenderer);
+TextDesignFontMultiline.prototype.availableOptions = {
+  text: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: '' },
+  fontIdentifier: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'imgly_font_open_sans_bold' },
+  fontVariation: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].OBJECT, default: null },
+  lineHeight: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 1 },
+  fontSize: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 22 },
+  textColor: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'black' },
+  strokeStyle: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'black' },
+  outlineWidth: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  textBaseline: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'alphabetic' },
+  excludeAccents: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true },
+  maxWidth: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 100 },
+  maxHeight: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].NUMBER, default: 0 },
+  alignment: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].STRING, default: 'left', available: ['left', 'center', 'right'] }
+};
 
 /***/ }),
-/* 322 */
+/* 364 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignMaskedBadge; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+var TextDesignMaskedBadge = function (_TextDesignMasked) {
+  _inherits(TextDesignMaskedBadge, _TextDesignMasked);
+
+  function TextDesignMaskedBadge() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignMaskedBadge);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignMaskedBadge.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMaskedBadge)).call.apply(_ref, [this].concat(args)));
+
+    _this._possibleRowTypes = [__WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].Badge1, __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].Badge2, __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].Badge3, __WEBPACK_IMPORTED_MODULE_7__models_masked_row_type__["a" /* RowType */].Badge4];
+
+    _this._rowTypesRandomizer = new __WEBPACK_IMPORTED_MODULE_9__models_randomizer__["a" /* Randomizer */](0);
+    _this._isMaskedRandomizer = new __WEBPACK_IMPORTED_MODULE_9__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._rowTypesRandomizer);
+    _this._seedPool.push(_this._isMaskedRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignMaskedBadge, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return this._possibleRowTypes.map(function (rowType) {
+        return rowType.getImagePath();
+      });
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      this._rowType = this._rowTypesRandomizer.pickNext(this._possibleRowTypes);
+
+      attributes.setLineSpacing(0.9);
+
+      var row = _get(TextDesignMaskedBadge.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMaskedBadge.prototype), '_randomLayoutRow', this).call(this, words, index, width, attributes);
+
+      row.set({ textScaleFactor: 0.9 });
+
+      return row;
+    }
+  }]);
+
+  return TextDesignMaskedBadge;
+}(__WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */]);
+
+TextDesignMaskedBadge.defaultFontIdentifiers = ['imgly_font_campton_bold'];
+TextDesignMaskedBadge.identifier = 'imgly_text_design_masked_badge';
+TextDesignMaskedBadge.ValidAlignments = [__WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */].Alignment.Center];
+TextDesignMaskedBadge.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__text_design_masked__["a" /* TextDesignMasked */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignMaskedBadge.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 365 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignMaskedSpeechBubbleComic; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design_masked_speech_bubble__ = __webpack_require__(106);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+// TODO: Config fonts
+
+var TextDesignMaskedSpeechBubbleComic = function (_TextDesignMaskedSpee) {
+  _inherits(TextDesignMaskedSpeechBubbleComic, _TextDesignMaskedSpee);
+
+  function TextDesignMaskedSpeechBubbleComic() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignMaskedSpeechBubbleComic);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignMaskedSpeechBubbleComic.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMaskedSpeechBubbleComic)).call.apply(_ref, [this].concat(args)));
+
+    _this._possibleRowTypes = [__WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__["a" /* RowType */].SpeechBubble2, __WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__["a" /* RowType */].SpeechBubble4, __WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__["a" /* RowType */].SpeechBubble2, __WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__["a" /* RowType */].SpeechBubble4, __WEBPACK_IMPORTED_MODULE_6__models_masked_row_type__["a" /* RowType */].SpeechBubble5];
+
+    _this._possibleRowTypesForMin15 = _this._possibleRowTypes.slice(0, 2);
+    _this._possibleRowTypesForMax14 = _this._possibleRowTypes.slice(2);
+    return _this;
+  }
+
+  _createClass(TextDesignMaskedSpeechBubbleComic, [{
+    key: '_rowTypes',
+    value: function _rowTypes(words) {
+      return words.countNumberOfCharacters() < 15 ? this._possibleRowTypesForMax14 : this._possibleRowTypesForMin15;
+    }
+  }]);
+
+  return TextDesignMaskedSpeechBubbleComic;
+}(__WEBPACK_IMPORTED_MODULE_8__text_design_masked_speech_bubble__["a" /* TextDesignMaskedSpeechBubble */]);
+
+TextDesignMaskedSpeechBubbleComic.defaultFontIdentifiers = ['imgly_font_gagalin_regular'];
+TextDesignMaskedSpeechBubbleComic.identifier = 'imgly_text_design_masked_speech_bubble_comic';
+TextDesignMaskedSpeechBubbleComic.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__text_design_masked_speech_bubble__["a" /* TextDesignMaskedSpeechBubble */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignMaskedSpeechBubbleComic.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 366 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignMultiline; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rows_masked_text_design_row_multiline__ = __webpack_require__(105);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+var TextDesignMultiline = function (_TextDesignMasked) {
+  _inherits(TextDesignMultiline, _TextDesignMasked);
+
+  function TextDesignMultiline() {
+    _classCallCheck(this, TextDesignMultiline);
+
+    return _possibleConstructorReturn(this, (TextDesignMultiline.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMultiline)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignMultiline, [{
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignMultiline.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignMultiline.prototype), '_modifiedText', this).call(this, text).toUpperCase();
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var alignment = this._alignmentRandomizer.pickNext(__WEBPACK_IMPORTED_MODULE_7__text_design_masked__["a" /* TextDesignMasked */].ValidAlignments);
+
+      attributes.setAlignment(alignment);
+
+      return new __WEBPACK_IMPORTED_MODULE_8__models_rows_masked_text_design_row_multiline__["a" /* TextDesignRowMultiline */]({
+        words: words,
+        width: width,
+        attributes: attributes,
+        image: null,
+        backgroundColor: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Color"].WHITE,
+        centerOffset: 0,
+        sizeToFitContent: true,
+        isMasked: false,
+        autoAdjustTextColor: false
+      });
+    }
+  }]);
+
+  return TextDesignMultiline;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design_masked__["a" /* TextDesignMasked */]);
+
+TextDesignMultiline.defaultFontIdentifiers = ['imgly_font_abril_fatface_regular'];
+TextDesignMultiline.identifier = 'imgly_text_design_multiline';
+TextDesignMultiline.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design_masked__["a" /* TextDesignMasked */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignMultiline.defaultFontIdentifiers }
+});
+
+/***/ }),
+/* 367 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignWatercolor; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_masked_row_type__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_masked__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_masked_speech_bubble__ = __webpack_require__(106);
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+// TODO: Config fonts
+
+var TextDesignWatercolor = function (_TextDesignMaskedSpee) {
+  _inherits(TextDesignWatercolor, _TextDesignMaskedSpee);
+
+  function TextDesignWatercolor() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignWatercolor);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignWatercolor.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignWatercolor)).call.apply(_ref, [this].concat(args)));
+
+    _this._possibleRowTypes = [__WEBPACK_IMPORTED_MODULE_5__models_masked_row_type__["a" /* RowType */].Watercolor1, __WEBPACK_IMPORTED_MODULE_5__models_masked_row_type__["a" /* RowType */].Watercolor2, __WEBPACK_IMPORTED_MODULE_5__models_masked_row_type__["a" /* RowType */].Watercolor3];
+    return _this;
+  }
+
+  return TextDesignWatercolor;
+}(__WEBPACK_IMPORTED_MODULE_7__text_design_masked_speech_bubble__["a" /* TextDesignMaskedSpeechBubble */]);
+
+TextDesignWatercolor.defaultFontIdentifiers = ['imgly_font_hello_sunshine_marker', 'imgly_font_hello_sunshine', 'imgly_font_hello_sunshine_italic'];
+TextDesignWatercolor.identifier = 'imgly_text_design_watercolor';
+TextDesignWatercolor.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__text_design_masked_speech_bubble__["a" /* TextDesignMaskedSpeechBubble */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignWatercolor.defaultFontIdentifiers },
+  alignment: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].STRING, default: __WEBPACK_IMPORTED_MODULE_6__text_design_masked__["a" /* TextDesignMasked */].Alignment.Center, available: __WEBPACK_IMPORTED_MODULE_6__text_design_masked__["a" /* TextDesignMasked */].ValidAlignments }
+});
+
+/***/ }),
+/* 368 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticles; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__text_design_sunshine__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_background_text_design_particles_background_brush__ = __webpack_require__(369);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_background_text_design_particles_background_circle__ = __webpack_require__(371);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_background_text_design_particles_background_triangle__ = __webpack_require__(372);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+
+
+var TextDesignParticles = function (_TextDesignSunshine) {
+  _inherits(TextDesignParticles, _TextDesignSunshine);
+
+  function TextDesignParticles() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignParticles);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignParticles.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticles)).call.apply(_ref, [this].concat(args)));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_8__models_rectangle_insets__["a" /* RectangleInsets */](0.3, 0.3, 0.3, 0.3);
+
+    _this._backgroundRandomizer = new __WEBPACK_IMPORTED_MODULE_13__models_randomizer__["a" /* Randomizer */](0);
+    _this._decoTypeRandomizer = new __WEBPACK_IMPORTED_MODULE_13__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._backgroundRandomizer);
+    _this._seedPool.push(_this._decoTypeRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignParticles, [{
+    key: 'getImagePaths',
+    value: function getImagePaths() {
+      return [].concat(_toConsumableArray(__WEBPACK_IMPORTED_MODULE_9__text_design_sunshine__["a" /* TextDesignSunshine */].RowImages), _toConsumableArray(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Utils"].Array.flatten(TextDesignParticles.Backgrounds.map(function (b) {
+        return b.getImagePaths();
+      }))), _toConsumableArray(TextDesignParticles.DecoratorImages));
+    }
+  }, {
+    key: '_getBackground',
+    value: function _getBackground() {
+      return this._backgroundRandomizer.pickNext(TextDesignParticles.Backgrounds);
+    }
+  }, {
+    key: '_randomDecoratorImages',
+    value: function _randomDecoratorImages() {
+      switch (this._decoTypeRandomizer.nextInRange(0, 2)) {
+        case 0:
+          return TextDesignParticles.DecoratorImages.slice(0, 2).map(function (path) {
+            return __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__["a" /* AssetManager */].getImage(path);
+          });
+
+        case 1:
+        case 2:
+          return TextDesignParticles.DecoratorImages.slice(2).map(function (path) {
+            return __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__["a" /* AssetManager */].getImage(path);
+          });
+
+        default:
+          __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["Log"].warn('TextDesignParticles#_randomDecoratorImages: Number generated not in valid range.');
+          return TextDesignParticles.DecoratorImages.slice(2).map(function (path) {
+            return __WEBPACK_IMPORTED_MODULE_7__text_design_asset_manager__["a" /* AssetManager */].getImage(path);
+          });
+      }
+    }
+  }]);
+
+  return TextDesignParticles;
+}(__WEBPACK_IMPORTED_MODULE_9__text_design_sunshine__["a" /* TextDesignSunshine */]);
+
+TextDesignParticles.defaultFontIdentifiers = ['imgly_font_hello_sunshine_marker', 'imgly_font_hello_sunshine', 'imgly_font_hello_sunshine_italic', 'imgly_font_montserrat_light'];
+TextDesignParticles.identifier = 'imgly_text_design_particles';
+TextDesignParticles.Backgrounds = [new __WEBPACK_IMPORTED_MODULE_10__models_background_text_design_particles_background_brush__["a" /* TextDesignParticlesBackgroundBrush */](), new __WEBPACK_IMPORTED_MODULE_11__models_background_text_design_particles_background_circle__["a" /* TextDesignParticlesBackgroundCircle */](), new __WEBPACK_IMPORTED_MODULE_12__models_background_text_design_particles_background_triangle__["a" /* TextDesignParticlesBackgroundTriangle */]()];
+TextDesignParticles.DecoratorImages = ['text-design/images/imgly_text_design_particle_holder_01.png', 'text-design/images/imgly_text_design_particle_holder_02.png', 'text-design/images/imgly_text_design_particle_holder_03.png', 'text-design/images/imgly_text_design_particle_holder_04.png'];
+TextDesignParticles.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_9__text_design_sunshine__["a" /* TextDesignSunshine */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignParticles.defaultFontIdentifiers },
+  decorationsVisible: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: false },
+  decorativeRowsInTheMiddleOnly: { type: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_core__["OptionType"].BOOLEAN, default: true }
+});
+
+/***/ }),
+/* 369 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticlesBackgroundBrush; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__ = __webpack_require__(107);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+var TextDesignParticlesBackgroundBrush = function (_TextDesignParticlesB) {
+  _inherits(TextDesignParticlesBackgroundBrush, _TextDesignParticlesB);
+
+  function TextDesignParticlesBackgroundBrush() {
+    _classCallCheck(this, TextDesignParticlesBackgroundBrush);
+
+    return _possibleConstructorReturn(this, (TextDesignParticlesBackgroundBrush.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticlesBackgroundBrush)).apply(this, arguments));
+  }
+
+  return TextDesignParticlesBackgroundBrush;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */]);
+
+TextDesignParticlesBackgroundBrush.Images = ['text-design/images/imgly_text_design_particle_brush_01.png', 'text-design/images/imgly_text_design_particle_brush_02.png', 'text-design/images/imgly_text_design_particle_brush_03.png', 'text-design/images/imgly_text_design_particle_brush_04.png', 'text-design/images/imgly_text_design_particle_brush_05.png', 'text-design/images/imgly_text_design_particle_brush_06.png', 'text-design/images/imgly_text_design_particle_brush_07.png', 'text-design/images/imgly_text_design_particle_brush_08.png', 'text-design/images/imgly_text_design_particle_brush_09.png', 'text-design/images/imgly_text_design_particle_brush_10.png'];
+TextDesignParticlesBackgroundBrush.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */].prototype.availableOptions, {
+  imagePaths: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: [].concat(_toConsumableArray(TextDesignParticlesBackgroundBrush.Images)) },
+  relativeParticleSize: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.12 }
+});
+
+/***/ }),
+/* 370 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticle; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
+
+
+
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignParticle = function (_Configurable) {
+  _inherits(TextDesignParticle, _Configurable);
+
+  function TextDesignParticle() {
+    _classCallCheck(this, TextDesignParticle);
+
+    return _possibleConstructorReturn(this, (TextDesignParticle.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticle)).apply(this, arguments));
+  }
+
+  _createClass(TextDesignParticle, [{
+    key: 'getContentFrame',
+    value: function getContentFrame() {
+      var frame = this.getFrame().clone();
+      var inset = frame.width * 0.1;
+
+      return frame.insetBy(inset, inset);
+    }
+  }, {
+    key: 'intersects',
+    value: function intersects(particle) {
+      return this.getFrame().intersects(particle.getFrame());
+    }
+  }]);
+
+  return TextDesignParticle;
+}(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["Configurable"]);
+
+TextDesignParticle.prototype.availableOptions = {
+  frame: { type: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__["OptionType"].OBJECT, default: new Rectangle() }
+};
+
+/***/ }),
+/* 371 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticlesBackgroundCircle; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__ = __webpack_require__(107);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+var TextDesignParticlesBackgroundCircle = function (_TextDesignParticlesB) {
+  _inherits(TextDesignParticlesBackgroundCircle, _TextDesignParticlesB);
+
+  function TextDesignParticlesBackgroundCircle() {
+    _classCallCheck(this, TextDesignParticlesBackgroundCircle);
+
+    return _possibleConstructorReturn(this, (TextDesignParticlesBackgroundCircle.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticlesBackgroundCircle)).apply(this, arguments));
+  }
+
+  return TextDesignParticlesBackgroundCircle;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */]);
+
+TextDesignParticlesBackgroundCircle.Images = ['text-design/images/imgly_text_design_particle_circle_01.png', 'text-design/images/imgly_text_design_particle_circle_02.png', 'text-design/images/imgly_text_design_particle_circle_03.png', 'text-design/images/imgly_text_design_particle_circle_04.png', 'text-design/images/imgly_text_design_particle_circle_05.png', 'text-design/images/imgly_text_design_particle_circle_06.png', 'text-design/images/imgly_text_design_particle_circle_07.png', 'text-design/images/imgly_text_design_particle_circle_08.png', 'text-design/images/imgly_text_design_particle_circle_09.png', 'text-design/images/imgly_text_design_particle_circle_10.png'];
+TextDesignParticlesBackgroundCircle.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */].prototype.availableOptions, {
+  imagePaths: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: [].concat(_toConsumableArray(TextDesignParticlesBackgroundCircle.Images)) },
+  relativeParticleSize: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.12 }
+});
+
+/***/ }),
+/* 372 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignParticlesBackgroundTriangle; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__ = __webpack_require__(107);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+var TextDesignParticlesBackgroundTriangle = function (_TextDesignParticlesB) {
+  _inherits(TextDesignParticlesBackgroundTriangle, _TextDesignParticlesB);
+
+  function TextDesignParticlesBackgroundTriangle() {
+    _classCallCheck(this, TextDesignParticlesBackgroundTriangle);
+
+    return _possibleConstructorReturn(this, (TextDesignParticlesBackgroundTriangle.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignParticlesBackgroundTriangle)).apply(this, arguments));
+  }
+
+  return TextDesignParticlesBackgroundTriangle;
+}(__WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */]);
+
+TextDesignParticlesBackgroundTriangle.Images = ['text-design/images/imgly_text_design_particle_triangle_01.png', 'text-design/images/imgly_text_design_particle_triangle_02.png', 'text-design/images/imgly_text_design_particle_triangle_03.png', 'text-design/images/imgly_text_design_particle_triangle_04.png', 'text-design/images/imgly_text_design_particle_triangle_05.png', 'text-design/images/imgly_text_design_particle_triangle_06.png', 'text-design/images/imgly_text_design_particle_triangle_07.png', 'text-design/images/imgly_text_design_particle_triangle_08.png', 'text-design/images/imgly_text_design_particle_triangle_09.png', 'text-design/images/imgly_text_design_particle_triangle_10.png'];
+TextDesignParticlesBackgroundTriangle.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_6__text_design_particles_background__["a" /* TextDesignParticlesBackground */].prototype.availableOptions, {
+  imagePaths: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].ARRAY, default: [].concat(_toConsumableArray(TextDesignParticlesBackgroundTriangle.Images)) }
+});
+
+/***/ }),
+/* 373 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRotated; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_design__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_rectangle_insets__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_rows_shearing_text_design_row_form__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_randomizer__ = __webpack_require__(16);
+
+
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_array_from___default()(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+var TextDesignRotated = function (_TextDesign) {
+  _inherits(TextDesignRotated, _TextDesign);
+
+  function TextDesignRotated() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignRotated);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignRotated.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRotated)).call.apply(_ref, [this].concat(args)));
+
+    _this._relativeInsets = new __WEBPACK_IMPORTED_MODULE_9__models_rectangle_insets__["a" /* RectangleInsets */](0.1, 0, 0, 0);
+
+    _this._rowTypeRandomizer = new __WEBPACK_IMPORTED_MODULE_11__models_randomizer__["a" /* Randomizer */](0);
+
+    _this._seedPool.push(_this._rowTypeRandomizer);
+    return _this;
+  }
+
+  _createClass(TextDesignRotated, [{
+    key: '_modifiedText',
+    value: function _modifiedText(text) {
+      return _get(TextDesignRotated.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRotated.prototype), '_modifiedText', this).call(this, text).toUpperCase();
+    }
+  }, {
+    key: '_randomLayoutRow',
+    value: function _randomLayoutRow(words, index, width, attributes) {
+      var row = _get(TextDesignRotated.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRotated.prototype), '_randomLayoutRow', this).call(this, words, index, width, attributes);
+      row.setShearingAngle(this.getShearingAngle());
+      return row;
+    }
+  }, {
+    key: '_layoutRows',
+    value: function _layoutRows(lines, width) {
+      var elements = _get(TextDesignRotated.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRotated.prototype), '_layoutRows', this).call(this, lines, width);
+      var types = __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["Utils"].values(__WEBPACK_IMPORTED_MODULE_10__models_rows_shearing_text_design_row_form__["a" /* TextDesignRowForm */].FormType);
+
+      var formHeight = 30;
+
+      var firstRow = new __WEBPACK_IMPORTED_MODULE_10__models_rows_shearing_text_design_row_form__["a" /* TextDesignRowForm */]({
+        width: width,
+        height: formHeight,
+        type: this._rowTypeRandomizer.pickNext(types),
+        shearingAngle: this.getShearingAngle()
+      }).layout();
+
+      var lastRow = new __WEBPACK_IMPORTED_MODULE_10__models_rows_shearing_text_design_row_form__["a" /* TextDesignRowForm */]({
+        width: width,
+        height: formHeight,
+        type: this._rowTypeRandomizer.pickNext(types),
+        shearingAngle: this.getShearingAngle()
+      }).layout();
+
+      return [firstRow].concat(_toConsumableArray(elements), [lastRow]);
+    }
+  }]);
+
+  return TextDesignRotated;
+}(__WEBPACK_IMPORTED_MODULE_8__text_design__["a" /* TextDesign */]);
+
+TextDesignRotated.defaultFontIdentifiers = ['imgly_font_campton_bold'];
+TextDesignRotated.identifier = 'imgly_text_design_rotated';
+TextDesignRotated.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_8__text_design__["a" /* TextDesign */].prototype.availableOptions, {
+  fontIdentifiers: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].ARRAY, default: TextDesignRotated.defaultFontIdentifiers },
+  relativeLineSpacing: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].NUMBER, default: 0.025 / 3 },
+  shearingAngle: { type: __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_core__["OptionType"].NUMBER, default: -0.1 }
+});
+
+/***/ }),
+/* 374 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRowForm; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_design_element__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__default_text_design_row__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__size_value__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utils_canvas__ = __webpack_require__(34);
+
+
+
+
+
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var TextDesignRowForm = function (_TextDesignRow) {
+  _inherits(TextDesignRowForm, _TextDesignRow);
+
+  function TextDesignRowForm() {
+    var _ref;
+
+    _classCallCheck(this, TextDesignRowForm);
+
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    var _this = _possibleConstructorReturn(this, (_ref = TextDesignRowForm.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextDesignRowForm)).call.apply(_ref, [this].concat(args)));
+
+    _this.setSize(new __WEBPACK_IMPORTED_MODULE_8__size_value__["a" /* SizeValue */](_this.getWidth(), _this.getHeight()));
+    return _this;
+  }
+
+  _createClass(TextDesignRowForm, [{
+    key: '_calculateLayoutElements',
+    value: function _calculateLayoutElements() {
+      return [new __WEBPACK_IMPORTED_MODULE_6__text_design_element__["a" /* TextDesignElement */]({ frame: this._getTextFrame() })];
+    }
+  }, {
+    key: 'render',
+    value: function render(context) {
+      var frame = this._getFrame();
+      var type = this.getType();
+      var attributes = this.getAttributes();
+      var color = attributes.getTextColor();
+
+      var rectHeight = frame.height / 3;
+      var firstRect = new Rectangle(frame.x, frame.y, frame.width, rectHeight);
+      var secondRect = new Rectangle(frame.x, frame.y + rectHeight * 2, frame.width, rectHeight);
+
+      switch (type) {
+        case TextDesignRowForm.FormType.Rect:
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, frame, color);
+          break;
+
+        case TextDesignRowForm.FormType.DoubleRect:
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, firstRect, color);
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, secondRect, color);
+          break;
+
+        case TextDesignRowForm.FormType.DoubleRectFirstPunctuated:
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["d" /* fillRectPunctuated */])(context, firstRect, color);
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, secondRect, color);
+          break;
+
+        case TextDesignRowForm.FormType.DoubleRectSecondPunctuated:
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["c" /* fillRect */])(context, firstRect, color);
+          Object(__WEBPACK_IMPORTED_MODULE_9__utils_canvas__["d" /* fillRectPunctuated */])(context, secondRect, color);
+          break;
+
+        default:
+          break;
+      }
+    }
+  }]);
+
+  return TextDesignRowForm;
+}(__WEBPACK_IMPORTED_MODULE_7__default_text_design_row__["a" /* TextDesignRow */]);
+
+TextDesignRowForm.FormType = {
+  Rect: 'RECT',
+  DoubleRect: 'DOUBLE_RECT',
+  DoubleRectFirstPunctuated: 'DOUBLE_RECT_FIRST_PUNCTUATED',
+  DoubleRectSecondPunctuated: 'DOUBLE_RECT_SECOND_PUNCTUATED'
+};
+TextDesignRowForm.prototype.availableOptions = _extends({}, __WEBPACK_IMPORTED_MODULE_7__default_text_design_row__["a" /* TextDesignRow */].prototype.availableOptions, {
+  height: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].NUMBER, default: 100 },
+  type: { type: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["OptionType"].STRING, default: TextDesignRowForm.FormType.Rect, available: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_core__["Utils"].values(TextDesignRowForm.FormType) }
+});
+
+/***/ }),
+/* 375 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TextDesignRenderer; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_size_value__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_rows_masked_text_design_row_masked__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_canvas__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_randomizer__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_rows_masked_text_design_row_multiline__ = __webpack_require__(105);
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -40193,222 +48570,146 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var TextSplitter = function () {
-  function TextSplitter(context) {
-    _classCallCheck(this, TextSplitter);
 
-    this._context = context;
-    this._lastFontStyle = {};
+
+
+
+
+
+
+var Rectangle = __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Math"].Rectangle;
+
+
+var REFERENCE_WIDTH = 1000;
+
+var TextDesignRenderer = function () {
+  function TextDesignRenderer() {
+    _classCallCheck(this, TextDesignRenderer);
+
+    this._layoutData = null;
+    this._layout = null;
+    this._text = '';
+    this._seed = 0;
+    this._debugMode = false;
+    this.randomizer = new __WEBPACK_IMPORTED_MODULE_5__models_randomizer__["a" /* Randomizer */]();
   }
 
-  /**
-   * Returns the lines that fit the maxWidth
-   * @return {Array.<String>}
-   */
+  _createClass(TextDesignRenderer, [{
+    key: 'createLayout',
+    value: function createLayout(layout, text, seed) {
+      this._layout = layout;
+      this._text = text;
 
+      this._seed = seed;
+      layout.seed(seed);
 
-  _createClass(TextSplitter, [{
-    key: 'getLines',
-    value: function getLines() {
+      this._layoutData = layout.generateLayoutData(text, REFERENCE_WIDTH);
+    }
+  }, {
+    key: 'calculateAspect',
+    value: function calculateAspect() {
+      if (!this._layoutData) {
+        __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Log"].warn('TextDesignRenderer#calculateAspect: No layout data');
+        return 1;
+      }
+
+      return this._layoutData.getSize().aspect();
+    }
+  }, {
+    key: 'draw',
+    value: function draw(context, destinationSize, color, isInverted) {
       var _this = this;
 
-      var lines = [];
-      var newLineWords = [];
+      // The layout is calculated width `renderSize` width
+      var renderSize = new __WEBPACK_IMPORTED_MODULE_2__models_size_value__["a" /* SizeValue */](REFERENCE_WIDTH, REFERENCE_WIDTH / destinationSize.aspect());
 
-      // Iterate over lines
-      var linesCount = this._lines.length;
-      for (var l = 0; l < linesCount; l++) {
-        var line = this._lines[l];
+      // Used to scale from renderSize to destinationSize
+      var scale = destinationSize.width / REFERENCE_WIDTH;
 
-        // Iterate over words
-        var words = this._buildWords(line);
-        var wordsCount = words.length;
-        for (var w = 0; w < wordsCount; w++) {
-          var word = words[w];
+      // Get insets and line spacing in renderSize scale
+      var insets = this._layoutData.getRelativeInsets().clone().scale(renderSize.width);
+      var lineSpacing = this._layoutData.getRelativeLineSpacing() * renderSize.width;
 
-          // Check if line is too wide for the maxwidth
-          var currentLine = newLineWords.concat(word).join('').replace(/\s+$/i, '');
-          var width = this._getWidth(currentLine);
-          if (width > this._maxWidth) {
-            // If there have been words before this one, start
-            // a new line
-            if (newLineWords.length > 0) {
-              // Line too long -> line ended
-              lines.push(newLineWords.join(''));
+      // Start from the top inset limit
+      var yOrigin = insets.top;
 
-              // Start a new line with the word
-              newLineWords = [word];
-            }
+      context.save();
 
-            // If the next word is too long (without trailing spaces), split it up
-            var _word = word.replace(/\s+$/i, '');
-            if (this._getWidth(_word) > this._maxWidth) {
-              var splitWord = this._splitWord(word);
-              lines = lines.concat(splitWord.lines);
-              if (splitWord.rest) {
-                newLineWords = [splitWord.rest];
-              }
-            }
-          } else {
-            newLineWords.push(word);
-          }
-        }
+      this.randomizer.seed(this._seed);
 
-        lines.push(newLineWords.join(''));
-
-        newLineWords = [];
+      var background = this._layoutData.getBackground();
+      if (background) {
+        background.render(context, destinationSize, this._layoutData.getRelativeInsets(), isInverted ? __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].WHITE : color, this.randomizer);
       }
 
-      return lines.map(function (line) {
-        return _this._trimLine(line, _this._context.textAlign);
+      // Scale to destinationSize
+      context.scale(scale, scale);
+
+      // Go trough each layout row
+      this._layoutData.getRows().forEach(function (row) {
+        context.save();
+
+        var attributes = row.getAttributes();
+
+        // Apply row transform (skew + positioning)
+        context.transform(1, row.getShearingAngle(), 0, 1, insets.left, yOrigin);
+
+        attributes.setTextColor(isInverted ? __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].WHITE : color.clone());
+        attributes.setTintColor(isInverted ? __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].WHITE : color.clone());
+
+        if (row instanceof __WEBPACK_IMPORTED_MODULE_3__models_rows_masked_text_design_row_masked__["a" /* TextDesignRowMasked */] || row instanceof __WEBPACK_IMPORTED_MODULE_6__models_rows_masked_text_design_row_multiline__["a" /* TextDesignRowMultiline */]) {
+          row.setBackgroundColor(isInverted ? __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].WHITE : color.clone());
+          row.setIsUsedInInvertedLayout(isInverted);
+        }
+
+        if (_this._debugMode) {
+          row._debugMode = true;
+        }
+
+        // Render the row
+        row.willRender(context);
+        row.render(context);
+        row.didRender(context);
+
+        if (_this._debugMode) {
+          var frame = row._getFrame();
+          var textFrame = row._getTextFrame();
+
+          Object(__WEBPACK_IMPORTED_MODULE_4__utils_canvas__["e" /* strokeRect */])(context, frame, __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].GREEN);
+          Object(__WEBPACK_IMPORTED_MODULE_4__utils_canvas__["e" /* strokeRect */])(context, textFrame, __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].BLUE);
+
+          row._getLayoutElements().forEach(function (element) {
+            var frame = element.getFrame();
+            var textFrame = row._getTextFrameForElement(element);
+
+            Object(__WEBPACK_IMPORTED_MODULE_4__utils_canvas__["e" /* strokeRect */])(context, frame, new __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"](1, 1, 0));
+            Object(__WEBPACK_IMPORTED_MODULE_4__utils_canvas__["e" /* strokeRect */])(context, textFrame, new __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"](0, 1, 1));
+          });
+        }
+
+        // Set yOrigin for the next row
+        yOrigin += row.getSize().height + lineSpacing;
+
+        context.restore();
       });
-    }
 
-    /**
-     * Removes whitespaces based on alignment.
-     * If the newline ends or begins with one or more whitespaces than remove the first/last depending on the aligment.
-     * @param {String} line
-     * @param {String} alignment
-     * @return {String} line
-     */
+      if (this._debugMode) {
+        Object(__WEBPACK_IMPORTED_MODULE_4__utils_canvas__["e" /* strokeRect */])(context, new Rectangle(0, 0, renderSize.width, renderSize.height), __WEBPACK_IMPORTED_MODULE_1_photoeditorsdk_core__["Color"].RED);
+      }
 
-  }, {
-    key: '_trimLine',
-    value: function _trimLine(line, alignment) {
-      return line; // FIXME: not supported by textarea yet. Enable later
-      // switch (alignment) {
-      //   case 'right':
-      //     return line.replace(/\s{1}$/, '')
-      //   case 'left':
-      //     return line.replace(/^\s{1}/, '')
-      //   case 'center':
-      //   default:
-      //     return line
+      context.restore();
+
+      // if (isInverted) {
+      //   fillRect(context, destinationSize.rectangle(), color, 'source-out')
       // }
-    }
-
-    /**
-     * Builds an array of words from the given line
-     * @param  {String} line
-     * @return {Array.<String>}
-     * @private
-     */
-
-  }, {
-    key: '_buildWords',
-    value: function _buildWords(line) {
-      var words = [];
-      var word = '';
-
-      var len = line.length;
-      for (var i = 0; i < len; i++) {
-        var char = line[i];
-        word += char;
-        if (char === ' ' || char === '-' || i === len - 1) {
-          words.push(word);
-          word = '';
-        }
-      }
-
-      return words;
-    }
-
-    /**
-     * Splits up the given word to fit the max width
-     * @param  {String} word
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_splitWord',
-    value: function _splitWord(word) {
-      var response = {
-        lines: [],
-        rest: null
-      };
-
-      var wordLength = word.length;
-      var chars = [];
-      for (var c = 0; c < wordLength; c++) {
-        var char = word[c];
-        if (this._getWidth(chars.concat(char).join('')) > this._maxWidth) {
-          if (chars.length > 0) {
-            response.lines.push(chars.join(''));
-          }
-          chars = [char];
-        } else {
-          chars.push(char);
-        }
-
-        if (c === wordLength - 1 && chars.length > 0) {
-          response.rest = chars.join('');
-        }
-      }
-
-      return response;
-    }
-
-    /**
-     * Checks if the font style changed from the last call
-     * @return {Boolean}
-     * @private
-     */
-
-  }, {
-    key: '_fontStyleChanged',
-    value: function _fontStyleChanged() {
-      if (this._context.font !== this._lastFontStyle) {
-        this._lastFontStyle = this._context.font;
-        return true;
-      }
-      return false;
-    }
-
-    /**
-     * Returns the measured width for the given string
-     * @param  {String} string
-     * @return {Number}
-     * @private
-     */
-
-  }, {
-    key: '_getWidth',
-    value: function _getWidth(string) {
-      return this._context.measureText(string).width;
-    }
-
-    /**
-     * Sets the text
-     * @param {String} text
-     */
-
-  }, {
-    key: 'setText',
-    value: function setText(text) {
-      this._text = text;
-      this._lines = text.split('\n');
-    }
-
-    /**
-     * Sets the max width
-     * @param {Number} maxWidth
-     */
-
-  }, {
-    key: 'setMaxWidth',
-    value: function setMaxWidth(maxWidth) {
-      this._maxWidth = maxWidth;
     }
   }]);
 
-  return TextSplitter;
+  return TextDesignRenderer;
 }();
 
-/* harmony default export */ __webpack_exports__["a"] = (TextSplitter);
-
 /***/ }),
-/* 323 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40422,7 +48723,7 @@ var TextSplitter = function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__transform_change__ = __webpack_require__(324);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__transform_change__ = __webpack_require__(377);
 
 
 
@@ -40502,7 +48803,7 @@ var TransformOperation = function (_Operation) {
       this._sprite.setAnchor(middle);
       this._sprite.setRotation(rotation);
       this._sprite.setScale(finalScale, finalScale);
-      this._sprite.setPosition(outputDimensions.clone().multiply(0.5));
+      this._sprite.setPosition(outputDimensions.clone().multiply(0.5).ceil());
 
       // Render the container to this Operation's RenderTexture
       this._renderTexture.render(this._container);
@@ -40628,7 +48929,7 @@ __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_core___default.a.Operations.Transform
 /* harmony default export */ __webpack_exports__["a"] = (TransformOperation);
 
 /***/ }),
-/* 324 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -40779,13 +49080,13 @@ var TransformChange = function () {
 /* harmony default export */ __webpack_exports__["a"] = (TransformChange);
 
 /***/ }),
-/* 325 */
+/* 378 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);

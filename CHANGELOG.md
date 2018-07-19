@@ -1,3 +1,56 @@
+# 4.9.0
+
+Fixed
+___
+
+*   [[PESDK-2164](https://imglysdk.atlassian.net/browse/PESDK-2164)] - Fixed Transparent / Black line in exported image
+*   [[PESDK-2710](https://imglysdk.atlassian.net/browse/PESDK-2710)] - Fixed TextDesignRowMultiline text positioning
+*   [[PESDK-2711](https://imglysdk.atlassian.net/browse/PESDK-2711)] - Fixed TextDesignRowMultiline not clearing canvas when reloading layout
+*   [[PESDK-2712](https://imglysdk.atlassian.net/browse/PESDK-2712)] - Fixed TextDesignRowMultiline sometimes not using masked text when it should
+*   [[PESDK-2713](https://imglysdk.atlassian.net/browse/PESDK-2713)] - Fixed TextDesignControls item list not showing scroll bar
+*   [[PESDK-2714](https://imglysdk.atlassian.net/browse/PESDK-2714)] - Fixed TextDesignMaskedSpeechBubleComic image insets wrong
+*   [[PESDK-2715](https://imglysdk.atlassian.net/browse/PESDK-2715)] - Fixed add reload icon to selected layout in TextDesignControls
+*   [[PESDK-2719](https://imglysdk.atlassian.net/browse/PESDK-2719)] - Fixed TextDesign layout size scaling when applying crop/rotation via transform operation
+*   [[PESDK-2724](https://imglysdk.atlassian.net/browse/PESDK-2724)] - Fixed current TextDesign sprite not selected when exiting and returning to TD tool
+*   [[PESDK-2725](https://imglysdk.atlassian.net/browse/PESDK-2725)] - Fixed TextDesignSunshine frame size too large in width
+*   [[PESDK-2726](https://imglysdk.atlassian.net/browse/PESDK-2726)] - Fixed TextDesignSunshine image rows not correctly aligned
+*   [[PESDK-2727](https://imglysdk.atlassian.net/browse/PESDK-2727)] - Fixed TextDesignSunshine image-only rows too small in height, image looks stretched
+*   [[PESDK-2729](https://imglysdk.atlassian.net/browse/PESDK-2729)] - Fixed crashing when cancelling TextDesign initial creation/text edit
+*   [[PESDK-2736](https://imglysdk.atlassian.net/browse/PESDK-2736)] - Fixed TextDesignRowForm height too small in TextDesignRotated layout
+*   [[PESDK-2745](https://imglysdk.atlassian.net/browse/PESDK-2745)] - Fixed TextDesignBlocksLight (summerfeeling) TripleRow out of bounds
+*   [[PESDK-2746](https://imglysdk.atlassian.net/browse/PESDK-2746)] - Fixed TextDesignCelebrateSimple and TextDesignSunshine images always white
+*   [[PESDK-2934](https://imglysdk.atlassian.net/browse/PESDK-2934)] - Fixed color block background row with gradients on the borders on Server
+*   [[PESDK-2935](https://imglysdk.atlassian.net/browse/PESDK-2935)] - Fixed some fonts not loaded properly in the server
+*   [[PESDK-2938](https://imglysdk.atlassian.net/browse/PESDK-2938)] - Fixed canvas not clearing when zooming/dragging sprites with transparent PNGs and smoothDownscaling
+*   [[PESDK-2939](https://imglysdk.atlassian.net/browse/PESDK-2939)] - Fixed editor throwing error when trying to remove overlay operation
+*   [[PESDK-2940](https://imglysdk.atlassian.net/browse/PESDK-2940)] - FIxed wrong text case, fonts and banderole on TextDesignCelebrate
+*   [[PESDK-2948](https://imglysdk.atlassian.net/browse/PESDK-2948)] - Fixed Inverted Text Design / Text Disappears in Fat Face
+*   [[PESDK-2952](https://imglysdk.atlassian.net/browse/PESDK-2952)] - Fixed TextDesignCelebrateSimple random Font not matching Android/iOS
+*   [[PESDK-2958](https://imglysdk.atlassian.net/browse/PESDK-2958)] - Fixed TextDesignEqualWidthFat dimensions different than Android/iOS
+*   [[PESDK-2959](https://imglysdk.atlassian.net/browse/PESDK-2959)] - Fixed wrong text color in TextDesignMasked layouts
+*   [[PESDK-2960](https://imglysdk.atlassian.net/browse/PESDK-2960)] - Fixed wrong font in TextDesignSunshine
+*   [[PESDK-2828](https://imglysdk.atlassian.net/browse/PESDK-2828)] - Fixed jumping background particles when scaling TextDesign sprite
+*   [[PESDK-2835](https://imglysdk.atlassian.net/browse/PESDK-2835)] - Fixed TextDesignSunshine text out of bounds in height for short words
+*   [[PESDK-2837](https://imglysdk.atlassian.net/browse/PESDK-2837)] - Fixed textScaleFactor not being applied to TextDesignMasked layouts
+*   [[PESDK-2838](https://imglysdk.atlassian.net/browse/PESDK-2838)] - Fixed TextDesign rows with less than 3 characters
+*   [[PESDK-2853](https://imglysdk.atlassian.net/browse/PESDK-2853)] - Fixed TextDesignWatercolor cutted-off text and wrong frame
+
+Added
+___
+*   [[PESDK-2333](https://imglysdk.atlassian.net/browse/PESDK-2333)] - Implemented Text Design Tool on HTML5
+*   [[PESDK-2716](https://imglysdk.atlassian.net/browse/PESDK-2716)] - Added local undo/redo to TextDesignControls
+*   [[PESDK-2717](https://imglysdk.atlassian.net/browse/PESDK-2717)] - Added all TextDesign fonts to server constants
+*   [[PESDK-2665](https://imglysdk.atlassian.net/browse/PESDK-2665)] - Implemented Serialization for Text Design on HTML5
+*   [[PESDK-2672](https://imglysdk.atlassian.net/browse/PESDK-2672)] - Implemented TextDesignCelebrate Layout
+*   [[PESDK-2673](https://imglysdk.atlassian.net/browse/PESDK-2673)] - Implemented TextDesignEqualWidth Layout
+*   [[PESDK-2674](https://imglysdk.atlassian.net/browse/PESDK-2674)] - Implemented TextDesignMasked Layout
+*   [[PESDK-2675](https://imglysdk.atlassian.net/browse/PESDK-2675)] - Implemented TextDesignMultiline Layout
+*   [[PESDK-2676](https://imglysdk.atlassian.net/browse/PESDK-2676)] - Implemented TextDesignParticles Layout
+*   [[PESDK-2677](https://imglysdk.atlassian.net/browse/PESDK-2677)] - Implemented TextDesignRotated Layout
+*   [[PESDK-2678](https://imglysdk.atlassian.net/browse/PESDK-2678)] - Implemented TextDesignSunshine Layout
+*   [[PESDK-2679](https://imglysdk.atlassian.net/browse/PESDK-2679)] - Implemented TextDesignWatercolor Layout
+
+
 # 4.8.0
 
 Fixed

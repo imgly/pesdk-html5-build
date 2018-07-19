@@ -7,7 +7,7 @@
 		exports["PhotoEditorReactUI"] = factory(require("photoeditorsdk/js/PhotoEditorSDK"), require("react"), require("react-dom"));
 	else
 		root["PhotoEditorReactUI"] = factory(root["PhotoEditorSDK"], root["React"], root["ReactDOM"]);
-})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_7__, __WEBPACK_EXTERNAL_MODULE_15__, __WEBPACK_EXTERNAL_MODULE_59__) {
+})(typeof self !== 'undefined' ? self : this, function(__WEBPACK_EXTERNAL_MODULE_7__, __WEBPACK_EXTERNAL_MODULE_16__, __WEBPACK_EXTERNAL_MODULE_62__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -70,7 +70,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 56);
+/******/ 	return __webpack_require__(__webpack_require__.s = 59);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -89,57 +89,57 @@ var _photoeditorsdk = __webpack_require__(7);
 
 var _photoeditorsdk2 = _interopRequireDefault(_photoeditorsdk);
 
-var _react = __webpack_require__(15);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(59);
+var _reactDom = __webpack_require__(62);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _propTypes = __webpack_require__(32);
+var _propTypes = __webpack_require__(33);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _classnames = __webpack_require__(34);
+var _classnames = __webpack_require__(35);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _bem = __webpack_require__(35);
+var _bem = __webpack_require__(36);
 
 var _bem2 = _interopRequireDefault(_bem);
 
-var _reactBem = __webpack_require__(36);
+var _reactBem = __webpack_require__(37);
 
 var _reactBem2 = _interopRequireDefault(_reactBem);
 
-var _baseComponent = __webpack_require__(64);
+var _baseComponent = __webpack_require__(67);
 
 var _baseComponent2 = _interopRequireDefault(_baseComponent);
 
-var _utils = __webpack_require__(65);
+var _utils = __webpack_require__(68);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _constants = __webpack_require__(79);
+var _constants = __webpack_require__(82);
 
 var _constants2 = _interopRequireDefault(_constants);
 
-var _sharedState = __webpack_require__(80);
+var _sharedState = __webpack_require__(83);
 
 var _sharedState2 = _interopRequireDefault(_sharedState);
 
-var _animationFrame = __webpack_require__(81);
+var _animationFrame = __webpack_require__(84);
 
-var _log = __webpack_require__(19);
+var _log = __webpack_require__(20);
 
 var _log2 = _interopRequireDefault(_log);
 
-var _imageLoader = __webpack_require__(22);
+var _imageLoader = __webpack_require__(23);
 
 var _imageLoader2 = _interopRequireDefault(_imageLoader);
 
-var _constants3 = __webpack_require__(37);
+var _constants3 = __webpack_require__(38);
 
 var _constants4 = _interopRequireDefault(_constants3);
 
@@ -173,7 +173,7 @@ var SDK = _photoeditorsdk2.default;
 var UniformType = _photoeditorsdk2.default.UniformType;
 var Vector2 = _photoeditorsdk2.default.Math.Vector2;
 
-var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(38);
+var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(39);
 
 exports.Promise = Promise;
 exports.Utils = _utils2.default;
@@ -940,11 +940,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _backButtonComponent = __webpack_require__(106);
+var _backButtonComponent = __webpack_require__(109);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
-var _doneButtonComponent = __webpack_require__(107);
+var _doneButtonComponent = __webpack_require__(110);
 
 var _doneButtonComponent2 = _interopRequireDefault(_doneButtonComponent);
 
@@ -1557,7 +1557,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _headerComponent = __webpack_require__(84);
+var _headerComponent = __webpack_require__(87);
 
 var _headerComponent2 = _interopRequireDefault(_headerComponent);
 
@@ -1826,11 +1826,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _constants = __webpack_require__(37);
+var _constants = __webpack_require__(38);
 
 var _constants2 = _interopRequireDefault(_constants);
 
-var _jsonLoader = __webpack_require__(21);
+var _jsonLoader = __webpack_require__(22);
 
 var _jsonLoader2 = _interopRequireDefault(_jsonLoader);
 
@@ -2554,15 +2554,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _textItemComponent = __webpack_require__(140);
+var _textItemComponent = __webpack_require__(143);
 
 var _textItemComponent2 = _interopRequireDefault(_textItemComponent);
 
-var _stickerItemComponent = __webpack_require__(141);
+var _stickerItemComponent = __webpack_require__(144);
 
 var _stickerItemComponent2 = _interopRequireDefault(_stickerItemComponent);
 
-var _brushItemComponent = __webpack_require__(142);
+var _brushItemComponent = __webpack_require__(145);
 
 var _brushItemComponent2 = _interopRequireDefault(_brushItemComponent);
 
@@ -2973,12 +2973,201 @@ SpritesCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_15__;
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var _globals = __webpack_require__(0);
+
+var _font = __webpack_require__(156);
+
+var _font2 = _interopRequireDefault(_font);
+
+var _log = __webpack_require__(20);
+
+var _log2 = _interopRequireDefault(_log);
+
+var _fontVariation = __webpack_require__(47);
+
+var _fontVariation2 = _interopRequireDefault(_fontVariation);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var FontManager = function () {
+  function FontManager(ui, options) {
+    _classCallCheck(this, FontManager);
+
+    this._ui = ui;
+    this._options = options;
+    this._fonts = [];
+    this._variationsByIdentifier = {};
+    this._fontsByFontFamily = {};
+
+    this._initFonts();
+  }
+
+  /**
+   * Initializes the fonts
+   * @private
+   */
+
+
+  _createClass(FontManager, [{
+    key: '_initFonts',
+    value: function _initFonts() {
+      var _this = this;
+
+      var _options = this._options,
+          additionalFonts = _options.fonts,
+          replaceFonts = _options.replaceFonts,
+          availableVariations = _options.availableVariations;
+
+      // Replace or append fonts
+
+      var fonts = _globals.Constants.DEFAULTS.FONTS;
+      if (replaceFonts) {
+        fonts = additionalFonts;
+      } else {
+        fonts = fonts.concat(additionalFonts || []);
+      }
+
+      // Turn fonts into actual Font objects with FontVariation objects
+      var defaultVariation = void 0;
+      fonts = fonts.map(function (font) {
+        var fontFamily = font.fontFamily;
+
+        var variations = font.variations;
+
+        if (availableVariations) {
+          variations = variations.filter(function (variation) {
+            return availableVariations.indexOf(variation.identifier) !== -1;
+          });
+        }
+
+        if (variations.length === 0) return null;
+
+        var fontInstance = new _font2.default({
+          fontFamily: fontFamily
+        });
+        variations = variations.map(function (variation) {
+          var variationInstance = new _fontVariation2.default(variation);
+          variationInstance.setFontFamily(fontFamily);
+          variationInstance.setFont(fontInstance);
+          if (variation.default && !defaultVariation) {
+            defaultVariation = variationInstance;
+          }
+
+          if (variationInstance.getTextMetrics() == null) {
+            _log2.default.warn('Missing font metrics for ' + variationInstance.getIdentifier() + '. The SDK will fall back to basic font rendering, which may lead to layout issues. Please provide font metrics for your custom fonts. See https://docs.photoeditorsdk.com/guides/html5/ for more details.');
+          }
+
+          _this._variationsByIdentifier[variationInstance.getIdentifier()] = variationInstance;
+          return variationInstance;
+        });
+        fontInstance.setVariations(variations);
+        _this._fontsByFontFamily[fontFamily] = fontInstance;
+        return fontInstance;
+      }).filter(function (f) {
+        return f;
+      });
+
+      if (!defaultVariation) {
+        defaultVariation = fonts[0].getVariations()[0];
+      }
+
+      this._defaultVariation = defaultVariation;
+      this._fonts = fonts;
+    }
+
+    /**
+     * Returns all available fonts
+     * @return {PhotoEditorSDK.UI.DesktopUI.Font[]}
+     */
+
+  }, {
+    key: 'getFonts',
+    value: function getFonts() {
+      return this._fonts;
+    }
+
+    /**
+     * Returns the font for the given font family
+     * @param  {String} fontFamily
+     * @return {PhotoEditorSDK.UI.DesktopUI.Font}
+     */
+
+  }, {
+    key: 'getFontByFontFamily',
+    value: function getFontByFontFamily(fontFamily) {
+      return this._fontsByFontFamily[fontFamily];
+    }
+
+    /**
+     * Returns the font variation for the given identifier
+     * @param  {String} identifier
+     * @return {PhotoEditorSDK.UI.DesktopUI.FontVariation}
+     */
+
+  }, {
+    key: 'getVariationByIdentifier',
+    value: function getVariationByIdentifier(identifier) {
+      return this._variationsByIdentifier[identifier];
+    }
+  }, {
+    key: 'getVariationsByIdentifier',
+    value: function getVariationsByIdentifier() {
+      return _extends({}, this._variationsByIdentifier);
+    }
+
+    /**
+     * Returns the default variation
+     * @return {PhotoEditorSDK.UI.DesktopUI.FontVariation}
+     */
+
+  }, {
+    key: 'getDefaultVariation',
+    value: function getDefaultVariation() {
+      return this._defaultVariation;
+    }
+  }]);
+
+  return FontManager;
+}();
+
+exports.default = FontManager;
 
 /***/ }),
 /* 16 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_16__;
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3020,7 +3209,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3079,7 +3268,7 @@ function invariant(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3098,7 +3287,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3124,7 +3313,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _utils = __webpack_require__(66);
+var _utils = __webpack_require__(69);
 
 var _utils2 = _interopRequireDefault(_utils);
 
@@ -3194,14 +3383,14 @@ var Logger = function () {
   _createClass(Logger, [{
     key: 'getLevelIndexByName',
     value: function getLevelIndexByName(levelName) {
-      return this._levels.findIndex(function (l) {
+      return _utils2.default.Array.findIndex(this._levels, function (l) {
         return l.name === levelName;
       });
     }
   }, {
     key: 'getLevelObjectByName',
     value: function getLevelObjectByName(levelName) {
-      return this._levels.find(function (l) {
+      return _utils2.default.Array.find(this._levels, function (l) {
         return l.name === levelName;
       });
     }
@@ -3385,7 +3574,7 @@ var Logger = function () {
       var baseTexture = _texture.getBaseTexture();
       var renderers = baseTexture.getRenderers();
 
-      var glRenderer = renderers.find(function (r) {
+      var glRenderer = _utils2.default.Array.find(renderers, function (r) {
         return r && r.constructor.type === 'WebGL';
       });
 
@@ -3455,10 +3644,10 @@ exports.Logger = Logger;
 var Log = new Logger('warn');
 
 exports.default = Log;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)))
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -3648,7 +3837,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3674,11 +3863,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _promise = __webpack_require__(69);
+var _promise = __webpack_require__(72);
 
 var _promise2 = _interopRequireDefault(_promise);
 
-var _url = __webpack_require__(72);
+var _url = __webpack_require__(75);
 
 var _url2 = _interopRequireDefault(_url);
 
@@ -3874,7 +4063,7 @@ exports.default = JSONLoader;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3971,7 +4160,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4089,7 +4278,7 @@ RowComponent.propTypes = {
 RowComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4103,7 +4292,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _fileLoader = __webpack_require__(88);
+var _fileLoader = __webpack_require__(91);
 
 var _fileLoader2 = _interopRequireDefault(_fileLoader);
 
@@ -4222,7 +4411,7 @@ exports.default = InvisibleUploadComponent;
 InvisibleUploadComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4318,7 +4507,7 @@ exports.default = TopBarButtonComponent;
 TopBarButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4515,7 +4704,7 @@ var FilterManager = function () {
 exports.default = FilterManager;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4692,7 +4881,7 @@ exports.default = ItemComponent;
 ItemComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4708,7 +4897,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _overlayComponent = __webpack_require__(148);
+var _overlayComponent = __webpack_require__(151);
 
 var _overlayComponent2 = _interopRequireDefault(_overlayComponent);
 
@@ -4934,7 +5123,7 @@ exports.default = ColorPickerComponent;
 ColorPickerComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4962,11 +5151,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  */
 
 
-var _googleFontLoader = __webpack_require__(172);
+var _googleFontLoader = __webpack_require__(175);
 
 var _googleFontLoader2 = _interopRequireDefault(_googleFontLoader);
 
-var _fileFontLoader = __webpack_require__(175);
+var _fileFontLoader = __webpack_require__(178);
 
 var _fileFontLoader2 = _interopRequireDefault(_fileFontLoader);
 
@@ -5112,7 +5301,7 @@ var FontLoader = function () {
 exports.default = FontLoader;
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5455,7 +5644,7 @@ exports.default = v200Serializer;
 v200Serializer.version = '2.0.0';
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5479,7 +5668,7 @@ var _frameManager = __webpack_require__(48);
 
 var _frameManager2 = _interopRequireDefault(_frameManager);
 
-var _overlayManager = __webpack_require__(178);
+var _overlayManager = __webpack_require__(181);
 
 var _overlayManager2 = _interopRequireDefault(_overlayManager);
 
@@ -5491,11 +5680,11 @@ var _frame = __webpack_require__(49);
 
 var _frame2 = _interopRequireDefault(_frame);
 
-var _fontLoader = __webpack_require__(29);
+var _fontLoader = __webpack_require__(30);
 
 var _fontLoader2 = _interopRequireDefault(_fontLoader);
 
-var _imageLoader = __webpack_require__(22);
+var _imageLoader = __webpack_require__(23);
 
 var _imageLoader2 = _interopRequireDefault(_imageLoader);
 
@@ -5612,7 +5801,7 @@ var v200Deserializer = function (_PreviousDeserializer) {
       return _get(v200Deserializer.prototype.__proto__ || Object.getPrototypeOf(v200Deserializer.prototype), '_deserializeCropOperation', this).call(this, operationData).then(function (operation) {
         if (!operation) return;
 
-        var orientationData = _this2._data.operations.find(function (op) {
+        var orientationData = _globals.SDKUtils.Array.find(_this2._data.operations, function (op) {
           return op.type === 'orientation';
         });
         if (orientationData) {
@@ -5909,7 +6098,7 @@ exports.default = v200Deserializer;
 v200Deserializer.version = '2.0.0';
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -5934,16 +6123,16 @@ if (({"ENV":"\"production\""}).NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(60)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(63)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(63)();
+  module.exports = __webpack_require__(66)();
 }
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5957,7 +6146,7 @@ if (({"ENV":"\"production\""}).NODE_ENV !== 'production') {
 
 
 
-var emptyFunction = __webpack_require__(16);
+var emptyFunction = __webpack_require__(17);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -6011,7 +6200,7 @@ if (({"ENV":"\"production\""}).NODE_ENV !== 'production') {
 module.exports = warning;
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -6066,7 +6255,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6178,7 +6367,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6203,15 +6392,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _react = __webpack_require__(15);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(34);
+var _classnames = __webpack_require__(35);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _bem = __webpack_require__(35);
+var _bem = __webpack_require__(36);
 
 var _bem2 = _interopRequireDefault(_bem);
 
@@ -6448,7 +6637,7 @@ var ReactBEM = {
 exports.default = ReactBEM;
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8150,7 +8339,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(process) {// Generated by CoffeeScript 1.7.1
@@ -8186,10 +8375,10 @@ exports.default = {
 
 }).call(this);
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(20)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(21)))
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8297,7 +8486,7 @@ exports.default = SearchSuggestionComponent;
 SearchSuggestionComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8317,7 +8506,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _photoComponent = __webpack_require__(99);
+var _photoComponent = __webpack_require__(102);
 
 var _photoComponent2 = _interopRequireDefault(_photoComponent);
 
@@ -8651,7 +8840,7 @@ exports.default = PhotoListComponent;
 PhotoListComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8839,7 +9028,7 @@ exports.default = OverviewControlsComponent;
 OverviewControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8853,31 +9042,31 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _exporter = __webpack_require__(116);
+var _exporter = __webpack_require__(119);
 
 var _exporter2 = _interopRequireDefault(_exporter);
 
-var _imageResizer = __webpack_require__(118);
+var _imageResizer = __webpack_require__(121);
 
 var _imageResizer2 = _interopRequireDefault(_imageResizer);
 
-var _operations = __webpack_require__(119);
+var _operations = __webpack_require__(122);
 
 var _operations2 = _interopRequireDefault(_operations);
 
-var _controls = __webpack_require__(120);
+var _controls = __webpack_require__(123);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _features = __webpack_require__(164);
+var _features = __webpack_require__(167);
 
 var _features2 = _interopRequireDefault(_features);
 
-var _zoom = __webpack_require__(165);
+var _zoom = __webpack_require__(168);
 
 var _zoom2 = _interopRequireDefault(_zoom);
 
-var _history = __webpack_require__(166);
+var _history = __webpack_require__(169);
 
 var _history2 = _interopRequireDefault(_history);
 
@@ -9323,18 +9512,19 @@ var Editor = function (_EventEmitter) {
     key: '_initSerializers',
     value: function _initSerializers() {
       this._serializers = {
-        '1.0.0': __webpack_require__(167).default,
-        '1.0.1': __webpack_require__(176).default,
-        '2.0.0': __webpack_require__(177).default,
-        '2.0.1': __webpack_require__(179).default,
-        '3.0.0': __webpack_require__(182).default
+        '1.0.0': __webpack_require__(170).default,
+        '1.0.1': __webpack_require__(179).default,
+        '2.0.0': __webpack_require__(180).default,
+        '2.0.1': __webpack_require__(182).default,
+        '3.0.0': __webpack_require__(185).default,
+        '3.1.0': __webpack_require__(186).default
       };
     }
 
     /**
      * Serializes the editor state for the given version
      * @param  {Object} options = {}
-     * @param  {String} version = '3.0.0'
+     * @param  {String} version = '3.1.0'
      * @return {Promise}
      */
 
@@ -9342,7 +9532,7 @@ var Editor = function (_EventEmitter) {
     key: 'serialize',
     value: function serialize() {
       var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      var version = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '3.0.0';
+      var version = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '3.1.0';
 
       var Serializer = this._serializers[version];
       if (!Serializer) {
@@ -9742,7 +9932,7 @@ var Editor = function (_EventEmitter) {
 exports.default = Editor;
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9752,7 +9942,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _adjustments = __webpack_require__(121);
+var _adjustments = __webpack_require__(124);
 
 Object.defineProperty(exports, 'adjustments', {
   enumerable: true,
@@ -9761,7 +9951,7 @@ Object.defineProperty(exports, 'adjustments', {
   }
 });
 
-var _transform = __webpack_require__(124);
+var _transform = __webpack_require__(127);
 
 Object.defineProperty(exports, 'transform', {
   enumerable: true,
@@ -9770,7 +9960,7 @@ Object.defineProperty(exports, 'transform', {
   }
 });
 
-var _filter = __webpack_require__(128);
+var _filter = __webpack_require__(131);
 
 Object.defineProperty(exports, 'filter', {
   enumerable: true,
@@ -9779,7 +9969,7 @@ Object.defineProperty(exports, 'filter', {
   }
 });
 
-var _focus = __webpack_require__(131);
+var _focus = __webpack_require__(134);
 
 Object.defineProperty(exports, 'focus', {
   enumerable: true,
@@ -9788,7 +9978,7 @@ Object.defineProperty(exports, 'focus', {
   }
 });
 
-var _sticker = __webpack_require__(136);
+var _sticker = __webpack_require__(139);
 
 Object.defineProperty(exports, 'sticker', {
   enumerable: true,
@@ -9797,7 +9987,7 @@ Object.defineProperty(exports, 'sticker', {
   }
 });
 
-var _text = __webpack_require__(144);
+var _text = __webpack_require__(147);
 
 Object.defineProperty(exports, 'text', {
   enumerable: true,
@@ -9806,7 +9996,7 @@ Object.defineProperty(exports, 'text', {
   }
 });
 
-var _brush = __webpack_require__(154);
+var _brush = __webpack_require__(157);
 
 Object.defineProperty(exports, 'brush', {
   enumerable: true,
@@ -9815,7 +10005,7 @@ Object.defineProperty(exports, 'brush', {
   }
 });
 
-var _selectiveBlur = __webpack_require__(158);
+var _selectiveBlur = __webpack_require__(161);
 
 Object.defineProperty(exports, 'selectiveBlur', {
   enumerable: true,
@@ -9824,7 +10014,7 @@ Object.defineProperty(exports, 'selectiveBlur', {
   }
 });
 
-var _frame = __webpack_require__(161);
+var _frame = __webpack_require__(164);
 
 Object.defineProperty(exports, 'frame', {
   enumerable: true,
@@ -9836,7 +10026,7 @@ Object.defineProperty(exports, 'frame', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9850,7 +10040,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _overlayComponent = __webpack_require__(130);
+var _overlayComponent = __webpack_require__(133);
 
 var _overlayComponent2 = _interopRequireDefault(_overlayComponent);
 
@@ -9958,7 +10148,7 @@ exports.default = CategoryDropdownComponent;
 CategoryDropdownComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10082,188 +10272,6 @@ exports.default = FontPreviewComponent;
 
 
 FontPreviewComponent.contextTypes = _globals.BaseComponent.contextTypes;
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var _globals = __webpack_require__(0);
-
-var _font = __webpack_require__(153);
-
-var _font2 = _interopRequireDefault(_font);
-
-var _log = __webpack_require__(19);
-
-var _log2 = _interopRequireDefault(_log);
-
-var _fontVariation = __webpack_require__(47);
-
-var _fontVariation2 = _interopRequireDefault(_fontVariation);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var FontManager = function () {
-  function FontManager(ui, options) {
-    _classCallCheck(this, FontManager);
-
-    this._ui = ui;
-    this._options = options;
-    this._fonts = [];
-    this._variationsByIdentifier = {};
-    this._fontsByFontFamily = {};
-
-    this._initFonts();
-  }
-
-  /**
-   * Initializes the fonts
-   * @private
-   */
-
-
-  _createClass(FontManager, [{
-    key: '_initFonts',
-    value: function _initFonts() {
-      var _this = this;
-
-      var _options = this._options,
-          additionalFonts = _options.fonts,
-          replaceFonts = _options.replaceFonts,
-          availableVariations = _options.availableVariations;
-
-      // Replace or append fonts
-
-      var fonts = _globals.Constants.DEFAULTS.FONTS;
-      if (replaceFonts) {
-        fonts = additionalFonts;
-      } else {
-        fonts = fonts.concat(additionalFonts || []);
-      }
-
-      // Turn fonts into actual Font objects with FontVariation objects
-      var defaultVariation = void 0;
-      fonts = fonts.map(function (font) {
-        var fontFamily = font.fontFamily;
-
-        var variations = font.variations;
-
-        if (availableVariations) {
-          variations = variations.filter(function (variation) {
-            return availableVariations.indexOf(variation.identifier) !== -1;
-          });
-        }
-
-        if (variations.length === 0) return null;
-
-        var fontInstance = new _font2.default({
-          fontFamily: fontFamily
-        });
-        variations = variations.map(function (variation) {
-          var variationInstance = new _fontVariation2.default(variation);
-          variationInstance.setFontFamily(fontFamily);
-          variationInstance.setFont(fontInstance);
-          if (variation.default && !defaultVariation) {
-            defaultVariation = variationInstance;
-          }
-
-          if (variationInstance.getTextMetrics() == null) {
-            _log2.default.warn('Missing font metrics for ' + variationInstance.getIdentifier() + '. The SDK will fall back to basic font rendering, which may lead to layout issues. Please provide font metrics for your custom fonts. See https://docs.photoeditorsdk.com/guides/html5/ for more details.');
-          }
-
-          _this._variationsByIdentifier[variationInstance.getIdentifier()] = variationInstance;
-          return variationInstance;
-        });
-        fontInstance.setVariations(variations);
-        _this._fontsByFontFamily[fontFamily] = fontInstance;
-        return fontInstance;
-      }).filter(function (f) {
-        return f;
-      });
-
-      if (!defaultVariation) {
-        defaultVariation = fonts[0].getVariations()[0];
-      }
-
-      this._defaultVariation = defaultVariation;
-      this._fonts = fonts;
-    }
-
-    /**
-     * Returns all available fonts
-     * @return {PhotoEditorSDK.UI.DesktopUI.Font[]}
-     */
-
-  }, {
-    key: 'getFonts',
-    value: function getFonts() {
-      return this._fonts;
-    }
-
-    /**
-     * Returns the font for the given font family
-     * @param  {String} fontFamily
-     * @return {PhotoEditorSDK.UI.DesktopUI.Font}
-     */
-
-  }, {
-    key: 'getFontByFontFamily',
-    value: function getFontByFontFamily(fontFamily) {
-      return this._fontsByFontFamily[fontFamily];
-    }
-
-    /**
-     * Returns the font variation for the given identifier
-     * @param  {String} identifier
-     * @return {PhotoEditorSDK.UI.DesktopUI.FontVariation}
-     */
-
-  }, {
-    key: 'getVariationByIdentifier',
-    value: function getVariationByIdentifier(identifier) {
-      return this._variationsByIdentifier[identifier];
-    }
-
-    /**
-     * Returns the default variation
-     * @return {PhotoEditorSDK.UI.DesktopUI.FontVariation}
-     */
-
-  }, {
-    key: 'getDefaultVariation',
-    value: function getDefaultVariation() {
-      return this._defaultVariation;
-    }
-  }]);
-
-  return FontManager;
-}();
-
-exports.default = FontManager;
 
 /***/ }),
 /* 47 */
@@ -10993,6 +11001,8 @@ var v100Serializer = function () {
           spriteItem = _this2._serializeText(operation, sprite);
         } else if (sprite instanceof operation.constructor.BrushSprite) {
           spriteItem = _this2._serializeBrush(operation, sprite);
+        } else if (sprite instanceof operation.constructor.TextDesignSprite) {
+          spriteItem = _this2._serializeTextDesign && _this2._serializeTextDesign(operation, sprite);
         }
 
         if (spriteItem) {
@@ -11179,7 +11189,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(168);
+var _regenerator = __webpack_require__(171);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
@@ -11200,7 +11210,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _filterManager = __webpack_require__(26);
+var _filterManager = __webpack_require__(27);
 
 var _filterManager2 = _interopRequireDefault(_filterManager);
 
@@ -11208,15 +11218,15 @@ var _stickerManager = __webpack_require__(11);
 
 var _stickerManager2 = _interopRequireDefault(_stickerManager);
 
-var _brushManager = __webpack_require__(171);
+var _brushManager = __webpack_require__(174);
 
 var _brushManager2 = _interopRequireDefault(_brushManager);
 
-var _fontManager = __webpack_require__(46);
+var _fontManager = __webpack_require__(15);
 
 var _fontManager2 = _interopRequireDefault(_fontManager);
 
-var _fontLoader = __webpack_require__(29);
+var _fontLoader = __webpack_require__(30);
 
 var _fontLoader2 = _interopRequireDefault(_fontLoader);
 
@@ -11570,6 +11580,8 @@ var v100Deserializer = function () {
           return this._deserializeText(spriteOperation, sprite);
         case 'brush':
           return this._deserializeBrush(spriteOperation, sprite);
+        case 'textdesign':
+          return this._deserializeTextDesign && this._deserializeTextDesign(spriteOperation, sprite);
       }
     }
 
@@ -11862,7 +11874,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontObserver = __webpack_require__(173);
+var _fontObserver = __webpack_require__(176);
 
 var _fontObserver2 = _interopRequireDefault(_fontObserver);
 
@@ -12173,6 +12185,899 @@ exports.default = (_OverlayFilter$BLEND_ = {}, _defineProperty(_OverlayFilter$BL
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _globals = __webpack_require__(0);
+
+var _serializer = __webpack_require__(31);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var v300Serializer = function (_PreviousSerializer) {
+  _inherits(v300Serializer, _PreviousSerializer);
+
+  function v300Serializer() {
+    _classCallCheck(this, v300Serializer);
+
+    return _possibleConstructorReturn(this, (v300Serializer.__proto__ || Object.getPrototypeOf(v300Serializer)).apply(this, arguments));
+  }
+
+  _createClass(v300Serializer, [{
+    key: 'serialize',
+
+    /**
+     * Serializes the editor state
+     * @param {Object} options = {}
+     * @return {Promise}
+     */
+    value: function serialize() {
+      var _this2 = this;
+
+      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+      return _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), 'serialize', this).call(this, options).then(function (data) {
+        data.meta = {
+          platform: 'html5',
+          version: _this2._editor.getSDK().version,
+          createdAt: _globals.SDKUtils.ISODateString(new Date())
+        };
+        data.image = data.inputImage;
+        delete data.inputImage;
+        return data;
+      });
+    }
+
+    /**
+     * Serializes the given sticker
+     * @param  {PhotoEditorSDK.Operation} operation
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation.StickerSprite} sprite
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeSticker',
+    value: function _serializeSticker(operation, sprite) {
+      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeSticker', this).call(this, operation, sprite);
+      response.options.alpha = sprite.getAlpha();
+
+      if (response.options.tintColor) {
+        response.options.tintColor = {
+          rgba: response.options.tintColor
+        };
+      }
+
+      return response;
+    }
+
+    /**
+     * Serializes the given text sprite
+     * @param  {PhotoEditorSDK.Operation} operation
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation.TextSprite} sprite
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeText',
+    value: function _serializeText(operation, sprite) {
+      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeText', this).call(this, operation, sprite);
+      response.options.color = {
+        rgba: response.options.color
+      };
+      response.options.backgroundColor = {
+        rgba: response.options.backgroundColor
+      };
+      response.options.flipHorizontally = false;
+      response.options.flipVertically = false;
+      delete response.options.fontWeight;
+      return response;
+    }
+
+    /**
+     * Serializes the given path
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.Path} path
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializePath',
+    value: function _serializePath(path) {
+      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializePath', this).call(this, path);
+
+      delete response.hardness;
+      delete response.size;
+      delete response.color;
+
+      var brush = path.getBrush();
+      response.brush = brush.serializeOptions(['identifier', 'size', 'color'], true);
+      if (typeof response.brush.identifier === 'undefined') {
+        delete response.brush.identifier;
+      }
+      response.brush.color = {
+        rgba: response.brush.color
+      };
+
+      var hardness = brush.getOption('hardness');
+      if (hardness !== 'undefined') {
+        response.brush.hardness = hardness;
+      }
+      return response;
+    }
+
+    /**
+     * Serializes the frame operation
+     * @param {PhotoEditorSDK.Operation.FrameOperation} operation
+     * @param {PhotoEditorSDK.Operation[]} operations
+     * @private
+     */
+
+  }, {
+    key: '_serializeFrameOperation',
+    value: function _serializeFrameOperation(operation, operations) {
+      _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeFrameOperation', this).call(this, operation, operations);
+
+      // Find sprite operation and frame sprite from serialized data
+      var spriteOperations = operations.filter(function (o) {
+        return o.type === 'sprite';
+      });
+      var spriteOperation = void 0;
+      if (spriteOperations.length) {
+        spriteOperation = spriteOperations.pop();
+        var frame = spriteOperation.options.sprites.filter(function (s) {
+          return s.type === 'frame';
+        })[0];
+
+        var tintColor = operation.getTintColor();
+        if (!tintColor.equals(new _globals.Color(1, 1, 1, 0))) {
+          frame.options.tintColor = {
+            rgba: operation.serializeOption('tintColor', true)
+          };
+        }
+
+        var options = operation.serializeOptions(['scale', 'alpha'], true);
+        frame.options = _globals.SDKUtils.extend(frame.options, options);
+        frame.options.size = frame.options.scale;
+        delete frame.options.scale;
+      }
+    }
+
+    /**
+     * Serializes the given transform operation
+     * @param  {PhotoEditorSDK.Operation.TransformOperation} operation
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeTransformOperation',
+    value: function _serializeTransformOperation(operation) {
+      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeTransformOperation', this).call(this, operation);
+
+      if (operation._ratio) {
+        response.options.meta = {
+          identifier: operation._ratio.identifier
+        };
+      }
+      delete response.options.scale;
+
+      return response;
+    }
+
+    /**
+     * Serializes the given adjustments operation
+     * @param  {PhotoEditorSDK.Operations.AdjustmentsOperation} operation
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeAdjustmentsOperation',
+    value: function _serializeAdjustmentsOperation(operation) {
+      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeAdjustmentsOperation', this).call(this, operation);
+
+      var availableOptions = operation.availableOptions;
+
+      var option = availableOptions.gamma;
+      var value = operation.getGamma();
+      var minValue = option.minValue,
+          midValue = option.midValue,
+          maxValue = option.maxValue;
+
+      response.options.gamma = value <= midValue ? (value - minValue) / (midValue - minValue) - 1 : (value - midValue) / (maxValue - midValue);
+      return response;
+    }
+
+    /**
+     * Serializes the given operation
+     * @param  {PhotoEditorSDK.Operation} operation
+     * @param  {PhotoEditorSDK.Operation[]} operations
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeOperation',
+    value: function _serializeOperation(operation, operations) {
+      switch (operation.constructor.identifier) {
+        case 'mirrored-focus':
+          return this._serializeMirroredFocusOperation(operation);
+        case 'linear-focus':
+          return this._serializeLinearFocusOperation(operation);
+        case 'blur':
+          return this._serializeBlurOperation(operation);
+        default:
+          return _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeOperation', this).call(this, operation, operations);
+      }
+    }
+
+    /**
+     * Serializes the given mirrored focus operation
+     * @param  {PhotoEditorSDK.Operations.MirroredFocusOperation} operation
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeMirroredFocusOperation',
+    value: function _serializeMirroredFocusOperation(operation) {
+      return {
+        type: 'focus',
+        options: {
+          type: 'mirrored',
+          options: operation.serializeOptions(['start', 'end', 'blurRadius', 'size', 'gradientSize'], true)
+        }
+      };
+    }
+
+    /**
+     * Serializes the given linear focus operation
+     * @param  {PhotoEditorSDK.Operations.LinearFocusOperation} operation
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeLinearFocusOperation',
+    value: function _serializeLinearFocusOperation(operation) {
+      var options = operation.serializeOptions(['controlPoint1', 'controlPoint2', 'blurRadius'], true);
+      options.start = options.controlPoint1;
+      delete options.controlPoint1;
+      options.end = options.controlPoint2;
+      delete options.controlPoint2;
+
+      return {
+        type: 'focus',
+        options: {
+          type: 'linear',
+          options: options
+        }
+      };
+    }
+
+    /**
+     * Serializes the given blur operation
+     * @param  {PhotoEditorSDK.Operations.BlurOperation} operation
+     * @return {Object}
+     * @private
+     */
+
+  }, {
+    key: '_serializeBlurOperation',
+    value: function _serializeBlurOperation(operation) {
+      return {
+        type: 'focus',
+        options: {
+          type: 'gaussian',
+          options: operation.serializeOptions(['blurRadius'], true)
+        }
+      };
+    }
+  }]);
+
+  return v300Serializer;
+}(_serializer2.default);
+
+exports.default = v300Serializer;
+
+
+v300Serializer.version = '3.0.0';
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+
+var _globals = __webpack_require__(0);
+
+var _deserializer = __webpack_require__(32);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+var _stickerManager = __webpack_require__(11);
+
+var _stickerManager2 = _interopRequireDefault(_stickerManager);
+
+var _textDesignManager = __webpack_require__(58);
+
+var _textDesignManager2 = _interopRequireDefault(_textDesignManager);
+
+var _imageLoader = __webpack_require__(23);
+
+var _imageLoader2 = _interopRequireDefault(_imageLoader);
+
+var _fontManager = __webpack_require__(15);
+
+var _fontManager2 = _interopRequireDefault(_fontManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var Brush = void 0;
+if (typeof _globals.SDK.Operations.SpriteOperation !== 'undefined') {
+  Brush = _globals.SDK.Operations.SpriteOperation.BrushSprite.Brush;
+}
+
+var v300Deserializer = function (_PreviousDeserializer) {
+  _inherits(v300Deserializer, _PreviousDeserializer);
+
+  function v300Deserializer() {
+    _classCallCheck(this, v300Deserializer);
+
+    return _possibleConstructorReturn(this, (v300Deserializer.__proto__ || Object.getPrototypeOf(v300Deserializer)).apply(this, arguments));
+  }
+
+  _createClass(v300Deserializer, [{
+    key: '_deserializeSticker',
+
+    /**
+     * Deserializes the given sticker for the given operation
+     * @param  {Object} operation
+     * @param  {Object} sprite
+     * @return {PhotoEditorSDK.Operations.SpriteOperation.StickerSprite}
+     * @private
+     */
+    value: function _deserializeSticker(operation, sprite) {
+      var SpriteOperation = _globals.SDK.Operations.SpriteOperation;
+      var options = sprite.options;
+
+      var sticker = this._stickerManager.getStickerByIdentifier(options.identifier);
+      if (!sticker) {
+        _globals.Log.warn('Deserializer', 'Unknown sticker `' + options.identifier + '`. Skipping sprite.');
+        return Promise.resolve();
+      }
+      var url = _stickerManager2.default.getURLForSticker(sticker, 'base');
+      var resolvedUrl = this._editor.getUI().getAssetPath(url);
+      var inputDimensions = operation.getInputDimensions(false);
+      return _imageLoader2.default.load(resolvedUrl).then(function (image) {
+        var adjustments = SpriteOperation.StickerSprite.prototype.availableOptions.adjustments.structure;
+        var rotation = options.rotation,
+            flipHorizontally = options.flipHorizontally,
+            flipVertically = options.flipVertically;
+
+        var stickerOptions = {
+          identifier: options.identifier,
+          image: image,
+          position: _globals.Vector2.fromObject(options.position),
+          dimensions: _globals.Vector2.fromObject(options.dimensions).multiply(inputDimensions.min()),
+          rotation: rotation || 0,
+          flipHorizontally: flipHorizontally,
+          flipVertically: flipVertically,
+          adjustments: {}
+        };
+
+        if (typeof options.adjustments !== 'undefined') {
+          ['brightness', 'contrast', 'saturation'].forEach(function (option) {
+            if (typeof options.adjustments[option] !== 'undefined') {
+              stickerOptions.adjustments[option] = options.adjustments[option] + adjustments[option].default;
+            }
+          });
+        }
+
+        if (typeof options.tintColor !== 'undefined' && typeof sticker.tintMode !== 'undefined') {
+          stickerOptions.tintColor = _globals.Color.fromArray(options.tintColor.rgba);
+          stickerOptions.tintMode = sticker.tintMode;
+        }
+
+        if (typeof options.alpha !== 'undefined') {
+          stickerOptions.alpha = options.alpha;
+        }
+
+        return operation.createSticker(stickerOptions);
+      });
+    }
+
+    /**
+     * Deserializes the given transform operation
+     * @param  {Object} operationData
+     * @return {Promise}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeTransformOperation',
+    value: function _deserializeTransformOperation(operationData) {
+      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeTransformOperation', this).call(this, operationData).then(function (operation) {
+        if (!operation) return;
+
+        // TODO: Get correct ratio
+        operation._ratio = null;
+        return operation;
+      });
+    }
+
+    /**
+     * Deserializes the input image (if present)
+     * @return {Promise}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeInputImage',
+    value: function _deserializeInputImage() {
+      var _this2 = this;
+
+      var _data$image = this._data.image,
+          data = _data$image.data,
+          type = _data$image.type,
+          uri = _data$image.uri;
+
+
+      if (data && type) {
+        uri = 'data:' + type + ';base64,' + data;
+      }
+
+      if (uri) {
+        return _imageLoader2.default.load(uri).then(function (image) {
+          _this2._editor.setImage(image);
+        });
+      } else {
+        return Promise.resolve();
+      }
+    }
+
+    /**
+     * Deserializes the given adjustments operation
+     * @param  {Object} operationData
+     * @return {Promise}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeAdjustmentsOperation',
+    value: function _deserializeAdjustmentsOperation(operationData) {
+      var AdjustmentsOperation = _globals.SDK.Operations.AdjustmentsOperation;
+
+      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeAdjustmentsOperation', this).call(this, operationData).then(function (operation) {
+        if (!operation) return null;
+
+        var options = operationData.options;
+
+        if (typeof options.gamma !== 'undefined') {
+          var _AdjustmentsOperation = AdjustmentsOperation.prototype.availableOptions.gamma,
+              minValue = _AdjustmentsOperation.minValue,
+              midValue = _AdjustmentsOperation.midValue,
+              maxValue = _AdjustmentsOperation.maxValue;
+
+          operation.setGamma(options.gamma < 0 ? midValue + (midValue - minValue) * options.gamma : midValue + (maxValue - midValue) * options.gamma);
+        }
+        return operation;
+      });
+    }
+
+    /**
+     * Deserializes the given focus operation
+     * @param  {Object} operationData
+     * @return {Promise}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeFocusOperation',
+    value: function _deserializeFocusOperation(operationData) {
+      var options = operationData.options.options;
+
+      switch (operationData.options.type) {
+        case 'radial':
+          return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeFocusOperation', this).call(this, operationData);
+        case 'linear':
+          {
+            var start = options.start,
+                end = options.end,
+                blurRadius = options.blurRadius;
+
+            return Promise.resolve(this._editor.operations.getOrCreate('linear-focus', {
+              controlPoint1: _globals.Vector2.fromObject(start),
+              controlPoint2: _globals.Vector2.fromObject(end),
+              blurRadius: blurRadius
+            }));
+          }
+        case 'mirrored':
+          {
+            var _start = options.start,
+                _end = options.end,
+                size = options.size,
+                gradientSize = options.gradientSize,
+                _blurRadius = options.blurRadius;
+
+            return Promise.resolve(this._editor.operations.getOrCreate('mirrored-focus', {
+              start: _globals.Vector2.fromObject(_start),
+              end: _globals.Vector2.fromObject(_end),
+              size: size,
+              gradientSize: gradientSize,
+              blurRadius: _blurRadius
+            }));
+          }
+        case 'gaussian':
+          {
+            var _blurRadius2 = options.blurRadius;
+
+            return Promise.resolve(this._editor.operations.getOrCreate('blur', {
+              blurRadius: _blurRadius2
+            }));
+          }
+      }
+    }
+
+    /**
+     * Deserializes the given text for the given operation
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation} operation
+     * @param  {Object} text
+     * @return {PhotoEditorSDK.Operations.SpriteOperation.TextSprite}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeText',
+    value: function _deserializeText(operation, text) {
+      var options = text.options;
+      var fontSize = options.fontSize,
+          lineHeight = options.lineHeight,
+          fontIdentifier = options.fontIdentifier,
+          alignment = options.alignment,
+          rotation = options.rotation,
+          maxWidth = options.maxWidth,
+          color = options.color,
+          backgroundColor = options.backgroundColor;
+
+
+      var fontLoader = this._ui.getFontLoader();
+      var variation = this._fontManager.getVariationByIdentifier(fontIdentifier);
+      if (!variation) {
+        variation = this._fontManager.getDefaultVariation();
+      } else {
+        fontLoader.setFonts([variation.getFont()]);
+      }
+      return fontLoader.load().then(function () {
+        var inputDimensions = operation.getInputDimensions(false);
+
+        // For whatever reason, max width is relative to shortest side, while font size isn't
+        var fixedMaxWidth = maxWidth * inputDimensions.min() / inputDimensions.x;
+        return operation.createText({
+          fontSize: fontSize,
+          lineHeight: lineHeight,
+          fontFamily: variation.getFontFamily(),
+          fontWeight: variation.getFontWeight(),
+          fontIdentifier: variation.getIdentifier(),
+          textMetrics: variation.getTextMetrics(),
+          alignment: alignment,
+          rotation: rotation,
+          maxWidth: fixedMaxWidth,
+          text: options.text,
+          color: _globals.Color.fromArray(color.rgba),
+          backgroundColor: _globals.Color.fromArray(backgroundColor.rgba),
+          position: _globals.Vector2.fromObject(options.position)
+        });
+      });
+    }
+
+    /**
+     * Creates a brush face with the given options
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation.Sprites.BrushSprite.Path} path
+     * @return {PhotoEditorSDK.Operations.SpriteOperation.Sprites.BrushSprite.Brush}
+     */
+
+  }, {
+    key: '_createBrushForPath',
+    value: function _createBrushForPath(path) {
+      var _path$brush = path.brush,
+          identifier = _path$brush.identifier,
+          color = _path$brush.color,
+          size = _path$brush.size,
+          hardness = _path$brush.hardness;
+
+      var colorObject = _globals.Color.fromArray(color.rgba);
+
+      var brushOptions = {
+        color: colorObject,
+        size: size
+      };
+
+      if (typeof hardness !== 'undefined') {
+        brushOptions.hardness = hardness;
+      }
+
+      var rawBrush = this._brushManager.getBrushByIdentifier(identifier);
+      if (!rawBrush) {
+        rawBrush = this._brushManager.getFirstBrush();
+      }
+
+      if (rawBrush.prototype && rawBrush.prototype instanceof Brush) {
+        // Custom Brush instance, used for special brushes such as radial brush, which has
+        // an additional hardness option
+        var BrushClass = rawBrush;
+        return new BrushClass(brushOptions);
+      } else {
+        var _brush = _globals.SDKUtils.extend({}, rawBrush);
+        delete _brush.image;
+
+        var _BrushClass = function (_Brush) {
+          _inherits(_BrushClass, _Brush);
+
+          function _BrushClass() {
+            _classCallCheck(this, _BrushClass);
+
+            return _possibleConstructorReturn(this, (_BrushClass.__proto__ || Object.getPrototypeOf(_BrushClass)).apply(this, arguments));
+          }
+
+          return _BrushClass;
+        }(Brush);
+
+        _BrushClass.identifier = rawBrush.identifier;
+
+        // Plain JS object, used for simple image brushes
+        return new _BrushClass(_globals.SDKUtils.extend({}, _brush, brushOptions));
+      }
+    }
+
+    /**
+     * Deserializes the given frame sprite
+     * @param  {PhotoEditorSDK.Operations.SpriteOperation}
+     * @param  {Object} framespriteOperation
+     * @return {Promise}
+     * @private
+     */
+
+  }, {
+    key: '_deserializeFrame',
+    value: function _deserializeFrame(spriteOperation, frame) {
+      var _this4 = this;
+
+      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeFrame', this).call(this, spriteOperation, frame).then(function () {
+        var frameOperation = _this4._editor.operations.get('frame');
+
+        var _frame$options = frame.options,
+            size = _frame$options.size,
+            alpha = _frame$options.alpha,
+            tintColor = _frame$options.tintColor;
+
+        var options = {};
+        if (typeof size !== 'undefined') {
+          options.scale = size;
+        }
+        if (typeof alpha !== 'undefined') {
+          options.alpha = alpha;
+        }
+        if (typeof tintColor !== 'undefined') {
+          options.tintColor = _globals.Color.fromArray(tintColor.rgba);
+        }
+        frameOperation.set(options);
+      });
+    }
+  }, {
+    key: '_deserializeTextDesign',
+    value: function _deserializeTextDesign(operation, sprite) {
+      var _this5 = this;
+
+      var options = sprite.options;
+      var position = options.position,
+          rotation = options.rotation,
+          flipHorizontally = options.flipHorizontally,
+          flipVertically = options.flipVertically,
+          text = options.text,
+          color = options.color,
+          width = options.width,
+          seed = options.seed,
+          inverted = options.inverted,
+          identifier = options.identifier;
+
+
+      var textDesignManager = new _textDesignManager2.default(this._ui, this._getOptions('textdesign'));
+      var fontManager = new _fontManager2.default(this._ui, { fonts: _globals.Constants.DEFAULTS.TEXT_DESIGN_FONTS, replaceFonts: true });
+      var AssetManager = operation.constructor.TextDesignSprite.AssetManager;
+      var fontLoader = this._ui.getFontLoader();
+
+      var Layout = textDesignManager.getLayoutByIdentifier(identifier);
+
+      var layout = new Layout();
+
+      fontLoader.setFonts(fontManager.getFonts());
+
+      AssetManager.setFonts(_extends({}, AssetManager.getFonts(), fontManager.getVariationsByIdentifier()));
+
+      return fontLoader.load().then(function () {
+        var images = layout.getImagePaths().map(function (path) {
+          return { path: path, fullPath: _this5._ui.getAssetPath(path), image: null };
+        });
+        return AssetManager.loadImages(images).then(function () {
+          layout.onImagesLoaded();
+
+          return operation.createTextDesign({
+            position: position,
+            rotation: rotation,
+            flipHorizontally: flipHorizontally,
+            flipVertically: flipVertically,
+            text: text,
+            color: _globals.Color.fromArray(color.rgba),
+            width: width,
+            seed: seed,
+            inverted: inverted,
+            layout: layout
+          });
+        });
+      });
+    }
+  }]);
+
+  return v300Deserializer;
+}(_deserializer2.default);
+
+exports.default = v300Deserializer;
+
+
+v300Deserializer.version = '3.0.0';
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var _globals = __webpack_require__(0);
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var TextDesignManager = function () {
+  function TextDesignManager(ui) {
+    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+    _classCallCheck(this, TextDesignManager);
+
+    this._ui = ui;
+    this._options = options;
+
+    this._defaultLayouts = _globals.SDK.Operations.SpriteOperation.TextDesignSprite.Layouts;
+    this._layouts = [];
+    this._init();
+  }
+
+  _createClass(TextDesignManager, [{
+    key: '_init',
+    value: function _init() {
+      var _this = this;
+
+      var availableLayouts = this._options.availableLayouts;
+
+      this._layouts = Object.keys(this._defaultLayouts).map(function (k) {
+        return {
+          identifier: _this._defaultLayouts[k].identifier,
+          layout: _this._defaultLayouts[k]
+        };
+      });
+
+      if (availableLayouts) {
+        this._layouts = this._layouts.filter(function (item) {
+          return availableLayouts.indexOf(item.identifier) >= 0;
+        });
+      }
+    }
+  }, {
+    key: 'getLayoutByIdentifier',
+    value: function getLayoutByIdentifier(identifier) {
+      var item = _globals.SDKUtils.Array.find(this._layouts, function (l) {
+        return l.identifier === identifier;
+      });
+      return item && item.layout;
+    }
+  }, {
+    key: 'getLayouts',
+    value: function getLayouts() {
+      return [].concat(_toConsumableArray(this._layouts));
+    }
+  }]);
+
+  return TextDesignManager;
+}();
+
+exports.default = TextDesignManager;
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 /* @module */
 /*!
  * This file is part of PhotoEditorSDK.
@@ -12188,21 +13093,21 @@ exports.default = (_OverlayFilter$BLEND_ = {}, _defineProperty(_OverlayFilter$BL
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-__webpack_require__(57);
+__webpack_require__(60);
 
 /**
  * @namespace PhotoEditorSDK.UI
  */
-module.exports = __webpack_require__(58).default;
+module.exports = __webpack_require__(61).default;
 
 /***/ }),
-/* 57 */
+/* 60 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 58 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12216,7 +13121,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _appComponent = __webpack_require__(82);
+var _appComponent = __webpack_require__(85);
 
 var _appComponent2 = _interopRequireDefault(_appComponent);
 
@@ -12232,15 +13137,15 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _jsonLoader = __webpack_require__(21);
+var _jsonLoader = __webpack_require__(22);
 
 var _jsonLoader2 = _interopRequireDefault(_jsonLoader);
 
-var _preloader = __webpack_require__(190);
+var _preloader = __webpack_require__(194);
 
 var _preloader2 = _interopRequireDefault(_preloader);
 
-var _photoRoll = __webpack_require__(191);
+var _photoRoll = __webpack_require__(195);
 
 var PhotoRoll = _interopRequireWildcard(_photoRoll);
 
@@ -12248,7 +13153,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _controls3 = __webpack_require__(43);
+var _controls3 = __webpack_require__(44);
 
 var Controls = _interopRequireWildcard(_controls3);
 
@@ -12260,7 +13165,7 @@ var _sliderOverlayComponent = __webpack_require__(6);
 
 var _sliderOverlayComponent2 = _interopRequireDefault(_sliderOverlayComponent);
 
-var _fontLoader = __webpack_require__(29);
+var _fontLoader = __webpack_require__(30);
 
 var _fontLoader2 = _interopRequireDefault(_fontLoader);
 
@@ -12649,8 +13554,8 @@ var ReactUI = function (_EventEmitter) {
     key: '_initLanguage',
     value: function _initLanguage() {
       this._languages = _globals.SDKUtils.deepDefaults(this._options.extensions.languages, {
-        de: __webpack_require__(196),
-        en: __webpack_require__(197)
+        de: __webpack_require__(200),
+        en: __webpack_require__(201)
       });
       this._language = this._languages[this._options.language];
       if (!this._language) {
@@ -12889,13 +13794,13 @@ _globals.SDK.UI.ReactUI = ReactUI;
 exports.default = ReactUI;
 
 /***/ }),
-/* 59 */
+/* 62 */
 /***/ (function(module, exports) {
 
-module.exports = __WEBPACK_EXTERNAL_MODULE_59__;
+module.exports = __WEBPACK_EXTERNAL_MODULE_62__;
 
 /***/ }),
-/* 60 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12908,13 +13813,13 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_59__;
 
 
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var warning = __webpack_require__(33);
-var assign = __webpack_require__(61);
+var emptyFunction = __webpack_require__(17);
+var invariant = __webpack_require__(18);
+var warning = __webpack_require__(34);
+var assign = __webpack_require__(64);
 
-var ReactPropTypesSecret = __webpack_require__(18);
-var checkPropTypes = __webpack_require__(62);
+var ReactPropTypesSecret = __webpack_require__(19);
+var checkPropTypes = __webpack_require__(65);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -13444,7 +14349,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 /***/ }),
-/* 61 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13541,7 +14446,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 /***/ }),
-/* 62 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13555,9 +14460,9 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 
 if (({"ENV":"\"production\""}).NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(17);
-  var warning = __webpack_require__(33);
-  var ReactPropTypesSecret = __webpack_require__(18);
+  var invariant = __webpack_require__(18);
+  var warning = __webpack_require__(34);
+  var ReactPropTypesSecret = __webpack_require__(19);
   var loggedTypeFailures = {};
 }
 
@@ -13607,7 +14512,7 @@ module.exports = checkPropTypes;
 
 
 /***/ }),
-/* 63 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13620,9 +14525,9 @@ module.exports = checkPropTypes;
 
 
 
-var emptyFunction = __webpack_require__(16);
-var invariant = __webpack_require__(17);
-var ReactPropTypesSecret = __webpack_require__(18);
+var emptyFunction = __webpack_require__(17);
+var invariant = __webpack_require__(18);
+var ReactPropTypesSecret = __webpack_require__(19);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -13672,7 +14577,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 64 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -13684,15 +14589,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(15);
+var _react = __webpack_require__(16);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(32);
+var _propTypes = __webpack_require__(33);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _reactBem = __webpack_require__(36);
+var _reactBem = __webpack_require__(37);
 
 var _reactBem2 = _interopRequireDefault(_reactBem);
 
@@ -14030,7 +14935,7 @@ BaseComponent.propTypes = {
 };
 
 /***/ }),
-/* 65 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14044,15 +14949,15 @@ var _photoeditorsdk = __webpack_require__(7);
 
 var _photoeditorsdk2 = _interopRequireDefault(_photoeditorsdk);
 
-var _log = __webpack_require__(19);
+var _log = __webpack_require__(20);
 
 var _log2 = _interopRequireDefault(_log);
 
-var _browser = __webpack_require__(68);
+var _browser = __webpack_require__(71);
 
 var _browser2 = _interopRequireDefault(_browser);
 
-var _jsonLoader = __webpack_require__(21);
+var _jsonLoader = __webpack_require__(22);
 
 var _jsonLoader2 = _interopRequireDefault(_jsonLoader);
 
@@ -14390,7 +15295,7 @@ var UIUtils = {
 exports.default = UIUtils;
 
 /***/ }),
-/* 66 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14420,7 +15325,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _base = __webpack_require__(67);
+var _base = __webpack_require__(70);
 
 var _base2 = _interopRequireDefault(_base);
 
@@ -14496,6 +15401,127 @@ var ArrayUtils = function () {
       return arr.filter(function (v, i, arr) {
         return !func(v, i, arr);
       });
+    }
+
+    /**
+     * Finds the index first element of the Array to which the supplied function returns
+     * a true value. If the element is not found it returns -1.
+     *
+     * @param {Array} array
+     * @param {Function} func
+     * @returns {number}
+     */
+
+  }, {
+    key: 'findIndex',
+    value: function findIndex(array, func) {
+      for (var i = 0; i < array.length; i++) {
+        if (func(array[i])) {
+          return i;
+        }
+      }
+
+      return -1;
+    }
+
+    /**
+     * Finds the first element of the Array to which the supplied function returns
+     * a true value and returns it. Otherwise it returns undefined.
+     *
+     * @param {Array} array
+     * @param {Function} func
+     * @returns {any}
+     */
+
+  }, {
+    key: 'find',
+    value: function find(array, func) {
+      for (var i = 0; i < array.length; i++) {
+        if (func(array[i])) {
+          return array[i];
+        }
+      }
+
+      return undefined;
+    }
+
+    /**
+     * Flattens the given multidimensional array
+     *
+     * @return {Array}
+     */
+
+  }, {
+    key: 'flatten',
+    value: function flatten(array) {
+      return array.reduce(function (flat, toFlatten) {
+        return flat.concat(Array.isArray(toFlatten) ? Utils.Array.flatten(toFlatten) : toFlatten);
+      }, []);
+    }
+
+    /**
+     * Returns and array containing the numbers going from `start` (inclusive) to
+     * `end` (exclusive)
+     *
+     * @param {number} start
+     * @param {number} end
+     * @returns Array
+     */
+
+  }, {
+    key: 'range',
+    value: function range(start, end) {
+      var arr = [];
+
+      if (end > start) {
+        for (var i = start; i < end; i++) {
+          arr.push(i);
+        }
+      }
+
+      return arr;
+    }
+
+    /**
+     * Returns an array consisting of the value `val` repeated `n` times.
+     *
+     * @param {any} val
+     * @param {number} n
+     * @returns {Array}
+     */
+
+  }, {
+    key: 'repeat',
+    value: function repeat(val, n) {
+      var arr = [];
+
+      for (var i = 0; i < n; i++) {
+        arr[i] = val;
+      }
+
+      return arr;
+    }
+
+    /**
+     * Returns an array which is an array of arrays of equally positioned items in both arrays,
+     * e.g, zip([1, 2, 3], [4, 5, 6]) = [[1, 4], [2, 5], [3, 6]]
+     *
+     * @param {Array} a
+     * @param {Array} b
+     * @returns {Array}
+     */
+
+  }, {
+    key: 'zip',
+    value: function zip(a, b) {
+      var len = Math.min(a.length, b.length);
+      var arr = [];
+
+      for (var i = 0; i < len; i++) {
+        arr[i] = [a[i], b[i]];
+      }
+
+      return arr;
     }
   }]);
 
@@ -14936,19 +15962,6 @@ var Utils = function () {
     }
 
     /**
-     * Flattens the given multidimensional array
-     * @return {Array}
-     */
-
-  }, {
-    key: 'flatten',
-    value: function flatten(array) {
-      return array.reduce(function (flat, toFlatten) {
-        return flat.concat(Array.isArray(toFlatten) ? Utils.flatten(toFlatten) : toFlatten);
-      }, []);
-    }
-
-    /**
      * Creates a canvas DOM element (browser) or a node-canvas canvas (node)
      * @return {Canvas}
      */
@@ -15249,7 +16262,7 @@ exports.default = Utils;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 67 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15367,7 +16380,7 @@ var Base64 = {
 exports.default = Base64;
 
 /***/ }),
-/* 68 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15421,7 +16434,7 @@ exports.default = {
 };
 
 /***/ }),
-/* 69 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15791,10 +16804,10 @@ var root = typeof global === 'undefined' ? window : global;
 var _Promise = typeof Promise !== 'undefined' ? Promise : promiseFactory();
 root.Promise = root.Promise || _Promise;
 exports.default = _Promise;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(70).setImmediate, __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(73).setImmediate, __webpack_require__(8)))
 
 /***/ }),
-/* 70 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -15847,13 +16860,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(71);
+__webpack_require__(74);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 71 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -16043,10 +17056,10 @@ exports.clearImmediate = clearImmediate;
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8), __webpack_require__(20)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8), __webpack_require__(21)))
 
 /***/ }),
-/* 72 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16073,8 +17086,8 @@ exports.clearImmediate = clearImmediate;
 
 
 
-var punycode = __webpack_require__(73);
-var util = __webpack_require__(75);
+var punycode = __webpack_require__(76);
+var util = __webpack_require__(78);
 
 exports.parse = urlParse;
 exports.resolve = urlResolve;
@@ -16149,7 +17162,7 @@ var protocolPattern = /^([a-z0-9.+-]+:)/i,
       'gopher:': true,
       'file:': true
     },
-    querystring = __webpack_require__(76);
+    querystring = __webpack_require__(79);
 
 function urlParse(url, parseQueryString, slashesDenoteHost) {
   if (url && util.isObject(url) && url instanceof Url) return url;
@@ -16785,7 +17798,7 @@ Url.prototype.parseHost = function() {
 
 
 /***/ }),
-/* 73 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.4.1 by @mathias */
@@ -17321,10 +18334,10 @@ Url.prototype.parseHost = function() {
 
 }(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(74)(module), __webpack_require__(8)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(77)(module), __webpack_require__(8)))
 
 /***/ }),
-/* 74 */
+/* 77 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -17352,7 +18365,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 75 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17375,18 +18388,18 @@ module.exports = {
 
 
 /***/ }),
-/* 76 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(77);
-exports.encode = exports.stringify = __webpack_require__(78);
+exports.decode = exports.parse = __webpack_require__(80);
+exports.encode = exports.stringify = __webpack_require__(81);
 
 
 /***/ }),
-/* 77 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17477,7 +18490,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 78 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17569,7 +18582,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 79 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17784,7 +18797,7 @@ exports.default = {
  */
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17908,7 +18921,7 @@ var SharedState = function (_EventEmitter) {
 exports.default = SharedState;
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17971,7 +18984,7 @@ exports.cancelAnimationFrame = cAF;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17985,23 +18998,23 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _loadingScreenComponent = __webpack_require__(83);
+var _loadingScreenComponent = __webpack_require__(86);
 
 var _loadingScreenComponent2 = _interopRequireDefault(_loadingScreenComponent);
 
-var _splashScreenComponent = __webpack_require__(85);
+var _splashScreenComponent = __webpack_require__(88);
 
 var _splashScreenComponent2 = _interopRequireDefault(_splashScreenComponent);
 
-var _photoRollScreenComponent = __webpack_require__(92);
+var _photoRollScreenComponent = __webpack_require__(95);
 
 var _photoRollScreenComponent2 = _interopRequireDefault(_photoRollScreenComponent);
 
-var _webcamScreenComponent = __webpack_require__(102);
+var _webcamScreenComponent = __webpack_require__(105);
 
 var _webcamScreenComponent2 = _interopRequireDefault(_webcamScreenComponent);
 
-var _editorScreenComponent = __webpack_require__(105);
+var _editorScreenComponent = __webpack_require__(108);
 
 var _editorScreenComponent2 = _interopRequireDefault(_editorScreenComponent);
 
@@ -18009,7 +19022,7 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _modalContainerComponent = __webpack_require__(185);
+var _modalContainerComponent = __webpack_require__(189);
 
 var _modalContainerComponent2 = _interopRequireDefault(_modalContainerComponent);
 
@@ -18319,7 +19332,7 @@ AppComponent.propTypes = {
 };
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18505,7 +19518,7 @@ exports.default = LoadingScreenComponent;
 LoadingScreenComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18609,7 +19622,7 @@ exports.default = HeaderComponent;
 HeaderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 85 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18627,15 +19640,15 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _uploadComponent = __webpack_require__(86);
+var _uploadComponent = __webpack_require__(89);
 
 var _uploadComponent2 = _interopRequireDefault(_uploadComponent);
 
-var _webcamComponent = __webpack_require__(90);
+var _webcamComponent = __webpack_require__(93);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
-var _photoRollComponent = __webpack_require__(91);
+var _photoRollComponent = __webpack_require__(94);
 
 var _photoRollComponent2 = _interopRequireDefault(_photoRollComponent);
 
@@ -18799,7 +19812,7 @@ exports.default = SplashScreenComponent;
 SplashScreenComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 86 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18819,15 +19832,15 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _rowComponent = __webpack_require__(23);
+var _rowComponent = __webpack_require__(24);
 
 var _rowComponent2 = _interopRequireDefault(_rowComponent);
 
-var _buttonComponent = __webpack_require__(87);
+var _buttonComponent = __webpack_require__(90);
 
 var _buttonComponent2 = _interopRequireDefault(_buttonComponent);
 
-var _invisibleUploadComponent = __webpack_require__(24);
+var _invisibleUploadComponent = __webpack_require__(25);
 
 var _invisibleUploadComponent2 = _interopRequireDefault(_invisibleUploadComponent);
 
@@ -19064,7 +20077,7 @@ UploadComponent.propTypes = {
 UploadComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 87 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19143,7 +20156,7 @@ ButtonComponent.propTypes = {
 ButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 88 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19157,7 +20170,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _modalManager = __webpack_require__(89);
+var _modalManager = __webpack_require__(92);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
@@ -19271,7 +20284,7 @@ var FileLoader = function (_EventEmitter) {
 exports.default = FileLoader;
 
 /***/ }),
-/* 89 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19309,6 +20322,7 @@ var Modal = function (_EventEmitter) {
 
   function Modal(type, title, text) {
     var overlay = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    var closeOnOverlayClick = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
 
     _classCallCheck(this, Modal);
 
@@ -19319,6 +20333,7 @@ var Modal = function (_EventEmitter) {
     _this.title = title;
     _this.text = text;
     _this.overlay = overlay;
+    _this.closeOnOverlayClick = closeOnOverlayClick;
     _this.visible = true;
     _this.data = null;
     return _this;
@@ -19404,6 +20419,17 @@ var ModalManager = function (_EventEmitter2) {
 
       var modal = new Modal('progress', null, text);
       modal.setData({ progress: progress });
+      this.addModal(modal);
+      return modal;
+    }
+  }, {
+    key: 'displayInput',
+    value: function displayInput(title) {
+      var text = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+      var overlay = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : true;
+
+      var modal = new Modal('input', title, null, overlay, true);
+      modal.setData({ text: text });
       this.addModal(modal);
       return modal;
     }
@@ -19514,7 +20540,7 @@ var ModalManager = function (_EventEmitter2) {
 exports.default = ModalManager;
 
 /***/ }),
-/* 90 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19528,7 +20554,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _rowComponent = __webpack_require__(23);
+var _rowComponent = __webpack_require__(24);
 
 var _rowComponent2 = _interopRequireDefault(_rowComponent);
 
@@ -19643,7 +20669,7 @@ exports.default = WebcamComponent;
 WebcamComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 91 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19657,7 +20683,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _rowComponent = __webpack_require__(23);
+var _rowComponent = __webpack_require__(24);
 
 var _rowComponent2 = _interopRequireDefault(_rowComponent);
 
@@ -19770,7 +20796,7 @@ exports.default = PhotoRollComponent;
 PhotoRollComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 92 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19788,19 +20814,19 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _topBarComponent = __webpack_require__(93);
+var _topBarComponent = __webpack_require__(96);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _overviewComponent = __webpack_require__(97);
+var _overviewComponent = __webpack_require__(100);
 
 var _overviewComponent2 = _interopRequireDefault(_overviewComponent);
 
-var _photoListComponent = __webpack_require__(40);
+var _photoListComponent = __webpack_require__(41);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _searchResultsComponent = __webpack_require__(100);
+var _searchResultsComponent = __webpack_require__(103);
 
 var _searchResultsComponent2 = _interopRequireDefault(_searchResultsComponent);
 
@@ -20095,7 +21121,7 @@ PhotoRollScreenComponent.childContextTypes = {
 PhotoRollScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 93 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20113,19 +21139,19 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _topBarButtonComponent = __webpack_require__(94);
+var _topBarButtonComponent = __webpack_require__(97);
 
 var _topBarButtonComponent2 = _interopRequireDefault(_topBarButtonComponent);
 
-var _invisibleUploadComponent = __webpack_require__(24);
+var _invisibleUploadComponent = __webpack_require__(25);
 
 var _invisibleUploadComponent2 = _interopRequireDefault(_invisibleUploadComponent);
 
-var _topBarSearchComponent = __webpack_require__(95);
+var _topBarSearchComponent = __webpack_require__(98);
 
 var _topBarSearchComponent2 = _interopRequireDefault(_topBarSearchComponent);
 
-var _backButtonComponent = __webpack_require__(96);
+var _backButtonComponent = __webpack_require__(99);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
@@ -20331,7 +21357,7 @@ exports.default = PhotoRollTopBarComponent;
 PhotoRollTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 94 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20403,7 +21429,7 @@ exports.default = TopBarButtonComponent;
 TopBarButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 95 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20653,7 +21679,7 @@ exports.default = TopBarSearchComponent;
 TopBarSearchComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 96 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20732,7 +21758,7 @@ exports.default = TopBarBackButtonComponent;
 TopBarBackButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 97 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20754,11 +21780,11 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _libraryComponent = __webpack_require__(98);
+var _libraryComponent = __webpack_require__(101);
 
 var _libraryComponent2 = _interopRequireDefault(_libraryComponent);
 
-var _searchSuggestionComponent = __webpack_require__(39);
+var _searchSuggestionComponent = __webpack_require__(40);
 
 var _searchSuggestionComponent2 = _interopRequireDefault(_searchSuggestionComponent);
 
@@ -21046,7 +22072,7 @@ exports.default = OverviewComponent;
 OverviewComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 98 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21154,7 +22180,7 @@ exports.default = LibraryComponent;
 LibraryComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 99 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21236,7 +22262,7 @@ exports.default = PhotoComponent;
 PhotoComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 100 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21250,11 +22276,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _photoListComponent = __webpack_require__(40);
+var _photoListComponent = __webpack_require__(41);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _noSearchResultsComponent = __webpack_require__(101);
+var _noSearchResultsComponent = __webpack_require__(104);
 
 var _noSearchResultsComponent2 = _interopRequireDefault(_noSearchResultsComponent);
 
@@ -21395,7 +22421,7 @@ exports.default = SearchResultsComponent;
 SearchResultsComponent.contextTypes = _photoListComponent2.default.contextTypes;
 
 /***/ }),
-/* 101 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21411,7 +22437,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _searchSuggestionComponent = __webpack_require__(39);
+var _searchSuggestionComponent = __webpack_require__(40);
 
 var _searchSuggestionComponent2 = _interopRequireDefault(_searchSuggestionComponent);
 
@@ -21586,7 +22612,7 @@ exports.default = NoSearchResultsComponent;
 NoSearchResultsComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 102 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21608,7 +22634,7 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _webcamComponent = __webpack_require__(103);
+var _webcamComponent = __webpack_require__(106);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
@@ -21769,7 +22795,7 @@ exports.default = WebcamScreenComponent;
 WebcamScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 103 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21787,7 +22813,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _webcamVideoComponent = __webpack_require__(104);
+var _webcamVideoComponent = __webpack_require__(107);
 
 var _webcamVideoComponent2 = _interopRequireDefault(_webcamVideoComponent);
 
@@ -21921,7 +22947,7 @@ WebcamComponent.propTypes = {
 WebcamComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 104 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22299,7 +23325,7 @@ WebcamVideoComponent.propTypes = {
 };
 
 /***/ }),
-/* 105 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22315,7 +23341,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _overviewControlsComponent = __webpack_require__(41);
+var _overviewControlsComponent = __webpack_require__(42);
 
 var _overviewControlsComponent2 = _interopRequireDefault(_overviewControlsComponent);
 
@@ -22323,7 +23349,7 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _canvasComponent = __webpack_require__(108);
+var _canvasComponent = __webpack_require__(111);
 
 var _canvasComponent2 = _interopRequireDefault(_canvasComponent);
 
@@ -22331,11 +23357,11 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _overview = __webpack_require__(109);
+var _overview = __webpack_require__(112);
 
 var _overview2 = _interopRequireDefault(_overview);
 
-var _editor3 = __webpack_require__(42);
+var _editor3 = __webpack_require__(43);
 
 var _editor4 = _interopRequireDefault(_editor3);
 
@@ -22844,7 +23870,7 @@ EditorScreenComponent.childContextTypes = {
 EditorScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 106 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22920,7 +23946,7 @@ exports.default = BackButtonComponent;
 BackButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 107 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22996,7 +24022,7 @@ exports.default = DoneButtonComponent;
 DoneButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 108 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23295,7 +24321,7 @@ exports.default = CanvasComponent;
 CanvasComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 109 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23309,15 +24335,15 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _topBarComponent = __webpack_require__(110);
+var _topBarComponent = __webpack_require__(113);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _overviewControlsComponent = __webpack_require__(41);
+var _overviewControlsComponent = __webpack_require__(42);
 
 var _overviewControlsComponent2 = _interopRequireDefault(_overviewControlsComponent);
 
-var _overviewCanvasControlsComponent = __webpack_require__(115);
+var _overviewCanvasControlsComponent = __webpack_require__(118);
 
 var _overviewCanvasControlsComponent2 = _interopRequireDefault(_overviewCanvasControlsComponent);
 
@@ -23381,7 +24407,7 @@ OverviewControls.canvasControlsComponent = _overviewCanvasControlsComponent2.def
 exports.default = OverviewControls;
 
 /***/ }),
-/* 110 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23399,19 +24425,19 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _newFileButtonComponent = __webpack_require__(111);
+var _newFileButtonComponent = __webpack_require__(114);
 
 var _newFileButtonComponent2 = _interopRequireDefault(_newFileButtonComponent);
 
-var _exportButtonComponent = __webpack_require__(112);
+var _exportButtonComponent = __webpack_require__(115);
 
 var _exportButtonComponent2 = _interopRequireDefault(_exportButtonComponent);
 
-var _undoButtonComponent = __webpack_require__(113);
+var _undoButtonComponent = __webpack_require__(116);
 
 var _undoButtonComponent2 = _interopRequireDefault(_undoButtonComponent);
 
-var _zoomComponent = __webpack_require__(114);
+var _zoomComponent = __webpack_require__(117);
 
 var _zoomComponent2 = _interopRequireDefault(_zoomComponent);
 
@@ -23492,7 +24518,7 @@ exports.default = OverviewTopBarComponent;
 OverviewTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 111 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23506,11 +24532,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _buttonComponent = __webpack_require__(25);
+var _buttonComponent = __webpack_require__(26);
 
 var _buttonComponent2 = _interopRequireDefault(_buttonComponent);
 
-var _invisibleUploadComponent = __webpack_require__(24);
+var _invisibleUploadComponent = __webpack_require__(25);
 
 var _invisibleUploadComponent2 = _interopRequireDefault(_invisibleUploadComponent);
 
@@ -23634,7 +24660,7 @@ exports.default = NewFileButtonComponent;
 NewFileButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 112 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23652,7 +24678,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _buttonComponent = __webpack_require__(25);
+var _buttonComponent = __webpack_require__(26);
 
 var _buttonComponent2 = _interopRequireDefault(_buttonComponent);
 
@@ -23762,7 +24788,7 @@ exports.default = ExportButtonComponent;
 ExportButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 113 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23776,7 +24802,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _buttonComponent = __webpack_require__(25);
+var _buttonComponent = __webpack_require__(26);
 
 var _buttonComponent2 = _interopRequireDefault(_buttonComponent);
 
@@ -23892,7 +24918,7 @@ exports.default = UndoButtonComponent;
 UndoButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 114 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24063,7 +25089,7 @@ exports.default = ZoomComponent;
 ZoomComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 115 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24199,7 +25225,7 @@ exports.default = OverviewCanvasControlsComponent;
 OverviewCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 116 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24226,7 +25252,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _fileDownloader = __webpack_require__(117);
+var _fileDownloader = __webpack_require__(120);
 
 var _fileDownloader2 = _interopRequireDefault(_fileDownloader);
 
@@ -24312,7 +25338,7 @@ var Exporter = function () {
 exports.default = Exporter;
 
 /***/ }),
-/* 117 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24431,7 +25457,7 @@ var FileDownloader = function () {
 exports.default = FileDownloader;
 
 /***/ }),
-/* 118 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24579,7 +25605,7 @@ var ImageResizer = function () {
 exports.default = ImageResizer;
 
 /***/ }),
-/* 119 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24829,7 +25855,7 @@ var EditorOperations = function () {
 exports.default = EditorOperations;
 
 /***/ }),
-/* 120 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24854,7 +25880,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _controls = __webpack_require__(43);
+var _controls = __webpack_require__(44);
 
 var Controls = _interopRequireWildcard(_controls);
 
@@ -24948,7 +25974,7 @@ var EditorControls = function () {
 exports.default = EditorControls;
 
 /***/ }),
-/* 121 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24964,7 +25990,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _adjustmentsControlsComponent = __webpack_require__(122);
+var _adjustmentsControlsComponent = __webpack_require__(125);
 
 var _adjustmentsControlsComponent2 = _interopRequireDefault(_adjustmentsControlsComponent);
 
@@ -25108,7 +26134,7 @@ AdjustmentsControls.requiredOperations = ['adjustments'];
 exports.default = AdjustmentsControls;
 
 /***/ }),
-/* 122 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25136,7 +26162,7 @@ var _sliderOverlayComponent = __webpack_require__(6);
 
 var _sliderOverlayComponent2 = _interopRequireDefault(_sliderOverlayComponent);
 
-var _miniSliderComponent = __webpack_require__(123);
+var _miniSliderComponent = __webpack_require__(126);
 
 var _miniSliderComponent2 = _interopRequireDefault(_miniSliderComponent);
 
@@ -25399,7 +26425,7 @@ exports.default = AdjustmentsControlsComponent;
 AdjustmentsControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 123 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25599,7 +26625,7 @@ exports.default = MiniSliderComponent;
 MiniSliderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 124 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25617,15 +26643,15 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _transformControlsComponent = __webpack_require__(125);
+var _transformControlsComponent = __webpack_require__(128);
 
 var _transformControlsComponent2 = _interopRequireDefault(_transformControlsComponent);
 
-var _transformCanvasControlsComponent = __webpack_require__(126);
+var _transformCanvasControlsComponent = __webpack_require__(129);
 
 var _transformCanvasControlsComponent2 = _interopRequireDefault(_transformCanvasControlsComponent);
 
-var _transformTopBarComponent = __webpack_require__(127);
+var _transformTopBarComponent = __webpack_require__(130);
 
 var _transformTopBarComponent2 = _interopRequireDefault(_transformTopBarComponent);
 
@@ -25877,7 +26903,7 @@ TransformControls.requiredOperations = ['transform'];
 exports.default = TransformControls;
 
 /***/ }),
-/* 125 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26231,7 +27257,7 @@ var TransformControlsComponent = function (_ControlsComponent) {
 
       var operation = this.getSharedState('operation');
       var selectedRatio = null;
-      var ratios = _globals.SDKUtils.flatten(this._ratios);
+      var ratios = _globals.SDKUtils.Array.flatten(this._ratios);
 
       // 1. Selected ratio stored in operation
       var operationRatio = operation._ratio;
@@ -26527,7 +27553,7 @@ exports.default = TransformControlsComponent;
 TransformControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 126 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26984,7 +28010,7 @@ exports.default = TransformCanvasControlsComponent;
 TransformCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 127 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27183,7 +28209,7 @@ exports.default = TransformTopBarComponent;
 TransformTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 128 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27201,11 +28227,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _filterControlsComponent = __webpack_require__(129);
+var _filterControlsComponent = __webpack_require__(132);
 
 var _filterControlsComponent2 = _interopRequireDefault(_filterControlsComponent);
 
-var _filterManager = __webpack_require__(26);
+var _filterManager = __webpack_require__(27);
 
 var _filterManager2 = _interopRequireDefault(_filterManager);
 
@@ -27405,7 +28431,7 @@ FiltersControls.defaultOptions = {
 exports.default = FiltersControls;
 
 /***/ }),
-/* 129 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27427,7 +28453,7 @@ var _scrollbarComponent = __webpack_require__(2);
 
 var _scrollbarComponent2 = _interopRequireDefault(_scrollbarComponent);
 
-var _categoryDropdownComponent = __webpack_require__(44);
+var _categoryDropdownComponent = __webpack_require__(45);
 
 var _categoryDropdownComponent2 = _interopRequireDefault(_categoryDropdownComponent);
 
@@ -27435,7 +28461,7 @@ var _sliderOverlayComponent = __webpack_require__(6);
 
 var _sliderOverlayComponent2 = _interopRequireDefault(_sliderOverlayComponent);
 
-var _filterManager = __webpack_require__(26);
+var _filterManager = __webpack_require__(27);
 
 var _filterManager2 = _interopRequireDefault(_filterManager);
 
@@ -27731,7 +28757,7 @@ exports.default = FilterControlsComponent;
 FilterControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 130 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27848,7 +28874,7 @@ exports.default = CategoryDropdownOverlayComponent;
 CategoryDropdownOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 131 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27864,11 +28890,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _focusControlsComponent = __webpack_require__(132);
+var _focusControlsComponent = __webpack_require__(135);
 
 var _focusControlsComponent2 = _interopRequireDefault(_focusControlsComponent);
 
-var _focusCanvasControlsComponent = __webpack_require__(133);
+var _focusCanvasControlsComponent = __webpack_require__(136);
 
 var _focusCanvasControlsComponent2 = _interopRequireDefault(_focusCanvasControlsComponent);
 
@@ -28067,7 +29093,7 @@ FocusControls.requiredOperations = ['radial-focus', 'mirrored-focus', 'linear-fo
 exports.default = FocusControls;
 
 /***/ }),
-/* 132 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28349,7 +29375,7 @@ exports.default = FocusControlsComponent;
 FocusControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 133 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28367,11 +29393,11 @@ var _canvasControlsComponent = __webpack_require__(10);
 
 var _canvasControlsComponent2 = _interopRequireDefault(_canvasControlsComponent);
 
-var _linearFocusCanvasControlsComponent = __webpack_require__(134);
+var _linearFocusCanvasControlsComponent = __webpack_require__(137);
 
 var _linearFocusCanvasControlsComponent2 = _interopRequireDefault(_linearFocusCanvasControlsComponent);
 
-var _radialFocusCanvasControlsComponent = __webpack_require__(135);
+var _radialFocusCanvasControlsComponent = __webpack_require__(138);
 
 var _radialFocusCanvasControlsComponent2 = _interopRequireDefault(_radialFocusCanvasControlsComponent);
 
@@ -28452,7 +29478,7 @@ exports.default = FocusCanvasControlsComponent;
 FocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 134 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28821,7 +29847,7 @@ exports.default = LinearFocusCanvasControlsComponent;
 LinearFocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 135 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29182,7 +30208,7 @@ exports.default = RadialFocusCanvasControlsComponent;
 RadialFocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 136 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29200,11 +30226,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stickerControlsComponent = __webpack_require__(137);
+var _stickerControlsComponent = __webpack_require__(140);
 
 var _stickerControlsComponent2 = _interopRequireDefault(_stickerControlsComponent);
 
-var _stickerCanvasControlsComponent = __webpack_require__(139);
+var _stickerCanvasControlsComponent = __webpack_require__(142);
 
 var _stickerCanvasControlsComponent2 = _interopRequireDefault(_stickerCanvasControlsComponent);
 
@@ -29413,7 +30439,7 @@ StickerControls.getPreloadAssets = _controls2.default.getPreloadAssets;
 exports.default = StickerControls;
 
 /***/ }),
-/* 137 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29439,7 +30465,7 @@ var _scrollbarComponent = __webpack_require__(2);
 
 var _scrollbarComponent2 = _interopRequireDefault(_scrollbarComponent);
 
-var _categoryDropdownComponent = __webpack_require__(44);
+var _categoryDropdownComponent = __webpack_require__(45);
 
 var _categoryDropdownComponent2 = _interopRequireDefault(_categoryDropdownComponent);
 
@@ -29451,7 +30477,7 @@ var _stickerManager = __webpack_require__(11);
 
 var _stickerManager2 = _interopRequireDefault(_stickerManager);
 
-var _stickerItemComponent = __webpack_require__(138);
+var _stickerItemComponent = __webpack_require__(141);
 
 var _stickerItemComponent2 = _interopRequireDefault(_stickerItemComponent);
 
@@ -29992,7 +31018,7 @@ exports.default = StickerOverviewControlsComponent;
 StickerOverviewControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 138 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30151,7 +31177,7 @@ var StickerOverviewControlsComponent = function (_BaseComponent) {
 exports.default = StickerOverviewControlsComponent;
 
 /***/ }),
-/* 139 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30169,7 +31195,7 @@ var _spritesCanvasControlsComponent = __webpack_require__(14);
 
 var _spritesCanvasControlsComponent2 = _interopRequireDefault(_spritesCanvasControlsComponent);
 
-var _stickerControlsOverlayComponent = __webpack_require__(143);
+var _stickerControlsOverlayComponent = __webpack_require__(146);
 
 var _stickerControlsOverlayComponent2 = _interopRequireDefault(_stickerControlsOverlayComponent);
 
@@ -30232,7 +31258,7 @@ exports.default = StickerCanvasControlsComponent;
 StickerCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 140 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30252,7 +31278,7 @@ var _draggableComponent = __webpack_require__(5);
 
 var _draggableComponent2 = _interopRequireDefault(_draggableComponent);
 
-var _itemComponent = __webpack_require__(27);
+var _itemComponent = __webpack_require__(28);
 
 var _itemComponent2 = _interopRequireDefault(_itemComponent);
 
@@ -30837,7 +31863,7 @@ exports.default = TextItemComponent;
 TextItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 141 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30855,7 +31881,7 @@ var _draggableComponent = __webpack_require__(5);
 
 var _draggableComponent2 = _interopRequireDefault(_draggableComponent);
 
-var _itemComponent = __webpack_require__(27);
+var _itemComponent = __webpack_require__(28);
 
 var _itemComponent2 = _interopRequireDefault(_itemComponent);
 
@@ -31471,7 +32497,7 @@ exports.default = StickerItemComponent;
 StickerItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 142 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31487,7 +32513,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _itemComponent = __webpack_require__(27);
+var _itemComponent = __webpack_require__(28);
 
 var _itemComponent2 = _interopRequireDefault(_itemComponent);
 
@@ -31621,7 +32647,7 @@ exports.default = BrushItemComponent;
 BrushItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 143 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31767,7 +32793,7 @@ exports.default = StickerControlsOverlayComponent;
 StickerControlsOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 144 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31785,15 +32811,15 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _textCanvasControlsComponent = __webpack_require__(145);
+var _textCanvasControlsComponent = __webpack_require__(148);
 
 var _textCanvasControlsComponent2 = _interopRequireDefault(_textCanvasControlsComponent);
 
-var _textControlsComponent = __webpack_require__(147);
+var _textControlsComponent = __webpack_require__(150);
 
 var _textControlsComponent2 = _interopRequireDefault(_textControlsComponent);
 
-var _fontManager = __webpack_require__(46);
+var _fontManager = __webpack_require__(15);
 
 var _fontManager2 = _interopRequireDefault(_fontManager);
 
@@ -32009,7 +33035,7 @@ TextControls.defaultOptions = {
 exports.default = TextControls;
 
 /***/ }),
-/* 145 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32029,7 +33055,7 @@ var _spritesCanvasControlsComponent = __webpack_require__(14);
 
 var _spritesCanvasControlsComponent2 = _interopRequireDefault(_spritesCanvasControlsComponent);
 
-var _textControlsOverlayComponent = __webpack_require__(146);
+var _textControlsOverlayComponent = __webpack_require__(149);
 
 var _textControlsOverlayComponent2 = _interopRequireDefault(_textControlsOverlayComponent);
 
@@ -32143,7 +33169,7 @@ exports.default = TextCanvasControlsComponent;
 TextCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 146 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32292,7 +33318,7 @@ exports.default = TextControlsOverlayComponent;
 TextControlsOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 147 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32316,7 +33342,7 @@ var _scrollbarComponent = __webpack_require__(2);
 
 var _scrollbarComponent2 = _interopRequireDefault(_scrollbarComponent);
 
-var _colorPickerComponent = __webpack_require__(28);
+var _colorPickerComponent = __webpack_require__(29);
 
 var _colorPickerComponent2 = _interopRequireDefault(_colorPickerComponent);
 
@@ -32324,11 +33350,11 @@ var _sliderOverlayComponent = __webpack_require__(6);
 
 var _sliderOverlayComponent2 = _interopRequireDefault(_sliderOverlayComponent);
 
-var _fontPreviewComponent = __webpack_require__(45);
+var _fontPreviewComponent = __webpack_require__(46);
 
 var _fontPreviewComponent2 = _interopRequireDefault(_fontPreviewComponent);
 
-var _fontComponent = __webpack_require__(152);
+var _fontComponent = __webpack_require__(155);
 
 var _fontComponent2 = _interopRequireDefault(_fontComponent);
 
@@ -32952,7 +33978,7 @@ exports.default = TextControlsComponent;
 TextControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 148 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32968,15 +33994,15 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _alphaComponent = __webpack_require__(149);
+var _alphaComponent = __webpack_require__(152);
 
 var _alphaComponent2 = _interopRequireDefault(_alphaComponent);
 
-var _saturationComponent = __webpack_require__(150);
+var _saturationComponent = __webpack_require__(153);
 
 var _saturationComponent2 = _interopRequireDefault(_saturationComponent);
 
-var _hueComponent = __webpack_require__(151);
+var _hueComponent = __webpack_require__(154);
 
 var _hueComponent2 = _interopRequireDefault(_hueComponent);
 
@@ -33147,7 +34173,7 @@ exports.default = ColorPickerOverlayComponent;
 ColorPickerOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 149 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33399,7 +34425,7 @@ exports.default = AlphaComponent;
 AlphaComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 150 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33691,7 +34717,7 @@ exports.default = SaturationComponent;
 SaturationComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 151 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33962,7 +34988,7 @@ exports.default = HueComponent;
 HueComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 152 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33980,7 +35006,7 @@ var _scrollbarComponent = __webpack_require__(2);
 
 var _scrollbarComponent2 = _interopRequireDefault(_scrollbarComponent);
 
-var _fontPreviewComponent = __webpack_require__(45);
+var _fontPreviewComponent = __webpack_require__(46);
 
 var _fontPreviewComponent2 = _interopRequireDefault(_fontPreviewComponent);
 
@@ -34112,7 +35138,7 @@ exports.default = FontComponent;
 FontComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 153 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34169,7 +35195,7 @@ Font.prototype.availableOptions = {
 };
 
 /***/ }),
-/* 154 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34187,11 +35213,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _brushControlsComponent = __webpack_require__(155);
+var _brushControlsComponent = __webpack_require__(158);
 
 var _brushControlsComponent2 = _interopRequireDefault(_brushControlsComponent);
 
-var _brushCanvasControlsComponent = __webpack_require__(157);
+var _brushCanvasControlsComponent = __webpack_require__(160);
 
 var _brushCanvasControlsComponent2 = _interopRequireDefault(_brushCanvasControlsComponent);
 
@@ -34374,7 +35400,7 @@ BrushControls.defaultOptions = {
 exports.default = BrushControls;
 
 /***/ }),
-/* 155 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34402,11 +35428,11 @@ var _scrollbarComponent = __webpack_require__(2);
 
 var _scrollbarComponent2 = _interopRequireDefault(_scrollbarComponent);
 
-var _colorPickerComponent = __webpack_require__(28);
+var _colorPickerComponent = __webpack_require__(29);
 
 var _colorPickerComponent2 = _interopRequireDefault(_colorPickerComponent);
 
-var _presetPreviewItemComponent = __webpack_require__(156);
+var _presetPreviewItemComponent = __webpack_require__(159);
 
 var _presetPreviewItemComponent2 = _interopRequireDefault(_presetPreviewItemComponent);
 
@@ -34684,7 +35710,7 @@ exports.default = BrushControlsComponent;
 BrushControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 156 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34828,7 +35854,7 @@ exports.default = PresetPreviewItemComponent;
 PresetPreviewItemComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 157 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35243,7 +36269,7 @@ exports.default = BrushCanvasControlsComponent;
 BrushCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 158 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35259,11 +36285,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _selectiveBlurControlsComponent = __webpack_require__(159);
+var _selectiveBlurControlsComponent = __webpack_require__(162);
 
 var _selectiveBlurControlsComponent2 = _interopRequireDefault(_selectiveBlurControlsComponent);
 
-var _selectiveBlurCanvasControlsComponent = __webpack_require__(160);
+var _selectiveBlurCanvasControlsComponent = __webpack_require__(163);
 
 var _selectiveBlurCanvasControlsComponent2 = _interopRequireDefault(_selectiveBlurCanvasControlsComponent);
 
@@ -35433,7 +36459,7 @@ SelectiveBlurControls.requiredOperations = ['selective-blur'];
 exports.default = SelectiveBlurControls;
 
 /***/ }),
-/* 159 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35685,7 +36711,7 @@ exports.default = BrushControlsComponent;
 BrushControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 160 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36085,7 +37111,7 @@ exports.default = BrushCanvasControlsComponent;
 BrushCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 161 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36101,7 +37127,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _frameControlsComponent = __webpack_require__(162);
+var _frameControlsComponent = __webpack_require__(165);
 
 var _frameControlsComponent2 = _interopRequireDefault(_frameControlsComponent);
 
@@ -36263,7 +37289,7 @@ FrameControls.getPreloadAssets = _controls2.default.getPreloadAssets;
 exports.default = FrameControls;
 
 /***/ }),
-/* 162 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36293,11 +37319,11 @@ var _frameManager = __webpack_require__(48);
 
 var _frameManager2 = _interopRequireDefault(_frameManager);
 
-var _frameItemComponent = __webpack_require__(163);
+var _frameItemComponent = __webpack_require__(166);
 
 var _frameItemComponent2 = _interopRequireDefault(_frameItemComponent);
 
-var _colorPickerComponent = __webpack_require__(28);
+var _colorPickerComponent = __webpack_require__(29);
 
 var _colorPickerComponent2 = _interopRequireDefault(_colorPickerComponent);
 
@@ -36632,7 +37658,7 @@ exports.default = FrameOverviewControlsComponent;
 FrameOverviewControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 163 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36799,7 +37825,7 @@ var FrameItemComponent = function (_BaseComponent) {
 exports.default = FrameItemComponent;
 
 /***/ }),
-/* 164 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36908,7 +37934,7 @@ var EditorFeatures = function () {
 exports.default = EditorFeatures;
 
 /***/ }),
-/* 165 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37129,7 +38155,7 @@ var EditorZoom = function (_EventEmitter) {
 exports.default = EditorZoom;
 
 /***/ }),
-/* 166 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37285,7 +38311,7 @@ var EditorHistory = function (_EventEmitter) {
 exports.default = EditorHistory;
 
 /***/ }),
-/* 167 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37365,14 +38391,14 @@ exports.default = Serialization;
 Serialization.version = '1.0.0';
 
 /***/ }),
-/* 168 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(169);
+module.exports = __webpack_require__(172);
 
 
 /***/ }),
-/* 169 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -37397,7 +38423,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(170);
+module.exports = __webpack_require__(173);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -37413,7 +38439,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 170 */
+/* 173 */
 /***/ (function(module, exports) {
 
 /**
@@ -38146,7 +39172,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 171 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38258,7 +39284,7 @@ var BrushManager = function () {
 exports.default = BrushManager;
 
 /***/ }),
-/* 172 */
+/* 175 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38377,7 +39403,7 @@ var GoogleFontLoader = function (_BaseFontLoader) {
 exports.default = GoogleFontLoader;
 
 /***/ }),
-/* 173 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38402,7 +39428,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontRuler = __webpack_require__(174);
+var _fontRuler = __webpack_require__(177);
 
 var _fontRuler2 = _interopRequireDefault(_fontRuler);
 
@@ -38410,7 +39436,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(38);
+var now = typeof window !== 'undefined' && window.performance && window.performance.now ? window.performance.now.bind(window.performance) : __webpack_require__(39);
 
 var OBSERVE_INTERVAL = 50;
 var OBSERVE_TIMEOUT = 5000;
@@ -38462,7 +39488,7 @@ var FontObserver = function () {
 exports.default = FontObserver;
 
 /***/ }),
-/* 174 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38580,7 +39606,7 @@ var FontRuler = function () {
 exports.default = FontRuler;
 
 /***/ }),
-/* 175 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38658,7 +39684,7 @@ var FileFontLoader = function (_BaseFontLoader) {
 exports.default = FileFontLoader;
 
 /***/ }),
-/* 176 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38738,7 +39764,7 @@ exports.default = Serialization;
 Serialization.version = '1.0.1';
 
 /***/ }),
-/* 177 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38763,11 +39789,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _serializer = __webpack_require__(30);
+var _serializer = __webpack_require__(31);
 
 var _serializer2 = _interopRequireDefault(_serializer);
 
-var _deserializer = __webpack_require__(31);
+var _deserializer = __webpack_require__(32);
 
 var _deserializer2 = _interopRequireDefault(_deserializer);
 
@@ -38818,7 +39844,7 @@ exports.default = Serialization;
 Serialization.version = '2.0.0';
 
 /***/ }),
-/* 178 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38909,192 +39935,6 @@ var OverlayManager = function () {
 exports.default = OverlayManager;
 
 /***/ }),
-/* 179 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var _serializer = __webpack_require__(180);
-
-var _serializer2 = _interopRequireDefault(_serializer);
-
-var _deserializer = __webpack_require__(181);
-
-var _deserializer2 = _interopRequireDefault(_deserializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Serialization = function () {
-  function Serialization(editor) {
-    _classCallCheck(this, Serialization);
-
-    this._editor = editor;
-  }
-
-  /**
-   * Serializes the editor state
-   * @return {Promise}
-   */
-
-
-  _createClass(Serialization, [{
-    key: 'serialize',
-    value: function serialize() {
-      var serializer = new _serializer2.default(this._editor);
-      return serializer.serialize.apply(serializer, arguments);
-    }
-
-    /**
-     * Deserializes the given data
-     * @param  {Object} data
-     * @return {Promise}
-     */
-
-  }, {
-    key: 'deserialize',
-    value: function deserialize(data) {
-      var deserializer = new _deserializer2.default(this._editor, data);
-      return deserializer.deserialize();
-    }
-  }]);
-
-  return Serialization;
-}();
-
-exports.default = Serialization;
-
-
-Serialization.version = '2.0.1';
-
-/***/ }),
-/* 180 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _serializer = __webpack_require__(30);
-
-var _serializer2 = _interopRequireDefault(_serializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var v201Serializer = function (_PreviousSerializer) {
-  _inherits(v201Serializer, _PreviousSerializer);
-
-  function v201Serializer() {
-    _classCallCheck(this, v201Serializer);
-
-    return _possibleConstructorReturn(this, (v201Serializer.__proto__ || Object.getPrototypeOf(v201Serializer)).apply(this, arguments));
-  }
-
-  return v201Serializer;
-}(_serializer2.default);
-
-exports.default = v201Serializer;
-
-
-v201Serializer.version = '2.0.0';
-
-/***/ }),
-/* 181 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _deserializer = __webpack_require__(31);
-
-var _deserializer2 = _interopRequireDefault(_deserializer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
-
-var v201Deserializer = function (_PreviousDeserializer) {
-  _inherits(v201Deserializer, _PreviousDeserializer);
-
-  function v201Deserializer() {
-    _classCallCheck(this, v201Deserializer);
-
-    return _possibleConstructorReturn(this, (v201Deserializer.__proto__ || Object.getPrototypeOf(v201Deserializer)).apply(this, arguments));
-  }
-
-  return v201Deserializer;
-}(_deserializer2.default);
-
-exports.default = v201Deserializer;
-
-
-v201Deserializer.version = '2.0.1';
-
-/***/ }),
 /* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -39172,7 +40012,7 @@ var Serialization = function () {
 exports.default = Serialization;
 
 
-Serialization.version = '3.0.0';
+Serialization.version = '2.0.1';
 
 /***/ }),
 /* 183 */
@@ -39185,13 +40025,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _globals = __webpack_require__(0);
-
-var _serializer = __webpack_require__(30);
+var _serializer = __webpack_require__(31);
 
 var _serializer2 = _interopRequireDefault(_serializer);
 
@@ -39216,296 +40050,22 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var v300Serializer = function (_PreviousSerializer) {
-  _inherits(v300Serializer, _PreviousSerializer);
+var v201Serializer = function (_PreviousSerializer) {
+  _inherits(v201Serializer, _PreviousSerializer);
 
-  function v300Serializer() {
-    _classCallCheck(this, v300Serializer);
+  function v201Serializer() {
+    _classCallCheck(this, v201Serializer);
 
-    return _possibleConstructorReturn(this, (v300Serializer.__proto__ || Object.getPrototypeOf(v300Serializer)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (v201Serializer.__proto__ || Object.getPrototypeOf(v201Serializer)).apply(this, arguments));
   }
 
-  _createClass(v300Serializer, [{
-    key: 'serialize',
-
-    /**
-     * Serializes the editor state
-     * @param {Object} options = {}
-     * @return {Promise}
-     */
-    value: function serialize() {
-      var _this2 = this;
-
-      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-      return _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), 'serialize', this).call(this, options).then(function (data) {
-        data.meta = {
-          platform: 'html5',
-          version: _this2._editor.getSDK().version,
-          createdAt: _globals.SDKUtils.ISODateString(new Date())
-        };
-        data.image = data.inputImage;
-        delete data.inputImage;
-        return data;
-      });
-    }
-
-    /**
-     * Serializes the given sticker
-     * @param  {PhotoEditorSDK.Operation} operation
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation.StickerSprite} sprite
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeSticker',
-    value: function _serializeSticker(operation, sprite) {
-      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeSticker', this).call(this, operation, sprite);
-      response.options.alpha = sprite.getAlpha();
-
-      if (response.options.tintColor) {
-        response.options.tintColor = {
-          rgba: response.options.tintColor
-        };
-      }
-
-      return response;
-    }
-
-    /**
-     * Serializes the given text sprite
-     * @param  {PhotoEditorSDK.Operation} operation
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation.TextSprite} sprite
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeText',
-    value: function _serializeText(operation, sprite) {
-      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeText', this).call(this, operation, sprite);
-      response.options.color = {
-        rgba: response.options.color
-      };
-      response.options.backgroundColor = {
-        rgba: response.options.backgroundColor
-      };
-      response.options.flipHorizontally = false;
-      response.options.flipVertically = false;
-      delete response.options.fontWeight;
-      return response;
-    }
-
-    /**
-     * Serializes the given path
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation.BrushSprite.Path} path
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializePath',
-    value: function _serializePath(path) {
-      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializePath', this).call(this, path);
-
-      delete response.hardness;
-      delete response.size;
-      delete response.color;
-
-      var brush = path.getBrush();
-      response.brush = brush.serializeOptions(['identifier', 'size', 'color'], true);
-      if (typeof response.brush.identifier === 'undefined') {
-        delete response.brush.identifier;
-      }
-      response.brush.color = {
-        rgba: response.brush.color
-      };
-
-      var hardness = brush.getOption('hardness');
-      if (hardness !== 'undefined') {
-        response.brush.hardness = hardness;
-      }
-      return response;
-    }
-
-    /**
-     * Serializes the frame operation
-     * @param {PhotoEditorSDK.Operation.FrameOperation} operation
-     * @param {PhotoEditorSDK.Operation[]} operations
-     * @private
-     */
-
-  }, {
-    key: '_serializeFrameOperation',
-    value: function _serializeFrameOperation(operation, operations) {
-      _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeFrameOperation', this).call(this, operation, operations);
-
-      // Find sprite operation and frame sprite from serialized data
-      var spriteOperations = operations.filter(function (o) {
-        return o.type === 'sprite';
-      });
-      var spriteOperation = void 0;
-      if (spriteOperations.length) {
-        spriteOperation = spriteOperations.pop();
-        var frame = spriteOperation.options.sprites.filter(function (s) {
-          return s.type === 'frame';
-        })[0];
-
-        var tintColor = operation.getTintColor();
-        if (!tintColor.equals(new _globals.Color(1, 1, 1, 0))) {
-          frame.options.tintColor = {
-            rgba: operation.serializeOption('tintColor', true)
-          };
-        }
-
-        var options = operation.serializeOptions(['scale', 'alpha'], true);
-        frame.options = _globals.SDKUtils.extend(frame.options, options);
-        frame.options.size = frame.options.scale;
-        delete frame.options.scale;
-      }
-    }
-
-    /**
-     * Serializes the given transform operation
-     * @param  {PhotoEditorSDK.Operation.TransformOperation} operation
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeTransformOperation',
-    value: function _serializeTransformOperation(operation) {
-      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeTransformOperation', this).call(this, operation);
-
-      if (operation._ratio) {
-        response.options.meta = {
-          identifier: operation._ratio.identifier
-        };
-      }
-      delete response.options.scale;
-
-      return response;
-    }
-
-    /**
-     * Serializes the given adjustments operation
-     * @param  {PhotoEditorSDK.Operations.AdjustmentsOperation} operation
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeAdjustmentsOperation',
-    value: function _serializeAdjustmentsOperation(operation) {
-      var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeAdjustmentsOperation', this).call(this, operation);
-
-      var availableOptions = operation.availableOptions;
-
-      var option = availableOptions.gamma;
-      var value = operation.getGamma();
-      var minValue = option.minValue,
-          midValue = option.midValue,
-          maxValue = option.maxValue;
-
-      response.options.gamma = value <= midValue ? (value - minValue) / (midValue - minValue) - 1 : (value - midValue) / (maxValue - midValue);
-      return response;
-    }
-
-    /**
-     * Serializes the given operation
-     * @param  {PhotoEditorSDK.Operation} operation
-     * @param  {PhotoEditorSDK.Operation[]} operations
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeOperation',
-    value: function _serializeOperation(operation, operations) {
-      switch (operation.constructor.identifier) {
-        case 'mirrored-focus':
-          return this._serializeMirroredFocusOperation(operation);
-        case 'linear-focus':
-          return this._serializeLinearFocusOperation(operation);
-        case 'blur':
-          return this._serializeBlurOperation(operation);
-        default:
-          return _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeOperation', this).call(this, operation, operations);
-      }
-    }
-
-    /**
-     * Serializes the given mirrored focus operation
-     * @param  {PhotoEditorSDK.Operations.MirroredFocusOperation} operation
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeMirroredFocusOperation',
-    value: function _serializeMirroredFocusOperation(operation) {
-      return {
-        type: 'focus',
-        options: {
-          type: 'mirrored',
-          options: operation.serializeOptions(['start', 'end', 'blurRadius', 'size', 'gradientSize'], true)
-        }
-      };
-    }
-
-    /**
-     * Serializes the given linear focus operation
-     * @param  {PhotoEditorSDK.Operations.LinearFocusOperation} operation
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeLinearFocusOperation',
-    value: function _serializeLinearFocusOperation(operation) {
-      var options = operation.serializeOptions(['controlPoint1', 'controlPoint2', 'blurRadius'], true);
-      options.start = options.controlPoint1;
-      delete options.controlPoint1;
-      options.end = options.controlPoint2;
-      delete options.controlPoint2;
-
-      return {
-        type: 'focus',
-        options: {
-          type: 'linear',
-          options: options
-        }
-      };
-    }
-
-    /**
-     * Serializes the given blur operation
-     * @param  {PhotoEditorSDK.Operations.BlurOperation} operation
-     * @return {Object}
-     * @private
-     */
-
-  }, {
-    key: '_serializeBlurOperation',
-    value: function _serializeBlurOperation(operation) {
-      return {
-        type: 'focus',
-        options: {
-          type: 'gaussian',
-          options: operation.serializeOptions(['blurRadius'], true)
-        }
-      };
-    }
-  }]);
-
-  return v300Serializer;
+  return v201Serializer;
 }(_serializer2.default);
 
-exports.default = v300Serializer;
+exports.default = v201Serializer;
 
 
-v300Serializer.version = '3.0.0';
+v201Serializer.version = '2.0.0';
 
 /***/ }),
 /* 184 */
@@ -39518,23 +40078,9 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _globals = __webpack_require__(0);
-
-var _deserializer = __webpack_require__(31);
+var _deserializer = __webpack_require__(32);
 
 var _deserializer2 = _interopRequireDefault(_deserializer);
-
-var _stickerManager = __webpack_require__(11);
-
-var _stickerManager2 = _interopRequireDefault(_stickerManager);
-
-var _imageLoader = __webpack_require__(22);
-
-var _imageLoader2 = _interopRequireDefault(_imageLoader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -39557,369 +40103,386 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var Brush = void 0;
-if (typeof _globals.SDK.Operations.SpriteOperation !== 'undefined') {
-  Brush = _globals.SDK.Operations.SpriteOperation.BrushSprite.Brush;
-}
+var v201Deserializer = function (_PreviousDeserializer) {
+  _inherits(v201Deserializer, _PreviousDeserializer);
 
-var v300Deserializer = function (_PreviousDeserializer) {
-  _inherits(v300Deserializer, _PreviousDeserializer);
+  function v201Deserializer() {
+    _classCallCheck(this, v201Deserializer);
 
-  function v300Deserializer() {
-    _classCallCheck(this, v300Deserializer);
-
-    return _possibleConstructorReturn(this, (v300Deserializer.__proto__ || Object.getPrototypeOf(v300Deserializer)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (v201Deserializer.__proto__ || Object.getPrototypeOf(v201Deserializer)).apply(this, arguments));
   }
 
-  _createClass(v300Deserializer, [{
-    key: '_deserializeSticker',
+  return v201Deserializer;
+}(_deserializer2.default);
 
-    /**
-     * Deserializes the given sticker for the given operation
-     * @param  {Object} operation
-     * @param  {Object} sprite
-     * @return {PhotoEditorSDK.Operations.SpriteOperation.StickerSprite}
-     * @private
-     */
-    value: function _deserializeSticker(operation, sprite) {
-      var SpriteOperation = _globals.SDK.Operations.SpriteOperation;
-      var options = sprite.options;
+exports.default = v201Deserializer;
 
-      var sticker = this._stickerManager.getStickerByIdentifier(options.identifier);
-      if (!sticker) {
-        _globals.Log.warn('Deserializer', 'Unknown sticker `' + options.identifier + '`. Skipping sprite.');
-        return Promise.resolve();
-      }
-      var url = _stickerManager2.default.getURLForSticker(sticker, 'base');
-      var resolvedUrl = this._editor.getUI().getAssetPath(url);
-      var inputDimensions = operation.getInputDimensions(false);
-      return _imageLoader2.default.load(resolvedUrl).then(function (image) {
-        var adjustments = SpriteOperation.StickerSprite.prototype.availableOptions.adjustments.structure;
-        var rotation = options.rotation,
-            flipHorizontally = options.flipHorizontally,
-            flipVertically = options.flipVertically;
 
-        var stickerOptions = {
-          identifier: options.identifier,
-          image: image,
-          position: _globals.Vector2.fromObject(options.position),
-          dimensions: _globals.Vector2.fromObject(options.dimensions).multiply(inputDimensions.min()),
-          rotation: rotation || 0,
-          flipHorizontally: flipHorizontally,
-          flipVertically: flipVertically,
-          adjustments: {}
-        };
+v201Deserializer.version = '2.0.1';
 
-        if (typeof options.adjustments !== 'undefined') {
-          ['brightness', 'contrast', 'saturation'].forEach(function (option) {
-            if (typeof options.adjustments[option] !== 'undefined') {
-              stickerOptions.adjustments[option] = options.adjustments[option] + adjustments[option].default;
-            }
-          });
-        }
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
 
-        if (typeof options.tintColor !== 'undefined' && typeof sticker.tintMode !== 'undefined') {
-          stickerOptions.tintColor = _globals.Color.fromArray(options.tintColor.rgba);
-          stickerOptions.tintMode = sticker.tintMode;
-        }
+"use strict";
 
-        if (typeof options.alpha !== 'undefined') {
-          stickerOptions.alpha = options.alpha;
-        }
 
-        return operation.createSticker(stickerOptions);
-      });
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var _serializer = __webpack_require__(56);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+var _deserializer = __webpack_require__(57);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Serialization = function () {
+  function Serialization(editor) {
+    _classCallCheck(this, Serialization);
+
+    this._editor = editor;
+  }
+
+  /**
+   * Serializes the editor state
+   * @return {Promise}
+   */
+
+
+  _createClass(Serialization, [{
+    key: 'serialize',
+    value: function serialize() {
+      var serializer = new _serializer2.default(this._editor);
+      return serializer.serialize.apply(serializer, arguments);
     }
 
     /**
-     * Deserializes the given transform operation
-     * @param  {Object} operationData
+     * Deserializes the given data
+     * @param  {Object} data
      * @return {Promise}
-     * @private
      */
 
   }, {
-    key: '_deserializeTransformOperation',
-    value: function _deserializeTransformOperation(operationData) {
-      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeTransformOperation', this).call(this, operationData).then(function (operation) {
-        if (!operation) return;
+    key: 'deserialize',
+    value: function deserialize(data) {
+      var deserializer = new _deserializer2.default(this._editor, data);
+      return deserializer.deserialize();
+    }
+  }]);
 
-        // TODO: Get correct ratio
-        operation._ratio = null;
-        return operation;
-      });
+  return Serialization;
+}();
+
+exports.default = Serialization;
+
+
+Serialization.version = '3.0.0';
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var _serializer = __webpack_require__(187);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+var _deserializer = __webpack_require__(188);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Serialization = function () {
+  function Serialization(editor) {
+    _classCallCheck(this, Serialization);
+
+    this._editor = editor;
+  }
+
+  /**
+   * Serializes the editor state
+   * @return {Promise}
+   */
+
+
+  _createClass(Serialization, [{
+    key: 'serialize',
+    value: function serialize() {
+      var serializer = new _serializer2.default(this._editor);
+      return serializer.serialize.apply(serializer, arguments);
     }
 
     /**
-     * Deserializes the input image (if present)
+     * Deserializes the given data
+     * @param  {Object} data
      * @return {Promise}
-     * @private
      */
 
   }, {
-    key: '_deserializeInputImage',
-    value: function _deserializeInputImage() {
-      var _this2 = this;
-
-      var _data$image = this._data.image,
-          data = _data$image.data,
-          type = _data$image.type,
-          uri = _data$image.uri;
-
-
-      if (data && type) {
-        uri = 'data:' + type + ';base64,' + data;
-      }
-
-      if (uri) {
-        return _imageLoader2.default.load(uri).then(function (image) {
-          _this2._editor.setImage(image);
-        });
-      } else {
-        return Promise.resolve();
-      }
+    key: 'deserialize',
+    value: function deserialize(data) {
+      var deserializer = new _deserializer2.default(this._editor, data);
+      return deserializer.deserialize();
     }
+  }]);
 
-    /**
-     * Deserializes the given adjustments operation
-     * @param  {Object} operationData
-     * @return {Promise}
-     * @private
-     */
+  return Serialization;
+}();
 
-  }, {
-    key: '_deserializeAdjustmentsOperation',
-    value: function _deserializeAdjustmentsOperation(operationData) {
-      var AdjustmentsOperation = _globals.SDK.Operations.AdjustmentsOperation;
-
-      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeAdjustmentsOperation', this).call(this, operationData).then(function (operation) {
-        if (!operation) return null;
-
-        var options = operationData.options;
-
-        if (typeof options.gamma !== 'undefined') {
-          var _AdjustmentsOperation = AdjustmentsOperation.prototype.availableOptions.gamma,
-              minValue = _AdjustmentsOperation.minValue,
-              midValue = _AdjustmentsOperation.midValue,
-              maxValue = _AdjustmentsOperation.maxValue;
-
-          operation.setGamma(options.gamma < 0 ? midValue + (midValue - minValue) * options.gamma : midValue + (maxValue - midValue) * options.gamma);
-        }
-        return operation;
-      });
-    }
-
-    /**
-     * Deserializes the given focus operation
-     * @param  {Object} operationData
-     * @return {Promise}
-     * @private
-     */
-
-  }, {
-    key: '_deserializeFocusOperation',
-    value: function _deserializeFocusOperation(operationData) {
-      var options = operationData.options.options;
-
-      switch (operationData.options.type) {
-        case 'radial':
-          return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeFocusOperation', this).call(this, operationData);
-        case 'linear':
-          {
-            var start = options.start,
-                end = options.end,
-                blurRadius = options.blurRadius;
-
-            return Promise.resolve(this._editor.operations.getOrCreate('linear-focus', {
-              controlPoint1: _globals.Vector2.fromObject(start),
-              controlPoint2: _globals.Vector2.fromObject(end),
-              blurRadius: blurRadius
-            }));
-          }
-        case 'mirrored':
-          {
-            var _start = options.start,
-                _end = options.end,
-                size = options.size,
-                gradientSize = options.gradientSize,
-                _blurRadius = options.blurRadius;
-
-            return Promise.resolve(this._editor.operations.getOrCreate('mirrored-focus', {
-              start: _globals.Vector2.fromObject(_start),
-              end: _globals.Vector2.fromObject(_end),
-              size: size,
-              gradientSize: gradientSize,
-              blurRadius: _blurRadius
-            }));
-          }
-        case 'gaussian':
-          {
-            var _blurRadius2 = options.blurRadius;
-
-            return Promise.resolve(this._editor.operations.getOrCreate('blur', {
-              blurRadius: _blurRadius2
-            }));
-          }
-      }
-    }
-
-    /**
-     * Deserializes the given text for the given operation
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation} operation
-     * @param  {Object} text
-     * @return {PhotoEditorSDK.Operations.SpriteOperation.TextSprite}
-     * @private
-     */
-
-  }, {
-    key: '_deserializeText',
-    value: function _deserializeText(operation, text) {
-      var options = text.options;
-      var fontSize = options.fontSize,
-          lineHeight = options.lineHeight,
-          fontIdentifier = options.fontIdentifier,
-          alignment = options.alignment,
-          rotation = options.rotation,
-          maxWidth = options.maxWidth,
-          color = options.color,
-          backgroundColor = options.backgroundColor;
+exports.default = Serialization;
 
 
-      var fontLoader = this._ui.getFontLoader();
-      var variation = this._fontManager.getVariationByIdentifier(fontIdentifier);
-      if (!variation) {
-        variation = this._fontManager.getDefaultVariation();
-      } else {
-        fontLoader.setFonts([variation.getFont()]);
-      }
-      return fontLoader.load().then(function () {
-        var inputDimensions = operation.getInputDimensions(false);
+Serialization.version = '3.1.0';
 
-        // For whatever reason, max width is relative to shortest side, while font size isn't
-        var fixedMaxWidth = maxWidth * inputDimensions.min() / inputDimensions.x;
-        return operation.createText({
-          fontSize: fontSize,
-          lineHeight: lineHeight,
-          fontFamily: variation.getFontFamily(),
-          fontWeight: variation.getFontWeight(),
-          fontIdentifier: variation.getIdentifier(),
-          textMetrics: variation.getTextMetrics(),
-          alignment: alignment,
-          rotation: rotation,
-          maxWidth: fixedMaxWidth,
-          text: options.text,
-          color: _globals.Color.fromArray(color.rgba),
-          backgroundColor: _globals.Color.fromArray(backgroundColor.rgba),
-          position: _globals.Vector2.fromObject(options.position)
-        });
-      });
-    }
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
 
-    /**
-     * Creates a brush face with the given options
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation.Sprites.BrushSprite.Path} path
-     * @return {PhotoEditorSDK.Operations.SpriteOperation.Sprites.BrushSprite.Brush}
-     */
+"use strict";
 
-  }, {
-    key: '_createBrushForPath',
-    value: function _createBrushForPath(path) {
-      var _path$brush = path.brush,
-          identifier = _path$brush.identifier,
-          color = _path$brush.color,
-          size = _path$brush.size,
-          hardness = _path$brush.hardness;
 
-      var colorObject = _globals.Color.fromArray(color.rgba);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-      var brushOptions = {
-        color: colorObject,
-        size: size
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _globals = __webpack_require__(0);
+
+var _serializer = __webpack_require__(56);
+
+var _serializer2 = _interopRequireDefault(_serializer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var v310Serializer = function (_PreviousSerializer) {
+  _inherits(v310Serializer, _PreviousSerializer);
+
+  function v310Serializer() {
+    _classCallCheck(this, v310Serializer);
+
+    return _possibleConstructorReturn(this, (v310Serializer.__proto__ || Object.getPrototypeOf(v310Serializer)).apply(this, arguments));
+  }
+
+  _createClass(v310Serializer, [{
+    key: '_serializeTextDesign',
+    value: function _serializeTextDesign(operation, sprite) {
+      var options = sprite.serializeOptions(['position', 'rotation', 'flipHorizontally', 'flipVertically', 'text', 'color', 'width', 'seed', 'inverted'], true);
+
+      options.color = {
+        rgba: options.color
       };
 
-      if (typeof hardness !== 'undefined') {
-        brushOptions.hardness = hardness;
+      var layout = sprite.getLayout();
+
+      if (layout) {
+        options.identifier = layout.constructor.identifier;
       }
 
-      var rawBrush = this._brushManager.getBrushByIdentifier(identifier);
-      if (!rawBrush) {
-        rawBrush = this._brushManager.getFirstBrush();
-      }
-
-      if (rawBrush.prototype && rawBrush.prototype instanceof Brush) {
-        // Custom Brush instance, used for special brushes such as radial brush, which has
-        // an additional hardness option
-        var BrushClass = rawBrush;
-        return new BrushClass(brushOptions);
-      } else {
-        var _brush = _globals.SDKUtils.extend({}, rawBrush);
-        delete _brush.image;
-
-        var _BrushClass = function (_Brush) {
-          _inherits(_BrushClass, _Brush);
-
-          function _BrushClass() {
-            _classCallCheck(this, _BrushClass);
-
-            return _possibleConstructorReturn(this, (_BrushClass.__proto__ || Object.getPrototypeOf(_BrushClass)).apply(this, arguments));
-          }
-
-          return _BrushClass;
-        }(Brush);
-
-        _BrushClass.identifier = rawBrush.identifier;
-
-        // Plain JS object, used for simple image brushes
-        return new _BrushClass(_globals.SDKUtils.extend({}, _brush, brushOptions));
-      }
+      return {
+        type: 'textdesign',
+        options: options
+      };
     }
+  }]);
 
-    /**
-     * Deserializes the given frame sprite
-     * @param  {PhotoEditorSDK.Operations.SpriteOperation}
-     * @param  {Object} framespriteOperation
-     * @return {Promise}
-     * @private
-     */
+  return v310Serializer;
+}(_serializer2.default);
 
-  }, {
-    key: '_deserializeFrame',
-    value: function _deserializeFrame(spriteOperation, frame) {
-      var _this4 = this;
+exports.default = v310Serializer;
 
-      return _get(v300Deserializer.prototype.__proto__ || Object.getPrototypeOf(v300Deserializer.prototype), '_deserializeFrame', this).call(this, spriteOperation, frame).then(function () {
-        var frameOperation = _this4._editor.operations.get('frame');
 
-        var _frame$options = frame.options,
-            size = _frame$options.size,
-            alpha = _frame$options.alpha,
-            tintColor = _frame$options.tintColor;
+v310Serializer.version = '3.1.0';
 
-        var options = {};
-        if (typeof size !== 'undefined') {
-          options.scale = size;
-        }
-        if (typeof alpha !== 'undefined') {
-          options.alpha = alpha;
-        }
-        if (typeof tintColor !== 'undefined') {
-          options.tintColor = _globals.Color.fromArray(tintColor.rgba);
-        }
-        frameOperation.set(options);
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _globals = __webpack_require__(0);
+
+var _deserializer = __webpack_require__(57);
+
+var _deserializer2 = _interopRequireDefault(_deserializer);
+
+var _textDesignManager = __webpack_require__(58);
+
+var _textDesignManager2 = _interopRequireDefault(_textDesignManager);
+
+var _fontManager = __webpack_require__(15);
+
+var _fontManager2 = _interopRequireDefault(_fontManager);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
+var v310Deserializer = function (_PreviousDeserializer) {
+  _inherits(v310Deserializer, _PreviousDeserializer);
+
+  function v310Deserializer() {
+    _classCallCheck(this, v310Deserializer);
+
+    return _possibleConstructorReturn(this, (v310Deserializer.__proto__ || Object.getPrototypeOf(v310Deserializer)).apply(this, arguments));
+  }
+
+  _createClass(v310Deserializer, [{
+    key: '_deserializeTextDesign',
+    value: function _deserializeTextDesign(operation, sprite) {
+      var _this2 = this;
+
+      var options = sprite.options;
+      var position = options.position,
+          rotation = options.rotation,
+          flipHorizontally = options.flipHorizontally,
+          flipVertically = options.flipVertically,
+          text = options.text,
+          color = options.color,
+          width = options.width,
+          seed = options.seed,
+          inverted = options.inverted,
+          identifier = options.identifier;
+
+
+      var textDesignManager = new _textDesignManager2.default(this._ui, this._getOptions('textdesign'));
+      var fontManager = new _fontManager2.default(this._ui, { fonts: _globals.Constants.DEFAULTS.TEXT_DESIGN_FONTS, replaceFonts: true });
+      var AssetManager = operation.constructor.TextDesignSprite.AssetManager;
+      var fontLoader = this._ui.getFontLoader();
+
+      var Layout = textDesignManager.getLayoutByIdentifier(identifier);
+
+      var layout = new Layout();
+
+      fontLoader.setFonts(fontManager.getFonts());
+
+      AssetManager.setFonts(_extends({}, AssetManager.getFonts(), fontManager.getVariationsByIdentifier()));
+
+      return fontLoader.load().then(function () {
+        var images = layout.getImagePaths().map(function (path) {
+          return { path: path, fullPath: _this2._ui.getAssetPath(path), image: null };
+        });
+        return AssetManager.loadImages(images).then(function () {
+          layout.onImagesLoaded();
+
+          return operation.createTextDesign({
+            position: position,
+            rotation: rotation,
+            flipHorizontally: flipHorizontally,
+            flipVertically: flipVertically,
+            text: text,
+            color: _globals.Color.fromArray(color.rgba),
+            width: width,
+            seed: seed,
+            inverted: inverted,
+            layout: layout
+          });
+        });
       });
     }
   }]);
 
-  return v300Deserializer;
+  return v310Deserializer;
 }(_deserializer2.default);
 
-exports.default = v300Deserializer;
+exports.default = v310Deserializer;
 
 
-v300Deserializer.version = '3.0.0';
+v310Deserializer.version = '3.1.0';
 
 /***/ }),
-/* 185 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39935,19 +40498,19 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _loadingModalComponent = __webpack_require__(186);
+var _loadingModalComponent = __webpack_require__(190);
 
 var _loadingModalComponent2 = _interopRequireDefault(_loadingModalComponent);
 
-var _warningModalComponent = __webpack_require__(187);
+var _warningModalComponent = __webpack_require__(191);
 
 var _warningModalComponent2 = _interopRequireDefault(_warningModalComponent);
 
-var _errorModalComponent = __webpack_require__(188);
+var _errorModalComponent = __webpack_require__(192);
 
 var _errorModalComponent2 = _interopRequireDefault(_errorModalComponent);
 
-var _progressModalComponent = __webpack_require__(189);
+var _progressModalComponent = __webpack_require__(193);
 
 var _progressModalComponent2 = _interopRequireDefault(_progressModalComponent);
 
@@ -40106,7 +40669,7 @@ exports.default = ModalContainerComponent;
 ModalContainerComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 186 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40191,7 +40754,7 @@ LoadingModalComponent.propTypes = {
 LoadingModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 187 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40282,7 +40845,7 @@ WarningModalComponent.propTypes = {
 WarningModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 188 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40403,7 +40966,7 @@ ErrorModalComponent.propTypes = {
 ErrorModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 189 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40502,7 +41065,7 @@ ProgressModalComponent.propTypes = {
 ProgressModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 190 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40516,7 +41079,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _editor = __webpack_require__(42);
+var _editor = __webpack_require__(43);
 
 var _editor2 = _interopRequireDefault(_editor);
 
@@ -40672,7 +41235,7 @@ var Preloader = function (_EventEmitter) {
 exports.default = Preloader;
 
 /***/ }),
-/* 191 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40682,7 +41245,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _provider = __webpack_require__(192);
+var _provider = __webpack_require__(196);
 
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
@@ -40691,7 +41254,7 @@ Object.defineProperty(exports, 'Provider', {
   }
 });
 
-var _library = __webpack_require__(193);
+var _library = __webpack_require__(197);
 
 Object.defineProperty(exports, 'Library', {
   enumerable: true,
@@ -40700,7 +41263,7 @@ Object.defineProperty(exports, 'Library', {
   }
 });
 
-var _searchSuggestion = __webpack_require__(194);
+var _searchSuggestion = __webpack_require__(198);
 
 Object.defineProperty(exports, 'SearchSuggestion', {
   enumerable: true,
@@ -40709,7 +41272,7 @@ Object.defineProperty(exports, 'SearchSuggestion', {
   }
 });
 
-var _photo = __webpack_require__(195);
+var _photo = __webpack_require__(199);
 
 Object.defineProperty(exports, 'Photo', {
   enumerable: true,
@@ -40721,7 +41284,7 @@ Object.defineProperty(exports, 'Photo', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 192 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40815,7 +41378,7 @@ var Provider = function () {
 exports.default = Provider;
 
 /***/ }),
-/* 193 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40852,7 +41415,7 @@ var Library = function Library(data) {
 exports.default = Library;
 
 /***/ }),
-/* 194 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40890,7 +41453,7 @@ var SearchSuggestion = function SearchSuggestion(data) {
 exports.default = SearchSuggestion;
 
 /***/ }),
-/* 195 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40928,13 +41491,13 @@ var Photo = function Photo(library, data) {
 exports.default = Photo;
 
 /***/ }),
-/* 196 */
+/* 200 */
 /***/ (function(module, exports) {
 
 module.exports = {"controls":{"overview":{"filters":"Filter","adjustments":"Korrekturen","transform":"Zuschneiden","blur":"Weichzeichnen","frame":"Rahmen","sticker":"Sticker","text":"Text","brush":"Malen","focus":"Focus","selective-blur":"Sel. Unschärfe"},"text":{"foreground":"Vordergrund","background":"Hintergrund","size":"Größe","font":"Schriftart","alignment":"Ausrichtung","takeToFront":"Nach oben","defaultText":"Doppelklick zum Bearbeiten!"},"adjustments":{"brightness":"Helligkeit","contrast":"Kontrast","saturation":"Sättigung","gamma":"Gamma","exposure":"Belichtung","shadows":"Schatten","highlights":"Lichter","clarity":"Klarheit"},"transform":{"none":"Original","rotation":"Drehung"},"focus":{"none":"Original","radial":"Kreisförmig","mirrored":"Gespiegelt","blurRadius":"Radius"},"selectiveBlur":{"blurRadius":"Radius","size":"Dicke"},"filters":{"intensity":"Intensität","filters":{"identity":"Original"}},"sticker":{"flip":"Spiegeln","flip-v":"Spiegeln (V)","flip-h":"Spiegeln (H)","takeToFront":"Nach oben","categories":{"all":"Alle"}},"brush":{"size":"Dicke","color":"Farbe"},"frame":{"noFrame":"Kein Rahmen","scale":"Größe"}},"webcam":{"headline":"Mache ein Foto!"},"editor":{"headline":"Foto editieren","new":"Neu","backgroundImage":"Hintergrundbild","undo":"Rückgängig","export":"Speichern","zoom":"Zoom"},"splash":{"upload":{"button":"Lade ein Foto hoch","description":"Klicke hier, um ein Foto von deinem Rechner hochzuladen oder lade es per Drag-and-Drop hoch"},"webcam":{"headline":"Webcam","description":"Klicke hier, um ein Foto mit deiner Webcam zu machen"},"photoRoll":{"headline":"Kostenloses Bildmaterial","description":"Suche dir eines von tausenden Stock Photos aus."}},"photoRoll":{"search":{"placeholder":"Nach Fotos suchen","noSearchResults":"Entschuldigung, aber wir konnten für <strong>\"${query}\"</strong> leider keine Ergebnisse finden.","results":{"headline":"Suchergebnisse für \"${query}\""}}},"generic":{"back":"Zurück","cancel":"Abbrechen","color":"Farbe"},"loading":{"resizing":"Bild wird bearbeitet...","exporting":"Exportiere...","loading":"Lade..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Bild verkleinert","text":"Da dein Bild die maximale Größe von ${maxMegaPixels} Megapixeln überschreitet, wurde es auf ${width}x${height} Pixel verkleinert."},"imageResized_maxDimensions":{"title":"Bild verkleinert","text":"Aufgrund von Hardware-Beschränkungen wurde das Bild auf ${width}x${height} Pixel verkleinert."}},"errors":{"imageLoadFail":{"title":"Bild konnte nicht geladen werden","text":"Beim Laden des Bildes unter ${path} ist ein Fehler aufgetreten."},"webcamUnavailable":{"title":"Webcam nicht verfügbar","text":"Webcam-Bild kann nicht dargestellt werden. (Fehler: ${error})"},"webcamNotSupported":{"title":"Webcam nicht unterstützt","text":"Dein Browser unterstützt das Webcam-Feature leider noch nicht."},"renderingError":{"title":"Rendering-Fehler","text":"Beim Rendern des Bildes ist ein Fehler aufgetreten."},"context_lost":{"title":"Es ist ein Fehler aufgetreten","text":"Dein Browser hat zu lange gebraucht, um das Bild zu generieren. Bitte versuche es noch einmal."},"context_lost_limit":{"title":"Es ist ein Fehler aufgetreten","text":"Bild-Generierung ist mehrmals fehlgeschlagen."},"loadingStickersFailed":{"title":"Laden der Sticker fehlgeschlagen"},"loadingFontsFailed":{"title":"Laden der Schriftarten fehlgeschlagen","text":"Einige Schriftarten sind möglicherweise nicht verfügbar."},"photoRollLoadFail":{"title":"Laden der Photo Roll fehlgeschlagen","text":"Die Photo Roll konnte nicht geladen werden: ${error}"},"invalidFileType":{"text":"Der Dateityp ${fileType} wird nicht unterstützt."},"title":"Es ist ein Fehler aufgetreten"}}
 
 /***/ }),
-/* 197 */
+/* 201 */
 /***/ (function(module, exports) {
 
 module.exports = {"controls":{"overview":{"filters":"Filters","adjustments":"Adjust","transform":"Transform","focus":"Focus","frame":"Frame","sticker":"Sticker","text":"Text","brush":"Brush","selective-blur":"Selective Blur"},"text":{"foreground":"Foreground","background":"Background","size":"Size","font":"Font","alignment":"Alignment","takeToFront":"To Front","defaultText":"Double-click to edit"},"adjustments":{"brightness":"Brightness","contrast":"Contrast","saturation":"Saturation","exposure":"Exposure","gamma":"Gamma","shadows":"Shadows","highlights":"Highlights","clarity":"Clarity"},"transform":{"none":"Original","rotation":"Rotation"},"focus":{"none":"None","radial":"Radial","mirrored":"Mirrored","blurRadius":"Blur radius"},"selectiveBlur":{"blurRadius":"Blur radius","size":"Size"},"filter":{"intensity":"Intensity","filters":{"identity":"None"}},"sticker":{"flip":"Flip","flip-v":"Flip (V)","flip-h":"Flip (H)","takeToFront":"To Front","categories":{"all":"All"}},"brush":{"size":"Size","color":"Color"},"frame":{"noFrame":"No Frame","scale":"Scale"}},"webcam":{"headline":"Take a photo!"},"editor":{"headline":"Edit Photo","new":"New","backgroundImage":"Background Image","undo":"Undo","export":"Export","zoom":"Zoom"},"splash":{"upload":{"button":"Upload your image","description":"Upload a picture from your library or just drag and drop"},"webcam":{"headline":"Webcam","description":"Take a picture with your webcam or phone"},"photoRoll":{"headline":"Free stock footage","description":"Select from thousands of Free Stock Photos"}},"photoRoll":{"search":{"placeholder":"Search for photos","noSearchResults":"Sorry, but we couldn't find any photos for <strong>\"${query}\"</strong>.","results":{"headline":"Search results for \"${query}\""}}},"generic":{"back":"Back","cancel":"Cancel","color":"Color"},"loading":{"resizing":"Resizing...","exporting":"Exporting...","loading":"Loading..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Image resized","text":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels."},"imageResized_maxDimensions":{"title":"Image resized","text":"Due to hardware limitations your image has been resized to ${width}x${height} pixels."}},"errors":{"imageLoadFail":{"title":"Failed to load image","text":"Failed to load the image at ${path}"},"webcamUnavailable":{"title":"Webcam unavailable","text":"Unable to display webcam image (Error: ${error})"},"webcamNotSupported":{"title":"Webcam not supported","text":"The webcam feature is not supported by your browser."},"renderingError":{"title":"Error while rendering","text":"An error has occurred while rendering the image."},"context_lost":{"title":"An error has occurred","text":"Your browser took too long to render the image. Please try applying less operations."},"context_lost_limit":{"title":"An error has occurred","text":"Your browser failed multiple times while rendering the image."},"loadingStickersFailed":{"title":"Failed to load stickers"},"loadingFontsFailed":{"title":"Failed to load fonts","text":"Some fonts might not be available."},"photoRollLoadFail":{"title":"Failed to load Photo Roll","text":"Failed to load photos for the photo roll: ${error}"},"invalidFileType":{"text":"The file type ${fileType} is not supported."},"title":"An error has occurred"}}

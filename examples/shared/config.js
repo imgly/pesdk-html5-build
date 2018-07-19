@@ -5,22 +5,21 @@ JSON.flatten = function (data) {
       result[prop] = cur
     } else if (Array.isArray(cur)) {
       for (var i = 0, l = cur.length; i < l; i++) {
-        recurse(cur[i], prop ? prop + "." + i : "" + i)
+        recurse(cur[i], prop ? prop + '.' + i : '' + i)
       }
       if (l === 0) {
         result[prop] = []
       }
     } else {
-      var isEmpty = true;
+      var isEmpty = true
       for (var p in cur) {
-        isEmpty = false;
-        recurse(cur[p], prop ? prop + "." + p : p);
+        isEmpty = false
+        recurse(cur[p], prop ? prop + '.' + p : p)
       }
-      if (isEmpty)
-        result[prop] = {};
+      if (isEmpty) { result[prop] = {} }
     }
   }
-  recurse(data, "")
+  recurse(data, '')
   return result
 }
 
@@ -86,12 +85,12 @@ window.editorConfig = JSON.flatten({
       format: 'image/jpeg'
     },
     tools: [
-      'transform', 'filter', 'adjustments', 'focus', 'text', 'sticker', 'brush', 'frame', 'overlay', 'library'
+      'transform', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library'
     ],
     controlsOrder: [
       ['library'],
       ['transform', 'filter', 'adjustments', 'focus'],
-      ['text', 'sticker', 'brush', 'frame', 'overlay']
+      ['text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay']
     ],
     controlsOptions: {}
   }

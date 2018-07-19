@@ -70,7 +70,7 @@ window.addEventListener('load', function () {
   Object.keys(availableRatios).forEach(function (identifier) {
     controllers.push(
       availableRatiosFolder.add(availableRatios, identifier)
-      .onChange(updateAvailableRatios)
+        .onChange(updateAvailableRatios)
     )
   })
 
@@ -82,7 +82,7 @@ window.addEventListener('load', function () {
 
   var serialization = {
     mode: 'download',
-    version: '3.0.0',
+    version: '3.1.0',
     includeImage: false,
     serverUrl: 'http://localhost:3000/render',
     handleData: function (data, version) {
@@ -131,7 +131,7 @@ window.addEventListener('load', function () {
 
   var serializationFolder = gui.addFolder('Serialization')
   serializationFolder.add(serialization, 'mode', ['download', 'log', 'alert', 'server'])
-  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0'])
+  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0', '3.1.0'])
   serializationFolder.add(serialization, 'includeImage')
   // serializationFolder.add(serialization, 'serverUrl')
   serializationFolder.add(serialization, 'serialize').name('Serialize')
