@@ -13316,6 +13316,9 @@ var ReactUI = function (_EventEmitter) {
     _this._disposed = false;
 
     _this._isReady = false;
+    _this._mediator.once(_globals.Constants.EVENTS.EDITOR_READY, function () {
+      _this._isReady = true;
+    });
 
     _this._preloader = new _preloader2.default(_this, _this._options, _this._mediator);
 
@@ -19178,6 +19181,15 @@ var AppComponent = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (_ref = AppComponent.__proto__ || Object.getPrototypeOf(AppComponent)).call.apply(_ref, [this].concat(args)));
 
+    _this._onScreenMounted = function (name, el) {
+      _this._screenElements[name + 'Screen'] = el;
+
+      if (name === 'editor' && !_this._isReady) {
+        _this._isReady = true;
+        _this.props.mediator.emit(_globals.Constants.EVENTS.EDITOR_READY);
+      }
+    };
+
     _this._screens = {
       loading: _loadingScreenComponent2.default,
       splash: _splashScreenComponent2.default,
@@ -19200,6 +19212,10 @@ var AppComponent = function (_React$Component) {
     if (!initialScreen) {
       initialScreen = _this._screenAfterLoading;
     }
+
+    _this._screenElements = {};
+
+    _this._isReady = false;
 
     _this._previousScreensStack = [];
     _this.state = {
@@ -19294,10 +19310,10 @@ var AppComponent = function (_React$Component) {
 
       options.editor.image = image;
 
-      var firstEditorLaunch = !this.refs.editorScreen;
+      var firstEditorLaunch = !this._screenElements.editorScreen;
       this.switchToScreen('editor').then(function () {
         if (!firstEditorLaunch) {
-          _this3.refs.editorScreen.setImage(image, resetEditor);
+          _this3._screenElements.editorScreen.setImage(image, resetEditor);
         }
       });
     }
@@ -19316,9 +19332,9 @@ var AppComponent = function (_React$Component) {
       }
 
       if (this.state.screens.editor) {
-        var _refs$editorScreen;
+        var _screenElements$edito;
 
-        return (_refs$editorScreen = this.refs.editorScreen).export.apply(_refs$editorScreen, arguments);
+        return (_screenElements$edito = this._screenElements.editorScreen).export.apply(_screenElements$edito, arguments);
       }
     }
 
@@ -19335,7 +19351,7 @@ var AppComponent = function (_React$Component) {
       }
 
       if (this.state.screens.editor) {
-        return this.refs.editorScreen.getEditor();
+        return this._screenElements.editorScreen.getEditor();
       }
     }
 
@@ -19347,12 +19363,12 @@ var AppComponent = function (_React$Component) {
   }, {
     key: 'serialize',
     value: function serialize() {
-      var _refs$editorScreen2;
+      var _screenElements$edito2;
 
       if (!this.state.screens.editor) {
         return _globals.Promise.reject(new Error('Editor screen unavailable'));
       }
-      return (_refs$editorScreen2 = this.refs.editorScreen).serialize.apply(_refs$editorScreen2, arguments);
+      return (_screenElements$edito2 = this._screenElements.editorScreen).serialize.apply(_screenElements$edito2, arguments);
     }
 
     /**
@@ -19367,7 +19383,7 @@ var AppComponent = function (_React$Component) {
       if (!this.state.screens.editor) {
         return _globals.Promise.reject(new Error('Editor screen unavailable'));
       }
-      return this.refs.editorScreen.deserialize(data);
+      return this._screenElements.editorScreen.deserialize(data);
     }
 
     /**
@@ -19384,22 +19400,30 @@ var AppComponent = function (_React$Component) {
         mediator: this.props.mediator
       };
     }
+  }, {
+    key: '_renderScreens',
+
 
     /**
      * Renders the existing screens
      * @return {ScreenComponent[]}
      * @private
      */
-
-  }, {
-    key: '_renderScreens',
     value: function _renderScreens() {
+      var _this4 = this;
+
       var renderedScreens = [];
 
+      var _loop = function _loop(name) {
+        var Screen = _this4.state.screens[name];
+        var visible = _this4.state.activeScreen === Screen;
+        renderedScreens.push(_globals.ReactBEM.createElement(Screen, { ref: function ref(el) {
+            return _this4._onScreenMounted(name, el);
+          }, app: _this4, visible: visible }));
+      };
+
       for (var name in this.state.screens) {
-        var Screen = this.state.screens[name];
-        var visible = this.state.activeScreen === Screen;
-        renderedScreens.push(_globals.ReactBEM.createElement(Screen, { ref: name + 'Screen', app: this, visible: visible }));
+        _loop(name);
       }
 
       return renderedScreens;
@@ -23533,7 +23557,6 @@ var EditorScreenComponent = function (_ScreenComponent) {
     _this._editor.on('render-error', _this._onRenderError);
 
     _this._hasUsedForceCrop = false;
-    _this._isReady = false;
 
     _this._forceControls = _this.context.options.editor.forceControls;
     _this._forceControlIndex = 0;
@@ -23741,9 +23764,6 @@ var EditorScreenComponent = function (_ScreenComponent) {
     key: 'switchToControls',
     value: function switchToControls(controls) {
       var initialState = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-      var _this4 = this;
-
       var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
       var controlOptions = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 
@@ -23786,23 +23806,12 @@ var EditorScreenComponent = function (_ScreenComponent) {
         newControls.onEnter.call(this.refs.controls, this.state.sharedState, controlsOptions);
       }
 
-      var onReady = function onReady() {
-        if (!_this4._isReady) {
-          _this4._isReady = true;
-          _this4.context.mediator.emit(_globals.Constants.EVENTS.EDITOR_READY);
-        }
-      };
-
       if (controlsChanged) {
         this.setState({
           controls: newControls,
           controlsOptions: controlsOptions
-        }, function () {
-          onReady();
-          callback && callback();
-        });
+        }, callback);
       } else {
-        onReady();
         return callback && callback();
       }
     }
@@ -23827,17 +23836,17 @@ var EditorScreenComponent = function (_ScreenComponent) {
   }, {
     key: 'export',
     value: function _export() {
-      var _this5 = this;
+      var _this4 = this;
 
       for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
         args[_key2] = arguments[_key2];
       }
 
       return new Promise(function (resolve, reject) {
-        _this5.switchToControls('home', {}, function () {
+        _this4.switchToControls('home', {}, function () {
           var _editor;
 
-          (_editor = _this5._editor).export.apply(_editor, args).then(resolve).catch(reject);
+          (_editor = _this4._editor).export.apply(_editor, args).then(resolve).catch(reject);
         });
       });
     }

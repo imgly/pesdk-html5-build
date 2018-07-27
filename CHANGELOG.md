@@ -1,7 +1,20 @@
+# 4.10.2
+
+Fixed
+---
+* Fixed CHANGELOG and package version
+
+
+# 4.10.1
+
+Fixed
+---
+*   [[PESDK-3099](https://imglysdk.atlassian.net/browse/PESDK-3099)] - Fixed crash on deserialization after UI `onReady` method
+
 # 4.10.0
 
 Fixed
-___
+---
 
 *   [[PESDK-2529](https://imglysdk.atlassian.net/browse/PESDK-2529)] - Fixed frame disappearing when changing to other tool
 *   [[PESDK-2705](https://imglysdk.atlassian.net/browse/PESDK-2705)] - Fixed cors issue with frames when assets are not on the same domain
@@ -9,7 +22,7 @@ ___
 *   [[PESDK-3059](https://imglysdk.atlassian.net/browse/PESDK-3059)] - Color Picker disappears after move outside with the mouse
 
 Added
-___
+---
 
 *   [[PESDK-3074](https://imglysdk.atlassian.net/browse/PESDK-3074)] - Added `forceCrop` option to ReactUI
 *   [[PESDK-3075](https://imglysdk.atlassian.net/browse/PESDK-3075)] - Added `editor:ready` event to be emitted when the editor is ready
