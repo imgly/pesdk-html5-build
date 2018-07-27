@@ -61,6 +61,7 @@ window.editorConfig = JSON.flatten({
   language: 'en',
   logLevel: 'warn',
   preloader: false,
+  crossOrigin: 'anonymous',
   responsive: true,
   assets: {
     baseUrl: '../../assets'

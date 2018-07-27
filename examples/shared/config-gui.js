@@ -23,6 +23,7 @@ window.addEventListener('load', function () {
   controllers.push(sdkFolder.add(editorConfig, 'license'))
   controllers.push(sdkFolder.add(editorConfig, 'language', ['en', 'de']))
   controllers.push(sdkFolder.add(editorConfig, 'logLevel', ['trace', 'warn', 'info']))
+  controllers.push(sdkFolder.add(editorConfig, 'crossOrigin', ['anonymous', 'use-credentials', 'none']))
   controllers.push(sdkFolder.add(editorConfig, 'preloader'))
   controllers.push(sdkFolder.add(editorConfig, 'responsive'))
   controllers.push(sdkFolder.add(editorConfig, 'assets.baseUrl'))

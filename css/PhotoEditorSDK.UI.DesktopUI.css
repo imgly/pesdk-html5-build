@@ -990,7 +990,7 @@
   top: 0;
   padding: 4px;
   cursor: pointer;
-  z-index: 14;
+  z-index: 9;
 }
 
 .pesdk-desktop-editor .pesdk-Scrollbar-1s3c4f0--vertical-1dvqwqc {
@@ -999,7 +999,7 @@
   top: 0;
   padding: 4px;
   cursor: pointer;
-  z-index: 14;
+  z-index: 9;
   right: 5px;
   width: 12px;
   height: 100%;
@@ -1011,7 +1011,7 @@
   top: 0;
   padding: 4px;
   cursor: pointer;
-  z-index: 14;
+  z-index: 9;
   bottom: 5px;
   width: 100%;
   height: 12px;
@@ -1023,7 +1023,7 @@
   top: 0;
   padding: 4px;
   cursor: pointer;
-  z-index: 14;
+  z-index: 9;
   bottom: 5px;
   width: 12px;
   height: 100%;
