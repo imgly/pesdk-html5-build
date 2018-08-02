@@ -27312,28 +27312,26 @@ var Container = __WEBPACK_IMPORTED_MODULE_5__globals__["w" /* adonis */].div('11
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_globals__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lib_editor__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__editor_navigation_navigation_component__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__editor_canvas_component__ = __webpack_require__(253);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_shared_managers_modal_manager__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_shared_managers_transform_ratio_manager__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__editor_controls_controls_component__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__editor_controls_canvas_controls_component__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_globals__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__lib_editor__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__editor_navigation_navigation_component__ = __webpack_require__(251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__editor_canvas_component__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_shared_managers_modal_manager__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_shared_managers_transform_ratio_manager__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__editor_controls_controls_component__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__editor_controls_canvas_controls_component__ = __webpack_require__(78);
 
 
 
@@ -27341,18 +27339,15 @@ var Container = __WEBPACK_IMPORTED_MODULE_5__globals__["w" /* adonis */].div('11
 
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
+var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_get_own_property_descriptor___default()(object, property); if (desc === undefined) { var parent = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* @module */
 /*
@@ -27393,7 +27388,7 @@ var EditorScreenComponent = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    var _this = _possibleConstructorReturn(this, (_ref = EditorScreenComponent.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent)).call.apply(_ref, [this].concat(args)));
+    var _this = _possibleConstructorReturn(this, (_ref = EditorScreenComponent.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent)).call.apply(_ref, [this].concat(args)));
 
     _this._bindAll('_onRenderError', '_onImageResize', '_startEditor', '_onEditorReset');
 
@@ -27402,12 +27397,12 @@ var EditorScreenComponent = function (_BaseComponent) {
         options = _this$context.options,
         mediator = _this$context.mediator;
 
-    _this._editor = new __WEBPACK_IMPORTED_MODULE_8__lib_editor__["a" /* default */](ui, options, mediator);
+    _this._editor = new __WEBPACK_IMPORTED_MODULE_7__lib_editor__["a" /* default */](ui, options, mediator);
     _this._editor.on('ready', _this._startEditor);
     _this._editor.on('render-error', _this._onRenderError);
     _this._editor.on('resize', _this._onImageResize);
     _this._editor.on('reset', _this._onEditorReset);
-    _this._onWindowResize = __WEBPACK_IMPORTED_MODULE_7_globals__["u" /* Utils */].debounce(_this._onWindowResize.bind(_this), 250);
+    _this._onWindowResize = __WEBPACK_IMPORTED_MODULE_6_globals__["u" /* Utils */].debounce(_this._onWindowResize.bind(_this), 250);
 
     _this._originalToolsOption = null;
 
@@ -27416,7 +27411,7 @@ var EditorScreenComponent = function (_BaseComponent) {
     _this._isReady = false;
 
     _this.state = {
-      sharedState: new __WEBPACK_IMPORTED_MODULE_7_globals__["s" /* SharedState */](),
+      sharedState: new __WEBPACK_IMPORTED_MODULE_6_globals__["s" /* SharedState */](),
       controls: null,
       controlsOptions: {},
       currentControl: null
@@ -27436,7 +27431,7 @@ var EditorScreenComponent = function (_BaseComponent) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      _get(EditorScreenComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent.prototype), 'componentDidMount', this).call(this);
+      _get(EditorScreenComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent.prototype), 'componentDidMount', this).call(this);
 
       var options = this.context.options;
 
@@ -27460,7 +27455,7 @@ var EditorScreenComponent = function (_BaseComponent) {
   }, {
     key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      _get(EditorScreenComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_6_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent.prototype), 'componentWillUnmount', this).call(this);
+      _get(EditorScreenComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(EditorScreenComponent.prototype), 'componentWillUnmount', this).call(this);
 
       var options = this.context.options;
 
@@ -27494,7 +27489,7 @@ var EditorScreenComponent = function (_BaseComponent) {
     value: function _onImageResize() {
       var _this3 = this;
 
-      var loadingModal = __WEBPACK_IMPORTED_MODULE_11_shared_managers_modal_manager__["a" /* default */].instance.displayLoading(this._t('loading.resizing'));
+      var loadingModal = __WEBPACK_IMPORTED_MODULE_10_shared_managers_modal_manager__["a" /* default */].instance.displayLoading(this._t('loading.resizing'));
       this._editor.once('resized', function (_ref2) {
         var dimensions = _ref2.dimensions,
             reason = _ref2.reason;
@@ -27502,7 +27497,7 @@ var EditorScreenComponent = function (_BaseComponent) {
         loadingModal.close();
 
         if (_this3.context.options.editor.displayResizeMessage) {
-          __WEBPACK_IMPORTED_MODULE_11_shared_managers_modal_manager__["a" /* default */].instance.displayWarning(_this3._t('warnings.imageResized_' + reason + '.title'), _this3._t('warnings.imageResized_' + reason + '.text', {
+          __WEBPACK_IMPORTED_MODULE_10_shared_managers_modal_manager__["a" /* default */].instance.displayWarning(_this3._t('warnings.imageResized_' + reason + '.title'), _this3._t('warnings.imageResized_' + reason + '.text', {
             maxMegaPixels: _this3._editor.getMaxMegapixels(),
             width: dimensions.x,
             height: dimensions.y
@@ -27520,7 +27515,7 @@ var EditorScreenComponent = function (_BaseComponent) {
   }, {
     key: '_onRenderError',
     value: function _onRenderError(e) {
-      __WEBPACK_IMPORTED_MODULE_11_shared_managers_modal_manager__["a" /* default */].instance.displayError(this._t('errors.title'), this._t('errors.renderingError.text'), true);
+      __WEBPACK_IMPORTED_MODULE_10_shared_managers_modal_manager__["a" /* default */].instance.displayError(this._t('errors.title'), this._t('errors.renderingError.text'), true);
     }
 
     /**
@@ -27531,10 +27526,10 @@ var EditorScreenComponent = function (_BaseComponent) {
   }, {
     key: '_onWindowResize',
     value: function _onWindowResize() {
-      this._emitEvent(__WEBPACK_IMPORTED_MODULE_7_globals__["d" /* Constants */].EVENTS.WINDOW_RESIZE);
+      this._emitEvent(__WEBPACK_IMPORTED_MODULE_6_globals__["d" /* Constants */].EVENTS.WINDOW_RESIZE);
 
-      var dimensions = new __WEBPACK_IMPORTED_MODULE_7_globals__["v" /* Vector2 */](this._container.offsetWidth, this._container.offsetHeight);
-      this._emitEvent(__WEBPACK_IMPORTED_MODULE_7_globals__["d" /* Constants */].EVENTS.EDITOR_RESIZE, dimensions);
+      var dimensions = new __WEBPACK_IMPORTED_MODULE_6_globals__["v" /* Vector2 */](this._container.offsetWidth, this._container.offsetHeight);
+      this._emitEvent(__WEBPACK_IMPORTED_MODULE_6_globals__["d" /* Constants */].EVENTS.EDITOR_RESIZE, dimensions);
     }
 
     /**
@@ -27554,7 +27549,7 @@ var EditorScreenComponent = function (_BaseComponent) {
       // Checks if we should enter forced crop mode
       if (options.editor.forceCrop && this._editor.controls.isEnabled('transform') && !this._hasSwitchedControls) {
         var imageDimensions = this._editor.getInputDimensions();
-        var transformRatioManager = new __WEBPACK_IMPORTED_MODULE_12_shared_managers_transform_ratio_manager__["a" /* default */](options.editor.controlsOptions.transform || {});
+        var transformRatioManager = new __WEBPACK_IMPORTED_MODULE_11_shared_managers_transform_ratio_manager__["a" /* default */](options.editor.controlsOptions.transform || {});
         var ratio = imageDimensions.x / imageDimensions.y;
 
         needsRatioForceCrop = !transformRatioManager.hasRatioValue(ratio);
@@ -27582,7 +27577,7 @@ var EditorScreenComponent = function (_BaseComponent) {
       }
 
       if (!this._editor.controls.isEnabled(controlName)) {
-        __WEBPACK_IMPORTED_MODULE_7_globals__["h" /* Log */].warn('Trying to switch to default control `' + controlName + '` which is not available. Falling back to first available control.');
+        __WEBPACK_IMPORTED_MODULE_6_globals__["h" /* Log */].warn('Trying to switch to default control `' + controlName + '` which is not available. Falling back to first available control.');
         controlName = this._editor.controls.getFirstEnabledControlName();
       }
       this.switchToControls(controlName, null, null, callback);
@@ -27600,13 +27595,13 @@ var EditorScreenComponent = function (_BaseComponent) {
         this._originalToolsOption = oldTools;
 
         // Remove all but transform and library
-        options.editor.tools = __WEBPACK_IMPORTED_MODULE_7_globals__["q" /* SDKUtils */].Array.remove(oldTools, function (e) {
+        options.editor.tools = __WEBPACK_IMPORTED_MODULE_6_globals__["q" /* SDKUtils */].Array.remove(oldTools, function (e) {
           return e !== 'transform' && e !== 'library';
         });
       }
 
       // Switch to transform controls
-      this.switchToControls('transform', null, null, callback);
+      this.switchToControls('transform', { forceCrop: true }, null, callback);
     }
 
     /**
@@ -27642,16 +27637,16 @@ var EditorScreenComponent = function (_BaseComponent) {
       }
 
       if (!this._editor.controls.isEnabled(controlName)) {
-        return __WEBPACK_IMPORTED_MODULE_7_globals__["h" /* Log */].warn('Tried to open control `' + controlName + '` which is not available.');
+        return __WEBPACK_IMPORTED_MODULE_6_globals__["h" /* Log */].warn('Tried to open control `' + controlName + '` which is not available.');
       }
 
       var controls = this._editor.controls.getAvailable();
       var ControlsClass = controls[controlName];
       if (!ControlsClass && controlName !== 'overview') {
-        return __WEBPACK_IMPORTED_MODULE_7_globals__["h" /* Log */].error('Control `' + controlName + '` does not exist!');
+        return __WEBPACK_IMPORTED_MODULE_6_globals__["h" /* Log */].error('Control `' + controlName + '` does not exist!');
       }
 
-      var leavePromise = __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_promise___default.a.resolve(true);
+      var leavePromise = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise___default.a.resolve(true);
       if (this.state.controls) {
         leavePromise = this.state.controls.onLeave();
       }
@@ -27663,14 +27658,14 @@ var EditorScreenComponent = function (_BaseComponent) {
 
         if (!_this4._isReady) {
           _this4._isReady = true;
-          _this4.context.mediator.emit(__WEBPACK_IMPORTED_MODULE_7_globals__["d" /* Constants */].EVENTS.EDITOR_READY);
+          _this4.context.mediator.emit(__WEBPACK_IMPORTED_MODULE_6_globals__["d" /* Constants */].EVENTS.EDITOR_READY);
         }
 
         sharedState.disableBroadcast();
         sharedState.clear();
-        sharedState.set(_extends({}, initialState, { forceCrop: _this4._needsForceCrop }));
+        sharedState.set(initialState);
 
-        var controlsOptions = __WEBPACK_IMPORTED_MODULE_7_globals__["q" /* SDKUtils */].defaults(options || _this4.context.options.editor.controlsOptions[ControlsClass.identifier], ControlsClass.defaultOptions);
+        var controlsOptions = __WEBPACK_IMPORTED_MODULE_6_globals__["q" /* SDKUtils */].defaults(options || _this4.context.options.editor.controlsOptions[ControlsClass.identifier], ControlsClass.defaultOptions);
         var controls = new ControlsClass(_this4.getChildContext(), _this4.state.sharedState, controlsOptions);
         controls.onEnter();
 
@@ -27750,33 +27745,33 @@ var EditorScreenComponent = function (_BaseComponent) {
             CanvasControlsComponent = _controls$constructor.canvasControlsComponent;
 
 
-        controlsComponent = ControlsComponent ? __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(ControlsComponent, {
+        controlsComponent = ControlsComponent ? __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(ControlsComponent, {
           options: controlsOptions,
           controls: controls
-        }) : __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement('div', null);
-        canvasControlsComponent = CanvasControlsComponent ? __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(CanvasControlsComponent, {
+        }) : __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement('div', null);
+        canvasControlsComponent = CanvasControlsComponent ? __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(CanvasControlsComponent, {
           options: controlsOptions,
           controls: controls
-        }) : __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement('div', null);
+        }) : __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement('div', null);
       } else {
-        controlsComponent = __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_13__editor_controls_controls_component__["a" /* default */], null);
-        canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_14__editor_controls_canvas_controls_component__["a" /* default */], null);
+        controlsComponent = __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_12__editor_controls_controls_component__["a" /* default */], null);
+        canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_13__editor_controls_canvas_controls_component__["a" /* default */], null);
       }
 
-      return __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(
+      return __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(
         Container,
         { innerRef: function innerRef(el) {
             if (el) {
               _this5._container = el;
             }
           }, className: test ? 'js-editorScreen' : undefined },
-        __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_10__editor_canvas_component__["a" /* default */], { ref: 'canvas' }),
-        __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(
+        __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_9__editor_canvas_component__["a" /* default */], { ref: 'canvas' }),
+        __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(
           TableContainer,
           { innerRef: function innerRef(el) {
               _this5._tableContainer = el;
             } },
-          __WEBPACK_IMPORTED_MODULE_7_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_9__editor_navigation_navigation_component__["a" /* default */], {
+          __WEBPACK_IMPORTED_MODULE_6_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_8__editor_navigation_navigation_component__["a" /* default */], {
             onControlSwitch: this.switchToControls.bind(this),
             currentControl: this.state.currentControl }),
           controlsComponent,
@@ -27839,25 +27834,25 @@ var EditorScreenComponent = function (_BaseComponent) {
   }]);
 
   return EditorScreenComponent;
-}(__WEBPACK_IMPORTED_MODULE_7_globals__["b" /* BaseComponent */]);
+}(__WEBPACK_IMPORTED_MODULE_6_globals__["b" /* BaseComponent */]);
 
-EditorScreenComponent.contextTypes = __WEBPACK_IMPORTED_MODULE_7_globals__["b" /* BaseComponent */].contextTypes;
+EditorScreenComponent.contextTypes = __WEBPACK_IMPORTED_MODULE_6_globals__["b" /* BaseComponent */].contextTypes;
 EditorScreenComponent.childContextTypes = {
-  ui: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  editor: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  mediator: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  options: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  sharedState: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  screen: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired,
-  appComponent: __WEBPACK_IMPORTED_MODULE_7_globals__["k" /* PropTypes */].object.isRequired
+  ui: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  editor: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  mediator: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  options: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  sharedState: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  screen: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  appComponent: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
 };
 
 
-var Container = __WEBPACK_IMPORTED_MODULE_7_globals__["w" /* adonis */].div('5x8wsv', 'Container');
+var Container = __WEBPACK_IMPORTED_MODULE_6_globals__["w" /* adonis */].div('5x8wsv', 'Container');
 
-var TableContainer = __WEBPACK_IMPORTED_MODULE_7_globals__["w" /* adonis */].div('1b28xzz', 'TableContainer');
+var TableContainer = __WEBPACK_IMPORTED_MODULE_6_globals__["w" /* adonis */].div('1b28xzz', 'TableContainer');
 
-/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_7_globals__["A" /* withTheme */])(EditorScreenComponent));
+/* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_6_globals__["A" /* withTheme */])(EditorScreenComponent));
 
 /***/ }),
 /* 225 */
@@ -39695,7 +39690,7 @@ var LibraryCanvasControlsComponent = function (_CanvasControlsCompon) {
 
     _this._bindAll('_onImage', '_onWebcamBack', '_onWebcamActivated');
 
-    _this.state.displayHeader = false;
+    _this.state.displayHeader = true;
     return _this;
   }
 
@@ -51660,17 +51655,14 @@ TextCanvasControlsComponent.contextTypes = __WEBPACK_IMPORTED_MODULE_5__shared_s
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__transform_canvas_controls_component__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__transform_controls_component__ = __webpack_require__(351);
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__transform_canvas_controls_component__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__transform_controls_component__ = __webpack_require__(351);
 
 
 
@@ -51704,7 +51696,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Vector2 = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Math"].Vector2;
+var Vector2 = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Math"].Vector2;
 
 var MIN_DIMENSIONS = new Vector2(50, 50);
 
@@ -51722,7 +51714,7 @@ var TransformControls = function (_BaseControls) {
   function TransformControls() {
     _classCallCheck(this, TransformControls);
 
-    return _possibleConstructorReturn(this, (TransformControls.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TransformControls)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TransformControls.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TransformControls)).apply(this, arguments));
   }
 
   _createClass(TransformControls, [{
@@ -51768,6 +51760,7 @@ var TransformControls = function (_BaseControls) {
     value: function _onEnter() {
       var editor = this.context.editor;
 
+      var forceCrop = this.sharedState.get('forceCrop');
 
       var transformOperationExistedBeforeEntering = editor.operations.exists('transform');
       var transformOperation = editor.operations.getOrCreate('transform');
@@ -51818,10 +51811,10 @@ var TransformControls = function (_BaseControls) {
       // Show the whole image
       transformOperation.set(defaultOptions, transformOperationExistedBeforeEntering);
 
-      var exportEnabled = editor.features.isEnabledByOptions('export');
+      var options = editor.getOptions();
       editor.zoom.auto(true, false, function () {
         // Disable zoom and drag while we're transformping
-        editor.features.disable('zoom', 'drag', 'export');
+        editor.features.disable('zoom', 'drag', forceCrop ? 'export' : undefined);
       }, false);
 
       this.sharedState.set({
@@ -51831,11 +51824,10 @@ var TransformControls = function (_BaseControls) {
           start: start, end: end, rotation: rotation, textureScale: textureScale
         },
         transformOperationExistedBeforeEntering: transformOperationExistedBeforeEntering,
-        exportEnabled: exportEnabled,
 
         orientationOperation: orientationOperation,
         initialOrientationOptions: initialOrientationOptions,
-        newOrientationOptions: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Utils"].cloneOptions(initialOrientationOptions),
+        newOrientationOptions: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Utils"].cloneOptions(initialOrientationOptions),
         orientationOperationExistedBeforeEntering: orientationOperationExistedBeforeEntering,
 
         start: Vector2.fromObject(start),
@@ -51850,142 +51842,86 @@ var TransformControls = function (_BaseControls) {
     }
 
     /**
-     * Invoked before a control is left. Can control whether or not the control is left.
-     * @private
-     * @return {Promise.<Boolean>}
-     */
-
-  }, {
-    key: '_onBeforeLeave',
-    value: function _onBeforeLeave() {
-      var _this2 = this;
-
-      var t = this.context.ui.translate.bind(this.context.ui);
-      return new __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
-        var changesDone = _this2.sharedState.get('changesDone');
-        var changesAccepted = _this2.sharedState.get('changesAccepted');
-
-        if (changesDone && !changesAccepted) {
-          var warningModal = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["ModalManager"].instance.displayWarning(t('warnings.discardChanges.title'), t('warnings.discardChanges.text'), [t('warnings.discardChanges.buttons.cancel'), t('warnings.discardChanges.buttons.discard')]);
-
-          warningModal.on('button', function (buttonIndex) {
-            if (buttonIndex === 0) return resolve({ leave: false });
-            if (buttonIndex === 1) {
-              return resolve({
-                leave: true,
-                data: {
-                  discard: true
-                }
-              });
-            }
-          });
-          return;
-        }
-
-        resolve({ leave: true });
-      });
-    }
-
-    /**
      * Is called when a control is left
      * @private
      */
 
   }, {
     key: '_onLeave',
-    value: function _onLeave(_ref2) {
-      var discard = _ref2.discard;
+    value: function _onLeave() {
       var editor = this.context.editor;
 
       var transformOperation = this.sharedState.get('transformOperation');
       var orientationOperation = this.sharedState.get('orientationOperation');
+      var forceCrop = this.sharedState.get('forceCrop');
       var transformOperationExistedBeforeEntering = this.sharedState.get('transformOperationExistedBeforeEntering');
 
-      if (discard) {
-        // Discard all changes by setting transform and orientation options to the same
-        // values their initial values
-        var initialOrientationOptions = this.sharedState.get('initialOrientationOptions');
-        orientationOperation.set(initialOrientationOptions);
+      // Remove orientation operation if it's redundant
+      var defaultOptions = {
+        rotation: 0,
+        flipVertically: false,
+        flipHorizontally: false
+      };
+      if (orientationOperation.optionsEqual(defaultOptions)) {
+        editor.operations.remove(orientationOperation, false);
+      }
 
-        var initialTransformOptions = this.sharedState.get('initialTransformOptions');
-        editor.broadcastTransform(transformOperation, initialTransformOptions);
-        transformOperation.set(initialTransformOptions);
+      var newTransformOptions = this.sharedState.get('newTransformOptions');
+      var start = newTransformOptions.start,
+          end = newTransformOptions.end,
+          textureScale = newTransformOptions.textureScale,
+          rotation = newTransformOptions.rotation;
+
+      textureScale = this._calculateTextureScale();
+      start = start.clone();
+      end = end.clone();
+
+      var finalScale = transformOperation.calculateScale(rotation);
+      var inputDimensions = transformOperation.getInputDimensions(false);
+      var cos = Math.cos(-rotation);
+      var sin = Math.sin(-rotation);
+
+      var halfRelativeSize = end.clone().subtract(start).divide(2);
+      var middleInPixels = start.clone().add(halfRelativeSize).multiply(inputDimensions);
+
+      var middleDistanceFromCenter = middleInPixels.subtract(inputDimensions.clone().multiply(0.5));
+
+      // Rotate and scale the middle back
+      var newMiddleDistanceFromCenter = new Vector2(middleDistanceFromCenter.x * cos - middleDistanceFromCenter.y * sin, middleDistanceFromCenter.x * sin + middleDistanceFromCenter.y * cos).divide(finalScale);
+
+      var newMiddleInPixels = inputDimensions.clone().multiply(0.5).add(newMiddleDistanceFromCenter);
+
+      var newRelativeMiddle = newMiddleInPixels.clone().divide(inputDimensions);
+
+      var newStart = newRelativeMiddle.clone().subtract(halfRelativeSize.clone().divide(finalScale));
+      var newEnd = newRelativeMiddle.clone().add(halfRelativeSize.clone().divide(finalScale));
+
+      var defaultTransformOptions = {
+        start: new Vector2(0, 0),
+        end: new Vector2(1, 1),
+        rotation: 0,
+        textureScale: 1
+      };
+
+      var newOptions = {
+        start: newStart, end: newEnd, textureScale: textureScale, rotation: rotation
+      };
+
+      if (newOptions.start.equals(defaultTransformOptions.start) && newOptions.end.equals(defaultTransformOptions.end) && newOptions.rotation === defaultTransformOptions.rotation && newOptions.textureScale === defaultTransformOptions.textureScale) {
+        editor.operations.remove(transformOperation, false);
+      } else {
+        transformOperation.set(defaultTransformOptions);
+        editor.broadcastTransform(transformOperation, newOptions);
+        transformOperation.set(newOptions);
         transformOperation.setTextureScale(this._calculateTextureScale());
         transformOperation.setEnabled(true);
-
-        if (!transformOperationExistedBeforeEntering) {
-          editor.operations.remove(transformOperation, false);
-        }
-      } else {
-        // Remove orientation operation if it's redundant
-        var defaultOptions = {
-          rotation: 0,
-          flipVertically: false,
-          flipHorizontally: false
-        };
-        if (orientationOperation.optionsEqual(defaultOptions)) {
-          editor.operations.remove(orientationOperation, false);
-        }
-
-        var newTransformOptions = this.sharedState.get('newTransformOptions');
-        var start = newTransformOptions.start,
-            end = newTransformOptions.end,
-            textureScale = newTransformOptions.textureScale,
-            rotation = newTransformOptions.rotation;
-
-        textureScale = this._calculateTextureScale();
-        start = start.clone();
-        end = end.clone();
-
-        var finalScale = transformOperation.calculateScale(rotation);
-        var inputDimensions = transformOperation.getInputDimensions(false);
-        var cos = Math.cos(-rotation);
-        var sin = Math.sin(-rotation);
-
-        var halfRelativeSize = end.clone().subtract(start).divide(2);
-        var middleInPixels = start.clone().add(halfRelativeSize).multiply(inputDimensions);
-
-        var middleDistanceFromCenter = middleInPixels.subtract(inputDimensions.clone().multiply(0.5));
-
-        // Rotate and scale the middle back
-        var newMiddleDistanceFromCenter = new Vector2(middleDistanceFromCenter.x * cos - middleDistanceFromCenter.y * sin, middleDistanceFromCenter.x * sin + middleDistanceFromCenter.y * cos).divide(finalScale);
-
-        var newMiddleInPixels = inputDimensions.clone().multiply(0.5).add(newMiddleDistanceFromCenter);
-
-        var newRelativeMiddle = newMiddleInPixels.clone().divide(inputDimensions);
-
-        var newStart = newRelativeMiddle.clone().subtract(halfRelativeSize.clone().divide(finalScale));
-        var newEnd = newRelativeMiddle.clone().add(halfRelativeSize.clone().divide(finalScale));
-
-        var defaultTransformOptions = {
-          start: new Vector2(0, 0),
-          end: new Vector2(1, 1),
-          rotation: 0,
-          textureScale: 1
-        };
-
-        var newOptions = {
-          start: newStart, end: newEnd, textureScale: textureScale, rotation: rotation
-        };
-
-        if (newOptions.start.equals(defaultTransformOptions.start) && newOptions.end.equals(defaultTransformOptions.end) && newOptions.rotation === defaultTransformOptions.rotation && newOptions.textureScale === defaultTransformOptions.textureScale) {
-          editor.operations.remove(transformOperation, false);
-        } else {
-          transformOperation.set(defaultTransformOptions);
-          editor.broadcastTransform(transformOperation, newOptions);
-          transformOperation.set(newOptions);
-          transformOperation.setTextureScale(this._calculateTextureScale());
-          transformOperation.setEnabled(true);
-        }
       }
 
       // Reset editor
       editor.setRotation(0);
       editor.setSpriteScale(1);
-      editor.features.enable('zoom', 'drag', 'export');
-      if (this.sharedState.get('exportEnabled')) {
-        editor.features.enable('export');
-      }
+      editor.features.enable('zoom', 'drag', forceCrop ? 'export' : undefined);
+
       editor.zoom.auto(true);
     }
   }, {
@@ -52205,18 +52141,18 @@ var TransformControls = function (_BaseControls) {
     key: 'getPreloadAssets',
     value: function getPreloadAssets(editor) {
       var options = editor.getOptions();
-      var transformOptions = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Utils"].defaults(options.editor.controlsOptions.transform, this.defaultOptions);
+      var transformOptions = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Utils"].defaults(options.editor.controlsOptions.transform, this.defaultOptions);
 
       var assets = ['editor/controls/transform/dimensions-cross.png', 'editor/controls/transform/degree-slider.png', 'editor/controls/transform/flip.png', 'editor/controls/transform/lock.png', 'editor/controls/transform/rotate.png'];
 
       // Add ratios
-      var ratioManager = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["TransformRatioManager"](transformOptions);
+      var ratioManager = new __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["TransformRatioManager"](transformOptions);
       var categories = ratioManager.getCategories();
-      categories.forEach(function (_ref3) {
-        var ratios = _ref3.ratios;
+      categories.forEach(function (_ref2) {
+        var ratios = _ref2.ratios;
 
-        ratios.forEach(function (_ref4) {
-          var identifier = _ref4.identifier;
+        ratios.forEach(function (_ref3) {
+          var identifier = _ref3.identifier;
 
           assets.push('editor/controls/transform/ratios/' + identifier + '-default.png', 'editor/controls/transform/ratios/' + identifier + '-hover.png', 'editor/controls/transform/ratios/' + identifier + '-active.png');
         });
@@ -52238,12 +52174,12 @@ var TransformControls = function (_BaseControls) {
   }]);
 
   return TransformControls;
-}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"]);
+}(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["BaseControls"]);
 
-TransformControls.clickAtPosition = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"].clickAtPosition;
+TransformControls.clickAtPosition = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["BaseControls"].clickAtPosition;
 TransformControls.identifier = 'transform';
-TransformControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_8__transform_controls_component__["a" /* default */];
-TransformControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_7__transform_canvas_controls_component__["a" /* default */];
+TransformControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_7__transform_controls_component__["a" /* default */];
+TransformControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_6__transform_canvas_controls_component__["a" /* default */];
 TransformControls.iconPath = 'editor/controls/transform/icon.png';
 TransformControls.activeIconPath = 'editor/controls/transform/icon-active.png';
 TransformControls.requiredOperations = ['transform', 'orientation'];
@@ -52258,7 +52194,7 @@ TransformControls.updatableOperations = ['transform', 'orientation'];
 TransformControls.switchToDefaultControlsOnRemoval = false;
 
 
-__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default.a.Controls.TransformControls = TransformControls;
+__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core___default.a.Controls.TransformControls = TransformControls;
 
 /* harmony default export */ __webpack_exports__["a"] = (TransformControls);
 
@@ -52617,39 +52553,6 @@ var TransformCanvasControlsComponent = function (_CanvasControlsCompon) {
     // -------------------------------------------------------------------------- EVENTS
 
     /**
-     * Invoked when the user clicks the accept button
-     * @param  {Event} e
-     * @private
-     */
-
-  }, {
-    key: '_onAcceptClick',
-    value: function _onAcceptClick(e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      if (!this.getSharedState('changesDone')) {
-        return;
-      }
-
-      this.setSharedState({ changesAccepted: true });
-      this.context.screen.switchToControls('default');
-    }
-
-    /**
-     * Invoked when the user presses a mouse button on the accept button. We need to make sure that
-     * the center drag event is not triggered
-     * @param  {Event} e
-     * @private
-     */
-
-  }, {
-    key: '_onAcceptMouseDown',
-    value: function _onAcceptMouseDown(e) {
-      e.stopPropagation();
-    }
-
-    /**
      * Gets called after a zoom has been done
      * @private
      */
@@ -52761,6 +52664,34 @@ var TransformCanvasControlsComponent = function (_CanvasControlsCompon) {
 
       editor.broadcastFlip(direction);
       editor.render();
+    }
+
+    /**
+     * Invoked when the user clicks the accept button
+     * @param  {Event} e
+     * @private
+     */
+
+  }, {
+    key: '_onAcceptClick',
+    value: function _onAcceptClick(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      this.context.screen.switchToControls('default');
+    }
+
+    /**
+     * Invoked when the user presses a mouse button on the accept button. We need to make sure that
+     * the center drag event is not triggered
+     * @param  {Event} e
+     * @private
+     */
+
+  }, {
+    key: '_onAcceptMouseDown',
+    value: function _onAcceptMouseDown(e) {
+      e.stopPropagation();
     }
 
     /**
@@ -52918,10 +52849,19 @@ var TransformCanvasControlsComponent = function (_CanvasControlsCompon) {
 
       var areaStyles = this._getAreaStyles();
       var disabled = !this.getSharedState('ratio');
+      var forceCrop = this.getSharedState('forceCrop');
 
       var acceptButtonStyle = {
         backgroundImage: 'url(\'' + this._getAssetPath('editor/controls/transform/accept.png', true) + '\')'
       };
+
+      var acceptButton = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["React"].createElement(AcceptButton, {
+        className: test ? 'js-acceptButton' : undefined,
+        enabled: this.getSharedState('changesDone'),
+        onClick: this._onAcceptClick,
+        onMouseDown: this._onAcceptMouseDown,
+        style: acceptButtonStyle });
+
       return __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["React"].createElement(
         OnCanvasControls,
         { innerRef: function innerRef(el) {
@@ -52933,12 +52873,7 @@ var TransformCanvasControlsComponent = function (_CanvasControlsCompon) {
             className: 'js-imageContainer', innerRef: function innerRef(el) {
               _this4._imageContainer = el;
             } },
-          __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["React"].createElement(AcceptButton, {
-            className: test ? 'js-acceptButton' : undefined,
-            enabled: this.getSharedState('changesDone'),
-            onClick: this._onAcceptClick,
-            onMouseDown: this._onAcceptMouseDown,
-            style: acceptButtonStyle })
+          forceCrop ? acceptButton : null
         ),
         __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["React"].createElement(
           OuterTransformContainer,

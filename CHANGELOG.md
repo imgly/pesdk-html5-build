@@ -1,3 +1,19 @@
+# 4.11.0
+
+Fixed
+---
+
+*   [[PESDK-3138](https://imglysdk.atlassian.net/browse/PESDK-3138)] - Fixed 'normal' blending mode for overlays
+*   [[PESDK-3024](https://imglysdk.atlassian.net/browse/PESDK-3024)] - Fixed missing letters and areas after rotation in inverted TextDesign layout
+
+Changed
+---
+
+*   [[PESDK-2023](https://imglysdk.atlassian.net/browse/PESDK-2023)] - Added ability to export while in transform tool
+*   [[PESDK-2555](https://imglysdk.atlassian.net/browse/PESDK-2555)] - Added possibility to export/download image in Library Tool
+*   [[PESDK-2554](https://imglysdk.atlassian.net/browse/PESDK-2554)] - Changed Transform Tool to auto-accept changes instead of having to acknowledge them
+
+
 # 4.10.2
 
 Fixed
