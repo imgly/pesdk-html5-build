@@ -1,3 +1,10 @@
+# 4.11.2
+
+Fixed
+---
+
+* Fixed wrong version number  
+
 # 4.11.1
 
 Fixed
