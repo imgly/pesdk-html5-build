@@ -1,3 +1,11 @@
+# 4.11.1
+
+Fixed
+---
+
+*   [[PESDK-3226](https://imglysdk.atlassian.net/browse/PESDK-3226)] - Missing vendor folder in release
+
+
 # 4.11.0
 
 Fixed
