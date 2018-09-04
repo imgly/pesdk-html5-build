@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
   LibraryProvider.prototype._loadData = function () {
     if (this._data) { return Promise.resolve(this._data) }
 
-    return this._loadJSON('../shared/assets/library_unsplash.json')
+    return this._loadJSON('//static.photoeditorsdk.com/libraries/example/metadata.json')
       .then(function (data) {
         this._data = data
         return data

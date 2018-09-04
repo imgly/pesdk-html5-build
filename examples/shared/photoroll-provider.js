@@ -47,7 +47,7 @@ window.addEventListener('load', function () {
 
         if (this._data) return Promise.resolve(this._data);
 
-        var loader = new ReactUI.JSONLoader('//static.photoeditorsdk.com/content.json');
+        var loader = new ReactUI.JSONLoader('//static.photoeditorsdk.com/photorolls/example/metadata.json');
         return loader.load().then(function (data) {
           _this2._data = data;
           _this2._libraries = data.map(function (d) {

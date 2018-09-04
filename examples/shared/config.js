@@ -86,7 +86,8 @@ window.editorConfig = JSON.flatten({
       format: 'image/jpeg'
     },
     tools: [
-      'transform', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library'
+      'transform', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library',
+      'brightness', 'saturation', 'contrast', 'clarity', 'exposure', 'shadows', 'highlights', 'gamma', 'whites', 'blacks', 'temperature'
     ],
     controlsOrder: [
       ['library'],

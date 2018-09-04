@@ -216,6 +216,17 @@
   display: block;
 }
 
+.pesdk-desktop-editor .pesdk-ProgressBar-1j1uq6u {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: #2675F8;
+  border: none;
+}
+
 .pesdk-desktop-editor .pesdk-ButtonBar-dh53lm {
   background-color: #262629;
   width: 100%;

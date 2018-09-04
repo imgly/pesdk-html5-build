@@ -121,15 +121,15 @@ var _utils = __webpack_require__(68);
 
 var _utils2 = _interopRequireDefault(_utils);
 
-var _constants = __webpack_require__(83);
+var _constants = __webpack_require__(84);
 
 var _constants2 = _interopRequireDefault(_constants);
 
-var _sharedState = __webpack_require__(84);
+var _sharedState = __webpack_require__(85);
 
 var _sharedState2 = _interopRequireDefault(_sharedState);
 
-var _animationFrame = __webpack_require__(85);
+var _animationFrame = __webpack_require__(86);
 
 var _log = __webpack_require__(20);
 
@@ -940,11 +940,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _backButtonComponent = __webpack_require__(110);
+var _backButtonComponent = __webpack_require__(111);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
-var _doneButtonComponent = __webpack_require__(111);
+var _doneButtonComponent = __webpack_require__(112);
 
 var _doneButtonComponent2 = _interopRequireDefault(_doneButtonComponent);
 
@@ -1557,7 +1557,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _headerComponent = __webpack_require__(88);
+var _headerComponent = __webpack_require__(89);
 
 var _headerComponent2 = _interopRequireDefault(_headerComponent);
 
@@ -2554,15 +2554,15 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _textItemComponent = __webpack_require__(144);
+var _textItemComponent = __webpack_require__(145);
 
 var _textItemComponent2 = _interopRequireDefault(_textItemComponent);
 
-var _stickerItemComponent = __webpack_require__(145);
+var _stickerItemComponent = __webpack_require__(146);
 
 var _stickerItemComponent2 = _interopRequireDefault(_stickerItemComponent);
 
-var _brushItemComponent = __webpack_require__(146);
+var _brushItemComponent = __webpack_require__(147);
 
 var _brushItemComponent2 = _interopRequireDefault(_brushItemComponent);
 
@@ -3001,7 +3001,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _font = __webpack_require__(157);
+var _font = __webpack_require__(158);
 
 var _font2 = _interopRequireDefault(_font);
 
@@ -4300,7 +4300,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _fileLoader = __webpack_require__(92);
+var _fileLoader = __webpack_require__(93);
 
 var _fileLoader2 = _interopRequireDefault(_fileLoader);
 
@@ -4905,7 +4905,7 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _overlayComponent = __webpack_require__(152);
+var _overlayComponent = __webpack_require__(153);
 
 var _overlayComponent2 = _interopRequireDefault(_overlayComponent);
 
@@ -5114,7 +5114,7 @@ var ColorPickerComponent = function (_BaseComponent) {
           _globals.ReactBEM.createElement(
             'div',
             { bem: 'e:label' },
-            this.props.label || this._t('generic.color')
+            this.props.label || this._t('pesdk.common.text.color')
           ),
           Overlay
         )
@@ -5159,11 +5159,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  */
 
 
-var _googleFontLoader = __webpack_require__(176);
+var _googleFontLoader = __webpack_require__(177);
 
 var _googleFontLoader2 = _interopRequireDefault(_googleFontLoader);
 
-var _fileFontLoader = __webpack_require__(179);
+var _fileFontLoader = __webpack_require__(180);
 
 var _fileFontLoader2 = _interopRequireDefault(_fileFontLoader);
 
@@ -5676,7 +5676,7 @@ var _frameManager = __webpack_require__(48);
 
 var _frameManager2 = _interopRequireDefault(_frameManager);
 
-var _overlayManager = __webpack_require__(182);
+var _overlayManager = __webpack_require__(183);
 
 var _overlayManager2 = _interopRequireDefault(_overlayManager);
 
@@ -8514,7 +8514,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _photoComponent = __webpack_require__(103);
+var _photoComponent = __webpack_require__(104);
 
 var _photoComponent2 = _interopRequireDefault(_photoComponent);
 
@@ -8750,7 +8750,7 @@ var PhotoListComponent = function (_BaseComponent) {
 
       this._totalPhotosHeight = 0;
 
-      var modal = _modalManager2.default.instance.displayProgress(this._t('loading.loading'));
+      var modal = _modalManager2.default.instance.displayProgress(this._t('pesdk.common.text.loading'));
       var PhotoRollProvider = this.context.options.photoRoll.provider;
       var provider = new PhotoRollProvider();
 
@@ -8761,7 +8761,7 @@ var PhotoListComponent = function (_BaseComponent) {
         modal.close();
       }).catch(function (e) {
         modal.close();
-        _modalManager2.default.instance.displayError(_this3._t('errors.photoRollLoadFail.title'), _this3._t('errors.photoRollLoadFail.text', { error: e.message }));
+        _modalManager2.default.instance.displayError(_this3._t('pesdk.library.title.photoRollLoadFail'), _this3._t('pesdk.library.text.photoRollLoadFail', { error: e.message }));
       });
     }
 
@@ -9051,31 +9051,31 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _exporter = __webpack_require__(120);
+var _exporter = __webpack_require__(121);
 
 var _exporter2 = _interopRequireDefault(_exporter);
 
-var _imageResizer = __webpack_require__(122);
+var _imageResizer = __webpack_require__(123);
 
 var _imageResizer2 = _interopRequireDefault(_imageResizer);
 
-var _operations = __webpack_require__(123);
+var _operations = __webpack_require__(124);
 
 var _operations2 = _interopRequireDefault(_operations);
 
-var _controls = __webpack_require__(124);
+var _controls = __webpack_require__(125);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _features = __webpack_require__(168);
+var _features = __webpack_require__(169);
 
 var _features2 = _interopRequireDefault(_features);
 
-var _zoom = __webpack_require__(169);
+var _zoom = __webpack_require__(170);
 
 var _zoom2 = _interopRequireDefault(_zoom);
 
-var _history = __webpack_require__(170);
+var _history = __webpack_require__(171);
 
 var _history2 = _interopRequireDefault(_history);
 
@@ -9536,12 +9536,12 @@ var Editor = function (_EventEmitter) {
     key: '_initSerializers',
     value: function _initSerializers() {
       this._serializers = {
-        '1.0.0': __webpack_require__(171).default,
-        '1.0.1': __webpack_require__(180).default,
-        '2.0.0': __webpack_require__(181).default,
-        '2.0.1': __webpack_require__(183).default,
-        '3.0.0': __webpack_require__(186).default,
-        '3.1.0': __webpack_require__(187).default
+        '1.0.0': __webpack_require__(172).default,
+        '1.0.1': __webpack_require__(181).default,
+        '2.0.0': __webpack_require__(182).default,
+        '2.0.1': __webpack_require__(184).default,
+        '3.0.0': __webpack_require__(187).default,
+        '3.1.0': __webpack_require__(188).default
       };
     }
 
@@ -9966,7 +9966,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _adjustments = __webpack_require__(125);
+var _adjustments = __webpack_require__(126);
 
 Object.defineProperty(exports, 'adjustments', {
   enumerable: true,
@@ -9975,7 +9975,7 @@ Object.defineProperty(exports, 'adjustments', {
   }
 });
 
-var _transform = __webpack_require__(128);
+var _transform = __webpack_require__(129);
 
 Object.defineProperty(exports, 'transform', {
   enumerable: true,
@@ -9984,7 +9984,7 @@ Object.defineProperty(exports, 'transform', {
   }
 });
 
-var _filter = __webpack_require__(132);
+var _filter = __webpack_require__(133);
 
 Object.defineProperty(exports, 'filter', {
   enumerable: true,
@@ -9993,7 +9993,7 @@ Object.defineProperty(exports, 'filter', {
   }
 });
 
-var _focus = __webpack_require__(135);
+var _focus = __webpack_require__(136);
 
 Object.defineProperty(exports, 'focus', {
   enumerable: true,
@@ -10002,7 +10002,7 @@ Object.defineProperty(exports, 'focus', {
   }
 });
 
-var _sticker = __webpack_require__(140);
+var _sticker = __webpack_require__(141);
 
 Object.defineProperty(exports, 'sticker', {
   enumerable: true,
@@ -10011,7 +10011,7 @@ Object.defineProperty(exports, 'sticker', {
   }
 });
 
-var _text = __webpack_require__(148);
+var _text = __webpack_require__(149);
 
 Object.defineProperty(exports, 'text', {
   enumerable: true,
@@ -10020,7 +10020,7 @@ Object.defineProperty(exports, 'text', {
   }
 });
 
-var _brush = __webpack_require__(158);
+var _brush = __webpack_require__(159);
 
 Object.defineProperty(exports, 'brush', {
   enumerable: true,
@@ -10029,7 +10029,7 @@ Object.defineProperty(exports, 'brush', {
   }
 });
 
-var _selectiveBlur = __webpack_require__(162);
+var _selectiveBlur = __webpack_require__(163);
 
 Object.defineProperty(exports, 'selectiveBlur', {
   enumerable: true,
@@ -10038,7 +10038,7 @@ Object.defineProperty(exports, 'selectiveBlur', {
   }
 });
 
-var _frame = __webpack_require__(165);
+var _frame = __webpack_require__(166);
 
 Object.defineProperty(exports, 'frame', {
   enumerable: true,
@@ -10064,7 +10064,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _overlayComponent = __webpack_require__(134);
+var _overlayComponent = __webpack_require__(135);
 
 var _overlayComponent2 = _interopRequireDefault(_overlayComponent);
 
@@ -11213,7 +11213,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _regenerator = __webpack_require__(172);
+var _regenerator = __webpack_require__(173);
 
 var _regenerator2 = _interopRequireDefault(_regenerator);
 
@@ -11242,7 +11242,7 @@ var _stickerManager = __webpack_require__(11);
 
 var _stickerManager2 = _interopRequireDefault(_stickerManager);
 
-var _brushManager = __webpack_require__(175);
+var _brushManager = __webpack_require__(176);
 
 var _brushManager2 = _interopRequireDefault(_brushManager);
 
@@ -11898,7 +11898,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontObserver = __webpack_require__(177);
+var _fontObserver = __webpack_require__(178);
 
 var _fontObserver2 = _interopRequireDefault(_fontObserver);
 
@@ -12213,6 +12213,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
@@ -12428,15 +12430,23 @@ var v300Serializer = function (_PreviousSerializer) {
     value: function _serializeAdjustmentsOperation(operation) {
       var response = _get(v300Serializer.prototype.__proto__ || Object.getPrototypeOf(v300Serializer.prototype), '_serializeAdjustmentsOperation', this).call(this, operation);
 
+      var optionNames = ['gamma', 'whites', 'blacks', 'temperature'];
+
       var availableOptions = operation.availableOptions;
 
-      var option = availableOptions.gamma;
-      var value = operation.getGamma();
-      var minValue = option.minValue,
-          midValue = option.midValue,
-          maxValue = option.maxValue;
+      var options = {};
+      optionNames.forEach(function (optionName) {
+        var option = availableOptions[optionName];
+        var value = operation.getOption(optionName);
+        var minValue = option.minValue,
+            midValue = option.midValue,
+            maxValue = option.maxValue;
 
-      response.options.gamma = value <= midValue ? (value - minValue) / (midValue - minValue) - 1 : (value - midValue) / (maxValue - midValue);
+        options[optionName] = value <= midValue ? (value - minValue) / (midValue - minValue) - 1 : (value - midValue) / (maxValue - midValue);
+      });
+
+      response.options = _extends({}, response.options, options);
+
       return response;
     }
 
@@ -12735,14 +12745,25 @@ var v300Deserializer = function (_PreviousDeserializer) {
 
         var options = operationData.options;
 
-        if (typeof options.gamma !== 'undefined') {
-          var _AdjustmentsOperation = AdjustmentsOperation.prototype.availableOptions.gamma,
+        var knownOptions = ['gamma', 'whites', 'blacks', 'temperature'];
+        var operationOptions = {};
+
+        knownOptions.forEach(function (optionName) {
+          if (typeof options[optionName] === 'undefined') return;
+
+          var _AdjustmentsOperation = AdjustmentsOperation.prototype.availableOptions[optionName],
               minValue = _AdjustmentsOperation.minValue,
               midValue = _AdjustmentsOperation.midValue,
               maxValue = _AdjustmentsOperation.maxValue;
 
-          operation.setGamma(options.gamma < 0 ? midValue + (midValue - minValue) * options.gamma : midValue + (maxValue - midValue) * options.gamma);
-        }
+          var value = options[optionName];
+
+          value = value < 0 ? midValue + (midValue - minValue) * value : midValue + (maxValue - midValue) * value;
+          operationOptions[optionName] = value;
+        });
+
+        operation.set(operationOptions);
+
         return operation;
       });
     }
@@ -13142,7 +13163,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _appComponent = __webpack_require__(86);
+var _appComponent = __webpack_require__(87);
 
 var _appComponent2 = _interopRequireDefault(_appComponent);
 
@@ -13162,11 +13183,11 @@ var _jsonLoader = __webpack_require__(22);
 
 var _jsonLoader2 = _interopRequireDefault(_jsonLoader);
 
-var _preloader = __webpack_require__(195);
+var _preloader = __webpack_require__(196);
 
 var _preloader2 = _interopRequireDefault(_preloader);
 
-var _photoRoll = __webpack_require__(196);
+var _photoRoll = __webpack_require__(197);
 
 var PhotoRoll = _interopRequireWildcard(_photoRoll);
 
@@ -13324,7 +13345,7 @@ var ReactUI = function (_EventEmitter) {
 
     _globals.Log.setLevel(_this._options.logLevel);
 
-    if (_this._v()) {
+    if (!_this._options.license || _this._v()) {
       _this.run();
     }
     return _this;
@@ -13495,7 +13516,7 @@ var ReactUI = function (_EventEmitter) {
         forceControls: [],
         forceCrop: false,
         watermarkImage: null,
-        tools: ['transform', 'filter', 'brightness', 'saturation', 'contrast', 'clarity', 'exposure', 'shadows', 'highlights', 'gamma', 'text', 'sticker', 'brush', 'radial-focus', 'mirrored-focus', 'frame'],
+        tools: ['transform', 'filter', 'brightness', 'saturation', 'contrast', 'clarity', 'exposure', 'shadows', 'highlights', 'gamma', 'whites', 'blacks', 'temperature', 'text', 'sticker', 'brush', 'radial-focus', 'mirrored-focus', 'frame'],
         controlsOrder: ['transform', ['filter', 'adjustments'], ['text', 'sticker', 'brush'], ['selectiveBlur', 'focus', 'frame']],
         operationsOrder: [
         // First, all operations that affect the image dimensions
@@ -13615,8 +13636,8 @@ var ReactUI = function (_EventEmitter) {
     key: '_initLanguage',
     value: function _initLanguage() {
       this._languages = _globals.SDKUtils.deepDefaults(this._options.extensions.languages, {
-        de: __webpack_require__(201),
-        en: __webpack_require__(202)
+        de: __webpack_require__(202),
+        en: __webpack_require__(203)
       });
       this._language = this._languages[this._options.language];
       if (!this._language) {
@@ -15127,6 +15148,17 @@ var UIUtils = {
     var response = this.fetch(phrases, key);
     if (!response) {
       _log2.default.info('Utils#translate', 'Unable to translate `' + key + '`');
+
+      // ------------------------------------------------------------------------------------------
+      // Remove this part in the next major version update
+      var newToOldLocalizationKeyMap = __webpack_require__(83);
+      var oldKey = newToOldLocalizationKeyMap[key];
+      if (oldKey != null) {
+        _log2.default.warn('Utils#translate', 'Trying to find localized string for old key: `' + oldKey + '`. Please update your localization to use the new key as soon as possible. Support for the old, deprecated key will be dropped with the next major version update.');
+        return this.translate(phrases, oldKey, interpolationOptions);
+      }
+      // ------------------------------------------------------------------------------------------
+
       return null;
     }
     for (var _key in interpolationOptions) {
@@ -15845,7 +15877,18 @@ var Utils = function () {
     value: function createCanvas() {
       return document.createElement('canvas');
     }
+  }, {
+    key: 'convertHtmlImageToRGBACanvas',
+    value: function convertHtmlImageToRGBACanvas(htmlImage) {
+      // Workaround fro non-RGB images
+      var canvas = Utils.createCanvas();
+      canvas.width = htmlImage.width;
+      canvas.height = htmlImage.height;
+      var context = canvas.getContext('2d');
+      context.drawImage(htmlImage, 0, 0, htmlImage.width, htmlImage.height);
 
+      return canvas;
+    }
     /**
      * Checks if the given dimensions are POT
      * @param  {PhotoEditorSDK.Math.Vector2}  dimensions
@@ -18695,6 +18738,12 @@ var objectKeys = Object.keys || function (obj) {
 
 /***/ }),
 /* 83 */
+/***/ (function(module, exports) {
+
+module.exports = {"pesdk.adjustments.text.brightness":"controls.adjustments.brightness","pesdk.adjustments.text.clarity":"controls.adjustments.clarity","pesdk.adjustments.text.contrast":"controls.adjustments.contrast","pesdk.adjustments.text.exposure":"controls.adjustments.exposure","pesdk.adjustments.text.gamma":"controls.adjustments.gamma","pesdk.adjustments.text.highlights":"controls.adjustments.highlights","pesdk.adjustments.text.saturation":"controls.adjustments.saturation","pesdk.adjustments.text.shadows":"controls.adjustments.shadows","pesdk.adjustments.title.name":"controls.overview.adjustments","pesdk.brush.text.size":"controls.brush.size","pesdk.brush.title.name":"controls.overview.brush","pesdk.camera.text.webcamUnavailable":"errors.webcamUnavailable.text","pesdk.camera.title.headline":"webcam.headline","pesdk.common.button.back":"generic.back","pesdk.common.button.cancel":"generic.cancel","pesdk.common.text.color":"generic.color","pesdk.common.text.imageLoadFailed":"errors.imageLoadFailed.text","pesdk.common.text.loading":"loading.loading","pesdk.common.title.error":"errors.title","pesdk.common.title.imageLoadFailed":"errors.imageLoadFailed.title","pesdk.editor.button.backgroundImage":"editor.backgroundImage","pesdk.editor.button.export":"editor.export","pesdk.editor.button.new":"editor.new","pesdk.editor.button.undo":"editor.undo","pesdk.editor.text.exporting":"loading.exporting","pesdk.editor.text.imageResized_maxDimensions":"warning.imageResized_maxDimensions.text","pesdk.editor.text.imageResized_maxMegaPixels":"warning.imageResized_maxMegaPixels.text","pesdk.editor.text.invalidFileType":"errors.invalidFileType.text","pesdk.editor.text.renderingError":"error.renderingError.text","pesdk.editor.text.resizing":"loading.resizing","pesdk.editor.title.imageResized_maxDimensions":"warnings.imageResized_maxDimensions.title","pesdk.editor.title.imageResized_maxMegaPixels":"warnings.imageResized_maxMegaPixels.title","pesdk.editor.title.renderingError":"errors.renderingError.title","pesdk.editor.title.zoom":"editor.zoom","pesdk.filter.asset.all":"controls.filter.categories.all","pesdk.filter.asset.identity":"controls.filter.filters.identity","pesdk.filter.asset.imgly_filters_analog":"controls.filter.categories.imgly_filters_analog","pesdk.filter.asset.imgly_filters_bw":"controls.filter.categories.imgly_filters_bw","pesdk.filter.asset.imgly_filters_retro":"controls.filter.categories.imgly_filters_retro","pesdk.filter.asset.imgly_filters_special":"controls.filter.categories.imgly_filters_special","pesdk.filter.asset.imgly_filters_summer":"controls.filter.categories.imgly_filters_summer","pesdk.filter.asset.imgly_filters_winter":"controls.filter.categories.imgly_filters_winter","pesdk.filter.asset.imgly_lut_ad1920":"controls.filter.filters.imgly_lut_ad1920","pesdk.filter.asset.imgly_lut_ancient":"controls.filter.filters.imgly_lut_ancient","pesdk.filter.asset.imgly_lut_bleached":"controls.filter.filters.imgly_lut_bleached","pesdk.filter.asset.imgly_lut_bleachedblue":"controls.filter.filters.imgly_lut_bleachedblue","pesdk.filter.asset.imgly_lut_blues":"controls.filter.filters.imgly_lut_blues","pesdk.filter.asset.imgly_lut_blueshadows":"controls.filter.filters.imgly_lut_blueshadows","pesdk.filter.asset.imgly_lut_breeze":"controls.filter.filters.imgly_lut_breeze","pesdk.filter.asset.imgly_lut_bw":"controls.filter.filters.imgly_lut_bw","pesdk.filter.asset.imgly_lut_celsius":"controls.filter.filters.imgly_lut_celsius","pesdk.filter.asset.imgly_lut_chest":"controls.filter.filters.imgly_lut_chest","pesdk.filter.asset.imgly_lut_classic":"controls.filter.filters.imgly_lut_classic","pesdk.filter.asset.imgly_lut_colorful":"controls.filter.filters.imgly_lut_colorful","pesdk.filter.asset.imgly_lut_cool":"controls.filter.filters.imgly_lut_cool","pesdk.filter.asset.imgly_lut_cottoncandy":"controls.filter.filters.imgly_lut_cottoncandy","pesdk.filter.asset.imgly_lut_creamy":"controls.filter.filters.imgly_lut_creamy","pesdk.filter.asset.imgly_lut_eighties":"controls.filter.filters.imgly_lut_eighties","pesdk.filter.asset.imgly_lut_elder":"controls.filter.filters.imgly_lut_elder","pesdk.filter.asset.imgly_lut_evening":"controls.filter.filters.imgly_lut_evening","pesdk.filter.asset.imgly_lut_fall":"controls.filter.filters.imgly_lut_fall","pesdk.filter.asset.imgly_lut_fixie":"controls.filter.filters.imgly_lut_fixie","pesdk.filter.asset.imgly_lut_food":"controls.filter.filters.imgly_lut_food","pesdk.filter.asset.imgly_lut_fridge":"controls.filter.filters.imgly_lut_fridge","pesdk.filter.asset.imgly_lut_front":"controls.filter.filters.imgly_lut_front","pesdk.filter.asset.imgly_lut_glam":"controls.filter.filters.imgly_lut_glam","pesdk.filter.asset.imgly_lut_gobblin":"controls.filter.filters.imgly_lut_gobblin","pesdk.filter.asset.imgly_lut_highcarb":"controls.filter.filters.imgly_lut_highcarb","pesdk.filter.asset.imgly_lut_highcontrast":"controls.filter.filters.imgly_lut_highcontrast","pesdk.filter.asset.imgly_lut_k1":"controls.filter.filters.imgly_lut_k1","pesdk.filter.asset.imgly_lut_k2":"controls.filter.filters.imgly_lut_k2","pesdk.filter.asset.imgly_lut_k6":"controls.filter.filters.imgly_lut_k6","pesdk.filter.asset.imgly_lut_kdynamic":"controls.filter.filters.imgly_lut_kdynamic","pesdk.filter.asset.imgly_lut_keen":"controls.filter.filters.imgly_lut_keen","pesdk.filter.asset.imgly_lut_lenin":"controls.filter.filters.imgly_lut_lenin","pesdk.filter.asset.imgly_lut_litho":"controls.filter.filters.imgly_lut_litho","pesdk.filter.asset.imgly_lut_lomo100":"controls.filter.filters.imgly_lut_lomo100","pesdk.filter.asset.imgly_lut_lucid":"controls.filter.filters.imgly_lut_lucid","pesdk.filter.asset.imgly_lut_mellow":"controls.filter.filters.imgly_lut_mellow","pesdk.filter.asset.imgly_lut_neat":"controls.filter.filters.imgly_lut_neat","pesdk.filter.asset.imgly_lut_nogreen":"controls.filter.filters.imgly_lut_nogreen","pesdk.filter.asset.imgly_lut_orchid":"controls.filter.filters.imgly_lut_orchid","pesdk.filter.asset.imgly_lut_pale":"controls.filter.filters.imgly_lut_pale","pesdk.filter.asset.imgly_lut_pitched":"controls.filter.filters.imgly_lut_pitched","pesdk.filter.asset.imgly_lut_plate":"controls.filter.filters.imgly_lut_plate","pesdk.filter.asset.imgly_lut_pola669":"controls.filter.filters.imgly_lut_pola669","pesdk.filter.asset.imgly_lut_polasx":"controls.filter.filters.imgly_lut_polasx","pesdk.filter.asset.imgly_lut_pro400":"controls.filter.filters.imgly_lut_pro400","pesdk.filter.asset.imgly_lut_quozi":"controls.filter.filters.imgly_lut_quozi","pesdk.filter.asset.imgly_lut_sepiahigh":"controls.filter.filters.imgly_lut_sepiahigh","pesdk.filter.asset.imgly_lut_settled":"controls.filter.filters.imgly_lut_settled","pesdk.filter.asset.imgly_lut_seventies":"controls.filter.filters.imgly_lut_seventies","pesdk.filter.asset.imgly_lut_sin":"controls.filter.filters.imgly_lut_sin","pesdk.filter.asset.imgly_lut_soft":"controls.filter.filters.imgly_lut_soft","pesdk.filter.asset.imgly_lut_steel":"controls.filter.filters.imgly_lut_steel","pesdk.filter.asset.imgly_lut_summer":"controls.filter.filters.imgly_lut_summer","pesdk.filter.asset.imgly_lut_sunset":"controls.filter.filters.imgly_lut_sunset","pesdk.filter.asset.imgly_lut_tender":"controls.filter.filters.imgly_lut_tender","pesdk.filter.asset.imgly_lut_texas":"controls.filter.filters.imgly_lut_texas","pesdk.filter.asset.imgly_lut_twilight":"controls.filter.filters.imgly_lut_twilight","pesdk.filter.asset.imgly_lut_winter":"controls.filter.filters.imgly_lut_winter","pesdk.filter.asset.imgly_lut_x400":"controls.filter.filters.imgly_lut_x400","pesdk.filter.text.intensity":"controls.filter.intensity","pesdk.filter.title.name":"controls.overview.filters","pesdk.focus.button.mirrored":"controls.focus.mirrored","pesdk.focus.button.none":"controls.focus.none","pesdk.focus.button.radial":"controls.focus.radial","pesdk.focus.text.blurRadius":"controls.focus.blurRadius","pesdk.focus.title.name":"controls.overview.focus","pesdk.frame.asset.imgly_frame_art_decor":"controls.frame.frames.imgly_frame_art_decor","pesdk.frame.asset.imgly_frame_black_passepartout":"controls.frame.frames.imgly_frame_black_passepartout","pesdk.frame.asset.imgly_frame_dia":"controls.frame.frames.imgly_frame_dia","pesdk.frame.asset.imgly_frame_lowpoly_shadow":"controls.frame.frames.imgly_frame_lowpoly_shadow","pesdk.frame.asset.imgly_frame_wood_passepartout":"controls.frame.frames.imgly_frame_wood_passepartout","pesdk.frame.button.none":"controls.frame.noFrame","pesdk.frame.text.scale":"controls.frame.scale","pesdk.frame.title.name":"controls.overview.frame","pesdk.library.placeholder.search":"photoRoll.search.placeholder","pesdk.library.text.noSearchResults":"photoRoll.search.noSearchResults","pesdk.library.text.photoRollLoadFail":"errors.photoRollLoadFail.text","pesdk.library.title.photoRollLoadFail":"errors.photoRollLoadFail.title","pesdk.library.title.seachResults":"photoRoll.search.results.headline","pesdk.splash.button.upload":"splash.upload.button","pesdk.splash.text.photoRoll":"splash.photoRoll.description","pesdk.splash.text.upload":"splash.upload.description","pesdk.splash.text.webcam":"splash.webcam.description","pesdk.splash.title.photoRoll":"splash.photoRoll.headline","pesdk.splash.title.webcam":"splash.webcam.headline","pesdk.sticker.asset.imgly_sticker_emoticons":"controls.sticker.categories.imgly_sticker_emoticons","pesdk.sticker.asset.imgly_sticker_shapes":"controls.sticker.categories.imgly_sticker_shapes","pesdk.sticker.title.loadingStickersFailed":"errors.loadingStickersFailed.title","pesdk.sticker.title.name":"controls.overview.sticker","pesdk.text.button.alignment":"controls.text.alignment","pesdk.text.button.background":"controls.text.background","pesdk.text.button.font":"controls.text.font","pesdk.text.button.foreground":"controls.text.foreground","pesdk.text.button.size":"controls.text.size","pesdk.text.button.takeToFront":"controls.text.takeToFront","pesdk.text.placeholder.defaultText":"controls.text.defaultText","pesdk.text.text.loadingFontsFailed":"errors.loadingFontsFailed.text","pesdk.text.title.loadingFontsFailed":"errors.loadingFontsFailed.title","pesdk.text.title.name":"controls.overview.text","pesdk.transform.asset.imgly_transform_common_16-9":"controls.transform.ratios.imgly_transform_common_16-9","pesdk.transform.asset.imgly_transform_common_4-3":"controls.transform.ratios.imgly_transform_common_4-3","pesdk.transform.asset.imgly_transform_common_custom":"controls.transform.ratios.imgly_transform_common_custom","pesdk.transform.asset.imgly_transform_common_square":"controls.transform.ratios.imgly_transform_common_square","pesdk.transform.asset.imgly_transform_facebook_ad":"controls.transform.ratios.imgly_transform_facebook_ad","pesdk.transform.asset.imgly_transform_facebook_cover":"controls.transform.ratios.imgly_transform_facebook_cover","pesdk.transform.asset.imgly_transform_facebook_post":"controls.transform.ratios.imgly_transform_facebook_post","pesdk.transform.asset.imgly_transform_facebook_profile":"controls.transform.ratios.imgly_transform_facebook_profile","pesdk.transform.button.none":"controls.transform.none","pesdk.transform.text.rotation":"controls.transform.rotation","pesdk.transform.title.name":"controls.overview.transform"}
+
+/***/ }),
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18910,7 +18959,7 @@ exports.default = {
  */
 
 /***/ }),
-/* 84 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19034,7 +19083,7 @@ var SharedState = function (_EventEmitter) {
 exports.default = SharedState;
 
 /***/ }),
-/* 85 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19097,7 +19146,7 @@ exports.cancelAnimationFrame = cAF;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8)))
 
 /***/ }),
-/* 86 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19111,23 +19160,23 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _loadingScreenComponent = __webpack_require__(87);
+var _loadingScreenComponent = __webpack_require__(88);
 
 var _loadingScreenComponent2 = _interopRequireDefault(_loadingScreenComponent);
 
-var _splashScreenComponent = __webpack_require__(89);
+var _splashScreenComponent = __webpack_require__(90);
 
 var _splashScreenComponent2 = _interopRequireDefault(_splashScreenComponent);
 
-var _photoRollScreenComponent = __webpack_require__(96);
+var _photoRollScreenComponent = __webpack_require__(97);
 
 var _photoRollScreenComponent2 = _interopRequireDefault(_photoRollScreenComponent);
 
-var _webcamScreenComponent = __webpack_require__(106);
+var _webcamScreenComponent = __webpack_require__(107);
 
 var _webcamScreenComponent2 = _interopRequireDefault(_webcamScreenComponent);
 
-var _editorScreenComponent = __webpack_require__(109);
+var _editorScreenComponent = __webpack_require__(110);
 
 var _editorScreenComponent2 = _interopRequireDefault(_editorScreenComponent);
 
@@ -19135,7 +19184,7 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _modalContainerComponent = __webpack_require__(190);
+var _modalContainerComponent = __webpack_require__(191);
 
 var _modalContainerComponent2 = _interopRequireDefault(_modalContainerComponent);
 
@@ -19466,7 +19515,7 @@ AppComponent.propTypes = {
 };
 
 /***/ }),
-/* 87 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19652,7 +19701,7 @@ exports.default = LoadingScreenComponent;
 LoadingScreenComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 88 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19756,7 +19805,7 @@ exports.default = HeaderComponent;
 HeaderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 89 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19774,15 +19823,15 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _uploadComponent = __webpack_require__(90);
+var _uploadComponent = __webpack_require__(91);
 
 var _uploadComponent2 = _interopRequireDefault(_uploadComponent);
 
-var _webcamComponent = __webpack_require__(94);
+var _webcamComponent = __webpack_require__(95);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
-var _photoRollComponent = __webpack_require__(95);
+var _photoRollComponent = __webpack_require__(96);
 
 var _photoRollComponent2 = _interopRequireDefault(_photoRollComponent);
 
@@ -19946,7 +19995,7 @@ exports.default = SplashScreenComponent;
 SplashScreenComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 90 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19970,7 +20019,7 @@ var _rowComponent = __webpack_require__(24);
 
 var _rowComponent2 = _interopRequireDefault(_rowComponent);
 
-var _buttonComponent = __webpack_require__(91);
+var _buttonComponent = __webpack_require__(92);
 
 var _buttonComponent2 = _interopRequireDefault(_buttonComponent);
 
@@ -20086,7 +20135,7 @@ var UploadComponent = function (_RowComponent) {
         if (!e.dataTransfer) return;
 
         if (!e.dataTransfer.files[0].type.match(/^image\//i)) {
-          return _modalManager2.default.instance.displayError(_this2._t('errors.title'), _this2._t('errors.invalidFileType.text', { fileType: e.dataTransfer.files[0].type }));
+          return _modalManager2.default.instance.displayError(_this2._t('pesdk.common.title.error'), _this2._t('pesdk.editor.text.invalidFileType', { fileType: e.dataTransfer.files[0].type }));
         }
 
         _this2._handleFile(e.dataTransfer.files[0]);
@@ -20185,12 +20234,12 @@ var UploadComponent = function (_RowComponent) {
             _globals.ReactBEM.createElement(
               _buttonComponent2.default,
               { bem: 'e:button', uppercase: true },
-              this._t('splash.upload.button')
+              this._t('pesdk.splash.button.upload')
             ),
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:description' },
-              this._t('splash.upload.description')
+              this._t('pesdk.splash.text.upload')
             )
           )
         )
@@ -20211,7 +20260,7 @@ UploadComponent.propTypes = {
 UploadComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 91 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20290,7 +20339,7 @@ ButtonComponent.propTypes = {
 ButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 92 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20304,7 +20353,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _modalManager = __webpack_require__(93);
+var _modalManager = __webpack_require__(94);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
@@ -20418,7 +20467,7 @@ var FileLoader = function (_EventEmitter) {
 exports.default = FileLoader;
 
 /***/ }),
-/* 93 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20674,7 +20723,7 @@ var ModalManager = function (_EventEmitter2) {
 exports.default = ModalManager;
 
 /***/ }),
-/* 94 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20781,12 +20830,12 @@ var WebcamComponent = function (_RowComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:headline' },
-              this._t('splash.webcam.headline')
+              this._t('pesdk.splash.title.webcam')
             ),
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:description' },
-              this._t('splash.webcam.description')
+              this._t('pesdk.splash.text.webcam')
             )
           )
         )
@@ -20803,7 +20852,7 @@ exports.default = WebcamComponent;
 WebcamComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 95 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20908,12 +20957,12 @@ var PhotoRollComponent = function (_RowComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:headline' },
-              this._t('splash.photoRoll.headline')
+              this._t('pesdk.splash.title.photoRoll')
             ),
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:description' },
-              this._t('splash.photoRoll.description')
+              this._t('pesdk.splash.text.photoRoll')
             )
           )
         )
@@ -20930,7 +20979,7 @@ exports.default = PhotoRollComponent;
 PhotoRollComponent.contextTypes = _rowComponent2.default.contextTypes;
 
 /***/ }),
-/* 96 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -20948,11 +20997,11 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _topBarComponent = __webpack_require__(97);
+var _topBarComponent = __webpack_require__(98);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _overviewComponent = __webpack_require__(101);
+var _overviewComponent = __webpack_require__(102);
 
 var _overviewComponent2 = _interopRequireDefault(_overviewComponent);
 
@@ -20960,7 +21009,7 @@ var _photoListComponent = __webpack_require__(41);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _searchResultsComponent = __webpack_require__(104);
+var _searchResultsComponent = __webpack_require__(105);
 
 var _searchResultsComponent2 = _interopRequireDefault(_searchResultsComponent);
 
@@ -21098,7 +21147,7 @@ var PhotoRollScreenComponent = function (_ScreenComponent) {
     value: function _onPhotoClicked(photo) {
       var _this2 = this;
 
-      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('loading.loading'));
+      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('pesdk.common.text.loading'));
 
       var image = new window.Image();
       image.addEventListener('load', function () {
@@ -21107,7 +21156,7 @@ var PhotoRollScreenComponent = function (_ScreenComponent) {
       });
       image.addEventListener('error', function () {
         loadingModal.close();
-        _modalManager2.default.instance.displayError(_this2._t('errors.imageLoadFail.title'), _this2._t('errors.imageLoadFail.text', { path: image.src }));
+        _modalManager2.default.instance.displayError(_this2._t('pesdk.common.title.imageLoadFail'), _this2._t('pesdk.common.text.imageLoadFail', { path: image.src }));
       });
       image.crossOrigin = _globals.SDKUtils.getCrossOriginValue(this.context.options.crossOrigin);
       image.src = photo.urls.raw;
@@ -21232,7 +21281,7 @@ var PhotoRollScreenComponent = function (_ScreenComponent) {
           onFileUpload: this._onFileUpload,
           onWebcamClick: this._onWebcamClick,
           backButton: this._isBackButtonVisible(),
-          backButtonLabel: this._t('generic.back'),
+          backButtonLabel: this._t('pesdk.common.button.back'),
           ref: 'topBarControls' }),
         contentComponent
       );
@@ -21242,21 +21291,19 @@ var PhotoRollScreenComponent = function (_ScreenComponent) {
   return PhotoRollScreenComponent;
 }(_screenComponent2.default);
 
+// PhotoRollScreenComponent.childContextTypes = {
+//   ui: PropTypes.object.isRequired,
+//   editor: PropTypes.object.isRequired,
+//   mediator: PropTypes.object.isRequired,
+//   options: PropTypes.object.isRequired,
+//   editorScreen: PropTypes.object.isRequired
+// }
+
 exports.default = PhotoRollScreenComponent;
-
-
-PhotoRollScreenComponent.childContextTypes = {
-  ui: _globals.PropTypes.object.isRequired,
-  editor: _globals.PropTypes.object.isRequired,
-  mediator: _globals.PropTypes.object.isRequired,
-  options: _globals.PropTypes.object.isRequired,
-  editorScreen: _globals.PropTypes.object.isRequired
-};
-
 PhotoRollScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 97 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21274,7 +21321,7 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _topBarButtonComponent = __webpack_require__(98);
+var _topBarButtonComponent = __webpack_require__(99);
 
 var _topBarButtonComponent2 = _interopRequireDefault(_topBarButtonComponent);
 
@@ -21282,11 +21329,11 @@ var _invisibleUploadComponent = __webpack_require__(25);
 
 var _invisibleUploadComponent2 = _interopRequireDefault(_invisibleUploadComponent);
 
-var _topBarSearchComponent = __webpack_require__(99);
+var _topBarSearchComponent = __webpack_require__(100);
 
 var _topBarSearchComponent2 = _interopRequireDefault(_topBarSearchComponent);
 
-var _backButtonComponent = __webpack_require__(100);
+var _backButtonComponent = __webpack_require__(101);
 
 var _backButtonComponent2 = _interopRequireDefault(_backButtonComponent);
 
@@ -21492,7 +21539,7 @@ exports.default = PhotoRollTopBarComponent;
 PhotoRollTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 98 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21564,7 +21611,7 @@ exports.default = TopBarButtonComponent;
 TopBarButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 99 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21618,7 +21665,7 @@ var TopBarSearchComponent = function (_BaseComponent) {
 
     _this.state = {
       active: false,
-      placeholder: _this._t('photoRoll.search.placeholder'),
+      placeholder: _this._t('pesdk.library.placeholder.search'),
       value: _this.props.searchQuery || ''
     };
     return _this;
@@ -21814,7 +21861,7 @@ exports.default = TopBarSearchComponent;
 TopBarSearchComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 100 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21893,7 +21940,7 @@ exports.default = TopBarBackButtonComponent;
 TopBarBackButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 101 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21915,7 +21962,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _libraryComponent = __webpack_require__(102);
+var _libraryComponent = __webpack_require__(103);
 
 var _libraryComponent2 = _interopRequireDefault(_libraryComponent);
 
@@ -22009,7 +22056,7 @@ var OverviewComponent = function (_BaseComponent) {
 
       _get(OverviewComponent.prototype.__proto__ || Object.getPrototypeOf(OverviewComponent.prototype), 'componentDidMount', this).call(this);
 
-      var modal = _modalManager2.default.instance.displayLoading(this._t('loading.loading'));
+      var modal = _modalManager2.default.instance.displayLoading(this._t('pesdk.common.text.loading'));
       this._load().then(function (_ref2) {
         var _ref3 = _slicedToArray(_ref2, 2),
             libraries = _ref3[0],
@@ -22207,7 +22254,7 @@ exports.default = OverviewComponent;
 OverviewComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 102 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22315,7 +22362,7 @@ exports.default = LibraryComponent;
 LibraryComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 103 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22397,7 +22444,7 @@ exports.default = PhotoComponent;
 PhotoComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 104 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22415,7 +22462,7 @@ var _photoListComponent = __webpack_require__(41);
 
 var _photoListComponent2 = _interopRequireDefault(_photoListComponent);
 
-var _noSearchResultsComponent = __webpack_require__(105);
+var _noSearchResultsComponent = __webpack_require__(106);
 
 var _noSearchResultsComponent2 = _interopRequireDefault(_noSearchResultsComponent);
 
@@ -22480,7 +22527,7 @@ var SearchResultsComponent = function (_PhotoListComponent) {
   }, {
     key: '_getHeadline',
     value: function _getHeadline() {
-      return this._t('photoRoll.search.results.headline', {
+      return this._t('pesdk.library.title.searchResults', {
         query: this.props.query
       });
     }
@@ -22499,7 +22546,7 @@ var SearchResultsComponent = function (_PhotoListComponent) {
       var query = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.props.query;
 
       this._totalPhotosHeight = 0;
-      var modal = _modalManager2.default.instance.displayProgress(this._t('loading.loading'));
+      var modal = _modalManager2.default.instance.displayProgress(this._t('pesdk.common.text.loading'));
       var PhotoRollProvider = this.context.options.photoRoll.provider;
       var provider = new PhotoRollProvider();
 
@@ -22556,7 +22603,7 @@ exports.default = SearchResultsComponent;
 SearchResultsComponent.contextTypes = _photoListComponent2.default.contextTypes;
 
 /***/ }),
-/* 105 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22669,7 +22716,7 @@ var NoSearchResultsComponent = function (_BaseComponent) {
   }, {
     key: '_renderMessage',
     value: function _renderMessage() {
-      return { __html: this._t('photoRoll.search.noSearchResults', {
+      return { __html: this._t('pesdk.library.text.noSearchResults', {
           query: this.props.query
         }) };
     }
@@ -22747,7 +22794,7 @@ exports.default = NoSearchResultsComponent;
 NoSearchResultsComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 106 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22769,7 +22816,7 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _webcamComponent = __webpack_require__(107);
+var _webcamComponent = __webpack_require__(108);
 
 var _webcamComponent2 = _interopRequireDefault(_webcamComponent);
 
@@ -22869,19 +22916,19 @@ var WebcamScreenComponent = function (_ScreenComponent) {
         _globals.ReactBEM.createElement(
           _topBarComponent2.default,
           {
-            label: this._t('webcam.headline') },
+            label: this._t('pesdk.camera.title.headline') },
           _globals.ReactBEM.createElement(
             'bem',
             { specifier: '$b:topBar' },
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:cancelButton', onClick: this._onCancel },
-              this._t('generic.cancel')
+              this._t('pesdk.common.button.cancel')
             ),
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('webcam.headline')
+              this._t('pesdk.camera.title.headline')
             )
           )
         ),
@@ -22930,7 +22977,7 @@ exports.default = WebcamScreenComponent;
 WebcamScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 107 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22948,7 +22995,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _webcamVideoComponent = __webpack_require__(108);
+var _webcamVideoComponent = __webpack_require__(109);
 
 var _webcamVideoComponent2 = _interopRequireDefault(_webcamVideoComponent);
 
@@ -23022,7 +23069,7 @@ var WebcamComponent = function (_BaseComponent) {
     value: function _onWebcamError(msg) {
       var _this2 = this;
 
-      var errorModal = _modalManager2.default.instance.displayError(this._t('errors.title'), this._t('errors.webcamUnavailable.text', { error: msg }));
+      var errorModal = _modalManager2.default.instance.displayError(this._t('pesdk.common.title.error'), this._t('pesdk.camera.text.webcamUnavailable', { error: msg }));
       errorModal.on('close', function () {
         return _this2.props.onBack();
       });
@@ -23082,7 +23129,7 @@ WebcamComponent.propTypes = {
 WebcamComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 108 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23460,7 +23507,7 @@ WebcamVideoComponent.propTypes = {
 };
 
 /***/ }),
-/* 109 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23484,7 +23531,7 @@ var _screenComponent = __webpack_require__(9);
 
 var _screenComponent2 = _interopRequireDefault(_screenComponent);
 
-var _canvasComponent = __webpack_require__(112);
+var _canvasComponent = __webpack_require__(113);
 
 var _canvasComponent2 = _interopRequireDefault(_canvasComponent);
 
@@ -23492,7 +23539,7 @@ var _modalManager = __webpack_require__(1);
 
 var _modalManager2 = _interopRequireDefault(_modalManager);
 
-var _overview = __webpack_require__(113);
+var _overview = __webpack_require__(114);
 
 var _overview2 = _interopRequireDefault(_overview);
 
@@ -23682,7 +23729,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
   }, {
     key: '_onRenderError',
     value: function _onRenderError(e) {
-      _modalManager2.default.instance.displayError(this._t('errors.renderingError.title'), this._t('errors.renderingError.text'), true);
+      _modalManager2.default.instance.displayError(this._t('pesdk.editor.title.renderingError'), this._t('pesdk.editor.text.renderingError'), true);
       _globals.Log.error(this.constructor.name, 'An error occurred while rendering: ' + e.message);
     }
 
@@ -23707,7 +23754,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
     value: function _onImageResize() {
       var _this3 = this;
 
-      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('loading.resizing'));
+      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('pesdk.editor.text.resizing'));
       this._editor.once('resized', function (_ref2) {
         var dimensions = _ref2.dimensions,
             reason = _ref2.reason;
@@ -23715,7 +23762,7 @@ var EditorScreenComponent = function (_ScreenComponent) {
         loadingModal.close();
 
         if (_this3.context.options.editor.displayResizeMessage) {
-          _modalManager2.default.instance.displayWarning(_this3._t('warnings.imageResized_' + reason + '.title'), _this3._t('warnings.imageResized_' + reason + '.text', {
+          _modalManager2.default.instance.displayWarning(_this3._t('pesdk.editor.title.imageResized_' + reason), _this3._t('pesdk.editor.text.imageResized_' + reason, {
             maxMegaPixels: _this3._editor.getMaxMegapixels(),
             width: dimensions.x,
             height: dimensions.y
@@ -24028,7 +24075,7 @@ EditorScreenComponent.childContextTypes = {
 EditorScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
 
 /***/ }),
-/* 110 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24104,7 +24151,7 @@ exports.default = BackButtonComponent;
 BackButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 111 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24180,7 +24227,7 @@ exports.default = DoneButtonComponent;
 DoneButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 112 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24479,7 +24526,7 @@ exports.default = CanvasComponent;
 CanvasComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 113 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24493,7 +24540,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _topBarComponent = __webpack_require__(114);
+var _topBarComponent = __webpack_require__(115);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
@@ -24501,7 +24548,7 @@ var _overviewControlsComponent = __webpack_require__(42);
 
 var _overviewControlsComponent2 = _interopRequireDefault(_overviewControlsComponent);
 
-var _overviewCanvasControlsComponent = __webpack_require__(119);
+var _overviewCanvasControlsComponent = __webpack_require__(120);
 
 var _overviewCanvasControlsComponent2 = _interopRequireDefault(_overviewCanvasControlsComponent);
 
@@ -24565,7 +24612,7 @@ OverviewControls.canvasControlsComponent = _overviewCanvasControlsComponent2.def
 exports.default = OverviewControls;
 
 /***/ }),
-/* 114 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24583,19 +24630,19 @@ var _topBarComponent = __webpack_require__(12);
 
 var _topBarComponent2 = _interopRequireDefault(_topBarComponent);
 
-var _newFileButtonComponent = __webpack_require__(115);
+var _newFileButtonComponent = __webpack_require__(116);
 
 var _newFileButtonComponent2 = _interopRequireDefault(_newFileButtonComponent);
 
-var _exportButtonComponent = __webpack_require__(116);
+var _exportButtonComponent = __webpack_require__(117);
 
 var _exportButtonComponent2 = _interopRequireDefault(_exportButtonComponent);
 
-var _undoButtonComponent = __webpack_require__(117);
+var _undoButtonComponent = __webpack_require__(118);
 
 var _undoButtonComponent2 = _interopRequireDefault(_undoButtonComponent);
 
-var _zoomComponent = __webpack_require__(118);
+var _zoomComponent = __webpack_require__(119);
 
 var _zoomComponent2 = _interopRequireDefault(_zoomComponent);
 
@@ -24676,7 +24723,7 @@ exports.default = OverviewTopBarComponent;
 OverviewTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 115 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24792,9 +24839,9 @@ var NewFileButtonComponent = function (_BaseComponent) {
 
       var buttonLabel = null;
       if (options.photoRoll.provider) {
-        buttonLabel = this._t('editor.backgroundImage');
+        buttonLabel = this._t('pesdk.editor.button.backgroundImage');
       } else {
-        buttonLabel = this._t('editor.new');
+        buttonLabel = this._t('pesdk.editor.button.new');
       }
 
       return _globals.ReactBEM.createElement(
@@ -24818,7 +24865,7 @@ exports.default = NewFileButtonComponent;
 NewFileButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 116 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24901,14 +24948,14 @@ var ExportButtonComponent = function (_BaseComponent) {
       var exportOptions = options.editor.export;
 
       editorScreen.switchToControls('home', null, function () {
-        var loadingModal = _modalManager2.default.instance.displayLoading(_this2._t('loading.exporting'));
+        var loadingModal = _modalManager2.default.instance.displayLoading(_this2._t('pesdk.editor.text.exporting'));
 
         // Give it some time to display the loading modal
         setTimeout(function () {
           editor.export(exportOptions.download).then(function () {
             loadingModal.close();
           }).catch(function (e) {
-            _modalManager2.default.instance.displayError(_this2._t('errors.title'), e.message);
+            _modalManager2.default.instance.displayError(_this2._t('pesdk.common.title.error'), e.message);
             loadingModal.close();
           });
         }, 100);
@@ -24931,7 +24978,7 @@ var ExportButtonComponent = function (_BaseComponent) {
 
       return _globals.ReactBEM.createElement(_buttonComponent2.default, {
         style: 'blue',
-        label: this._t('editor.export'),
+        label: this._t('pesdk.editor.button.export'),
         icon: 'editor/export.png',
         onClick: this._onButtonClick });
     }
@@ -24946,7 +24993,7 @@ exports.default = ExportButtonComponent;
 ExportButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 117 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25061,7 +25108,7 @@ var UndoButtonComponent = function (_BaseComponent) {
       if (!editor.history.isAvailable()) return null;
 
       return _globals.ReactBEM.createElement(_buttonComponent2.default, {
-        label: this._t('editor.undo'),
+        label: this._t('pesdk.editor.button.undo'),
         icon: 'editor/undo.png',
         onClick: this._onButtonClick });
     }
@@ -25076,7 +25123,7 @@ exports.default = UndoButtonComponent;
 UndoButtonComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 118 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25220,7 +25267,7 @@ var ZoomComponent = function (_BaseComponent) {
           _globals.ReactBEM.createElement(
             'div',
             { bem: 'e:label' },
-            this._t('editor.zoom'),
+            this._t('pesdk.editor.title.zoom'),
             _globals.ReactBEM.createElement('br', null),
             Math.round(zoom * 100),
             '%'
@@ -25247,7 +25294,7 @@ exports.default = ZoomComponent;
 ZoomComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 119 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25383,7 +25430,7 @@ exports.default = OverviewCanvasControlsComponent;
 OverviewCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 120 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25410,7 +25457,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _globals = __webpack_require__(0);
 
-var _fileDownloader = __webpack_require__(121);
+var _fileDownloader = __webpack_require__(122);
 
 var _fileDownloader2 = _interopRequireDefault(_fileDownloader);
 
@@ -25496,7 +25543,7 @@ var Exporter = function () {
 exports.default = Exporter;
 
 /***/ }),
-/* 121 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25615,7 +25662,7 @@ var FileDownloader = function () {
 exports.default = FileDownloader;
 
 /***/ }),
-/* 122 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25763,7 +25810,7 @@ var ImageResizer = function () {
 exports.default = ImageResizer;
 
 /***/ }),
-/* 123 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26013,7 +26060,7 @@ var EditorOperations = function () {
 exports.default = EditorOperations;
 
 /***/ }),
-/* 124 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26132,7 +26179,7 @@ var EditorControls = function () {
 exports.default = EditorControls;
 
 /***/ }),
-/* 125 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26148,7 +26195,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _adjustmentsControlsComponent = __webpack_require__(126);
+var _adjustmentsControlsComponent = __webpack_require__(127);
 
 var _adjustmentsControlsComponent2 = _interopRequireDefault(_adjustmentsControlsComponent);
 
@@ -26173,7 +26220,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var TOOLS = ['brightness', 'clarity', 'contrast', 'exposure', 'highlights', 'saturation', 'shadows', 'gamma'];
+var TOOLS = ['brightness', 'clarity', 'contrast', 'exposure', 'highlights', 'saturation', 'shadows', 'gamma', 'whites', 'blacks', 'temperature'];
 
 /**
  * The adjustments controls
@@ -26275,7 +26322,7 @@ AdjustmentsControls.iconPath = 'controls/overview/adjustments.png';
  * @type {String}
  * @ignore
  */
-AdjustmentsControls.languageKey = 'controls.overview.adjustments';
+AdjustmentsControls.languageKey = 'pesdk.adjustments.title.name';
 
 /**
  * The default options for this control
@@ -26292,7 +26339,7 @@ AdjustmentsControls.requiredOperations = ['adjustments'];
 exports.default = AdjustmentsControls;
 
 /***/ }),
-/* 126 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26320,7 +26367,7 @@ var _sliderOverlayComponent = __webpack_require__(6);
 
 var _sliderOverlayComponent2 = _interopRequireDefault(_sliderOverlayComponent);
 
-var _miniSliderComponent = __webpack_require__(127);
+var _miniSliderComponent = __webpack_require__(128);
 
 var _miniSliderComponent2 = _interopRequireDefault(_miniSliderComponent);
 
@@ -26349,7 +26396,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var AdjustmentsOperation = _globals.SDK.Operations.AdjustmentsOperation;
 
 
-var ITEMS = ['brightness', 'saturation', 'contrast', 'gamma', 'clarity', 'exposure', 'shadows', 'highlights'];
+var ITEMS = ['brightness', 'saturation', 'contrast', 'gamma', 'clarity', 'exposure', 'shadows', 'highlights', 'whites', 'blacks', 'temperature'];
 
 var AdjustmentsControlsComponent = function (_ControlsComponent) {
   _inherits(AdjustmentsControlsComponent, _ControlsComponent);
@@ -26470,7 +26517,7 @@ var AdjustmentsControlsComponent = function (_ControlsComponent) {
         value: sliderValue,
         valueUnit: '%',
         positiveValuePrefix: '+',
-        label: this._t('controls.adjustments.' + identifier),
+        label: this._t('pesdk.adjustments.text.' + identifier),
         middleDot: true,
         onChange: this._onSliderValueChange
       };
@@ -26539,7 +26586,7 @@ var AdjustmentsControlsComponent = function (_ControlsComponent) {
               _globals.ReactBEM.createElement(
                 'div',
                 { bem: 'e:label' },
-                _this2._t('controls.adjustments.' + item)
+                _this2._t('pesdk.adjustments.text.' + item)
               ),
               miniSlider
             )
@@ -26583,7 +26630,7 @@ exports.default = AdjustmentsControlsComponent;
 AdjustmentsControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 127 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26783,7 +26830,7 @@ exports.default = MiniSliderComponent;
 MiniSliderComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 128 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26801,15 +26848,15 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _transformControlsComponent = __webpack_require__(129);
+var _transformControlsComponent = __webpack_require__(130);
 
 var _transformControlsComponent2 = _interopRequireDefault(_transformControlsComponent);
 
-var _transformCanvasControlsComponent = __webpack_require__(130);
+var _transformCanvasControlsComponent = __webpack_require__(131);
 
 var _transformCanvasControlsComponent2 = _interopRequireDefault(_transformCanvasControlsComponent);
 
-var _transformTopBarComponent = __webpack_require__(131);
+var _transformTopBarComponent = __webpack_require__(132);
 
 var _transformTopBarComponent2 = _interopRequireDefault(_transformTopBarComponent);
 
@@ -27041,7 +27088,7 @@ TransformControls.iconPath = 'controls/overview/transform.png';
  * @type {String}
  * @ignore
  */
-TransformControls.languageKey = 'controls.overview.transform';
+TransformControls.languageKey = 'pesdk.transform.title.name';
 
 /**
  * The default options for this control
@@ -27061,7 +27108,7 @@ TransformControls.requiredOperations = ['transform'];
 exports.default = TransformControls;
 
 /***/ }),
-/* 129 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27550,7 +27597,7 @@ var TransformControlsComponent = function (_ControlsComponent) {
         middleDot: true,
         maxValue: 45,
         valueUnit: '\xB0',
-        label: this._t('controls.transform.rotation'),
+        label: this._t('pesdk.transform.text.rotation'),
         onChange: this._onRotationChange });
     }
 
@@ -27585,7 +27632,7 @@ var TransformControlsComponent = function (_ControlsComponent) {
               _globals.ReactBEM.createElement(
                 'div',
                 { bem: 'e:label' },
-                _this2._t('controls.transform.ratios.' + ratio.identifier) || ratio.defaultName
+                _this2._t('pesdk.transform.asset.' + ratio.identifier) || ratio.defaultName
               )
             )
           )
@@ -27636,7 +27683,7 @@ var TransformControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.transform.none')
+              this._t('pesdk.transform.button.none')
             )
           )
         )
@@ -27721,7 +27768,7 @@ exports.default = TransformControlsComponent;
 TransformControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 130 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28178,7 +28225,7 @@ exports.default = TransformCanvasControlsComponent;
 TransformCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 131 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28377,7 +28424,7 @@ exports.default = TransformTopBarComponent;
 TransformTopBarComponent.contextTypes = _topBarComponent2.default.contextTypes;
 
 /***/ }),
-/* 132 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28395,7 +28442,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _filterControlsComponent = __webpack_require__(133);
+var _filterControlsComponent = __webpack_require__(134);
 
 var _filterControlsComponent2 = _interopRequireDefault(_filterControlsComponent);
 
@@ -28575,7 +28622,7 @@ FiltersControls.iconPath = 'controls/overview/filters.png';
  * @type {String}
  * @ignore
  */
-FiltersControls.languageKey = 'controls.overview.filters';
+FiltersControls.languageKey = 'pesdk.filter.title.name';
 
 /**
  * The default options for this control
@@ -28599,7 +28646,7 @@ FiltersControls.defaultOptions = {
 exports.default = FiltersControls;
 
 /***/ }),
-/* 133 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28796,7 +28843,7 @@ var FilterControlsComponent = function (_ControlsComponent) {
         value: intensity * 100,
         valueUnit: '%',
         positiveValuePrefix: '+',
-        label: this._t('controls.filter.intensity'),
+        label: this._t('pesdk.filter.text.intensity'),
         onChange: this._onSliderValueChange });
     }
 
@@ -28837,7 +28884,7 @@ var FilterControlsComponent = function (_ControlsComponent) {
                 _globals.ReactBEM.createElement(
                   'div',
                   { bem: 'e:label' },
-                  _this4._t('controls.filter.filters.' + filter.identifier) || filter.defaultName
+                  _this4._t('pesdk.filter.asset.' + filter.identifier) || filter.defaultName
                 )
               )
             )
@@ -28867,7 +28914,7 @@ var FilterControlsComponent = function (_ControlsComponent) {
         return {
           identifier: c.identifier,
           item: c,
-          label: _this5._t('controls.filter.categories.' + c.identifier) || c.defaultName,
+          label: _this5._t('pesdk.filter.asset.' + c.identifier) || c.defaultName,
           icon: _this5._getAssetPath('controls/filters/categories/' + c.identifier + '.png', true)
         };
       });
@@ -28875,7 +28922,7 @@ var FilterControlsComponent = function (_ControlsComponent) {
       var selectedCategory = {
         identifier: this.state.category.identifier,
         item: this.state.category,
-        label: this._t('controls.filter.categories.' + this.state.category.identifier) || this.state.category.defaultName,
+        label: this._t('pesdk.filter.asset.' + this.state.category.identifier) || this.state.category.defaultName,
         icon: this._getAssetPath('controls/filters/categories/' + this.state.category.identifier + '.png', true)
       };
 
@@ -28925,7 +28972,7 @@ exports.default = FilterControlsComponent;
 FilterControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 134 */
+/* 135 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29042,7 +29089,7 @@ exports.default = CategoryDropdownOverlayComponent;
 CategoryDropdownOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 135 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29058,11 +29105,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _focusControlsComponent = __webpack_require__(136);
+var _focusControlsComponent = __webpack_require__(137);
 
 var _focusControlsComponent2 = _interopRequireDefault(_focusControlsComponent);
 
-var _focusCanvasControlsComponent = __webpack_require__(137);
+var _focusCanvasControlsComponent = __webpack_require__(138);
 
 var _focusCanvasControlsComponent2 = _interopRequireDefault(_focusCanvasControlsComponent);
 
@@ -29244,7 +29291,7 @@ FocusControls.iconPath = 'controls/overview/focus.png';
  * @type {String}
  * @ignore
  */
-FocusControls.languageKey = 'controls.overview.focus';
+FocusControls.languageKey = 'pesdk.focus.title.name';
 
 /**
  * The default options for this control
@@ -29261,7 +29308,7 @@ FocusControls.requiredOperations = ['radial-focus', 'mirrored-focus', 'linear-fo
 exports.default = FocusControls;
 
 /***/ }),
-/* 136 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29311,7 +29358,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var ITEMS = [{ toolName: 'radial-focus', iconName: 'radial', languageKey: 'controls.focus.radial' }, { toolName: 'mirrored-focus', iconName: 'mirrored', languageKey: 'controls.focus.mirrored' }];
+var ITEMS = [{ toolName: 'radial-focus', iconName: 'radial', languageKey: 'pesdk.focus.button.radial' }, { toolName: 'mirrored-focus', iconName: 'mirrored', languageKey: 'pesdk.focus.button.mirrored' }];
 
 var FocusControlsComponent = function (_ControlsComponent) {
   _inherits(FocusControlsComponent, _ControlsComponent);
@@ -29428,7 +29475,7 @@ var FocusControlsComponent = function (_ControlsComponent) {
         maxValue: Math.min(180, Math.round(shortestSide * 0.1)),
         valueUnit: 'px',
         middleDot: false,
-        label: this._t('controls.focus.blurRadius'),
+        label: this._t('pesdk.focus.text.blurRadius'),
         onChange: this._onBlurRadiusChange,
         value: value });
     }
@@ -29466,7 +29513,7 @@ var FocusControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.focus.none')
+              this._t('pesdk.focus.button.none')
             )
           )
         )
@@ -29543,7 +29590,7 @@ exports.default = FocusControlsComponent;
 FocusControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 137 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -29561,11 +29608,11 @@ var _canvasControlsComponent = __webpack_require__(10);
 
 var _canvasControlsComponent2 = _interopRequireDefault(_canvasControlsComponent);
 
-var _linearFocusCanvasControlsComponent = __webpack_require__(138);
+var _linearFocusCanvasControlsComponent = __webpack_require__(139);
 
 var _linearFocusCanvasControlsComponent2 = _interopRequireDefault(_linearFocusCanvasControlsComponent);
 
-var _radialFocusCanvasControlsComponent = __webpack_require__(139);
+var _radialFocusCanvasControlsComponent = __webpack_require__(140);
 
 var _radialFocusCanvasControlsComponent2 = _interopRequireDefault(_radialFocusCanvasControlsComponent);
 
@@ -29646,7 +29693,7 @@ exports.default = FocusCanvasControlsComponent;
 FocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 138 */
+/* 139 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30015,7 +30062,7 @@ exports.default = LinearFocusCanvasControlsComponent;
 LinearFocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 139 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30376,7 +30423,7 @@ exports.default = RadialFocusCanvasControlsComponent;
 RadialFocusCanvasControlsComponent.contextTypes = _canvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 140 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30394,11 +30441,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _stickerControlsComponent = __webpack_require__(141);
+var _stickerControlsComponent = __webpack_require__(142);
 
 var _stickerControlsComponent2 = _interopRequireDefault(_stickerControlsComponent);
 
-var _stickerCanvasControlsComponent = __webpack_require__(143);
+var _stickerCanvasControlsComponent = __webpack_require__(144);
 
 var _stickerCanvasControlsComponent2 = _interopRequireDefault(_stickerCanvasControlsComponent);
 
@@ -30575,7 +30622,7 @@ StickerControls.iconPath = 'controls/overview/sticker.png';
  * @type {String}
  * @ignore
  */
-StickerControls.languageKey = 'controls.overview.sticker';
+StickerControls.languageKey = 'pesdk.sticker.title.name';
 
 /**
  * The default options for this control
@@ -30607,7 +30654,7 @@ StickerControls.getPreloadAssets = _controls2.default.getPreloadAssets;
 exports.default = StickerControls;
 
 /***/ }),
-/* 141 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30645,7 +30692,7 @@ var _stickerManager = __webpack_require__(11);
 
 var _stickerManager2 = _interopRequireDefault(_stickerManager);
 
-var _stickerItemComponent = __webpack_require__(142);
+var _stickerItemComponent = __webpack_require__(143);
 
 var _stickerItemComponent2 = _interopRequireDefault(_stickerItemComponent);
 
@@ -30781,7 +30828,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
       // Display loading modal after 100ms
       var loadingModal = null;
       var loadTimeout = setTimeout(function () {
-        loadingModal = _modalManager2.default.instance.displayLoading(_this3._t('loading.loading'));
+        loadingModal = _modalManager2.default.instance.displayLoading(_this3._t('pesdk.common.text.loading'));
       }, 100);
 
       // Called when loading is done. Cancels the loading timeout
@@ -30802,7 +30849,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
         });
       }).catch(function (e) {
         doneLoading();
-        var errorModal = _modalManager2.default.instance.displayError(_this3._t('errors.loadingStickersFailed.title'), e.message);
+        var errorModal = _modalManager2.default.instance.displayError(_this3._t('pesdk.sticker.title.loadingStickersFailed'), e.message);
         errorModal.on('close', function () {
           _this3.props.onBack();
         });
@@ -30900,7 +30947,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
 
       var loadingModal = void 0;
       var loadTimeout = setTimeout(function () {
-        loadingModal = _modalManager2.default.instance.displayLoading(_this5._t('loading.loading'));
+        loadingModal = _modalManager2.default.instance.displayLoading(_this5._t('pesdk.common.text.loading'));
       }, 100);
 
       image.addEventListener('load', function () {
@@ -30947,7 +30994,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
           loadTimeout = null;
         }
 
-        _modalManager2.default.instance.displayError(_this5._t('errors.imageLoadFail.title'), _this5._t('errors.imageLoadFail.text', { path: image.src }));
+        _modalManager2.default.instance.displayError(_this5._t('pesdk.common.title.imageLoadFail'), _this5._t('pesdk.common.text.imageLoadFail', { path: image.src }));
       });
 
       image.crossOrigin = this.context.editor.getCrossOrigin();
@@ -31126,7 +31173,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
         return {
           identifier: c.identifier,
           item: c,
-          label: _this8._t('controls.sticker.categories.' + c.identifier) || c.defaultName,
+          label: _this8._t('pesdk.sticker.asset.' + c.identifier) || c.defaultName,
           icon: _this8._getAssetPath('controls/stickers/categories/' + c.identifier + '.png', true)
         };
       });
@@ -31135,7 +31182,7 @@ var StickerOverviewControlsComponent = function (_ControlsComponent) {
       var selectedCategoryItem = {
         identifier: currentCategory.identifier,
         item: currentCategory,
-        label: this._t('controls.sticker.categories.' + currentCategory.identifier) || currentCategory.defaultName,
+        label: this._t('pesdk.sticker.asset.' + currentCategory.identifier) || currentCategory.defaultName,
         icon: this._getAssetPath('controls/stickers/categories/' + currentCategory.identifier + '.png', true)
       };
 
@@ -31186,7 +31233,7 @@ exports.default = StickerOverviewControlsComponent;
 StickerOverviewControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 142 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31345,7 +31392,7 @@ var StickerOverviewControlsComponent = function (_BaseComponent) {
 exports.default = StickerOverviewControlsComponent;
 
 /***/ }),
-/* 143 */
+/* 144 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31363,7 +31410,7 @@ var _spritesCanvasControlsComponent = __webpack_require__(14);
 
 var _spritesCanvasControlsComponent2 = _interopRequireDefault(_spritesCanvasControlsComponent);
 
-var _stickerControlsOverlayComponent = __webpack_require__(147);
+var _stickerControlsOverlayComponent = __webpack_require__(148);
 
 var _stickerControlsOverlayComponent2 = _interopRequireDefault(_stickerControlsOverlayComponent);
 
@@ -31426,7 +31473,7 @@ exports.default = StickerCanvasControlsComponent;
 StickerCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 144 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31576,8 +31623,12 @@ var TextItemComponent = function (_ItemComponent) {
     key: 'leaveEditMode',
     value: function leaveEditMode() {
       var sprite = this.props.sprite;
+      var editor = this.context.editor;
+
 
       sprite.setVisible(true);
+      editor.render();
+      this.setState({ editMode: false });
     }
 
     /**
@@ -32031,7 +32082,7 @@ exports.default = TextItemComponent;
 TextItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 145 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32665,7 +32716,7 @@ exports.default = StickerItemComponent;
 StickerItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 146 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32815,7 +32866,7 @@ exports.default = BrushItemComponent;
 BrushItemComponent.contextTypes = _itemComponent2.default.contextTypes;
 
 /***/ }),
-/* 147 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32961,7 +33012,7 @@ exports.default = StickerControlsOverlayComponent;
 StickerControlsOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 148 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32979,11 +33030,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _textCanvasControlsComponent = __webpack_require__(149);
+var _textCanvasControlsComponent = __webpack_require__(150);
 
 var _textCanvasControlsComponent2 = _interopRequireDefault(_textCanvasControlsComponent);
 
-var _textControlsComponent = __webpack_require__(151);
+var _textControlsComponent = __webpack_require__(152);
 
 var _textControlsComponent2 = _interopRequireDefault(_textControlsComponent);
 
@@ -33180,7 +33231,7 @@ TextControls.iconPath = 'controls/overview/text.png';
  * @type {String}
  * @ignore
  */
-TextControls.languageKey = 'controls.overview.text';
+TextControls.languageKey = 'pesdk.text.title.name';
 
 /**
  * The default options for this control
@@ -33203,7 +33254,7 @@ TextControls.defaultOptions = {
 exports.default = TextControls;
 
 /***/ }),
-/* 149 */
+/* 150 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33223,7 +33274,7 @@ var _spritesCanvasControlsComponent = __webpack_require__(14);
 
 var _spritesCanvasControlsComponent2 = _interopRequireDefault(_spritesCanvasControlsComponent);
 
-var _textControlsOverlayComponent = __webpack_require__(150);
+var _textControlsOverlayComponent = __webpack_require__(151);
 
 var _textControlsOverlayComponent2 = _interopRequireDefault(_textControlsOverlayComponent);
 
@@ -33281,7 +33332,7 @@ var TextCanvasControlsComponent = function (_SpritesCanvasControl) {
     value: function _onItemBlur() {
       var sprite = this.getSharedState('selectedSprite');
       if (sprite && sprite.getText() === '') {
-        sprite.setText(this._t('controls.text.defaultText'));
+        sprite.setText(this._t('pesdk.text.placeholder.defaultText'));
         sprite._edited = false;
       }
     }
@@ -33337,7 +33388,7 @@ exports.default = TextCanvasControlsComponent;
 TextCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 150 */
+/* 151 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33486,7 +33537,7 @@ exports.default = TextControlsOverlayComponent;
 TextControlsOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 151 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33522,7 +33573,7 @@ var _fontPreviewComponent = __webpack_require__(46);
 
 var _fontPreviewComponent2 = _interopRequireDefault(_fontPreviewComponent);
 
-var _fontComponent = __webpack_require__(156);
+var _fontComponent = __webpack_require__(157);
 
 var _fontComponent2 = _interopRequireDefault(_fontComponent);
 
@@ -33629,12 +33680,12 @@ var TextControlsComponent = function (_ControlsComponent) {
     value: function _loadFonts() {
       var _this3 = this;
 
-      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('loading.loading'));
+      var loadingModal = _modalManager2.default.instance.displayLoading(this._t('pesdk.common.text.loading'));
       return this._fontLoader.load().then(function () {
         loadingModal.close();
       }).catch(function (e) {
         loadingModal.close();
-        _modalManager2.default.instance.displayWarning(_this3._t('errors.loadingFontsFailed.title'), _this3._t('errors.loadingFontsFailed.text'));
+        _modalManager2.default.instance.displayWarning(_this3._t('pesdk.text.title.loadingFontsFailed'), _this3._t('pesdk.text.text.loadingFontsFailed'));
       });
     }
 
@@ -33660,7 +33711,7 @@ var TextControlsComponent = function (_ControlsComponent) {
         var maxTextureSize = renderer.getMaxTextureSize();
         var text = operation.createText({
           fontIdentifier: defaultFontVariation.getIdentifier(),
-          text: this._t('controls.text.defaultText'),
+          text: this._t('pesdk.text.placeholder.defaultText'),
           position: new _globals.Vector2(0.5, 0.5),
           pivot: new _globals.Vector2(0.5, 0.5),
           maxWidth: 0.5,
@@ -33901,7 +33952,7 @@ var TextControlsComponent = function (_ControlsComponent) {
         value: fontSize,
         minValue: outputDimensions.y * 0.05,
         maxValue: maxFontSize,
-        label: this._t('controls.text.size'),
+        label: this._t('pesdk.text.button.size'),
         onChange: this._onFontSizeChange });
     }
 
@@ -33945,7 +33996,7 @@ var TextControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.text.size')
+              this._t('pesdk.text.button.size')
             )
           )
         )
@@ -34009,7 +34060,7 @@ var TextControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.text.font')
+              this._t('pesdk.text.button.font')
             )
           )
         )
@@ -34050,7 +34101,7 @@ var TextControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.text.alignment')
+              this._t('pesdk.text.button.alignment')
             )
           )
         )
@@ -34083,7 +34134,7 @@ var TextControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.text.takeToFront')
+              this._t('pesdk.text.button.takeToFront')
             )
           )
         )
@@ -34124,14 +34175,14 @@ var TextControlsComponent = function (_ControlsComponent) {
         { bem: 'e:cell m:colorPicker' },
         _globals.ReactBEM.createElement(_colorPickerComponent2.default, {
           initialValue: foregroundColor,
-          label: this._t('controls.text.foreground'),
+          label: this._t('pesdk.text.button.foreground'),
           onChange: this._onForegroundColorChange })
       ), _globals.ReactBEM.createElement(
         'div',
         { bem: 'e:cell m:colorPicker' },
         _globals.ReactBEM.createElement(_colorPickerComponent2.default, {
           initialValue: backgroundColor,
-          label: this._t('controls.text.background'),
+          label: this._t('pesdk.text.button.background'),
           onChange: this._onBackgroundColorChange })
       )];
     }
@@ -34146,7 +34197,7 @@ exports.default = TextControlsComponent;
 TextControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 152 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34162,15 +34213,15 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _alphaComponent = __webpack_require__(153);
+var _alphaComponent = __webpack_require__(154);
 
 var _alphaComponent2 = _interopRequireDefault(_alphaComponent);
 
-var _saturationComponent = __webpack_require__(154);
+var _saturationComponent = __webpack_require__(155);
 
 var _saturationComponent2 = _interopRequireDefault(_saturationComponent);
 
-var _hueComponent = __webpack_require__(155);
+var _hueComponent = __webpack_require__(156);
 
 var _hueComponent2 = _interopRequireDefault(_hueComponent);
 
@@ -34341,7 +34392,7 @@ exports.default = ColorPickerOverlayComponent;
 ColorPickerOverlayComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 153 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34593,7 +34644,7 @@ exports.default = AlphaComponent;
 AlphaComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 154 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34885,7 +34936,7 @@ exports.default = SaturationComponent;
 SaturationComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 155 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35156,7 +35207,7 @@ exports.default = HueComponent;
 HueComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 156 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35306,7 +35357,7 @@ exports.default = FontComponent;
 FontComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 157 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35363,7 +35414,7 @@ Font.prototype.availableOptions = {
 };
 
 /***/ }),
-/* 158 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35381,11 +35432,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _brushControlsComponent = __webpack_require__(159);
+var _brushControlsComponent = __webpack_require__(160);
 
 var _brushControlsComponent2 = _interopRequireDefault(_brushControlsComponent);
 
-var _brushCanvasControlsComponent = __webpack_require__(161);
+var _brushCanvasControlsComponent = __webpack_require__(162);
 
 var _brushCanvasControlsComponent2 = _interopRequireDefault(_brushCanvasControlsComponent);
 
@@ -35550,7 +35601,7 @@ BrushControls.iconPath = 'controls/overview/brush.png';
  * @type {String}
  * @ignore
  */
-BrushControls.languageKey = 'controls.overview.brush';
+BrushControls.languageKey = 'pesdk.brush.title.name';
 
 /**
  * The default options for this control
@@ -35568,7 +35619,7 @@ BrushControls.defaultOptions = {
 exports.default = BrushControls;
 
 /***/ }),
-/* 159 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -35600,7 +35651,7 @@ var _colorPickerComponent = __webpack_require__(29);
 
 var _colorPickerComponent2 = _interopRequireDefault(_colorPickerComponent);
 
-var _presetPreviewItemComponent = __webpack_require__(160);
+var _presetPreviewItemComponent = __webpack_require__(161);
 
 var _presetPreviewItemComponent2 = _interopRequireDefault(_presetPreviewItemComponent);
 
@@ -35837,7 +35888,7 @@ var BrushControlsComponent = function (_ControlsComponent) {
             maxValue: maxSize,
             valueUnit: 'px',
             middleDot: false,
-            label: this._t('controls.brush.size'),
+            label: this._t('pesdk.brush.text.size'),
             onChange: this._onSizeUpdated,
             value: currentWidth })
         ));
@@ -35878,7 +35929,7 @@ exports.default = BrushControlsComponent;
 BrushControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 160 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36022,7 +36073,7 @@ exports.default = PresetPreviewItemComponent;
 PresetPreviewItemComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 161 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36437,7 +36488,7 @@ exports.default = BrushCanvasControlsComponent;
 BrushCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 162 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36453,11 +36504,11 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _selectiveBlurControlsComponent = __webpack_require__(163);
+var _selectiveBlurControlsComponent = __webpack_require__(164);
 
 var _selectiveBlurControlsComponent2 = _interopRequireDefault(_selectiveBlurControlsComponent);
 
-var _selectiveBlurCanvasControlsComponent = __webpack_require__(164);
+var _selectiveBlurCanvasControlsComponent = __webpack_require__(165);
 
 var _selectiveBlurCanvasControlsComponent2 = _interopRequireDefault(_selectiveBlurCanvasControlsComponent);
 
@@ -36627,7 +36678,7 @@ SelectiveBlurControls.requiredOperations = ['selective-blur'];
 exports.default = SelectiveBlurControls;
 
 /***/ }),
-/* 163 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36879,7 +36930,7 @@ exports.default = BrushControlsComponent;
 BrushControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 164 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37279,7 +37330,7 @@ exports.default = BrushCanvasControlsComponent;
 BrushCanvasControlsComponent.contextTypes = _spritesCanvasControlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 165 */
+/* 166 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37295,7 +37346,7 @@ var _controls = __webpack_require__(4);
 
 var _controls2 = _interopRequireDefault(_controls);
 
-var _frameControlsComponent = __webpack_require__(166);
+var _frameControlsComponent = __webpack_require__(167);
 
 var _frameControlsComponent2 = _interopRequireDefault(_frameControlsComponent);
 
@@ -37436,7 +37487,7 @@ FrameControls.iconPath = 'controls/overview/frame.png';
  * @type {String}
  * @ignore
  */
-FrameControls.languageKey = 'controls.overview.frame';
+FrameControls.languageKey = 'pesdk.frame.title.name';
 
 /**
  * The default options for this control
@@ -37457,7 +37508,7 @@ FrameControls.getPreloadAssets = _controls2.default.getPreloadAssets;
 exports.default = FrameControls;
 
 /***/ }),
-/* 166 */
+/* 167 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37487,7 +37538,7 @@ var _frameManager = __webpack_require__(48);
 
 var _frameManager2 = _interopRequireDefault(_frameManager);
 
-var _frameItemComponent = __webpack_require__(167);
+var _frameItemComponent = __webpack_require__(168);
 
 var _frameItemComponent2 = _interopRequireDefault(_frameItemComponent);
 
@@ -37679,7 +37730,7 @@ var FrameOverviewControlsComponent = function (_ControlsComponent) {
 
       var loadingModal = void 0;
       var loadTimeout = setTimeout(function () {
-        loadingModal = _modalManager2.default.instance.displayLoading(_this2._t('loading.loading'));
+        loadingModal = _modalManager2.default.instance.displayLoading(_this2._t('pesdk.common.text.loading'));
       }, 100);
 
       var frame = new _frame2.default(this.context.ui, frameData);
@@ -37728,7 +37779,7 @@ var FrameOverviewControlsComponent = function (_ControlsComponent) {
         value: currentScale,
         valueUnit: 'px',
         middleDot: false,
-        label: this._t('controls.frame.scale'),
+        label: this._t('pesdk.frame.text.scale'),
         onChange: this._onScaleChange });
     }
 
@@ -37763,7 +37814,7 @@ var FrameOverviewControlsComponent = function (_ControlsComponent) {
             _globals.ReactBEM.createElement(
               'div',
               { bem: 'e:label' },
-              this._t('controls.frame.noFrame')
+              this._t('pesdk.frame.button.none')
             )
           )
         )
@@ -37826,7 +37877,7 @@ exports.default = FrameOverviewControlsComponent;
 FrameOverviewControlsComponent.contextTypes = _controlsComponent2.default.contextTypes;
 
 /***/ }),
-/* 167 */
+/* 168 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37977,7 +38028,7 @@ var FrameItemComponent = function (_BaseComponent) {
                 _globals.ReactBEM.createElement(
                   'div',
                   { bem: 'e:label' },
-                  this._t('controls.frame.frames.' + this.props.frame.identifier) || this.props.frame.defaultName
+                  this._t('pesdk.frame.asset.' + this.props.frame.identifier) || this.props.frame.defaultName
                 )
               )
             )
@@ -37993,7 +38044,7 @@ var FrameItemComponent = function (_BaseComponent) {
 exports.default = FrameItemComponent;
 
 /***/ }),
-/* 168 */
+/* 169 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38102,7 +38153,7 @@ var EditorFeatures = function () {
 exports.default = EditorFeatures;
 
 /***/ }),
-/* 169 */
+/* 170 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38323,7 +38374,7 @@ var EditorZoom = function (_EventEmitter) {
 exports.default = EditorZoom;
 
 /***/ }),
-/* 170 */
+/* 171 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38479,7 +38530,7 @@ var EditorHistory = function (_EventEmitter) {
 exports.default = EditorHistory;
 
 /***/ }),
-/* 171 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38559,14 +38610,14 @@ exports.default = Serialization;
 Serialization.version = '1.0.0';
 
 /***/ }),
-/* 172 */
+/* 173 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(173);
+module.exports = __webpack_require__(174);
 
 
 /***/ }),
-/* 173 */
+/* 174 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -38591,7 +38642,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(174);
+module.exports = __webpack_require__(175);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -38607,7 +38658,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 174 */
+/* 175 */
 /***/ (function(module, exports) {
 
 /**
@@ -39340,7 +39391,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 175 */
+/* 176 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39452,7 +39503,7 @@ var BrushManager = function () {
 exports.default = BrushManager;
 
 /***/ }),
-/* 176 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39571,7 +39622,7 @@ var GoogleFontLoader = function (_BaseFontLoader) {
 exports.default = GoogleFontLoader;
 
 /***/ }),
-/* 177 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39596,7 +39647,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _fontRuler = __webpack_require__(178);
+var _fontRuler = __webpack_require__(179);
 
 var _fontRuler2 = _interopRequireDefault(_fontRuler);
 
@@ -39656,7 +39707,7 @@ var FontObserver = function () {
 exports.default = FontObserver;
 
 /***/ }),
-/* 178 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39774,7 +39825,7 @@ var FontRuler = function () {
 exports.default = FontRuler;
 
 /***/ }),
-/* 179 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39852,7 +39903,7 @@ var FileFontLoader = function (_BaseFontLoader) {
 exports.default = FileFontLoader;
 
 /***/ }),
-/* 180 */
+/* 181 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -39932,7 +39983,7 @@ exports.default = Serialization;
 Serialization.version = '1.0.1';
 
 /***/ }),
-/* 181 */
+/* 182 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40012,7 +40063,7 @@ exports.default = Serialization;
 Serialization.version = '2.0.0';
 
 /***/ }),
-/* 182 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40103,7 +40154,7 @@ var OverlayManager = function () {
 exports.default = OverlayManager;
 
 /***/ }),
-/* 183 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40128,11 +40179,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _serializer = __webpack_require__(184);
+var _serializer = __webpack_require__(185);
 
 var _serializer2 = _interopRequireDefault(_serializer);
 
-var _deserializer = __webpack_require__(185);
+var _deserializer = __webpack_require__(186);
 
 var _deserializer2 = _interopRequireDefault(_deserializer);
 
@@ -40183,7 +40234,7 @@ exports.default = Serialization;
 Serialization.version = '2.0.1';
 
 /***/ }),
-/* 184 */
+/* 185 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40236,7 +40287,7 @@ exports.default = v201Serializer;
 v201Serializer.version = '2.0.0';
 
 /***/ }),
-/* 185 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40289,7 +40340,7 @@ exports.default = v201Deserializer;
 v201Deserializer.version = '2.0.1';
 
 /***/ }),
-/* 186 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40369,7 +40420,7 @@ exports.default = Serialization;
 Serialization.version = '3.0.0';
 
 /***/ }),
-/* 187 */
+/* 188 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40394,11 +40445,11 @@ var _createClass = function () { function defineProperties(target, props) { for 
  * https://www.photoeditorsdk.com/LICENSE.txt
  */
 
-var _serializer = __webpack_require__(188);
+var _serializer = __webpack_require__(189);
 
 var _serializer2 = _interopRequireDefault(_serializer);
 
-var _deserializer = __webpack_require__(189);
+var _deserializer = __webpack_require__(190);
 
 var _deserializer2 = _interopRequireDefault(_deserializer);
 
@@ -40449,7 +40500,7 @@ exports.default = Serialization;
 Serialization.version = '3.1.0';
 
 /***/ }),
-/* 188 */
+/* 189 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40528,7 +40579,7 @@ exports.default = v310Serializer;
 v310Serializer.version = '3.1.0';
 
 /***/ }),
-/* 189 */
+/* 190 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40650,7 +40701,7 @@ exports.default = v310Deserializer;
 v310Deserializer.version = '3.1.0';
 
 /***/ }),
-/* 190 */
+/* 191 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40666,19 +40717,19 @@ var _get = function get(object, property, receiver) { if (object === null) objec
 
 var _globals = __webpack_require__(0);
 
-var _loadingModalComponent = __webpack_require__(191);
+var _loadingModalComponent = __webpack_require__(192);
 
 var _loadingModalComponent2 = _interopRequireDefault(_loadingModalComponent);
 
-var _warningModalComponent = __webpack_require__(192);
+var _warningModalComponent = __webpack_require__(193);
 
 var _warningModalComponent2 = _interopRequireDefault(_warningModalComponent);
 
-var _errorModalComponent = __webpack_require__(193);
+var _errorModalComponent = __webpack_require__(194);
 
 var _errorModalComponent2 = _interopRequireDefault(_errorModalComponent);
 
-var _progressModalComponent = __webpack_require__(194);
+var _progressModalComponent = __webpack_require__(195);
 
 var _progressModalComponent2 = _interopRequireDefault(_progressModalComponent);
 
@@ -40837,7 +40888,7 @@ exports.default = ModalContainerComponent;
 ModalContainerComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 191 */
+/* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -40922,7 +40973,7 @@ LoadingModalComponent.propTypes = {
 LoadingModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 192 */
+/* 193 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41013,7 +41064,7 @@ WarningModalComponent.propTypes = {
 WarningModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 193 */
+/* 194 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41134,7 +41185,7 @@ ErrorModalComponent.propTypes = {
 ErrorModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 194 */
+/* 195 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41233,7 +41284,7 @@ ProgressModalComponent.propTypes = {
 ProgressModalComponent.contextTypes = _globals.BaseComponent.contextTypes;
 
 /***/ }),
-/* 195 */
+/* 196 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41403,7 +41454,7 @@ var Preloader = function (_EventEmitter) {
 exports.default = Preloader;
 
 /***/ }),
-/* 196 */
+/* 197 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41413,7 +41464,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _provider = __webpack_require__(197);
+var _provider = __webpack_require__(198);
 
 Object.defineProperty(exports, 'Provider', {
   enumerable: true,
@@ -41422,7 +41473,7 @@ Object.defineProperty(exports, 'Provider', {
   }
 });
 
-var _library = __webpack_require__(198);
+var _library = __webpack_require__(199);
 
 Object.defineProperty(exports, 'Library', {
   enumerable: true,
@@ -41431,7 +41482,7 @@ Object.defineProperty(exports, 'Library', {
   }
 });
 
-var _searchSuggestion = __webpack_require__(199);
+var _searchSuggestion = __webpack_require__(200);
 
 Object.defineProperty(exports, 'SearchSuggestion', {
   enumerable: true,
@@ -41440,7 +41491,7 @@ Object.defineProperty(exports, 'SearchSuggestion', {
   }
 });
 
-var _photo = __webpack_require__(200);
+var _photo = __webpack_require__(201);
 
 Object.defineProperty(exports, 'Photo', {
   enumerable: true,
@@ -41452,7 +41503,7 @@ Object.defineProperty(exports, 'Photo', {
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 197 */
+/* 198 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41546,7 +41597,7 @@ var Provider = function () {
 exports.default = Provider;
 
 /***/ }),
-/* 198 */
+/* 199 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41583,7 +41634,7 @@ var Library = function Library(data) {
 exports.default = Library;
 
 /***/ }),
-/* 199 */
+/* 200 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41621,7 +41672,7 @@ var SearchSuggestion = function SearchSuggestion(data) {
 exports.default = SearchSuggestion;
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -41659,16 +41710,16 @@ var Photo = function Photo(library, data) {
 exports.default = Photo;
 
 /***/ }),
-/* 201 */
-/***/ (function(module, exports) {
-
-module.exports = {"controls":{"overview":{"filters":"Filter","adjustments":"Korrekturen","transform":"Zuschneiden","blur":"Weichzeichnen","frame":"Rahmen","sticker":"Sticker","text":"Text","brush":"Malen","focus":"Focus","selective-blur":"Sel. Unschärfe"},"text":{"foreground":"Vordergrund","background":"Hintergrund","size":"Größe","font":"Schriftart","alignment":"Ausrichtung","takeToFront":"Nach oben","defaultText":"Doppelklick zum Bearbeiten!"},"adjustments":{"brightness":"Helligkeit","contrast":"Kontrast","saturation":"Sättigung","gamma":"Gamma","exposure":"Belichtung","shadows":"Schatten","highlights":"Lichter","clarity":"Klarheit"},"transform":{"none":"Original","rotation":"Drehung"},"focus":{"none":"Original","radial":"Kreisförmig","mirrored":"Gespiegelt","blurRadius":"Radius"},"selectiveBlur":{"blurRadius":"Radius","size":"Dicke"},"filters":{"intensity":"Intensität","filters":{"identity":"Original"}},"sticker":{"flip":"Spiegeln","flip-v":"Spiegeln (V)","flip-h":"Spiegeln (H)","takeToFront":"Nach oben","categories":{"all":"Alle"}},"brush":{"size":"Dicke","color":"Farbe"},"frame":{"noFrame":"Kein Rahmen","scale":"Größe"}},"webcam":{"headline":"Mache ein Foto!"},"editor":{"headline":"Foto editieren","new":"Neu","backgroundImage":"Hintergrundbild","undo":"Rückgängig","export":"Speichern","zoom":"Zoom"},"splash":{"upload":{"button":"Lade ein Foto hoch","description":"Klicke hier, um ein Foto von deinem Rechner hochzuladen oder lade es per Drag-and-Drop hoch"},"webcam":{"headline":"Webcam","description":"Klicke hier, um ein Foto mit deiner Webcam zu machen"},"photoRoll":{"headline":"Kostenloses Bildmaterial","description":"Suche dir eines von tausenden Stock Photos aus."}},"photoRoll":{"search":{"placeholder":"Nach Fotos suchen","noSearchResults":"Entschuldigung, aber wir konnten für <strong>\"${query}\"</strong> leider keine Ergebnisse finden.","results":{"headline":"Suchergebnisse für \"${query}\""}}},"generic":{"back":"Zurück","cancel":"Abbrechen","color":"Farbe"},"loading":{"resizing":"Bild wird bearbeitet...","exporting":"Exportiere...","loading":"Lade..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Bild verkleinert","text":"Da dein Bild die maximale Größe von ${maxMegaPixels} Megapixeln überschreitet, wurde es auf ${width}x${height} Pixel verkleinert."},"imageResized_maxDimensions":{"title":"Bild verkleinert","text":"Aufgrund von Hardware-Beschränkungen wurde das Bild auf ${width}x${height} Pixel verkleinert."}},"errors":{"imageLoadFail":{"title":"Bild konnte nicht geladen werden","text":"Beim Laden des Bildes unter ${path} ist ein Fehler aufgetreten."},"webcamUnavailable":{"title":"Webcam nicht verfügbar","text":"Webcam-Bild kann nicht dargestellt werden. (Fehler: ${error})"},"webcamNotSupported":{"title":"Webcam nicht unterstützt","text":"Dein Browser unterstützt das Webcam-Feature leider noch nicht."},"renderingError":{"title":"Rendering-Fehler","text":"Beim Rendern des Bildes ist ein Fehler aufgetreten."},"context_lost":{"title":"Es ist ein Fehler aufgetreten","text":"Dein Browser hat zu lange gebraucht, um das Bild zu generieren. Bitte versuche es noch einmal."},"context_lost_limit":{"title":"Es ist ein Fehler aufgetreten","text":"Bild-Generierung ist mehrmals fehlgeschlagen."},"loadingStickersFailed":{"title":"Laden der Sticker fehlgeschlagen"},"loadingFontsFailed":{"title":"Laden der Schriftarten fehlgeschlagen","text":"Einige Schriftarten sind möglicherweise nicht verfügbar."},"photoRollLoadFail":{"title":"Laden der Photo Roll fehlgeschlagen","text":"Die Photo Roll konnte nicht geladen werden: ${error}"},"invalidFileType":{"text":"Der Dateityp ${fileType} wird nicht unterstützt."},"title":"Es ist ein Fehler aufgetreten"}}
-
-/***/ }),
 /* 202 */
 /***/ (function(module, exports) {
 
-module.exports = {"controls":{"overview":{"filters":"Filters","adjustments":"Adjust","transform":"Transform","focus":"Focus","frame":"Frame","sticker":"Sticker","text":"Text","brush":"Brush","selective-blur":"Selective Blur"},"text":{"foreground":"Foreground","background":"Background","size":"Size","font":"Font","alignment":"Alignment","takeToFront":"To Front","defaultText":"Double-click to edit"},"adjustments":{"brightness":"Brightness","contrast":"Contrast","saturation":"Saturation","exposure":"Exposure","gamma":"Gamma","shadows":"Shadows","highlights":"Highlights","clarity":"Clarity"},"transform":{"none":"Original","rotation":"Rotation"},"focus":{"none":"None","radial":"Radial","mirrored":"Mirrored","blurRadius":"Blur radius"},"selectiveBlur":{"blurRadius":"Blur radius","size":"Size"},"filter":{"intensity":"Intensity","filters":{"identity":"None"}},"sticker":{"flip":"Flip","flip-v":"Flip (V)","flip-h":"Flip (H)","takeToFront":"To Front","categories":{"all":"All"}},"brush":{"size":"Size","color":"Color"},"frame":{"noFrame":"No Frame","scale":"Scale"}},"webcam":{"headline":"Take a photo!"},"editor":{"headline":"Edit Photo","new":"New","backgroundImage":"Background Image","undo":"Undo","export":"Export","zoom":"Zoom"},"splash":{"upload":{"button":"Upload your image","description":"Upload a picture from your library or just drag and drop"},"webcam":{"headline":"Webcam","description":"Take a picture with your webcam or phone"},"photoRoll":{"headline":"Free stock footage","description":"Select from thousands of Free Stock Photos"}},"photoRoll":{"search":{"placeholder":"Search for photos","noSearchResults":"Sorry, but we couldn't find any photos for <strong>\"${query}\"</strong>.","results":{"headline":"Search results for \"${query}\""}}},"generic":{"back":"Back","cancel":"Cancel","color":"Color"},"loading":{"resizing":"Resizing...","exporting":"Exporting...","loading":"Loading..."},"warnings":{"imageResized_maxMegaPixels":{"title":"Image resized","text":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels."},"imageResized_maxDimensions":{"title":"Image resized","text":"Due to hardware limitations your image has been resized to ${width}x${height} pixels."}},"errors":{"imageLoadFail":{"title":"Failed to load image","text":"Failed to load the image at ${path}"},"webcamUnavailable":{"title":"Webcam unavailable","text":"Unable to display webcam image (Error: ${error})"},"webcamNotSupported":{"title":"Webcam not supported","text":"The webcam feature is not supported by your browser."},"renderingError":{"title":"Error while rendering","text":"An error has occurred while rendering the image."},"context_lost":{"title":"An error has occurred","text":"Your browser took too long to render the image. Please try applying less operations."},"context_lost_limit":{"title":"An error has occurred","text":"Your browser failed multiple times while rendering the image."},"loadingStickersFailed":{"title":"Failed to load stickers"},"loadingFontsFailed":{"title":"Failed to load fonts","text":"Some fonts might not be available."},"photoRollLoadFail":{"title":"Failed to load Photo Roll","text":"Failed to load photos for the photo roll: ${error}"},"invalidFileType":{"text":"The file type ${fileType} is not supported."},"title":"An error has occurred"}}
+module.exports = {"pesdk":{"adjustments":{"title":{"name":"Korrekturen"},"text":{"brightness":"Helligkeit","saturation":"Sättigung","contrast":"Kontrast","gamma":"Gamma","clarity":"Klarheit","exposure":"Belichtung","shadows":"Schatten","highlights":"Lichter"}},"brush":{"title":{"name":"Malen"},"text":{"size":"Dicke"}},"camera":{"title":{"headline":"Mache ein Foto!"},"text":{"webcamUnavailable":"Webcam-Bild kann nicht dargestellt werden. (Fehler: ${error})"}},"common":{"title":{"error":"Es ist ein Fehler aufgetreten","imageLoadFail":"Bild konnte nicht geladen werden"},"text":{"color":"Farbe","loading":"Lade...","imageLoadFail":"Beim Laden des Bildes unter ${path} ist ein Fehler aufgetreten."},"button":{"back":"Zurück","cancel":"Abbrechen"}},"editor":{"title":{"zoom":"Zoom","renderingError":"Rendering-Fehler","imageResized_maxMegaPixels":"Bild verkleinert","imageResized_maxDimensions":"Bild verkleinert"},"button":{"export":"Speichern","backgroundImage":"Hintergrundbild","new":"Neu","undo":"Rückgängig"},"text":{"invalidFileType":"Der Dateityp ${fileType} wird nicht unterstützt.","exporting":"Exportiere...","renderingError":"Beim Rendern des Bildes ist ein Fehler aufgetreten.","resizing":"Bild wird bearbeitet...","imageResized_maxMegaPixels":"Da dein Bild die maximale Größe von ${maxMegaPixels} Megapixeln überschreitet, wurde es auf ${width}x${height} Pixel verkleinert.","imageResized_maxDimensions":"Aufgrund von Hardware-Beschränkungen wurde das Bild auf ${width}x${height} Pixel verkleinert."}},"filter":{"title":{"name":"Filter"},"text":{"intensity":"Intensität"},"asset":{"identity":"Original","imgly_lut_celsius":"Celsius","imgly_lut_chest":"Chest","imgly_lut_fixie":"Fixie","imgly_lut_fridge":"Fridge","imgly_lut_front":"Front","imgly_lut_k2":"K2","imgly_lut_mellow":"Mellow","imgly_lut_sin":"Sin","imgly_lut_texas":"Texas","imgly_lut_ad1920":"1920 A.D.","imgly_lut_ancient":"Ancient","imgly_lut_bleached":"Bleached","imgly_lut_bleachedblue":"Bleached Blue","imgly_lut_blues":"Blues","imgly_lut_blueshadows":"Blue Shadows","imgly_lut_breeze":"Breeze","imgly_lut_bw":"B & W","imgly_lut_classic":"Classic","imgly_lut_colorful":"Colorful","imgly_lut_cool":"Cool","imgly_lut_cottoncandy":"Cotton Candy","imgly_lut_creamy":"Creamy","imgly_lut_eighties":"Eighties","imgly_lut_elder":"Elder","imgly_lut_evening":"Evening","imgly_lut_fall":"Fall","imgly_lut_food":"Food","imgly_lut_glam":"Glam","imgly_lut_gobblin":"Gobblin","imgly_lut_highcarb":"High Carb","imgly_lut_highcontrast":"High Contrast","imgly_lut_k1":"K1","imgly_lut_k6":"K6","imgly_lut_kdynamic":"KDynamic","imgly_lut_keen":"Keen","imgly_lut_lenin":"Lenin","imgly_lut_litho":"Litho","imgly_lut_lomo100":"Lomo 100","imgly_lut_lucid":"Lucid","imgly_lut_neat":"Neat","imgly_lut_nogreen":"No Green","imgly_lut_orchid":"Orchid","imgly_lut_pale":"Pale","imgly_lut_pitched":"Pitched","imgly_lut_plate":"Plate","imgly_lut_pola669":"Pola 669","imgly_lut_polasx":"Pola SX","imgly_lut_pro400":"Pro 400","imgly_lut_quozi":"Quozi","imgly_lut_sepiahigh":"Sepia High","imgly_lut_settled":"Settled","imgly_lut_seventies":"Seventies","imgly_lut_soft":"Soft","imgly_lut_steel":"Steel","imgly_lut_summer":"Summer","imgly_lut_sunset":"Sunset","imgly_lut_tender":"Tender","imgly_lut_twilight":"Twilight","imgly_lut_winter":"Winter","imgly_lut_x400":"X400","imgly_filters_analog":"Analog","imgly_filters_bw":"Black & White","imgly_filters_retro":"Retro","imgly_filters_special":"Special","imgly_filters_summer":"Summer","imgly_filters_winter":"Winter","all":"Alle"}},"focus":{"title":{"name":"Focus"},"text":{"blurRadius":"Radius"},"button":{"none":"Original","radial":"Kreisförmig","mirrored":"Gespiegelt"}},"frame":{"title":{"name":"Rahmen"},"text":{"scale":"Größe"},"button":{"none":"Kein Rahmen"},"asset":{"imgly_frame_dia":"Dia","imgly_frame_art_decor":"Art Decor","imgly_frame_black_passepartout":"Black Passepartout","imgly_frame_lowpoly_shadow":"Low Poly","imgly_frame_wood_passepartout":"Wood Passepartout"}},"library":{"title":{"searchResults":"Suchergebnisse für \"${query}\"","photoRollLoadFail":"Laden der Photo Roll fehlgeschlagen"},"text":{"photoRollLoadFail":"Failed to load photos for the photo roll: ${error}","noSearchResults":"Die Photo Roll konnte nicht geladen werden: ${error}"},"placeholder":{"search":"Nach Fotos suchen"}},"splash":{"button":{"upload":"Lade ein Foto hoch"},"title":{"photoRoll":"Kostenloses Bildmaterial","webcam":"Webcam"},"text":{"photoRoll":"Suche dir eines von tausenden Stock Photos aus.","upload":"Klicke hier, um ein Foto von deinem Rechner hochzuladen oder lade es per Drag-and-Drop hoch","webcam":"Klicke hier, um ein Foto mit deiner Webcam zu machen"}},"sticker":{"title":{"name":"Sticker","loadingStickersFailed":"Laden der Sticker fehlgeschlagen"},"asset":{"all":"Alle","imgly_sticker_emoticons":"Emoticons","imgly_sticker_shapes":"Shapes"}},"text":{"title":{"name":"Text","loadingFontsFailed":"Laden der Schriftarten fehlgeschlagen"},"text":{"loadingFontsFailed":"Einige Schriftarten sind möglicherweise nicht verfügbar."},"button":{"size":"Größe","font":"Schriftart","alignment":"Ausrichtung","foreground":"Vordergrund","background":"Hintergrund","takeToFront":"Nach oben"},"placeholder":{"defaultText":"Doppelklick zum Bearbeiten!"}},"transform":{"title":{"name":"Zuschneiden"},"button":{"none":"Original"},"text":{"rotation":"Drehung"},"asset":{"imgly_transform_common_custom":"Frei","imgly_transform_common_square":"Quadratisch","imgly_transform_common_4-3":"4:3","imgly_transform_common_16-9":"16:9","imgly_transform_facebook_ad":"FB Ad","imgly_transform_facebook_post":"FB Post","imgly_transform_facebook_cover":"FB Cover","imgly_transform_facebook_profile":"FB Profile"}}}}
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports) {
+
+module.exports = {"pesdk":{"adjustments":{"title":{"name":"Adjust"},"text":{"brightness":"Brightness","saturation":"Saturation","contrast":"Contrast","gamma":"Gamma","clarity":"Clarity","exposure":"Exposure","shadows":"Shadows","highlights":"Highlights","whites":"Whites","blacks":"Blacks","temperature":"Temperature"}},"brush":{"title":{"name":"Brush"},"text":{"size":"Size"}},"camera":{"title":{"headline":"Take a photo!"},"text":{"webcamUnavailable":"Unable to display webcam image (Error: ${error})"}},"common":{"title":{"error":"An error has occurred","imageLoadFail":"Failed to load image"},"text":{"color":"Color","loading":"Loading...","imageLoadFail":"Failed to load the image at ${path}"},"button":{"back":"Back","cancel":"Cancel"}},"editor":{"title":{"zoom":"Zoom","renderingError":"Error while rendering","imageResized_maxMegaPixels":"Image resized","imageResized_maxDimensions":"Image resized"},"button":{"export":"Export","backgroundImage":"Background Image","new":"New","undo":"Undo"},"text":{"invalidFileType":"The file type ${fileType} is not supported.","exporting":"Exporting...","renderingError":"An error has occurred while rendering the image.","resizing":"Resizing...","imageResized_maxMegaPixels":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels.","imageResized_maxDimensions":"Due to hardware limitations your image has been resized to ${width}x${height} pixels."}},"filter":{"title":{"name":"Filters"},"text":{"intensity":"Intensity"},"asset":{"identity":"None","imgly_lut_celsius":"Celsius","imgly_lut_chest":"Chest","imgly_lut_fixie":"Fixie","imgly_lut_fridge":"Fridge","imgly_lut_front":"Front","imgly_lut_k2":"K2","imgly_lut_mellow":"Mellow","imgly_lut_sin":"Sin","imgly_lut_texas":"Texas","imgly_lut_ad1920":"1920 A.D.","imgly_lut_ancient":"Ancient","imgly_lut_bleached":"Bleached","imgly_lut_bleachedblue":"Bleached Blue","imgly_lut_blues":"Blues","imgly_lut_blueshadows":"Blue Shadows","imgly_lut_breeze":"Breeze","imgly_lut_bw":"B & W","imgly_lut_classic":"Classic","imgly_lut_colorful":"Colorful","imgly_lut_cool":"Cool","imgly_lut_cottoncandy":"Cotton Candy","imgly_lut_creamy":"Creamy","imgly_lut_eighties":"Eighties","imgly_lut_elder":"Elder","imgly_lut_evening":"Evening","imgly_lut_fall":"Fall","imgly_lut_food":"Food","imgly_lut_glam":"Glam","imgly_lut_gobblin":"Gobblin","imgly_lut_highcarb":"High Carb","imgly_lut_highcontrast":"High Contrast","imgly_lut_k1":"K1","imgly_lut_k6":"K6","imgly_lut_kdynamic":"KDynamic","imgly_lut_keen":"Keen","imgly_lut_lenin":"Lenin","imgly_lut_litho":"Litho","imgly_lut_lomo100":"Lomo 100","imgly_lut_lucid":"Lucid","imgly_lut_neat":"Neat","imgly_lut_nogreen":"No Green","imgly_lut_orchid":"Orchid","imgly_lut_pale":"Pale","imgly_lut_pitched":"Pitched","imgly_lut_plate":"Plate","imgly_lut_pola669":"Pola 669","imgly_lut_polasx":"Pola SX","imgly_lut_pro400":"Pro 400","imgly_lut_quozi":"Quozi","imgly_lut_sepiahigh":"Sepia High","imgly_lut_settled":"Settled","imgly_lut_seventies":"Seventies","imgly_lut_soft":"Soft","imgly_lut_steel":"Steel","imgly_lut_summer":"Summer","imgly_lut_sunset":"Sunset","imgly_lut_tender":"Tender","imgly_lut_twilight":"Twilight","imgly_lut_winter":"Winter","imgly_lut_x400":"X400","imgly_filters_analog":"Analog","imgly_filters_bw":"Black & White","imgly_filters_retro":"Retro","imgly_filters_special":"Special","imgly_filters_summer":"Summer","imgly_filters_winter":"Winter","all":"All"}},"focus":{"title":{"name":"Focus"},"text":{"blurRadius":"Blur radius"},"button":{"none":"None","radial":"Radial","mirrored":"Mirrored"}},"frame":{"title":{"name":"Frame"},"text":{"scale":"Scale"},"button":{"none":"None"},"asset":{"imgly_frame_dia":"Dia","imgly_frame_art_decor":"Art Decor","imgly_frame_black_passepartout":"Black Passepartout","imgly_frame_lowpoly_shadow":"Low Poly","imgly_frame_wood_passepartout":"Wood Passepartout"}},"library":{"title":{"searchResults":"Search results for \"${query}\"","photoRollLoadFail":"Failed to load Photo Roll"},"text":{"photoRollLoadFail":"Failed to load photos for the photo roll: ${error}","noSearchResults":"Sorry, but we couldn't find any photos for <strong>\"${query}\"</strong>."},"placeholder":{"search":"Search for photos"}},"splash":{"button":{"upload":"Upload your image"},"title":{"photoRoll":"Free stock footage","webcam":"Webcam"},"text":{"photoRoll":"Select from thousands of Free Stock Photos","upload":"Upload a picture from your library or just drag and drop","webcam":"Take a picture with your webcam or phone"}},"sticker":{"title":{"name":"Sticker","loadingStickersFailed":"Failed to load stickers"},"asset":{"all":"All","imgly_sticker_emoticons":"Emoticons","imgly_sticker_shapes":"Shapes"}},"text":{"title":{"name":"Text","loadingFontsFailed":"Failed to load fonts"},"text":{"loadingFontsFailed":"Some fonts might not be available."},"button":{"size":"Size","font":"Font","alignment":"Alignment","foreground":"Foreground","background":"Background","takeToFront":"To Front"},"placeholder":{"defaultText":"Double-click to edit"}},"transform":{"title":{"name":"Transform"},"button":{"none":"Original"},"text":{"rotation":"Rotation"},"asset":{"imgly_transform_common_custom":"Custom","imgly_transform_common_square":"Square","imgly_transform_common_4-3":"4:3","imgly_transform_common_16-9":"16:9","imgly_transform_facebook_ad":"FB Ad","imgly_transform_facebook_post":"FB Post","imgly_transform_facebook_cover":"FB Cover","imgly_transform_facebook_profile":"FB Profile"}}}}
 
 /***/ })
 /******/ ]);

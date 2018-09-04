@@ -1,9 +1,33 @@
+# 4.12.0
+
+Fixed
+---
+
+*   [[PESDK-2849](https://imglysdk.atlassian.net/browse/PESDK-2849)] - Fixed Problem with Text being duplicated when changing properties
+*   [[PESDK-2969](https://imglysdk.atlassian.net/browse/PESDK-2969)] - Fixed dragging with touch events triggering scroll bar movement
+*   [[PESDK-3145](https://imglysdk.atlassian.net/browse/PESDK-3145)] - Fixed Text layers not being selectable when a sticker is behind
+*   [[PESDK-3290](https://imglysdk.atlassian.net/browse/PESDK-3290)] - Fixed issue with non-RGBA Images in Safari
+
+Changed
+---
+*   [[PESDK-2684](https://imglysdk.atlassian.net/browse/PESDK-2684)] - Adopted language file format
+
+
+Added
+---
+
+*   [[PESDK-2256](https://imglysdk.atlassian.net/browse/PESDK-2256)] - Added option to run sdk without valid license file
+*   [[PESDK-3001](https://imglysdk.atlassian.net/browse/PESDK-3001)] - Added Blacks and Whites Adjustments
+*   [[PESDK-3008](https://imglysdk.atlassian.net/browse/PESDK-3008)] - Added Temperature Adjustment
+*   [[PESDK-3283](https://imglysdk.atlassian.net/browse/PESDK-3283)] - Added Progress Modal to Advanced UI
+
+
 # 4.11.2
 
 Fixed
 ---
 
-* Fixed wrong version number  
+* Fixed wrong version number
 
 # 4.11.1
 
