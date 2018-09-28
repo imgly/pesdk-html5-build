@@ -1,3 +1,16 @@
+# 4.12.1
+
+Fixed
+---
+*   [[PESDK-3535](https://imglysdk.atlassian.net/browse/PESDK-3535)\] - Fixed close button not displayed
+
+Changed
+---
+*   [[PESDK-3084](https://imglysdk.atlassian.net/browse/PESDK-3084)\] - Updated Text Tool to keep settings for new text
+*   [[PESDK-2010](https://imglysdk.atlassian.net/browse/PESDK-2010)\] - Updated Brush Path interpolation to be on par with Android und iOS Platform
+*   [[PESDK-3252](https://imglysdk.atlassian.net/browse/PESDK-3252)\] - Updated Brush Tool to keep settings for new paths
+
+
 # 4.12.0
 
 Fixed

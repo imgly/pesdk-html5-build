@@ -950,6 +950,8 @@ var _doneButtonComponent2 = _interopRequireDefault(_doneButtonComponent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -992,16 +994,44 @@ var ControlsComponent = function (_BaseComponent) {
     return _this;
   }
 
-  // -------------------------------------------------------------------------- EVENTS
-
   /**
-   * Gets called when the user clicks the back button
-   * @param {Event} e
-   * @private
+   * Returns the global editor state data for this tool.
+   *
+   * @returns {Object}
    */
 
 
   _createClass(ControlsComponent, [{
+    key: 'getGlobalToolState',
+    value: function getGlobalToolState(identifier) {
+      var globalState = this.context.globalState;
+
+      return globalState.get(identifier);
+    }
+
+    /**
+     * Sets the global editor state data for this tool.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: 'setGlobalToolState',
+    value: function setGlobalToolState(identifier, state) {
+      var globalState = this.context.globalState;
+
+      globalState.set(_defineProperty({}, identifier, state));
+    }
+
+    // -------------------------------------------------------------------------- EVENTS
+
+    /**
+     * Gets called when the user clicks the back button
+     * @param {Event} e
+     * @private
+     */
+
+  }, {
     key: '_onBackClick',
     value: function _onBackClick(e) {
       this._backButtonClicked = true;
@@ -1093,6 +1123,8 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* @module */
@@ -1132,6 +1164,34 @@ var Control = function () {
      */
     value: function getInitialSharedState() {
       return {};
+    }
+
+    /**
+     * Returns the global editor state data for this tool.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: "getGlobalToolState",
+    value: function getGlobalToolState() {
+      var globalState = this.context.globalState;
+
+      return globalState.get(this.constructor.identifier);
+    }
+
+    /**
+     * Sets the global editor state data for this tool.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: "setGlobalToolState",
+    value: function setGlobalToolState(state) {
+      var globalState = this.context.globalState;
+
+      globalState.set(_defineProperty({}, this.constructor.identifier, state));
     }
 
     /**
@@ -13341,6 +13401,8 @@ var ReactUI = function (_EventEmitter) {
       _this._isReady = true;
     });
 
+    _this._globalState = new _globals.SharedState();
+
     _this._preloader = new _preloader2.default(_this, _this._options, _this._mediator);
 
     _globals.Log.setLevel(_this._options.logLevel);
@@ -13383,6 +13445,7 @@ var ReactUI = function (_EventEmitter) {
         ref: function ref(c) {
           _this2._component = c;
         },
+        globalState: this._globalState,
         options: this._options });
 
       if (this._options.renderReturnsComponent) {
@@ -15013,7 +15076,8 @@ BaseComponent.contextTypes = {
   ui: _propTypes2.default.object,
   options: _propTypes2.default.object,
   mediator: _propTypes2.default.object,
-  editorScreen: _propTypes2.default.object
+  editorScreen: _propTypes2.default.object,
+  globalState: _propTypes2.default.object
 };
 
 BaseComponent.propTypes = {
@@ -18759,6 +18823,226 @@ var _photoeditorsdk2 = _interopRequireDefault(_photoeditorsdk);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var fonts = [{
+  fontFamily: 'Aleo',
+  variations: [{
+    identifier: 'imgly_font_aleo_bold',
+    fontWeight: 'bold',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_aleo_bold.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1919,
+      descender: -409
+    }
+  }]
+}, {
+  fontFamily: 'Amatic SC',
+  variations: [{
+    identifier: 'imgly_font_amaticsc',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_amaticsc.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 2332,
+      descender: -583
+    }
+  }]
+}, {
+  fontFamily: 'Bernier',
+  variations: [{
+    identifier: 'imgly_font_bernier_regular',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_bernier_regular.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 2007,
+      descender: -552
+    }
+  }]
+}, {
+  fontFamily: 'Cheque',
+  variations: [{
+    identifier: 'imgly_font_cheque_regular',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_cheque_regular.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1853,
+      descender: -495
+    }
+  }]
+}, {
+  fontFamily: 'Open Sans',
+  variations: [{
+    identifier: 'imgly_font_open_sans_bold',
+    fontWeight: 'bold',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_open_sans_bold.woff',
+    default: true,
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 2189,
+      descender: -640
+    }
+  }]
+}, {
+  fontFamily: 'Gagalin',
+  variations: [{
+    identifier: 'imgly_font_gagalin_regular',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_gagalin_regular.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1987,
+      descender: -628
+    }
+  }]
+}, {
+  fontFamily: 'Hagin',
+  variations: [{
+    identifier: 'imgly_font_hagin_caps_thin',
+    fontWeight: 200,
+    provider: 'file',
+    filePath: 'fonts/imgly_font_hagin_caps_thin.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1964,
+      descender: -482
+    }
+  }]
+}, {
+  fontFamily: 'Intro',
+  variations: [{
+    identifier: 'imgly_font_intro_inline',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_intro_inline.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1944,
+      descender: -548
+    }
+  }]
+}, {
+  fontFamily: 'Lobster',
+  variations: [{
+    identifier: 'imgly_font_lobster',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_lobster.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 2048,
+      descender: -552
+    }
+  }]
+}, {
+  fontFamily: 'Nexa',
+  variations: [{
+    identifier: 'imgly_font_nexa_script',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_nexa_script.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1835,
+      descender: -663
+    }
+  }]
+}, {
+  fontFamily: 'Ostrich',
+  variations: [{
+    identifier: 'imgly_font_ostrich_sans_black',
+    fontWeight: 800,
+    provider: 'file',
+    filePath: 'fonts/imgly_font_ostrich_sans_black.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1513,
+      descender: -235
+    }
+  }, {
+    identifier: 'imgly_font_ostrich_sans_bold',
+    fontWeight: 'bold',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_ostrich_sans_bold.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1513,
+      descender: -235
+    }
+  }]
+}, {
+  fontFamily: 'Panton',
+  variations: [{
+    identifier: 'imgly_font_panton_black_italic_caps',
+    fontWeight: 800,
+    fontStyle: 'italic',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_panton_blackitalic_caps.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 2033,
+      descender: -572
+    }
+  }, {
+    identifier: 'imgly_font_panton_light_italic_caps',
+    fontWeight: 200,
+    fontStyle: 'italic',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_panton_lightitalic_caps.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1961,
+      descender: -556
+    }
+  }]
+}, {
+  fontFamily: 'Perfograma',
+  variations: [{
+    identifier: 'imgly_font_perfograma',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_perfograma.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1982,
+      descender: -842
+    }
+  }]
+}, {
+  fontFamily: 'Trashhand',
+  variations: [{
+    identifier: 'imgly_font_trash_hand',
+    fontWeight: 'normal',
+    provider: 'file',
+    filePath: 'fonts/imgly_font_trash_hand.woff',
+    textMetrics: {
+      unitsPerEm: 2048,
+      ascender: 1554,
+      descender: -663
+    }
+  }]
+}]; /* @module */
+/*
+ * This file is part of PhotoEditorSDK.
+ *
+ * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, without
+ * modification, are permitted provided that the following license agreement
+ * is approved and a legal/financial contract was signed by the user.
+ * The license agreement can be found under following link:
+ *
+ * https://www.photoeditorsdk.com/LICENSE.txt
+ */
+
 exports.default = {
   EVENTS: {
     RENDER: 'render',
@@ -18816,147 +19100,9 @@ exports.default = {
       dimensions: new _photoeditorsdk2.default.Math.Vector2(851, 315)
     }]],
     BRUSHES: [_photoeditorsdk2.default.Operations.SpriteOperation.BrushSprite.Brushes.RadialBrush],
-    FONTS: [{
-      fontFamily: 'Aleo',
-      variations: [{
-        identifier: 'imgly_font_aleo_bold',
-        fontWeight: 'bold',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_aleo_bold.woff'
-      }]
-    }, {
-      fontFamily: 'Amatic SC',
-      variations: [{
-        identifier: 'imgly_font_amaticsc',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_amaticsc.woff'
-      }]
-    }, {
-      fontFamily: 'Bernier',
-      variations: [{
-        identifier: 'imgly_font_bernier_regular',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_bernier_regular.woff'
-      }]
-    }, {
-      fontFamily: 'Cheque',
-      variations: [{
-        identifier: 'imgly_font_cheque_regular',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_cheque_regular.woff'
-      }]
-    }, {
-      fontFamily: 'Open Sans',
-      variations: [{
-        identifier: 'imgly_font_open_sans_bold',
-        fontWeight: 'bold',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_open_sans_bold.woff',
-        default: true
-      }]
-    }, {
-      fontFamily: 'Gagalin',
-      variations: [{
-        identifier: 'imgly_font_gagalin_regular',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_gagalin_regular.woff'
-      }]
-    }, {
-      fontFamily: 'Hagin',
-      variations: [{
-        identifier: 'imgly_font_hagin_caps_thin',
-        fontWeight: 200,
-        provider: 'file',
-        filePath: 'fonts/imgly_font_hagin_caps_thin.woff'
-      }]
-    }, {
-      fontFamily: 'Intro',
-      variations: [{
-        identifier: 'imgly_font_intro_inline',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_intro_inline.woff'
-      }]
-    }, {
-      fontFamily: 'Lobster',
-      variations: [{
-        identifier: 'imgly_font_lobster',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_lobster.woff'
-      }]
-    }, {
-      fontFamily: 'Nexa',
-      variations: [{
-        identifier: 'imgly_font_nexa_script',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_nexa_script.woff'
-      }]
-    }, {
-      fontFamily: 'Ostrich',
-      variations: [{
-        identifier: 'imgly_font_ostrich_sans_black',
-        fontWeight: 800,
-        provider: 'file',
-        filePath: 'fonts/imgly_font_ostrich_sans_black.woff'
-      }, {
-        identifier: 'imgly_font_ostrich_sans_bold',
-        fontWeight: 'bold',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_ostrich_sans_bold.woff'
-      }]
-    }, {
-      fontFamily: 'Panton',
-      variations: [{
-        identifier: 'imgly_font_panton_blackitalic_caps',
-        fontWeight: 800,
-        fontStyle: 'italic',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_panton_blackitalic_caps.woff'
-      }, {
-        identifier: 'imgly_font_panton_lightitalic_caps',
-        fontWeight: 200,
-        fontStyle: 'italic',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_panton_lightitalic_caps.woff'
-      }]
-    }, {
-      fontFamily: 'Perfograma',
-      variations: [{
-        identifier: 'imgly_font_perfograma',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_perfograma.woff'
-      }]
-    }, {
-      fontFamily: 'Trashhand',
-      variations: [{
-        identifier: 'imgly_font_trash_hand',
-        fontWeight: 'normal',
-        provider: 'file',
-        filePath: 'fonts/imgly_font_trash_hand.woff'
-      }]
-    }]
+    FONTS: fonts
   }
-}; /* @module */
-/*
- * This file is part of PhotoEditorSDK.
- *
- * Copyright (C) 2016-2017 9elements GmbH <contact@9elements.com>
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, without
- * modification, are permitted provided that the following license agreement
- * is approved and a legal/financial contract was signed by the user.
- * The license agreement can be found under following link:
- *
- * https://www.photoeditorsdk.com/LICENSE.txt
- */
+};
 
 /***/ }),
 /* 85 */
@@ -19446,7 +19592,8 @@ var AppComponent = function (_React$Component) {
       return {
         ui: this.props.ui,
         options: this.props.options,
-        mediator: this.props.mediator
+        mediator: this.props.mediator,
+        globalState: this.props.globalState
       };
     }
   }, {
@@ -19505,13 +19652,15 @@ exports.default = AppComponent;
 AppComponent.childContextTypes = {
   ui: _globals.PropTypes.object.isRequired,
   mediator: _globals.PropTypes.object.isRequired,
-  options: _globals.PropTypes.object.isRequired
+  options: _globals.PropTypes.object.isRequired,
+  globalState: _globals.PropTypes.object.isRequired
 };
 
 AppComponent.propTypes = {
   ui: _globals.PropTypes.object.isRequired,
   mediator: _globals.PropTypes.object.isRequired,
-  options: _globals.PropTypes.object.isRequired
+  options: _globals.PropTypes.object.isRequired,
+  globalState: _globals.PropTypes.object.isRequired
 };
 
 /***/ }),
@@ -23961,7 +24110,8 @@ var EditorScreenComponent = function (_ScreenComponent) {
         ui: this.context.ui,
         options: this.context.options,
         editorScreen: this,
-        mediator: this.context.mediator
+        mediator: this.context.mediator,
+        globalState: this.context.globalState
       };
     }
 
@@ -24069,7 +24219,8 @@ EditorScreenComponent.childContextTypes = {
   editor: _globals.PropTypes.object.isRequired,
   mediator: _globals.PropTypes.object.isRequired,
   options: _globals.PropTypes.object.isRequired,
-  editorScreen: _globals.PropTypes.object.isRequired
+  editorScreen: _globals.PropTypes.object.isRequired,
+  globalState: _globals.PropTypes.object.isRequired
 };
 
 EditorScreenComponent.contextTypes = _screenComponent2.default.contextTypes;
@@ -33082,18 +33233,36 @@ var TextControls = function (_Controls) {
     return _possibleConstructorReturn(this, (TextControls.__proto__ || Object.getPrototypeOf(TextControls)).apply(this, arguments));
   }
 
-  _createClass(TextControls, null, [{
-    key: 'onExit',
+  _createClass(TextControls, [{
+    key: 'saveTextSettings',
+
+    /**
+     * Saves the current text settings to the global state
+     */
+    value: function saveTextSettings() {
+      var selectedSprite = this.getSharedState('selectedSprite');
+
+      if (!selectedSprite) {
+        return;
+      }
+
+      this.setGlobalToolState('text', selectedSprite.serializeOptions(['color', 'backgroundColor', 'characterSpacing', 'lineHeight', 'alignment', 'fontIdentifier', 'fontFamily', 'fontWeight', 'fontStyle']));
+    }
 
     /**
      * Gets called when the user leaves these controls
      * @this {TextControlsComponent}
      * @ignore
      */
+
+  }], [{
+    key: 'onExit',
     value: function onExit() {
       var editor = this.context.editor;
 
       var operation = this.getSharedState('operation');
+
+      this.saveTextSettings();
 
       if (!this.getSharedState('skipHistory')) {
         editor.history.add(operation, this.getSharedState('initialOptions'), this.getSharedState('operationExistedBefore'));
@@ -33547,6 +33716,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
@@ -33701,7 +33872,12 @@ var TextControlsComponent = function (_ControlsComponent) {
 
       var selectedSprite = this.getSharedState('selectedSprite');
       var operation = this.getSharedState('operation');
-      var defaultFontVariation = this.getSharedState('defaultFontVariation');
+      var fontManager = this.getSharedState('fontManager');
+
+      // Check for previously saved text settings in the global state
+      var defaultOptions = this.getGlobalToolState('text');
+
+      var defaultFontVariation = defaultOptions ? this.getSharedState('defaultFontVariation') : fontManager.getDefaultVariation();
 
       var outputDimensions = editor.getOutputDimensions();
       if (!selectedSprite) {
@@ -33709,7 +33885,7 @@ var TextControlsComponent = function (_ControlsComponent) {
         var renderer = sdk.getRenderer();
 
         var maxTextureSize = renderer.getMaxTextureSize();
-        var text = operation.createText({
+        var text = operation.createText(_extends({
           fontIdentifier: defaultFontVariation.getIdentifier(),
           text: this._t('pesdk.text.placeholder.defaultText'),
           position: new _globals.Vector2(0.5, 0.5),
@@ -33721,7 +33897,7 @@ var TextControlsComponent = function (_ControlsComponent) {
           fontWeight: defaultFontVariation.getFontWeight(),
           fontStyle: defaultFontVariation.getFontStyle(),
           alignment: 'center'
-        });
+        }, defaultOptions || {}));
         operation.addSprite(text);
         this.setSharedState({ selectedSprite: text });
         editor.render();
@@ -33764,9 +33940,26 @@ var TextControlsComponent = function (_ControlsComponent) {
     value: function _onBackClick(e) {
       var editor = this.context.editor;
 
+      this.saveTextSettings();
       editor.render();
       this._backButtonClicked = true;
       this.props.onSwitchControls('home');
+    }
+
+    /**
+     * Saves the current text settings to the global state
+     */
+
+  }, {
+    key: 'saveTextSettings',
+    value: function saveTextSettings() {
+      var selectedSprite = this.getSharedState('selectedSprite');
+
+      if (!selectedSprite) {
+        return;
+      }
+
+      this.setGlobalToolState('text', selectedSprite.serializeOptions(['color', 'backgroundColor', 'characterSpacing', 'lineHeight', 'alignment', 'fontIdentifier', 'fontFamily', 'fontWeight', 'fontStyle']));
     }
 
     /**

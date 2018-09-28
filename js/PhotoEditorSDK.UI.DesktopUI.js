@@ -3080,7 +3080,8 @@ SharedStateComponent.contextTypes = {
   sharedState: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object,
   theme: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object,
   screen: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object,
-  appComponent: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object
+  appComponent: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object,
+  globalState: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].object
 };
 SharedStateComponent.propTypes = {
   sharedState: __WEBPACK_IMPORTED_MODULE_5_globals__["k" /* PropTypes */].any
@@ -7592,7 +7593,8 @@ BaseComponent.contextTypes = {
   options: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object,
   mediator: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object,
   screen: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object,
-  theme: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object
+  theme: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object,
+  globalState: __WEBPACK_IMPORTED_MODULE_6_prop_types___default.a.object
 };
 /* harmony default export */ __webpack_exports__["a"] = (BaseComponent);
 
@@ -16278,6 +16280,8 @@ var DesktopUI = function (_EventEmitter) {
 
     _this._preloader = new __WEBPACK_IMPORTED_MODULE_13__lib_preloader__["a" /* default */](_this, _this._options, _this._mediator);
 
+    _this._globalState = new __WEBPACK_IMPORTED_MODULE_4_globals__["s" /* SharedState */]();
+
     _this._isReady = false;
 
     _this._mediator.once(__WEBPACK_IMPORTED_MODULE_4_globals__["d" /* Constants */].EVENTS.EDITOR_READY, function () {
@@ -16326,7 +16330,8 @@ var DesktopUI = function (_EventEmitter) {
         ref: function ref(c) {
           _this2._component = c;
         },
-        options: this._options });
+        options: this._options,
+        globalState: this._globalState });
 
       if (this._options.renderReturnsComponent) {
         return component;
@@ -26551,6 +26556,7 @@ var AppComponent = function (_BaseComponent) {
         ui: this.props.ui,
         options: this.props.options,
         mediator: this.props.mediator,
+        globalState: this.props.globalState,
         appComponent: this
       };
     }
@@ -26696,11 +26702,13 @@ AppComponent.childContextTypes = {
   ui: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   mediator: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   options: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
-  appComponent: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
+  appComponent: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  globalState: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
 };
 AppComponent.propTypes = {
   ui: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   mediator: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  globalState: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   options: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
 };
 /* harmony default export */ __webpack_exports__["a"] = (AppComponent);
@@ -27874,7 +27882,8 @@ var EditorScreenComponent = function (_BaseComponent) {
         mediator: this.context.mediator,
         sharedState: this.state.sharedState,
         screen: this,
-        appComponent: this.context.appComponent
+        appComponent: this.context.appComponent,
+        globalState: this.context.globalState
       };
     }
 
@@ -28002,7 +28011,8 @@ EditorScreenComponent.childContextTypes = {
   options: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   sharedState: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
   screen: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
-  appComponent: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
+  appComponent: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired,
+  globalState: __WEBPACK_IMPORTED_MODULE_6_globals__["k" /* PropTypes */].object.isRequired
 };
 
 
@@ -32664,7 +32674,7 @@ var CanvasHeaderControlsComponent = function (_BaseComponent) {
           onClick: this._onExportClick,
           className: test ? 'js-exportButton' : undefined }),
         displayCloseButton && __WEBPACK_IMPORTED_MODULE_4_globals__["l" /* React */].createElement(__WEBPACK_IMPORTED_MODULE_6__header_canvas_header_text_button_component__["a" /* default */], {
-          title: this._t('editor.close'),
+          title: this._t('pesdk.editor.button.close'),
           onClick: this._onCloseClick,
           className: test ? 'js-closeButton' : undefined })
       );
@@ -34293,6 +34303,8 @@ var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+function _defineProperty(obj, key, value) { if (key in obj) { __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* @module */
@@ -34734,6 +34746,34 @@ var BaseControls = function () {
     }
 
     /**
+     * Returns the global editor state data for this tool.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: 'getGlobalToolState',
+    value: function getGlobalToolState() {
+      var globalState = this.context.globalState;
+
+      return globalState.get(this.constructor.identifier);
+    }
+
+    /**
+     * Sets the global editor state data for this tool.
+     *
+     * @returns {Object}
+     */
+
+  }, {
+    key: 'setGlobalToolState',
+    value: function setGlobalToolState(state) {
+      var globalState = this.context.globalState;
+
+      globalState.set(_defineProperty({}, this.constructor.identifier, state));
+    }
+
+    /**
      * Returns the assets that should be preloaded for this control
      * @param  {PhotoEditorSDK.UI.DesktopUI.Editor} editor
      * @return {String[]}
@@ -34750,7 +34790,7 @@ var BaseControls = function () {
      * @static
      * @param {Object} operations
      * @param {Boolean} [initial=false]
-     * @returns {Object} - An object that will be passet to sharedState.set
+     * @returns {Object} - An object that will be passed to sharedState.set
      */
     value: function mapOperationsToSharedState(operations) {
       var initial = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
@@ -38131,7 +38171,7 @@ module.exports = {"pesdk":{"common":{"title":{"error":"Fehler"},"text":{"loading
 /* 293 */
 /***/ (function(module, exports) {
 
-module.exports = {"pesdk":{"common":{"title":{"error":"Error"},"text":{"loading":"Loading..."},"button":{"cancel":"Cancel"}},"editor":{"button":{"export":"Export","newImageChangesLostWarningYes":"Yes","newImageChangesLostWarningNo":"No","discardChangesWarningKeep":"Keep changes","discardChangesWarningDiscard":"Discard changes"},"title":{"newImageChangesLostWarning":"New Image","imageResizedWarning_maxMegaPixels":"Image resized","imageResizedWarning_maxDimensions":"Image resized","fontLoadingError":"Failed to load font","discardChangesWarning":"Discard changes?"},"text":{"newImageChangesLostWarning":"Any unsaved changes will be lost. Continue?","imageResizedWarning_maxMegaPixels":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels.","imageResizedWarning_maxDimensions":"Due to hardware limitations your image has been resized to ${width}x${height} pixels.","renderingError":"An error has occurred while rendering the image.","exporting":"Exporting...","resizing":"Resizing...","loadingFonts":"Loading fonts...","fontLoadingError":"The following fonts could not be loaded: ${fonts}.","webcamUnavailableError":"Unable to display webcam image (Error: ${error})","invalidFileTypeError":"The file type ${fileType} is not supported.","imageLoadingError":"Failed to load image. This can have multiple reasons, e.g. the file is corrupted or the file type is not supported.","discardChangesWarning":"You have unsaved changes. Are you sure you want to discard the changes?"}},"library":{"title":{"name":"Library"},"button":{"fileDropZone":"Drag image here or click to browse for one.","fileDropZoneHovered":"Drop to upload."},"placeholder":{"search":"Search Library"},"text":{"noResults":"No results"}},"transform":{"title":{"name":"Transform"},"button":{"reset":"Reset Default"},"asset":{"imgly_transforms_common":{"name":"Common Crops","asset":{"imgly_transform_common_custom":"Custom","imgly_transform_common_square":"Square","imgly_transform_common_4-3":"4:3","imgly_transform_common_16-9":"16:9"}},"imgly_transforms_facebook":{"name":"Facebook","asset":{"imgly_transform_facebook_ad":"Ad","imgly_transform_facebook_post":"Post","imgly_transform_facebook_cover":"Cover","imgly_transform_facebook_profile":"Profile Pic"}}},"placeholder":{"width":"w","height":"h"}},"filter":{"asset":{"identity":"None","imgly_lut_celsius":"Celsius","imgly_lut_chest":"Chest","imgly_lut_fixie":"Fixie","imgly_lut_fridge":"Fridge","imgly_lut_front":"Front","imgly_lut_k2":"K2","imgly_lut_mellow":"Mellow","imgly_lut_sin":"Sin","imgly_lut_texas":"Texas","imgly_lut_ad1920":"1920 A.D.","imgly_lut_ancient":"Ancient","imgly_lut_bleached":"Bleached","imgly_lut_bleachedblue":"Bleached Blue","imgly_lut_blues":"Blues","imgly_lut_blueshadows":"Blue Shadows","imgly_lut_breeze":"Breeze","imgly_lut_bw":"B & W","imgly_lut_classic":"Classic","imgly_lut_colorful":"Colorful","imgly_lut_cool":"Cool","imgly_lut_cottoncandy":"Cotton Candy","imgly_lut_creamy":"Creamy","imgly_lut_eighties":"Eighties","imgly_lut_elder":"Elder","imgly_lut_evening":"Evening","imgly_lut_fall":"Fall","imgly_lut_food":"Food","imgly_lut_glam":"Glam","imgly_lut_gobblin":"Gobblin","imgly_lut_highcarb":"High Carb","imgly_lut_highcontrast":"High Contrast","imgly_lut_k1":"K1","imgly_lut_k6":"K6","imgly_lut_kdynamic":"KDynamic","imgly_lut_keen":"Keen","imgly_lut_lenin":"Lenin","imgly_lut_litho":"Litho","imgly_lut_lomo100":"Lomo 100","imgly_lut_lucid":"Lucid","imgly_lut_neat":"Neat","imgly_lut_nogreen":"No Green","imgly_lut_orchid":"Orchid","imgly_lut_pale":"Pale","imgly_lut_pitched":"Pitched","imgly_lut_plate":"Plate","imgly_lut_pola669":"Pola 669","imgly_lut_polasx":"Pola SX","imgly_lut_pro400":"Pro 400","imgly_lut_quozi":"Quozi","imgly_lut_sepiahigh":"Sepia High","imgly_lut_settled":"Settled","imgly_lut_seventies":"Seventies","imgly_lut_soft":"Soft","imgly_lut_steel":"Steel","imgly_lut_summer":"Summer","imgly_lut_sunset":"Sunset","imgly_lut_tender":"Tender","imgly_lut_twilight":"Twilight","imgly_lut_winter":"Winter","imgly_lut_x400":"X400"},"title":{"name":"Filters"}},"adjustments":{"button":{"reset":"Reset Default"},"title":{"name":"Adjust","basics":"Basics","refinements":"Refinements"},"text":{"brightness":"Brightness","saturation":"Saturation","contrast":"Contrast","gamma":"Gamma","clarity":"Clarity","exposure":"Exposure","shadows":"Shadows","highlights":"Highlights","whites":"Whites","blacks":"Blacks","temperature":"Temperature"}},"focus":{"title":{"name":"Focus"},"button":{"none":"None","radial":"Radial","mirrored":"Mirrored","linear":"Linear","gaussian":"Gaussian"}},"text":{"title":{"name":"Text","font":"Font","size":"Size","spacing":"Spacing","line":"Line","background":"Background"},"placeholder":{"defaultText":"Double-click to edit!"},"button":{"new":"New Text"}},"textdesign":{"title":{"name":"Text Design"},"button":{"invert":"Text as mask"}},"sticker":{"title":{"name":"Stickers","opacity":"Opacity"},"text":{"stickerLoadingError":"Failed to load sticker ${path}."},"button":{"replace":"Replace","new":"New Sticker","fill":"Fill"},"asset":{"imgly_sticker_emoticons":"Emoticons","imgly_sticker_emoticons_alien":"Alien","imgly_sticker_emoticons_angel":"Angel","imgly_sticker_emoticons_angry":"Angry","imgly_sticker_emoticons_anxious":"Anxious","imgly_sticker_emoticons_asleep":"Asleep","imgly_sticker_emoticons_attention":"Attention","imgly_sticker_emoticons_baby_chicken":"Baby Chicken","imgly_sticker_emoticons_batman":"Batman","imgly_sticker_emoticons_beer":"Beer","imgly_sticker_emoticons_black":"Black","imgly_sticker_emoticons_blue":"Blue","imgly_sticker_emoticons_blush":"Blush","imgly_sticker_emoticons_boxer":"Boxer","imgly_sticker_emoticons_business":"Business","imgly_sticker_emoticons_chicken":"Chicken","imgly_sticker_emoticons_cool":"Cool","imgly_sticker_emoticons_cry":"Cry","imgly_sticker_emoticons_deceased":"Deceased","imgly_sticker_emoticons_devil":"Devil","imgly_sticker_emoticons_duckface":"Duckface","imgly_sticker_emoticons_furious":"Furious","imgly_sticker_emoticons_grin":"Grin","imgly_sticker_emoticons_guitar":"Guitar","imgly_sticker_emoticons_harry_potter":"Harry Potter","imgly_sticker_emoticons_hippie":"Hippie","imgly_sticker_emoticons_hitman":"Hitman","imgly_sticker_emoticons_humourous":"Humourous","imgly_sticker_emoticons_idea":"Idea","imgly_sticker_emoticons_impatient":"Impatient","imgly_sticker_emoticons_kiss":"Kiss","imgly_sticker_emoticons_kisses":"Kisses","imgly_sticker_emoticons_laugh":"Laugh","imgly_sticker_emoticons_loud_cry":"Loud Cry","imgly_sticker_emoticons_loving":"Loving","imgly_sticker_emoticons_masked":"Masked","imgly_sticker_emoticons_music":"Music","imgly_sticker_emoticons_nerd":"Nerd","imgly_sticker_emoticons_ninja":"Ninja","imgly_sticker_emoticons_not_speaking_to_you":"Not speaking to you","imgly_sticker_emoticons_pig":"Pig","imgly_sticker_emoticons_pumpkin":"Pumpkin","imgly_sticker_emoticons_question":"Question","imgly_sticker_emoticons_rabbit":"Rabbit","imgly_sticker_emoticons_sad":"Sad","imgly_sticker_emoticons_sick":"Sick","imgly_sticker_emoticons_skateboard":"Skateboard","imgly_sticker_emoticons_skull":"Skull","imgly_sticker_emoticons_sleepy":"Sleepy","imgly_sticker_emoticons_smile":"Smile","imgly_sticker_emoticons_smoking":"Smoking","imgly_sticker_emoticons_sobbing":"Sobbing","imgly_sticker_emoticons_star":"Star","imgly_sticker_emoticons_steaming_furious":"Steaming Furious","imgly_sticker_emoticons_sunbathing":"Sunbathing","imgly_sticker_emoticons_tired":"Tired","imgly_sticker_emoticons_tongue_out_wink":"Tongue out wink","imgly_sticker_emoticons_wave":"Wave","imgly_sticker_emoticons_wide_grin":"Wide Grin","imgly_sticker_emoticons_wink":"Wink","imgly_sticker_emoticons_wrestler":"Wrestler","imgly_sticker_shapes":"Shapes","imgly_sticker_shapes_arrow_02":"Arrow 1","imgly_sticker_shapes_arrow_03":"Arrow 2","imgly_sticker_shapes_badge_01":"Badge 1","imgly_sticker_shapes_badge_11":"Badge 5","imgly_sticker_shapes_badge_12":"Badge 6","imgly_sticker_shapes_badge_13":"Badge 7","imgly_sticker_shapes_badge_15":"Badge 8","imgly_sticker_shapes_badge_18":"Badge 9","imgly_sticker_shapes_badge_19":"Badge 10","imgly_sticker_shapes_badge_20":"Badge 11","imgly_sticker_shapes_badge_28":"Badge 12","imgly_sticker_shapes_badge_32":"Badge 13","imgly_sticker_shapes_badge_35":"Badge 14","imgly_sticker_shapes_badge_36":"Badge 15","imgly_sticker_shapes_badge_04":"Badge 2","imgly_sticker_shapes_badge_06":"Badge 3","imgly_sticker_shapes_badge_08":"Badge 4","imgly_sticker_shapes_spray_01":"Spray 1","imgly_sticker_shapes_spray_03":"Spray 2","imgly_sticker_shapes_spray_04":"Spray 3"}},"brush":{"title":{"name":"Brush","width":"Width","hardness":"Hardness","settings":"Brush Settings"}},"frame":{"title":{"name":"Frames","opacity":"Opacity","width":"Width"},"button":{"fill":"Fill","replace":"Replace","none":"None"},"asset":{"imgly_frame_dia":"Dia","imgly_frame_art_decor":"Art Decor","imgly_frame_black_passepartout":"Black Passepartout","imgly_frame_lowpoly_shadow":"Low Poly","imgly_frame_wood_passepartout":"Wood Passepartout"}},"overlay":{"title":{"name":"Overlays","blending":"Blending","none":"None","normal":"Normal","overlay":"Overlay","hardLight":"Hard Light","softLight":"Soft Light","multiply":"Multiply","darken":"Darken","lighten":"Lighten","screen":"Screen","colorBurn":"Color Burn"},"button":{"none":"None"},"asset":{"imgly_overlay_bokeh":"Bokeh","imgly_overlay_chop":"Chop","imgly_overlay_clouds":"Clouds","imgly_overlay_golden":"Golden","imgly_overlay_grain":"Grain","imgly_overlay_hearts":"Hearts","imgly_overlay_lightleak1":"Light Leak 1","imgly_overlay_lightleak2":"Light Leak 2","imgly_overlay_metal":"Metal","imgly_overlay_mosaic":"Mosaic","imgly_overlay_painting":"Painting","imgly_overlay_paper":"Paper","imgly_overlay_rain":"Rain","imgly_overlay_vintage":"Vintage","imgly_overlay_wall1":"Wall","imgly_overlay_wall2":"Wall 2","imgly_overlay_wood":"Wood"}}}}
+module.exports = {"pesdk":{"common":{"title":{"error":"Error"},"text":{"loading":"Loading..."},"button":{"cancel":"Cancel"}},"editor":{"button":{"export":"Export","close":"Close","newImageChangesLostWarningYes":"Yes","newImageChangesLostWarningNo":"No","discardChangesWarningKeep":"Keep changes","discardChangesWarningDiscard":"Discard changes"},"title":{"newImageChangesLostWarning":"New Image","imageResizedWarning_maxMegaPixels":"Image resized","imageResizedWarning_maxDimensions":"Image resized","fontLoadingError":"Failed to load font","discardChangesWarning":"Discard changes?"},"text":{"newImageChangesLostWarning":"Any unsaved changes will be lost. Continue?","imageResizedWarning_maxMegaPixels":"Your image exceeds the maximum size of ${maxMegaPixels} megapixels and has therefore been resized to ${width}x${height} pixels.","imageResizedWarning_maxDimensions":"Due to hardware limitations your image has been resized to ${width}x${height} pixels.","renderingError":"An error has occurred while rendering the image.","exporting":"Exporting...","resizing":"Resizing...","loadingFonts":"Loading fonts...","fontLoadingError":"The following fonts could not be loaded: ${fonts}.","webcamUnavailableError":"Unable to display webcam image (Error: ${error})","invalidFileTypeError":"The file type ${fileType} is not supported.","imageLoadingError":"Failed to load image. This can have multiple reasons, e.g. the file is corrupted or the file type is not supported.","discardChangesWarning":"You have unsaved changes. Are you sure you want to discard the changes?"}},"library":{"title":{"name":"Library"},"button":{"fileDropZone":"Drag image here or click to browse for one.","fileDropZoneHovered":"Drop to upload."},"placeholder":{"search":"Search Library"},"text":{"noResults":"No results"}},"transform":{"title":{"name":"Transform"},"button":{"reset":"Reset Default"},"asset":{"imgly_transforms_common":{"name":"Common Crops","asset":{"imgly_transform_common_custom":"Custom","imgly_transform_common_square":"Square","imgly_transform_common_4-3":"4:3","imgly_transform_common_16-9":"16:9"}},"imgly_transforms_facebook":{"name":"Facebook","asset":{"imgly_transform_facebook_ad":"Ad","imgly_transform_facebook_post":"Post","imgly_transform_facebook_cover":"Cover","imgly_transform_facebook_profile":"Profile Pic"}}},"placeholder":{"width":"w","height":"h"}},"filter":{"asset":{"identity":"None","imgly_lut_celsius":"Celsius","imgly_lut_chest":"Chest","imgly_lut_fixie":"Fixie","imgly_lut_fridge":"Fridge","imgly_lut_front":"Front","imgly_lut_k2":"K2","imgly_lut_mellow":"Mellow","imgly_lut_sin":"Sin","imgly_lut_texas":"Texas","imgly_lut_ad1920":"1920 A.D.","imgly_lut_ancient":"Ancient","imgly_lut_bleached":"Bleached","imgly_lut_bleachedblue":"Bleached Blue","imgly_lut_blues":"Blues","imgly_lut_blueshadows":"Blue Shadows","imgly_lut_breeze":"Breeze","imgly_lut_bw":"B & W","imgly_lut_classic":"Classic","imgly_lut_colorful":"Colorful","imgly_lut_cool":"Cool","imgly_lut_cottoncandy":"Cotton Candy","imgly_lut_creamy":"Creamy","imgly_lut_eighties":"Eighties","imgly_lut_elder":"Elder","imgly_lut_evening":"Evening","imgly_lut_fall":"Fall","imgly_lut_food":"Food","imgly_lut_glam":"Glam","imgly_lut_gobblin":"Gobblin","imgly_lut_highcarb":"High Carb","imgly_lut_highcontrast":"High Contrast","imgly_lut_k1":"K1","imgly_lut_k6":"K6","imgly_lut_kdynamic":"KDynamic","imgly_lut_keen":"Keen","imgly_lut_lenin":"Lenin","imgly_lut_litho":"Litho","imgly_lut_lomo100":"Lomo 100","imgly_lut_lucid":"Lucid","imgly_lut_neat":"Neat","imgly_lut_nogreen":"No Green","imgly_lut_orchid":"Orchid","imgly_lut_pale":"Pale","imgly_lut_pitched":"Pitched","imgly_lut_plate":"Plate","imgly_lut_pola669":"Pola 669","imgly_lut_polasx":"Pola SX","imgly_lut_pro400":"Pro 400","imgly_lut_quozi":"Quozi","imgly_lut_sepiahigh":"Sepia High","imgly_lut_settled":"Settled","imgly_lut_seventies":"Seventies","imgly_lut_soft":"Soft","imgly_lut_steel":"Steel","imgly_lut_summer":"Summer","imgly_lut_sunset":"Sunset","imgly_lut_tender":"Tender","imgly_lut_twilight":"Twilight","imgly_lut_winter":"Winter","imgly_lut_x400":"X400"},"title":{"name":"Filters"}},"adjustments":{"button":{"reset":"Reset Default"},"title":{"name":"Adjust","basics":"Basics","refinements":"Refinements"},"text":{"brightness":"Brightness","saturation":"Saturation","contrast":"Contrast","gamma":"Gamma","clarity":"Clarity","exposure":"Exposure","shadows":"Shadows","highlights":"Highlights","whites":"Whites","blacks":"Blacks","temperature":"Temperature"}},"focus":{"title":{"name":"Focus"},"button":{"none":"None","radial":"Radial","mirrored":"Mirrored","linear":"Linear","gaussian":"Gaussian"}},"text":{"title":{"name":"Text","font":"Font","size":"Size","spacing":"Spacing","line":"Line","background":"Background"},"placeholder":{"defaultText":"Double-click to edit!"},"button":{"new":"New Text"}},"textdesign":{"title":{"name":"Text Design"},"button":{"invert":"Text as mask"}},"sticker":{"title":{"name":"Stickers","opacity":"Opacity"},"text":{"stickerLoadingError":"Failed to load sticker ${path}."},"button":{"replace":"Replace","new":"New Sticker","fill":"Fill"},"asset":{"imgly_sticker_emoticons":"Emoticons","imgly_sticker_emoticons_alien":"Alien","imgly_sticker_emoticons_angel":"Angel","imgly_sticker_emoticons_angry":"Angry","imgly_sticker_emoticons_anxious":"Anxious","imgly_sticker_emoticons_asleep":"Asleep","imgly_sticker_emoticons_attention":"Attention","imgly_sticker_emoticons_baby_chicken":"Baby Chicken","imgly_sticker_emoticons_batman":"Batman","imgly_sticker_emoticons_beer":"Beer","imgly_sticker_emoticons_black":"Black","imgly_sticker_emoticons_blue":"Blue","imgly_sticker_emoticons_blush":"Blush","imgly_sticker_emoticons_boxer":"Boxer","imgly_sticker_emoticons_business":"Business","imgly_sticker_emoticons_chicken":"Chicken","imgly_sticker_emoticons_cool":"Cool","imgly_sticker_emoticons_cry":"Cry","imgly_sticker_emoticons_deceased":"Deceased","imgly_sticker_emoticons_devil":"Devil","imgly_sticker_emoticons_duckface":"Duckface","imgly_sticker_emoticons_furious":"Furious","imgly_sticker_emoticons_grin":"Grin","imgly_sticker_emoticons_guitar":"Guitar","imgly_sticker_emoticons_harry_potter":"Harry Potter","imgly_sticker_emoticons_hippie":"Hippie","imgly_sticker_emoticons_hitman":"Hitman","imgly_sticker_emoticons_humourous":"Humourous","imgly_sticker_emoticons_idea":"Idea","imgly_sticker_emoticons_impatient":"Impatient","imgly_sticker_emoticons_kiss":"Kiss","imgly_sticker_emoticons_kisses":"Kisses","imgly_sticker_emoticons_laugh":"Laugh","imgly_sticker_emoticons_loud_cry":"Loud Cry","imgly_sticker_emoticons_loving":"Loving","imgly_sticker_emoticons_masked":"Masked","imgly_sticker_emoticons_music":"Music","imgly_sticker_emoticons_nerd":"Nerd","imgly_sticker_emoticons_ninja":"Ninja","imgly_sticker_emoticons_not_speaking_to_you":"Not speaking to you","imgly_sticker_emoticons_pig":"Pig","imgly_sticker_emoticons_pumpkin":"Pumpkin","imgly_sticker_emoticons_question":"Question","imgly_sticker_emoticons_rabbit":"Rabbit","imgly_sticker_emoticons_sad":"Sad","imgly_sticker_emoticons_sick":"Sick","imgly_sticker_emoticons_skateboard":"Skateboard","imgly_sticker_emoticons_skull":"Skull","imgly_sticker_emoticons_sleepy":"Sleepy","imgly_sticker_emoticons_smile":"Smile","imgly_sticker_emoticons_smoking":"Smoking","imgly_sticker_emoticons_sobbing":"Sobbing","imgly_sticker_emoticons_star":"Star","imgly_sticker_emoticons_steaming_furious":"Steaming Furious","imgly_sticker_emoticons_sunbathing":"Sunbathing","imgly_sticker_emoticons_tired":"Tired","imgly_sticker_emoticons_tongue_out_wink":"Tongue out wink","imgly_sticker_emoticons_wave":"Wave","imgly_sticker_emoticons_wide_grin":"Wide Grin","imgly_sticker_emoticons_wink":"Wink","imgly_sticker_emoticons_wrestler":"Wrestler","imgly_sticker_shapes":"Shapes","imgly_sticker_shapes_arrow_02":"Arrow 1","imgly_sticker_shapes_arrow_03":"Arrow 2","imgly_sticker_shapes_badge_01":"Badge 1","imgly_sticker_shapes_badge_11":"Badge 5","imgly_sticker_shapes_badge_12":"Badge 6","imgly_sticker_shapes_badge_13":"Badge 7","imgly_sticker_shapes_badge_15":"Badge 8","imgly_sticker_shapes_badge_18":"Badge 9","imgly_sticker_shapes_badge_19":"Badge 10","imgly_sticker_shapes_badge_20":"Badge 11","imgly_sticker_shapes_badge_28":"Badge 12","imgly_sticker_shapes_badge_32":"Badge 13","imgly_sticker_shapes_badge_35":"Badge 14","imgly_sticker_shapes_badge_36":"Badge 15","imgly_sticker_shapes_badge_04":"Badge 2","imgly_sticker_shapes_badge_06":"Badge 3","imgly_sticker_shapes_badge_08":"Badge 4","imgly_sticker_shapes_spray_01":"Spray 1","imgly_sticker_shapes_spray_03":"Spray 2","imgly_sticker_shapes_spray_04":"Spray 3"}},"brush":{"title":{"name":"Brush","width":"Width","hardness":"Hardness","settings":"Brush Settings"}},"frame":{"title":{"name":"Frames","opacity":"Opacity","width":"Width"},"button":{"fill":"Fill","replace":"Replace","none":"None"},"asset":{"imgly_frame_dia":"Dia","imgly_frame_art_decor":"Art Decor","imgly_frame_black_passepartout":"Black Passepartout","imgly_frame_lowpoly_shadow":"Low Poly","imgly_frame_wood_passepartout":"Wood Passepartout"}},"overlay":{"title":{"name":"Overlays","blending":"Blending","none":"None","normal":"Normal","overlay":"Overlay","hardLight":"Hard Light","softLight":"Soft Light","multiply":"Multiply","darken":"Darken","lighten":"Lighten","screen":"Screen","colorBurn":"Color Burn"},"button":{"none":"None"},"asset":{"imgly_overlay_bokeh":"Bokeh","imgly_overlay_chop":"Chop","imgly_overlay_clouds":"Clouds","imgly_overlay_golden":"Golden","imgly_overlay_grain":"Grain","imgly_overlay_hearts":"Hearts","imgly_overlay_lightleak1":"Light Leak 1","imgly_overlay_lightleak2":"Light Leak 2","imgly_overlay_metal":"Metal","imgly_overlay_mosaic":"Mosaic","imgly_overlay_painting":"Painting","imgly_overlay_paper":"Paper","imgly_overlay_rain":"Rain","imgly_overlay_vintage":"Vintage","imgly_overlay_wall1":"Wall","imgly_overlay_wall2":"Wall 2","imgly_overlay_wood":"Wood"}}}}
 
 /***/ }),
 /* 294 */
@@ -41285,27 +41325,32 @@ AdjustmentsListItemComponent.contextTypes = __WEBPACK_IMPORTED_MODULE_5_photoedi
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__brush_controls_component__ = __webpack_require__(310);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__brush_canvas_controls_component__ = __webpack_require__(312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__brush_controls_component__ = __webpack_require__(310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__brush_canvas_controls_component__ = __webpack_require__(312);
 
 
 
 
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _extends = __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_array_from___default()(arr); } }
 
@@ -41313,7 +41358,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* @module */
 /*
@@ -41335,7 +41380,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var _ref = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Operations"].SpriteOperation ? __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Operations"].SpriteOperation : {},
+var _ref = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk__["Operations"].SpriteOperation ? __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk__["Operations"].SpriteOperation : {},
     BrushSprite = _ref.BrushSprite;
 
 /**
@@ -41353,7 +41398,7 @@ var BrushControls = function (_BaseControls) {
   function BrushControls(context, sharedState, options) {
     _classCallCheck(this, BrushControls);
 
-    var _this = _possibleConstructorReturn(this, (BrushControls.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(BrushControls)).call(this, context, sharedState, options));
+    var _this = _possibleConstructorReturn(this, (BrushControls.__proto__ || __WEBPACK_IMPORTED_MODULE_5_babel_runtime_core_js_object_get_prototype_of___default()(BrushControls)).call(this, context, sharedState, options));
 
     _this._onOperationRemoved = _this._onOperationRemoved.bind(_this);
     return _this;
@@ -41436,6 +41481,13 @@ var BrushControls = function (_BaseControls) {
       var brushSprite = operation.createBrush();
       operation.addSprite(brushSprite);
 
+      var globalOptions = this.getGlobalToolState();
+      var defaultOptions = globalOptions || {
+        brushColor: __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk__["Color"].WHITE,
+        brushSize: 0.1,
+        brushHardness: 50
+      };
+
       editor.zoom.auto(false, false, function () {
         editor.features.disable('zoom', 'drag');
 
@@ -41446,17 +41498,14 @@ var BrushControls = function (_BaseControls) {
         }
 
         _this2.sharedState.set({
-          brushSize: Math.round(brushSize)
+          brushSize: globalOptions ? globalOptions.brushSize : Math.round(brushSize)
         });
       });
 
-      this.sharedState.set({
+      this.sharedState.set(_extends({}, defaultOptions, {
         operation: operation,
-        brushSprite: brushSprite,
-        brushColor: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Color"].WHITE,
-        brushSize: 0.1,
-        brushHardness: 50
-      });
+        brushSprite: brushSprite
+      }));
     }
 
     /**
@@ -41482,6 +41531,8 @@ var BrushControls = function (_BaseControls) {
           }
         });
       }
+
+      this.saveBrushSettings();
 
       editor.features.enable('zoom', 'drag');
       editor.render();
@@ -41509,6 +41560,15 @@ var BrushControls = function (_BaseControls) {
           brushSprite: brushSprite
         });
       }
+    }
+  }, {
+    key: 'saveBrushSettings',
+    value: function saveBrushSettings() {
+      this.setGlobalToolState({
+        brushColor: this.sharedState.get('brushColor'),
+        brushSize: this.sharedState.get('brushSize'),
+        brushHardness: this.sharedState.get('brushHardness')
+      });
     }
 
     /**
@@ -41543,13 +41603,13 @@ var BrushControls = function (_BaseControls) {
   }]);
 
   return BrushControls;
-}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"]);
+}(__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core__["BaseControls"]);
 
-BrushControls.clickAtPosition = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"].clickAtPosition;
-BrushControls.getPreloadAssets = __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"].getPreloadAssets;
+BrushControls.clickAtPosition = __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core__["BaseControls"].clickAtPosition;
+BrushControls.getPreloadAssets = __WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core__["BaseControls"].getPreloadAssets;
 BrushControls.identifier = 'brush';
-BrushControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_7__brush_controls_component__["a" /* default */];
-BrushControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_8__brush_canvas_controls_component__["a" /* default */];
+BrushControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_8__brush_controls_component__["a" /* default */];
+BrushControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_9__brush_canvas_controls_component__["a" /* default */];
 BrushControls.iconPath = 'editor/controls/brush/icon.png';
 BrushControls.activeIconPath = 'editor/controls/brush/icon-active.png';
 BrushControls.requiredOperations = ['sprite'];
@@ -41561,7 +41621,7 @@ BrushControls.updatableOperations = ['sprite'];
 BrushControls.switchToDefaultControlsOnRemoval = false;
 
 
-__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default.a.Controls.BrushControls = BrushControls;
+__WEBPACK_IMPORTED_MODULE_7_photoeditorsdk_desktop_ui_core___default.a.Controls.BrushControls = BrushControls;
 
 /* harmony default export */ __webpack_exports__["a"] = (BrushControls);
 
@@ -41702,7 +41762,8 @@ var BrushControlsComponent = function (_ControlsComponent) {
       brushInstance.setColor(color.clone());
 
       this.setSharedState({
-        brushInstance: brushInstance
+        brushInstance: brushInstance,
+        brushColor: color.clone()
       });
     }
 
@@ -50318,32 +50379,37 @@ StickerCanvasControlsComponent.contextTypes = __WEBPACK_IMPORTED_MODULE_6__share
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__text_controls_component__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_canvas_controls_component__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__text_controls_component__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__text_canvas_controls_component__ = __webpack_require__(348);
 
 
 
 
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _extends = __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default.a || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_define_property___default()(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_1_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_create___default()(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default.a ? __WEBPACK_IMPORTED_MODULE_2_babel_runtime_core_js_object_set_prototype_of___default()(subClass, superClass) : subClass.__proto__ = superClass; }
 
 /* @module */
 /*
@@ -50365,14 +50431,14 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var Vector2 = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Math"].Vector2;
+var Vector2 = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Math"].Vector2;
 
 
 var TextSprite = void 0,
     BrushSprite = void 0;
-if (__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Operations"].SpriteOperation) {
-  TextSprite = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Operations"].SpriteOperation.TextSprite;
-  BrushSprite = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Operations"].SpriteOperation.BrushSprite;
+if (__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Operations"].SpriteOperation) {
+  TextSprite = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Operations"].SpriteOperation.TextSprite;
+  BrushSprite = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Operations"].SpriteOperation.BrushSprite;
 }
 
 /**
@@ -50389,7 +50455,7 @@ var TextControls = function (_BaseControls) {
   function TextControls() {
     _classCallCheck(this, TextControls);
 
-    return _possibleConstructorReturn(this, (TextControls.__proto__ || __WEBPACK_IMPORTED_MODULE_3_babel_runtime_core_js_object_get_prototype_of___default()(TextControls)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TextControls.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(TextControls)).apply(this, arguments));
   }
 
   _createClass(TextControls, [{
@@ -50404,16 +50470,22 @@ var TextControls = function (_BaseControls) {
       var editor = this.context.editor;
 
 
+      this.saveTextSettings();
+
       var operation = this.sharedState.get('operation');
       var fontManager = this.sharedState.get('fontManager');
-      var defaultFontVariation = fontManager.getDefaultVariation();
 
       var outputDimensions = editor.getOutputDimensions();
       var sdk = editor.getSDK();
       var renderer = sdk.getRenderer();
       var maxTextureSize = renderer.getMaxTextureSize();
 
-      var text = operation.createText({
+      // Check for previously saved text settings in the global state
+      var defaultOptions = this.getGlobalToolState();
+
+      var defaultFontVariation = defaultOptions ? fontManager.getVariationByIdentifier(defaultOptions.fontIdentifier) : fontManager.getDefaultVariation();
+
+      var text = operation.createText(_extends({
         text: this.context.ui.translate('pesdk.text.placeholder.defaultText'),
         position: new Vector2(0.5, 0.5),
         maxWidth: 0.5,
@@ -50424,9 +50496,9 @@ var TextControls = function (_BaseControls) {
         fontFamily: defaultFontVariation.getFontFamily(),
         fontWeight: defaultFontVariation.getFontWeight(),
         fontStyle: defaultFontVariation.getFontStyle(),
-        color: __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk__["Color"].WHITE,
+        color: __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk__["Color"].WHITE,
         alignment: 'center'
-      });
+      }, defaultOptions || {}));
 
       this.sharedState.set({ selectedSprite: text });
 
@@ -50435,6 +50507,15 @@ var TextControls = function (_BaseControls) {
       this.addLocalHistorySnapshot();
 
       return text;
+    }
+  }, {
+    key: 'saveTextSettings',
+    value: function saveTextSettings() {
+      var selectedSprite = this.sharedState.get('selectedSprite');
+
+      if (selectedSprite) {
+        this.setGlobalToolState(selectedSprite.serializeOptions(['color', 'backgroundColor', 'characterSpacing', 'lineHeight', 'alignment', 'fontIdentifier', 'fontFamily', 'fontWeight', 'fontStyle']));
+      }
     }
 
     /**
@@ -50451,7 +50532,7 @@ var TextControls = function (_BaseControls) {
           replaceFonts = _options.replaceFonts,
           availableVariations = _options.availableVariations;
 
-      var fontManager = new __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["FontManager"](this.context.ui, { fonts: fonts, replaceFonts: replaceFonts, availableVariations: availableVariations });
+      var fontManager = new __WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["FontManager"](this.context.ui, { fonts: fonts, replaceFonts: replaceFonts, availableVariations: availableVariations });
 
       this.sharedState.set({
         fontManager: fontManager
@@ -50478,6 +50559,8 @@ var TextControls = function (_BaseControls) {
     value: function _onLeave() {
       var editor = this.context.editor;
 
+
+      this.saveTextSettings();
 
       editor.features.enable('zoom', 'drag');
       editor.render();
@@ -50666,11 +50749,11 @@ var TextControls = function (_BaseControls) {
   }]);
 
   return TextControls;
-}(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["BaseControls"]);
+}(__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core__["BaseControls"]);
 
 TextControls.identifier = 'text';
-TextControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_6__text_controls_component__["a" /* default */];
-TextControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_7__text_canvas_controls_component__["a" /* default */];
+TextControls.controlsComponent = __WEBPACK_IMPORTED_MODULE_7__text_controls_component__["a" /* default */];
+TextControls.canvasControlsComponent = __WEBPACK_IMPORTED_MODULE_8__text_canvas_controls_component__["a" /* default */];
 TextControls.iconPath = 'editor/controls/text/icon.png';
 TextControls.activeIconPath = 'editor/controls/text/icon-active.png';
 TextControls.requiredOperations = ['sprite'];
@@ -50684,7 +50767,7 @@ TextControls.updatableOperations = ['sprite'];
 TextControls.switchToDefaultControlsOnRemoval = true;
 
 
-__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core___default.a.Controls.TextControls = TextControls;
+__WEBPACK_IMPORTED_MODULE_6_photoeditorsdk_desktop_ui_core___default.a.Controls.TextControls = TextControls;
 
 /* harmony default export */ __webpack_exports__["a"] = (TextControls);
 
