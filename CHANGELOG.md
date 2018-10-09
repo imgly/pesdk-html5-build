@@ -1,3 +1,15 @@
+# 4.12.2
+
+Fixed
+---
+* Fixed window.React bug that was required when using react in nodejs or webpack build environments
+* Fixed missing React import
+
+
+Fixed
+---
+*   [[PESDK-3535](https://imglysdk.atlassian.net/browse/PESDK-3535)\] - Fixed close button not displayed
+
 # 4.12.1
 
 Fixed

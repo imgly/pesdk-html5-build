@@ -35511,7 +35511,7 @@ var ScrollableListComponent = function (_ScrollbarComponent) {
      * @private
      */
     value: function _renderChild(children) {
-      return _get(ScrollableListComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(ScrollableListComponent.prototype), '_renderChild', this).call(this, React.createElement(
+      return _get(ScrollableListComponent.prototype.__proto__ || __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_object_get_prototype_of___default()(ScrollableListComponent.prototype), '_renderChild', this).call(this, __WEBPACK_IMPORTED_MODULE_5_globals__["l" /* React */].createElement(
         ListWrapper,
         { innerRef: this.props.innerListRef },
         children
@@ -37869,7 +37869,7 @@ var InvisibleUploadComponent = function (_BaseComponent) {
     value: function render() {
       var _this2 = this;
 
-      return React.createElement(HiddenFileInput, {
+      return __WEBPACK_IMPORTED_MODULE_4_globals__["l" /* React */].createElement(HiddenFileInput, {
         type: 'file',
         accept: 'image/*',
         innerRef: function innerRef(el) {
