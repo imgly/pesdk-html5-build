@@ -566,11 +566,11 @@
       .pesdk-react-editor .pesdk-react-controls__button__inlineLabel.is-active {
         background: rgba(67, 173, 235, 0.8); }
       .pesdk-react-editor .pesdk-react-controls__button__inlineLabel__label {
-        background: -owg-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
-        background: -webkit-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
-        background: -moz-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
-        background: -o-linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
-        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+        background: -owg-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
         font-family: "__pesdk_Montserrat";
         font-weight: 100;
         position: absolute;

@@ -27969,9 +27969,19 @@ var EditorScreenComponent = function (_BaseComponent) {
   }, {
     key: 'export',
     value: function _export() {
-      var _editor;
+      var _this6 = this;
 
-      return (_editor = this._editor).export.apply(_editor, arguments);
+      for (var _len2 = arguments.length, args = Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      return new __WEBPACK_IMPORTED_MODULE_4_babel_runtime_core_js_promise___default.a(function (resolve, reject) {
+        _this6.switchToControls('default', null, {}, function () {
+          var _editor;
+
+          (_editor = _this6._editor).export.apply(_editor, args).then(resolve).catch(reject);
+        });
+      });
     }
 
     /**

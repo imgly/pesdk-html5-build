@@ -1,4 +1,12 @@
-# 4.12.2
+# 4.12.3
+
+Fixed
+---
+
+*   [[PESDK-3419](https://imglysdk.atlassian.net/browse/PESDK-3419)] - Fixed `editor.export` not exporting image correctly while inside some tools
+*   [[PESDK-3590](https://imglysdk.atlassian.net/browse/PESDK-3590)] - Fixed text design failing when photoeditor runs in environment where Array.prototype is extented
+*   [[PESDK-2605](https://imglysdk.atlassian.net/browse/PESDK-2605)] - Fixed difference between Canvas and WebGL Render for Adjustments Shadows
+
 
 Fixed
 ---
