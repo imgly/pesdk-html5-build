@@ -31751,6 +31751,8 @@ var TextItemComponent = function (_ItemComponent) {
       var _this2 = this;
 
       var sprite = this.props.sprite;
+      var editor = this.context.editor;
+
 
       sprite.setVisible(false);
 
@@ -31764,6 +31766,8 @@ var TextItemComponent = function (_ItemComponent) {
         _this2.refs.textarea.focus();
         _this2.refs.textarea.select();
       });
+
+      editor.render();
     }
 
     /**

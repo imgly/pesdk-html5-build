@@ -1,3 +1,12 @@
+# 4.12.4
+
+Fixed
+---
+
+*   [[PESDK-3012](https://imglysdk.atlassian.net/browse/PESDK-3012)] -         Fixed darker-colored line on TextDesignBlocks banderole image
+*   [[PESDK-3716](https://imglysdk.atlassian.net/browse/PESDK-3716)] -         Fixed default text not deleted when editing text on mobile
+*   [[PESDK-3790](https://imglysdk.atlassian.net/browse/PESDK-3790)] -         Fixed CORS issue when image url is cached by the browser
+
 # 4.12.3
 
 Fixed

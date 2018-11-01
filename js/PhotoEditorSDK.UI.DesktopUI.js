@@ -16056,10 +16056,8 @@ var StickerListComponent = function (_SharedStateComponent) {
       return stickers.map(function (sticker) {
         var url = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["StickerManager"].getURLForSticker(sticker, 'thumb');
         var thumbURL = _this2._getAssetPath(url);
-        var itemStyle = {
-          background: 'url(\'' + thumbURL + '\') no-repeat center center',
-          backgroundSize: 'contain'
-        };
+        var crossOrigin = _this2.context.editor.getCrossOrigin();
+
         return __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["React"].createElement(
           StickerListItem,
           {
@@ -16068,7 +16066,7 @@ var StickerListComponent = function (_SharedStateComponent) {
             onClick: _this2._onStickerClick.bind(_this2, sticker),
             className: test ? 'js-sticker' : undefined,
             threeColumns: true },
-          __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["React"].createElement(StickerImage, { style: itemStyle })
+          __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["React"].createElement(StickerImage, { crossOrigin: crossOrigin, src: thumbURL })
         );
       });
     }
@@ -16100,7 +16098,7 @@ var StickerList = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["
 
 var StickerListItem = Object(__WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["adonis"])(PlainControlItem).li('m4lnou', 'StickerListItem');
 
-var StickerImage = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["adonis"].div('7r0ke8', 'StickerImage');
+var StickerImage = __WEBPACK_IMPORTED_MODULE_4_photoeditorsdk_desktop_ui_core__["adonis"].img('1382xgm', 'StickerImage');
 
 /***/ }),
 /* 133 */
@@ -50138,11 +50136,7 @@ var StickerOptionsPanelComponent = function (_SharedStateComponent) {
       if (!selectedSprite) return null;
 
       var sticker = this._getStickerObject();
-
-      var thumbnailStyle = {
-        background: 'url(\'' + selectedSprite.getImage().src + '\') center center / contain no-repeat'
-      };
-
+      var crossOrigin = this.context.editor.getCrossOrigin();
       var tintable = !!sticker.tintMode && sticker.tintMode !== 'none';
 
       return __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["React"].createElement(
@@ -50176,8 +50170,9 @@ var StickerOptionsPanelComponent = function (_SharedStateComponent) {
                   Thumbnail,
                   null,
                   __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["React"].createElement(ThumbnailImage, {
+                    crossOrigin: crossOrigin,
                     onClick: onReplaceClick,
-                    style: thumbnailStyle })
+                    src: selectedSprite.getImage().src })
                 ),
                 __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["React"].createElement(
                   DetailsContainer,
@@ -50240,7 +50235,7 @@ var Details = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["adon
 
 var Thumbnail = Object(__WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["adonis"])(PlainControlItemBackground).div('6u8g0p', 'Thumbnail');
 
-var ThumbnailImage = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["adonis"].div('7r0ke8', 'ThumbnailImage');
+var ThumbnailImage = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["adonis"].img('zuxvzr', 'ThumbnailImage');
 
 var DetailsContainer = __WEBPACK_IMPORTED_MODULE_5_photoeditorsdk_desktop_ui_core__["adonis"].div('1trlo6v', 'DetailsContainer');
 

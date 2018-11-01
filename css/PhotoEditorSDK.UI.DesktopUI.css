@@ -9766,12 +9766,12 @@
   margin-bottom: 25px;
 }
 
-.pesdk-desktop-editor .pesdk-StickerImage-7r0ke8 {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  bottom: 5px;
-  left: 5px;
+.pesdk-desktop-editor .pesdk-StickerImage-1382xgm {
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px;
 }
 
 .pesdk-desktop-editor .pesdk-StickerCategoryPanel-iauaz2 {
@@ -9850,6 +9850,13 @@
   margin: 25px 0;
   text-align: left;
   height: 72px;
+}
+
+.pesdk-desktop-editor .pesdk-ThumbnailImage-zuxvzr {
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .pesdk-desktop-editor .pesdk-TextControlsStyling-1hzgwcr {
