@@ -3506,6 +3506,10 @@ var Logger = function () {
   }, {
     key: '_log',
     value: function _log(levelName, tag) {
+      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+        args[_key2 - 2] = arguments[_key2];
+      }
+
       var level = this.getLevelObjectByName(levelName);
 
       if (!level || !this.canLog(levelName)) {
@@ -3517,9 +3521,6 @@ var Logger = function () {
           background = level.background,
           color = level.color;
 
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
 
       var outputs = args.filter(function (arg) {
         return arg !== undefined;
@@ -3531,7 +3532,15 @@ var Logger = function () {
         return arg;
       });
 
-      var consoleFunc = this._consoleFuncs[type] || console[type] || console.log;
+      var consoleFunc = this._consoleFuncs[type] || console[type] ? function () {
+        var _console3;
+
+        return (_console3 = console)[type].apply(_console3, arguments);
+      } : function () {
+        var _console4;
+
+        return (_console4 = console).log.apply(_console4, arguments);
+      };
       var outputsLen = outputs.length;
       var styles = getLogStyles(background, color);
 
@@ -3563,9 +3572,9 @@ var Logger = function () {
 
       // If there is more than one argument, try to group the log
       if (hasConsoleGroups()) {
-        var _console3;
+        var _console5;
 
-        (_console3 = console).groupCollapsed.apply(_console3, ['%c  %c PhotoEditorSDK %c  %c ' + tag + ' %c'].concat(_toConsumableArray(_utils2.default.Array.init(styles))));
+        (_console5 = console).groupCollapsed.apply(_console5, ['%c  %c PhotoEditorSDK %c  %c ' + tag + ' %c'].concat(_toConsumableArray(_utils2.default.Array.init(styles))));
         consoleFunc.apply(undefined, _toConsumableArray(outputs));
         console.groupEnd();
       } else {

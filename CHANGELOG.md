@@ -1,3 +1,11 @@
+# 4.12.5
+
+Fixed
+---
+
+*   [[PESDK-3789](https://imglysdk.atlassian.net/browse/PESDK-3789)] - Fixed editor not opening on IE11 unless developer tools is open
+
+
 # 4.12.4
 
 Fixed
