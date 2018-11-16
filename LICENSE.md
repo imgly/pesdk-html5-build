@@ -134,7 +134,7 @@
 | com.android.support:appcompat-v7 | Apache License, Version 2.0 |
 | com.android.support:recyclerview-v7 | Apache License, Version 2.0 |
 | com.android.support:support-annotations | Apache License, Version 2.0 |
-| React | BSD |
+| React | MIT |
 | StackBlur by [quasimondo.com](http://quasimondo.com/) | MIT |
 | Native Promise Only | MIT |
 | EXIF.js by Jacob Seidelin | MIT |

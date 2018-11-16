@@ -1,3 +1,17 @@
+# 4.12.6
+
+
+Fixed
+---
+
+*   [[PESDK-3802](https://imglysdk.atlassian.net/browse/PESDK-3802)] - Fixed Photoeditor crash on MacBook Air on macOS Mojave via canvas fallback
+
+Added
+---
+
+*   [[PESDK-3853](https://imglysdk.atlassian.net/browse/PESDK-3853)] - Added Editing Text Elements via Touch
+* Added image and filter caching to LicenseWatermarkOperation
+
 # 4.12.5
 
 Fixed
