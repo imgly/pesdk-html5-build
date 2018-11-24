@@ -1,3 +1,26 @@
+# 4.12.7
+
+Fixed
+---
+
+*   \[[PESDK-2086](https://imglysdk.atlassian.net/browse/PESDK-2086)\] - Fixed Webcam-photo button being not visible on fullscreen in Desktop UI
+*   \[[PESDK-2412](https://imglysdk.atlassian.net/browse/PESDK-2412)\] - Fixed copy option not working for Text & Stickers
+*   \[[PESDK-2418](https://imglysdk.atlassian.net/browse/PESDK-2418)\] - Fixed Textfield Search for photos not recognizable in some browser
+*   \[[PESDK-2508](https://imglysdk.atlassian.net/browse/PESDK-2508)\] - Filter after focus operation not reexecuted in Canvas after filter change
+*   \[[PESDK-3237](https://imglysdk.atlassian.net/browse/PESDK-3237)\] - Fixed TextDesign crash when using smooth up-/down-scaling
+*   \[[PESDK-3256](https://imglysdk.atlassian.net/browse/PESDK-3256)\] - Fixed some overlays not being exported under some conditions
+*   \[[PESDK-3455](https://imglysdk.atlassian.net/browse/PESDK-3455)\] - Fixed mouse icon when rotating elements
+*   \[[PESDK-3532](https://imglysdk.atlassian.net/browse/PESDK-3532)\] - Fixed close button not being displayed when \`displayCloseButton\` option is enabled
+*   \[[PESDK-3576](https://imglysdk.atlassian.net/browse/PESDK-3576)\] - Fixed uploading image, adding sticker or anything else to image raises JFIF data segment error on export
+*   \[[PESDK-4001](https://imglysdk.atlassian.net/browse/PESDK-4001)\] - Added more gpus to the blacklist for chipset issue on OSX Mojave
+
+Added
+-----
+*   \[[PESDK-3987](https://imglysdk.atlassian.net/browse/PESDK-3987)\] - Added ability to postpone execution after initialization and access to internal react component
+*   \[[PESDK-3722](https://imglysdk.atlassian.net/browse/PESDK-3722)\] - Added possibility of rendering TextDesigns with padding.
+*   \[[PESDK-3943](https://imglysdk.atlassian.net/browse/PESDK-3943)\] - Enhanced quality control of image exporter for server sdk
+
+
 # 4.12.6
 
 

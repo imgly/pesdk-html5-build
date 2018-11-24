@@ -83,7 +83,8 @@ window.editorConfig = JSON.flatten({
     forceCrop: true,
     export: {
       fileBasename: 'photoeditorsdk_download',
-      format: 'image/jpeg'
+      format: 'image/jpeg',
+      type: 'data-url'
     },
     tools: [
       'transform', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library',

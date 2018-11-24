@@ -43,7 +43,8 @@ window.addEventListener('load', function () {
   // controllers.push(editorFolder.add(editorConfig, 'editor.tools'))
   // controllers.push(editorFolder.add(editorConfig, 'editor.controlsOrder'))
   controllers.push(editorFolder.add(editorConfig, 'editor.photoroll'))
-  controllers.push(editorFolder.add(editorConfig, 'editor.export.format'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.export.format', ['image/jpeg', 'image/png', 'image/webp']))
+  controllers.push(editorFolder.add(editorConfig, 'editor.export.type', ['image', 'data-url', 'buffer', 'blob', 'ms-blob']))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.fileBasename'))
 
   // controllers.push(editorFolder.add(editorConfig, 'library', ['unsplash', 'example']))
@@ -132,7 +133,7 @@ window.addEventListener('load', function () {
 
   var serializationFolder = gui.addFolder('Serialization')
   serializationFolder.add(serialization, 'mode', ['download', 'log', 'alert', 'server'])
-  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0', '3.1.0'])
+  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0', '3.1.0', '3.2.0'])
   serializationFolder.add(serialization, 'includeImage')
   // serializationFolder.add(serialization, 'serverUrl')
   serializationFolder.add(serialization, 'serialize').name('Serialize')
