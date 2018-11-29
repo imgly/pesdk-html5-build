@@ -1,3 +1,13 @@
+# 4.12.8
+
+Fixed
+---
+
+*   \[[PESDK-4075](https://imglysdk.atlassian.net/browse/PESDK-4075)\] - Fixed 'this._encodeAsBlob is not a function' while exporting image
+*   \[[PESDK-3236](https://imglysdk.atlassian.net/browse/PESDK-3236)\] - Fixed Zoom in and Zoom out button doesn't work correctly
+*   \[[PESDK-4076](https://imglysdk.atlassian.net/browse/PESDK-4076)\] - Fixed wrong instructions for running the tests in the source code readme
+
+
 # 4.12.7
 
 Fixed
