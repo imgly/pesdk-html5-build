@@ -1,3 +1,30 @@
+# 4.13.0
+
+Added
+-----------
+
+*   \[[PESDK-4144](https://imglysdk.atlassian.net/browse/PESDK-4144)\] - Added option to specify dimensions in transform tool
+
+Fixed
+---
+
+*   \[[PESDK-2164](https://imglysdk.atlassian.net/browse/PESDK-2164)\] - Fixed transparent / black line in exported image
+
+# 4.12.9
+
+Added
+-----------
+
+*   \[[PESDK-4065](https://imglysdk.atlassian.net/browse/PESDK-4065)\] - Enhanced Transform Ratio configuration to allow configuration without SDK internal classes
+
+Fixed
+---
+
+*   \[[PESDK-2164](https://imglysdk.atlassian.net/browse/PESDK-2164)\] - Fixed Transparent / Black line in exported image
+*   \[[PESDK-4062](https://imglysdk.atlassian.net/browse/PESDK-4062)\] - Fixed zooming in text design to be coherent with other sprite tools
+*   \[[PESDK-4083](https://imglysdk.atlassian.net/browse/PESDK-4083)\] - Fixed issue when using only transform tool and directly exporting now applying the crop
+*   \[[PESDK-4086](https://imglysdk.atlassian.net/browse/PESDK-4086)\] - Fixed wrong spelling of function name in ImageExporter that caused crash on IE
+
 # 4.12.8
 
 Fixed

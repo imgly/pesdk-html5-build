@@ -68,6 +68,11 @@ window.editorConfig = JSON.flatten({
   },
   // editor configuration
   editor: {
+    enableZoom: true,
+    enableDrag: true,
+    enableSave: true,
+    enableLoad: true,
+    enableExport: true,
     preferredRenderer: 'webgl',
     smoothUpscaling: false,
     smoothDownscaling: false,
@@ -82,9 +87,16 @@ window.editorConfig = JSON.flatten({
     maxMegaPixelsOnMobile: 5,
     forceCrop: true,
     export: {
-      fileBasename: 'photoeditorsdk_download',
+      fileBasename: 'pesdk-doc',
       format: 'image/jpeg',
-      type: 'data-url'
+      type: 'data-url',
+      download: true
+    },
+    save: {
+      fileBasename: 'pesdk-doc',
+      download: true,
+      format: 'text/json',
+      image: true
     },
     tools: [
       'transform', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library',

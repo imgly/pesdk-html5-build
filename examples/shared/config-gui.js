@@ -37,6 +37,12 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.displayResizeMessage'))
   controllers.push(editorFolder.add(editorConfig, 'editor.transparent'))
   controllers.push(editorFolder.add(editorConfig, 'editor.forceCrop'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableLoad'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableSave'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableExport'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableZoom'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableDrag'))
+
   controllers.push(editorFolder.add(editorConfig, 'editor.zoom', [0.5, 1.0, 1.5, 2.0]))
   controllers.push(editorFolder.add(editorConfig, 'editor.pixelRatio', [1, 2, 4]))
   controllers.push(editorFolder.add(editorConfig, 'editor.renderMode', ['dynamic', 'export']))
@@ -46,6 +52,10 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.export.format', ['image/jpeg', 'image/png', 'image/webp']))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.type', ['image', 'data-url', 'buffer', 'blob', 'ms-blob']))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.fileBasename'))
+
+  controllers.push(editorFolder.add(editorConfig, 'editor.save.format', ['text/json']))
+  controllers.push(editorFolder.add(editorConfig, 'editor.save.image'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.save.fileBasename'))
 
   // controllers.push(editorFolder.add(editorConfig, 'library', ['unsplash', 'example']))
 
