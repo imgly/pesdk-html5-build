@@ -83,9 +83,11 @@ window.editorConfig = JSON.flatten({
     renderMode: 'dynamic',
     pixelRatio: '1',
     photoroll: false,
-    maxMegaPixelsOnDesktop: 10,
-    maxMegaPixelsOnMobile: 5,
-    forceCrop: true,
+    maxMegaPixels: {
+      desktop: 10,
+      mobile: 5
+    },
+    forceCrop: false,
     export: {
       fileBasename: 'pesdk-doc',
       format: 'image/jpeg',
@@ -107,7 +109,11 @@ window.editorConfig = JSON.flatten({
       ['transform', 'filter', 'adjustments', 'focus'],
       ['text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay']
     ],
-    controlsOptions: {}
+    controlsOptions: {
+      transform: {
+        // enableAcceptButton: false
+      }
+    }
   }
 })
 

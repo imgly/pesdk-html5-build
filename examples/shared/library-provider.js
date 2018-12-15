@@ -1,5 +1,5 @@
 /* global PhotoEditorSDK */
-window.addEventListener('load', function () {
+const metadata = window.addEventListener('load', function () {
   var DesktopUI = PhotoEditorSDK.UI.DesktopUI
   function LibraryProvider () {
     DesktopUI.Library.Provider.apply(this, arguments)
@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
   LibraryProvider.prototype._loadData = function () {
     if (this._data) { return Promise.resolve(this._data) }
 
-    return this._loadJSON('//static.photoeditorsdk.com/libraries/example/metadata.json')
+    return this._loadJSON('//static.photoeditorsdk.com/libraries/unsplash/metadata.json')
       .then(function (data) {
         this._data = data
         return data

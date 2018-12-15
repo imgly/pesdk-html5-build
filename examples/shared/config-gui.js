@@ -29,8 +29,8 @@ window.addEventListener('load', function () {
   controllers.push(sdkFolder.add(editorConfig, 'assets.baseUrl'))
 
   controllers.push(editorFolder.add(editorConfig, 'editor.preferredRenderer', ['webgl', 'canvas']))
-  controllers.push(editorFolder.add(editorConfig, 'editor.maxMegaPixelsOnDesktop', 1, 200))
-  controllers.push(editorFolder.add(editorConfig, 'editor.maxMegaPixelsOnMobile', 1, 200))
+  controllers.push(editorFolder.add(editorConfig, 'editor.maxMegaPixels.desktop', 1, 200))
+  controllers.push(editorFolder.add(editorConfig, 'editor.maxMegaPixels.mobile', 1, 200))
   controllers.push(editorFolder.add(editorConfig, 'editor.smoothUpscaling'))
   controllers.push(editorFolder.add(editorConfig, 'editor.smoothDownscaling'))
   controllers.push(editorFolder.add(editorConfig, 'editor.displayWelcomeMessage'))

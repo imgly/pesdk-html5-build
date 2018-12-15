@@ -1,3 +1,22 @@
+# 4.13.1
+
+Added
+-----------
+
+*   [[PESDK-4153](https://imglysdk.atlassian.net/browse/PESDK-4153)] - Added option to transform tool to reenable the accept button
+
+Fixed
+-----------
+
+*   [[PESDK-3011](https://imglysdk.atlassian.net/browse/PESDK-3011)] - Fixed wrong EXIF orientation in filter previews
+*   [[PESDK-4107](https://imglysdk.atlassian.net/browse/PESDK-4107)] - Fixed JFIF Header Metadata which may not be passed through to the newly generated image under some circumstances
+*   [[PESDK-4141](https://imglysdk.atlassian.net/browse/PESDK-4141)] - Fixed the image exporter always outputting JPEG data when encoding to a buffer
+*   [[PESDK-4146](https://imglysdk.atlassian.net/browse/PESDK-4146)] - Fixed wrong EXIF rotations and inversion in filter previews
+*   [[PESDK-4155](https://imglysdk.atlassian.net/browse/PESDK-4155)] - Fixed issue where a new text does did not take the text size
+*   [[PESDK-4159](https://imglysdk.atlassian.net/browse/PESDK-4159)] - Fixed issue where text design tool could crash when dimensions are too small
+*   [[PESDK-4164](https://imglysdk.atlassian.net/browse/PESDK-4164)] - Fixed issue where lockDimensions where set by presence of dimensions even if explicitely set by the user
+*   [[PESDK-4165](https://imglysdk.atlassian.net/browse/PESDK-4165)] - Fixed focus tool generating error in output with transparency using the webgl renderer
+
 # 4.13.0
 
 Added
