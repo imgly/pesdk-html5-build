@@ -1,3 +1,24 @@
+# 4.13.2
+
+## Added
+
+*   [[PESDK-4195](https://imglysdk.atlassian.net/browse/PESDK-4195)] - Added tracking events constants
+
+## Fixed
+
+*   [[PESDK-4279](https://imglysdk.atlassian.net/browse/PESDK-4279)] - Fixed Mojave and WebGL crashes on certain chipsets when framebuffer is resized
+*   [[PESDK-2604](https://imglysdk.atlassian.net/browse/PESDK-2604)] - Fixed difference between Canvas and WebGL Renderer for Adjustments Clarity
+*   [[PESDK-2610](https://imglysdk.atlassian.net/browse/PESDK-2610)] - Fixed difference between Gaussian Blur Focus between Canvas and WebGL Renderer
+*   [[PESDK-2613](https://imglysdk.atlassian.net/browse/PESDK-2613)] - Fixed difference between Linear Blur Focus between Canvas and WebGL Renderer
+*   [[PESDK-2614](https://imglysdk.atlassian.net/browse/PESDK-2614)] - Fixed difference between Mirror Blur Focus between Canvas and WebGL Renderer
+*   [[PESDK-2615](https://imglysdk.atlassian.net/browse/PESDK-2615)] - Fixed difference between Radial Focus between Canvas and WebGL Renderer
+*   [[PESDK-2618](https://imglysdk.atlassian.net/browse/PESDK-2618)] - Fixed leaking of frames on Canvas Renderer
+*   [[PESDK-3125](https://imglysdk.atlassian.net/browse/PESDK-3125)] - Fixed Colorpicker z-index issue
+*   [[PESDK-3417](https://imglysdk.atlassian.net/browse/PESDK-3417)] - Fixed Black, White and Temperature adjustments
+*   [[PESDK-4162](https://imglysdk.atlassian.net/browse/PESDK-4162)] - Fixed missing EXIF data when the image src doesn't already contain the image data
+*   [[PESDK-4178](https://imglysdk.atlassian.net/browse/PESDK-4178)] - Fixed bug where the extension of objects lead to a crash in some cases
+*   [[PESDK-4179](https://imglysdk.atlassian.net/browse/PESDK-4179)] - Fixed requirement of click on cropping rectangle before it shows the correct aspect ratio
+
 # 4.13.1
 
 Added

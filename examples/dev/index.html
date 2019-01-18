@@ -1,7 +1,8 @@
+<% const cache = Math.floor(Math.random() * 100000000000000) %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PhotoEditorSDK</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../shared/dat.gui.css" />
@@ -15,7 +16,7 @@
   <script src="../../js/vendor/react-dom.development.js"></script>
   <script src="../../js/vendor/prop-types.js"></script>
 
-  <script src="../../js/PhotoEditorSDK.js"></script>
+  <script src="../../js/PhotoEditorSDK.js?<%= cache %>"></script>
   <!-- <script src="../../js/PhotoEditorSDK.Core.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.Operations.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.Operations.Transform.js"></script>
@@ -32,8 +33,9 @@
   <script src="../../js/PhotoEditorSDK.Operations.Transform.js"></script>
   <script src="../../js/PhotoEditorSDK.Operations.Watermark.js"></script> -->
 
-  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.DesktopUI.css" />
-  <script src="../../js/PhotoEditorSDK.UI.DesktopUI.js"></script>
+  <script src="../../js/PhotoEditorSDK.UI.DesktopUI.js?<%= cache %>"></script>
+  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.DesktopUI.css?<%= cache %>" />
+
   <!-- <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Core.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Controls.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Controls.Transform.js"></script>
@@ -48,8 +50,8 @@
   <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Controls.Library.js"></script> -->
 
   <!-- PhotoEditor SDK React UI -->
-  <script src="../../js/PhotoEditorSDK.UI.ReactUI.js"></script>
-  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.ReactUI.css" />
+  <script src="../../js/PhotoEditorSDK.UI.ReactUI.js?<%= cache %>"></script>
+  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.ReactUI.css?<%= cache %>" />
 
   <!-- Example library provider -->
   <script src="../shared/library-provider.js"></script>

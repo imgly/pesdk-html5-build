@@ -112,6 +112,9 @@ window.editorConfig = JSON.flatten({
     controlsOptions: {
       transform: {
         // enableAcceptButton: false
+      },
+      focus: {
+        highQualityCanvasBlur: false
       }
     }
   }

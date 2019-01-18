@@ -50,8 +50,8 @@ window.addEventListener('load', function () {
     if (isPresent(window.editorConfig['data.watermarkImageSrc'])) {
       resources.push(
         PhotoEditorSDK
-            .Loaders.ImageLoader
-            .load(window.editorConfig['data.watermarkImageSrc'])
+          .Loaders.ImageLoader
+          .load(window.editorConfig['data.watermarkImageSrc'])
       )
     }
     PhotoEditorSDK.Promise.all(resources)

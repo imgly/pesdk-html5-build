@@ -57,6 +57,8 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.save.image'))
   controllers.push(editorFolder.add(editorConfig, 'editor.save.fileBasename'))
 
+  controllers.push(editorFolder.add(editorConfig, 'editor.controlsOptions.focus.highQualityCanvasBlur'))
+
   // controllers.push(editorFolder.add(editorConfig, 'library', ['unsplash', 'example']))
 
   // Get the current availableRatios, based on the default ones
