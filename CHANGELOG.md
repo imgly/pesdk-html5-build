@@ -1,3 +1,11 @@
+# 4.13.3
+
+## Fixed
+
+*   [[PESDK-2123](https://imglysdk.atlassian.net/browse/PESDK-2123)] - Fixed large images disappearing after some resize operations in the ReactUI
+*   [[PESDK-4332](https://imglysdk.atlassian.net/browse/PESDK-4332)] - Fixed the ”equals is not defined“ error when attempting to export without making any changes
+*   [[PESDK-4349](https://imglysdk.atlassian.net/browse/PESDK-4349)] - Fixed the export to blob to respect the specified image format
+
 # 4.13.2
 
 ## Added
