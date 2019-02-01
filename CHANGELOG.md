@@ -1,3 +1,17 @@
+# 4.14.0
+
+## Added
+
+*   [[PESDK-4174](https://imglysdk.atlassian.net/browse/PESDK-4174)] - Updated Text Design to allow multiple instances
+*   [[PESDK-4359](https://imglysdk.atlassian.net/browse/PESDK-4359)] - Added background padding controls to Text Design
+
+## Fixed
+
+*   [[PESDK-4332](https://imglysdk.atlassian.net/browse/PESDK-4332)] - Fixed the ”equals is not defined“ error when attempting to export without making any transform changes
+*   [[PESDK-4380](https://imglysdk.atlassian.net/browse/PESDK-4380)] - Fixed resized images to have correct dimensions when exporting
+*   [[PESDK-4382](https://imglysdk.atlassian.net/browse/PESDK-4382)] - Fixed transform controls to select correct ratio after deserialisation
+
+
 # 4.13.3
 
 ## Fixed
