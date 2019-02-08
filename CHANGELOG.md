@@ -1,3 +1,12 @@
+# 4.14.1
+
+## Fixed
+
+*   [[PESDK-4154](https://imglysdk.atlassian.net/browse/PESDK-4154)] - Fixed the transform/crop to always be applied when calling the export function
+*   [[PESDK-4393](https://imglysdk.atlassian.net/browse/PESDK-4393)] - Fixed draggable components to stop dragging when the mouse button is released in IE11
+*   [[PESDK-4394](https://imglysdk.atlassian.net/browse/PESDK-4394)] - Fixed the Canvas renderer to handle transparency correctly while blending the rendered filters onto the original image
+*   [[PESDK-2607](https://imglysdk.atlassian.net/browse/PESDK-2607)] - Fixed the brush stroke opacity to be directly affected by the brush hardness
+
 # 4.14.0
 
 ## Added
