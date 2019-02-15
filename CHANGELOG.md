@@ -1,3 +1,12 @@
+# 4.14.2
+
+## Fixed
+
+*   [[PESDK-4431](https://imglysdk.atlassian.net/browse/PESDK-4431)] - Fixed missing textures when exporting with an overlay operation
+*   [[PESDK-4432](https://imglysdk.atlassian.net/browse/PESDK-4432)] - Fixed missing German translations for whites, blacks and temperature adjustments
+*   [[PESDK-4441](https://imglysdk.atlassian.net/browse/PESDK-4441)] - Fixed the broken deserialisation on Safari and Firefox
+*   [[PESDK-4443](https://imglysdk.atlassian.net/browse/PESDK-4443)] - Fixed the unexpected movement of sprites when changing the transformation options
+
 # 4.14.1
 
 ## Fixed

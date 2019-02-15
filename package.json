@@ -1,7 +1,7 @@
 
 {
   "name": "photoeditorsdk",
-  "version": "4.14.1",
+  "version": "4.14.2",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "repository": {
@@ -16,7 +16,7 @@
     "webgl",
     "canvas"
   ],
-  "author": "PhotoEditorSDK (9elements GmbH) <contact@photoeditorsdk.com>",
+  "author": "PhotoEditorSDK (img.ly GmbH) <contact@img.ly>",
   "license": "SEE LICENSE IN LICENSE.md",
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",

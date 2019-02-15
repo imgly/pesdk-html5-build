@@ -28,7 +28,7 @@ Visit our [website](https://www.photoeditorsdk.com/).
 Please see [LICENSE](https://github.com/imgly/pesdk-html5-build/blob/master/LICENSE.md) for licensing details.
 
 ## Authors and Contributors
-Made 2013-2018 by [9elements](http://www.9elements.com)
+Made 2013-2019 by [img.ly](https://www.photoeditorsdk.com)
 
 ## Support and License
-Use our [service desk](http://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
+Use our [service desk](https://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
