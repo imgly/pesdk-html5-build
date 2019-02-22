@@ -40,6 +40,7 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.enableLoad'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableSave'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableExport'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.enableKeyboardControls'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableZoom'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableDrag'))
 

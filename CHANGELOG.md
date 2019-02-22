@@ -1,3 +1,17 @@
+# 4.15.0
+
+## Added
+
+*   [[PESDK-4245](https://imglysdk.atlassian.net/browse/PESDK-4245)] - Added keyboard controls for moving objects
+*   [[PESDK-4440](https://imglysdk.atlassian.net/browse/PESDK-4440)] - Added option to EXIF operation to apply its changes to an image
+
+## Fixed
+
+*   [[PESDK-4395](https://imglysdk.atlassian.net/browse/PESDK-4395)] - Fixed differences between WebGL and Canvas renderer when applying multiple adjustments at once
+*   [[PESDK-4459](https://imglysdk.atlassian.net/browse/PESDK-4459)] - Fixed the export to MSBlob
+*   [[PESDK-4485](https://imglysdk.atlassian.net/browse/PESDK-4485)] - Fixed dimension input fields by adding a minimum value to prevent 0 input
+
+
 # 4.14.2
 
 ## Fixed
@@ -6,6 +20,7 @@
 *   [[PESDK-4432](https://imglysdk.atlassian.net/browse/PESDK-4432)] - Fixed missing German translations for whites, blacks and temperature adjustments
 *   [[PESDK-4441](https://imglysdk.atlassian.net/browse/PESDK-4441)] - Fixed the broken deserialisation on Safari and Firefox
 *   [[PESDK-4443](https://imglysdk.atlassian.net/browse/PESDK-4443)] - Fixed the unexpected movement of sprites when changing the transformation options
+
 
 # 4.14.1
 

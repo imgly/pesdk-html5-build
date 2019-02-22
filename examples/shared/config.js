@@ -73,6 +73,7 @@ window.editorConfig = JSON.flatten({
     enableSave: true,
     enableLoad: true,
     enableExport: true,
+    enableKeyboardControls: true,
     preferredRenderer: 'webgl',
     smoothUpscaling: false,
     smoothDownscaling: false,
