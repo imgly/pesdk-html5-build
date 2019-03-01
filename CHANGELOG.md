@@ -1,3 +1,11 @@
+# 4.15.1
+
+## Fixed
+
+*   [[PESDK-4514](https://imglysdk.atlassian.net/browse/PESDK-4514)] - Fixed IE11 crashes with "endsWith is not a function"
+*   [[PESDK-2760](https://imglysdk.atlassian.net/browse/PESDK-2760)] - Fixed cross platform difference between Radial Focus inner and outer radius
+
+
 # 4.15.0
 
 ## Added
