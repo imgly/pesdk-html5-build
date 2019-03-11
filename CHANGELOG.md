@@ -1,3 +1,14 @@
+# 4.15.2
+
+## Fixed
+
+*   [[PESDK-4351](https://imglysdk.atlassian.net/browse/PESDK-4351)] - Fixed the inverted flipHorizontally and flipVertically values when deserializing with the HTML5 SDK
+*   [[PESDK-4529](https://imglysdk.atlassian.net/browse/PESDK-4529)] - IE11 Throws Errors on Arrow Keys Movement of Objects
+*   [[PESDK-4533](https://imglysdk.atlassian.net/browse/PESDK-4533)] - Fixed keyboard sprite movement controls in IE 11
+*   [[PESDK-4537](https://imglysdk.atlassian.net/browse/PESDK-4537)] - Fixed scrollable list causing zero-height of Text Design library in IE11
+*   [[PESDK-4544](https://imglysdk.atlassian.net/browse/PESDK-4544)] - Fixed the orientation-operation to first rotate then flip
+
+
 # 4.15.1
 
 ## Fixed
