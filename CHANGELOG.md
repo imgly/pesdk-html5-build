@@ -1,3 +1,15 @@
+# 4.16.0
+
+## Added
+
+*   [[PESDK-4329](https://imglysdk.atlassian.net/browse/PESDK-4329)] - Added DuoTone Filters
+*   [[PESDK-3929](https://imglysdk.atlassian.net/browse/PESDK-3929)] - Added Filter Categories to DesktopUI
+
+## Fixed
+
+*   [[PESDK-4439](https://imglysdk.atlassian.net/browse/PESDK-4439)] - Fixed the missing margin in the ReactUI transform tool which made it difficult to grab the handles on narrow screens
+
+
 # 4.15.2
 
 ## Fixed
