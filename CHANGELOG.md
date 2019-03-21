@@ -1,3 +1,10 @@
+# 4.16.1
+
+## Added
+
+*   [[PESDK-4543](https://imglysdk.atlassian.net/browse/PESDK-4543)] - Added local history in the transform tool
+
+
 # 4.16.0
 
 ## Added
