@@ -1,5 +1,9 @@
 <!--
-
+<%
+  const cache = Math.floor(Math.random() * 100000000000000);
+  const loadMinified = htmlWebpackPlugin.options.environment === "production";
+  const minExt = loadMinified ? '.min' : '';
+%>
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +22,7 @@
   <script src="../../js/vendor/react-dom.development.js"></script>
   <script src="../../js/vendor/prop-types.js"></script>
 
-  <script src="../../js/PhotoEditorSDK.min.js?26102235731183"></script>
+  <script src="../../js/PhotoEditorSDK<%= minExt %>.js?<%= cache %>"></script>
   <!-- <script src="../../js/PhotoEditorSDK.Core.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.Operations.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.Operations.Transform.js"></script>
@@ -35,10 +39,10 @@
   <script src="../../js/PhotoEditorSDK.Operations.Transform.js"></script>
   <script src="../../js/PhotoEditorSDK.Operations.Watermark.js"></script> -->
 
-  <script src="../../js/PhotoEditorSDK.UI.DesktopUI.min.js?26102235731183"></script>
-  
-    <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.DesktopUI.min.css?26102235731183" />
-  
+  <script src="../../js/PhotoEditorSDK.UI.DesktopUI<%= minExt %>.js?<%= cache %>"></script>
+  <% if (htmlWebpackPlugin.options.environment !== "development") { %>
+    <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.DesktopUI<%= minExt %>.css?<%= cache %>" />
+  <% } %>
 
   <!-- <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Core.js"></script> -->
   <!-- <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Controls.js"></script> -->
@@ -54,8 +58,8 @@
   <script src="../../js/PhotoEditorSDK.UI.DesktopUI.Controls.Library.js"></script> -->
 
   <!-- PhotoEditor SDK React UI -->
-  <script src="../../js/PhotoEditorSDK.UI.ReactUI.min.js?26102235731183"></script>
-  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.ReactUI.min.css?26102235731183" />
+  <script src="../../js/PhotoEditorSDK.UI.ReactUI<%= minExt %>.js?<%= cache %>"></script>
+  <link rel="stylesheet" href="../../css/PhotoEditorSDK.UI.ReactUI<%= minExt %>.css?<%= cache %>" />
 
   <!-- Example library provider -->
   <script src="../shared/library-provider.js"></script>

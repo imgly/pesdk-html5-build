@@ -1,3 +1,19 @@
+# 4.17.0
+
+## Added
+
+*   [[PESDK-3477](https://imglysdk.atlassian.net/browse/PESDK-3477)] - Added option to configure color palette
+
+## Fixed
+
+*   [[PESDK-2428](https://imglysdk.atlassian.net/browse/PESDK-2428)] - Fixed the "PhotoEditorSDK.Filters" namespace in the api docs to specify the correct namespace "PhotoEditorSDK.Operations.FilterOperation.Filters"
+*   [[PESDK-4331](https://imglysdk.atlassian.net/browse/PESDK-4331)] - Fixed inconsistencies in the minimum value for the text size input field
+*   [[PESDK-4631](https://imglysdk.atlassian.net/browse/PESDK-4631)] - Fixed sliders to render correctly after setting their value below the allowed minimum.
+
+## Changed
+
+*   [[PESDK-4616](https://imglysdk.atlassian.net/browse/PESDK-4616)] - Removed the Version Checker
+
 # 4.16.1
 
 ## Added
