@@ -1,3 +1,11 @@
+# 4.17.1
+
+## Fixed
+
+*   [[PESDK-4612](https://imglysdk.atlassian.net/browse/PESDK-4612)] - Fixed focus outlines around sprites in Safari
+*   [[PESDK-4652](https://imglysdk.atlassian.net/browse/PESDK-4652)] - Fixed crashes on IE caused by the ColorSelectionComponent
+
+
 # 4.17.0
 
 ## Added
