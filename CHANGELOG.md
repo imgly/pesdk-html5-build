@@ -1,3 +1,20 @@
+# 4.18.0
+
+## Added
+
+*   [[PESDK-3418](https://imglysdk.atlassian.net/browse/PESDK-3418)] - Added snapping of sprites to canvas
+*   [[PESDK-4531](https://imglysdk.atlassian.net/browse/PESDK-4531)] - Added visual snapping guides for positional and rotational snapping
+*   [[PESDK-4554](https://imglysdk.atlassian.net/browse/PESDK-4554)] - Added configuration options for snapping
+
+## Fixed
+
+*   [[PESDK-4657](https://imglysdk.atlassian.net/browse/PESDK-4657)] - Fixed errors after editor reset when the editor was previously in the transform tool
+
+## Changed
+
+*   [[PESDK-4559](https://imglysdk.atlassian.net/browse/PESDK-4559)] - Enhanced sprite rotation snapping
+*   [[PESDK-4671](https://imglysdk.atlassian.net/browse/PESDK-4671)] - Enabled watermark when license expired or is otherwise invalid
+
 # 4.17.1
 
 ## Fixed
