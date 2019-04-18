@@ -1,3 +1,13 @@
+# 4.18.1
+
+## Fixed
+
+*   [[PESDK-4523](https://imglysdk.atlassian.net/browse/PESDK-4523)] - Added a check to prevent canvas.toBuffer from being called in the browser
+*   [[PESDK-4615](https://imglysdk.atlassian.net/browse/PESDK-4615)] - Fixed the possibility to cut off parts of the text when resizing the text
+*   [[PESDK-4633](https://imglysdk.atlassian.net/browse/PESDK-4633)] - Fixed the title of the text input modal to be localizable
+*   [[PESDK-4644](https://imglysdk.atlassian.net/browse/PESDK-4644)] - Added a catchable error to the deserialization function when crop values would result in negative image dimensions
+
+
 # 4.18.0
 
 ## Added

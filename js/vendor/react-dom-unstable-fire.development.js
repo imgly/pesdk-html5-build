@@ -1,5 +1,5 @@
 /** @license React v16.8.6
- * react-dom.development.js
+ * react-dom-unstable-fire.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
  *
@@ -12,7 +12,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('react')) :
 	typeof define === 'function' && define.amd ? define(['react'], factory) :
-	(global.ReactDOM = factory(global.React));
+	(global.ReactFire = factory(global.React));
 }(this, (function (React) { 'use strict';
 
 /**
@@ -9223,6 +9223,10 @@ function didNotFindHydratableSuspenseInstance(parentType, parentProps, parentIns
     // TODO: warnForInsertedHydratedSuspense(parentInstance);
   }
 }
+
+// This is just to get the setup running.
+// TODO: real implementation.
+// console.log('Hello from Fire host config.');
 
 // Prefix measurements so that it's possible to filter them.
 // Longer prefixes are hard to read in DevTools.
@@ -20889,6 +20893,11 @@ implementation) {
 
 var ReactVersion = '16.8.6';
 
+// This file is copy paste from ReactDOM with adjusted paths
+// and a different host config import (react-reconciler/inline.fire).
+// TODO: real implementation.
+// console.log('Hello from Fire entry point.');
+
 // TODO: This type is shared between the reconciler and ReactDOM, but will
 // eventually be lifted out to the renderer.
 
@@ -21398,16 +21407,16 @@ var foundDevTools = injectIntoDevTools({
 
 
 
-var ReactDOM$2 = Object.freeze({
+var ReactFire = Object.freeze({
 	default: ReactDOM
 });
 
-var ReactDOM$3 = ( ReactDOM$2 && ReactDOM ) || ReactDOM$2;
+var ReactFire$1 = ( ReactFire && ReactDOM ) || ReactFire;
 
 // TODO: decide on the top-level export form.
 // This is hacky but makes it work with both Rollup and Jest.
-var reactDom = ReactDOM$3.default || ReactDOM$3;
+var unstableFire = ReactFire$1.default || ReactFire$1;
 
-return reactDom;
+return unstableFire;
 
 })));
