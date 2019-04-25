@@ -1,3 +1,14 @@
+# 4.18.2
+
+## Fixed
+
+*   [[PESDK-4717](https://imglysdk.atlassian.net/browse/PESDK-4717)] - Fixed crashes on IE11 caused by missing 'subscript' function error
+*   [[PESDK-4684](https://imglysdk.atlassian.net/browse/PESDK-4684)] - Fixed JPEG quality loss during export on server
+*   [[PESDK-4714](https://imglysdk.atlassian.net/browse/PESDK-4714)] - Fixed the memory leak when moving sprites around
+*   [[PESDK-4713](https://imglysdk.atlassian.net/browse/PESDK-4713)] - Fixed filters names and order to be consistent across all platforms
+*   [[PESDK-4681](https://imglysdk.atlassian.net/browse/PESDK-4681)] - Fixed color selection dots to be in centered vertically in the swatch
+
+
 # 4.18.1
 
 ## Fixed
