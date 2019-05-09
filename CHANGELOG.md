@@ -1,3 +1,16 @@
+# 4.18.3
+
+## Fixed
+
+*   [[PESDK-4509](https://imglysdk.atlassian.net/browse/PESDK-4509)] - Fixed the editor controls to work correctly for all defaultControl values
+*   [[PESDK-4740](https://imglysdk.atlassian.net/browse/PESDK-4740)] - Fixed the Server SDK to render Text Designs correctly
+*   [[PESDK-2049](https://imglysdk.atlassian.net/browse/PESDK-2049)] - Fixed linear focus when rotating an image
+
+## Changed
+
+*   [[PESDK-4746](https://imglysdk.atlassian.net/browse/PESDK-4746)] - Moved the "Hard Stuff" filter to the end of the "Black & White" category
+*   [[PESDK-4756](https://imglysdk.atlassian.net/browse/PESDK-4756)] - Renamed "Cotton Candy" and "High Contrast" filters for cross-platform consistency
+
 # 4.18.2
 
 ## Fixed
@@ -6,7 +19,7 @@
 *   [[PESDK-4684](https://imglysdk.atlassian.net/browse/PESDK-4684)] - Fixed JPEG quality loss during export on server
 *   [[PESDK-4714](https://imglysdk.atlassian.net/browse/PESDK-4714)] - Fixed the memory leak when moving sprites around
 *   [[PESDK-4713](https://imglysdk.atlassian.net/browse/PESDK-4713)] - Fixed filters names and order to be consistent across all platforms
-*   [[PESDK-4681](https://imglysdk.atlassian.net/browse/PESDK-4681)] - Fixed color selection dots to be in centered vertically in the swatch
+*   [[PESDK-4681](https://imglysdk.atlassian.net/browse/PESDK-4681)] - Fixed color selection dots to be centered vertically in the swatch
 
 
 # 4.18.1

@@ -82,6 +82,7 @@ window.editorConfig = JSON.flatten({
     transparent: false,
     zoom: 1.0,
     renderMode: 'dynamic',
+    defaultControl: 'filter',
     pixelRatio: '1',
     photoroll: false,
     maxMegaPixels: {

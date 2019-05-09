@@ -36,6 +36,7 @@ window.addEventListener('load', function () {
   controllers.push(editorFolder.add(editorConfig, 'editor.displayWelcomeMessage'))
   controllers.push(editorFolder.add(editorConfig, 'editor.displayResizeMessage'))
   controllers.push(editorFolder.add(editorConfig, 'editor.transparent'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.defaultControl', ['filter', 'transform', 'library', 'artfilter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay']))
   controllers.push(editorFolder.add(editorConfig, 'editor.forceCrop'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableLoad'))
   controllers.push(editorFolder.add(editorConfig, 'editor.enableSave'))
