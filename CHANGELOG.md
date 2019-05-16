@@ -1,3 +1,13 @@
+# 4.18.4
+
+## Changed
+
+*   [[PESDK-4747](https://imglysdk.atlassian.net/browse/PESDK-4747)] - Added decorative lines to "Summer Feeling" Text Design
+
+## Fixed
+
+*   [[PESDK-4748](https://imglysdk.atlassian.net/browse/PESDK-4748)] - Fixed width of "Sunshine" Text Design
+
 # 4.18.3
 
 ## Fixed
