@@ -1,3 +1,9 @@
+# 4.18.5
+
+## Bug
+
+*   [[PESDK-4773](https://imglysdk.atlassian.net/browse/PESDK-4773)] - Fixed new Text Design sprites to use the selected layout
+
 # 4.18.4
 
 ## Changed
