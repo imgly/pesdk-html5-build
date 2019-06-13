@@ -1,3 +1,9 @@
+# 4.19.0
+
+## Added
+
+*   [[PESDK-4821](https://imglysdk.atlassian.net/browse/PESDK-4821)] - Added sharpness to the adjustments tool
+
 # 4.18.5
 
 ## Bug

@@ -1,11 +1,10 @@
-## img.ly GmbH
 # Photo Editor Software Development Kit (SDK)
-## Master Software License Agreement
+## Terms of Service
 
 
 ### 1. Subject Matter
 
-1.1 This Master Software License Agreement (together with any applicable Order Form the “__Agreement__”) governs all rights granted by Licensor to use and commercially exploit the Photo Editor Software Development Kit (the “__Software__”).
+1.1 These Terms of Service (together with any applicable Order Form the “__Agreement__”) governs all rights granted by Licensor to use and commercially exploit the Photo Editor Software Development Kit (the “__Software__”).
 
 1.2 The Agreement is entered into by and between img.ly GmbH, Kortumstraße 68, 44787 Bochum, Germany (the “__Licensor__”) and the entity identified in the Order Form (the “__Licensee__”, together with Licensor the “__Parties__”) as of the effective date the Order Form is last signed on.
 
@@ -15,9 +14,9 @@
 
 2.1 An “__Order Form__” may either be executed (i) by the Parties upon individual negotiation or (ii) via an online order issued by Licensee via Licensor`s website at www.photoeditorsdk.com (the “__Website__”) that has been confirmed by Licensor. Online orders not confirmed within 14 days after issuance shall be considered denied.
 
-2.2 No rights shall be granted to Licensee by virtue of this Master Software License Agreement alone as such grant requires the execution of an Order Form making reference to this Master Software License Agreement.
+2.2 No rights shall be granted to Licensee by virtue of these Terms of Service alone as such grant requires the execution of an Order Form making reference to these Terms of Service.
 
-2.3 The Order Form shall specify the environment for the Software that shall be licensed by Licensee. The Software is currently available for integration in the following environments: (i) HTML5, (ii) iOS and (iii) Android.
+2.3 The Order Form shall specify the environment for the Software that shall be licensed by Licensee. The Software is currently available for integration in the following environments: (i) HTML5, (ii) iOS, (iii) Android and (iv) Server.
 
 2.4 The Order Form shall specify (i) the Subscription Term and (ii) the License Fees. Unless specified otherwise in the Order Form, the Subscription Term shall be based on monthly or annual periods for payment of the License Fees (the “__Payment Periods__”).
 
@@ -103,7 +102,7 @@
 
 12.2 Neither Party shall use any confidential information of the other Party other than for the purpose of exercising its rights or performing its obligations under this Agreement or disclose to any third party any confidential information of the other Party except as permitted under this Agreement. Disclosure of confidential information shall not be precluded if such disclosure is in response to a valid order of a court or other governmental body or is otherwise required by statutory law.
 
-12.3	Subject to the exceptions under Section 12.2., Licensee shall not disclose the terms of this Agreement to any third party.
+12.3 Subject to the exceptions under Section 12.2., Licensee shall not disclose the terms of this Agreement to any third party.
 
 12.4 Non-disclosure agreements executed by the Parties independent from this Agreement shall remain in force.
 
@@ -135,13 +134,14 @@
 | com.android.support:appcompat-v7 | Apache License, Version 2.0 |
 | com.android.support:recyclerview-v7 | Apache License, Version 2.0 |
 | com.android.support:support-annotations | Apache License, Version 2.0 |
+| RecyclerView Animators by Wasabeef | Apache License, Version 2.0 |
 | React | MIT |
 | StackBlur by [quasimondo.com](http://quasimondo.com/) | MIT |
 | Native Promise Only | MIT |
 | EXIF.js by Jacob Seidelin | MIT |
 | Kingfisher | MIT |
 | SwiftyRSA | MIT |
-| SwiftKeychainWrapper | MIT |
+| IGListKit | MIT |
 
 
 ### Annex 2

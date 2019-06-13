@@ -104,7 +104,7 @@ window.editorConfig = JSON.flatten({
     },
     tools: [
       'transform', 'artfilter', 'filter', 'adjustments', 'focus', 'text', 'textdesign', 'sticker', 'brush', 'frame', 'overlay', 'library',
-      'brightness', 'saturation', 'contrast', 'clarity', 'exposure', 'shadows', 'highlights', 'gamma', 'whites', 'blacks', 'temperature',
+      'brightness', 'saturation', 'contrast', 'sharpness', 'clarity', 'exposure', 'shadows', 'highlights', 'gamma', 'whites', 'blacks', 'temperature',
       'selective-blur', 'radial-focus', 'mirrored-focus'
     ],
     controlsOrder: [
