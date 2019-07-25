@@ -118,6 +118,9 @@ window.editorConfig = JSON.flatten({
       },
       focus: {
         highQualityCanvasBlur: false
+      },
+      sticker: {
+        // defaultCategory: 'all'
       }
     }
   }

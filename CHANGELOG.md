@@ -1,3 +1,14 @@
+# 4.19.1
+
+## Added
+
+*   [[PESDK-4868](https://imglysdk.atlassian.net/browse/PESDK-4868)] - Added defaultCategory sticker controls option
+
+## Fixed
+
+*   [[PESDK-4860](https://imglysdk.atlassian.net/browse/PESDK-4860)] - Fixed crop not rendering correctly after switching to the filter tool
+*   [[PESDK-4938](https://imglysdk.atlassian.net/browse/PESDK-4938)] - Fixed deserialized text to not be deleted when double-clicking to edit it
+
 # 4.19.0
 
 ## Added
