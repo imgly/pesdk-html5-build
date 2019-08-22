@@ -1,3 +1,14 @@
+# 4.20.0
+
+## Added
+
+*   [[PESDK-4961](https://imglysdk.atlassian.net/browse/PESDK-4961)] - Added non-uniform scaling to stickers in DesktopUI
+
+## Fixed
+
+*   [[PESDK-4979](https://imglysdk.atlassian.net/browse/PESDK-4979)] - Fixed missing filter category asset errors in ReactUI preloader
+*   [[PESDK-4986](https://imglysdk.atlassian.net/browse/PESDK-4986)] - Fixed the rendering of the identity filter with the canvas renderer
+
 # 4.19.1
 
 ## Added

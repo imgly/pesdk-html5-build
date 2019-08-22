@@ -120,6 +120,17 @@ window.editorConfig = JSON.flatten({
         highQualityCanvasBlur: false
       },
       sticker: {
+        // categories: [
+        //   {
+        //     identifier: 'imgly_sticker_shapes',
+        //     stickers: [
+        //       {
+        //         identifier: 'imgly_sticker_shapes_badge_01',
+        //         resizeMode: 'unrestricted'
+        //       }
+        //     ]
+        //   }
+        // ]
         // defaultCategory: 'all'
       }
     }
