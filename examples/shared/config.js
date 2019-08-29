@@ -132,6 +132,8 @@ window.editorConfig = JSON.flatten({
         //   }
         // ]
         // defaultCategory: 'all'
+        // customUploadDisabled: true
+        // customStickerTintMode: 'colorized' // 'none' is default
       }
     }
   }

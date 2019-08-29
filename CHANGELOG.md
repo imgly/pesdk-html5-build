@@ -1,3 +1,14 @@
+# 4.21.0
+
+## Added
+
+*   [[PESDK-4722](https://imglysdk.atlassian.net/browse/PESDK-4722)] - Added custom sticker upload for end users
+
+## Fixed
+
+*   [[PESDK-4983](https://imglysdk.atlassian.net/browse/PESDK-4983)] - Fixed the selective blur tool
+*   [[PESDK-5013](https://imglysdk.atlassian.net/browse/PESDK-5013)] - Fixed the page reloads that were caused if the editor was embedded in a form
+
 # 4.20.0
 
 ## Added
