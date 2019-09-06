@@ -1,3 +1,10 @@
+# 4.21.1
+
+## Fixed
+
+*   [[PESDK-5017](https://imglysdk.atlassian.net/browse/PESDK-5017)] - Fixed Custom Sticker Upload to work with the availableStickers controls option
+*   [[PESDK-5035](https://imglysdk.atlassian.net/browse/PESDK-5035)] - Fixed the flickering and disappearing sidebar on Chrome
+
 # 4.21.0
 
 ## Added
