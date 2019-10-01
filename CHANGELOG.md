@@ -1,3 +1,14 @@
+# 4.21.2
+
+## Fixed
+
+*   [[PESDK-5052](https://imglysdk.atlassian.net/browse/PESDK-5052)] - Fixed image uploads in the ReactUI
+
+## Added
+
+*   [[PESDK-5039](https://imglysdk.atlassian.net/browse/PESDK-5039)] - Added "Basic License" restrictions to the DesktopUI and ReactUI
+*   [[PESDK-5055](https://imglysdk.atlassian.net/browse/PESDK-5055)] - Disabled the custom sticker upload feature in the basic license plan
+
 # 4.21.1
 
 ## Fixed
