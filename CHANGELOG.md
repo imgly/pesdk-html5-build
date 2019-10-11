@@ -1,3 +1,9 @@
+# 4.21.3
+
+## Fixed
+*   [[PESDK-5056](https://imglysdk.atlassian.net/browse/PESDK-5056)] - Fixed chrome/safari CORS policy blocking filter preview from loading
+*   [[PESDK-5086](https://imglysdk.atlassian.net/browse/PESDK-5086)] - Fixed unsubscribe to events before disposing the editor             
+
 # 4.21.2
 
 ## Fixed
