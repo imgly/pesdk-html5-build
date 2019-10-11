@@ -1,3 +1,8 @@
+# 4.21.4
+
+## Fixed
+*   [[PESDK-5097](https://imglysdk.atlassian.net/browse/PESDK-5097)] - Fixed image loading to consider CORS configuration
+
 # 4.21.3
 
 ## Fixed
