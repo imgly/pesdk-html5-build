@@ -1,3 +1,8 @@
+# 4.21.5
+
+## Fixed
+*   [[PESDK-5103](https://imglysdk.atlassian.net/browse/PESDK-5103)] - Fixed CORS with chrome cache
+
 # 4.21.4
 
 ## Fixed
