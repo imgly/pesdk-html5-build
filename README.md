@@ -9,7 +9,7 @@ Crop, Rotate, Focus, Brightness, Contrast, Saturation, and more.
 It also features state-of-the-art photo filters, designed and calibrated with a lot of love.
 A Text editor with an elegant and simple to use interface allows adding text instantly to the picture.
 
-Visit [our website](https://www.photoeditorsdk.com) for tutorials on how to integrate and customize the editor.
+Visit [our website](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build) for tutorials on how to integrate and customize the editor.
 
 ## Preview
 
@@ -19,16 +19,16 @@ Visit [our website](https://www.photoeditorsdk.com) for tutorials on how to inte
 
 
 ## Documentation
-Visit our [docs](https://docs.photoeditorsdk.com)
+Visit our [docs](https://docs.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build)
 
 ## Examples
-Visit our [website](https://www.photoeditorsdk.com/).
+Visit our [website](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build).
 
 ## License
 Please see [LICENSE](https://github.com/imgly/pesdk-html5-build/blob/master/LICENSE.md) for licensing details.
 
 ## Authors and Contributors
-Made 2013-2019 by [img.ly](https://www.photoeditorsdk.com)
+Made 2013-2019 by [img.ly](https://www.photoeditorsdk.com/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build)
 
 ## Support and License
-Use our [service desk](https://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://www.photoeditorsdk.com/pricing) on our website.
+Use our [service desk](https://support.photoeditorsdk.com) for bug reports or support requests. To request a commercial license, please use the [license request form](https://account.photoeditorsdk.com/pricing/?utm_campaign=Projects&utm_source=Github&utm_medium=PESDK&utm_content=HTML5-Build) on our website.
