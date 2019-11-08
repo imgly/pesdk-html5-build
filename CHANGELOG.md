@@ -1,3 +1,11 @@
+# 4.22.0
+
+## Added
+*   [[PESDK-5103](https://imglysdk.atlassian.net/browse/PESDK-5101)] - Added EXIF orientation handling to the custom sticker upload
+
+## Fixed
+*   [[PESDK-5103](https://imglysdk.atlassian.net/browse/PESDK-5054)] - Fixed React 15 compatibility with flickering sidebar
+
 # 4.21.5
 
 ## Fixed
