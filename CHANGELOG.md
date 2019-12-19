@@ -1,3 +1,10 @@
+# 4.22.1
+
+## Fixed
+
+*   [[PESDK-4614](https://imglysdk.atlassian.net/browse/PESDK-4614)] - Fixed the Server SDK to correctly pass through EXIF metadata during export
+*   [[PESDK-5206](https://imglysdk.atlassian.net/browse/PESDK-5206)] - Fixed the memory leak in the Server SDK
+
 # 4.22.0
 
 ## Added

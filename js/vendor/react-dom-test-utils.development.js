@@ -1,4 +1,4 @@
-/** @license React v16.8.6
+/** @license React v16.12.0
  * react-dom-test-utils.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -16,8 +16,11 @@
 }(this, (function (React,ReactDOM) { 'use strict';
 
 var ReactInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-
 var _assign = ReactInternals.assign;
+
+// Do not require this module directly! Use normal `invariant` calls with
+// template literal strings. The messages will be replaced with error codes
+// during build.
 
 /**
  * Use invariant() to assert state which your program assumes to be true.
@@ -30,75 +33,43 @@ var _assign = ReactInternals.assign;
  * will remain to ensure logic does not differ in production.
  */
 
-var validateFormat = function () {};
-
-{
-  validateFormat = function (format) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  };
-}
-
-function invariant(condition, format, a, b, c, d, e, f) {
-  validateFormat(format);
-
-  if (!condition) {
-    var error = void 0;
-    if (format === undefined) {
-      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(format.replace(/%s/g, function () {
-        return args[argIndex++];
-      }));
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-}
-
-// Relying on the `invariant()` implementation lets us
-// preserve the format and params in the www builds.
-
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
  * This can be used to log issues in development environments in critical
  * paths. Removing the logging code for production environments will keep the
  * same logic and follow the same code paths.
  */
-
 var warningWithoutStack = function () {};
 
 {
   warningWithoutStack = function (condition, format) {
-    for (var _len = arguments.length, args = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
       args[_key - 2] = arguments[_key];
     }
 
     if (format === undefined) {
       throw new Error('`warningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
     }
+
     if (args.length > 8) {
       // Check before the condition to catch violations early.
       throw new Error('warningWithoutStack() currently supports at most 8 arguments.');
     }
+
     if (condition) {
       return;
     }
+
     if (typeof console !== 'undefined') {
       var argsWithFormat = args.map(function (item) {
         return '' + item;
       });
-      argsWithFormat.unshift('Warning: ' + format);
-
-      // We intentionally don't use spread (or .apply) directly because it
+      argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
       // breaks IE9: https://github.com/facebook/react/issues/13610
+
       Function.prototype.apply.call(console.error, console, argsWithFormat);
     }
+
     try {
       // --- Welcome to debugging React ---
       // This error was thrown as a convenience so that you can use this stack
@@ -130,87 +101,172 @@ var warningWithoutStack$1 = warningWithoutStack;
  * supported we can rename it.
  */
 
-
 function get(key) {
   return key._reactInternalFiber;
 }
 
-var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-
-// Prevent newer renderers from RTE when used with older react package versions.
+var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED; // Prevent newer renderers from RTE when used with older react package versions.
 // Current owner and dispatcher used to share the same ref,
 // but PR #14548 split them out to better support the react-debug-tools package.
+
 if (!ReactSharedInternals.hasOwnProperty('ReactCurrentDispatcher')) {
   ReactSharedInternals.ReactCurrentDispatcher = {
     current: null
   };
 }
 
+if (!ReactSharedInternals.hasOwnProperty('ReactCurrentBatchConfig')) {
+  ReactSharedInternals.ReactCurrentBatchConfig = {
+    suspense: null
+  };
+}
+
 // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
 // nor polyfill, then a plain number is used for performance.
+
+
+
+
+
+
+ // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+{
+  
+}
 
 var FunctionComponent = 0;
 var ClassComponent = 1;
  // Before we know whether it is function or class
+
 var HostRoot = 3; // Root of a host tree. Could be nested inside another node.
+
  // A subtree. Could be an entry point to a different renderer.
+
 var HostComponent = 5;
 var HostText = 6;
 
 // Don't change these two values. They're used by React Dev Tools.
-var NoEffect = /*              */0;
+var NoEffect =
+/*              */
+0;
+ // You can change the rest (and add more).
 
-
-// You can change the rest (and add more).
-var Placement = /*             */2;
-
-
-
-
-
-
+var Placement =
+/*             */
+2;
 
 
 
 
-// Passive & Update & Callback & Ref & Snapshot
 
 
-// Union of all host effects
+
+
+
+var Hydrating =
+/*             */
+1024;
+ // Passive & Update & Callback & Ref & Snapshot
+
+ // Union of all host effects
+
+// Helps identify side effects in render-phase lifecycle hooks and setState
+// reducers by double invoking them in Strict Mode.
+
+ // To preserve the "Pause on caught exceptions" behavior of the debugger, we
+// replay the begin phase of a failed component inside invokeGuardedCallback.
+
+ // Warn about deprecated, async-unsafe lifecycles; relates to RFC #6:
+
+ // Gather advanced timing metrics for Profiler subtrees.
+
+ // Trace which interactions trigger each commit.
+
+ // SSR experiments
+
+
+ // Only used in www builds.
+
+ // Only used in www builds.
+
+ // Disable javascript: URL strings in href for XSS protection.
+
+ // React Fire: prevent the value and checked attributes from syncing
+// with their related DOM properties
+
+ // These APIs will no longer be "unstable" in the upcoming 16.7 release,
+// Control this behavior with a flag to support 16.6 minor releases in the meanwhile.
+
+
+ // Experimental React Flare event system and event components support.
+
+ // Experimental Host Component support.
+
+ // Experimental Scope support.
+
+ // New API for JSX transforms to target - https://github.com/reactjs/rfcs/pull/107
+
+ // We will enforce mocking scheduler with scheduler/unstable_mock at some point. (v17?)
+// Till then, we warn about the missing mock, but still fallback to a legacy mode compatible version
+
+ // For tests, we flush suspense fallbacks in an act scope;
+// *except* in some of our own tests, where we test incremental loading states.
+
+ // Add a callback property to suspense to notify which promises are currently
+// in the update queue. This allows reporting and tracing of what is causing
+// the user to see a loading state.
+// Also allows hydration callbacks to fire when a dehydrated boundary gets
+// hydrated or deleted.
+
+ // Part of the simplification of React.createElement so we can eventually move
+// from React.createElement to React.jsx
+// https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md
+
+
+
+
+
+ // Flag to turn event.target and event.currentTarget in ReactNative from a reactTag to a component instance
 
 var ReactCurrentOwner = ReactSharedInternals.ReactCurrentOwner;
-
-var MOUNTING = 1;
-var MOUNTED = 2;
-var UNMOUNTED = 3;
-
-function isFiberMountedImpl(fiber) {
+function getNearestMountedFiber(fiber) {
   var node = fiber;
+  var nearestMounted = fiber;
+
   if (!fiber.alternate) {
     // If there is no alternate, this might be a new tree that isn't inserted
     // yet. If it is, then it will have a pending insertion effect on it.
-    if ((node.effectTag & Placement) !== NoEffect) {
-      return MOUNTING;
-    }
-    while (node.return) {
-      node = node.return;
-      if ((node.effectTag & Placement) !== NoEffect) {
-        return MOUNTING;
+    var nextNode = node;
+
+    do {
+      node = nextNode;
+
+      if ((node.effectTag & (Placement | Hydrating)) !== NoEffect) {
+        // This is an insertion or in-progress hydration. The nearest possible
+        // mounted fiber is the parent but we need to continue to figure out
+        // if that one is still mounted.
+        nearestMounted = node.return;
       }
-    }
+
+      nextNode = node.return;
+    } while (nextNode);
   } else {
     while (node.return) {
       node = node.return;
     }
   }
+
   if (node.tag === HostRoot) {
     // TODO: Check if this was a nested HostRoot when used with
     // renderContainerIntoSubtree.
-    return MOUNTED;
-  }
-  // If we didn't hit the root, that means that we're in an disconnected tree
+    return nearestMounted;
+  } // If we didn't hit the root, that means that we're in an disconnected tree
   // that has been unmounted.
-  return UNMOUNTED;
+
+
+  return null;
 }
 
 
@@ -218,54 +274,94 @@ function isFiberMountedImpl(fiber) {
 
 
 function assertIsMounted(fiber) {
-  !(isFiberMountedImpl(fiber) === MOUNTED) ? invariant(false, 'Unable to find node on an unmounted component.') : void 0;
+  if (!(getNearestMountedFiber(fiber) === fiber)) {
+    {
+      throw Error("Unable to find node on an unmounted component.");
+    }
+  }
 }
 
 function findCurrentFiberUsingSlowPath(fiber) {
   var alternate = fiber.alternate;
+
   if (!alternate) {
     // If there is no alternate, then we only need to check if it is mounted.
-    var state = isFiberMountedImpl(fiber);
-    !(state !== UNMOUNTED) ? invariant(false, 'Unable to find node on an unmounted component.') : void 0;
-    if (state === MOUNTING) {
+    var nearestMounted = getNearestMountedFiber(fiber);
+
+    if (!(nearestMounted !== null)) {
+      {
+        throw Error("Unable to find node on an unmounted component.");
+      }
+    }
+
+    if (nearestMounted !== fiber) {
       return null;
     }
+
     return fiber;
-  }
-  // If we have two possible branches, we'll walk backwards up to the root
+  } // If we have two possible branches, we'll walk backwards up to the root
   // to see what path the root points to. On the way we may hit one of the
   // special cases and we'll deal with them.
+
+
   var a = fiber;
   var b = alternate;
+
   while (true) {
     var parentA = a.return;
-    var parentB = parentA ? parentA.alternate : null;
-    if (!parentA || !parentB) {
+
+    if (parentA === null) {
       // We're at the root.
       break;
     }
 
-    // If both copies of the parent fiber point to the same child, we can
+    var parentB = parentA.alternate;
+
+    if (parentB === null) {
+      // There is no alternate. This is an unusual case. Currently, it only
+      // happens when a Suspense component is hidden. An extra fragment fiber
+      // is inserted in between the Suspense fiber and its children. Skip
+      // over this extra fragment fiber and proceed to the next parent.
+      var nextParent = parentA.return;
+
+      if (nextParent !== null) {
+        a = b = nextParent;
+        continue;
+      } // If there's no parent, we're at the root.
+
+
+      break;
+    } // If both copies of the parent fiber point to the same child, we can
     // assume that the child is current. This happens when we bailout on low
     // priority: the bailed out fiber's child reuses the current child.
+
+
     if (parentA.child === parentB.child) {
       var child = parentA.child;
+
       while (child) {
         if (child === a) {
           // We've determined that A is the current branch.
           assertIsMounted(parentA);
           return fiber;
         }
+
         if (child === b) {
           // We've determined that B is the current branch.
           assertIsMounted(parentA);
           return alternate;
         }
+
         child = child.sibling;
-      }
-      // We should never have an alternate for any mounting node. So the only
+      } // We should never have an alternate for any mounting node. So the only
       // way this could possibly happen is if this was unmounted, if at all.
-      invariant(false, 'Unable to find node on an unmounted component.');
+
+
+      {
+        {
+          throw Error("Unable to find node on an unmounted component.");
+        }
+      }
     }
 
     if (a.return !== b.return) {
@@ -283,6 +379,7 @@ function findCurrentFiberUsingSlowPath(fiber) {
       // Search parent A's child set
       var didFindChild = false;
       var _child = parentA.child;
+
       while (_child) {
         if (_child === a) {
           didFindChild = true;
@@ -290,17 +387,21 @@ function findCurrentFiberUsingSlowPath(fiber) {
           b = parentB;
           break;
         }
+
         if (_child === b) {
           didFindChild = true;
           b = parentA;
           a = parentB;
           break;
         }
+
         _child = _child.sibling;
       }
+
       if (!didFindChild) {
         // Search parent B's child set
         _child = parentB.child;
+
         while (_child) {
           if (_child === a) {
             didFindChild = true;
@@ -308,39 +409,56 @@ function findCurrentFiberUsingSlowPath(fiber) {
             b = parentA;
             break;
           }
+
           if (_child === b) {
             didFindChild = true;
             b = parentB;
             a = parentA;
             break;
           }
+
           _child = _child.sibling;
         }
-        !didFindChild ? invariant(false, 'Child was not found in either parent set. This indicates a bug in React related to the return pointer. Please file an issue.') : void 0;
+
+        if (!didFindChild) {
+          {
+            throw Error("Child was not found in either parent set. This indicates a bug in React related to the return pointer. Please file an issue.");
+          }
+        }
       }
     }
 
-    !(a.alternate === b) ? invariant(false, 'Return fibers should always be each others\' alternates. This error is likely caused by a bug in React. Please file an issue.') : void 0;
-  }
-  // If the root is not a host container, we're in a disconnected tree. I.e.
+    if (!(a.alternate === b)) {
+      {
+        throw Error("Return fibers should always be each others' alternates. This error is likely caused by a bug in React. Please file an issue.");
+      }
+    }
+  } // If the root is not a host container, we're in a disconnected tree. I.e.
   // unmounted.
-  !(a.tag === HostRoot) ? invariant(false, 'Unable to find node on an unmounted component.') : void 0;
+
+
+  if (!(a.tag === HostRoot)) {
+    {
+      throw Error("Unable to find node on an unmounted component.");
+    }
+  }
+
   if (a.stateNode.current === a) {
     // We've determined that A is the current branch.
     return fiber;
-  }
-  // Otherwise B has to be current branch.
+  } // Otherwise B has to be current branch.
+
+
   return alternate;
 }
 
 /* eslint valid-typeof: 0 */
-
 var EVENT_POOL_SIZE = 10;
-
 /**
  * @interface Event
  * @see http://www.w3.org/TR/DOM-Level-3-Events/
  */
+
 var EventInterface = {
   type: null,
   target: null,
@@ -365,7 +483,6 @@ function functionThatReturnsTrue() {
 function functionThatReturnsFalse() {
   return false;
 }
-
 /**
  * Synthetic events are dispatched by event plugins, typically in response to a
  * top-level event delegation handler.
@@ -384,6 +501,8 @@ function functionThatReturnsFalse() {
  * @param {object} nativeEvent Native browser event.
  * @param {DOMEventTarget} nativeEventTarget Target node.
  */
+
+
 function SyntheticEvent(dispatchConfig, targetInst, nativeEvent, nativeEventTarget) {
   {
     // these have a getter/setter for warnings
@@ -397,16 +516,19 @@ function SyntheticEvent(dispatchConfig, targetInst, nativeEvent, nativeEventTarg
   this.dispatchConfig = dispatchConfig;
   this._targetInst = targetInst;
   this.nativeEvent = nativeEvent;
-
   var Interface = this.constructor.Interface;
+
   for (var propName in Interface) {
     if (!Interface.hasOwnProperty(propName)) {
       continue;
     }
+
     {
       delete this[propName]; // this has a getter/setter for warnings
     }
+
     var normalize = Interface[propName];
+
     if (normalize) {
       this[propName] = normalize(nativeEvent);
     } else {
@@ -419,11 +541,13 @@ function SyntheticEvent(dispatchConfig, targetInst, nativeEvent, nativeEventTarg
   }
 
   var defaultPrevented = nativeEvent.defaultPrevented != null ? nativeEvent.defaultPrevented : nativeEvent.returnValue === false;
+
   if (defaultPrevented) {
     this.isDefaultPrevented = functionThatReturnsTrue;
   } else {
     this.isDefaultPrevented = functionThatReturnsFalse;
   }
+
   this.isPropagationStopped = functionThatReturnsFalse;
   return this;
 }
@@ -432,6 +556,7 @@ _assign(SyntheticEvent.prototype, {
   preventDefault: function () {
     this.defaultPrevented = true;
     var event = this.nativeEvent;
+
     if (!event) {
       return;
     }
@@ -441,11 +566,12 @@ _assign(SyntheticEvent.prototype, {
     } else if (typeof event.returnValue !== 'unknown') {
       event.returnValue = false;
     }
+
     this.isDefaultPrevented = functionThatReturnsTrue;
   },
-
   stopPropagation: function () {
     var event = this.nativeEvent;
+
     if (!event) {
       return;
     }
@@ -485,11 +611,13 @@ _assign(SyntheticEvent.prototype, {
    */
   destructor: function () {
     var Interface = this.constructor.Interface;
+
     for (var propName in Interface) {
       {
         Object.defineProperty(this, propName, getPooledWarningPropertyDefinition(propName, Interface[propName]));
       }
     }
+
     this.dispatchConfig = null;
     this._targetInst = null;
     this.nativeEvent = null;
@@ -497,6 +625,7 @@ _assign(SyntheticEvent.prototype, {
     this.isPropagationStopped = functionThatReturnsFalse;
     this._dispatchListeners = null;
     this._dispatchInstances = null;
+
     {
       Object.defineProperty(this, 'nativeEvent', getPooledWarningPropertyDefinition('nativeEvent', null));
       Object.defineProperty(this, 'isDefaultPrevented', getPooledWarningPropertyDefinition('isDefaultPrevented', functionThatReturnsFalse));
@@ -508,33 +637,33 @@ _assign(SyntheticEvent.prototype, {
 });
 
 SyntheticEvent.Interface = EventInterface;
-
 /**
  * Helper to reduce boilerplate when creating subclasses.
  */
+
 SyntheticEvent.extend = function (Interface) {
   var Super = this;
 
   var E = function () {};
+
   E.prototype = Super.prototype;
   var prototype = new E();
 
   function Class() {
     return Super.apply(this, arguments);
   }
+
   _assign(prototype, Class.prototype);
+
   Class.prototype = prototype;
   Class.prototype.constructor = Class;
-
   Class.Interface = _assign({}, Super.Interface, Interface);
   Class.extend = Super.extend;
   addEventPoolingTo(Class);
-
   return Class;
 };
 
 addEventPoolingTo(SyntheticEvent);
-
 /**
  * Helper to nullify syntheticEvent instance properties when destructing
  *
@@ -542,6 +671,7 @@ addEventPoolingTo(SyntheticEvent);
  * @param {?object} getVal
  * @return {object} defineProperty object
  */
+
 function getPooledWarningPropertyDefinition(propName, getVal) {
   var isFunction = typeof getVal === 'function';
   return {
@@ -571,18 +701,27 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 function getPooledEvent(dispatchConfig, targetInst, nativeEvent, nativeInst) {
   var EventConstructor = this;
+
   if (EventConstructor.eventPool.length) {
     var instance = EventConstructor.eventPool.pop();
     EventConstructor.call(instance, dispatchConfig, targetInst, nativeEvent, nativeInst);
     return instance;
   }
+
   return new EventConstructor(dispatchConfig, targetInst, nativeEvent, nativeInst);
 }
 
 function releasePooledEvent(event) {
   var EventConstructor = this;
-  !(event instanceof EventConstructor) ? invariant(false, 'Trying to release an event instance into a pool of a different type.') : void 0;
+
+  if (!(event instanceof EventConstructor)) {
+    {
+      throw Error("Trying to release an event instance into a pool of a different type.");
+    }
+  }
+
   event.destructor();
+
   if (EventConstructor.eventPool.length < EVENT_POOL_SIZE) {
     EventConstructor.eventPool.push(event);
   }
@@ -607,12 +746,11 @@ function addEventPoolingTo(EventConstructor) {
  * paths. Removing the logging code for production environments will keep the
  * same logic and follow the same code paths.
  */
-
-var lowPriorityWarning = function () {};
+var lowPriorityWarningWithoutStack = function () {};
 
 {
   var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
       args[_key - 1] = arguments[_key];
     }
 
@@ -620,9 +758,11 @@ var lowPriorityWarning = function () {};
     var message = 'Warning: ' + format.replace(/%s/g, function () {
       return args[argIndex++];
     });
+
     if (typeof console !== 'undefined') {
       console.warn(message);
     }
+
     try {
       // --- Welcome to debugging React ---
       // This error was thrown as a convenience so that you can use this stack
@@ -631,37 +771,36 @@ var lowPriorityWarning = function () {};
     } catch (x) {}
   };
 
-  lowPriorityWarning = function (condition, format) {
+  lowPriorityWarningWithoutStack = function (condition, format) {
     if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
+      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
     }
+
     if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
         args[_key2 - 2] = arguments[_key2];
       }
 
-      printWarning.apply(undefined, [format].concat(args));
+      printWarning.apply(void 0, [format].concat(args));
     }
   };
 }
 
-var lowPriorityWarning$1 = lowPriorityWarning;
+var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
 
 /**
  * HTML nodeType values that represent the type of the node
  */
-
 var ELEMENT_NODE = 1;
 
-// Do not uses the below two methods directly!
+// Do not use the below two methods directly!
 // Instead use constants exported from DOMTopLevelEventTypes in ReactDOM.
 // (It is the only module that is allowed to access these methods.)
-
 function unsafeCastStringToDOMTopLevelType(topLevelType) {
   return topLevelType;
 }
 
-var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+var canUseDOM = !!(typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined');
 
 /**
  * Generate a mapping of standard vendor prefixes using the defined style property and event name.
@@ -670,64 +809,64 @@ var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.do
  * @param {string} eventName
  * @returns {object}
  */
+
 function makePrefixMap(styleProp, eventName) {
   var prefixes = {};
-
   prefixes[styleProp.toLowerCase()] = eventName.toLowerCase();
   prefixes['Webkit' + styleProp] = 'webkit' + eventName;
   prefixes['Moz' + styleProp] = 'moz' + eventName;
-
   return prefixes;
 }
-
 /**
  * A list of event names to a configurable list of vendor prefixes.
  */
+
+
 var vendorPrefixes = {
   animationend: makePrefixMap('Animation', 'AnimationEnd'),
   animationiteration: makePrefixMap('Animation', 'AnimationIteration'),
   animationstart: makePrefixMap('Animation', 'AnimationStart'),
   transitionend: makePrefixMap('Transition', 'TransitionEnd')
 };
-
 /**
  * Event names that have already been detected and prefixed (if applicable).
  */
-var prefixedEventNames = {};
 
+var prefixedEventNames = {};
 /**
  * Element to check for prefixes on.
  */
-var style = {};
 
+var style = {};
 /**
  * Bootstrap if a DOM exists.
  */
-if (canUseDOM) {
-  style = document.createElement('div').style;
 
-  // On some platforms, in particular some releases of Android 4.x,
+if (canUseDOM) {
+  style = document.createElement('div').style; // On some platforms, in particular some releases of Android 4.x,
   // the un-prefixed "animation" and "transition" properties are defined on the
   // style object but the events that fire will still be prefixed, so we need
   // to check if the un-prefixed events are usable, and if not remove them from the map.
+
   if (!('AnimationEvent' in window)) {
     delete vendorPrefixes.animationend.animation;
     delete vendorPrefixes.animationiteration.animation;
     delete vendorPrefixes.animationstart.animation;
-  }
+  } // Same as above
 
-  // Same as above
+
   if (!('TransitionEvent' in window)) {
     delete vendorPrefixes.transitionend.transition;
   }
 }
-
 /**
  * Attempts to determine the correct vendor prefixed event name.
  *
  * @param {string} eventName
  * @returns {string}
  */
+
+
 function getVendorPrefixedEventName(eventName) {
   if (prefixedEventNames[eventName]) {
     return prefixedEventNames[eventName];
@@ -753,6 +892,7 @@ function getVendorPrefixedEventName(eventName) {
  * us save some bundle size by avoiding a top level type -> event name map.
  * The rest of ReactDOM code should import top level types from this file.
  */
+
 var TOP_ABORT = unsafeCastStringToDOMTopLevelType('abort');
 var TOP_ANIMATION_END = unsafeCastStringToDOMTopLevelType(getVendorPrefixedEventName('animationend'));
 var TOP_ANIMATION_ITERATION = unsafeCastStringToDOMTopLevelType(getVendorPrefixedEventName('animationiteration'));
@@ -834,16 +974,227 @@ var TOP_TOUCH_START = unsafeCastStringToDOMTopLevelType('touchstart');
 var TOP_TRANSITION_END = unsafeCastStringToDOMTopLevelType(getVendorPrefixedEventName('transitionend'));
 var TOP_VOLUME_CHANGE = unsafeCastStringToDOMTopLevelType('volumechange');
 var TOP_WAITING = unsafeCastStringToDOMTopLevelType('waiting');
-var TOP_WHEEL = unsafeCastStringToDOMTopLevelType('wheel');
-
-// List of events that need to be individually attached to media elements.
+var TOP_WHEEL = unsafeCastStringToDOMTopLevelType('wheel'); // List of events that need to be individually attached to media elements.
 // Note that events in this list will *not* be listened to at the top level
 // unless they're explicitly whitelisted in `ReactBrowserEventEmitter.listenTo`.
 
-// for .act's return value
-var findDOMNode = ReactDOM.findDOMNode;
-// Keep in sync with ReactDOMUnstableNativeDependencies.js
-// and ReactDOM.js:
+var PLUGIN_EVENT_SYSTEM = 1;
+
+var didWarnAboutMessageChannel = false;
+var enqueueTask;
+
+try {
+  // read require off the module object to get around the bundlers.
+  // we don't want them to detect a require and bundle a Node polyfill.
+  var requireString = ('require' + Math.random()).slice(0, 7);
+  var nodeRequire = module && module[requireString]; // assuming we're in node, let's try to get node's
+  // version of setImmediate, bypassing fake timers if any.
+
+  enqueueTask = nodeRequire('timers').setImmediate;
+} catch (_err) {
+  // we're in a browser
+  // we can't use regular timers because they may still be faked
+  // so we try MessageChannel+postMessage instead
+  enqueueTask = function (callback) {
+    {
+      if (didWarnAboutMessageChannel === false) {
+        didWarnAboutMessageChannel = true;
+        !(typeof MessageChannel !== 'undefined') ? warningWithoutStack$1(false, 'This browser does not have a MessageChannel implementation, ' + 'so enqueuing tasks via await act(async () => ...) will fail. ' + 'Please file an issue at https://github.com/facebook/react/issues ' + 'if you encounter this warning.') : void 0;
+      }
+    }
+
+    var channel = new MessageChannel();
+    channel.port1.onmessage = callback;
+    channel.port2.postMessage(undefined);
+  };
+}
+
+var enqueueTask$1 = enqueueTask;
+
+var ReactInternals$1 = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+var _ReactInternals$Sched = ReactInternals$1.Scheduler;
+var unstable_cancelCallback = _ReactInternals$Sched.unstable_cancelCallback;
+var unstable_now = _ReactInternals$Sched.unstable_now;
+var unstable_scheduleCallback = _ReactInternals$Sched.unstable_scheduleCallback;
+var unstable_shouldYield = _ReactInternals$Sched.unstable_shouldYield;
+var unstable_requestPaint = _ReactInternals$Sched.unstable_requestPaint;
+var unstable_getFirstCallbackNode = _ReactInternals$Sched.unstable_getFirstCallbackNode;
+var unstable_runWithPriority = _ReactInternals$Sched.unstable_runWithPriority;
+var unstable_next = _ReactInternals$Sched.unstable_next;
+var unstable_continueExecution = _ReactInternals$Sched.unstable_continueExecution;
+var unstable_pauseExecution = _ReactInternals$Sched.unstable_pauseExecution;
+var unstable_getCurrentPriorityLevel = _ReactInternals$Sched.unstable_getCurrentPriorityLevel;
+var unstable_ImmediatePriority = _ReactInternals$Sched.unstable_ImmediatePriority;
+var unstable_UserBlockingPriority = _ReactInternals$Sched.unstable_UserBlockingPriority;
+var unstable_NormalPriority = _ReactInternals$Sched.unstable_NormalPriority;
+var unstable_LowPriority = _ReactInternals$Sched.unstable_LowPriority;
+var unstable_IdlePriority = _ReactInternals$Sched.unstable_IdlePriority;
+var unstable_forceFrameRate = _ReactInternals$Sched.unstable_forceFrameRate;
+var unstable_flushAllWithoutAsserting = _ReactInternals$Sched.unstable_flushAllWithoutAsserting;
+
+// ReactDOM.js, and ReactTestUtils.js:
+
+var _ReactDOM$__SECRET_IN$1 = ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.Events;
+var getInstanceFromNode$1 = _ReactDOM$__SECRET_IN$1[0];
+var getNodeFromInstance$1 = _ReactDOM$__SECRET_IN$1[1];
+var getFiberCurrentPropsFromNode$1 = _ReactDOM$__SECRET_IN$1[2];
+var injectEventPluginsByName$1 = _ReactDOM$__SECRET_IN$1[3];
+var eventNameDispatchConfigs$1 = _ReactDOM$__SECRET_IN$1[4];
+var accumulateTwoPhaseDispatches$1 = _ReactDOM$__SECRET_IN$1[5];
+var accumulateDirectDispatches$1 = _ReactDOM$__SECRET_IN$1[6];
+var enqueueStateRestore$1 = _ReactDOM$__SECRET_IN$1[7];
+var restoreStateIfNeeded$1 = _ReactDOM$__SECRET_IN$1[8];
+var dispatchEvent$1 = _ReactDOM$__SECRET_IN$1[9];
+var runEventsInBatch$1 = _ReactDOM$__SECRET_IN$1[10];
+var flushPassiveEffects$1 = _ReactDOM$__SECRET_IN$1[11];
+var IsThisRendererActing$1 = _ReactDOM$__SECRET_IN$1[12];
+var batchedUpdates = ReactDOM.unstable_batchedUpdates;
+var IsSomeRendererActing = ReactSharedInternals.IsSomeRendererActing; // this implementation should be exactly the same in
+// ReactTestUtilsAct.js, ReactTestRendererAct.js, createReactNoop.js
+
+var isSchedulerMocked = typeof unstable_flushAllWithoutAsserting === 'function';
+
+var flushWork = unstable_flushAllWithoutAsserting || function () {
+  var didFlushWork = false;
+
+  while (flushPassiveEffects$1()) {
+    didFlushWork = true;
+  }
+
+  return didFlushWork;
+};
+
+function flushWorkAndMicroTasks(onDone) {
+  try {
+    flushWork();
+    enqueueTask$1(function () {
+      if (flushWork()) {
+        flushWorkAndMicroTasks(onDone);
+      } else {
+        onDone();
+      }
+    });
+  } catch (err) {
+    onDone(err);
+  }
+} // we track the 'depth' of the act() calls with this counter,
+// so we can tell if any async act() calls try to run in parallel.
+
+
+var actingUpdatesScopeDepth = 0;
+function act(callback) {
+  var previousActingUpdatesScopeDepth = actingUpdatesScopeDepth;
+  var previousIsSomeRendererActing;
+  var previousIsThisRendererActing;
+  actingUpdatesScopeDepth++;
+  previousIsSomeRendererActing = IsSomeRendererActing.current;
+  previousIsThisRendererActing = IsThisRendererActing$1.current;
+  IsSomeRendererActing.current = true;
+  IsThisRendererActing$1.current = true;
+
+  function onDone() {
+    actingUpdatesScopeDepth--;
+    IsSomeRendererActing.current = previousIsSomeRendererActing;
+    IsThisRendererActing$1.current = previousIsThisRendererActing;
+
+    {
+      if (actingUpdatesScopeDepth > previousActingUpdatesScopeDepth) {
+        // if it's _less than_ previousActingUpdatesScopeDepth, then we can assume the 'other' one has warned
+        warningWithoutStack$1(false, 'You seem to have overlapping act() calls, this is not supported. ' + 'Be sure to await previous act() calls before making a new one. ');
+      }
+    }
+  }
+
+  var result;
+
+  try {
+    result = batchedUpdates(callback);
+  } catch (error) {
+    // on sync errors, we still want to 'cleanup' and decrement actingUpdatesScopeDepth
+    onDone();
+    throw error;
+  }
+
+  if (result !== null && typeof result === 'object' && typeof result.then === 'function') {
+    // setup a boolean that gets set to true only
+    // once this act() call is await-ed
+    var called = false;
+
+    {
+      if (typeof Promise !== 'undefined') {
+        //eslint-disable-next-line no-undef
+        Promise.resolve().then(function () {}).then(function () {
+          if (called === false) {
+            warningWithoutStack$1(false, 'You called act(async () => ...) without await. ' + 'This could lead to unexpected testing behaviour, interleaving multiple act ' + 'calls and mixing their scopes. You should - await act(async () => ...);');
+          }
+        });
+      }
+    } // in the async case, the returned thenable runs the callback, flushes
+    // effects and  microtasks in a loop until flushPassiveEffects() === false,
+    // and cleans up
+
+
+    return {
+      then: function (resolve, reject) {
+        called = true;
+        result.then(function () {
+          if (actingUpdatesScopeDepth > 1 || isSchedulerMocked === true && previousIsSomeRendererActing === true) {
+            onDone();
+            resolve();
+            return;
+          } // we're about to exit the act() scope,
+          // now's the time to flush tasks/effects
+
+
+          flushWorkAndMicroTasks(function (err) {
+            onDone();
+
+            if (err) {
+              reject(err);
+            } else {
+              resolve();
+            }
+          });
+        }, function (err) {
+          onDone();
+          reject(err);
+        });
+      }
+    };
+  } else {
+    {
+      !(result === undefined) ? warningWithoutStack$1(false, 'The callback passed to act(...) function ' + 'must return undefined, or a Promise. You returned %s', result) : void 0;
+    } // flush effects until none remain, and cleanup
+
+
+    try {
+      if (actingUpdatesScopeDepth === 1 && (isSchedulerMocked === false || previousIsSomeRendererActing === false)) {
+        // we're about to exit the act() scope,
+        // now's the time to flush effects
+        flushWork();
+      }
+
+      onDone();
+    } catch (err) {
+      onDone();
+      throw err;
+    } // in the sync case, the returned thenable only warns *if* await-ed
+
+
+    return {
+      then: function (resolve) {
+        {
+          warningWithoutStack$1(false, 'Do not await the result of calling act(...) with sync logic, it is not a Promise.');
+        }
+
+        resolve();
+      }
+    };
+  }
+}
+
+var findDOMNode = ReactDOM.findDOMNode; // Keep in sync with ReactDOMUnstableNativeDependencies.js
+// ReactDOM.js, and ReactTestUtilsAct.js:
 
 var _ReactDOM$__SECRET_IN = ReactDOM.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.Events;
 var getInstanceFromNode = _ReactDOM$__SECRET_IN[0];
@@ -857,12 +1208,12 @@ var enqueueStateRestore = _ReactDOM$__SECRET_IN[7];
 var restoreStateIfNeeded = _ReactDOM$__SECRET_IN[8];
 var dispatchEvent = _ReactDOM$__SECRET_IN[9];
 var runEventsInBatch = _ReactDOM$__SECRET_IN[10];
-
+var flushPassiveEffects = _ReactDOM$__SECRET_IN[11];
+var IsThisRendererActing = _ReactDOM$__SECRET_IN[12];
 
 function Event(suffix) {}
 
 var hasWarnedAboutDeprecatedMockComponent = false;
-
 /**
  * @class ReactTestUtils
  */
@@ -874,11 +1225,11 @@ var hasWarnedAboutDeprecatedMockComponent = false;
  * @param {!Element} node The dom to simulate an event occurring on.
  * @param {?Event} fakeNativeEvent Fake native event to use in SyntheticEvent.
  */
+
 function simulateNativeEventOnNode(topLevelType, node, fakeNativeEvent) {
   fakeNativeEvent.target = node;
-  dispatchEvent(topLevelType, fakeNativeEvent);
+  dispatchEvent(topLevelType, PLUGIN_EVENT_SYSTEM, fakeNativeEvent);
 }
-
 /**
  * Simulates a top level event being dispatched from a raw event that occurred
  * on the `ReactDOMComponent` `comp`.
@@ -886,6 +1237,8 @@ function simulateNativeEventOnNode(topLevelType, node, fakeNativeEvent) {
  * @param {!ReactDOMComponent} comp
  * @param {?Event} fakeNativeEvent Fake native event to use in SyntheticEvent.
  */
+
+
 function simulateNativeEventOnDOMComponent(topLevelType, comp, fakeNativeEvent) {
   simulateNativeEventOnNode(topLevelType, findDOMNode(comp), fakeNativeEvent);
 }
@@ -894,33 +1247,43 @@ function findAllInRenderedFiberTreeInternal(fiber, test) {
   if (!fiber) {
     return [];
   }
+
   var currentParent = findCurrentFiberUsingSlowPath(fiber);
+
   if (!currentParent) {
     return [];
   }
+
   var node = currentParent;
   var ret = [];
+
   while (true) {
     if (node.tag === HostComponent || node.tag === HostText || node.tag === ClassComponent || node.tag === FunctionComponent) {
       var publicInst = node.stateNode;
+
       if (test(publicInst)) {
         ret.push(publicInst);
       }
     }
+
     if (node.child) {
       node.child.return = node;
       node = node.child;
       continue;
     }
+
     if (node === currentParent) {
       return ret;
     }
+
     while (!node.sibling) {
       if (!node.return || node.return === currentParent) {
         return ret;
       }
+
       node = node.return;
     }
+
     node.sibling.return = node.return;
     node = node.sibling;
   }
@@ -931,12 +1294,15 @@ function validateClassInstance(inst, methodName) {
     // This is probably too relaxed but it's existing behavior.
     return;
   }
+
   if (get(inst)) {
     // This is a public instance indeed.
     return;
   }
-  var received = void 0;
+
+  var received;
   var stringified = '' + inst;
+
   if (Array.isArray(inst)) {
     received = 'an array';
   } else if (inst && inst.nodeType === ELEMENT_NODE && inst.tagName) {
@@ -946,12 +1312,13 @@ function validateClassInstance(inst, methodName) {
   } else {
     received = stringified;
   }
-  invariant(false, '%s(...): the first argument must be a React class instance. Instead received: %s.', methodName, received);
+
+  {
+    {
+      throw Error(methodName + "(...): the first argument must be a React class instance. Instead received: " + received + ".");
+    }
+  }
 }
-
-// a stub element, lazily initialized, used by act() when flushing effects
-var actContainerElement = null;
-
 /**
  * Utilities for making it easy to test React components.
  *
@@ -961,56 +1328,55 @@ var actContainerElement = null;
  * utilities will suffice for testing purposes.
  * @lends ReactTestUtils
  */
+
+
 var ReactTestUtils = {
   renderIntoDocument: function (element) {
-    var div = document.createElement('div');
-    // None of our tests actually require attaching the container to the
+    var div = document.createElement('div'); // None of our tests actually require attaching the container to the
     // DOM, and doing so creates a mess that we rely on test isolation to
     // clean up, so we're going to stop honoring the name of this method
     // (and probably rename it eventually) if no problems arise.
     // document.documentElement.appendChild(div);
+
     return ReactDOM.render(element, div);
   },
-
   isElement: function (element) {
     return React.isValidElement(element);
   },
-
   isElementOfType: function (inst, convenienceConstructor) {
     return React.isValidElement(inst) && inst.type === convenienceConstructor;
   },
-
   isDOMComponent: function (inst) {
     return !!(inst && inst.nodeType === ELEMENT_NODE && inst.tagName);
   },
-
   isDOMComponentElement: function (inst) {
     return !!(inst && React.isValidElement(inst) && !!inst.tagName);
   },
-
   isCompositeComponent: function (inst) {
     if (ReactTestUtils.isDOMComponent(inst)) {
       // Accessing inst.setState warns; just return false as that'll be what
       // this returns when we have DOM nodes as refs directly
       return false;
     }
+
     return inst != null && typeof inst.render === 'function' && typeof inst.setState === 'function';
   },
-
   isCompositeComponentWithType: function (inst, type) {
     if (!ReactTestUtils.isCompositeComponent(inst)) {
       return false;
     }
+
     var internalInstance = get(inst);
     var constructor = internalInstance.type;
     return constructor === type;
   },
-
   findAllInRenderedTree: function (inst, test) {
     validateClassInstance(inst, 'findAllInRenderedTree');
+
     if (!inst) {
       return [];
     }
+
     var internalInstance = get(inst);
     return findAllInRenderedFiberTreeInternal(internalInstance, test);
   },
@@ -1025,20 +1391,29 @@ var ReactTestUtils = {
     return ReactTestUtils.findAllInRenderedTree(root, function (inst) {
       if (ReactTestUtils.isDOMComponent(inst)) {
         var className = inst.className;
+
         if (typeof className !== 'string') {
           // SVG, probably.
           className = inst.getAttribute('class') || '';
         }
+
         var classList = className.split(/\s+/);
 
         if (!Array.isArray(classNames)) {
-          !(classNames !== undefined) ? invariant(false, 'TestUtils.scryRenderedDOMComponentsWithClass expects a className as a second argument.') : void 0;
+          if (!(classNames !== undefined)) {
+            {
+              throw Error("TestUtils.scryRenderedDOMComponentsWithClass expects a className as a second argument.");
+            }
+          }
+
           classNames = classNames.split(/\s+/);
         }
+
         return classNames.every(function (name) {
           return classList.indexOf(name) !== -1;
         });
       }
+
       return false;
     });
   },
@@ -1052,9 +1427,11 @@ var ReactTestUtils = {
   findRenderedDOMComponentWithClass: function (root, className) {
     validateClassInstance(root, 'findRenderedDOMComponentWithClass');
     var all = ReactTestUtils.scryRenderedDOMComponentsWithClass(root, className);
+
     if (all.length !== 1) {
       throw new Error('Did not find exactly one match (found: ' + all.length + ') ' + 'for class:' + className);
     }
+
     return all[0];
   },
 
@@ -1079,9 +1456,11 @@ var ReactTestUtils = {
   findRenderedDOMComponentWithTag: function (root, tagName) {
     validateClassInstance(root, 'findRenderedDOMComponentWithTag');
     var all = ReactTestUtils.scryRenderedDOMComponentsWithTag(root, tagName);
+
     if (all.length !== 1) {
       throw new Error('Did not find exactly one match (found: ' + all.length + ') ' + 'for tag:' + tagName);
     }
+
     return all[0];
   },
 
@@ -1105,9 +1484,11 @@ var ReactTestUtils = {
   findRenderedComponentWithType: function (root, componentType) {
     validateClassInstance(root, 'findRenderedComponentWithType');
     var all = ReactTestUtils.scryRenderedComponentsWithType(root, componentType);
+
     if (all.length !== 1) {
       throw new Error('Did not find exactly one match (found: ' + all.length + ') ' + 'for componentType:' + componentType);
     }
+
     return all[0];
   },
 
@@ -1127,64 +1508,27 @@ var ReactTestUtils = {
   mockComponent: function (module, mockTagName) {
     if (!hasWarnedAboutDeprecatedMockComponent) {
       hasWarnedAboutDeprecatedMockComponent = true;
-      lowPriorityWarning$1(false, 'ReactTestUtils.mockComponent() is deprecated. ' + 'Use shallow rendering or jest.mock() instead.\n\n' + 'See https://fb.me/test-utils-mock-component for more information.');
+      lowPriorityWarningWithoutStack$1(false, 'ReactTestUtils.mockComponent() is deprecated. ' + 'Use shallow rendering or jest.mock() instead.\n\n' + 'See https://fb.me/test-utils-mock-component for more information.');
     }
 
     mockTagName = mockTagName || module.mockTagName || 'div';
-
     module.prototype.render.mockImplementation(function () {
       return React.createElement(mockTagName, null, this.props.children);
     });
-
     return this;
   },
-
   nativeTouchData: function (x, y) {
     return {
-      touches: [{ pageX: x, pageY: y }]
+      touches: [{
+        pageX: x,
+        pageY: y
+      }]
     };
   },
-
   Simulate: null,
   SimulateNative: {},
-
-  act: function (callback) {
-    if (actContainerElement === null) {
-      // warn if we can't actually create the stub element
-      {
-        !(typeof document !== 'undefined' && document !== null && typeof document.createElement === 'function') ? warningWithoutStack$1(false, 'It looks like you called TestUtils.act(...) in a non-browser environment. ' + "If you're using TestRenderer for your tests, you should call " + 'TestRenderer.act(...) instead of TestUtils.act(...).') : void 0;
-      }
-      // then make it
-      actContainerElement = document.createElement('div');
-    }
-
-    var result = ReactDOM.unstable_batchedUpdates(callback);
-    // note: keep these warning messages in sync with
-    // createReactNoop.js and ReactTestRenderer.js
-    {
-      if (result !== undefined) {
-        var addendum = void 0;
-        if (result !== null && typeof result.then === 'function') {
-          addendum = '\n\nIt looks like you wrote ReactTestUtils.act(async () => ...), ' + 'or returned a Promise from the callback passed to it. ' + 'Putting asynchronous logic inside ReactTestUtils.act(...) is not supported.\n';
-        } else {
-          addendum = ' You returned: ' + result;
-        }
-        warningWithoutStack$1(false, 'The callback passed to ReactTestUtils.act(...) function must not return anything.%s', addendum);
-      }
-    }
-    ReactDOM.render(React.createElement('div', null), actContainerElement);
-    // we want the user to not expect a return,
-    // but we want to warn if they use it like they can await on it.
-    return {
-      then: function () {
-        {
-          warningWithoutStack$1(false, 'Do not await the result of calling ReactTestUtils.act(...), it is not a Promise.');
-        }
-      }
-    };
-  }
+  act: act
 };
-
 /**
  * Exports:
  *
@@ -1193,25 +1537,33 @@ var ReactTestUtils = {
  * - `ReactTestUtils.Simulate.change(Element)`
  * - ... (All keys from event plugin `eventTypes` objects)
  */
+
 function makeSimulator(eventType) {
   return function (domNode, eventData) {
-    !!React.isValidElement(domNode) ? invariant(false, 'TestUtils.Simulate expected a DOM node as the first argument but received a React element. Pass the DOM node you wish to simulate the event on instead. Note that TestUtils.Simulate will not work if you are using shallow rendering.') : void 0;
-    !!ReactTestUtils.isCompositeComponent(domNode) ? invariant(false, 'TestUtils.Simulate expected a DOM node as the first argument but received a component instance. Pass the DOM node you wish to simulate the event on instead.') : void 0;
+    if (!!React.isValidElement(domNode)) {
+      {
+        throw Error("TestUtils.Simulate expected a DOM node as the first argument but received a React element. Pass the DOM node you wish to simulate the event on instead. Note that TestUtils.Simulate will not work if you are using shallow rendering.");
+      }
+    }
+
+    if (!!ReactTestUtils.isCompositeComponent(domNode)) {
+      {
+        throw Error("TestUtils.Simulate expected a DOM node as the first argument but received a component instance. Pass the DOM node you wish to simulate the event on instead.");
+      }
+    }
 
     var dispatchConfig = eventNameDispatchConfigs[eventType];
-
     var fakeNativeEvent = new Event();
     fakeNativeEvent.target = domNode;
-    fakeNativeEvent.type = eventType.toLowerCase();
-
-    // We don't use SyntheticEvent.getPooled in order to not have to worry about
+    fakeNativeEvent.type = eventType.toLowerCase(); // We don't use SyntheticEvent.getPooled in order to not have to worry about
     // properly destroying any properties assigned from `eventData` upon release
-    var targetInst = getInstanceFromNode(domNode);
-    var event = new SyntheticEvent(dispatchConfig, targetInst, fakeNativeEvent, domNode);
 
-    // Since we aren't using pooling, always persist the event. This will make
+    var targetInst = getInstanceFromNode(domNode);
+    var event = new SyntheticEvent(dispatchConfig, targetInst, fakeNativeEvent, domNode); // Since we aren't using pooling, always persist the event. This will make
     // sure it's marked and won't warn when setting additional properties.
+
     event.persist();
+
     _assign(event, eventData);
 
     if (dispatchConfig.phasedRegistrationNames) {
@@ -1232,8 +1584,8 @@ function makeSimulator(eventType) {
 
 function buildSimulators() {
   ReactTestUtils.Simulate = {};
+  var eventType;
 
-  var eventType = void 0;
   for (eventType in eventNameDispatchConfigs) {
     /**
      * @param {!Element|ReactDOMComponent} domComponentOrNode
@@ -1244,7 +1596,6 @@ function buildSimulators() {
 }
 
 buildSimulators();
-
 /**
  * Exports:
  *
@@ -1264,7 +1615,9 @@ buildSimulators();
 function makeNativeSimulator(eventType, topLevelType) {
   return function (domComponentOrNode, nativeEventData) {
     var fakeNativeEvent = new Event(eventType);
+
     _assign(fakeNativeEvent, nativeEventData);
+
     if (ReactTestUtils.isDOMComponent(domComponentOrNode)) {
       simulateNativeEventOnDOMComponent(topLevelType, domComponentOrNode, fakeNativeEvent);
     } else if (domComponentOrNode.tagName) {
@@ -1286,7 +1639,6 @@ function makeNativeSimulator(eventType, topLevelType) {
 });
 
 
-
 var ReactTestUtils$2 = Object.freeze({
 	default: ReactTestUtils
 });
@@ -1295,6 +1647,8 @@ var ReactTestUtils$3 = ( ReactTestUtils$2 && ReactTestUtils ) || ReactTestUtils$
 
 // TODO: decide on the top-level export form.
 // This is hacky but makes it work with both Rollup and Jest.
+
+
 var testUtils = ReactTestUtils$3.default || ReactTestUtils$3;
 
 return testUtils;
