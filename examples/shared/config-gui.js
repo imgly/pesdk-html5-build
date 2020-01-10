@@ -51,6 +51,7 @@ window.addEventListener('load', function () {
   // controllers.push(editorFolder.add(editorConfig, 'editor.tools'))
   // controllers.push(editorFolder.add(editorConfig, 'editor.controlsOrder'))
   controllers.push(editorFolder.add(editorConfig, 'editor.photoroll'))
+  controllers.push(editorFolder.add(editorConfig, 'editor.export.download'))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.format', ['image/jpeg', 'image/png', 'image/webp']))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.type', ['image', 'data-url', 'buffer', 'blob', 'ms-blob']))
   controllers.push(editorFolder.add(editorConfig, 'editor.export.fileBasename'))

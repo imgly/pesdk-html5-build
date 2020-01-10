@@ -1,3 +1,9 @@
+# 4.22.2
+
+## Fixed
+
+*   [[PESDK-5216](https://imglysdk.atlassian.net/browse/PESDK-5216)] - Fixed export in MS Edge toBlob 
+
 # 4.22.1
 
 ## Fixed
