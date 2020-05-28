@@ -1,10 +1,14 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable no-useless-constructor */
+/* eslint-disable class-methods-use-this */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react'
 import { Configuration } from './configuration'
+import { ExportConfiguration, ExportData } from './configuration/feature/export'
 import { ConfigurationProps } from './configuration/props'
-import { ExportConfiguration } from './configuration/feature/export'
 import { EventEmitter } from './eventEmitter'
 import { UIEvent } from './events'
-import { SerialisationSchema } from './serialization/3.8.0/schema'
+import { SerialisationSchema } from './serialization/3.9.0/schema'
 
 export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps> {
   public ui: EventEmitter<UIEvent>
@@ -20,11 +24,16 @@ export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProp
   public close: () => void
 
   /**
+   * returns if editor has some changes
+   */
+  public hasChanges: () => boolean
+
+  /**
    * Exports an image
    * @param {ExportConfiguration['image']} options = false
    * @return {Promise}
    */
-  public export: (options?: ExportConfiguration['image']) => Promise<string>
+  public export: (options?: ExportConfiguration['image']) => Promise<ExportData>
 
   /**
    * Dynamically sets the image to the ui
@@ -42,7 +51,7 @@ export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProp
    * Deserializes serialization schema to editor state
    * @param {Image} image
    */
-  public deserialize: (data: SerialisationSchema) => void
+  public deserialize: (data: SerialisationSchema) => Promise<void>
 }
 
 export class EditorApi extends EventEmitter<UIEvent> {
@@ -57,11 +66,16 @@ export class EditorApi extends EventEmitter<UIEvent> {
   public close: () => void
 
   /**
+   * returns if editor has some changes
+   */
+  public hasChanges: () => boolean
+
+  /**
    * Exports an image
    * @param {ExportConfiguration['image']} options
    * @return {Promise}
    */
-  public export: (options?: ExportConfiguration['image']) => Promise<string>
+  public export: (options?: ExportConfiguration['image']) => Promise<ExportData>
 
   /**
    * Dynamically sets the image to the ui
@@ -79,7 +93,7 @@ export class EditorApi extends EventEmitter<UIEvent> {
    * Deserializes serialization schema to editor state
    * @param {Image} image
    */
-  public deserialize: (data: SerialisationSchema) => void
+  public deserialize: (data: SerialisationSchema) => Promise<void>
 }
 
 /**
@@ -88,7 +102,6 @@ export class EditorApi extends EventEmitter<UIEvent> {
 export const PhotoEditorSDKUI: {
   init: (config: Configuration) => Promise<EditorApi>
 }
-
 export * from './common/existingAsset';
 export * from './common/canvasAction';
 export * from './common/tool';
@@ -126,5 +139,5 @@ export * from './tools/textdesign';
 export * from './tools/transform';
 export * from './events';
 export * from './eventEmitter';
-export * from './serialization/3.8.0/schema';
-export * from './serialization/3.8.0/appSerializableState';
+export * from './serialization/3.9.0/schema';
+export * from './serialization/3.9.0/appSerializableState';

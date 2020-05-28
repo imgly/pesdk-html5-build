@@ -15,8 +15,8 @@ export interface CustomComponents {
      *  the user will just have to place it on the element you want to react to
      * - tool: the tool a card component will be loaded in
      */
-    advancedUICategoryCard: CustomCard;
-    advancedUIItemCard: CustomCard;
+    advancedUICategoryCard?: CustomCard;
+    advancedUIItemCard?: CustomCard;
     /**
      * toolbarItem will have following props to be taken care of
      * - icon: SVGElement, user can use this or replace it with your icon
@@ -26,12 +26,12 @@ export interface CustomComponents {
      *  the user will just have to place it on the element you want to react to
      * - tool: the tool a card component will be loaded in
      */
-    advancedUIToolbarItem: CustomAdvancedToolbarItem;
+    advancedUIToolbarItem?: CustomAdvancedToolbarItem;
     /**
      * loader will have following props to be taken care of
      * - show: boolean
      */
-    loader: CustomLoader;
+    loader?: CustomLoader;
     /**
      * buttons will have following props to be taken care of
      * - icon: ReactNode, user can use this or replace it with your icon
@@ -40,7 +40,7 @@ export interface CustomComponents {
      * - onClick: click handler that already exists in code,
      *  the user will just have to place it on the element you want to react to
      */
-    buttons: CustomButtons;
+    buttons?: CustomButtons;
 }
 export interface CustomConfiguration {
     /**

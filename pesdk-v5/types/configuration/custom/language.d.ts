@@ -21,17 +21,17 @@ export interface LanguageInterface {
     infoModals?: InfoLocale;
     errorModals?: ErrorLocale;
     warningModals?: WarningLocale;
-    [Tool.LIBRARY]?: LibraryLocale;
-    [Tool.FILTER]?: FilterLocale;
-    [Tool.ADJUSTMENT]?: AdjustmentsLocale;
-    [Tool.FOCUS]?: FocusLocale;
-    [Tool.OVERLAY]?: OverlayLocale;
-    [Tool.STICKER]?: StickerLocale;
-    [Tool.TEXT]?: TextLocale;
-    [Tool.TEXT_DESIGN]?: TextDesignLocale;
-    [Tool.FRAME]?: FrameLocale;
-    [Tool.TRANSFORM]?: TransformLocale;
-    [Tool.BRUSH]?: BrushLocale;
+    [Tool.LIBRARY]?: Partial<LibraryLocale>;
+    [Tool.FILTER]?: Partial<FilterLocale>;
+    [Tool.ADJUSTMENT]?: Partial<AdjustmentsLocale>;
+    [Tool.FOCUS]?: Partial<FocusLocale>;
+    [Tool.OVERLAY]?: Partial<OverlayLocale>;
+    [Tool.STICKER]?: Partial<StickerLocale>;
+    [Tool.TEXT]?: Partial<TextLocale>;
+    [Tool.TEXT_DESIGN]?: Partial<TextDesignLocale>;
+    [Tool.FRAME]?: Partial<FrameLocale>;
+    [Tool.TRANSFORM]?: Partial<TransformLocale>;
+    [Tool.BRUSH]?: Partial<BrushLocale>;
 }
 export interface CommonLocale {
     error?: string;
@@ -58,13 +58,13 @@ export interface ErrorLocale {
     webcamUnavailable?: ActionModalLocale;
     invalidFileType?: ActionModalLocale;
     stickerLoading?: ActionModalLocale;
-    unsupportedSerializationVersion?: ActionModalLocale;
     unexpectedError?: ActionModalLocale;
 }
 export interface WarningLocale {
     imageResized?: ActionModalLocale;
     discardChanges?: ActionModalLocale;
     unsavedChanges?: ActionModalLocale;
+    unsupportedSerializationVersion?: ActionModalLocale;
 }
 export interface LibraryLocale {
     title?: string;
@@ -338,14 +338,14 @@ export interface StickerLocale {
         imgly_sticker_shapes_spray_03?: string;
         imgly_sticker_shapes_spray_04?: string;
     };
-    canvasActions: {
+    canvasActions?: {
         buttonDelete?: string;
         buttonBringToFront?: string;
         buttonDuplicate?: string;
         buttonFlipHorizontal?: string;
         buttonFlipVertical?: string;
     };
-    history: {
+    history?: {
         color?: string;
         opacity?: string;
         flip?: string;
@@ -379,7 +379,7 @@ export interface TextLocale {
         buttonBringToFront?: string;
         buttonDuplicate?: string;
     };
-    history: {
+    history?: {
         alignment?: string;
         textColor?: string;
         backgroundColor?: string;
@@ -405,14 +405,14 @@ export interface TextDesignLocale {
         buttonClose?: string;
         inputText?: string;
     };
-    canvasActions: {
+    canvasActions?: {
         buttonEdit?: string;
         buttonInvert?: string;
         buttonDelete?: string;
         buttonBringToFront?: string;
         buttonDuplicate?: string;
     };
-    history: {
+    history?: {
         color?: string;
         shuffle?: string;
         invert?: string;

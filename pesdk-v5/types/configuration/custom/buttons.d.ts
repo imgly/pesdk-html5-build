@@ -7,18 +7,18 @@ export interface CustomButtonProps {
 }
 export declare type CustomButton = React.ElementType<CustomButtonProps>;
 export interface CustomButtons {
-    mainCanvasActionUndo: CustomButton;
-    mainCanvasActionRedo: CustomButton;
-    mainCanvasActionExport: CustomButton;
-    mainCanvasActionClose: CustomButton;
-    canvasActionEdit: CustomButton;
-    canvasActionBringToFront: CustomButton;
-    canvasActionDuplicate: CustomButton;
-    canvasActionDelete: CustomButton;
-    canvasActionInvert: CustomButton;
-    canvasActionFlip: CustomButton;
-    transformActionFlipHorizontal: CustomButton;
-    transformActionFlipVertical: CustomButton;
-    transformActionRotateClockwise: CustomButton;
-    transformActionRotateAntiClockwise: CustomButton;
+    mainCanvasActionUndo?: CustomButton;
+    mainCanvasActionRedo?: CustomButton;
+    mainCanvasActionExport?: CustomButton;
+    mainCanvasActionClose?: CustomButton;
+    canvasActionEdit?: CustomButton;
+    canvasActionBringToFront?: CustomButton;
+    canvasActionDuplicate?: CustomButton;
+    canvasActionDelete?: CustomButton;
+    canvasActionInvert?: CustomButton;
+    canvasActionFlip?: CustomButton;
+    transformActionFlipHorizontal?: CustomButton;
+    transformActionFlipVertical?: CustomButton;
+    transformActionRotateClockwise?: CustomButton;
+    transformActionRotateAntiClockwise?: CustomButton;
 }

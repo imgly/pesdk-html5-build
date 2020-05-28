@@ -118,3 +118,7 @@ export declare class ExportConfiguration {
         embedSourceImage?: boolean;
     };
 }
+/**
+ * The return value of an export operation.
+ */
+export declare type ExportData = string | HTMLImageElement | Blob;

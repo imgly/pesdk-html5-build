@@ -4,6 +4,11 @@
 export declare type CustomMeasurements = {
     advancedUIToolbar?: {
         width?: number;
+        marginBottom?: number;
+    };
+    advancedUIToolControlBar?: {
+        width?: number;
+        marginBottom?: number;
     };
     basicUIToolbar?: {
         openHeight?: number;
