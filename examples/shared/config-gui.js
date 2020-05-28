@@ -99,7 +99,7 @@ window.addEventListener('load', function () {
 
   var serialization = {
     mode: 'download',
-    version: '3.7.0',
+    version: '3.8.0',
     includeImage: false,
     serverUrl: 'http://localhost:3000/render',
     handleData: function (data, version) {
@@ -148,7 +148,7 @@ window.addEventListener('load', function () {
 
   var serializationFolder = gui.addFolder('Serialization')
   serializationFolder.add(serialization, 'mode', ['download', 'log', 'alert', 'server'])
-  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0', '3.1.0', '3.2.0', '3.4.0', '3.5.0', '3.6.0', '3.7.0'])
+  serializationFolder.add(serialization, 'version', ['2.0.0', '3.0.0', '3.1.0', '3.2.0', '3.4.0', '3.5.0', '3.6.0', '3.7.0', '3.8.0'])
   serializationFolder.add(serialization, 'includeImage')
   // serializationFolder.add(serialization, 'serverUrl')
   serializationFolder.add(serialization, 'serialize').name('Serialize')

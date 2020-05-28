@@ -1,3 +1,9 @@
+# 4.22.3
+
+## Fixed
+
+*   [[PESDK-5229](https://imglysdk.atlassian.net/browse/PESDK-5229)] - Fixed pesdk server memory leak
+
 # 4.22.2
 
 ## Fixed
