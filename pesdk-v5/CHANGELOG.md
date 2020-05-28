@@ -1,3 +1,12 @@
+# 5.0.1
+
+## Fixed
+
+*   [[PESDK-5503](https://imglysdk.atlassian.net/browse/PESDK-5503)] - Fixed horizontal tooltip position
+*   [[PESDK-5504](https://imglysdk.atlassian.net/browse/PESDK-5504)] - Fixed transform thumbnails
+*   [[PESDK-5505](https://imglysdk.atlassian.net/browse/PESDK-5505)] - Fixed component prop types
+*   [[PESDK-5506](https://imglysdk.atlassian.net/browse/PESDK-5506)] - Fixed updating of Advanced UI on custom sticker upload
+
 # 5.0.0
 
 Release notes - PhotoEditor SDK - Version html5-v5
