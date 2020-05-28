@@ -1,3 +1,21 @@
+# 5.1.0
+
+## Added
+
+*   [[PESDK-5514](https://imglysdk.atlassian.net/browse/PESDK-5514)] - Added a configuration option for filter previews
+*   [[PESDK-5516](https://imglysdk.atlassian.net/browse/PESDK-5516)] - Added a configuration option for base font path
+*   [[PESDK-5517](https://imglysdk.atlassian.net/browse/PESDK-5517)] - Added CSS resets for color, font and line-height
+
+## Fixed
+
+*   [[PESDK-5520](https://imglysdk.atlassian.net/browse/PESDK-5520)] - Fixed modal color for a better contrast
+*   [[PESDK-5521](https://imglysdk.atlassian.net/browse/PESDK-5521)] - Fixed library search when no provider is configured
+*   [[PESDK-5523](https://imglysdk.atlassian.net/browse/PESDK-5523)] - Fixed the error and warning modal preheading
+*   [[PESDK-5524](https://imglysdk.atlassian.net/browse/PESDK-5524)] - Fixed non-sequential loading of sprites
+*   [[PESDK-5525](https://imglysdk.atlassian.net/browse/PESDK-5525)] - Fixed svg thumbnails for custom components
+*   [[PESDK-5527](https://imglysdk.atlassian.net/browse/PESDK-5527)] - Fixed color picker not closing on outside click
+*   [[PESDK-5528](https://imglysdk.atlassian.net/browse/PESDK-5528)] - Fixed asset resolution for absolute urls
+
 # 5.0.1
 
 ## Fixed

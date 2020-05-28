@@ -1,0 +1,19 @@
+{
+  "name": "example-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "photoeditorsdk": "file:../build/photoeditorsdk",
+    "photoeditorsdk-engine": "file:../build/photoeditorsdk-engine",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  }
+}

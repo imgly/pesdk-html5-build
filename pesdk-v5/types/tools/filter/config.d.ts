@@ -100,4 +100,10 @@ export declare class FilterConfiguration {
      * false
      */
     flattenCategories?: boolean;
+    /**
+     * Controls if the user can load the preview thumbnail for every filter.
+     * @example // Defaults to:
+     * true
+     */
+    enablePreviewThumbnails?: boolean;
 }

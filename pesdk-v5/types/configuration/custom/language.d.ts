@@ -59,6 +59,7 @@ export interface ErrorLocale {
     invalidFileType?: ActionModalLocale;
     stickerLoading?: ActionModalLocale;
     unsupportedSerializationVersion?: ActionModalLocale;
+    unexpectedError?: ActionModalLocale;
 }
 export interface WarningLocale {
     imageResized?: ActionModalLocale;
