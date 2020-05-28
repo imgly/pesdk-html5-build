@@ -1,0 +1,32 @@
+
+{
+  "name": "photoeditorsdk",
+  "version": "5.0.0",
+  "description": "The most comprehensive photo editor SDK for HTML5",
+  "main": "index.js",
+  "module": "index.esm.js",
+  "types": "types/index.d.ts",
+  "repository": {
+    "url": "git@github.com:imgly/pesdk-html5-build.git",
+    "type": "git"
+  },
+  "assets": ["assets"],
+  "keywords": [
+    "photo",
+    "image",
+    "photoeditor",
+    "webgl",
+    "canvas"
+  ],
+  "homepage": "https://www.photoeditorsdk.com/",
+  "author": "PhotoEditorSDK (img.ly GmbH) <contact@img.ly>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "peerDependencies": {
+    "react": ">= 16.3.0",
+    "react-dom": ">= 16.3.0",
+    "styled-components": ">= 4.0.0"
+  },
+  "scripts": {
+    "publish:npm": "npm publish"
+  }
+}

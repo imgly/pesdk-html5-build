@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="61px" height="42px" viewBox="0 0 61 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>imgly_sticker_emoticons_baby_chicken</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="baby_chicken" transform="translate(0.000000, -1.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(0.000000, 4.000000)">
+                <path d="M60.08,22.617 C60.08,34.648 46.836,38.025 30.5,38.025 C14.164,38.025 0.92,34.648 0.92,22.617 C0.92,10.584 14.164,0.83 30.5,0.83 C46.836,0.83 60.08,10.584 60.08,22.617 Z" id="Shape" fill="#FFC533"></path>
+                <path d="M60.08,22.617 C60.08,34.648 46.836,38.025 30.5,38.025 C14.164,38.025 0.92,34.648 0.92,22.617 C0.92,10.584 14.164,3.855 30.5,3.855 C46.836,3.855 60.08,10.584 60.08,22.617 Z" id="Shape" fill="#FFB031"></path>
+                <path d="M60.08,22.617 C60.08,34.648 46.836,38.025 30.5,38.025 C14.164,38.025 0.92,34.648 0.92,22.617 C0.92,10.584 14.164,17.125 30.5,17.125 C46.836,17.125 60.08,10.584 60.08,22.617 Z" id="Shape" fill="#FF912E"></path>
+                <ellipse id="Oval" fill="#FF4817" cx="30.5" cy="25.641" rx="10.688" ry="2.375"></ellipse>
+                <path d="M41.188,25.641 C41.188,26.953 36.403,28.016 30.5,28.016 C24.597,28.016 19.812,26.954 19.812,25.641 C19.812,24.33 24.597,26.143 30.5,26.143 C36.403,26.143 41.188,24.33 41.188,25.641 Z" id="Shape" fill="#D33213"></path>
+                <g transform="translate(16.000000, 17.000000)" id="Oval" fill="#082856">
+                    <circle cx="2.81" cy="3.312" r="2.657"></circle>
+                    <circle cx="26.19" cy="3.312" r="2.657"></circle>
+                </g>
+                <g transform="translate(16.000000, 20.000000)" id="Shape" fill="#000000">
+                    <path d="M5.467,0.312 C5.467,1.781 4.278,2.97 2.811,2.97 C1.342,2.97 0.153,1.781 0.153,0.312"></path>
+                    <path d="M28.848,0.312 C28.848,1.781 27.659,2.97 26.192,2.97 C24.723,2.97 23.534,1.781 23.534,0.312"></path>
+                </g>
+            </g>
+            <path d="M32.416,2.891 C32.416,3.95 31.559,6.641 30.5,6.641 C29.441,6.641 28.584,3.95 28.584,2.891 C28.584,1.832 29.441,0.975 30.5,0.975 C31.559,0.975 32.416,1.832 32.416,2.891 Z" id="Shape" fill="#FFC533"></path>
+        </g>
+    </g>
+</svg>
