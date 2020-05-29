@@ -1,3 +1,14 @@
+# 5.2.2
+
+## Fixed
+
+- Fixed the crop controls positions on desktop
+
+## Known Issues
+
+- We are currently looking into an issue where the editor will throw an error in a vue-cli environment
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.2.1
 
 ## Changed
@@ -11,6 +22,7 @@
 - Fixed the image download in iOS Safari
 
 ## Known Issues
+
 - We are currently looking into an issue where the editor will throw an error in a vue-cli environment
 - We had to disable the history (Undo/Redo) in the transform tool because of major issues
 
@@ -44,6 +56,7 @@
 - Improved the resize detection for dimension changes of the parent element
 
 ## Known Issues
+
 - We are currently looking into an issue where the editor cannot be integrated because the 'asap/raw' module is missing
 - We had to disable the history (Undo/Redo) in the transform tool because of major issues
 
