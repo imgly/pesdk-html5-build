@@ -33,4 +33,19 @@ export declare class TextConfiguration {
      * [CanvasAction.EDIT, CanvasAction.BRING_TO_FRONT, CanvasAction.DUPLICATE, CanvasAction.DELETE]
      */
     canvasActions?: Array<CanvasAction.EDIT | CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE>;
+    /**
+     * Add an optional maximum amount of letters for the text
+     */
+    maxCharacterLimit?: number;
+    /**
+     * Every time the text gets too long, the editor scale the font size to a pleasant size.
+     * If this is enabled the scaling for the font size is disabled
+     * @example // Defaults to:
+     * false
+     */
+    disableAutoScaling?: boolean;
+    /**
+     * Add an optional minimal font size for the auto scaling
+     */
+    minFontSizeForAutoScaling?: number;
 }

@@ -78,6 +78,8 @@ export declare class Configuration {
     displayResizeWarning?: boolean;
     /** Should a message be displayed when when Photoeditor SDK is exited with close event */
     displayCloseWarning?: boolean;
+    /** Should the toolcontrolbartitle be displayed (advancedui only) */
+    displayToolControlBarTitle?: boolean;
     /**
      * When set to `true`, the user is forced to crop the asset to one of the allowed crop ratios in
      * `transform.items` before being able to use other features of the editor.

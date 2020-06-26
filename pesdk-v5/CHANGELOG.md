@@ -1,3 +1,37 @@
+# 5.3.0
+
+## Added
+
+- Added option to disable the AdvancedUIToolControlBar title
+- Added an numeric restriction to the amount of text
+- Added an option to disable the automatic text scaling
+- Added an option to change the minimal font size for the automatic text scaling
+- Added the border radius of the canvas control styling options to the theme
+- Added `preventExportEvent` to the export configuration to prevent the `UIEvent.EXPORT` in the export function 
+- Added the ColorItem to the custom components api
+- Added the Checkbox to the custom components api
+- Added the Text Alignment buttons to the custom components api
+
+## Fixed
+
+- Fixed live filter preview
+- Fixed loading unused fonts
+- Fixed the export for exportType `blob`
+- Fixed the sprite actions for ie11 on small screens
+- Fixed the export error for jpeg images of type blob or image
+- Fixed the custom transform categories on safari
+- Fixed the snapping guides colors in the light theme
+
+## Known Issues
+
+- There is an issue where the editor will throw an error in a vue-cli environment
+- There is an issue where the editor does not work if an angular environment is configured for IE11
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
+## Changed
+
+- Improved the custom components api for a better developer experience
+
 # 5.2.2
 
 ## Fixed
@@ -20,6 +54,7 @@
 - Fixed the measurements configuration
 - Fixed SVG stickers can become pixelated when resized.
 - Fixed the image download in iOS Safari
+- Fixed the loading of transform configuration options
 
 ## Known Issues
 

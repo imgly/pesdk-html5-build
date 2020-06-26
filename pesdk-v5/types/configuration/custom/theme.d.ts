@@ -177,6 +177,10 @@ export interface ThemeInterface {
         controlsColor?: string;
         inputBorderColor?: string;
     };
+    colorItem?: {
+        borderRadius?: string;
+        margin?: string;
+    };
     /** relevant only for Basic UI */
     tabTitle?: {
         background?: string;
@@ -217,6 +221,7 @@ export interface ThemeInterface {
         background?: string;
         foreground?: string;
         separatorColor?: string;
+        borderRadius?: number;
     };
     canvas?: {
         background?: string;

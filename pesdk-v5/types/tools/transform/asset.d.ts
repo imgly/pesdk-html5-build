@@ -3,6 +3,7 @@ export interface TransformCategory {
     identifier: string;
     name: string;
     items: CropRatio[];
+    thumbnailURI?: string;
 }
 export interface CropRatio {
     identifier: string;

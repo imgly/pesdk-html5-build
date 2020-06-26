@@ -450,7 +450,6 @@ export interface TransformLocale {
         tabFlipAndRotate?: string;
         tabResolution?: string;
         tabCropSize?: string;
-        selectFlipRatio?: string;
     };
     categories?: {
         imgly_transforms_common?: string;

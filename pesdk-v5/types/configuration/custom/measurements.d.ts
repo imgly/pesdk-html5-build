@@ -23,4 +23,7 @@ export declare type CustomMeasurements = {
          * canvas elements to be hidden behind the mainCanvasActionBar  */
         marginTop?: number;
     };
+    colorItem?: {
+        size?: number;
+    };
 };

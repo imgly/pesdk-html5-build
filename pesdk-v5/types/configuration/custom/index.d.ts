@@ -1,46 +1,41 @@
 import { CustomLanguages } from './language';
 import { CustomThemes } from './theme';
-import { CustomCard } from './card';
-import { CustomAdvancedToolbarItem } from './toolbarItem';
-import { CustomLoader } from './loader';
-import { CustomButtons } from './buttons';
+import { CustomCard } from '../../components/advanced/card';
+import { CustomAdvancedToolbarItem } from '../../components/advanced/toolbarItem';
+import { CustomLoader } from '../../components/base/loader';
+import { CustomButtons } from '../../components/base/buttons';
+import { CustomColorItem } from '../../components/base/color/colorItem';
 import { CustomMeasurements } from './measurements';
+import { CustomCheckbox } from '../../components/base/checkbox/checkbox';
 export interface CustomComponents {
     /**
-     * Card will have following props to be taken care of
-     * - image: string, path to image
-     * - label: string
-     * - isActive: boolean
-     * - onClick: click handler that already exists in code,
-     *  the user will just have to place it on the element you want to react to
-     * - tool: the tool a card component will be loaded in
+     * advancedUICategoryCard will receive CustomCardProps
      */
     advancedUICategoryCard?: CustomCard;
+    /**
+     * advancedUIItemCard will receive CustomCardProps
+     */
     advancedUIItemCard?: CustomCard;
     /**
-     * toolbarItem will have following props to be taken care of
-     * - icon: SVGElement, user can use this or replace it with your icon
-     * - label: string
-     * - isActive: boolean
-     * - onClick: click handler that already exists in code,
-     *  the user will just have to place it on the element you want to react to
-     * - tool: the tool a card component will be loaded in
+     * toolbarItem will receive CustomToolbarItemProps
      */
     advancedUIToolbarItem?: CustomAdvancedToolbarItem;
     /**
-     * loader will have following props to be taken care of
-     * - show: boolean
+     * loader will receive CustomLoaderProps
      */
     loader?: CustomLoader;
     /**
-     * buttons will have following props to be taken care of
-     * - icon: ReactNode, user can use this or replace it with your icon
-     * - label: string
-     * - isDisabled: boolean
-     * - onClick: click handler that already exists in code,
-     *  the user will just have to place it on the element you want to react to
+     * buttons will receive CustomButtonProps
      */
     buttons?: CustomButtons;
+    /**
+     * color item will receive CustomColorItemProps
+     */
+    colorItem?: CustomColorItem;
+    /**
+     * checkbox will receive CustomCheckboxProps
+     */
+    checkbox?: CustomCheckbox;
 }
 export interface CustomConfiguration {
     /**

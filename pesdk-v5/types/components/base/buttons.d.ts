@@ -1,11 +1,18 @@
 /// <reference types="react" />
 export interface CustomButtonProps {
     label?: string;
+    ariaLabel?: string;
     icon?: React.ReactNode;
     isDisabled?: boolean;
+    isActive?: boolean;
+    style?: {
+        [key: string]: string;
+    };
+    className?: string;
     onClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
+    children?: React.ReactNode;
 }
-export declare type CustomButton = React.ElementType<CustomButtonProps>;
+export declare type CustomButton = React.ComponentType<CustomButtonProps>;
 export interface CustomButtons {
     mainCanvasActionUndo?: CustomButton;
     mainCanvasActionRedo?: CustomButton;
@@ -21,4 +28,5 @@ export interface CustomButtons {
     transformActionFlipVertical?: CustomButton;
     transformActionRotateClockwise?: CustomButton;
     transformActionRotateAntiClockwise?: CustomButton;
+    textAlignment?: CustomButton;
 }

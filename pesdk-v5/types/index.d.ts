@@ -10,91 +10,57 @@ import { EventEmitter } from './eventEmitter'
 import { UIEvent } from './events'
 import { SerialisationSchema } from './serialization/3.9.0/schema'
 
-export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps> {
-  public ui: EventEmitter<UIEvent>
-
+interface EditorFunctions {
   /**
    * Disposes the PhotoEditor SDK Engine instance
    */
-  public dispose: () => void
+  dispose: () => void
 
   /**
    * Closes the PhotoEditor SDK UI and disposes all Engine instance
    */
-  public close: () => void
+  close: () => void
 
   /**
    * returns if editor has some changes
    */
-  public hasChanges: () => boolean
+  hasChanges: () => boolean
 
   /**
    * Exports an image
    * @param {ExportConfiguration['image']} options = false
    * @return {Promise}
    */
-  public export: (options?: ExportConfiguration['image']) => Promise<ExportData>
+  export: (
+    options?: ExportConfiguration['image'] & {
+      preventExportEvent?: boolean
+    }
+  ) => Promise<ExportData>
 
   /**
    * Dynamically sets the image to the ui
    * @param {Image} image
    */
-  public setImage: (image: string | HTMLImageElement) => void
+  setImage: (image: string | HTMLImageElement) => void
 
   /**
    * Serializes current editor state to the serialization schema
    * @param {Image} image
    */
-  public serialize: ({ image: boolean }) => Promise<SerialisationSchema>
+  serialize: ({ image: boolean }) => Promise<SerialisationSchema>
 
   /**
    * Deserializes serialization schema to editor state
    * @param {Image} image
    */
-  public deserialize: (data: SerialisationSchema) => Promise<void>
+  deserialize: (data: SerialisationSchema) => Promise<void>
 }
 
-export class EditorApi extends EventEmitter<UIEvent> {
-  /**
-   * Disposes the PhotoEditor SDK Engine instance
-   */
-  public dispose: () => void
-
-  /**
-   * Closes the PhotoEditor SDK UI and disposes all Engine instance
-   */
-  public close: () => void
-
-  /**
-   * returns if editor has some changes
-   */
-  public hasChanges: () => boolean
-
-  /**
-   * Exports an image
-   * @param {ExportConfiguration['image']} options
-   * @return {Promise}
-   */
-  public export: (options?: ExportConfiguration['image']) => Promise<ExportData>
-
-  /**
-   * Dynamically sets the image to the ui
-   * @param {Image} image
-   */
-  public setImage: (image: string | HTMLImageElement) => void
-
-  /**
-   * Serializes current editor state to the serialization schema
-   * @param {Image} image
-   */
-  public serialize: ({ image: boolean }) => Promise<SerialisationSchema>
-
-  /**
-   * Deserializes serialization schema to editor state
-   * @param {Image} image
-   */
-  public deserialize: (data: SerialisationSchema) => Promise<void>
+export interface PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps>, EditorFunctions {
+  ui: EventEmitter<UIEvent>
 }
+
+export interface EditorApi extends EventEmitter<UIEvent>, EditorFunctions {}
 
 /**
  * The UI of PhotoEditor SDK
@@ -108,11 +74,17 @@ export * from './common/tool';
 export * from './common/utils';
 export * from './common/float2';
 export * from './common/size';
+export * from './components/advanced/card';
+export * from './components/base/loader';
+export * from './components/base/buttons';
+export * from './components/advanced/toolbarItem';
+export * from './components/base/cardLabel';
+export * from './components/base/color/colorItem';
+export * from './components/base/color/colorItemComponents';
+export * from './components/base/checkbox/checkbox';
+export * from './components/base/checkbox/checkboxComponents';
+export * from './components/base/label';
 export * from './configuration/custom';
-export * from './configuration/custom/card';
-export * from './configuration/custom/loader';
-export * from './configuration/custom/buttons';
-export * from './configuration/custom/toolbarItem';
 export * from './configuration/custom/theme';
 export * from './configuration/custom/language';
 export * from './configuration/custom/measurements';
@@ -141,3 +113,67 @@ export * from './events';
 export * from './eventEmitter';
 export * from './serialization/3.9.0/schema';
 export * from './serialization/3.9.0/appSerializableState';
+import { CustomCardProps } from './components/advanced/card'
+import { CustomToolbarItemProps } from './components/advanced/toolbarItem'
+import { CustomLoaderProps } from './components/base/loader'
+import { CustomCardLabelProps } from './components/base/cardLabel'
+import { CustomButtonProps } from './components/base/buttons'
+import {
+  ColorItemBaseProps,
+  ColorItemBackgroundProps,
+  ColorItemTiledBackgroundProps,
+  ColorItemActiveOverlayProps,
+} from './components/base/color/colorItemComponents'
+import { CustomColorItemProps } from './components/base/color/colorItem'
+import { CustomLabelProps } from './components/base/label'
+import { CustomCheckboxProps } from './components/base/checkbox/checkbox'
+import {
+  CheckboxBaseProps,
+  CheckboxCheckMarkProps,
+  CheckboxInputProps,
+} from './components/base/checkbox/checkboxComponents'
+
+// @ts-ignore:2686
+export class AdvancedUICategoryCard extends React.Component<CustomCardProps> {}
+// @ts-ignore:2686
+export class AdvancedUIItemCard extends React.Component<CustomCardProps> {}
+// @ts-ignore:2686
+export class AdvancedUIToolbarItem extends React.Component<CustomToolbarItemProps> {}
+// @ts-ignore:2686
+export class Loader extends React.Component<CustomLoaderProps> {}
+// @ts-ignore:2686
+export class AdvancedUICardLabel extends React.Component<CustomCardLabelProps> {}
+
+// @ts-ignore:2686
+export class CanvasBarTextSecondaryButton extends React.Component<CustomButtonProps> {}
+// @ts-ignore:2686
+export class ContainedPrimaryButton extends React.Component<CustomButtonProps> {}
+// @ts-ignore:2686
+export class OutlinedSecondaryButton extends React.Component<CustomButtonProps> {}
+// @ts-ignore:2686
+export class SpriteActionButton extends React.Component<CustomButtonProps> {}
+// @ts-ignore:2686
+export class IconButton extends React.Component<CustomButtonProps> {}
+
+// @ts-ignore:2686
+export class Label extends React.Component<CustomLabelProps> {}
+
+// @ts-ignore:2686
+export class Checkbox extends React.Component<CustomCheckboxProps> {}
+// @ts-ignore:2686
+export class CheckboxBase extends React.Component<CheckboxBaseProps> {}
+// @ts-ignore:2686
+export class CheckboxCheckMark extends React.Component<CheckboxCheckMarkProps> {}
+// @ts-ignore:2686
+export class CheckboxInput extends React.Component<CheckboxInputProps> {}
+
+// @ts-ignore:2686
+export class ColorItem extends React.Component<CustomColorItemProps> {}
+// @ts-ignore:2686
+export class ColorItemBase extends React.Component<ColorItemBaseProps> {}
+// @ts-ignore:2686
+export class ColorItemBackground extends React.Component<ColorItemBackgroundProps> {}
+// @ts-ignore:2686
+export class ColorItemTiledBackground extends React.Component<ColorItemTiledBackgroundProps> {}
+// @ts-ignore:2686
+export class ColorItemActiveOverlay extends React.Component<ColorItemActiveOverlayProps> {}
