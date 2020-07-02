@@ -1,3 +1,15 @@
+# 5.3.1
+
+## Fixed
+
+- Fixed an issue with angular polyfills by adding the `photoeditorsdk/no-polyfills` entrypoint
+- Fixed the error which prevented the editor to run in vuejs
+- Fixed the error which is thrown by the close button
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.3.0
 
 ## Added
@@ -7,7 +19,7 @@
 - Added an option to disable the automatic text scaling
 - Added an option to change the minimal font size for the automatic text scaling
 - Added the border radius of the canvas control styling options to the theme
-- Added `preventExportEvent` to the export configuration to prevent the `UIEvent.EXPORT` in the export function 
+- Added `preventExportEvent` to the export configuration to prevent the `UIEvent.EXPORT` in the export function
 - Added the ColorItem to the custom components api
 - Added the Checkbox to the custom components api
 - Added the Text Alignment buttons to the custom components api

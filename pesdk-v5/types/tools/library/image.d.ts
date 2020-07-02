@@ -8,6 +8,6 @@ export declare class LibraryImage {
         thumbUrl: string;
         rawUrl: string;
     });
-    loadThumbImage(crossOrigin?: string): Promise<{}>;
+    loadThumbImage(crossOrigin?: string): Promise<unknown>;
     getThumbImage(): string;
 }

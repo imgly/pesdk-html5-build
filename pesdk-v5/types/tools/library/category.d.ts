@@ -6,5 +6,5 @@ export declare class LibraryCategory {
         name: string;
         coverImageUrl: string;
     });
-    loadCoverImage(crossOrigin?: string): Promise<{}>;
+    loadCoverImage(crossOrigin?: string): Promise<unknown>;
 }

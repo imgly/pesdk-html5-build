@@ -1,1 +1,1 @@
-module.exports = require('./esm/production/index.js')
+export * from './esm/production'
