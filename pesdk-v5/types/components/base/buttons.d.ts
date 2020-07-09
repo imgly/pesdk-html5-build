@@ -1,9 +1,12 @@
 /// <reference types="react" />
+import { AlignmentType } from '../../index';
+import { Tool } from '../../common/tool';
 export interface CustomButtonProps {
     label?: string;
     ariaLabel?: string;
     icon?: React.ReactNode;
     isDisabled?: boolean;
+    fullWidth?: boolean;
     isActive?: boolean;
     style?: {
         [key: string]: string;
@@ -12,7 +15,15 @@ export interface CustomButtonProps {
     onClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
     children?: React.ReactNode;
 }
+export interface CustomTextAlignmentButtonProps extends CustomButtonProps {
+    tool: AlignmentType;
+}
+export interface CustomToolControlBarButtonProps extends CustomButtonProps {
+    tool: Tool;
+}
 export declare type CustomButton = React.ComponentType<CustomButtonProps>;
+export declare type CustomTextAlignmentButton = React.ComponentType<CustomTextAlignmentButtonProps>;
+export declare type CustomToolControlBarPrimaryButton = React.ComponentType<CustomToolControlBarButtonProps>;
 export interface CustomButtons {
     mainCanvasActionUndo?: CustomButton;
     mainCanvasActionRedo?: CustomButton;
@@ -28,5 +39,7 @@ export interface CustomButtons {
     transformActionFlipVertical?: CustomButton;
     transformActionRotateClockwise?: CustomButton;
     transformActionRotateAntiClockwise?: CustomButton;
-    textAlignment?: CustomButton;
+    textAlignment?: CustomTextAlignmentButton;
+    toolControlBarPrimaryButton?: CustomToolControlBarPrimaryButton;
+    toolControlBarSecondaryButton?: CustomToolControlBarPrimaryButton;
 }

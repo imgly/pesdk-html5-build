@@ -1,3 +1,4 @@
+import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { TransformCategory, ExistingTransformCategory } from './asset';
 export declare class TransformConfiguration {
     /**
@@ -58,4 +59,8 @@ export declare class TransformConfiguration {
      * false
      */
     flattenCategories?: boolean;
+    /**
+     * Decide if the categories should be grouped in a collapsible section or should be grouped under a text heading.
+     */
+    categoryHeaderType?: CategoryHeaderType;
 }

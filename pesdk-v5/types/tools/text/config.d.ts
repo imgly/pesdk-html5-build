@@ -1,4 +1,5 @@
 import { FontAsset } from './asset';
+import { NamedColor } from '../../common/color';
 import { CanvasAction } from '../../common/canvasAction';
 import { ExistingItem } from '../../common/existingAsset';
 export declare class TextConfiguration {
@@ -48,4 +49,14 @@ export declare class TextConfiguration {
      * Add an optional minimal font size for the auto scaling
      */
     minFontSizeForAutoScaling?: number;
+    /**
+     * Defines all available colors that can be applied to text.
+     * The color picker is always added.
+     */
+    colors?: Array<NamedColor>;
+    /**
+     * Defines all available colors that can be applied to text background.
+     * The color picker is always added.
+     */
+    backgroundColors?: Array<NamedColor>;
 }

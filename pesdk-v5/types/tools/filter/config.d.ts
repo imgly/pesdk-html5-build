@@ -1,3 +1,4 @@
+import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { FilterCategory, ExistingFilterCategory } from './asset';
 export declare class FilterConfiguration {
     /**
@@ -100,6 +101,10 @@ export declare class FilterConfiguration {
      * false
      */
     flattenCategories?: boolean;
+    /**
+     * Decide if the categories should be grouped in a collapsible section or should be grouped under a text heading.
+     */
+    categoryHeaderType?: CategoryHeaderType;
     /**
      * Controls if the user can load the preview thumbnail for every filter.
      * @example // Defaults to:

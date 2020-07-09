@@ -1,4 +1,6 @@
 import { CanvasAction } from '../../common/canvasAction';
+import { NamedColor } from '../../common/color';
+import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { StickerCategory, ExistingStickerCategory, TintMode } from './asset';
 export declare class StickerConfiguration {
     /**
@@ -106,6 +108,15 @@ export declare class StickerConfiguration {
      * false
      */
     flattenCategories?: boolean;
+    /**
+     * Decide if the categories should be grouped in a collapsible section or should be grouped under a text heading.
+     */
+    categoryHeaderType?: CategoryHeaderType;
+    /**
+     * Defines all available colors that can be applied to stickers with a `tintMode`.
+     * The color picker is always added.
+     */
+    colors?: Array<NamedColor>;
     enableCustomUpload?: boolean;
     customStickerTintMode?: TintMode;
 }

@@ -74,6 +74,8 @@ export * from './common/tool';
 export * from './common/utils';
 export * from './common/float2';
 export * from './common/size';
+export * from './common/color';
+export * from './common/categoryHeaderTypes';
 export * from './components/advanced/card';
 export * from './components/base/loader';
 export * from './components/base/buttons';
@@ -148,6 +150,8 @@ export class AdvancedUICardLabel extends React.Component<CustomCardLabelProps> {
 export class CanvasBarTextSecondaryButton extends React.Component<CustomButtonProps> {}
 // @ts-ignore:2686
 export class ContainedPrimaryButton extends React.Component<CustomButtonProps> {}
+// @ts-ignore:2686
+export class OutlinedPrimaryButton extends React.Component<CustomButtonProps> {}
 // @ts-ignore:2686
 export class OutlinedSecondaryButton extends React.Component<CustomButtonProps> {}
 // @ts-ignore:2686

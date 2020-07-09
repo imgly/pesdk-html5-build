@@ -1,4 +1,5 @@
 import { FrameAsset } from './asset';
+import { NamedColor } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
 export declare class FrameConfiguration {
     /**
@@ -15,4 +16,9 @@ export declare class FrameConfiguration {
      * ]
      */
     items?: Array<FrameAsset | ExistingItem>;
+    /**
+     * Defines all available colors that can be applied to some frames.
+     * The color picker is always added.
+     */
+    colors?: Array<NamedColor>;
 }

@@ -197,6 +197,7 @@ export interface ThemeInterface {
         activeBackground?: string;
         activeForeground?: string;
         borderColor?: string;
+        border?: string;
     };
     toolControlBar?: {
         background?: string;

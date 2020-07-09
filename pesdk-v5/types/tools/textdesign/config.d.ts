@@ -1,5 +1,6 @@
 import { CanvasAction } from '../../common/canvasAction';
 import { ExistingItem } from '../../common/existingAsset';
+import { NamedColor } from '../../common/color';
 export declare class TextDesignConfiguration {
     /**
      * Defines all available text designs.
@@ -24,7 +25,7 @@ export declare class TextDesignConfiguration {
      *   { identifier: "imgly_text_design_multiline" },
      * ]
      */
-    items: ExistingItem[];
+    items?: ExistingItem[];
     /**
      * Defines all allowed actions for the sticker tool menu. Only buttons
      * for allowed actions are visible and shown in the given order.
@@ -32,4 +33,13 @@ export declare class TextDesignConfiguration {
      * [CanvasAction.EDIT, CanvasAction.DUPLICATE, CanvasAction.DELETE, CanvasAction.INVERT]
      */
     canvasActions?: Array<CanvasAction.EDIT | CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE | CanvasAction.INVERT>;
+    /**
+     * Add an optional maximum amount of letters for the text
+     */
+    maxCharacterLimit?: number;
+    /**
+     * Defines all available colors that can be applied to textdesign.
+     * The color picker is always added.
+     */
+    colors?: Array<NamedColor>;
 }
