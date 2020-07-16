@@ -1,3 +1,38 @@
+# 5.4.1
+
+## Fixed
+
+- Fixed slider width and style issues in IE11
+- Fixed the missing toolbar tooltips in safari
+- Fixed the behaviour of the unsaved changes dialog
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
+# 5.4.0
+
+## Added
+
+- Added additional information to differentiate between the text alignment buttons
+- Added the primary and secondary buttons from the ToolOptionsBar to the custom components api
+- Added an option to allow text category headers for `library`, `transform`, `filter` and `sticker`
+- Added `border` to the toolbar styling options
+- Added the `maxCharacterLimit` option to the config of the textdesign tool
+- Added an option to define the default colorlist for each tool
+
+## Fixed
+
+- Fixed the vertical scroll on the ToolControlBars
+- Fixed tab text position
+- Fixed the library config for the basic layout
+- Fixed the default crop if `imgly_transform_common_custom` is not present in the config
+- Fixed the error when the defaultTool is not in the tools list
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.3.1
 
 ## Fixed
