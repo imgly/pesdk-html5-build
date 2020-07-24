@@ -1,3 +1,21 @@
+# 5.4.2
+
+## Fixed
+
+- Fixed the missing slider padding in the adjust tool
+- Fixed the numeric input behaviour on blur
+- Fixed the correct endianness of the exif orientation
+- Fixed the missing exif information for the first loaded image
+- Fixed the native input clear buttons in ie11 and legacy edge
+- Fixed the hidden color picker in IE11 and legacy Edge
+- Fixed entering letters in the numeric inputs
+- Fixed the import of jpeg images in IE11
+- Fixed the alignment of sliders and inputs in the basic ui in IE11
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.4.1
 
 ## Fixed

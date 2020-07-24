@@ -1,6 +1,6 @@
-import { UIEvent, PhotoEditorSDKUI } from 'photoeditorsdk'
+import { PhotoEditorSDKUI } from 'photoeditorsdk';
 
 PhotoEditorSDKUI.init({
   container: '#editor',
-  image: 'demo.png',
-})
+  image: 'example.jpg',
+});

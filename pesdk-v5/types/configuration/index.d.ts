@@ -20,7 +20,7 @@ export declare type ExistingTheme = 'light' | 'dark';
 export declare type ExistingLanguage = 'en' | 'de';
 export declare type LayoutType = 'basic' | 'advanced';
 /**
- * Configuration options and asset definitions for image and video editing tasks.
+ * Configuration options and asset definitions for image editing tasks.
  */
 export declare class Configuration {
     /**
