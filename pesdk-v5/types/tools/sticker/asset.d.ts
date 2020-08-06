@@ -9,19 +9,25 @@ export interface StickerAsset {
      * A URI for the thumbnailURI image of the sticker.
      * If `undefined` the thumbnailURI will be automatically generated form the `stickerURI`.
      * @example // Defaults to:
+     * ```
      * '' empty string
+     * ```
      */
     thumbnailURI?: string;
     /**
      * The sticker tint mode.
      * @example // Defaults to:
+     * ```
      * 'none'
+     * ```
      */
     tintMode?: TintMode;
     /**
      * The sticker resize mode.
      * @example // Defaults to:
+     * ```
      * 'keepAspect'
+     * ```
      */
     resizeMode?: ResizeMode;
 }
@@ -37,19 +43,25 @@ export interface CustomStickerAsset {
      * A URI for the thumbnailURI image of the sticker.
      * If `null` the thumbnailURI will be automatically generated form the `stickerURI`.
      * @example // Defaults to:
+     * ```
      * '' empty string
+     * ```
      */
     thumbnailURI?: string;
     /**
      * The sticker tint mode.
      * @example // Defaults to:
+     * ```
      * 'none'
+     * ```
      */
     tintMode?: TintMode;
     /**
      * The sticker resize mode.
      * @example // Defaults to:
+     * ```
      * 'keepAspect'
+     * ```
      */
     resizeMode?: ResizeMode;
 }
@@ -76,5 +88,11 @@ export interface CustomStickerCategory {
     items: CustomStickerAsset[];
 }
 export declare type ExistingStickerCategory = ExistingCategory<StickerAsset>;
+/**
+ * @ignore
+ */
 export declare function isStickerAssetDynamic(sticker: StickerAsset | CustomStickerAsset): sticker is CustomStickerAsset;
+/**
+ * @ignore
+ */
 export declare function isStickerCategoryDynamic(sticker: StickerCategory | CustomStickerCategory): sticker is CustomStickerCategory;

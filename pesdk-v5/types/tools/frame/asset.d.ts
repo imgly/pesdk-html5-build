@@ -7,7 +7,9 @@ export interface ImageGroup {
      * A URI for the start image.
      * If `null` there is no start image.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     start?: PatchImage;
     mid: PatchImage | {
@@ -18,7 +20,9 @@ export interface ImageGroup {
         /**
          * The render mode for the middle image.
          * @example // Defaults to:
+         * ```
          * 'repeat'
+         * ```
          */
         mode: FrameRenderMode;
     };
@@ -26,7 +30,9 @@ export interface ImageGroup {
      * A URI for the end image.
      * If `null` there is no end image.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     end?: PatchImage;
 }
@@ -35,28 +41,36 @@ export interface ImageGroups {
      * The top image group.
      * If `null` there is no top group.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     top: ImageGroup;
     /**
      * The left image group.
      * If `null` there is no top group.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     left: ImageGroup;
     /**
      * The right image group.
      * If `null` there is no top group.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     right: ImageGroup;
     /**
      * The bottom image group.
      * If `null` there is no top group.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     bottom: ImageGroup;
 }
@@ -66,7 +80,9 @@ export interface FrameAsset {
     /**
      * The layout mode of the patches of the frame.
      * @example // Defaults to:
+     * ```
      * 'horizontal-inside'
+     * ```
      */
     layoutMode: FrameLayoutMode;
     tintable?: boolean;

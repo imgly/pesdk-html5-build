@@ -7,6 +7,7 @@ export declare class StickerConfiguration {
      * Defines all available stickers. Each sticker must be assigned to a category.
      * New items and categories can be mixed and matched with existing predefined ones.
      * @example // Defaults to:
+     * ```typescript
      * [
      *   { identifier: "imgly_sticker_category_emoticons", items: [
      *     { identifier: "imgly_sticker_emoticons_grin" },
@@ -91,13 +92,16 @@ export declare class StickerConfiguration {
      *     { identifier: "imgly_sticker_shapes_spray_03" },
      *   ]},
      * ]
+     * ```
      */
     categories?: Array<StickerCategory | ExistingStickerCategory>;
     /**
      * Defines all allowed actions for the sticker tool menu. Only buttons
      * for allowed actions are visible and shown in the given order.
      * @example // Defaults to:
+     * ```
      * [CanvasAction.BRING_TO_FRONT, CanvasAction.DUPLICATE, CanvasAction.DELETE]
+     * ```
      */
     canvasActions?: Array<CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE | CanvasAction.FLIP>;
     /**
@@ -105,7 +109,9 @@ export declare class StickerConfiguration {
      * If this is enabled all filters will be shown in the top-level of the filter selection tool
      * orderer according to their parent category.
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     flattenCategories?: boolean;
     /**

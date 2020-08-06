@@ -47,37 +47,49 @@ export declare class Configuration {
      * The layout that should be loaded
      * accepts url or 'advanced' | 'basic'
      * @example // Defaults to:
+     * ```
      * 'advanced'
+     * ```
      */
     layout?: 'advanced' | 'basic';
     /**
      * Defines the language that should be used to label the user interface.
      * @example // Defaults to:
+     * ```
      * 'en'
+     * ```
      */
     language?: ExistingLanguage | string;
     /**
      * Defines the theme that should be used to style the user interface.
      * @example // Defaults to:
+     * ```
      * 'dark'
+     * ```
      */
     theme?: ExistingTheme | string;
     /**
      * The base URL for all assets. Should be the absolute path to your assets directory
      * @example // Defaults to:
+     * ```
      * assets/
+     * ```
      */
     assetBaseUrl?: string;
     /**
      * Defines all allowed actions for the main screen that are displayed in the given order as buttons on the canvasBar.
      * @example // Defaults to:
+     * ```
      * [CanvasAction.UNDO, CanvasAction.REDO, CanvasAction.CLOSE, CanvasAction.EXPORT]
+     * ```
      */
     mainCanvasActions?: Array<CanvasAction.UNDO | CanvasAction.REDO | CanvasAction.CLOSE | CanvasAction.EXPORT | undefined>;
     /** Should a message be displayed when the image has been scaled down for performance reasons */
     displayResizeWarning?: boolean;
     /** Should a message be displayed when when Photoeditor SDK is exited with close event */
     displayCloseWarning?: boolean;
+    /** Should a message be displayed when when Photoeditor SDK is exited with close event */
+    displayCanvasRendererWarning?: boolean;
     /** Should the toolcontrolbartitle be displayed (advancedui only) */
     displayToolControlBarTitle?: boolean;
     /**
@@ -88,31 +100,39 @@ export declare class Configuration {
      * and the result does not match an allowed aspect ratio.
      *
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     forceCrop?: boolean;
     /**
      * Controls if the user can zoom the preview image.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enableZoom?: boolean;
     /**
      * Applicable only to Advanced UI
      * decides which tool to keep open at the beginning
      * @example // Defaults to:
+     * ```
      * Tool.FILTER
+     * ```
      */
     defaultTool?: Tool;
     /**
      * The tools to display in the main menu.
      * @example // Defaults to:
+     * ```typescript
      * [
      *  Tool.LIBRARY,
      * [ Tool.TRANSFORM, Tool.FILTER, Tool.ADJUSTMENT ],
      * [ Tool.FOCUS, Tool.FRAME, Tool.OVERLAY ],
      * [ Tool.TEXT, Tool.TEXT_DESIGN, Tool.STICKER, Tool.BRUSH ],
      * ]
+     * ```
      */
     tools?: Array<Tool | Tool[]>;
     /**

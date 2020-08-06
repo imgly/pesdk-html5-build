@@ -6,6 +6,7 @@ export declare class OverlayConfiguration {
      * New items can be mixed and matched with existing predefined ones.
      * `NONE` is always added in Basic UI
      * @example // Defaults to:
+     * ```typescript
      * [
      *   { identifier: "imgly_overlay_golden" },
      *   { identifier: "imgly_overlay_lightleak1" },
@@ -25,6 +26,7 @@ export declare class OverlayConfiguration {
      *   { identifier: "imgly_overlay_wall1" },
      *   { identifier: "imgly_overlay_wall2" },
      * ]
+     * ```
      */
     items: Array<OverlayAsset | ExistingItem>;
 }

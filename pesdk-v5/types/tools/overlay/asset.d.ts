@@ -10,7 +10,9 @@ export interface OverlayAsset {
      * A URI for the thumbnailURI image of the overlay.
      * If `null` the thumbnailURI will be automatically generated form the `overlayURI`.
      * @example // Defaults to:
+     * ```
      * null
+     * ```
      */
     thumbnailURI: string;
 }

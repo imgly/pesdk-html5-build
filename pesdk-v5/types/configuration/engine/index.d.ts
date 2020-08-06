@@ -20,7 +20,13 @@ export interface EngineConfiguration {
      */
     downscaleOptions?: ImageDownscaleOptions;
     /**
+     * @ignore
      * The asset provider which the engine should use to load all assets.
      */
     assetProvider?: AssetProvider;
+    /**
+     * Specifies the preferred renderer for the engine.
+     * WebGL will result in the best performance and Canvas should only be used if WebGL is not available
+     */
+    preferredRenderer?: 'webgl' | 'canvas';
 }

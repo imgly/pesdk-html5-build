@@ -7,6 +7,7 @@ export declare class TextConfiguration {
      * Defines all available fonts.
      * New items can be mixed and matched with existing predefined ones.
      * @example // Defaults to:
+     * ```typescript
      * [
      *   { identifier: "imgly_font_open_sans_bold" },
      *   { identifier: "imgly_font_aleo_bold" },
@@ -25,13 +26,16 @@ export declare class TextConfiguration {
      *   { identifier: "imgly_font_perfograma" },
      *   { identifier: "imgly_font_trash_hand" },
      * ]
+     * ```
      */
     fonts?: Array<FontAsset | ExistingItem>;
     /**
      * Defines all allowed actions for the sticker tool menu. Only buttons
      * for allowed actions are visible and shown in the given order.
      * @example // Defaults to:
+     * ```
      * [CanvasAction.EDIT, CanvasAction.BRING_TO_FRONT, CanvasAction.DUPLICATE, CanvasAction.DELETE]
+     * ```
      */
     canvasActions?: Array<CanvasAction.EDIT | CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE>;
     /**
@@ -42,7 +46,9 @@ export declare class TextConfiguration {
      * Every time the text gets too long, the editor scale the font size to a pleasant size.
      * If this is enabled the scaling for the font size is disabled
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     disableAutoScaling?: boolean;
     /**

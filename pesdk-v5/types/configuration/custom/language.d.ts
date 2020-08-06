@@ -6,6 +6,7 @@ export interface ModalLocale {
 export interface ActionModalLocale extends ModalLocale {
     buttonYes?: string;
     buttonNo?: string;
+    headingDelimiter?: string;
 }
 export interface SpriteHistoryBase {
     add?: string;
@@ -65,6 +66,7 @@ export interface WarningLocale {
     discardChanges?: ActionModalLocale;
     unsavedChanges?: ActionModalLocale;
     unsupportedSerializationVersion?: ActionModalLocale;
+    unsupportedWebGLRenderer?: ActionModalLocale;
 }
 export interface LibraryLocale {
     title?: string;
@@ -199,6 +201,9 @@ export interface FocusLocale {
         linear?: string;
         gaussian?: string;
     };
+    /**
+     * @ignore
+     */
     history?: {
         focusPosition?: string;
         focusSize?: string;
@@ -345,6 +350,9 @@ export interface StickerLocale {
         buttonFlipHorizontal?: string;
         buttonFlipVertical?: string;
     };
+    /**
+     * @ignore
+     */
     history?: {
         color?: string;
         opacity?: string;
@@ -379,6 +387,9 @@ export interface TextLocale {
         buttonBringToFront?: string;
         buttonDuplicate?: string;
     };
+    /**
+     * @ignore
+     */
     history?: {
         alignment?: string;
         textColor?: string;
@@ -412,6 +423,9 @@ export interface TextDesignLocale {
         buttonBringToFront?: string;
         buttonDuplicate?: string;
     };
+    /**
+     * @ignore
+     */
     history?: {
         color?: string;
         shuffle?: string;
@@ -493,6 +507,9 @@ export interface BrushLocale {
         tabHardness?: string;
         tabColor?: string;
     };
+    /**
+     * @ignore
+     */
     history?: {
         brushStroke?: string;
     };

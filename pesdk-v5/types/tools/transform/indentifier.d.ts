@@ -1,3 +1,6 @@
+/**
+ * @ignore
+ */
 export declare enum TransformIdentifier {
     CommonCategory = "imgly_transforms_common",
     FacebookCategory = "imgly_transforms_facebook",

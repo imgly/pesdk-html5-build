@@ -3,26 +3,34 @@ declare class PositionSnapping {
      * Whether sprites should snap to specific positions during pan interactions.
      * This switch enables or disables position snapping.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enabled?: boolean;
     /**
      * This threshold defines the distance of a pan gesture where snapping at a snap point occurs.
      * It is measured in pixels.
      * @example // Defaults to:
+     * ```
      * 20
+     * ```
      */
     threshold?: number;
     /**
      * If enabled a sprite's center snaps to the horizontal line through the center of the edited image.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     snapToHorizontalCenter?: boolean;
     /**
      * If enabled a sprite's center snaps to the vertical line through the center of the edited image.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     snapToVerticalCenter?: boolean;
     /**
@@ -31,7 +39,9 @@ declare class PositionSnapping {
      * coordinates relative to the smaller side of the edited image.
      * If this value is explicitly set to `null` this snapping line is disabled.
      * @example // Defaults to:
+     * ```
      * 0.1
+     * ```
      */
     snapToLeft?: number | null;
     /**
@@ -40,7 +50,9 @@ declare class PositionSnapping {
      * coordinates relative to the smaller side of the edited image.
      * If this value is explicitly set to `null` this snapping line is disabled.
      * @example // Defaults to:
+     * ```
      * 0.1
+     * ```
      */
     snapToRight?: number | null;
     /**
@@ -49,7 +61,9 @@ declare class PositionSnapping {
      * coordinates relative to the smaller side of the edited image.
      * If this value is explicitly set to `null` this snapping line is disabled.
      * @example // Defaults to:
+     * ```
      * 0.1
+     * ```
      */
     snapToTop?: number | null;
     /**
@@ -58,7 +72,9 @@ declare class PositionSnapping {
      * coordinates relative to the smaller side of the edited image.
      * If this value is explicitly set to `null` this snapping line is disabled.
      * @example // Defaults to:
+     * ```
      * 0.1
+     * ```
      */
     snapToBottom?: number | null;
 }
@@ -67,20 +83,26 @@ declare class RotationSnapping {
      * Whether sprites should snap to specific orientations during rotation interactions.
      * This switch enables or disables rotation snapping.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enabled?: boolean;
     /**
      * This threshold defines the arc length of a rotation gesture where snapping at a snap angle occurs.
      * It is measured in pixels.
      * @example // Defaults to:
+     * ```
      * 20
+     * ```
      */
     threshold?: number;
     /**
      * Enabled snapping angles in degrees for rotating a sprite. The rotation angle is defined clockwise.
      * @example // Defaults to:
+     * ```
      * [0, 45, 90, 135, 180, 225, 270, 315]
+     * ```
      */
     angles?: number[];
 }

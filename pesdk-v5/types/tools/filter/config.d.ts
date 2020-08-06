@@ -6,6 +6,7 @@ export declare class FilterConfiguration {
      * `NONE` is always added in Basic UI
      * New items and categories can be mixed and matched with existing predefined ones.
      * @example // Defaults to:
+     * ```typescript
      * [
      *   { identifier: "imgly_filter_category_duotone", items: [
      *     { identifier: "imgly_duotone_desert" },
@@ -91,6 +92,7 @@ export declare class FilterConfiguration {
      *     { identifier: "imgly_lut_twilight" },
      *   ]},
      * ]
+     * ```
      */
     categories?: Array<FilterCategory | ExistingFilterCategory>;
     /**
@@ -98,7 +100,9 @@ export declare class FilterConfiguration {
      * If this is enabled all filters will be shown in the top-level of the filter selection tool
      * orderes according to their parent category.
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     flattenCategories?: boolean;
     /**
@@ -108,7 +112,9 @@ export declare class FilterConfiguration {
     /**
      * Controls if the user can load the preview thumbnail for every filter.
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enablePreviewThumbnails?: boolean;
 }

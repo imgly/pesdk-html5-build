@@ -6,6 +6,7 @@ export declare class TextDesignConfiguration {
      * Defines all available text designs.
      * New items can be mixed and matched with existing predefined ones.
      * @example // Defaults to:
+     * ```typescript
      * [
      *   { identifier: "imgly_text_design_blocks" },
      *   { identifier: "imgly_text_design_rotated" },
@@ -24,13 +25,16 @@ export declare class TextDesignConfiguration {
      *   { identifier: "imgly_text_design_masked_speech_bubble_comic" },
      *   { identifier: "imgly_text_design_multiline" },
      * ]
+     * ```
      */
     items?: ExistingItem[];
     /**
      * Defines all allowed actions for the sticker tool menu. Only buttons
      * for allowed actions are visible and shown in the given order.
      * @example // Defaults to:
+     * ```
      * [CanvasAction.EDIT, CanvasAction.DUPLICATE, CanvasAction.DELETE, CanvasAction.INVERT]
+     * ```
      */
     canvasActions?: Array<CanvasAction.EDIT | CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE | CanvasAction.INVERT>;
     /**

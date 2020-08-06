@@ -56,6 +56,9 @@ interface EditorFunctions {
   deserialize: (data: SerialisationSchema) => Promise<void>
 }
 
+/**
+ * @ignore
+ */
 export interface PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps>, EditorFunctions {
   ui: EventEmitter<UIEvent>
 }
@@ -135,49 +138,112 @@ import {
   CheckboxInputProps,
 } from './components/base/checkbox/checkboxComponents'
 
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class AdvancedUICategoryCard extends React.Component<CustomCardProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class AdvancedUIItemCard extends React.Component<CustomCardProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class AdvancedUIToolbarItem extends React.Component<CustomToolbarItemProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class Loader extends React.Component<CustomLoaderProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class AdvancedUICardLabel extends React.Component<CustomCardLabelProps> {}
 
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class CanvasBarTextSecondaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ContainedPrimaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class OutlinedPrimaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class OutlinedSecondaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class SpriteActionButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class IconButton extends React.Component<CustomButtonProps> {}
 
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class Label extends React.Component<CustomLabelProps> {}
 
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class Checkbox extends React.Component<CustomCheckboxProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class CheckboxBase extends React.Component<CheckboxBaseProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class CheckboxCheckMark extends React.Component<CheckboxCheckMarkProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class CheckboxInput extends React.Component<CheckboxInputProps> {}
 
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ColorItem extends React.Component<CustomColorItemProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ColorItemBase extends React.Component<ColorItemBaseProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ColorItemBackground extends React.Component<ColorItemBackgroundProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ColorItemTiledBackground extends React.Component<ColorItemTiledBackgroundProps> {}
+/**
+ * @ignore
+ */
 // @ts-ignore:2686
 export class ColorItemActiveOverlay extends React.Component<ColorItemActiveOverlayProps> {}

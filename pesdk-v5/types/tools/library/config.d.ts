@@ -9,7 +9,9 @@ export declare class LibraryConfiguration {
      * If this is enabled all images will be shown in the top-level of the library selection tool
      * orderes according to their parent category.
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     flattenCategories?: boolean;
     /**

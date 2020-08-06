@@ -36,7 +36,9 @@ export interface FilterCategory {
      * A URI for the thumbnail image of the category. If `null` the category will not have a thumbnail
      * image which won't be required if `flattenCategories` is enabled for the `Tool.FILTER`.
      * @example // Defaults to:
+     * ```
      * '' empty string
+     * ```
      */
     thumbnailURI: string;
     /**
@@ -44,6 +46,12 @@ export interface FilterCategory {
      */
     items: Array<DuoToneFilterAsset | LUTFilterAsset>;
 }
+/**
+ * @ignore
+ */
 export declare function isDuoToneFilterAsset(asset: LUTFilterAsset | DuoToneFilterAsset): asset is DuoToneFilterAsset;
+/**
+ * @ignore
+ */
 export declare function isLUTFilterAsset(asset: LUTFilterAsset | DuoToneFilterAsset): asset is LUTFilterAsset;
 export declare type ExistingFilterCategory = ExistingCategory<DuoToneFilterAsset | LUTFilterAsset>;

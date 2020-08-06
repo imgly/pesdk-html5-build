@@ -28,7 +28,7 @@ interface Font {
 }
 export interface WebFont extends Font {
     fontURI: string;
-    format: string;
+    format: 'woff' | 'woff2' | 'truetype' | 'opentype' | 'embedded-opentype' | 'svg';
     provider: 'file';
 }
 export interface GoogleFont extends Font {

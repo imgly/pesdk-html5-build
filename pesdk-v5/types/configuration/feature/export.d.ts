@@ -14,19 +14,25 @@ export declare class ExportConfiguration {
         /**
          *
          * @example // Defaults to:
+         * ```
          * ExportFormat.Image
+         * ```
          */
         exportType?: ExportFormat;
         /**
          * The image file format of the generated high resolution image.
          * @example // Defaults to:
+         * ```
          * ImageFormat.JPEG
+         * ```
          */
         format?: ImageFormat;
         /**
          * The compression quality to use when creating the output image with a lossy file format.
          * @example // Defaults to:
+         * ```
          * 0.9
+         * ```
          */
         quality?: number;
         enableDownload?: boolean;
@@ -39,7 +45,9 @@ export declare class ExportConfiguration {
      * if the corresponding file already exists. If the value is `null` an new temporary file will be
      * created for every export.
      * @example // Defaults to:
+     * ```
      * 'photoeditorsdk-export'
+     * ```
      */
     filename?: string | null;
     /**
@@ -51,13 +59,17 @@ export declare class ExportConfiguration {
         /**
          * Whether the serialization of the editing operations should be exported.
          * @example // Defaults to:
+         * ```
          * false
+         * ```
          */
         enabled?: boolean;
         /**
          *
          * @example // Defaults to:
+         * ```
          * SerializationExportType.FILE_URL
+         * ```
          */
         exportType?: SerializationExportType;
         /**
@@ -68,13 +80,17 @@ export declare class ExportConfiguration {
          * if the corresponding file already exists. If the value is `null` an new temporary file will be
          * created for every export based on the filename for the exported image data.
          * @example // Defaults to:
+         * ```
          * null
+         * ```
          */
         filename?: string | null;
         /**
          * Whether the serialization data should include the original input image data.
          * @example // Defaults to:
+         * ```
          * false
+         * ```
          */
         embedSourceImage?: boolean;
     };

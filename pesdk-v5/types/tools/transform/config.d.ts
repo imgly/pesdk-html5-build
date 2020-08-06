@@ -4,6 +4,7 @@ export declare class TransformConfiguration {
     /**
      * Defines all allowed crop aspect ratios. The crop ratio cards are shown in the given order.
      * @example // Defaults to:
+     * ```typescript
      *[{
      *  "identifier": "imgly_transforms_common",
      *  "items": [
@@ -37,18 +38,23 @@ export declare class TransformConfiguration {
      *      { "identifier": "imgly_transform_twitter_post" },
      *  ]
      *}]
+     * ```
      */
     categories?: Array<TransformCategory | ExistingTransformCategory>;
     /**
      * Decides whether rotation is enabled
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enableRotation?: boolean;
     /**
      * Decides whether flip is enabled
      * @example // Defaults to:
+     * ```
      * true
+     * ```
      */
     enableFlip?: boolean;
     /**
@@ -56,7 +62,9 @@ export declare class TransformConfiguration {
      * If this is enabled all crop ratios will be shown in the top-level of the transform selection tool
      * ordered according to their parent category.
      * @example // Defaults to:
+     * ```
      * false
+     * ```
      */
     flattenCategories?: boolean;
     /**

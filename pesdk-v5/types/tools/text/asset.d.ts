@@ -13,12 +13,18 @@ export interface Font {
 }
 export interface WebFontAsset extends Font {
     fontURI: string;
-    format: string;
+    format: 'woff' | 'woff2' | 'truetype' | 'opentype' | 'embedded-opentype' | 'svg';
     provider?: 'file';
 }
 export interface GoogleFontAsset extends Font {
     provider: 'google';
 }
 export declare type FontAsset = WebFontAsset | GoogleFontAsset;
+/**
+ * @ignore
+ */
 export declare function isWebFontAsset(asset: WebFontAsset | GoogleFontAsset): asset is WebFontAsset;
+/**
+ * @ignore
+ */
 export declare function isGoogleFontAsset(asset: WebFontAsset | GoogleFontAsset): asset is GoogleFontAsset;

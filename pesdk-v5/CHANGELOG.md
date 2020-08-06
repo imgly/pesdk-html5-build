@@ -1,3 +1,14 @@
+# 5.5.0
+
+## Added
+- Added the font system to the measurements options
+- Added the canvas renderer as a fallback if webgl is not supported
+- Added the colon in the modal header the language interface
+
+## Fixed
+- Fixed an issue where Japanese characters where not allowed in the text field
+- Fixed an issue with the basic license and the text design
+
 # 5.4.2
 
 ## Fixed
