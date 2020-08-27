@@ -1,13 +1,34 @@
+# 5.5.1
+
+## Fixed
+
+- Fixed the dialog offset if the order is reverse
+- Fixed modal ui issues on small screen width
+- Fixed the tooltip position if order is reversed
+- Fixed slider dots for minimal size in transform tool
+- Fixed the missing toolbar icons in Safari 10
+- Fixed the load time for live filter previews
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.5.0
 
 ## Added
+
 - Added the font system to the measurements options
 - Added the canvas renderer as a fallback if webgl is not supported
 - Added the colon in the modal header the language interface
 
 ## Fixed
+
 - Fixed an issue where Japanese characters where not allowed in the text field
 - Fixed an issue with the basic license and the text design
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
 
 # 5.4.2
 
