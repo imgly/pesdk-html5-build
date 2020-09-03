@@ -1,3 +1,17 @@
+# 5.5.2
+
+## Fixed
+
+- Fixed the position of the text menu in the basic ui on mobile
+- Fixed the crop mask behaviour while Keep Resolution is active
+- Fixed the selection of a sprite under the mirrored focus knob
+- Fixed an error in the library search if no result was found
+- Fixed the carousel slider label position
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.5.1
 
 ## Fixed
