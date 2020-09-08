@@ -1,3 +1,14 @@
+# 5.5.3
+
+## Fixed
+
+- Fixed an issue in the library search if multiple items had the same key
+- Fixed editing the width and height input fields in the transform tool
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.5.2
 
 ## Fixed
