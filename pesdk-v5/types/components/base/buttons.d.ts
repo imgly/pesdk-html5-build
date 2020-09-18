@@ -8,11 +8,9 @@ export interface CustomButtonProps {
     isDisabled?: boolean;
     fullWidth?: boolean;
     isActive?: boolean;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
     className?: string;
-    onClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
+    onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     children?: React.ReactNode;
 }
 export interface CustomTextAlignmentButtonProps extends CustomButtonProps {

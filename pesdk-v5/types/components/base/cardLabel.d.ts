@@ -5,8 +5,6 @@ export interface CustomCardLabelProps {
     isActive?: boolean;
     withBackground?: boolean;
     children: React.ReactNode;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
     hidden?: boolean;
 }

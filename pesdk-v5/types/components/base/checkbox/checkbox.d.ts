@@ -6,9 +6,7 @@ export interface CustomCheckboxProps {
     onClick: (e?: React.SyntheticEvent) => void;
     checkMarkPosition?: 'left' | 'right';
     className?: string;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
     children?: React.ReactNode;
 }
 export declare type CustomCheckbox = React.ComponentType<CustomCheckboxProps>;

@@ -7,9 +7,7 @@ export interface CustomToolbarItemProps {
     isActive: boolean;
     isReverse: boolean;
     onClick: (e?: any) => void;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
     className?: string;
 }
 export declare type CustomAdvancedToolbarItem = React.ComponentType<CustomToolbarItemProps>;

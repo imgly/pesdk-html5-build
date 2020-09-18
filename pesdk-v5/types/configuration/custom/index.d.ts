@@ -2,11 +2,11 @@ import { CustomLanguages } from './language';
 import { CustomThemes } from './theme';
 import { CustomCard } from '../../components/advanced/card';
 import { CustomAdvancedToolbarItem } from '../../components/advanced/toolbarItem';
-import { CustomLoader } from '../../components/base/loader';
 import { CustomButtons } from '../../components/base/buttons';
 import { CustomColorItem } from '../../components/base/color/colorItem';
 import { CustomMeasurements } from './measurements';
 import { CustomCheckbox } from '../../components/base/checkbox/checkbox';
+import { CustomDialog } from '../../components/base/dialog/dialog';
 export interface CustomComponents {
     /**
      * advancedUICategoryCard will receive CustomCardProps
@@ -21,9 +21,9 @@ export interface CustomComponents {
      */
     advancedUIToolbarItem?: CustomAdvancedToolbarItem;
     /**
-     * loader will receive CustomLoaderProps
+     * dialog will receive CusomDialogProps
      */
-    loader?: CustomLoader;
+    dialog?: CustomDialog;
     /**
      * buttons will receive CustomButtonProps
      */

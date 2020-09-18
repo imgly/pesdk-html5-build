@@ -80,12 +80,13 @@ export * from './common/size';
 export * from './common/color';
 export * from './common/categoryHeaderTypes';
 export * from './components/advanced/card';
-export * from './components/base/loader';
 export * from './components/base/buttons';
 export * from './components/advanced/toolbarItem';
 export * from './components/base/cardLabel';
 export * from './components/base/color/colorItem';
 export * from './components/base/color/colorItemComponents';
+export * from './components/base/dialog/dialog';
+export * from './components/base/dialog/dialogComponents';
 export * from './components/base/checkbox/checkbox';
 export * from './components/base/checkbox/checkboxComponents';
 export * from './components/base/label';
@@ -120,7 +121,7 @@ export * from './serialization/3.9.0/schema';
 export * from './serialization/3.9.0/appSerializableState';
 import { CustomCardProps } from './components/advanced/card'
 import { CustomToolbarItemProps } from './components/advanced/toolbarItem'
-import { CustomLoaderProps } from './components/base/loader'
+import { CustomDialogProps } from './components/base/dialog/dialog'
 import { CustomCardLabelProps } from './components/base/cardLabel'
 import { CustomButtonProps } from './components/base/buttons'
 import {
@@ -137,6 +138,14 @@ import {
   CheckboxCheckMarkProps,
   CheckboxInputProps,
 } from './components/base/checkbox/checkboxComponents'
+import {
+  DialogBaseProps,
+  DialogContainerProps,
+  DialogBackdropProps,
+  DialogHeaderProps,
+  DialogBodyProps,
+  DialogFooterProps,
+} from './components/base/dialog/dialogComponents'
 
 /**
  * @ignore
@@ -153,11 +162,6 @@ export class AdvancedUIItemCard extends React.Component<CustomCardProps> {}
  */
 // @ts-ignore:2686
 export class AdvancedUIToolbarItem extends React.Component<CustomToolbarItemProps> {}
-/**
- * @ignore
- */
-// @ts-ignore:2686
-export class Loader extends React.Component<CustomLoaderProps> {}
 /**
  * @ignore
  */
@@ -184,6 +188,16 @@ export class OutlinedPrimaryButton extends React.Component<CustomButtonProps> {}
  */
 // @ts-ignore:2686
 export class OutlinedSecondaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class TextPrimaryButton extends React.Component<CustomButtonProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class TextSecondaryButton extends React.Component<CustomButtonProps> {}
 /**
  * @ignore
  */
@@ -247,3 +261,44 @@ export class ColorItemTiledBackground extends React.Component<ColorItemTiledBack
  */
 // @ts-ignore:2686
 export class ColorItemActiveOverlay extends React.Component<ColorItemActiveOverlayProps> {}
+
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class Dialog extends React.Component<CustomDialogProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogBase extends React.Component<DialogBaseProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogContainer extends React.Component<DialogContainerProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogBackdrop extends React.Component<DialogBackdropProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogHeader extends React.Component<DialogHeaderProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogBody extends React.Component<DialogBodyProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogFooter extends React.Component<DialogFooterProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DialogSpinner extends React.Component<DialogSpinnerProps> {}

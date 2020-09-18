@@ -51,6 +51,7 @@ export interface InfoLocale {
     resizing?: ActionModalLocale;
     saving?: ActionModalLocale;
     loadingFonts?: ActionModalLocale;
+    stickerLoading?: ActionModalLocale;
 }
 export interface ErrorLocale {
     imageLoading?: ActionModalLocale;

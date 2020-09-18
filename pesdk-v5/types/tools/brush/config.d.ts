@@ -5,4 +5,6 @@ export declare class BrushConfiguration {
      * The color picker is always added.
      */
     colors?: Array<NamedColor>;
+    defaultSize?: NonNullable<number>;
+    defaultHardness?: NonNullable<number>;
 }

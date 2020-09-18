@@ -2,18 +2,14 @@
 export interface CheckboxBaseProps {
     children: React.ReactNode;
     className?: string;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
 }
 export interface CheckboxCheckMarkProps {
     onClick: (e?: React.MouseEvent<HTMLDivElement>) => void;
     isChecked: boolean;
     isDisabled?: boolean;
     className?: string;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
 }
 export interface CheckboxInputProps {
     id: string;
@@ -21,7 +17,5 @@ export interface CheckboxInputProps {
     checked?: boolean;
     onChange?: (e?: React.ChangeEvent<HTMLDivElement>) => void;
     className?: string;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
 }

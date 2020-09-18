@@ -1,3 +1,25 @@
+# 5.6.0
+
+## Changed
+
+- The custom Loader component was integrated into the new custom Dialog api. Please visit our [docs](https://docs.photoeditorsdk.com/guides/html5/v5_6/customization/component) in order to migrate your existing component.
+- All restrictions of the Basic License will now apply correctly. 
+
+## Added
+
+- Added `defaultSize` and `defaultHardness` to the brush options
+- Added the basic license restrictions
+- Added the Dialog to the custom components api
+
+## Fixed
+
+- Fixed the available tools specified by the license
+- Fixed an error if the environment used a different version of mobx
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.5.3
 
 ## Fixed

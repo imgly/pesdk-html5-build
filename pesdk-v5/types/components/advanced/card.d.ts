@@ -14,9 +14,7 @@ export interface CustomCardProps {
     isDisabled?: boolean;
     onClick: (e?: React.MouseEvent<HTMLButtonElement>) => void;
     className?: string;
-    style?: {
-        [key: string]: string;
-    };
+    style?: React.CSSProperties;
     children?: React.ReactNode;
 }
 export declare type CustomCard = React.ComponentType<CustomCardProps>;
