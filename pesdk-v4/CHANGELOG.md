@@ -1,3 +1,9 @@
+# 4.24.4
+
+## Changed
+
+*   Updated the Text tool fonts. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/master/pesdk-v4/assets)
+
 # 4.24.3
 
 ## Fixed
