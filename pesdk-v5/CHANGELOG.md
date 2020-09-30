@@ -1,9 +1,19 @@
+# 5.6.1
+
+## Changed
+
+- Updated the Text tool fonts. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/master/pesdk-v5/assets)
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.6.0
 
 ## Changed
 
 - The custom Loader component was integrated into the new custom Dialog api. Please visit our [docs](https://docs.photoeditorsdk.com/guides/html5/v5_6/customization/component) in order to migrate your existing component.
-- All restrictions of the Basic License will now apply correctly. 
+- All restrictions of the Basic License will now apply correctly.
 
 ## Added
 

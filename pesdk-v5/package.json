@@ -1,7 +1,7 @@
 
 {
   "name": "photoeditorsdk",
-  "version": "5.6.0",
+  "version": "5.6.1",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "module": "index.esm.js",
