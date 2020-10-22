@@ -1,0 +1,18 @@
+{
+  "categories": [
+    {
+      "name": "Images",
+      "coverImage": "../example.jpg",
+      "searchQuery": "images"
+    }
+  ],
+  "images": [
+    {
+      "title": "Images",
+      "authorName": null,
+      "authorAvatar": null,
+      "thumbUrl": "../example.jpg",
+      "rawUrl": "../example.jpg"
+    }
+  ]
+}
