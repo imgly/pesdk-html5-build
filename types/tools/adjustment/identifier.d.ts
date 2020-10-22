@@ -12,3 +12,4 @@ export declare enum AdjustmentIdentifier {
     TEMPERATURE = "temperature",
     SHARPNESS = "sharpness"
 }
+export declare const AdjustmentIdentifierKeys: Record<AdjustmentIdentifier, boolean>;

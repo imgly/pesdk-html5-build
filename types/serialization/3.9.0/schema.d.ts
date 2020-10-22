@@ -1,6 +1,6 @@
-import { SerializableCustomStickerAsset, SerializableColor } from './appSerializableState';
 import { Float2 } from '../../common/float2';
 import { ImageFormat } from '../../configuration/feature/imageFormat';
+import { SerializableCustomStickerAsset, SerializableColor } from './appSerializableState';
 export interface SerializationColor {
     rgba: SerializableColor;
 }

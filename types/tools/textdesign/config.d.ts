@@ -1,6 +1,6 @@
 import { CanvasAction } from '../../common/canvasAction';
+import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
-import { NamedColor } from '../../common/color';
 export declare class TextDesignConfiguration {
     /**
      * Defines all available text designs.
@@ -46,4 +46,9 @@ export declare class TextDesignConfiguration {
      * The color picker is always added.
      */
     colors?: Array<NamedColor>;
+    /**
+     * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
+     * each channel is defined in the range of `[0, 1]
+     */
+    defaultColor?: Color;
 }

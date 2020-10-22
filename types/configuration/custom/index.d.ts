@@ -1,12 +1,13 @@
-import { CustomLanguages } from './language';
-import { CustomThemes } from './theme';
 import { CustomCard } from '../../components/advanced/card';
+import { CustomItemCard } from '../../components/advanced/itemCard';
 import { CustomAdvancedToolbarItem } from '../../components/advanced/toolbarItem';
 import { CustomButtons } from '../../components/base/buttons';
-import { CustomColorItem } from '../../components/base/color/colorItem';
-import { CustomMeasurements } from './measurements';
 import { CustomCheckbox } from '../../components/base/checkbox/checkbox';
+import { CustomColorItem } from '../../components/base/color/colorItem';
 import { CustomDialog } from '../../components/base/dialog/dialog';
+import { CustomLanguages } from './language';
+import { CustomMeasurements } from './measurements';
+import { CustomThemes } from './theme';
 export interface CustomComponents {
     /**
      * advancedUICategoryCard will receive CustomCardProps
@@ -15,7 +16,7 @@ export interface CustomComponents {
     /**
      * advancedUIItemCard will receive CustomCardProps
      */
-    advancedUIItemCard?: CustomCard;
+    advancedUIItemCard?: CustomItemCard;
     /**
      * toolbarItem will receive CustomToolbarItemProps
      */

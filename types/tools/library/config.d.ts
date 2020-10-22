@@ -1,9 +1,9 @@
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { LibraryProvider } from './provider';
 export declare class LibraryConfiguration {
-    enableWebcam: boolean;
-    enableUpload: boolean;
-    provider?: LibraryProvider;
+    enableWebcam?: boolean;
+    enableUpload?: boolean;
+    provider?: typeof LibraryProvider;
     /**
      * Whether categories should be flattened which effectively hides the categories.
      * If this is enabled all images will be shown in the top-level of the library selection tool

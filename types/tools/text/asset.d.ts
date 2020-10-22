@@ -13,6 +13,7 @@ export interface Font {
 }
 export interface WebFontAsset extends Font {
     fontURI: string;
+    googleFamily?: string;
     format: 'woff' | 'woff2' | 'truetype' | 'opentype' | 'embedded-opentype' | 'svg';
     provider?: 'file';
 }

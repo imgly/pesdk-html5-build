@@ -1,8 +1,36 @@
+# 5.7.0
+
+## Changed
+
+- The PhotoEditor SDK is now available as a UMD build
+- The fonts now include all available subsets. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/main/assets)
+- The next minor release (`v5.8.0`) will require React `16.8.6` or higher.
+
+## Added
+
+- Added a warning if the image was downscaled due to the `downscaleOptions`
+- Added an api function to reset the editor
+- Added an option to define the default color for each tool
+- Added the image author information to the AdvancedUI library items
+
+# Fixed
+
+- Fixed the request of multiple google font families with different variations
+- Fixed the empty margin if only one button is displayed in the BasicUI library
+- Fixed text is not aligned in center and background color has no padding
+- Fixed an issue where simplebar initialised scrollbars outside of the editor
+- Fixed the tintMode color for sticker where the size is a multiple of two
+- Fixed the color picker position if there is not enough space beneath the component
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.6.1
 
 ## Changed
 
-- Updated the Text tool fonts. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/master/pesdk-v5/assets)
+- Updated the Text tool fonts. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/main/assets)
 
 ## Known Issues
 

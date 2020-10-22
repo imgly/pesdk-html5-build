@@ -1,5 +1,5 @@
-import { OverlayAsset } from './asset';
 import { ExistingItem } from '../../common/existingAsset';
+import { OverlayAsset } from './asset';
 export declare class OverlayConfiguration {
     /**
      * Defines all available overlays.

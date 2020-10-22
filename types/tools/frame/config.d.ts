@@ -1,6 +1,6 @@
-import { FrameAsset } from './asset';
 import { NamedColor } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
+import { FrameAsset } from './asset';
 export declare class FrameConfiguration {
     /**
      * Defines all available frames.

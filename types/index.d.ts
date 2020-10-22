@@ -17,6 +17,11 @@ interface EditorFunctions {
   dispose: () => void
 
   /**
+   * Resets the PhotoEditor SDK 
+   */
+  reset: () => void
+
+  /**
    * Closes the PhotoEditor SDK UI and disposes all Engine instance
    */
   close: () => void
@@ -80,9 +85,11 @@ export * from './common/size';
 export * from './common/color';
 export * from './common/categoryHeaderTypes';
 export * from './components/advanced/card';
+export * from './components/advanced/itemCard';
 export * from './components/base/buttons';
 export * from './components/advanced/toolbarItem';
 export * from './components/base/cardLabel';
+export * from './components/base/cardAvatar';
 export * from './components/base/color/colorItem';
 export * from './components/base/color/colorItemComponents';
 export * from './components/base/dialog/dialog';
@@ -121,8 +128,10 @@ export * from './serialization/3.9.0/schema';
 export * from './serialization/3.9.0/appSerializableState';
 import { CustomCardProps } from './components/advanced/card'
 import { CustomToolbarItemProps } from './components/advanced/toolbarItem'
+import { CustomItemCardProps } from './components/advanced/itemCard';
 import { CustomDialogProps } from './components/base/dialog/dialog'
 import { CustomCardLabelProps } from './components/base/cardLabel'
+import { CustomCardAvatarProps } from './components/base/cardAvatar'
 import { CustomButtonProps } from './components/base/buttons'
 import {
   ColorItemBaseProps,
@@ -156,7 +165,7 @@ export class AdvancedUICategoryCard extends React.Component<CustomCardProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class AdvancedUIItemCard extends React.Component<CustomCardProps> {}
+export class AdvancedUIItemCard extends React.Component<CustomItemCardProps> {}
 /**
  * @ignore
  */
@@ -167,7 +176,11 @@ export class AdvancedUIToolbarItem extends React.Component<CustomToolbarItemProp
  */
 // @ts-ignore:2686
 export class AdvancedUICardLabel extends React.Component<CustomCardLabelProps> {}
-
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class CardAvatar extends React.Component<CustomCardAvatarProps> {}
 /**
  * @ignore
  */

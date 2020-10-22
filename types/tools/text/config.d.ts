@@ -1,7 +1,7 @@
-import { FontAsset } from './asset';
-import { NamedColor } from '../../common/color';
 import { CanvasAction } from '../../common/canvasAction';
+import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
+import { FontAsset } from './asset';
 export declare class TextConfiguration {
     /**
      * Defines all available fonts.
@@ -75,8 +75,18 @@ export declare class TextConfiguration {
      */
     colors?: Array<NamedColor>;
     /**
+     * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
+     * each channel is defined in the range of `[0, 1]
+     */
+    defaultColor?: Color;
+    /**
      * Defines all available colors that can be applied to text background.
      * The color picker is always added.
      */
     backgroundColors?: Array<NamedColor>;
+    /**
+     * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
+     * each channel is defined in the range of `[0, 1]
+     */
+    defaultBackgroundColor?: Color;
 }

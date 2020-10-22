@@ -3,7 +3,9 @@ declare type Listener = (...args: any[]) => void;
  * A class used to receive and emit events.
  */
 declare class EventEmitter<EventType extends string> {
-    private events;
+    events: {
+        [event in EventType]?: Listener[];
+    };
     constructor();
     /**
      * Adds the `listener` function to the end of the list of listeners for the specified `event`.

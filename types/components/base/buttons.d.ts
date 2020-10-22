@@ -1,6 +1,6 @@
 /// <reference types="react" />
-import { AlignmentType } from '../../index';
 import { Tool } from '../../common/tool';
+import { AlignmentType } from '../../tools/text';
 export interface CustomButtonProps {
     label?: string;
     ariaLabel?: string;

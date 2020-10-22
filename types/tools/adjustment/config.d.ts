@@ -1,4 +1,4 @@
-import { ExistingAdjustmentCategory } from './asset';
+import { ExistingAdjustmentCategory, AdjustmentCategory } from './asset';
 export declare class AdjustmentConfiguration {
     /**
      * Defines all allowed adjustment tools. The adjustment tool buttons are always shown in the given order.
@@ -21,7 +21,7 @@ export declare class AdjustmentConfiguration {
      * }]
      * ```
      */
-    categories?: ExistingAdjustmentCategory[];
+    categories?: Array<AdjustmentCategory | ExistingAdjustmentCategory>;
     /**
      * Whether categories should be flattened which effectively hides the categories.
      * If this is enabled all adjustments will be shown in the top-level of the adjust selection tool

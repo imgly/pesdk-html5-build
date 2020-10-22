@@ -1,11 +1,11 @@
-import { ImageFormat } from '../../configuration/feature/imageFormat';
-import { BlendMode } from '../../tools/overlay';
-import { AlignmentType } from '../../tools/text';
-import { TintMode } from '../../tools/sticker';
-import { Mutable } from '../../common/utils';
-import { SpriteType } from '../../common/tool';
 import { Float2 } from '../../common/float2';
 import { Size } from '../../common/size';
+import { SpriteType } from '../../common/tool';
+import { Mutable } from '../../common/utils';
+import { ImageFormat } from '../../configuration/feature/imageFormat';
+import { BlendMode } from '../../tools/overlay';
+import { TintMode } from '../../tools/sticker';
+import { AlignmentType } from '../../tools/text';
 export declare type SerializableColor = [number, number, number, number];
 export interface AdjustmentSerializableState {
     brightness: number;
