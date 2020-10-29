@@ -33,7 +33,7 @@ interface EditorFunctions {
 
   /**
    * Exports an image
-   * @param {ExportConfiguration['image']} options = false
+   * @param {ExportConfiguration['image']} options
    * @return {Promise}
    */
   export: (
@@ -46,17 +46,18 @@ interface EditorFunctions {
    * Dynamically sets the image to the ui
    * @param {Image} image
    */
-  setImage: (image: string | HTMLImageElement) => void
+  setImage: (image: string | HTMLImageElement) => Promise<void>
 
   /**
    * Serializes current editor state to the serialization schema
-   * @param {Image} image
+   * @param {Object} options
+   * @param {boolean} options.image
    */
-  serialize: ({ image: boolean }) => Promise<SerialisationSchema>
+  serialize: (options: { image: boolean }) => Promise<SerialisationSchema>
 
   /**
    * Deserializes serialization schema to editor state
-   * @param {Image} image
+   * @param {SerializationSchema} data
    */
   deserialize: (data: SerialisationSchema) => Promise<void>
 }

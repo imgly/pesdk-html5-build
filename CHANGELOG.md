@@ -1,3 +1,19 @@
+# 5.7.1
+
+## Changed
+
+- The option `displayResizeWarning` changed to `false` by default
+
+## Fixed
+
+- Fixed an issue while selecting an overlay
+- Fixed missing German translation for resized image dialog
+- Fixed the missing transform thumbnails in the basic ui
+- Fixed small issues in the Basic UI
+- Fixed default color option for frame tool
+- Fixed the error message while closing the editor
+- Fixed a type issue in Angular strict mode
+
 # 5.7.0
 
 ## Changed

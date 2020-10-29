@@ -1,4 +1,4 @@
-import { NamedColor } from '../../common/color';
+import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
 import { FrameAsset } from './asset';
 export declare class FrameConfiguration {
@@ -23,4 +23,9 @@ export declare class FrameConfiguration {
      * The color picker is always added.
      */
     colors?: Array<NamedColor>;
+    /**
+     * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
+     * each channel is defined in the range of `[0, 1]
+     */
+    defaultColor?: Color;
 }
