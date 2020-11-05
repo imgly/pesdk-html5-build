@@ -1,3 +1,14 @@
+# 4.25.0
+
+## Changed
+
+*   The fonts now include all available subsets. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/v4/assets)
+
+## Fixed
+
+*   Fixed the editing of text through double tap in the react-ui
+*   Fixed the square crop ratio in the react ui
+
 # 4.24.4
 
 ## Changed
