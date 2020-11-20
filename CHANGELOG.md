@@ -1,3 +1,11 @@
+# 5.7.2
+
+## Fixed
+
+- Fixed an issue with the slider in Chrome 87
+- Fixed the missing rotate and flip controls in the Basic UI
+- Fixed an issue where custom svg sticker were rasterized
+
 # 5.7.1
 
 ## Changed
