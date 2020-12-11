@@ -1,10 +1,26 @@
+# 5.8
+
+## Changed
+
+- The minimal required React version is now `16.8.6`
+- Replaced the `simplebar` package with native scrollbars. IE11 and Legacy Edge only support a limited amount of scrollbar styling and will look slightly different compared to other browsers 
+
+## Added
+
+- Added the `UIEvent.TOOL_ENTER` event which will return the new active tool
+- Added the `UIEvent.STICKER_UPLOAD_ADD` event which will return the custom sticker an user uploaded
+
+## Fixed
+
+- Fixed the sticker opacity if the value is set to 0
+
 # 5.7.2
 
 ## Fixed
 
-- Fixed an issue with the slider in Chrome 87
 - Fixed the missing rotate and flip controls in the Basic UI
 - Fixed an issue where custom svg sticker were rasterized
+- Fixed an issue with the slider in Chrome 87
 
 # 5.7.1
 

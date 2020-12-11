@@ -2,7 +2,7 @@ import { Float2 } from '../../common/float2';
 import { Size } from '../../common/size';
 import { SpriteType } from '../../common/tool';
 import { Mutable } from '../../common/utils';
-import { ImageFormat } from '../../configuration/feature/imageFormat';
+import { ImageMimeType } from '../../configuration/feature/imageMimeType';
 import { BlendMode } from '../../tools/overlay';
 import { TintMode } from '../../tools/sticker';
 import { AlignmentType } from '../../tools/text';
@@ -129,7 +129,7 @@ export interface SerializableCustomStickerAsset {
     identifier: string;
     name?: string;
     raster: {
-        type: ImageFormat;
+        type: ImageMimeType.PNG | ImageMimeType.JPEG;
         data: string;
     };
     svg?: {

@@ -1,6 +1,6 @@
 {
   "name": "photoeditorsdk",
-  "version": "5.7.2",
+  "version": "5.8.0",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "module": "index.esm.js",
@@ -21,8 +21,8 @@
   "author": "PhotoEditorSDK (img.ly GmbH) <contact@img.ly>",
   "license": "SEE LICENSE IN LICENSE.md",
   "peerDependencies": {
-    "react": ">= 16.3.0",
-    "react-dom": ">= 16.3.0",
+    "react": ">= 16.8.6",
+    "react-dom": ">= 16.8.6",
     "styled-components": ">= 4.0.0"
   },
   "scripts": {

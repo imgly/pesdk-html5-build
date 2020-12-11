@@ -1,66 +1,56 @@
-import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l as lr,m as Ar,n as Pr,o as ar,p as $r,q as Pe,r as er,s as f,t as no,u as dr}from"../../chunk.SJQ3NCEJ.js";import{$ as jr,J as G,L as Or,M as Le,O as go,P as ao,R as Br,T as He,V,W as re,X as l,Z as m,_ as c,n as De,u as pe,y as wo}from"../../chunk.JLGER33R.js";import{I as N,c as s,v as h}from"../../chunk.RL52RQ5R.js";import Ot from"styled-components";const Bo=Ot(ao)`
+import{a as f,b as rr,c as hr,d as mr,f as uo,g as E,h as Ae,i as _t,k as Sr,l as Cr,m as wt,n as _e,o as ur,p as Xe,q as br,r as ge,s as He,t as u,u as mo,v as Qe}from"../../chunk.MDEDY36T.js";import{$ as gr,C as bo,L as de,N as co,P as sr,R as v,S as Te,T as A,V as Oe,W as Nt,X as l,Z as c,aa as p,q as fe,u as Jt}from"../../chunk.UODY7UPN.js";import{N as V,c as i,w as C}from"../../chunk.IQZ6RVTD.js";import po from"react";import{ThemeProvider as yr}from"styled-components";import $ from"react";import dr from"styled-components";import ao from"react";import kt from"react";import Bt from"styled-components";const vo=Bt(co)`
   margin: 2px;
   min-width: ${o=>o.theme.measurements.basicCard.large.width}px;
   height: ${o=>o.theme.measurements.basicCard.large.height}px;
   color: ${o=>o.theme.card.foreground};
-`;import Wt from"styled-components";const vo=Wt(ao)`
+`;import Tt from"styled-components";const Uo=Tt(co)`
   margin: 2px;
   min-width: ${o=>o.theme.measurements.basicCard.medium.width}px;
   height: ${o=>o.theme.measurements.basicCard.medium.height}px;
   color: ${o=>o.theme.card.foreground};
-`;import Mt from"react";const lo=o=>{const r=o.type===h.LARGE;let e=vo;return r&&(e=Bo),Mt.createElement(e,N({},o))};lo.defaultProps={type:h.MEDIUM};import q from"react";import po from"styled-components";const ko=po.div`
-  width: 100%;
-  height: inherit;
-  overflow: auto;
+`,Co=o=>{const r=o.type===C.LARGE;let e=Uo;return r&&(e=vo),kt.createElement(e,V({},o))};Co.defaultProps={type:C.MEDIUM};import vt from"styled-components";const wo=vt(bo)`
   transition-property: width;
   transition-duration: 0.4s;
   transition-timing-function: ease-in;
-  ${V.HiddenScrollbar}
-  /* prevent the native vertical scrollbar */
-  .photoeditorsdk-simplebar-mask {
-    overflow-y: hidden;
-  }
-`,jt=po(ko).attrs({"data-photoeditorsdk-simplebar":"init","data-photoeditorsdk-simplebar-auto-hide":"false"})``,To=po.div`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-`,Uo=o=>{const{children:r}=o,e=wo(o,["children"]);return q.createElement(jt,N({},e),q.createElement(To,null,r))},Lo=o=>{const{children:r}=o,e=wo(o,["children"]);return q.createElement(ko,N({},e),q.createElement(To,null,r))};import zt from"styled-components";const Eo=zt(Ht)`
+  height: ${o=>o.theme.measurements.basicToolControlBar.itemsBarHeight}px;
+`;import Ut from"styled-components";const Lo=Ut(wt)`
   &&& {
     min-height: 32px;
     font-size: ${o=>o.theme.measurements.fontSystem.basicUICardLabel.size}px;
     letter-spacing: ${o=>o.theme.measurements.fontSystem.basicUICardLabel.letterSpacing}px;
     text-transform: ${o=>o.theme.measurements.fontSystem.basicUICardLabel.case};
   }
-`;import Nt from"styled-components";const Gt=Nt.div`
+`;import Lt from"styled-components";const Ao=Lt.div`
   display: flex;
-`;var Fo=Gt;import Vt,{css as Ao}from"styled-components";const $o=Vt.div`
+  /* This fixes an IE11 issue where the items are behind the category */
+  flex: 1 0 auto;
+`;import At,{css as Eo}from"styled-components";const Fo=At.div`
   position: relative;
   display: flex;
   flex-shrink: 0;
   height: auto;
   transition: max-height 0.4s ease-in-out;
-  ${o=>o.show?Ao`
+  ${o=>o.show?Eo`
           max-height: 80px;
-        `:Ao`
+        `:Eo`
           max-height: 0px;
         `}
-`;var Do=$o;$o.defaultProps={show:!0};import Yt from"styled-components";const Xt=Yt.div`
+`;var $o=Fo;Fo.defaultProps={show:!0};import Et from"styled-components";const Ft=Et.div`
   text-align: -moz-center;
   text-align: center;
   text-align: -webkit-center;
-  overflow: visible;
   margin: 0 10vw;
   height: auto;
   box-shadow: ${o=>o.theme.toolControlBar.shadow};
   @media all and (min-width: 0) and (max-width: 599px) {
     margin: 0 5vw;
   }
-`;var Po=Xt;import _t from"styled-components";const Jt=_t.div`
+`;var Po=Ft;import $t from"styled-components";const Pt=$t.div`
   width: 100px;
   @media all and (min-width: 0) and (max-width: 599px) {
     width: 42px;
   }
-`;var Oo=Jt;import Kt,{css as qt}from"styled-components";const Qt=Kt.div`
+`;var Do=Pt;import Dt,{css as Ot}from"styled-components";const Oo=Dt.div.attrs(()=>({"data-test":A.ToolControlBarControls}))`
   position: absolute;
   left: 0%;
   transform: translateY(0%) scaleY(0);
@@ -75,31 +65,29 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
   background: ${o=>o.theme.toolControlBar.background};
   color: ${o=>o.theme.toolControlBar.inputLabelForeground};
 
-  ${({show:o})=>o&&qt`
+  ${({show:o})=>o&&Ot`
       transform: translateY(-100%) scaleY(1);
-      overflow: visible;
     `}
-`;var Wo=Qt;import Zt from"react";import Rt from"styled-components";const oe=Rt.div`
+`;import X from"react";import Zt from"styled-components";import Wt from"react";import Mt from"styled-components";const jt=Mt.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`,te=({label:o,className:r,children:e})=>Zt.createElement(oe,{"aria-label":o,className:r},e);var mo=te;import ee from"styled-components";const ne=ee.div`
+`,zt=({label:o,className:r,children:e})=>Wt.createElement(jt,{"aria-label":o,className:r},e);var ho=zt;import I from"react";import zo from"styled-components";import Ht from"styled-components";const Gt=Ht.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${re.scale} 0.2s linear;
+  animation: ${Nt.scale} 0.2s linear;
   animation-fill-mode: both;
-  overflow: visible;
   height: 40px;
   min-width: 350px;
   @media all and (min-width: 0) and (max-width: 599px) {
     min-width: 280px;
   }
-`;var Mo=ne;import jo from"react";import ie,{css as se}from"styled-components";const zo=se`
+`;var Wo=Gt;import Mo from"react";import Vt,{css as Yt}from"styled-components";const jo=Yt`
   background: ${o=>o.theme.tabTitle.activeBackground};
   color: ${o=>o.theme.tabTitle.activeForeground};
   border-bottom: 1px solid ${o=>o.theme.tabTitle.activeBorderColor};
-`,ae=ie(co)`
+`,Xt=Vt(uo)`
   display: inline-flex;
   align-items: center;
   font-size: ${o=>o.theme.measurements.fontSystem.basicUITabLabel.size}px;
@@ -110,10 +98,10 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
   padding: 1px 12px 2px;
   background: ${o=>o.theme.tabTitle.background};
 
-  ${({isActive:o})=>o&&zo}
+  ${({isActive:o})=>o&&jo}
 
   &:active {
-    ${zo}
+    ${jo}
   }
 
   @media all and (min-width: 0) and (max-width: 599px) {
@@ -121,12 +109,12 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-`;class Co extends jo.Component{constructor(){super(...arguments);this.onClick=()=>{const{label:o,onClick:r}=this.props;r(o)}}render(){const{activeTab:o,label:r}=this.props;return jo.createElement(ae,{ariaLabel:r,isActive:o===r,onClick:this.onClick},r)}}import x from"react";import Ho from"styled-components";const me=Ho(pe)`
+`;class fo extends Mo.Component{constructor(){super(...arguments);this.onClick=()=>{const{label:o,onClick:r}=this.props;r(o)}}render(){const{activeTab:o,label:r}=this.props;return Mo.createElement(Xt,{ariaLabel:r,isActive:o===r,onClick:this.onClick},r)}}const Kt=zo(Jt)`
   display: inline-flex;
   padding: 0 4px;
   height: 20px;
   font-size: 16px;
-`,ce=Ho(le)`
+`,qt=zo(_t)`
   display: inline-flex;
   justify-content: center;
   transform: translate(-100%, -100%);
@@ -135,7 +123,6 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     right: 0;
     transform: translateY(-120%);
     background: transparent;
-    overflow: hidden;
     button {
       &:first-child {
         border-bottom-right-radius: 0;
@@ -150,18 +137,17 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
       }
     }
   }
-`;class de extends x.Component{constructor(o){super(o);this.onTabClick=o=>{this.setState({activeTab:o,toggleExtend:!1})};this.getDropUp=()=>{const{length:o}=this.props,{toggleExtend:r}=this.state,e=x.Children.toArray(this.props.children),n=x.Children.count(this.props.children),i=e.slice(o,n);return x.createElement(ce,{show:r},i.map(a=>{const p=a.props.label||"";return x.createElement(co,{onClick:()=>this.onTabClick(p),key:p,ariaLabel:"More Options"},p)}))};this.extend=()=>{this.setState(({toggleExtend:o})=>({toggleExtend:!o}))};this.getExtension=()=>x.createElement(me,{onClick:this.extend,ariaLabel:"Select Next"},"...");const r=x.Children.count(this.props.children),e=x.Children.toArray(this.props.children);this.state={activeTab:r&&(e[0].props&&e[0].props.label)||"",toggleExtend:!1}}render(){const{length:o}=this.props,{activeTab:r,toggleExtend:e}=this.state,n=x.Children.toArray(this.props.children).slice(0,o),i=x.Children.count(this.props.children)>o;return x.createElement("div",null,n.map(a=>{if(a){const p=a.props.label||"";return x.createElement(Co,{activeTab:r,key:p,label:p,onClick:this.onTabClick})}return null}),i?this.getExtension():null,e?this.getDropUp():null,x.Children.map(this.props.children,a=>!a||a.props&&a.props.label!==r?null:x.createElement(Mo,{key:a.props.label},a.props.children)))}}var Y=de;import X from"react";import Ce from"styled-components";const he=Ce.div`
+`;class Qt extends I.Component{constructor(o){super(o);this.onTabClick=o=>{this.setState({activeTab:o,toggleExtend:!1})};this.getDropUp=()=>{const{length:o}=this.props,{toggleExtend:r}=this.state,e=I.Children.toArray(this.props.children),n=I.Children.count(this.props.children),s=e.slice(o,n);return I.createElement(qt,{show:r},s.map(a=>{const m=a.props.label||"";return I.createElement(uo,{onClick:()=>this.onTabClick(m),key:m,ariaLabel:"More Options"},m)}))};this.extend=()=>{this.setState(({toggleExtend:o})=>({toggleExtend:!o}))};this.getExtension=()=>I.createElement(Kt,{onClick:this.extend,ariaLabel:"Select Next"},"...");const r=I.Children.count(this.props.children),e=I.Children.toArray(this.props.children);this.state={activeTab:r&&(e[0].props&&e[0].props.label)||"",toggleExtend:!1}}render(){const{length:o}=this.props,{activeTab:r,toggleExtend:e}=this.state,n=I.Children.toArray(this.props.children).slice(0,o),s=I.Children.count(this.props.children)>o;return I.createElement("div",null,n.map(a=>{if(a){const m=a.props.label||"";return I.createElement(fo,{activeTab:r,key:m,label:m,onClick:this.onTabClick})}return null}),s?this.getExtension():null,e?this.getDropUp():null,I.Children.map(this.props.children,a=>!a||a.props&&a.props.label!==r?null:I.createElement(Wo,{key:a.props.label},a.props.children)))}}var Y=Qt;const Rt=Zt.div`
   position: relative;
-  overflow: visible;
   white-space: nowrap;
   display: flex;
   transition: all 0.2s linear;
-`;class _ extends X.Component{constructor(o){super(o);this.updateLength=()=>{const{maxWidth:o,children:r}=this.props;let e=0;if(o)e=o;else{const a=window.innerWidth,p=a>600?300:200;e=a-p}const n=X.Children.count(r),i=e-n*_.TAB_WIDTH;if(i<0){const a=Math.round(Math.abs(i/_.TAB_WIDTH));this.setState({length:n-a})}};this.state={length:X.Children.count(this.props.children)}}componentDidMount(){window.addEventListener("resize",this.updateLength),this.updateLength()}componentWillUnmount(){window.removeEventListener("resize",this.updateLength)}render(){const{children:o}=this.props,{length:r}=this.state;return r?X.createElement(he,null,X.createElement(Y,{length:r},o)):null}}_.TAB_WIDTH=120;import be,{css as ue}from"styled-components";const fe=be.div`
+`;class _ extends X.Component{constructor(o){super(o);this.updateLength=()=>{const{maxWidth:o,children:r}=this.props;let e=0;if(o)e=o;else{const a=window.innerWidth,m=a>600?300:200;e=a-m}const n=X.Children.count(r),s=e-n*_.TAB_WIDTH;if(s<0){const a=Math.round(Math.abs(s/_.TAB_WIDTH));this.setState({length:n-a})}};this.state={length:X.Children.count(this.props.children)}}componentDidMount(){window.addEventListener("resize",this.updateLength),this.updateLength()}componentWillUnmount(){window.removeEventListener("resize",this.updateLength)}render(){const{children:o}=this.props,{length:r}=this.state;return r?X.createElement(Rt,null,X.createElement(Y,{length:r},o)):null}}_.TAB_WIDTH=120;import oe,{css as te}from"styled-components";const ee=oe.div`
   &:after {
     content: '';
     position: absolute;
     bottom: 0px;
-    ${o=>o.full?ue`
+    ${o=>o.full?te`
             left: -24px;
             width: calc(100% + 48px);
           `:`
@@ -170,38 +156,39 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     `}
     border-bottom: 1px solid ${o=>o.theme.toolControlBar.separatorColor};
   }
-`;var No=fe;import ge from"styled-components";const ye=ge(l.Input.Slider).attrs(()=>({centerSlider:!0}))`
+`;var Ho=ee;import re from"styled-components";const ne=re(l.Input.Slider).attrs(()=>({centerSlider:!0}))`
   max-width: 224px;
-`;var Go=ye;import Se,{css as Ie}from"styled-components";const xe=Se.div`
+`;var No=ne;import se,{css as ie}from"styled-components";const ae=se.div`
   visibility: hidden;
   opacity: 0;
   display: none;
 
-  ${({show:o})=>o&&Ie`
+  ${({show:o})=>o&&ie`
       opacity: 1;
       visibility: visible;
       display: flex;
     `}
-`;var Vo=xe;import Be from"react";import ve,{css as Yo}from"styled-components";const Xo=ve.div`
-  position: relative;
-  overflow: hidden;
+`;var Go=ae;import le,{css as Vo}from"styled-components";const go=le.div`
+  display: flex;
   flex-shrink: 0;
-  height: ${o=>o.theme.measurements.basicToolControlBar.itemsBarHeight}px;
+  justify-content: center;
+  position: relative;
   width: 100%;
-  text-align: center;
+  height: ${o=>o.theme.measurements.basicToolControlBar.itemsBarHeight}px;
   z-index: ${o=>o.theme.measurements.zIndex.toolControlBar};
-  ${o=>o.show?Yo`
+
+  ${o=>o.show?Vo`
           transition-timing-function: ease-in;
           transition-duration: 0.3s;
           transition-property: all;
-          padding: 2px;
+          padding: 2px 0px;
           max-height: ${o.theme.measurements.basicToolControlBar.itemsBarHeight}px;
           background: ${o.theme.toolControlBar.background};
           color: ${o.theme.toolControlBar.inputLabelForeground};
-        `:Yo`
+        `:Vo`
           max-height: 0px;
         `}
-`,ke=({show:o,children:r})=>Be.createElement(Xo,{show:o},r);var _o=ke;Xo.defaultProps={show:!0};import Te from"styled-components";const we=Te.div`
+`;go.defaultProps={show:!0};import me from"styled-components";const pe=me.div`
   height: ${o=>o.theme.measurements.basicToolControlBar.itemsBarHeight}px;
   width: 2px;
   margin: 0 10px;
@@ -216,15 +203,15 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     border-right: 1px solid
       ${o=>o.theme.toolControlBar.separatorColor};
   }
-`;var Jo=we;import Q,{css as Ue}from"styled-components";const Ko=Q.span`
+`;var Yo=pe;import Ko from"react";import Ce,{css as qo}from"styled-components";import ro,{css as ce}from"styled-components";const Xo=ro.span`
   display: flex;
   cursor: pointer;
   z-index: ${o=>o.theme.measurements.zIndex.label};
   transition: bottom 0.3s linear;
-`,qo=Ue`
+`,_o=ce`
   background-color: ${o=>o.theme.toolbar.activeBackground};
   color: ${o=>o.theme.toolbar.activeForeground};
-`,Z=Q(Le)`
+`,no=ro(de)`
   display: block;
   height: 100%;
   width: 100%;
@@ -237,10 +224,10 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
   text-transform: ${o=>o.theme.measurements.fontSystem.label.case};
   font-family: '${o=>o.theme.typography.fontFamily}', sans-serif;
 
-  ${({isActive:o})=>o&&qo}
+  ${({isActive:o})=>o&&_o}
 
   &:active {
-    ${qo}
+    ${_o}
   }
 
   svg {
@@ -249,61 +236,54 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     visibility: visible;
     opacity: 1;
   }
-`,Qo=Q.div`
+`,Jo=ro.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`,R=Q.li.attrs({role:"none"})`
-  height: ${o=>o.theme.measurements.basicUIToolbar.openHeight}px;
+`,so=ro.div.attrs({role:"none"})`
+  display: flex;
+  height: ${o=>o.theme.measurements.basicUIToolbar.openHeight-2}px;
   text-align: center;
   min-width: 100px;
   /* Allow the text to grow in this limit */
   max-width: 150px;
   position: relative;
-  display: inline-block;
   /* Position inline-block box at the top of the line box */
   vertical-align: top;
   /* Allow text to wrap again, overwriting the Toolbar style */
   white-space: normal;
   margin: 1px;
-`;import Ee,{css as Zo}from"styled-components";const ho=Ee.ul.attrs(()=>({role:"menubar","aria-label":"Tool Navigation","data-photoeditorsdk-simplebar":"init","data-photoeditorsdk-simplebar-auto-hide":"false"}))`
-  width: 100%;
-  white-space: nowrap;
-  overflow-y: hidden;
-  text-align: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
+`,be=Ce.div`
   display: flex;
   flex-shrink: 0;
   justify-content: center;
+  position: relative;
+  width: 100%;
   transition: height 0.2s ease-out, display 0.1s fade-out;
   background-color: ${o=>o.theme.toolbar.background};
   color: ${o=>o.theme.toolbar.foreground};
   z-index: ${o=>o.theme.measurements.zIndex.toolbar};
 
-  ${o=>o.show?Zo`
+  ${o=>o.show?qo`
           height: ${o.theme.measurements.basicUIToolbar.closeHeight}px;
-          ${Z} {
+          ${no} {
             svg {
               visibility: hidden;
               opacity: 0;
               height: 0;
             }
           }
-          ${R} {
+          ${so} {
             height: ${o.theme.measurements.basicUIToolbar.closeHeight}px;
           }
-        `:Zo`
+        `:qo`
           height: ${o.theme.measurements.basicUIToolbar.openHeight}px;
         `}
-  ${V.HiddenScrollbar}
-`;ho.defaultProps={show:!1};import oo from"react";const Fe=({children:o,label:r,isActive:e,onClick:n})=>oo.createElement(R,{"aria-haspopup":!0,"aria-expanded":e},oo.createElement(Z,{ariaLabel:r,onClick:n,isActive:e},oo.createElement(Qo,null,o,oo.createElement(Ko,null,r))));var Ro=Fe;import Ae,{css as ot}from"styled-components";const $e=Ae.li.attrs({role:"none"})`
-  ${o=>o.active?ot`
+`,Qo=({show:o=!1,children:r})=>Ko.createElement(be,{"data-test":A.Toolbar,show:o},Ko.createElement(bo,null,r));import io from"react";const Zo=({children:o,label:r,isActive:e,onClick:n})=>io.createElement(so,{"aria-haspopup":!0,"aria-expanded":e},io.createElement(no,{"data-test":A.ToolbarItem,ariaLabel:r,onClick:n,isActive:e},io.createElement(Jo,null,o,io.createElement(Xo,null,r))));import he,{css as Ro}from"styled-components";const ue=he.li.attrs({role:"none"})`
+  ${o=>o.active?Ro`
           height: ${o.theme.measurements.basicUIToolbar.closeHeight}px;
-        `:ot`
+        `:Ro`
           height: ${o.theme.measurements.basicUIToolbar.openHeight}px;
         `}
   width: 2px;
@@ -318,44 +298,45 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
     border-right: 1px solid
       ${o=>o.theme.toolControlBar.separatorColor};
   }
-`;var tt=$e;const t={CardContainer:Uo,DynamicCardContainer:Lo,ExpandableContainer:Vo,CategoryContainer:Fo,Card:lo,CardAvatar:De,CardLabel:Eo,Toolbar:{Index:ho,Item:Ro,Separator:tt},BarSeparator:No,ItemsSeparator:Jo,Itemsbar:_o,Controlsbar:Do,ControlsbarContainer:Wo,ResponsiveTabWrapper:_,Slider:Go,TabWrapper:Y,Tab:mo,Other:{ControlsWrapper:Po,EmptyDiv:Oo}};import to from"react";const Oe=({config:o,active:r})=>{const{tools:e}=o,n=r.tool,i=C=>{const k=Pe[C];return to.createElement(k,null)||null},a=C=>o.locale[C].title,p=C=>{r.selectTool(C,!0)},d=(C,k)=>C&&to.createElement(t.Toolbar.Item,{onClick:()=>p(C),key:C,label:a(C),isActive:n===C},i(C))||to.createElement(t.Toolbar.Separator,{key:C+k,active:!!n});return to.createElement(t.Toolbar.Index,{role:"menubar",show:!!n},e.map(d))};var et=m("config","active")(c(Oe));import $ from"react";const We=({adjustmentsTool:o,custom:r})=>{const e=o.selectedAdjustmentType.toLowerCase(),n=r.getButton("toolControlBarSecondaryButton"),i=()=>{o.toolSnapshot()};return $.createElement(t.ControlsbarContainer,{show:Boolean(e)},$.createElement(n,{tool:s.ADJUSTMENT,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:$.createElement(f.reset,null),label:o.locale.controls.buttonReset}),$.createElement(t.Other.ControlsWrapper,null,$.createElement(l.Spacer,{count:2}),$.createElement(t.Slider,{"aria-hidden":!e,adjust:!0,style:{width:"280px"},label:o.selectedOptionLabel,value:o[e],onChange:a=>o.editAdjustments({type:e,value:a}),onMouseUp:i,onTouchEnd:i,snap:0}),$.createElement(l.Spacer,{count:2}),$.createElement(t.BarSeparator,null)),$.createElement(t.Other.EmptyDiv,null))};var rt=m("adjustmentsTool","custom")(c(We));import B from"react";const Me=t.TabWrapper,{Tab:bo}=t,je=({brushTool:o,custom:r})=>{const{colorList:e,locale:n,localeColor:i}=o,a=n.controls,p=i.colorPicker,d=r.getButton("toolControlBarSecondaryButton");return B.createElement(t.ControlsbarContainer,{style:{justifyContent:"center"},show:!0},B.createElement(d,{tool:s.BRUSH,ariaLabel:a.buttonReset,onClick:o.reset,icon:B.createElement(f.reset,null),isDisabled:!o.isDirty,label:a.buttonReset}),B.createElement(t.Other.ControlsWrapper,null,B.createElement(l.Input.Form,null,B.createElement(Me,null,B.createElement(bo,{label:a.tabColor},B.createElement(l.Spacer,{count:1}),B.createElement(l.Input.Selection,{showLabel:!1,label:a.selectColor},B.createElement(E,{parentId:a.selectColor,activeColor:o.color,colors:e,labelsColor:p,colorPickerDirection:"top",onChange:o.changeColor}))),B.createElement(bo,{label:a.tabSize},B.createElement(t.Slider,{style:{width:"280px"},showLabel:!1,label:a.sliderSize,value:o.relativeSize,min:1,max:100,divider:1,onChange:o.changeRelativeSize})),B.createElement(bo,{label:a.tabHardness},B.createElement(t.Slider,{style:{width:"280px"},showLabel:!1,label:a.sliderHardness,value:o.hardness,min:0,max:1,onChange:o.changeHardness}))))))};var nt=m("brushTool","custom")(c(je));import D from"react";const ze=({filterTool:o,custom:r})=>{const{state:e}=o,n=o.locale.controls,i=r.getButton("toolControlBarSecondaryButton"),a=()=>{o.toolSnapshot()};return D.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},D.createElement(i,{tool:s.FILTER,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:D.createElement(f.reset,null),label:o.locale.controls.buttonReset}),D.createElement(t.Other.ControlsWrapper,null,D.createElement(l.Spacer,{count:2}),D.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,style:{width:"280px"},label:n.sliderIntensity,value:e.intensity,min:0,max:1,onMouseUp:a,onTouchEnd:a,onChange:o.changeIntensity,snap:e.isDuotone?.5:null}),D.createElement(l.Spacer,{count:2}),D.createElement(t.BarSeparator,null)),D.createElement(t.Other.EmptyDiv,null))};var it=m("filterTool","custom")(c(ze));import P from"react";const Ne=({focusTool:o,custom:r})=>{const e=o.locale.controls,n=r.getButton("toolControlBarSecondaryButton"),i=()=>{o.toolSnapshot(e.sliderIntensity)};return P.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},P.createElement(n,{tool:s.FOCUS,ariaLabel:e.buttonReset,onClick:o.reset,icon:P.createElement(f.reset,null),label:e.buttonReset}),P.createElement(t.Other.ControlsWrapper,null,P.createElement(l.Spacer,{count:2}),P.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,style:{width:"280px"},label:e.sliderIntensity,value:o.intensity,min:He.minIntensity,max:o.maxIntensity,divider:1,onChange:o.changeIntensity,onMouseUp:i,onTouchEnd:i}),P.createElement(l.Spacer,{count:2}),P.createElement(t.BarSeparator,null)),P.createElement(t.Other.EmptyDiv,null))};var st=m("focusTool","custom")(c(Ne));import I from"react";const Ge=t.TabWrapper,{Tab:uo}=t,Ve=({frameTool:o,custom:r})=>{const e=o.locale.controls,n=o.localeColor.colorPicker,{tintable:i,colorList:a}=o,p=r.getButton("toolControlBarSecondaryButton"),d=C=>{o.toolSnapshot(C)};return I.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},I.createElement(p,{tool:s.FRAME,ariaLabel:e.buttonReset,onClick:o.reset,icon:I.createElement(f.reset,null),label:e.buttonReset}),I.createElement(t.Other.ControlsWrapper,null,I.createElement(l.Spacer,null),I.createElement(Ge,null,I.createElement(uo,{label:e.tabOpacity},I.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:e.sliderOpacity,value:o.opacity,min:0,max:1,onChange:o.changeOpacity,onMouseUp:()=>{d(e.sliderOpacity)},onTouchEnd:()=>{d(e.sliderOpacity)}})),I.createElement(uo,{label:e.tabSize},I.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:e.sliderSize,value:o.size,min:o.minSize,max:o.maxSize,divider:1,onChange:o.changeWidth,onMouseUp:()=>{d(e.sliderSize)},onTouchEnd:()=>{d(e.sliderSize)}})),i&&I.createElement(uo,{label:e.tabColor},I.createElement(l.Spacer,{count:1}),I.createElement(l.Input.Selection,{label:e.selectColor,showLabel:!1},I.createElement(E,{parentId:e.selectColor,activeColor:o.color,colors:a,labelsColor:n,colorPickerDirection:"top",onChange:o.changeColor,onAddSnapshot:o.colorSnapshot})))||null),I.createElement(t.BarSeparator,null)),I.createElement(t.Other.EmptyDiv,null))};var at=m("frameTool","canvas","custom")(c(Ve));import O from"react";import Ye,{css as Xe}from"styled-components";const _e=Ye(t.ControlsbarContainer)`
-  ${o=>o.firstChildMargin&&Xe`
+`;var ot=ue;const t={CardContainer:wo,ExpandableContainer:Go,CategoryContainer:Ao,Card:Co,CardAvatar:fe,CardLabel:Lo,Toolbar:{Index:Qo,Item:Zo,Separator:ot},BarSeparator:Ho,ItemsSeparator:Yo,Itemsbar:go,Controlsbar:$o,ControlsbarContainer:Oo,ResponsiveTabWrapper:_,Slider:No,TabWrapper:Y,Tab:ho,Other:{ControlsWrapper:Po,EmptyDiv:Do}},ye=({config:o,active:r})=>{const{tools:e}=o,n=r.tool,s=d=>{const g=ge[d];return ao.createElement(g,null)||null},a=d=>o.locale[d].title,m=(d,g)=>d&&ao.createElement(t.Toolbar.Item,{onClick:()=>r.selectTool(d),key:d,label:a(d),isActive:n===d},s(d))||ao.createElement(t.Toolbar.Separator,{key:d+g,active:!!n});return ao.createElement(t.Toolbar.Index,{show:!!n},e.map(m))},tt=p("config","active")(c(ye));import b from"react";import D from"react";const Se=({adjustmentsTool:o,custom:r})=>{const e=o.selectedAdjustmentType.toLowerCase(),n=r.getButton("toolControlBarSecondaryButton"),s=()=>{o.toolSnapshot()};return D.createElement(t.ControlsbarContainer,{show:Boolean(e)},D.createElement(n,{tool:i.ADJUSTMENT,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:D.createElement(u.reset,null),label:o.locale.controls.buttonReset}),D.createElement(t.Other.ControlsWrapper,null,D.createElement(l.Spacer,{count:2}),D.createElement(t.Slider,{"aria-hidden":!e,adjust:!0,style:{width:"280px"},label:o.selectedOptionLabel,value:o[e],onChange:a=>o.editAdjustments({type:e,value:a}),onMouseUp:s,onTouchEnd:s,snap:0}),D.createElement(l.Spacer,{count:2}),D.createElement(t.BarSeparator,null)),D.createElement(t.Other.EmptyDiv,null))};var et=p("adjustmentsTool","custom")(c(Se));import B from"react";const xe=t.TabWrapper,{Tab:yo}=t,Ie=({brushTool:o,custom:r})=>{const{colorList:e,locale:n,localeColor:s}=o,a=n.controls,m=s.colorPicker,d=r.getButton("toolControlBarSecondaryButton");return B.createElement(t.ControlsbarContainer,{style:{justifyContent:"center"},show:!0},B.createElement(d,{tool:i.BRUSH,ariaLabel:a.buttonReset,onClick:o.reset,icon:B.createElement(u.reset,null),isDisabled:!o.isDirty,label:a.buttonReset}),B.createElement(t.Other.ControlsWrapper,null,B.createElement(l.Input.Form,null,B.createElement(xe,null,B.createElement(yo,{label:a.tabColor},B.createElement(l.Spacer,{count:1}),B.createElement(l.Input.Selection,{showLabel:!1,label:a.selectColor},B.createElement(E,{activeColor:o.color,colors:e,labelsColor:m,colorPickerDirection:"top",onChange:o.changeColor}))),B.createElement(yo,{label:a.tabSize},B.createElement(t.Slider,{style:{width:"280px"},showLabel:!1,label:a.sliderSize,value:o.relativeSize,min:1,max:100,divider:1,onChange:o.changeRelativeSize})),B.createElement(yo,{label:a.tabHardness},B.createElement(t.Slider,{style:{width:"280px"},showLabel:!1,label:a.sliderHardness,value:o.hardness,min:0,max:1,onChange:o.changeHardness}))))))},rt=p("brushTool","custom")(c(Ie));import O from"react";const Be=({filterTool:o,custom:r})=>{const{state:e}=o,n=o.locale.controls,s=r.getButton("toolControlBarSecondaryButton"),a=()=>{o.toolSnapshot()};return O.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},O.createElement(s,{tool:i.FILTER,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:O.createElement(u.reset,null),label:o.locale.controls.buttonReset}),O.createElement(t.Other.ControlsWrapper,null,O.createElement(l.Spacer,{count:2}),O.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,style:{width:"280px"},label:n.sliderIntensity,value:e.intensity,min:0,max:1,onMouseUp:a,onTouchEnd:a,onChange:o.changeIntensity,snap:e.isDuotone?.5:null}),O.createElement(l.Spacer,{count:2}),O.createElement(t.BarSeparator,null)),O.createElement(t.Other.EmptyDiv,null))};var nt=p("filterTool","custom")(c(Be));import W from"react";const ke=({focusTool:o,custom:r})=>{const e=o.locale.controls,n=r.getButton("toolControlBarSecondaryButton"),s=()=>{o.toolSnapshot(e.sliderIntensity)};return W.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},W.createElement(n,{tool:i.FOCUS,ariaLabel:e.buttonReset,onClick:o.reset,icon:W.createElement(u.reset,null),label:e.buttonReset}),W.createElement(t.Other.ControlsWrapper,null,W.createElement(l.Spacer,{count:2}),W.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,style:{width:"280px"},label:e.sliderIntensity,value:o.intensity,min:Te.minIntensity,max:o.maxIntensity,divider:1,onChange:o.changeIntensity,onMouseUp:s,onTouchEnd:s}),W.createElement(l.Spacer,{count:2}),W.createElement(t.BarSeparator,null)),W.createElement(t.Other.EmptyDiv,null))};var st=p("focusTool","custom")(c(ke));import x from"react";const ve=t.TabWrapper,{Tab:So}=t,Ue=({frameTool:o,custom:r})=>{const e=o.locale.controls,n=o.localeColor.colorPicker,{tintable:s,colorList:a}=o,m=r.getButton("toolControlBarSecondaryButton"),d=g=>{o.toolSnapshot(g)};return x.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},x.createElement(m,{tool:i.FRAME,ariaLabel:e.buttonReset,onClick:o.reset,icon:x.createElement(u.reset,null),label:e.buttonReset}),x.createElement(t.Other.ControlsWrapper,null,x.createElement(l.Spacer,null),x.createElement(ve,null,x.createElement(So,{label:e.tabOpacity},x.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:e.sliderOpacity,value:o.opacity,min:0,max:1,onChange:o.changeOpacity,onMouseUp:()=>{d(e.sliderOpacity)},onTouchEnd:()=>{d(e.sliderOpacity)}})),x.createElement(So,{label:e.tabSize},x.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:e.sliderSize,value:o.size,min:o.minSize,max:o.maxSize,divider:1,onChange:o.changeWidth,onMouseUp:()=>{d(e.sliderSize)},onTouchEnd:()=>{d(e.sliderSize)}})),s&&x.createElement(So,{label:e.tabColor},x.createElement(l.Spacer,{count:1}),x.createElement(l.Input.Selection,{label:e.selectColor,showLabel:!1},x.createElement(E,{activeColor:o.color,colors:a,labelsColor:n,colorPickerDirection:"top",onChange:o.changeColor,onAddSnapshot:o.colorSnapshot})))||null),x.createElement(t.BarSeparator,null)),x.createElement(t.Other.EmptyDiv,null))},it=p("frameTool","canvas","custom")(c(Ue));import M from"react";import we,{css as Le}from"styled-components";const Ee=we(t.ControlsbarContainer)`
+  ${o=>o.firstChildMargin&&Le`
       > :first-child {
         margin-right: 16px;
       }
     `}
-`,Je=({library:o,active:r,custom:e})=>{const n=o.locale.controls.placeholderSearch,{config:i}=o,a=e.getButton("toolControlBarSecondaryButton"),p=e.getButton("toolControlBarPrimaryButton"),d=L=>{o.fetchImages(L)},C=L=>{const{files:S}=L.target;if(S.length){const H=new FileReader;H.onload=Pt=>{r.newImage(Pt.target.result)},H.readAsDataURL(S[0])}},k=()=>{r.selectWebcam(!0)},z=()=>{const L=document.getElementById("fileUpload");L&&L.click()};return O.createElement(_e,{firstChildMargin:i.enableWebcam&&!o.libraryProvider,show:!0},i.enableUpload&&O.createElement(p,{tool:s.LIBRARY,ariaLabel:o.locale.controls.buttonUpload,onClick:z,icon:O.createElement(f.uploadImage,null),label:o.locale.controls.buttonUpload},O.createElement(l.Input.File,{onChange:C})),o.libraryProvider&&O.createElement(t.Other.ControlsWrapper,null,O.createElement(l.Input.Search,{onChange:d,placeholder:n})),i.enableWebcam&&O.createElement(a,{tool:s.LIBRARY,ariaLabel:o.locale.controls.buttonWebcamOpen,onClick:k,icon:O.createElement(f.openWebcam,null),label:o.locale.controls.buttonWebcamOpen}),O.createElement(t.BarSeparator,null))};var lt=m("library","active","custom")(c(Je));import w from"react";const Ke=t.TabWrapper,{Tab:pt}=t,qe=({overlayTool:o,custom:r})=>{const{state:e}=o,n=o.locale.controls,{allBlendModes:i}=o,{blendMode:a}=o,p=r.getButton("toolControlBarSecondaryButton"),d=()=>{o.toolSnapshot()},C=k=>{o.changeBlendMode(k)};return w.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},w.createElement(p,{tool:s.OVERLAY,ariaLabel:n.buttonReset,onClick:o.reset,icon:w.createElement(f.reset,null),label:n.buttonReset}),w.createElement(t.Other.ControlsWrapper,null,w.createElement(l.Spacer,null),w.createElement(Ke,null,w.createElement(pt,{label:n.tabBlendMode},w.createElement(l.Input.CarouselSlider,{showLabel:!1,label:n.carouselBlendMode,defaultIdentifier:a,onSelect:C,list:i})),w.createElement(pt,{label:n.tabOpacity},w.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:n.sliderOpacity,value:e.opacity,min:0,max:1,onChange:o.changeOpacity,onMouseUp:d,onTouchEnd:d}))),w.createElement(t.BarSeparator,null)),w.createElement(t.Other.EmptyDiv,null))};var mt=m("overlayTool","custom")(c(qe));import y from"react";import Qe from"styled-components";const Ze=t.TabWrapper,{Tab:ct}=t,Re=Qe.input.attrs({type:"file",id:"fileUpload",accept:"image/*",multiple:!0})`
-  ${V.VisuallyHidden}
-`,or=({stickerTool:o,custom:r})=>{const{colorList:e}=o,n=o.locale.controls,i=o.localeColor.colorPicker,a=r.getButton("toolControlBarPrimaryButton"),p=()=>{o.toolSnapshot()},d=()=>{const S=document.getElementById("fileUpload");S&&(S.value=null,S.click())},C=S=>{const{files:H}=S.target;o.addFiles(H)},k=()=>y.createElement("div",null,y.createElement(l.Spacer,{count:2}),y.createElement(t.Slider,{isDisabled:!o.isStickerSelected,style:{width:"280px"},label:n.sliderOpacity,value:o.opacity,min:0,max:1,onMouseUp:p,onTouchEnd:p,onChange:o.changeOpacity}),y.createElement(l.Spacer,{count:2})),z=()=>y.createElement("div",null,y.createElement(l.Spacer,null),y.createElement(Ze,null,y.createElement(ct,{label:n.tabColor},y.createElement(l.Spacer,{count:1}),y.createElement(l.Input.Selection,{isDisabled:!o.isStickerSelected,showLabel:!1,label:n.selectColor},y.createElement(E,{activeSprite:o.id,parentId:n.selectColor,activeColor:o.tintColor,colors:e,labelsColor:i,isDisabled:!o.isStickerSelected,colorPickerDirection:"top",onChange:o.changeTintColor,onAddSnapshot:o.tintColorSnapshot}))),y.createElement(ct,{label:n.tabOpacity},y.createElement(t.Slider,{isDisabled:!o.isStickerSelected,showLabel:!1,style:{width:"280px"},label:n.sliderOpacity,value:o.opacity,min:0,max:1,onMouseUp:p,onTouchEnd:p,onChange:o.changeOpacity})))),L=()=>o.isCustomStickerEnabled?y.createElement(a,{tool:s.STICKER,ariaLabel:n.buttonUpload,onClick:d,icon:y.createElement(f.uploadImage,null),label:n.buttonUpload},y.createElement(Re,{onChange:C})):null;return y.createElement(t.ControlsbarContainer,{show:!0},L(),y.createElement(t.Other.ControlsWrapper,null,o.tintable&&z()||k(),y.createElement(t.BarSeparator,null)),y.createElement(t.Other.EmptyDiv,null))};var dt=m("stickerTool","custom")(c(or));import u from"react";import tr from"styled-components";const rr=t.ResponsiveTabWrapper,{Tab:J}=t,nr=tr(l.Input.NumericInput)`
+`,Fe=({library:o,active:r,custom:e})=>{const n=o.locale.controls.placeholderSearch,{config:s}=o,a=e.getButton("toolControlBarPrimaryButton"),m=k=>{o.fetchImages(k)},d=k=>{const{files:G}=k.target;if(G.length){const S=new FileReader;S.onload=N=>{r.newImage(N.target.result)},S.readAsDataURL(G[0])}},g=()=>{r.selectWebcam(!0)},P=()=>{const k=document.getElementById("fileUpload");k&&k.click()};return M.createElement(Ee,{firstChildMargin:s.enableWebcam&&!o.libraryProvider,show:!0},s.enableUpload&&M.createElement(a,{tool:i.LIBRARY,ariaLabel:o.locale.controls.buttonUpload,onClick:P,icon:M.createElement(u.uploadImage,null),label:o.locale.controls.buttonUpload},M.createElement(l.Input.File,{onChange:d})),o.libraryProvider&&M.createElement(t.Other.ControlsWrapper,null,M.createElement(l.Input.Search,{onChange:m,placeholder:n})),s.enableWebcam&&M.createElement(Ae,{tool:i.LIBRARY,onClick:g,icon:M.createElement(u.openWebcam,null),label:o.locale.controls.buttonWebcamOpen}),M.createElement(t.BarSeparator,null))};var at=p("library","active","custom")(c(Fe));import w from"react";const $e=t.TabWrapper,{Tab:lt}=t,Pe=({overlayTool:o,custom:r})=>{const{state:e}=o,n=o.locale.controls,{allBlendModes:s}=o,{blendMode:a}=o,m=r.getButton("toolControlBarSecondaryButton"),d=()=>{o.toolSnapshot()},g=P=>{o.changeBlendMode(P)};return w.createElement(t.ControlsbarContainer,{show:o.isOptionSelected},w.createElement(m,{tool:i.OVERLAY,ariaLabel:n.buttonReset,onClick:o.reset,icon:w.createElement(u.reset,null),label:n.buttonReset}),w.createElement(t.Other.ControlsWrapper,null,w.createElement(l.Spacer,null),w.createElement($e,null,w.createElement(lt,{label:n.tabBlendMode},w.createElement(l.Input.CarouselSlider,{showLabel:!1,label:n.carouselBlendMode,defaultIdentifier:a,onSelect:g,list:s})),w.createElement(lt,{label:n.tabOpacity},w.createElement(t.Slider,{"aria-hidden":!o.isOptionSelected,showLabel:!1,style:{width:"280px"},label:n.sliderOpacity,value:e.opacity,min:0,max:1,onChange:o.changeOpacity,onMouseUp:d,onTouchEnd:d}))),w.createElement(t.BarSeparator,null)),w.createElement(t.Other.EmptyDiv,null))};var mt=p("overlayTool","custom")(c(Pe));import y from"react";import De from"styled-components";const We=t.TabWrapper,{Tab:pt}=t,Me=De.input.attrs({type:"file",id:"fileUpload",accept:"image/*",multiple:!0})`
+  ${Oe.VisuallyHidden}
+`,je=({stickerTool:o,custom:r})=>{const{colorList:e}=o,n=o.locale.controls,s=o.localeColor.colorPicker,a=r.getButton("toolControlBarPrimaryButton"),m=()=>{o.toolSnapshot()},d=()=>{const S=document.getElementById("fileUpload");S&&(S.value=null,S.click())},g=S=>{const{files:N}=S.target;o.addFiles(N)},P=()=>y.createElement("div",null,y.createElement(l.Spacer,{count:2}),y.createElement(t.Slider,{isDisabled:!o.isStickerSelected,style:{width:"280px"},label:n.sliderOpacity,value:o.opacity,min:0,max:1,onMouseUp:m,onTouchEnd:m,onChange:o.changeOpacity}),y.createElement(l.Spacer,{count:2})),k=()=>y.createElement("div",null,y.createElement(l.Spacer,null),y.createElement(We,null,y.createElement(pt,{label:n.tabColor},y.createElement(l.Spacer,{count:1}),y.createElement(l.Input.Selection,{isDisabled:!o.isStickerSelected,showLabel:!1,label:n.selectColor},y.createElement(E,{activeSprite:o.id,activeColor:o.tintColor,colors:e,labelsColor:s,isDisabled:!o.isStickerSelected,colorPickerDirection:"top",onChange:o.changeTintColor,onAddSnapshot:o.tintColorSnapshot}))),y.createElement(pt,{label:n.tabOpacity},y.createElement(t.Slider,{isDisabled:!o.isStickerSelected,showLabel:!1,style:{width:"280px"},label:n.sliderOpacity,value:o.opacity,min:0,max:1,onMouseUp:m,onTouchEnd:m,onChange:o.changeOpacity})))),G=()=>o.isCustomStickerEnabled?y.createElement(a,{tool:i.STICKER,ariaLabel:n.buttonUpload,onClick:d,icon:y.createElement(u.uploadImage,null),label:n.buttonUpload},y.createElement(Me,{onChange:g})):null;return y.createElement(t.ControlsbarContainer,{show:!0},G(),y.createElement(t.Other.ControlsWrapper,null,o.tintable&&k()||P(),y.createElement(t.BarSeparator,null)),y.createElement(t.Other.EmptyDiv,null))},ct=p("stickerTool","custom")(c(je));import h from"react";import ze from"styled-components";const Ne=t.ResponsiveTabWrapper,{Tab:J}=t,Ge=ze(l.Input.NumericInput)`
   max-width: 55px;
   > div > input {
     text-align: center;
   }
-`,ir=({textTool:o,custom:r})=>{const{colorList:e,backgroundColorList:n}=o,i=o.locale.controls,a=o.localeColor.colorPicker,p=["left","center","right"],d=r.getButton("textAlignment"),C=r.getButton("toolControlBarPrimaryButton"),k=()=>p.map(S=>{const H=er[S];return u.createElement(d,{tool:S,isDisabled:!o.isTextSelected,ariaLabel:`Align ${S}`,isActive:S===o.alignment,key:S,icon:u.createElement(H,null),onClick:()=>o.changeAlignment(S)})}),z=()=>{o.toolSnapshot()},L=S=>{const H=S?parseFloat(S):0;o.setFontSize(Math.max(10,Math.min(690,H)))};return u.createElement(t.ControlsbarContainer,{show:!0},u.createElement(C,{tool:s.TEXT,ariaLabel:i.buttonNew,onClick:o.add,icon:u.createElement(f.addText,null),label:i.buttonNew}),u.createElement(t.Other.ControlsWrapper,null,u.createElement(l.Spacer,null),u.createElement(rr,null,u.createElement(J,{label:i.tabFontSize},u.createElement(nr,{value:o.fontSize.toFixed(0),onSubmit:L,isDisabled:!o.isTextSelected})),u.createElement(J,{label:i.tabAlignment},u.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:i.selectAlignment},k())),u.createElement(J,{label:i.tabColor},u.createElement(l.Spacer,null),u.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:i.selectFontColor},u.createElement(E,{activeSprite:o.id,parentId:i.selectFontColor,activeColor:o.textColor,colors:e,labelsColor:a,colorPickerDirection:"top",isDisabled:!o.isTextSelected,onChange:o.changeColor,onAddSnapshot:o.colorSnapshot}))),u.createElement(J,{label:i.tabBgColor},u.createElement(l.Spacer,null),u.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:i.selectBackgroundColor},u.createElement(E,{activeSprite:o.id,parentId:i.selectBackgroundColor,activeColor:o.backgroundColor,colors:n,labelsColor:a,colorPickerDirection:"top",isDisabled:!o.isTextSelected,onChange:o.changeBackgroundColor,onAddSnapshot:o.backgroundColorSnapshot}))),u.createElement(J,{label:i.tabLineHeight},u.createElement(t.Slider,{isDisabled:!o.isTextSelected,showLabel:!1,label:i.sliderLineSpacing,value:o.lineHeight,min:.5,max:3,onChange:o.changeLineHeight,onMouseUp:z,onTouchEnd:z,snap:1,divider:1,decimal:1}))),u.createElement(t.BarSeparator,null)),u.createElement(t.Other.EmptyDiv,null))};var Ct=m("textTool","custom")(c(ir));import W from"react";const sr=({textDesignTool:o,custom:r})=>{const e=o.locale.controls,n=o.localeColor.colorPicker,{colorList:i}=o,a=r.getButton("toolControlBarSecondaryButton"),p=r.getButton("toolControlBarPrimaryButton");return W.createElement(t.ControlsbarContainer,{show:!0},W.createElement(p,{tool:s.TEXT_DESIGN,ariaLabel:e.buttonNew,onClick:o.add,icon:W.createElement(f.addText,null),label:e.buttonNew}),W.createElement(t.Other.ControlsWrapper,null,W.createElement(l.Input.Selection,{isDisabled:!o.isTextDesignSelected,label:e.selectColor},W.createElement(E,{activeSprite:o.id,parentId:e.selectColor,activeColor:o.color,colors:i,labelsColor:n,colorPickerDirection:"top",isDisabled:!o.isTextDesignSelected,onChange:o.changeColor,onAddSnapshot:o.colorSnapshot}))),W.createElement(a,{tool:s.TEXT_DESIGN,ariaLabel:e.buttonShuffle,onClick:o.changeSeed,icon:W.createElement(f.shuffle,null),label:e.buttonShuffle}),W.createElement(t.BarSeparator,null))};var ht=m("textDesignTool","custom")(c(sr));import v from"react";const pr=t.ResponsiveTabWrapper,{Tab:fo}=t,mr=({transformTool:o,custom:r})=>{const e=o.locale.controls,{forceDimensions:n}=o,i=r.getCheckbox(),a=r.getButton("toolControlBarSecondaryButton");return v.createElement(t.ControlsbarContainer,{show:!0},v.createElement(a,{tool:s.TRANSFORM,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:v.createElement(f.reset,null),label:o.locale.controls.buttonReset}),v.createElement(t.Other.ControlsWrapper,null,v.createElement(l.Spacer,null),v.createElement(pr,null,v.createElement(fo,{label:e.tabCropSize},v.createElement(lr,{isDisabled:n,showLabel:!1,valueHeight:o.localOutputHeight,valueWidth:o.localOutputWidth,onSubmitWidth:o.onPixelWidth,onSubmitHeight:o.onPixelHeight,label:e.inputCropSize,labelHeight:e.inputHeight,labelWidth:e.inputWidth})),v.createElement(fo,{label:e.tabFlipAndRotate},v.createElement(ar,null)),v.createElement(fo,{label:e.tabResolution},v.createElement(i,{isDisabled:n,style:{paddingTop:"5px",justifyContent:"center"},value:o.lockResolution,checkMarkPosition:"left",label:e.checkboxKeepResolution,onClick:o.changeLockResolution}))),v.createElement(t.BarSeparator,null)),v.createElement(t.Other.EmptyDiv,null))};var bt=m("transformTool","custom")(c(mr));import b from"react";let eo=class extends b.Component{render(){const o=this.props.active.tool;return b.createElement(t.Controlsbar,{show:!!o},b.createElement(l.Switch.Index,{type:o},b.createElement(l.Switch.Case,{value:s.FILTER},b.createElement(it,null)),b.createElement(l.Switch.Case,{value:s.FOCUS},b.createElement(st,null)),b.createElement(l.Switch.Case,{value:s.ADJUSTMENT},b.createElement(rt,null)),b.createElement(l.Switch.Case,{value:s.OVERLAY},b.createElement(mt,null)),b.createElement(l.Switch.Case,{value:s.STICKER},b.createElement(dt,null)),b.createElement(l.Switch.Case,{value:s.TEXT},b.createElement(Ct,null)),b.createElement(l.Switch.Case,{value:s.TEXT_DESIGN},b.createElement(ht,null)),b.createElement(l.Switch.Case,{value:s.LIBRARY},b.createElement(lt,null)),b.createElement(l.Switch.Case,{value:s.FRAME},b.createElement(at,null)),b.createElement(l.Switch.Case,{value:s.BRUSH},b.createElement(nt,null)),b.createElement(l.Switch.Case,{value:s.TRANSFORM},b.createElement(bt,null))))}};eo=go([m("active","config"),c],eo);var ut=eo;import K from"react";import cr from"styled-components";const Cr=cr.div`
+`,Ve=({textTool:o,custom:r})=>{const{colorList:e,backgroundColorList:n}=o,s=o.locale.controls,a=o.localeColor.colorPicker,m=["left","center","right"],d=r.getButton("textAlignment"),g=r.getButton("toolControlBarPrimaryButton"),P=()=>m.map(S=>{const N=He[S];return h.createElement(d,{tool:S,isDisabled:!o.isTextSelected,ariaLabel:`Align ${S}`,isActive:S===o.alignment,key:S,icon:h.createElement(N,null),onClick:()=>o.changeAlignment(S)})}),k=()=>{o.toolSnapshot()},G=S=>{const N=S?parseFloat(S):0;o.setFontSize(Math.max(10,Math.min(690,N)))};return h.createElement(t.ControlsbarContainer,{show:!0},h.createElement(g,{tool:i.TEXT,ariaLabel:s.buttonNew,onClick:o.add,icon:h.createElement(u.addText,null),label:s.buttonNew}),h.createElement(t.Other.ControlsWrapper,null,h.createElement(l.Spacer,null),h.createElement(Ne,null,h.createElement(J,{label:s.tabFontSize},h.createElement(Ge,{value:o.fontSize.toFixed(0),onSubmit:G,isDisabled:!o.isTextSelected})),h.createElement(J,{label:s.tabAlignment},h.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:s.selectAlignment},P())),h.createElement(J,{label:s.tabColor},h.createElement(l.Spacer,null),h.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:s.selectFontColor},h.createElement(E,{activeSprite:o.id,activeColor:o.textColor,colors:e,labelsColor:a,colorPickerDirection:"top",isDisabled:!o.isTextSelected,onChange:o.changeColor,onAddSnapshot:o.colorSnapshot}))),h.createElement(J,{label:s.tabBgColor},h.createElement(l.Spacer,null),h.createElement(l.Input.Selection,{isDisabled:!o.isTextSelected,showLabel:!1,label:s.selectBackgroundColor},h.createElement(E,{activeSprite:o.id,activeColor:o.backgroundColor,colors:n,labelsColor:a,colorPickerDirection:"top",isDisabled:!o.isTextSelected,onChange:o.changeBackgroundColor,onAddSnapshot:o.backgroundColorSnapshot}))),h.createElement(J,{label:s.tabLineHeight},h.createElement(t.Slider,{isDisabled:!o.isTextSelected,showLabel:!1,label:s.sliderLineSpacing,value:o.lineHeight,min:.5,max:3,onChange:o.changeLineHeight,onMouseUp:k,onTouchEnd:k,snap:1,divider:1,decimal:1}))),h.createElement(t.BarSeparator,null)),h.createElement(t.Other.EmptyDiv,null))},dt=p("textTool","custom")(c(Ve));import j from"react";const Ye=({textDesignTool:o,custom:r})=>{const e=o.locale.controls,n=o.localeColor.colorPicker,{colorList:s}=o,a=r.getButton("toolControlBarSecondaryButton"),m=r.getButton("toolControlBarPrimaryButton");return j.createElement(t.ControlsbarContainer,{show:!0},j.createElement(m,{tool:i.TEXT_DESIGN,ariaLabel:e.buttonNew,onClick:o.add,icon:j.createElement(u.addText,null),label:e.buttonNew}),j.createElement(t.Other.ControlsWrapper,null,j.createElement(l.Input.Selection,{isDisabled:!o.isTextDesignSelected,label:e.selectColor},j.createElement(E,{activeSprite:o.id,activeColor:o.color,colors:s,labelsColor:n,colorPickerDirection:"top",isDisabled:!o.isTextDesignSelected,onChange:o.changeColor,onAddSnapshot:o.colorSnapshot}))),j.createElement(a,{tool:i.TEXT_DESIGN,ariaLabel:e.buttonShuffle,onClick:o.changeSeed,icon:j.createElement(u.shuffle,null),label:e.buttonShuffle}),j.createElement(t.BarSeparator,null))},Ct=p("textDesignTool","custom")(c(Ye));import T from"react";const Je=t.ResponsiveTabWrapper,{Tab:xo}=t,Ke=({transformTool:o,custom:r})=>{const e=o.locale.controls,{forceDimensions:n}=o,s=r.getCheckbox(),a=r.getButton("toolControlBarSecondaryButton");return T.createElement(t.ControlsbarContainer,{show:!0},T.createElement(a,{tool:i.TRANSFORM,ariaLabel:o.locale.controls.buttonReset,onClick:o.reset,icon:T.createElement(u.reset,null),label:o.locale.controls.buttonReset}),T.createElement(t.Other.ControlsWrapper,null,T.createElement(l.Spacer,null),T.createElement(Je,null,T.createElement(xo,{label:e.tabCropSize},T.createElement(_e,{isDisabled:n,showLabel:!1,valueHeight:o.localOutputHeight,valueWidth:o.localOutputWidth,onSubmitWidth:o.onPixelWidth,onSubmitHeight:o.onPixelHeight,label:e.inputCropSize,labelHeight:e.inputHeight,labelWidth:e.inputWidth})),T.createElement(xo,{label:e.tabFlipAndRotate},T.createElement(Xe,null)),T.createElement(xo,{label:e.tabResolution},T.createElement(s,{isDisabled:n,style:{paddingTop:"5px",justifyContent:"center"},value:o.lockResolution,checkMarkPosition:"left",label:e.checkboxKeepResolution,onClick:o.changeLockResolution}))),T.createElement(t.BarSeparator,null)),T.createElement(t.Other.EmptyDiv,null))};var bt=p("transformTool","custom")(c(Ke));let K=class extends b.Component{render(){const{active:o}=this.props,r=o.tool;return b.createElement(t.Controlsbar,{show:!!r},b.createElement(l.Switch.Index,{type:r},b.createElement(l.Switch.Case,{value:i.FILTER},b.createElement(nt,null)),b.createElement(l.Switch.Case,{value:i.FOCUS},b.createElement(st,null)),b.createElement(l.Switch.Case,{value:i.ADJUSTMENT},b.createElement(et,null)),b.createElement(l.Switch.Case,{value:i.OVERLAY},b.createElement(mt,null)),b.createElement(l.Switch.Case,{value:i.STICKER},b.createElement(ct,null)),b.createElement(l.Switch.Case,{value:i.TEXT},b.createElement(dt,null)),b.createElement(l.Switch.Case,{value:i.TEXT_DESIGN},b.createElement(Ct,null)),b.createElement(l.Switch.Case,{value:i.LIBRARY},b.createElement(at,null)),b.createElement(l.Switch.Case,{value:i.FRAME},b.createElement(it,null)),b.createElement(l.Switch.Case,{value:i.BRUSH},b.createElement(rt,null)),b.createElement(l.Switch.Case,{value:i.TRANSFORM},b.createElement(bt,null))))}};K=v([p("active","config"),c],K);import L from"react";import q from"react";import qe from"styled-components";const Ze=qe.div`
   position: relative;
   top: -8px;
   color: ${o=>o.theme.card.foreground};
-`,hr=({adjustmentsTool:o})=>{const r=(e,n)=>{const i=dr[e.identifier];return K.createElement(t.Card,{tool:s.ADJUSTMENT,type:h.MEDIUM,onClick:()=>o.toggleOptionSelection(e.identifier),isActive:e.identifier===o.selectedAdjustmentType,key:`${e.identifier}-${n}`,label:e.name,style:{animationDelay:`${g(n)}s`}},K.createElement(Cr,null,K.createElement(i,null)),K.createElement(t.CardLabel,null,o.locale.items[e.identifier]||e.name))};return K.createElement(t.CardContainer,null,o.items.map(r))};var ft=m("adjustmentsTool")(c(hr));import M from"react";const gt="photoeditorsdk-FilterItems";class br extends M.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{filterTool:r}=this.props;r.toggleCategorySelection(o),this.simpleBar&&setTimeout(()=>this.simpleBar.recalculate(),0)};this.renderItem=(o,r)=>{const{filterTool:e}=this.props;return M.createElement(t.Card,{tool:s.FILTER,type:h.MEDIUM,onClick:()=>e.selectFilter(o.identifier,o.defaultIntensity),isActive:e.identifier===o.identifier,key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{animationDelay:`${g(r)}s`}},M.createElement(t.CardLabel,{withBackground:!0},e.locale.categories[o.identifier]||e.locale.items[o.identifier]||o.name))};this.renderCategory=(o,r)=>{const{filterTool:e}=this.props,{selectedCategoryIdentifier:n}=e,i=n===o.identifier;return o.items?M.createElement(t.CategoryContainer,{key:o.identifier},M.createElement(t.Card,{tool:s.FILTER,type:h.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${g(r)}s`}},M.createElement(t.CardLabel,{withBackground:!0},o.name)),M.createElement(t.ExpandableContainer,{show:i},o.items.map(this.renderItem))):null}}componentDidMount(){const{filterTool:o}=this.props;o.config.flattenCategories||(this.simpleBar=new G(document.getElementById(gt),{autoHide:!1}))}render(){const{filterTool:o}=this.props,{categories:r,config:e,items:n}=o;return e.flattenCategories?M.createElement(t.CardContainer,null,n.map(this.renderItem)):M.createElement(t.DynamicCardContainer,{id:gt},r.map(this.renderCategory))}}var yt=m("filterTool","active")(c(br));import yo from"react";const ur=({focusTool:o})=>{const r=n=>{o.selectFocus(n)},e=(n,i)=>yo.createElement(t.Card,{isActive:n.identifier===o.identifier,tool:s.FOCUS,type:h.MEDIUM,onClick:()=>r(n.identifier),key:`${n.identifier}-${i}`,image:n.thumbnailURI,label:n.name,style:{animationDelay:`${g(i)}s`}},yo.createElement(t.CardLabel,{withBackground:!0},o.locale.items[n.identifier]||n.name));return yo.createElement(t.CardContainer,null,o.items.map(e))};var St=m("focusTool")(c(ur));import So from"react";const fr=({frameTool:o})=>{const r=o.identifier,e=(n,i)=>So.createElement(t.Card,{tool:s.FRAME,type:h.MEDIUM,onClick:()=>o.selectFrame(n.identifier),isActive:n.identifier===r,key:`${n.identifier}-${i}`,image:n.thumbnailURI,label:n.name,style:{animationDelay:`${g(i)}s`,backgroundSize:"60%"}}," ",So.createElement(t.CardLabel,{hidden:!0},o.locale.items[n.identifier]||n.name));return So.createElement(t.CardContainer,null,o.items.map(e))};var It=m("frameTool")(c(fr));import F from"react";const xt="photoeditorsdk-LibraryConfig";class gr extends F.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{library:r}=this.props;r.toggleCategorySelection(o),this.simpleBar&&setTimeout(()=>this.simpleBar.recalculate(),0)};this.renderItem=(o,r)=>{const{active:e}=this.props;return F.createElement(t.Card,{tool:s.LIBRARY,type:h.MEDIUM,onClick:()=>e.newImage(o.rawUrl),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{animationDelay:`${g(r)}s`}})};this.renderCategory=(o,r)=>{const{library:e}=this.props,{selectedCategoryIdentifier:n}=e,i=n===o.identifier;return o.items?F.createElement(t.CategoryContainer,{key:o.identifier},F.createElement(t.Card,{tool:s.LIBRARY,type:h.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${g(r)}s`}},F.createElement(t.CardLabel,{withBackground:!0},o.name)),F.createElement(t.ExpandableContainer,{show:i},o.items.map(this.renderItem))):null}}componentDidMount(){const{library:o}=this.props;o.config.flattenCategories||(this.simpleBar=new G(document.getElementById(xt),{autoHide:!1}))}render(){const{library:o}=this.props,{query:r,categories:e,items:n,locale:i,config:a}=o;return r?n.length?F.createElement(t.CardContainer,null,n.map(this.renderItem)):F.createElement("p",{"data-test":"LibraryNoResult"},i.controls.noResults):a.flattenCategories?F.createElement(t.CardContainer,null,n.map(this.renderItem)):F.createElement(t.DynamicCardContainer,{id:xt},e.map(this.renderCategory))}}var Bt=m("library","active")(c(gr));import Io from"react";const yr=({overlayTool:o})=>{const{identifier:r,items:e,selectOverlay:n,locale:i}=o,a=(p,d)=>Io.createElement(t.Card,{tool:s.OVERLAY,type:h.MEDIUM,onClick:()=>n(p.identifier),isActive:p.identifier===r,key:`${p.identifier}-${d}`,image:p.thumbnailURI,label:p.name,style:{animationDelay:`${g(d)}s`}},Io.createElement(t.CardLabel,{withBackground:!0},i.items[p.identifier]||p.name));return Io.createElement(t.CardContainer,null,e.map(a))};var vt=m("overlayTool")(c(yr));import j from"react";const kt="photoeditorsdk-StickerConfig";class Ir extends j.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{stickerTool:r}=this.props;r.toggleCategorySelection(o),this.simpleBar&&setTimeout(()=>this.simpleBar.recalculate(),0)};this.renderItem=(o,r)=>{const{stickerTool:e}=this.props;return j.createElement(t.Card,{tool:s.STICKER,type:h.MEDIUM,onClick:()=>e.add(o.identifier),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{backgroundSize:"55%",animationDelay:`${Sr(r)}s`}},j.createElement(t.CardLabel,{hidden:!0},e.locale.items[o.identifier]||o.name))};this.renderCategory=(o,r)=>{const{stickerTool:e}=this.props,{selectedCategoryIdentifier:n,locale:i}=e,a=n===o.identifier;return o.items?j.createElement(t.CategoryContainer,{key:o.identifier},j.createElement(t.Card,{tool:s.STICKER,type:h.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${g(r)}s`}},j.createElement(t.CardLabel,{withBackground:!0},i.categories[o.identifier]||o.name)),j.createElement(t.ExpandableContainer,{show:a},o.items.map(this.renderItem))):null}}componentDidMount(){const{stickerTool:o}=this.props;o.config.flattenCategories||(this.simpleBar=new G(document.getElementById(kt),{autoHide:!1}))}render(){const{stickerTool:o}=this.props,{categories:r,items:e,config:n}=o;return n.flattenCategories?j.createElement(t.CardContainer,null,e.map(this.renderItem)):j.createElement(t.DynamicCardContainer,{id:kt},r.map(this.renderCategory))}}var Tt=m("stickerTool","active")(c(Ir));import ro from"react";import xr from"styled-components";const vr=xr.div`
+`,Re=({adjustmentsTool:o})=>{const r=(e,n)=>{const s=Qe[e.identifier];return q.createElement(t.Card,{tool:i.ADJUSTMENT,type:C.MEDIUM,onClick:()=>o.toggleOptionSelection(e.identifier),isActive:e.identifier===o.selectedAdjustmentType,key:`${e.identifier}-${n}`,label:e.name,style:{animationDelay:`${f(n)}s`}},q.createElement(Ze,null,q.createElement(s,null)),q.createElement(t.CardLabel,null,o.locale.items[e.identifier]||e.name))};return q.createElement(t.CardContainer,null,o.items.map(r))};var ht=p("adjustmentsTool")(c(Re));import z from"react";let Q=class extends z.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{filterTool:r}=this.props;r.toggleCategorySelection(o)};this.renderItem=(o,r)=>{const{filterTool:e}=this.props;return z.createElement(t.Card,{tool:i.FILTER,type:C.MEDIUM,onClick:()=>e.selectFilter(o.identifier,o.defaultIntensity),isActive:e.identifier===o.identifier,key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{animationDelay:`${f(r)}s`}},z.createElement(t.CardLabel,{withBackground:!0},e.locale.categories[o.identifier]||e.locale.items[o.identifier]||o.name))};this.renderCategory=(o,r)=>{const{filterTool:e}=this.props,{selectedCategoryIdentifier:n}=e,s=n===o.identifier;return o.items?z.createElement(t.CategoryContainer,{key:o.identifier},z.createElement(t.Card,{tool:i.FILTER,type:C.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${f(r)}s`}},z.createElement(t.CardLabel,{withBackground:!0},o.name)),z.createElement(t.ExpandableContainer,{show:s},o.items.map(this.renderItem))):null}}render(){const{filterTool:o}=this.props,{categories:r,config:e,items:n}=o;return e.flattenCategories?z.createElement(t.CardContainer,null,n.map(this.renderItem)):z.createElement(t.CardContainer,null,r.map(this.renderCategory))}};Q=v([p("filterTool","active"),c],Q);import Io from"react";const or=({focusTool:o})=>{const r=n=>{o.selectFocus(n)},e=(n,s)=>Io.createElement(t.Card,{isActive:n.identifier===o.identifier,tool:i.FOCUS,type:C.MEDIUM,onClick:()=>r(n.identifier),key:`${n.identifier}-${s}`,image:n.thumbnailURI,label:n.name,style:{animationDelay:`${f(s)}s`}},Io.createElement(t.CardLabel,{withBackground:!0},o.locale.items[n.identifier]||n.name));return Io.createElement(t.CardContainer,null,o.items.map(e))};var ut=p("focusTool")(c(or));import Bo from"react";const tr=({frameTool:o})=>{const r=o.identifier,e=(n,s)=>Bo.createElement(t.Card,{tool:i.FRAME,type:C.MEDIUM,onClick:()=>o.selectFrame(n.identifier),isActive:n.identifier===r,key:`${n.identifier}-${s}`,image:n.thumbnailURI,label:n.name,style:{animationDelay:`${f(s)}s`,backgroundSize:"60%"}}," ",Bo.createElement(t.CardLabel,{hidden:!0},o.locale.items[n.identifier]||n.name));return Bo.createElement(t.CardContainer,null,o.items.map(e))};var ft=p("frameTool")(c(tr));import F from"react";let Z=class extends F.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{library:r}=this.props;r.toggleCategorySelection(o)};this.renderItem=(o,r)=>{const{active:e}=this.props;return F.createElement(t.Card,{tool:i.LIBRARY,type:C.MEDIUM,onClick:()=>e.newImage(o.rawUrl),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{animationDelay:`${f(r)}s`}})};this.renderCategory=(o,r)=>{const{library:e}=this.props,{selectedCategoryIdentifier:n}=e,s=n===o.identifier;return o.items?F.createElement(t.CategoryContainer,{key:o.identifier},F.createElement(t.Card,{tool:i.LIBRARY,type:C.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${f(r)}s`}},F.createElement(t.CardLabel,{withBackground:!0},o.name)),F.createElement(t.ExpandableContainer,{show:s},o.items.map(this.renderItem))):null}}render(){const{library:o}=this.props,{query:r,categories:e,items:n,locale:s,config:a}=o;return r?n.length?F.createElement(t.CardContainer,null,n.map(this.renderItem)):F.createElement("p",{"data-test":A.NoResult},s.controls.noResults):a.flattenCategories?F.createElement(t.CardContainer,null,n.map(this.renderItem)):F.createElement(t.CardContainer,null,e.map(this.renderCategory))}};Z=v([p("library","active"),c],Z);import To from"react";const er=({overlayTool:o})=>{const{identifier:r,items:e,selectOverlay:n,locale:s}=o,a=(m,d)=>To.createElement(t.Card,{tool:i.OVERLAY,type:C.MEDIUM,onClick:()=>n(m.identifier),isActive:m.identifier===r,key:`${m.identifier}-${d}`,image:m.thumbnailURI,label:m.name,style:{animationDelay:`${f(d)}s`}},To.createElement(t.CardLabel,{withBackground:!0},s.items[m.identifier]||m.name));return To.createElement(t.CardContainer,null,e.map(a))};var gt=p("overlayTool")(c(er));import H from"react";let R=class extends H.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{stickerTool:r}=this.props;r.toggleCategorySelection(o)};this.renderItem=(o,r)=>{const{stickerTool:e}=this.props;return H.createElement(t.Card,{tool:i.STICKER,type:C.MEDIUM,onClick:()=>e.add(o.identifier),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{backgroundSize:"55%",animationDelay:`${rr(r)}s`}},H.createElement(t.CardLabel,{hidden:!0},e.locale.items[o.identifier]||o.name))};this.renderCategory=(o,r)=>{const{stickerTool:e}=this.props,{selectedCategoryIdentifier:n,locale:s}=e,a=n===o.identifier;return o.items?H.createElement(t.CategoryContainer,{key:o.identifier},H.createElement(t.Card,{tool:i.STICKER,type:C.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:o.thumbnailURI,label:o.name,style:{animationDelay:`${f(r)}s`}},H.createElement(t.CardLabel,{withBackground:!0},s.categories[o.identifier]||o.name)),H.createElement(t.ExpandableContainer,{show:a},o.items.map(this.renderItem))):null}}render(){const{stickerTool:o}=this.props,{categories:r,items:e,config:n}=o;return n.flattenCategories?H.createElement(t.CardContainer,null,e.map(this.renderItem)):H.createElement(t.CardContainer,null,r.map(this.renderCategory))}};R=v([p("stickerTool","active"),c],R);import lo from"react";import nr from"styled-components";const ir=nr.div`
   font-size: 20px;
   position: absolute;
   left: 50%;
+  top: 50%;
   transform-origin: left top;
-`;class kr extends ro.Component{constructor(){super(...arguments);this.getWidth=({fontFamily:o,fontStyle:r,fontWeight:e},n)=>{const i=document.createElement("canvas"),a=i.getContext("2d");return a.font=`${r} ${e} 20px ${o}`,a.fillText(n,0,0),a.measureText(n).width};this.renderItem=(o,r)=>{const{config:e,textTool:n}=this.props,{fontFamily:i,fontWeight:a,fontStyle:p,identifier:d}=o,C=`${o.fontFamily} ${Br.getDisplayFontStyle(o)}`,k=this.getWidth(o,C),z=(e.measurements.basicCard.medium.width-20)/k;return ro.createElement(t.Card,{tool:s.TEXT,type:h.MEDIUM,onClick:()=>n.changeFont(d),isDisabled:!this.textTool.isTextSelected,isActive:n.identifier===d,key:`${o.identifier}-${r}`,label:C,style:{animationDelay:`${g(r)}s`}},ro.createElement(vr,{style:{transform:`scale(${z}) translate(-50%, -50%)`,fontFamily:i,fontStyle:p,fontWeight:a}},C))}}get textTool(){return this.props.textTool}render(){const{textTool:o}=this.props,{fontsLoaded:r,fontFamilies:e}=o;return r?ro.createElement(t.CardContainer,null,e.map(this.renderItem)):null}}var wt=m("textTool","config")(c(kr));import xo from"react";const Tr=({textDesignTool:o})=>{const{items:r,changeIdentifier:e,isTextDesignSelected:n,identifier:i}=o,a=(p,d)=>xo.createElement(t.Card,{tool:s.TEXT_DESIGN,type:h.MEDIUM,onClick:()=>e(p.identifier),isDisabled:!n,isActive:i===p.identifier,key:`${p.identifier}-${d}`,image:p.thumbnailURI,label:p.name,style:{animationDelay:`${g(d)}s`,backgroundSize:"60%"}},xo.createElement(t.CardLabel,{hidden:!0},p.name));return xo.createElement(t.CardContainer,null,r.map(a))};var Ut=m("textDesignTool")(c(Tr));import T from"react";import Lt from"styled-components";const Ur=Lt.div`
+`;class ar extends lo.Component{constructor(){super(...arguments);this.getWidth=({fontFamily:o,fontStyle:r,fontWeight:e},n)=>{const s=document.createElement("canvas"),a=s.getContext("2d");return a.font=`${r} ${e} 20px ${o}`,a.fillText(n,0,0),a.measureText(n).width};this.renderItem=(o,r)=>{const{config:e,textTool:n}=this.props,{fontFamily:s,fontWeight:a,fontStyle:m,identifier:d}=o,g=`${o.fontFamily} ${sr.getDisplayFontStyle(o)}`,P=this.getWidth(o,g),k=(e.measurements.basicCard.medium.width-20)/P;return lo.createElement(t.Card,{tool:i.TEXT,type:C.MEDIUM,onClick:()=>n.changeFont(d),isDisabled:!this.textTool.isTextSelected,isActive:n.identifier===d,key:`${o.identifier}-${r}`,label:g,style:{animationDelay:`${f(r)}s`}},lo.createElement(ir,{style:{transform:`scale(${k}) translate(-50%, -50%)`,fontFamily:s,fontStyle:m,fontWeight:a}},g))}}get textTool(){return this.props.textTool}render(){const{textTool:o}=this.props,{fontsLoaded:r,fontFamilies:e}=o;return r?lo.createElement(t.CardContainer,null,e.map(this.renderItem)):null}}var yt=p("textTool","config")(c(ar));import ko from"react";const lr=({textDesignTool:o})=>{const{items:r,changeIdentifier:e,isTextDesignSelected:n,identifier:s}=o,a=(m,d)=>ko.createElement(t.Card,{tool:i.TEXT_DESIGN,type:C.MEDIUM,onClick:()=>e(m.identifier),isDisabled:!n,isActive:s===m.identifier,key:`${m.identifier}-${d}`,image:m.thumbnailURI,label:m.name,style:{animationDelay:`${f(d)}s`,backgroundSize:"60%"}},ko.createElement(t.CardLabel,{hidden:!0},m.name));return ko.createElement(t.CardContainer,null,r.map(a))};var St=p("textDesignTool")(c(lr));import U from"react";import xt from"styled-components";const pr=xt.div`
   svg {
     margin-bottom: 12px;
   }
-`,Lr=Lt.div`
+`,cr=xt.div`
   svg {
     width: ${o=>o.theme.measurements.basicCard.medium.height}px;
     height: ${o=>o.theme.measurements.basicCard.medium.height}px;
   }
 
-  ${wr} {
+  ${mr} {
     width: ${o=>o.theme.measurements.basicCard.medium.width-32}px;
     height: ${o=>o.theme.measurements.basicCard.medium.height-32}px;
     padding: 6px 0px 24px;
   }
-`,Et="photoeditorsdk-TransformConfig";class Er extends T.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{transformTool:r}=this.props;r.toggleCategorySelection(o),this.simpleBar&&setTimeout(()=>this.simpleBar.recalculate(),0)};this.renderItem=(o,r)=>{const{transformTool:e,config:n}=this.props,{locale:i}=e,a=e.checkIfTransformThumbnailExits(o.thumbnailURI),p=no.crops[o.identifier]||no.crops.imgly_transform_common_custom,d=T.createElement(t.CardLabel,null,i.items[o.identifier]||o.name),C=a?d:T.createElement(Lr,null,T.createElement(p,{main:n.theme.transform.crops.main,highlight:n.theme.transform.crops.highlight,shadow:n.theme.transform.crops.shadow}),d);return T.createElement(t.Card,{tool:s.TRANSFORM,type:h.MEDIUM,onClick:()=>e.changeIdentifier(o.identifier,!0),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{backgroundSize:"55%",animationDelay:`${g(r)}s`}},C)};this.renderCategory=(o,r)=>{const{transformTool:e}=this.props,{selectedCategoryIdentifier:n,locale:i}=e,a=n===o.identifier;if(!o.items)return null;const p=e.checkIfTransformThumbnailExits(o.thumbnailURI),d=T.createElement(t.CardLabel,null,i.categories[o.identifier]||o.name),C=p?d:T.createElement(Ur,null,no.categories[o.identifier]&&T.createElement(no.categories[o.identifier]),d);return T.createElement(t.CategoryContainer,{key:o.identifier},T.createElement(t.Card,{tool:s.TRANSFORM,type:h.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:p?o.thumbnailURI:"",label:o.name,style:{animationDelay:`${g(r)}s`}},C),T.createElement(t.ExpandableContainer,{show:a},o.items.map(this.renderItem)))}}componentDidMount(){const{transformTool:o}=this.props;o.config.flattenCategories||(this.simpleBar=new G(document.getElementById(Et),{autoHide:!1}))}render(){const{transformTool:o}=this.props,{categories:r,config:e,items:n}=o;return e.flattenCategories?T.createElement(t.CardContainer,null,n.map(this.renderItem)):T.createElement(t.DynamicCardContainer,{id:Et},r.map(this.renderCategory))}}var Ft=m("transformTool","config")(c(Er));import U from"react";let io=class extends U.Component{constructor(){super(...arguments);this.getToolItemsComponent=o=>{switch(o){case s.LIBRARY:return U.createElement(Bt,null);case s.FILTER:return U.createElement(yt,null);case s.FOCUS:return U.createElement(St,null);case s.ADJUSTMENT:return U.createElement(ft,null);case s.OVERLAY:return U.createElement(vt,null);case s.STICKER:return U.createElement(Tt,null);case s.TEXT:return U.createElement(wt,null);case s.TEXT_DESIGN:return U.createElement(Ut,null);case s.FRAME:return U.createElement(It,null);case s.TRANSFORM:return U.createElement(Ft,null)}return null}}render(){const{library:o,active:r}=this.props,e=r.tool;return e===s.BRUSH||e===s.LIBRARY&&!o.libraryProvider?null:U.createElement(t.Itemsbar,{show:!!e},this.getToolItemsComponent(e))}};io=go([m("active","library"),c],io);var At=io;import A from"react";import Fr from"styled-components";const Wr=Fr.div`
+`;let oo=class extends U.Component{constructor(){super(...arguments);this.onCategoryClick=o=>{const{transformTool:r}=this.props;r.toggleCategorySelection(o)};this.renderItem=(o,r)=>{const{transformTool:e,config:n}=this.props,{locale:s}=e,a=e.checkIfTransformThumbnailExits(o.thumbnailURI),m=mo.crops[o.identifier]||mo.crops.imgly_transform_common_custom,d=U.createElement(t.CardLabel,null,s.items[o.identifier]||o.name),g=a?d:U.createElement(cr,null,U.createElement(m,{main:n.theme.transform.crops.main,highlight:n.theme.transform.crops.highlight,shadow:n.theme.transform.crops.shadow}),d);return U.createElement(t.Card,{tool:i.TRANSFORM,type:C.MEDIUM,onClick:()=>e.changeIdentifier(o.identifier,!0),key:`${o.identifier}-${r}`,image:o.thumbnailURI,label:o.name,style:{backgroundSize:"55%",animationDelay:`${f(r)}s`}},g)};this.renderCategory=(o,r)=>{const{transformTool:e}=this.props,{selectedCategoryIdentifier:n,locale:s}=e,a=n===o.identifier;if(!o.items)return null;const m=e.checkIfTransformThumbnailExits(o.thumbnailURI),d=U.createElement(t.CardLabel,null,s.categories[o.identifier]||o.name),g=m?d:U.createElement(pr,null,mo.categories[o.identifier]&&U.createElement(mo.categories[o.identifier]),d);return U.createElement(t.CategoryContainer,{key:o.identifier},U.createElement(t.Card,{tool:i.TRANSFORM,type:C.LARGE,onClick:()=>this.onCategoryClick(o.identifier),image:m?o.thumbnailURI:"",label:o.name,style:{animationDelay:`${f(r)}s`}},g),U.createElement(t.ExpandableContainer,{show:a},o.items.map(this.renderItem)))}}render(){const{transformTool:o}=this.props,{categories:r,config:e,items:n}=o;return e.flattenCategories?U.createElement(t.CardContainer,null,n.map(this.renderItem)):U.createElement(t.CardContainer,null,r.map(this.renderCategory))}};oo=v([p("transformTool","config"),c],oo);let to=class extends L.Component{constructor(){super(...arguments);this.getToolItemsComponent=o=>{switch(o){case i.LIBRARY:return L.createElement(Z,null);case i.FILTER:return L.createElement(Q,null);case i.FOCUS:return L.createElement(ut,null);case i.ADJUSTMENT:return L.createElement(ht,null);case i.OVERLAY:return L.createElement(gt,null);case i.STICKER:return L.createElement(R,null);case i.TEXT:return L.createElement(yt,null);case i.TEXT_DESIGN:return L.createElement(St,null);case i.FRAME:return L.createElement(ft,null);case i.TRANSFORM:return L.createElement(oo,null);default:return null}}}render(){const{library:o,active:r}=this.props,e=r.tool;return e===i.BRUSH||e===i.LIBRARY&&!o.libraryProvider?null:L.createElement(t.Itemsbar,{"data-test":A.ToolControlBar,show:!!e},this.getToolItemsComponent(e))}};to=v([p("active","library"),c],to);const fr=dr.div`
   position: absolute;
   width: 100%;
   height: ${o=>o.theme.measurements.basicToolControlBar.maxHeight}px;
@@ -363,4 +344,4 @@ import{a as g,b as Sr,c as Dr,d as wr,f as co,g as E,h as le,j as Hr,k as Ht,l a
   left: 0;
   background: ${o=>o.theme.webcam.backdrop};
   z-index: ${o=>o.theme.measurements.zIndex.disable};
-`;class Mr extends A.Component{constructor(){super(...arguments);this.state={hasError:!1}}static getDerivedStateFromError(o){return console.error(o),{hasError:!0}}render(){return A.createElement(l.Container,{"data-test":Or.EditorContainer},this.props.active.isWebcam?A.createElement(Wr,null):null,A.createElement(Pr,null),A.createElement(Dr,null,A.createElement($r,null),A.createElement(Ar,null),A.createElement(ut,null),A.createElement(At,null),A.createElement(et,null)))}}var $t=m("active")(c(Mr));import so from"react";import{ThemeProvider as zr}from"styled-components";class Dt extends so.Component{componentDidMount(){this.editor=this.props.editor,this.storeProps=this.props.storeProps;const o=new Hr(this.editor.configStore.config.custom.components,{}),r={getDialog:o.getDialog,getButton:o.getButton,getColorItem:o.getColorItem,getCheckbox:o.getCheckbox};this.storeProps.custom=r,this.forceUpdate()}render(){return this.storeProps?so.createElement(jr,N({},this.storeProps),so.createElement(zr,{theme:N(N({},this.editor.configStore.theme),{measurements:this.editor.configStore.measurements})},so.createElement($t,null))):null}}export{Dt as BasicUI};
+`;let eo=class extends $.Component{static getDerivedStateFromError(o){return console.error(o),{hasError:!0}}render(){const{active:o}=this.props;return $.createElement(l.Container,{"data-test":A.EditorContainer},o.isWebcam?$.createElement(fr,null):null,$.createElement(ur,null),$.createElement(hr,null,$.createElement(br,null),$.createElement(Cr,null),$.createElement(K,null),$.createElement(to,null),$.createElement(tt,null)))}};eo=v([p("active"),c],eo);class It extends po.Component{componentDidMount(){const{editor:o,storeProps:r}=this.props;this.editor=o,this.storeProps=r;const e=new Sr(this.editor.configStore.config.custom.components,{}),n={getDialog:e.getDialog,getButton:e.getButton,getColorItem:e.getColorItem,getCheckbox:e.getCheckbox};this.storeProps.custom=n,this.forceUpdate()}render(){return this.storeProps?po.createElement(gr,V({},this.storeProps),po.createElement(yr,{theme:V(V({},this.editor.configStore.theme),{measurements:this.editor.configStore.measurements})},po.createElement(eo,null))):null}}export{It as BasicUI};

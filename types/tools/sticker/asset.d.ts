@@ -1,4 +1,5 @@
 import { ExistingCategory } from '../../common/existingAsset';
+import { ImageMimeType } from '../../configuration/feature/imageMimeType';
 export declare type TintMode = 'none' | 'solid' | 'colorized';
 export declare type ResizeMode = 'keepAspect' | 'unrestricted';
 export interface StickerAsset {
@@ -41,3 +42,11 @@ export interface StickerCategory {
     items: StickerAsset[];
 }
 export declare type ExistingStickerCategory = ExistingCategory<StickerAsset>;
+export interface UploadedStickerAsset extends Omit<Omit<StickerAsset, 'tintMode'>, 'resizeMode'> {
+    type: ImageMimeType;
+}
+export interface UploadedSticker {
+    identifier: string;
+    stickerURI: string;
+    file: File;
+}

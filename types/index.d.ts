@@ -106,6 +106,7 @@ export * from './configuration/feature/snapping';
 export * from './configuration/feature/export';
 export * from './configuration/feature/exportFormat';
 export * from './configuration/feature/imageFormat';
+export * from './configuration/feature/imageMimeType';
 export * from './configuration/engine';
 export * from './configuration/engine/fontManager';
 export * from './configuration/engine/assetProvider';

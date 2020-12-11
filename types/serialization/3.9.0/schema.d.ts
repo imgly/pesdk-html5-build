@@ -1,5 +1,4 @@
 import { Float2 } from '../../common/float2';
-import { ImageFormat } from '../../configuration/feature/imageFormat';
 import { SerializableCustomStickerAsset, SerializableColor } from './appSerializableState';
 export interface SerializationColor {
     rgba: SerializableColor;
@@ -7,7 +6,7 @@ export interface SerializationColor {
 declare type NormalizedNumber = number;
 declare type PositiveNumber = number;
 export interface ImageSchema {
-    type?: ImageFormat;
+    type?: string;
     data?: string;
     width: number;
     height: number;
