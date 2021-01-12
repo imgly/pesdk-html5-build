@@ -1,9 +1,19 @@
+# 5.8.1
+
+## Fixed
+
+- Fixed the incorrect `require` path in the bundle
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.8
 
 ## Changed
 
 - The minimal required React version is now `16.8.6`
-- Replaced the `simplebar` package with native scrollbars. IE11 and Legacy Edge only support a limited amount of scrollbar styling and will look slightly different compared to other browsers 
+- Replaced the `simplebar` package with native scrollbars. IE11 and Legacy Edge only support a limited amount of scrollbar styling and will look slightly different compared to other browsers
 
 ## Added
 
