@@ -1,8 +1,20 @@
+# 5.8.2
+
+## Fixed
+
+- Fixed the focus slider value to be between 0 and 100
+- Fixed the loading time of live preview thumbnails
+- Fixed wording if no license was supplied
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.8.1
 
 ## Fixed
 
-- Fixed the incorrect `require` path in the bundle
+- Fixed the incorrect require path in the bundle
 
 ## Known Issues
 
