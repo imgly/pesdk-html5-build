@@ -1,3 +1,13 @@
+# 5.8.3
+
+## Fixed
+
+- Fixed cjs bundle output
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.8.2
 
 ## Fixed
