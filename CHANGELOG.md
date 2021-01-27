@@ -1,3 +1,9 @@
+# 5.8.4
+
+## Fixed
+
+- Fixed how external asset urls are resolved
+
 # 5.8.3
 
 ## Fixed
