@@ -114,6 +114,7 @@ export * from './configuration/engine/downscaleOptions';
 export * from './configuration';
 export * from './configuration/props';
 export * from './tools/adjustment';
+export * from './tools/custom';
 export * from './tools/filter';
 export * from './tools/focus';
 export * from './tools/frame';

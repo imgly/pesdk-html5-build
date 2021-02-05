@@ -1,8 +1,23 @@
+## 5.9.0
+
+## Added
+
+- Added custom tool API
+- Added useSetImage hook
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
+
 # 5.8.4
 
 ## Fixed
 
 - Fixed how external asset urls are resolved
+
+## Known Issues
+
+- We had to disable the history (Undo/Redo) in the transform tool because of major issues
 
 # 5.8.3
 
@@ -36,7 +51,7 @@
 
 - We had to disable the history (Undo/Redo) in the transform tool because of major issues
 
-# 5.8
+# 5.8.0
 
 ## Changed
 

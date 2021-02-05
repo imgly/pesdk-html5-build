@@ -22,6 +22,8 @@ export declare enum Tool {
     /** A tool to add a frame. */
     FRAME = "frame",
     /** A tool to add a frame. */
-    BRUSH = "brush"
+    BRUSH = "brush",
+    /** Custom tool */
+    CUSTOM = "customTool"
 }
 export declare type SpriteType = Tool.STICKER | Tool.TEXT | Tool.TEXT_DESIGN;

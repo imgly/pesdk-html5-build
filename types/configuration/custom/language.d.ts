@@ -33,6 +33,7 @@ export interface LanguageInterface {
     [Tool.FRAME]?: Partial<FrameLocale>;
     [Tool.TRANSFORM]?: Partial<TransformLocale>;
     [Tool.BRUSH]?: Partial<BrushLocale>;
+    [Tool.CUSTOM]?: Partial<CustomToolLocale>;
 }
 export interface CommonLocale {
     error?: string;
@@ -514,6 +515,9 @@ export interface BrushLocale {
     history?: {
         brushStroke?: string;
     };
+}
+export interface CustomToolLocale {
+    [key: string]: string;
 }
 export interface ColorPickerLocale {
     hex?: string;

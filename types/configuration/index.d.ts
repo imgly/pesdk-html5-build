@@ -3,6 +3,7 @@ import { Tool } from '../common/tool';
 import { Omit } from '../common/utils';
 import { AdjustmentConfiguration } from '../tools/adjustment';
 import { BrushConfiguration } from '../tools/brush';
+import { CustomToolConfiguration } from '../tools/custom';
 import { FilterConfiguration } from '../tools/filter';
 import { FocusConfiguration } from '../tools/focus';
 import { FrameConfiguration } from '../tools/frame';
@@ -179,6 +180,10 @@ export declare class Configuration {
      * Configuration options for `Tool.TRANSFORM`.
      */
     [Tool.TRANSFORM]?: TransformConfiguration;
+    /**
+     * Configuration options for `Tool.CUSTOM`
+     */
+    [Tool.CUSTOM]?: CustomToolConfiguration;
     /**
      * Global snapping options for all sprites, e.g., stickers, texts, and text designs.
      */
