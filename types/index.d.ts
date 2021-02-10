@@ -157,8 +157,12 @@ import {
   DialogHeaderProps,
   DialogBodyProps,
   DialogFooterProps,
-} from './components/base/dialog/dialogComponents'
+  DialogSpinnerProps,
+} from './components/base/dialog/dialogComponents';
 
+import { CustomSearchProps } from './components/base/input/search';
+
+export * from './components/hooks/useSetImage';
 /**
  * @ignore
  */
@@ -318,3 +322,8 @@ export class DialogFooter extends React.Component<DialogFooterProps> {}
  */
 // @ts-ignore:2686
 export class DialogSpinner extends React.Component<DialogSpinnerProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SearchField extends React.Component<CustomSearchProps> {}

@@ -20,6 +20,18 @@ import { SnappingConfiguration } from './feature/snapping';
 export declare type ExistingTheme = 'light' | 'dark';
 export declare type ExistingLanguage = 'en' | 'de';
 export declare type LayoutType = 'basic' | 'advanced';
+export interface AssetResolver {
+    /**
+     * Configure assets item path
+     * @example item: ./emoticons/imgly_sticker_emoticons_grin.svg, category: sticker
+     * @example item: ./items/imgly_duotone_desert.jpg, category: filter
+     */
+    item?: (item: string, category: string) => string;
+    /**
+     * Change the final path result
+     */
+    path?: (fullPath: string, category: string, item?: string) => string;
+}
 /**
  * Configuration options and asset definitions for image editing tasks.
  */
@@ -77,6 +89,10 @@ export declare class Configuration {
      * ```
      */
     assetBaseUrl?: string;
+    /**
+     * Asset resolver helps dynamically change item path or concatenated full path
+     */
+    assetResolver?: AssetResolver;
     /**
      * Defines all allowed actions for the main screen that are displayed in the given order as buttons on the canvasBar.
      * @example // Defaults to:
