@@ -1,8 +1,27 @@
+## 5.11.0
+
+### Added
+
+- Added `useIsLayoutAdvanced` hook
+
+### Fixed
+
+- Disabled `Move To Front` button for a single asset or if the asset is in front
+- Fixed the history for sticker sizes
+- Fixed `Move To Front` history
+- Fixed Mirrored focus history
+- Fixed history for the transform tool
+- Fixed the position of the tooltip if a parent node contains a `transform` property
+- Fixed the order of custom fonts in the text dropdown
+- Fixed React warning on SDK mounting
+- Fixed history for the text orientation on the flipped image
+- Fixed `findDOMNode` error messages in React Strict Mode
+
 ## 5.10.0
 
 ### Changed
 
-- Changed default blend mode to `Overlay` for the Vintage overlay.
+- Changed default blend mode to Overlay for the Vintage overlay.
 
 ### Added
 

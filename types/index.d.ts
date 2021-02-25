@@ -10,14 +10,14 @@ import { EventEmitter } from './eventEmitter'
 import { UIEvent } from './events'
 import { SerialisationSchema } from './serialization/3.9.0/schema'
 
-interface EditorFunctions {
+declare class EditorFunctions {
   /**
    * Disposes the PhotoEditor SDK Engine instance
    */
   dispose: () => void
 
   /**
-   * Resets the PhotoEditor SDK 
+   * Resets the PhotoEditor SDK
    */
   reset: () => void
 
@@ -65,7 +65,8 @@ interface EditorFunctions {
 /**
  * @ignore
  */
-export interface PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps>, EditorFunctions {
+// @ts-ignore:2686
+export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps>, EditorFunctions {
   ui: EventEmitter<UIEvent>
 }
 
@@ -163,6 +164,7 @@ import {
 import { CustomSearchProps } from './components/base/input/search';
 
 export * from './components/hooks/useSetImage';
+export * from './components/hooks/useIsLayoutAdvanced';
 /**
  * @ignore
  */
