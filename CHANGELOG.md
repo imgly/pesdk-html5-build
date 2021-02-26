@@ -1,3 +1,9 @@
+## 5.11.1
+
+### Fixed
+
+- Fixed `findDOMNode` error messages in React Strict Mode introduced by a package
+
 ## 5.11.0
 
 ### Added
