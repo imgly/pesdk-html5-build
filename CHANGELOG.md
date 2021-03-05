@@ -1,3 +1,12 @@
+## 5.11.2
+
+### Fixed
+
+- Fixed editor scaling issue after export on retina devices
+- Fixed the frame and overlay opacity after deserialization
+- Fixed fonts loading error on slow networks
+- Fixed the sprite rotation on flipped and rotated image
+
 ## 5.11.1
 
 ### Fixed

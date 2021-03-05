@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://static.photoeditorsdk.com/logo.png" alt="PhotoEditor SDK Logo"/>
+  <img src="https://img.ly/static/logo.png" alt="PhotoEditor SDK Logo"/>
 </p>
 
 ## PhotoEditor SDK for HTML5.
@@ -14,7 +14,7 @@ Visit [our website](https://www.photoeditorsdk.com) for tutorials on how to inte
 ## Preview
 
 <p align="center">
-  <img src="http://static.photoeditorsdk.com/html5-editor.gif" />
+  <img src="https://img.ly/static/html5-editor.gif" />
 </p>
 
 
