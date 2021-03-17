@@ -1,3 +1,15 @@
+## 5.11.3
+
+### Fixed
+
+- Fixed `colorized` and `solid` sticker if the color has transparency
+- Fixed the export in crop tool after a frame was applied
+- Fixed loading a transparent image
+- Fixed the vertical orientation after the image was replaced
+- Fixed pixel inconsistencies with crop ratios
+- Fixed unused `thumbnailURI` value for sticker
+- Fixed the canvas size after the transform tool was opened in the BasicUI
+
 ## 5.11.2
 
 ### Fixed
