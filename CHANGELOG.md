@@ -1,3 +1,13 @@
+## 5.11.4
+
+### Fixed
+
+- Fixed crash in apps with SSR support
+- Fixed issue if `overlayURI` is a data URL
+- Fixed inconsistencies in the returned value of `hasChanges`
+- Fixed the missing reset button in the adjustment and brush tool due to the history
+- Fixed multiple overlay stacking and slow connection asset loading issue
+
 ## 5.11.3
 
 ### Fixed

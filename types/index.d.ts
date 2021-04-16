@@ -27,7 +27,7 @@ declare class EditorFunctions {
   close: () => void
 
   /**
-   * returns if editor has some changes
+   * Returns true if there were changes made to the image since it was opened or saved
    */
   hasChanges: () => boolean
 
