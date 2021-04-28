@@ -1,3 +1,10 @@
+## 5.11.5
+
+### Fixed
+
+- Fixed sprites size on deserialization for non-transform tools
+- Fixed crop mask controls issue in Vue2
+
 ## 5.11.4
 
 ### Fixed
