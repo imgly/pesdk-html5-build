@@ -1,3 +1,13 @@
+## 5.11.7
+
+### Fixed
+
+- Fixed custom sticker category should be the newest uploaded image
+- Fixed scrollbar theme options are not used
+- Fixed reset adjustment button should not be visible if all adjustment settings are set to default
+- Fixed the ColorPicker position for custom ColorItems
+- Fixed the brush tool on mobile screens
+
 ## 5.11.6
 
 ### Fixed
