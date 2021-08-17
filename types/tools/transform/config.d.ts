@@ -1,5 +1,17 @@
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { TransformCategory, ExistingTransformCategory } from './asset';
+export declare enum AdvancedTransformControlBarItem {
+    ResetTransformButton = "resetTransformButton",
+    KeepResolutionCheckbox = "keepResolutionCheckbox",
+    CropSizeInput = "cropSizeInput",
+    Separator = "separator",
+    Items = "items"
+}
+export declare enum BasicTransformControlBarTabs {
+    CropSize = "cropSize",
+    FlipRotate = "flipRotate",
+    Resolution = "resolution"
+}
 export declare class TransformConfiguration {
     /**
      * Defines all allowed crop aspect ratios. The crop ratio cards are shown in the given order.
@@ -71,4 +83,24 @@ export declare class TransformConfiguration {
      * Decide if the categories should be grouped in a collapsible section or should be grouped under a text heading.
      */
     categoryHeaderType?: CategoryHeaderType;
+    /**
+     * default:
+     * [
+     *  'resetTransformButton',
+     *  'keepResolutionCheckbox',
+     *  'cropSizeInput',
+     *  'separator',
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedTransformControlBarItem>;
+    /**
+     * default:
+     * [
+     *  'cropSize',
+     *  'flipRotate',
+     *  'resolution',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicTransformControlBarTabs[];
 }

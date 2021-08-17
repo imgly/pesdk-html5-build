@@ -6,5 +6,6 @@ export declare enum UIEvent {
     ERROR_IMAGE_LOADING = "errorImageLoading",
     IMAGE_LOAD = "imageLoad",
     TOOL_ENTER = "toolEnter",
-    STICKER_UPLOAD_ADD = "stickerUploadAdd"
+    STICKER_UPLOAD_ADD = "stickerUploadAdd",
+    ERROR_WEBGL_CONTEXT_LOST = "errorWebGLContextLost"
 }

@@ -1,6 +1,24 @@
 import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
 import { FrameAsset } from './asset';
+export declare enum AdvancedFrameControlBarItem {
+    RemoveFrameButton = "removeFrameButton",
+    FrameOpacitySlider = "frameOpacitySlider",
+    FrameSizeSlider = "frameSizeSlider",
+    FrameColorList = "frameColorList",
+    Separator = "separator",
+    Items = "items",
+    Expandable = "expandable"
+}
+export declare enum BasicFrameControlBarTabs {
+    FrameSize = "frameSize",
+    FrameOpacity = "frameOpacity",
+    FrameColor = "frameColor"
+}
+export declare type FrameControlBarExpandable = {
+    type: AdvancedFrameControlBarItem.Expandable;
+    children: Array<Omit<Omit<AdvancedFrameControlBarItem, AdvancedFrameControlBarItem.Expandable>, AdvancedFrameControlBarItem.Items>>;
+};
 export declare class FrameConfiguration {
     /**
      * Defines all available frames.
@@ -28,4 +46,30 @@ export declare class FrameConfiguration {
      * each channel is defined in the range of `[0, 1]
      */
     defaultColor?: Color;
+    /**
+     * default:
+     * [
+     *  {
+     *   type: 'expandable',
+     *   children: [
+     *    'removeFrameButton',
+     *    'frameOpacitySlider',
+     *    'frameSizeSlider',
+     *    'frameColorList',
+     *    'separator',
+     *   ],
+     *  },
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedFrameControlBarItem | FrameControlBarExpandable>;
+    /**
+     * default:
+     * [
+     *  'frameOpacity',
+     *  'frameSize',
+     *  'frameColor',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicFrameControlBarTabs[];
 }

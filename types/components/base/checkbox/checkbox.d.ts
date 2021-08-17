@@ -1,5 +1,7 @@
 /// <reference types="react" />
+import { Tool } from '../../../common/tool';
 export interface CustomCheckboxProps {
+    tool: Tool;
     label: string;
     value: boolean;
     isDisabled?: boolean;

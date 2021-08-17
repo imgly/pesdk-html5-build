@@ -2,6 +2,28 @@ import { CanvasAction } from '../../common/canvasAction';
 import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
 import { FontAsset } from './asset';
+export declare enum AdvancedTextControlBarItem {
+    NewTextButton = "newTextButton",
+    FontFamilyDropdown = "fontFamilyDropdown",
+    FontSizeInput = "fontSizeInput",
+    TextAligmentList = "textAlignmentList",
+    Separator = "separator",
+    Inline = "inline",
+    TextColorList = "textColorList",
+    BackgroundColorList = "backgroundColorList",
+    LineSpacingSlider = "lineSpacingSlider"
+}
+export declare enum BasicTextControlBarTabs {
+    FontSize = "fontSize",
+    TextAligment = "textAlignment",
+    TextColor = "textColor",
+    BackgroundColor = "backgroundColor",
+    LineSpacing = "lineSpacing"
+}
+export declare type TextControlBarInline = {
+    type: AdvancedTextControlBarItem.Inline;
+    children: Array<AdvancedTextControlBarItem.FontSizeInput | AdvancedTextControlBarItem.TextAligmentList>;
+};
 export declare class TextConfiguration {
     /**
      * Defines all available fonts.
@@ -89,4 +111,33 @@ export declare class TextConfiguration {
      * each channel is defined in the range of `[0, 1]
      */
     defaultBackgroundColor?: Color;
+    /**
+     * a text is normally created automatically when it is called. This option can prevent the creation
+     */
+    addDefaultTextOnEnter?: boolean;
+    /**
+     * default:
+     * [
+     * 'newTextButton',
+     * 'fontFamilyDropdown',
+     * { type: 'inline', children: ['fontSizeInput', 'textAlignmentList'] },
+     * 'separator',
+     * 'textColorList',
+     * 'backgroundColorList',
+     * 'separator',
+     * 'lineSpacingSlider',
+     * ];
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedTextControlBarItem | TextControlBarInline>;
+    /**
+     * default:
+     * [
+     *  'fontSize',
+     *  'textAlignment',
+     *  'textColor',
+     *  'backgroundColor',
+     *  'lineSpacing',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicTextControlBarTabs[];
 }

@@ -1,3 +1,29 @@
+## 5.12.0
+
+### Changed
+
+- Replaced the `advancedUIToolControlBar.padding` value in `config.custom.measurements` with:
+
+```
+advancedUIToolControlBar.paddingLeft,
+advancedUIToolControlBar.paddingRight,
+advancedUIToolControlBar.paddingTop,
+advancedUIToolControlBar.paddingBottom,
+```
+
+### Added
+
+- Added an option to reorder the `ToolControlBar` components and tabs
+- Added option to prevent automatic creation of a new text or text design element
+- Added the `UIEvent.ERROR_WEBGL_CONTEXT_LOST` event if the WebGL context was lost due to the loaded image
+- Added the `tool` prop to the `CustomColorItem` and `CustomCheckbox` components
+
+### Fixed
+
+- Fixed search with special characters in all examples
+- Fixed empty history snapshot from sliders
+- Fixed selected option is not highlighted in the Transform toolbar for Basic UI
+
 ## 5.11.7
 
 ### Fixed

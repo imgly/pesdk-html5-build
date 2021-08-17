@@ -1,5 +1,19 @@
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { FilterCategory, ExistingFilterCategory } from './asset';
+export declare enum AdvancedFilterControlBarItem {
+    RemoveFilterButton = "removeFilterButton",
+    FilterIntensitySlider = "filterIntensitySlider",
+    Expandable = "expandable",
+    Separator = "separator",
+    Items = "items"
+}
+export declare enum BasicFilterControlBarTabs {
+    FilterIntensity = "filterIntensity"
+}
+export declare type FilterControlBarExpandable = {
+    type: AdvancedFilterControlBarItem.Expandable;
+    children: Array<AdvancedFilterControlBarItem.RemoveFilterButton | AdvancedFilterControlBarItem.FilterIntensitySlider | AdvancedFilterControlBarItem.Separator>;
+};
 export declare class FilterConfiguration {
     /**
      * Defines all available filters. Each filter must be assigned to a category.
@@ -117,4 +131,26 @@ export declare class FilterConfiguration {
      * ```
      */
     enablePreviewThumbnails?: boolean;
+    /**
+     * default:
+     * [
+     *  {
+     *   type: 'expandable',
+     *   children: [
+     *    'removeFilterButton',
+     *    'filterIntensitySlider',
+     *    'separator',
+     *   ],
+     *  },
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedFilterControlBarItem | FilterControlBarExpandable>;
+    /**
+     * default:
+     * [
+     *  'filterIntensity',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicFilterControlBarTabs[];
 }

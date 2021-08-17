@@ -1,4 +1,18 @@
 import { ExistingFocusItem } from './asset';
+export declare enum AdvancedFocusControlBarItem {
+    RemoveFocusButton = "removeFocusButton",
+    FocusIntensitySlider = "focusIntensitySlider",
+    Expandable = "expandable",
+    Separator = "separator",
+    Items = "items"
+}
+export declare enum BasicFocusControlBarTabs {
+    FocusIntensity = "focusIntensity"
+}
+export declare type FocusControlBarExpandable = {
+    type: AdvancedFocusControlBarItem.Expandable;
+    children: Array<AdvancedFocusControlBarItem.RemoveFocusButton | AdvancedFocusControlBarItem.FocusIntensitySlider | AdvancedFocusControlBarItem.Separator>;
+};
 export declare class FocusConfiguration {
     /**
      * Defines all allowed focus tools. The focus tool buttons are shown in the given order.
@@ -14,4 +28,26 @@ export declare class FocusConfiguration {
      * ```
      */
     items?: ExistingFocusItem[];
+    /**
+     * default:
+     * [
+     *  {
+     *   type: 'expandable',
+     *   children: [
+     *    'removeFocusButton',
+     *    'focusIntensitySlider',
+     *    'separator',
+     *   ],
+     *  },
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedFocusControlBarItem | FocusControlBarExpandable>;
+    /**
+     * default:
+     * [
+     *  'focusIntensity',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicFocusControlBarTabs[];
 }

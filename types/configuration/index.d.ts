@@ -131,8 +131,7 @@ export declare class Configuration {
      */
     enableZoom?: boolean;
     /**
-     * Applicable only to Advanced UI
-     * decides which tool to keep open at the beginning
+     * Decides which tool to keep open at the beginning
      * @example // Defaults to:
      * ```
      * Tool.FILTER

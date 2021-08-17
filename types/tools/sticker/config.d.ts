@@ -2,6 +2,17 @@ import { CanvasAction } from '../../common/canvasAction';
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { NamedColor, Color } from '../../common/color';
 import { StickerCategory, ExistingStickerCategory, TintMode } from './asset';
+export declare enum AdvancedStickerControlBarItem {
+    UploadStickerButton = "uploadStickerButton",
+    StickerOpacitySlider = "stickerOpacitySlider",
+    StickerColorList = "stickerColorList",
+    Separator = "separator",
+    Items = "items"
+}
+export declare enum BasicStickerControlBarTabs {
+    StickerColor = "stickerColor",
+    StickerOpacity = "stickerOpacity"
+}
 export declare class StickerConfiguration {
     /**
      * Defines all available stickers. Each sticker must be assigned to a category.
@@ -106,7 +117,7 @@ export declare class StickerConfiguration {
     canvasActions?: Array<CanvasAction.BRING_TO_FRONT | CanvasAction.DUPLICATE | CanvasAction.DELETE | CanvasAction.FLIP>;
     /**
      * Whether categories should be flattened which effectively hides the categories.
-     * If this is enabled all filters will be shown in the top-level of the filter selection tool
+     * If this is enabled all Stickers will be shown in the top-level of the Sticker selection tool
      * orderer according to their parent category.
      * @example // Defaults to:
      * ```
@@ -130,4 +141,23 @@ export declare class StickerConfiguration {
     defaultTintColor?: Color;
     enableCustomUpload?: boolean;
     customStickerTintMode?: TintMode;
+    /**
+     * default:
+     * [
+     *  'uploadStickerButton',
+     *  'stickerOpacitySlider',
+     *  'stickerColorList',
+     *  'separator',
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedStickerControlBarItem>;
+    /**
+     * default:
+     * [
+     *  'stickerColor',
+     *  'stickerOpacity',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicStickerControlBarTabs[];
 }

@@ -1,5 +1,12 @@
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { LibraryProvider } from './provider';
+export declare enum AdvancedLibraryControlBarItem {
+    UploadImageButton = "uploadImageButton",
+    OpenWebcamButton = "openWebcamButton",
+    SearchFieldInput = "searchFieldInput",
+    Separator = "separator",
+    Items = "items"
+}
 export declare class LibraryConfiguration {
     enableWebcam?: boolean;
     enableUpload?: boolean;
@@ -18,4 +25,15 @@ export declare class LibraryConfiguration {
      * Decide if the categories should be grouped in a collapsible section or should be grouped under a text heading.
      */
     categoryHeaderType?: CategoryHeaderType;
+    /**
+     * default:
+     * [
+     *  'uploadImageButton',
+     *  'openWebcamButton',
+     *  'searchFieldInput',
+     *  'separator',
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedLibraryControlBarItem>;
 }

@@ -1,4 +1,14 @@
 import { ExistingAdjustmentCategory, AdjustmentCategory } from './asset';
+export declare enum AdvancedAdjustmentControlBarItem {
+    RemoveAdjustmentButton = "removeAdjustmentButton",
+    Expandable = "expandable",
+    Separator = "separator",
+    Items = "items"
+}
+export declare type AdjustmentControlBarExpandable = {
+    type: AdvancedAdjustmentControlBarItem.Expandable;
+    children: Array<AdvancedAdjustmentControlBarItem.RemoveAdjustmentButton | AdvancedAdjustmentControlBarItem.Separator>;
+};
 export declare class AdjustmentConfiguration {
     /**
      * Defines all allowed adjustment tools. The adjustment tool buttons are always shown in the given order.
@@ -32,4 +42,18 @@ export declare class AdjustmentConfiguration {
      * ```
      */
     flattenCategories?: boolean;
+    /**
+     * default:
+     * [
+     *  {
+     *   type: 'expandable',
+     *   children: [
+     *    'removeAdjustmentButton',
+     *    'separator',
+     *   ],
+     *  },
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedAdjustmentControlBarItem | AdjustmentControlBarExpandable>;
 }

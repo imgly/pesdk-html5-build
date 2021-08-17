@@ -1,5 +1,21 @@
 import { ExistingItem } from '../../common/existingAsset';
 import { OverlayAsset } from './asset';
+export declare enum AdvancedOverlayControlBarItem {
+    RemoveOverlayButton = "removeOverlayButton",
+    OverlayOpacitySlider = "overlayOpacitySlider",
+    OverlayBlendModeCarousel = "overlayBlendModeCarousel",
+    Expandable = "expandable",
+    Separator = "separator",
+    Items = "items"
+}
+export declare enum BasicOverlayControlBarTabs {
+    OverlayOpacity = "overlayOpacity",
+    OverlayBlendMode = "overlayBlendMode"
+}
+export declare type OverlayControlBarExpandable = {
+    type: AdvancedOverlayControlBarItem.Expandable;
+    children: Array<AdvancedOverlayControlBarItem.RemoveOverlayButton | AdvancedOverlayControlBarItem.OverlayOpacitySlider | AdvancedOverlayControlBarItem.OverlayBlendModeCarousel | AdvancedOverlayControlBarItem.Separator>;
+};
 export declare class OverlayConfiguration {
     /**
      * Defines all available overlays.
@@ -28,5 +44,29 @@ export declare class OverlayConfiguration {
      * ]
      * ```
      */
-    items: Array<OverlayAsset | ExistingItem>;
+    items?: Array<OverlayAsset | ExistingItem>;
+    /**
+     * default:
+     * [
+     *  {
+     *   type: 'expandable',
+     *   children: [
+     *    'removeOverlayButton',
+     *    'overlayBlendModeCarousel',
+     *    'overlayOpacitySlider',
+     *    'separator',
+     *   ],
+     *  },
+     *  'items',
+     * ]
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedOverlayControlBarItem | OverlayControlBarExpandable>;
+    /**
+     * default:
+     * [
+     *  'overlayOpacity',
+     *  'overlayBlendMode',
+     * ]
+     */
+    basicUIToolControlBarTabsOrder?: BasicOverlayControlBarTabs[];
 }

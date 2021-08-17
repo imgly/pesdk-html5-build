@@ -1,6 +1,13 @@
 import { CanvasAction } from '../../common/canvasAction';
 import { NamedColor, Color } from '../../common/color';
 import { ExistingItem } from '../../common/existingAsset';
+export declare enum AdvancedTextDesignControlBarItem {
+    NewTextDesignButton = "newTextDesignButton",
+    ShuffleLayoutButton = "shuffleLayoutButton",
+    TextDesignColorList = "textDesignColorList",
+    Separator = "separator",
+    Items = "items"
+}
 export declare class TextDesignConfiguration {
     /**
      * Defines all available text designs.
@@ -51,4 +58,19 @@ export declare class TextDesignConfiguration {
      * each channel is defined in the range of `[0, 1]
      */
     defaultColor?: Color;
+    /**
+     * a textdesign is normally created automatically when it is called. This option can prevent the creation
+     */
+    addDefaultTextOnEnter?: boolean;
+    /**
+     * default:
+     * [
+     * 'newTextDesignButton',
+     * 'shuffleLayoutButton',
+     * 'textDesignColorList',
+     * 'separator',
+     * 'items',
+     * ];
+     */
+    advancedUIToolControlBarOrder?: Array<AdvancedTextDesignControlBarItem>;
 }
