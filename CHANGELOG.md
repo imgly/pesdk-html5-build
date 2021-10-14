@@ -1,3 +1,16 @@
+## 5.13.0
+
+### Added
+
+- Added `displaySerializationModal` top level config to control serialization modal behaviour
+- Added an UMD build which is transpiled to ES5 to the bundle
+
+### Fixed
+
+- Fixed brush tool slider prop undefined error
+- Fixed the vertical overlfow in the AdvancedUI Text controls
+- Fixed an issue in the ESM build which resulted in a `Uncaught ReferenceError: g is not defined` error
+
 ## 5.12.0
 
 ### Changed

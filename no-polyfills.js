@@ -1,2 +1,2 @@
 // no-polyfills is only available as an ESM build.
-export * from './esm/photoeditorsdk/no-polyfills'
+export * from './esm/no-polyfills'

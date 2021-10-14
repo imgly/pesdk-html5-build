@@ -1,1 +1,1 @@
-export * from './esm/photoeditorsdk'
+export * from './esm'

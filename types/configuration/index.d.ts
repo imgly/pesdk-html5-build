@@ -109,6 +109,8 @@ export declare class Configuration {
     displayCanvasRendererWarning?: boolean;
     /** Should the toolcontrolbartitle be displayed (advancedui only) */
     displayToolControlBarTitle?: boolean;
+    /** Should disabled serialization modal for advanced and basic uis */
+    displaySerializationModal?: boolean;
     /**
      * When set to `true`, the user is forced to crop the asset to one of the allowed crop ratios in
      * `transform.items` before being able to use other features of the editor.
