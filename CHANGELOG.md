@@ -1,3 +1,18 @@
+## 5.14.0
+
+### Added
+
+- Added an option to allow emojis in the Text and Text Design tool
+- Added the `scaleImageToFit` config option to change the auto scale behaviour of small images
+- Added the `restrictZoomOutToDefault` config option to allow more zoom levels on small images
+
+### Fixed
+
+- Disabled Chrome autosuggested search criterion styling for Library search text field
+- Fixed an issue in Safari where the photo was very small initially
+- Fixed an issue with invalid cropped images that occurred when using Chrome and a browser zoom level below 100%
+- Fixed a crash during the image export
+
 ## 5.13.0
 
 ### Added

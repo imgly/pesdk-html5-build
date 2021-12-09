@@ -79,6 +79,12 @@ export declare class TextConfiguration {
      */
     maxCharacterLimit?: number;
     /**
+     * Whether the user can use emojis as text input. Emojis are not cross-platform compatible.
+     * If you use the serialization feature to share edits across different platforms,
+     * emojis will be rendered with the system's local set of emojis and will appear differently.
+     */
+    allowEmojis?: boolean;
+    /**
      * Every time the text gets too long, the editor scale the font size to a pleasant size.
      * If this is enabled the scaling for the font size is disabled
      * @example // Defaults to:

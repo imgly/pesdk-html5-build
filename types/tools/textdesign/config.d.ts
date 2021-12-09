@@ -49,6 +49,12 @@ export declare class TextDesignConfiguration {
      */
     maxCharacterLimit?: number;
     /**
+     * Whether the user can use emojis as text input. Emojis are not cross-platform compatible.
+     * If you use the serialization feature to share edits across different platforms,
+     * emojis will be rendered with the system's local set of emojis and will appear differently.
+     */
+    allowEmojis?: boolean;
+    /**
      * Defines all available colors that can be applied to textdesign.
      * The color picker is always added.
      */

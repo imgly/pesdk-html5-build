@@ -133,6 +133,17 @@ export declare class Configuration {
      */
     enableZoom?: boolean;
     /**
+     * Controls if the image is scaled to fit the available canvas area.
+     *
+     * Set this value to `false` to display an image at 100% if it is smaller than the available canvas area.
+     * Bigger images will still be scaled down to fit the canvas area.
+     */
+    scaleImageToFit?: boolean;
+    /**
+     * Controls if it should be possible to select a smaller zoom level than the default/initial one.
+     */
+    restrictZoomOutToDefault?: boolean;
+    /**
      * Decides which tool to keep open at the beginning
      * @example // Defaults to:
      * ```
