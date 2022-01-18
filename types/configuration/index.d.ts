@@ -17,6 +17,7 @@ import { CustomConfiguration } from './custom';
 import { EngineConfiguration } from './engine';
 import { ExportConfiguration } from './feature/export';
 import { SnappingConfiguration } from './feature/snapping';
+import { WatermarkConfiguration } from './feature/watermark';
 export declare type ExistingTheme = 'light' | 'dark';
 export declare type ExistingLanguage = 'en' | 'de';
 export declare type LayoutType = 'basic' | 'advanced';
@@ -222,6 +223,7 @@ export declare class Configuration {
      * in case of UIs, Editor does the work of creating assetProvider
      */
     engine?: Omit<Omit<EngineConfiguration, 'assetProvider'>, 'license'>;
+    watermark?: WatermarkConfiguration;
     /**
      * Customization options.
      */

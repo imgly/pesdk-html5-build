@@ -1,7 +1,7 @@
 import { CanvasAction } from '../../common/canvasAction';
 import { CategoryHeaderType } from '../../common/categoryHeaderTypes';
 import { NamedColor, Color } from '../../common/color';
-import { StickerCategory, ExistingStickerCategory, TintMode } from './asset';
+import { StickerCategory, ExistingStickerCategory, TintMode, ResizeMode } from './asset';
 export declare enum AdvancedStickerControlBarItem {
     UploadStickerButton = "uploadStickerButton",
     StickerOpacitySlider = "stickerOpacitySlider",
@@ -140,6 +140,7 @@ export declare class StickerConfiguration {
      */
     defaultTintColor?: Color;
     enableCustomUpload?: boolean;
+    customStickerResizeMode?: ResizeMode;
     customStickerTintMode?: TintMode;
     /**
      * default:

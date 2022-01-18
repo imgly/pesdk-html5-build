@@ -1,35 +1,40 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
-/* eslint-disable no-useless-constructor */
-/* eslint-disable class-methods-use-this */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react'
-import { Configuration } from './configuration'
-import { ExportConfiguration, ExportData } from './configuration/feature/export'
-import { ConfigurationProps } from './configuration/props'
-import { EventEmitter } from './eventEmitter'
-import { UIEvent } from './events'
-import { SerialisationSchema } from './serialization/3.9.0/schema'
+import React from 'react';
 
-declare class EditorFunctions {
+import { Configuration } from './configuration';
+import {
+  ExportConfiguration,
+  ExportData,
+} from './configuration/feature/export';
+import { ImageMimeType } from './configuration/feature/imageMimeType';
+import { ConfigurationProps } from './configuration/props';
+import { EventEmitter } from './eventEmitter';
+import { UIEvent } from './events';
+import { SerialisationSchema } from './serialization/3.9.0/schema';
+
+export class PhotoEditorSDKUIComponent extends React.Component<
+  ConfigurationProps
+> {
+  ui: EventEmitter<UIEvent>;
+
   /**
    * Disposes the PhotoEditor SDK Engine instance
    */
-  dispose: () => void
+  dispose: () => void;
 
   /**
    * Resets the PhotoEditor SDK
    */
-  reset: () => void
+  reset: () => void;
 
   /**
    * Closes the PhotoEditor SDK UI and disposes all Engine instance
    */
-  close: () => void
+  close: () => void;
 
   /**
    * Returns true if there were changes made to the image since it was opened or saved
    */
-  hasChanges: () => boolean
+  hasChanges: () => boolean;
 
   /**
    * Exports an image
@@ -38,46 +43,108 @@ declare class EditorFunctions {
    */
   export: (
     options?: ExportConfiguration['image'] & {
-      preventExportEvent?: boolean
-    }
-  ) => Promise<ExportData>
+      preventExportEvent?: boolean;
+    },
+  ) => Promise<ExportData>;
 
   /**
    * Dynamically sets the image to the ui
    * @param {Image} image
    */
-  setImage: (image: string | HTMLImageElement) => Promise<void>
+  setImage: (image: string | HTMLImageElement) => Promise<void>;
+
+  /**
+   * Returns the width and height of the output image in pixel
+   */
+  getImageDimensions: () => { width: number; height: number };
 
   /**
    * Serializes current editor state to the serialization schema
    * @param {Object} options
    * @param {boolean} options.image
    */
-  serialize: (options: { image: boolean }) => Promise<SerialisationSchema>
+  serialize: (options: { image: boolean }) => Promise<SerialisationSchema>;
 
   /**
    * Deserializes serialization schema to editor state
    * @param {SerializationSchema} data
    */
-  deserialize: (data: SerialisationSchema) => Promise<void>
+  deserialize: (data: SerialisationSchema) => Promise<void>;
+
+  /**
+   * Returns the original MIME type of the loaded image
+   */
+  getImageMimeType: () => ImageMimeType;
 }
 
-/**
- * @ignore
- */
-// @ts-ignore:2686
-export class PhotoEditorSDKUIComponent extends React.Component<ConfigurationProps>, EditorFunctions {
-  ui: EventEmitter<UIEvent>
-}
+export interface EditorApi extends EventEmitter<UIEvent> {
+  /**
+   * Disposes the PhotoEditor SDK Engine instance
+   */
+  dispose: () => void;
 
-export interface EditorApi extends EventEmitter<UIEvent>, EditorFunctions {}
+  /**
+   * Resets the PhotoEditor SDK
+   */
+  reset: () => void;
+
+  /**
+   * Closes the PhotoEditor SDK UI and disposes all Engine instance
+   */
+  close: () => void;
+
+  /**
+   * Returns true if there were changes made to the image since it was opened or saved
+   */
+  hasChanges: () => boolean;
+
+  /**
+   * Exports an image
+   * @param {ExportConfiguration['image']} options
+   * @return {Promise}
+   */
+  export: (
+    options?: ExportConfiguration['image'] & {
+      preventExportEvent?: boolean;
+    },
+  ) => Promise<ExportData>;
+
+  /**
+   * Dynamically sets the image to the ui
+   * @param {Image} image
+   */
+  setImage: (image: string | HTMLImageElement) => Promise<void>;
+
+  /**
+   * Returns the width and height of the output image in pixel
+   */
+  getImageDimensions: () => { width: number; height: number };
+
+  /**
+   * Serializes current editor state to the serialization schema
+   * @param {Object} options
+   * @param {boolean} options.image
+   */
+  serialize: (options: { image: boolean }) => Promise<SerialisationSchema>;
+
+  /**
+   * Deserializes serialization schema to editor state
+   * @param {SerializationSchema} data
+   */
+  deserialize: (data: SerialisationSchema) => Promise<void>;
+
+  /**
+   * Returns the original MIME type of the loaded image
+   */
+  getImageMimeType: () => ImageMimeType;
+}
 
 /**
  * The UI of PhotoEditor SDK
  */
 export const PhotoEditorSDKUI: {
-  init: (config: Configuration) => Promise<EditorApi>
-}
+  init: (config: Configuration) => Promise<EditorApi>;
+};
 export * from './common/existingAsset';
 export * from './common/canvasAction';
 export * from './common/tool';
@@ -104,6 +171,7 @@ export * from './configuration/custom/theme';
 export * from './configuration/custom/language';
 export * from './configuration/custom/measurements';
 export * from './configuration/feature/snapping';
+export * from './configuration/feature/watermark';
 export * from './configuration/feature/export';
 export * from './configuration/feature/exportFormat';
 export * from './configuration/feature/imageFormat';

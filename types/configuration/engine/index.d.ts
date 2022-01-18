@@ -1,3 +1,4 @@
+import { WatermarkConfiguration } from '../feature/watermark';
 import { AssetProvider } from './assetProvider';
 import { ImageDownscaleOptions } from './downscaleOptions';
 export declare type CrossOriginType = 'anonymous' | 'use-credentials' | '';
@@ -29,4 +30,5 @@ export interface EngineConfiguration {
      * WebGL will result in the best performance and Canvas should only be used if WebGL is not available
      */
     preferredRenderer?: 'webgl' | 'canvas';
+    watermark?: WatermarkConfiguration;
 }

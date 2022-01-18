@@ -2,7 +2,6 @@
 export declare enum Tool {
     /** A tool to add a default list of input images. */
     LIBRARY = "library",
-    ART_FILTER = "artFilter",
     /** A tool to apply an transformation, such as cropping or rotation. */
     TRANSFORM = "transform",
     /** A tool to apply an image filter effect. */

@@ -28,7 +28,7 @@ Visit our [website](https://img.ly/photo-sdk).
 Please see [LICENSE](https://github.com/imgly/pesdk-html5-build/blob/master/LICENSE.md) for licensing details.
 
 ## Authors and Contributors
-Made 2013-2021 by [img.ly](https://www.photoeditorsdk.com)
+Made 2013-2022 by [img.ly](https://www.photoeditorsdk.com)
 
 ## Support and License
 Use our [service desk](https://support.img.ly) for bug reports or support requests. To request a commercial license, please use the [license request form](https://img.ly/pricing) on our website.

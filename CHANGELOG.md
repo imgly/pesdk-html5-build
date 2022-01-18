@@ -1,3 +1,24 @@
+## 5.15.0
+
+### Changed
+
+- Check out our [Font System](https://img.ly/docs/pesdk/web/customization/font_system/) documentation to learn how to modify the font styling
+
+### Added
+
+- Added the custom watermark feature
+- Added config option to set `resizeMode` for uploaded stickers
+- Added the `UIEvent.HISTORY_UNDO` event if undo was clicked and the `UIEvent.HISTORY_REDO` event if redo was clicked
+- Added the `UIEvent.CROP_DIMENSIONS_CHANGE` event that returns the width and height of the crop area
+- Added the `getImageDimensions` function to the `EditorAPI` that returns the current output width and height of the image
+- Added the `getImageMIMEType` function to the `EditorAPI`
+
+### Fixed
+
+- Removed the License errors
+- Fixed an issue where font styling was overridden by a global CSS class
+- Fixed Keep Resolution is not reset
+
 ## 5.14.0
 
 ### Added

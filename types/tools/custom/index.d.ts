@@ -5,6 +5,6 @@ export interface CustomToolProps {
 }
 export declare type CustomToolbar = React.ElementType<CustomToolProps>;
 export declare class CustomToolConfiguration {
-    icon: React.ReactNode;
+    icon: React.ElementType;
     toolControlBar: CustomToolbar;
 }

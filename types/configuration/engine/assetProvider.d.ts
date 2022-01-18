@@ -6,6 +6,7 @@ declare type AssetCategory = 'filter' | 'overlay' | 'font' | 'sticker' | 'textde
  * @ignore
  */
 export interface AssetProvider {
+    getPath(category: string, dirtyItem?: string): string;
     getAssetSource(category: AssetCategory, identifier: string): string;
     getDuotoneFilterAsset(identifier: string): DuoToneFilterAsset | undefined;
     getLUTFilterAsset(identifier: string): LUTFilterAsset | undefined;
