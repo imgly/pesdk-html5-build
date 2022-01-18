@@ -1,3 +1,9 @@
+# 4.26.0
+
+## Added
+
+* Added the `OK` buttons to the localization options
+
 # 4.25.0
 
 ## Changed

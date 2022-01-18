@@ -47,7 +47,7 @@ window.addEventListener('load', function () {
 
         if (this._data) return Promise.resolve(this._data);
 
-        var loader = new ReactUI.JSONLoader('//static.photoeditorsdk.com/photorolls/example/metadata.json');
+        var loader = new ReactUI.JSONLoader('https://img.ly/static/photorolls/example/metadata.json');
         return loader.load().then(function (data) {
           _this2._data = data;
           _this2._libraries = data.map(function (d) {
@@ -88,15 +88,15 @@ window.addEventListener('load', function () {
         return Promise.resolve([new PhotoRoll.SearchSuggestion({
           query: 'Nature',
           name: 'Nature',
-          coverImage: '//static.photoeditorsdk.com/unsplash/thumb/9njCyLeVrwY.jpg'
+          coverImage: 'https://img.ly/static/libraries/unsplash/thumb/9njCyLeVrwY.jpg'
         }), new PhotoRoll.SearchSuggestion({
           query: 'People',
           name: 'People',
-          coverImage: '//static.photoeditorsdk.com/unsplash/thumb/Q12JPPvF7eQ.jpg'
+          coverImage: 'https://img.ly/static/libraries/unsplash/thumb/Q12JPPvF7eQ.jpg'
         }), new PhotoRoll.SearchSuggestion({
           query: 'Buildings',
           name: 'Buildings',
-          coverImage: '//static.photoeditorsdk.com/unsplash/thumb/8OPIIY4Jzps.jpg'
+          coverImage: 'https://img.ly/static/libraries/unsplash/thumb/8OPIIY4Jzps.jpg'
         })]);
       }
 
