@@ -36,6 +36,14 @@ export declare class ExportConfiguration {
          */
         quality?: number;
         enableDownload?: boolean;
+        /**
+         * This toggles the background color between transparent and opaque.
+         * @example // Defaults to:
+         * ```
+         * true
+         * ```
+         */
+        transparent?: boolean;
     };
     /**
      * The filename for the exported data if the `exportType` is not `ImageExportType.DATA_URL`.

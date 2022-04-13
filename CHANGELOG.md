@@ -1,3 +1,33 @@
+## Unreleased
+
+### Changed
+
+### Added
+
+### Fixed
+
+## 5.16.0
+
+### Changed
+
+- Changed the behavior of some error dialogs which previously refreshed the whole page. The `Reload` button was replaced with `Retry` and `Close` buttons.
+
+### Added
+- Added `backgroundColor` and `transparent` options to configuration for custom clear color
+
+- Added support for Serializtion v3.12.0
+- Added the option to initialize the editor without an image. Check-out the [documentation](https://img.ly/docs/pesdk/web/configuration/basic/#image) for more information.
+- Added the `Toolbar`, `ToolControlBar`, and `ToolItemsBar` (only `BasicUI`) to custom components API
+
+### Fixed
+
+- Fixed missing live preview thumbnails if `filter.enablePreviewThumbnails` is set to `true`
+- Fixed Move to Front button doesn't properly work for Text
+- Fixed the deserialization of sprites if the Transform tool is open
+- Fixed an `out of memory` issue if the editor is opened multiple times
+- Fixed sprites are not properly deserialized
+- Fixed an issue with Webpack integrations
+
 ## 5.15.0
 
 ### Changed

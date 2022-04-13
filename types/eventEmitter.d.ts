@@ -49,4 +49,5 @@ declare class EventEmitter<EventType extends string> {
      */
     emit(event: EventType, ...args: any[]): boolean;
 }
-export { EventEmitter, Listener };
+export type { Listener };
+export { EventEmitter };

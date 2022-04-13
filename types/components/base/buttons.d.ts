@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { Tool } from '../../common/tool';
+import type { Tool } from '../../common/tool';
 import { AlignmentType } from '../../tools/text';
 export interface CustomButtonProps {
     label?: string;
@@ -23,21 +23,21 @@ export declare type CustomButton = React.ComponentType<CustomButtonProps>;
 export declare type CustomTextAlignmentButton = React.ComponentType<CustomTextAlignmentButtonProps>;
 export declare type CustomToolControlBarPrimaryButton = React.ComponentType<CustomToolControlBarButtonProps>;
 export interface CustomButtons {
-    mainCanvasActionUndo?: CustomButton;
-    mainCanvasActionRedo?: CustomButton;
-    mainCanvasActionExport?: CustomButton;
-    mainCanvasActionClose?: CustomButton;
-    canvasActionEdit?: CustomButton;
-    canvasActionBringToFront?: CustomButton;
-    canvasActionDuplicate?: CustomButton;
-    canvasActionDelete?: CustomButton;
-    canvasActionInvert?: CustomButton;
-    canvasActionFlip?: CustomButton;
-    transformActionFlipHorizontal?: CustomButton;
-    transformActionFlipVertical?: CustomButton;
-    transformActionRotateClockwise?: CustomButton;
-    transformActionRotateAntiClockwise?: CustomButton;
-    textAlignment?: CustomTextAlignmentButton;
-    toolControlBarPrimaryButton?: CustomToolControlBarPrimaryButton;
-    toolControlBarSecondaryButton?: CustomToolControlBarPrimaryButton;
+    mainCanvasActionUndo?: CustomButton | null;
+    mainCanvasActionRedo?: CustomButton | null;
+    mainCanvasActionExport?: CustomButton | null;
+    mainCanvasActionClose?: CustomButton | null;
+    canvasActionEdit?: CustomButton | null;
+    canvasActionBringToFront?: CustomButton | null;
+    canvasActionDuplicate?: CustomButton | null;
+    canvasActionDelete?: CustomButton | null;
+    canvasActionInvert?: CustomButton | null;
+    canvasActionFlip?: CustomButton | null;
+    transformActionFlipHorizontal?: CustomButton | null;
+    transformActionFlipVertical?: CustomButton | null;
+    transformActionRotateClockwise?: CustomButton | null;
+    transformActionRotateAntiClockwise?: CustomButton | null;
+    textAlignment?: CustomTextAlignmentButton | null;
+    toolControlBarPrimaryButton?: CustomToolControlBarPrimaryButton | null;
+    toolControlBarSecondaryButton?: CustomToolControlBarPrimaryButton | null;
 }

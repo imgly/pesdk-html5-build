@@ -1,3 +1,4 @@
+import { Color } from '../../common/color';
 import { WatermarkConfiguration } from '../feature/watermark';
 import { AssetProvider } from './assetProvider';
 import { ImageDownscaleOptions } from './downscaleOptions';
@@ -30,5 +31,10 @@ export interface EngineConfiguration {
      * WebGL will result in the best performance and Canvas should only be used if WebGL is not available
      */
     preferredRenderer?: 'webgl' | 'canvas';
+    /**
+     * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
+     * each channel is defined in the range of `[0, 1]
+     */
+    backgroundColor?: Color;
     watermark?: WatermarkConfiguration;
 }

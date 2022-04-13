@@ -56,7 +56,7 @@ export declare class Configuration {
      * accepts url or HTMLImageElement or imagePath relative to assets folder
      * This is a required field, no default value
      */
-    image: string | HTMLImageElement;
+    image: string | HTMLImageElement | undefined;
     /**
      * The layout that should be loaded
      * accepts url or 'advanced' | 'basic'
@@ -106,7 +106,7 @@ export declare class Configuration {
     displayResizeWarning?: boolean;
     /** Should a message be displayed when when Photoeditor SDK is exited with close event */
     displayCloseWarning?: boolean;
-    /** Should a message be displayed when when Photoeditor SDK is exited with close event */
+    /** Should a message be displayed if the unsupported canvas renderer is used */
     displayCanvasRendererWarning?: boolean;
     /** Should the toolcontrolbartitle be displayed (advancedui only) */
     displayToolControlBarTitle?: boolean;

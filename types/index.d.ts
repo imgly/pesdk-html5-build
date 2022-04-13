@@ -9,7 +9,7 @@ import { ImageMimeType } from './configuration/feature/imageMimeType';
 import { ConfigurationProps } from './configuration/props';
 import { EventEmitter } from './eventEmitter';
 import { UIEvent } from './events';
-import { SerialisationSchema } from './serialization/3.9.0/schema';
+import type { SerialisationSchema } from './serialization/3.12.0/schema';
 
 export class PhotoEditorSDKUIComponent extends React.Component<
   ConfigurationProps
@@ -153,10 +153,19 @@ export * from './common/float2';
 export * from './common/size';
 export * from './common/color';
 export * from './common/categoryHeaderTypes';
+export * from './common/defaultConfig';
+export * from './common/deepmergeAll';
 export * from './components/advanced/card';
 export * from './components/advanced/itemCard';
 export * from './components/base/buttons';
 export * from './components/advanced/toolbarItem';
+export * from './components/advanced/toolbar';
+export * from './components/advanced/toolControlBar';
+export * from './components/basic/toolbar';
+export * from './components/basic/toolControlBar';
+export * from './components/basic/toolItemsBar';
+export * from './components/base/toolbar';
+export * from './components/base/toolControlBar';
 export * from './components/base/cardLabel';
 export * from './components/base/cardAvatar';
 export * from './components/base/color/colorItem';
@@ -196,8 +205,8 @@ export * from './tools/textdesign';
 export * from './tools/transform';
 export * from './events';
 export * from './eventEmitter';
-export * from './serialization/3.9.0/schema';
-export * from './serialization/3.9.0/appSerializableState';
+export * from './serialization/3.12.0/schema';
+export * from './serialization/3.12.0/appSerializableState';
 import { CustomCardProps } from './components/advanced/card'
 import { CustomToolbarItemProps } from './components/advanced/toolbarItem'
 import { CustomItemCardProps } from './components/advanced/itemCard';
@@ -230,6 +239,11 @@ import {
 } from './components/base/dialog/dialogComponents';
 
 import { CustomSearchProps } from './components/base/input/search';
+import { CustomAdvancedToolbarProps } from './components/advanced/toolbar';
+import { CustomAdvancedToolControlBarProps } from './components/advanced/toolControlBar';
+import { CustomBasicToolbarProps } from './components/basic/toolbar';
+import { CustomBasicToolControlBarProps } from './components/basic/toolControlBar';
+import { CustomBasicToolItemsBarProps } from './components/basic/toolItemsBar';
 
 export * from './components/hooks/useSetImage';
 export * from './components/hooks/useIsLayoutAdvanced';
@@ -397,3 +411,28 @@ export class DialogSpinner extends React.Component<DialogSpinnerProps> {}
  */
 // @ts-ignore:2686
 export class SearchField extends React.Component<CustomSearchProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class AdvancedUIToolbar extends React.Component<CustomAdvancedToolbarProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class AdvancedUIToolControlBar extends React.Component<CustomAdvancedToolControlBarProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class BasicUIToolbar extends React.Component<CustomBasicToolbarProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class BasicUIToolControlBar extends React.Component<CustomBasicToolControlBarProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class BasicUIToolItemsBar extends React.Component<CustomBasicToolItemsBarProps> {}

@@ -1,10 +1,15 @@
 import { CustomCard } from '../../components/advanced/card';
 import { CustomItemCard } from '../../components/advanced/itemCard';
+import { CustomAdvancedToolbar } from '../../components/advanced/toolbar';
 import { CustomAdvancedToolbarItem } from '../../components/advanced/toolbarItem';
+import { CustomAdvancedToolControlBar } from '../../components/advanced/toolControlBar';
 import { CustomButtons } from '../../components/base/buttons';
 import { CustomCheckbox } from '../../components/base/checkbox/checkbox';
 import { CustomColorItem } from '../../components/base/color/colorItem';
 import { CustomDialog } from '../../components/base/dialog/dialog';
+import { CustomBasicToolbar } from '../../components/basic/toolbar';
+import { CustomBasicToolControlBar } from '../../components/basic/toolControlBar';
+import { CustomBasicToolItemsBar } from '../../components/basic/toolItemsBar';
 import { CustomLanguages } from './language';
 import { CustomMeasurements } from './measurements';
 import { CustomThemes } from './theme';
@@ -12,31 +17,51 @@ export interface CustomComponents {
     /**
      * advancedUICategoryCard will receive CustomCardProps
      */
-    advancedUICategoryCard?: CustomCard;
+    advancedUICategoryCard?: CustomCard | null;
     /**
      * advancedUIItemCard will receive CustomCardProps
      */
-    advancedUIItemCard?: CustomItemCard;
+    advancedUIItemCard?: CustomItemCard | null;
     /**
-     * toolbarItem will receive CustomToolbarItemProps
+     * advancedUIToolbar will receive CustomAdvancedToolbarProps
      */
-    advancedUIToolbarItem?: CustomAdvancedToolbarItem;
+    advancedUIToolbar?: CustomAdvancedToolbar | null;
+    /**
+     * advancedUIToolControlBar will receive CustomAdvancedControlBarProps
+     */
+    advancedUIToolControlBar?: CustomAdvancedToolControlBar | null;
+    /**
+     * advancecUIToolbarItem will receive CustomToolbarItemProps
+     */
+    advancedUIToolbarItem?: CustomAdvancedToolbarItem | null;
+    /**
+     * basicUIToolbar will receive CustomBasicToolbarProps
+     */
+    basicUIToolbar?: CustomBasicToolbar | null;
+    /**
+     * basicUIToolControlBar will receive CustomBasicToolControlBarProps
+     */
+    basicUIToolControlBar?: CustomBasicToolControlBar | null;
+    /**
+     * basicUIToolItemsBar will receive CustomBasicToolItemsBarProps
+     */
+    basicUIToolItemsBar?: CustomBasicToolItemsBar | null;
     /**
      * dialog will receive CusomDialogProps
      */
-    dialog?: CustomDialog;
+    dialog?: CustomDialog | null;
     /**
      * buttons will receive CustomButtonProps
      */
-    buttons?: CustomButtons;
+    buttons?: CustomButtons | null;
     /**
      * color item will receive CustomColorItemProps
      */
-    colorItem?: CustomColorItem;
+    colorItem?: CustomColorItem | null;
     /**
      * checkbox will receive CustomCheckboxProps
      */
-    checkbox?: CustomCheckbox;
+    checkbox?: CustomCheckbox | null;
 }
 export interface CustomConfiguration {
     /**

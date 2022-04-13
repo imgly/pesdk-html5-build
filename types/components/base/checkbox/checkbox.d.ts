@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { Tool } from '../../../common/tool';
+import type { Tool } from '../../../common/tool';
 export interface CustomCheckboxProps {
     tool: Tool;
     label: string;

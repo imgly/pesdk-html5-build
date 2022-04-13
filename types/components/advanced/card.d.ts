@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { Tool } from '../../common/tool';
+import type { Tool } from '../../common/tool';
 export declare enum CardType {
     LARGE = "large",
     MEDIUM = "medium",

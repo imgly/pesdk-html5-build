@@ -16,4 +16,5 @@ declare type DataURLExportType = string;
  * @ignore
  */
 declare type BLOBExportType = Blob;
-export { ExportFormat, ImageExportType, DataURLExportType, BLOBExportType };
+export type { ImageExportType, DataURLExportType, BLOBExportType };
+export { ExportFormat };

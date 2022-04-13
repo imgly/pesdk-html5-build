@@ -1,5 +1,5 @@
 /// <reference types="react" />
-import { CustomToolLocale } from '../..';
+import { CustomToolLocale } from '../../configuration/custom/language';
 export interface CustomToolProps {
     language: CustomToolLocale;
 }

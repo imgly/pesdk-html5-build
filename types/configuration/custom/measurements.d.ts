@@ -37,6 +37,12 @@ export declare type CustomMeasurements = {
         openHeight?: number;
         closeHeight?: number;
     };
+    basicUIToolControlBar?: {
+        itemsBarHeight?: number;
+        controlsBarHeight?: number;
+        maxHeight?: number;
+        maxWidth?: number;
+    };
     mainCanvasActionBar?: {
         height?: number;
     };
