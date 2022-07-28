@@ -4,3 +4,6 @@ export interface CustomAdvancedToolControlBarProps extends CustomToolControlBarP
     reverse: boolean;
 }
 export declare type CustomAdvancedToolControlBar = React.ComponentType<CustomAdvancedToolControlBarProps>;
+export interface CustomAdvancedToolControlSectionBarProps {
+    show: boolean;
+}

@@ -6,6 +6,25 @@
 
 ### Fixed
 
+## 5.17.0
+
+### Changed
+
+### Added
+
+- Added the `calculateAdvancedUIToolControlBarMeasurements` helper function to calculate all measurements derived from the AdvancedUIToolControlBar width value
+- Added the `AdvancedUIControlsBarSection`, `Dropdown`, and `DropdownCaret` components
+- Added `useGetImage` hook
+- Added the `WindowContainer` to the custom components API
+- Added the `Slider` to the custom components API
+
+### Fixed
+
+- Fixed transform interactions between two instances
+- Fixed reset button not always showing
+- Fixed the image quality of rotated images
+- Fixed states that were not removed by `EditorApi.close` and `EditorApi.dispose` 
+
 ## 5.16.0
 
 ### Changed
@@ -13,6 +32,7 @@
 - Changed the behavior of some error dialogs which previously refreshed the whole page. The `Reload` button was replaced with `Retry` and `Close` buttons.
 
 ### Added
+
 - Added `backgroundColor` and `transparent` options to configuration for custom clear color
 
 - Added support for Serializtion v3.12.0

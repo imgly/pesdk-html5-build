@@ -172,6 +172,10 @@ export * from './components/base/color/colorItem';
 export * from './components/base/color/colorItemComponents';
 export * from './components/base/dialog/dialog';
 export * from './components/base/dialog/dialogComponents';
+export * from './components/base/dropdown/dropdown';
+export * from './components/base/windowContainer';
+export * from './components/base/slider/slider';
+export * from './components/base/slider/sliderComponents';
 export * from './components/base/checkbox/checkbox';
 export * from './components/base/checkbox/checkboxComponents';
 export * from './components/base/label';
@@ -207,27 +211,33 @@ export * from './events';
 export * from './eventEmitter';
 export * from './serialization/3.12.0/schema';
 export * from './serialization/3.12.0/appSerializableState';
-import { CustomCardProps } from './components/advanced/card'
-import { CustomToolbarItemProps } from './components/advanced/toolbarItem'
+/* eslint-disable max-classes-per-file, react/prefer-stateless-function */
+
+import { CustomCardProps } from './components/advanced/card';
 import { CustomItemCardProps } from './components/advanced/itemCard';
-import { CustomDialogProps } from './components/base/dialog/dialog'
-import { CustomCardLabelProps } from './components/base/cardLabel'
-import { CustomCardAvatarProps } from './components/base/cardAvatar'
-import { CustomButtonProps } from './components/base/buttons'
+import { CustomAdvancedToolbarProps } from './components/advanced/toolbar';
+import { CustomToolbarItemProps } from './components/advanced/toolbarItem';
+import {
+  CustomAdvancedToolControlBarProps,
+  CustomAdvancedToolControlSectionBarProps,
+} from './components/advanced/toolControlBar';
+import { CustomButtonProps } from './components/base/buttons';
+import { CustomCardAvatarProps } from './components/base/cardAvatar';
+import { CustomCardLabelProps } from './components/base/cardLabel';
+import { CustomCheckboxProps } from './components/base/checkbox/checkbox';
+import {
+  CheckboxBaseProps,
+  CheckboxCheckMarkProps,
+  CheckboxInputProps,
+} from './components/base/checkbox/checkboxComponents';
+import { CustomColorItemProps } from './components/base/color/colorItem';
 import {
   ColorItemBaseProps,
   ColorItemBackgroundProps,
   ColorItemTiledBackgroundProps,
   ColorItemActiveOverlayProps,
-} from './components/base/color/colorItemComponents'
-import { CustomColorItemProps } from './components/base/color/colorItem'
-import { CustomLabelProps } from './components/base/label'
-import { CustomCheckboxProps } from './components/base/checkbox/checkbox'
-import {
-  CheckboxBaseProps,
-  CheckboxCheckMarkProps,
-  CheckboxInputProps,
-} from './components/base/checkbox/checkboxComponents'
+} from './components/base/color/colorItemComponents';
+import { CustomDialogProps } from './components/base/dialog/dialog';
 import {
   DialogBaseProps,
   DialogContainerProps,
@@ -237,15 +247,24 @@ import {
   DialogFooterProps,
   DialogSpinnerProps,
 } from './components/base/dialog/dialogComponents';
-
+import { DropdownProps } from './components/base/dropdown/dropdown';
 import { CustomSearchProps } from './components/base/input/search';
-import { CustomAdvancedToolbarProps } from './components/advanced/toolbar';
-import { CustomAdvancedToolControlBarProps } from './components/advanced/toolControlBar';
+import { CustomLabelProps } from './components/base/label';
+import { CustomSliderProps } from './components/base/slider/slider';
+import {
+  SliderBaseProps,
+  SliderContainerProps,
+  SliderInputProps,
+  SliderTrackProps,
+  SliderLabelProps,
+} from './components/base/slider/sliderComponents';
+import { CustomWindowContainerProps } from './components/base/windowContainer';
 import { CustomBasicToolbarProps } from './components/basic/toolbar';
 import { CustomBasicToolControlBarProps } from './components/basic/toolControlBar';
 import { CustomBasicToolItemsBarProps } from './components/basic/toolItemsBar';
 
 export * from './components/hooks/useSetImage';
+export * from './components/hooks/useGetImage';
 export * from './components/hooks/useIsLayoutAdvanced';
 /**
  * @ignore
@@ -261,12 +280,16 @@ export class AdvancedUIItemCard extends React.Component<CustomItemCardProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class AdvancedUIToolbarItem extends React.Component<CustomToolbarItemProps> {}
+export class AdvancedUIToolbarItem extends React.Component<
+  CustomToolbarItemProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class AdvancedUICardLabel extends React.Component<CustomCardLabelProps> {}
+export class AdvancedUICardLabel extends React.Component<
+  CustomCardLabelProps
+> {}
 /**
  * @ignore
  */
@@ -276,12 +299,16 @@ export class CardAvatar extends React.Component<CustomCardAvatarProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class CanvasBarTextSecondaryButton extends React.Component<CustomButtonProps> {}
+export class CanvasBarTextSecondaryButton extends React.Component<
+  CustomButtonProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class ContainedPrimaryButton extends React.Component<CustomButtonProps> {}
+export class ContainedPrimaryButton extends React.Component<
+  CustomButtonProps
+> {}
 /**
  * @ignore
  */
@@ -291,7 +318,9 @@ export class OutlinedPrimaryButton extends React.Component<CustomButtonProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class OutlinedSecondaryButton extends React.Component<CustomButtonProps> {}
+export class OutlinedSecondaryButton extends React.Component<
+  CustomButtonProps
+> {}
 /**
  * @ignore
  */
@@ -333,7 +362,9 @@ export class CheckboxBase extends React.Component<CheckboxBaseProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class CheckboxCheckMark extends React.Component<CheckboxCheckMarkProps> {}
+export class CheckboxCheckMark extends React.Component<
+  CheckboxCheckMarkProps
+> {}
 /**
  * @ignore
  */
@@ -354,17 +385,23 @@ export class ColorItemBase extends React.Component<ColorItemBaseProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class ColorItemBackground extends React.Component<ColorItemBackgroundProps> {}
+export class ColorItemBackground extends React.Component<
+  ColorItemBackgroundProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class ColorItemTiledBackground extends React.Component<ColorItemTiledBackgroundProps> {}
+export class ColorItemTiledBackground extends React.Component<
+  ColorItemTiledBackgroundProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class ColorItemActiveOverlay extends React.Component<ColorItemActiveOverlayProps> {}
+export class ColorItemActiveOverlay extends React.Component<
+  ColorItemActiveOverlayProps
+> {}
 
 /**
  * @ignore
@@ -415,12 +452,16 @@ export class SearchField extends React.Component<CustomSearchProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class AdvancedUIToolbar extends React.Component<CustomAdvancedToolbarProps> {}
+export class AdvancedUIToolbar extends React.Component<
+  CustomAdvancedToolbarProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class AdvancedUIToolControlBar extends React.Component<CustomAdvancedToolControlBarProps> {}
+export class AdvancedUIToolControlBar extends React.Component<
+  CustomAdvancedToolControlBarProps
+> {}
 /**
  * @ignore
  */
@@ -430,9 +471,67 @@ export class BasicUIToolbar extends React.Component<CustomBasicToolbarProps> {}
  * @ignore
  */
 // @ts-ignore:2686
-export class BasicUIToolControlBar extends React.Component<CustomBasicToolControlBarProps> {}
+export class BasicUIToolControlBar extends React.Component<
+  CustomBasicToolControlBarProps
+> {}
 /**
  * @ignore
  */
 // @ts-ignore:2686
-export class BasicUIToolItemsBar extends React.Component<CustomBasicToolItemsBarProps> {}
+export class BasicUIToolItemsBar extends React.Component<
+  CustomBasicToolItemsBarProps
+> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class Dropdown extends React.Component<DropdownProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class DropdownCaret extends React.Component<DropdownCaretProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class AdvancedUIControlsBarSection extends React.Component<
+  CustomAdvancedToolControlSectionBarProps
+> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class WindowContainer extends React.Component<
+  CustomWindowContainerProps
+> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class Slider extends React.Component<CustomSliderProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SliderContainer extends React.Component<SliderContainerProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SliderInput extends React.Component<SliderInputProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SliderTrack extends React.Component<SliderTrackProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SliderLabel extends React.Component<SliderLabelProps> {}
+/**
+ * @ignore
+ */
+// @ts-ignore:2686
+export class SliderBase extends React.Component<SliderBaseProps> {}

@@ -517,7 +517,7 @@ export interface BrushLocale {
     };
 }
 export interface CustomToolLocale {
-    [key: string]: string;
+    [key: string]: any;
 }
 export interface ColorPickerLocale {
     hex?: string;

@@ -21,6 +21,7 @@ export interface FontSystemInterface {
     button2?: FontSystemOption;
     basicUITabLabel?: FontSystemOption;
 }
+export declare const calculateAdvancedUIToolControlBarMeasurements: (width: number, spacer?: number) => CustomMeasurements;
 /**
  * The values will accept the pixel amount as a number
  */
@@ -33,6 +34,21 @@ export declare type CustomMeasurements = {
         width?: number;
         marginBottom?: number;
     };
+    advancedUICard?: {
+        small?: {
+            height?: number;
+            width?: number;
+        };
+        medium?: {
+            height?: number;
+            width?: number;
+        };
+        large?: {
+            height?: number;
+            width?: number;
+        };
+    };
+    advancedUISpacer?: number;
     basicUIToolbar?: {
         openHeight?: number;
         closeHeight?: number;
@@ -54,6 +70,14 @@ export declare type CustomMeasurements = {
     };
     colorItem?: {
         size?: number;
+    };
+    inputs?: {
+        cropSize?: {
+            maxWidth?: number;
+        };
+        checkbox?: {
+            maxWidth?: number;
+        };
     };
     fontSystem?: FontSystemInterface;
 };

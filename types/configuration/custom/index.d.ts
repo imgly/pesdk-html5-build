@@ -7,6 +7,8 @@ import { CustomButtons } from '../../components/base/buttons';
 import { CustomCheckbox } from '../../components/base/checkbox/checkbox';
 import { CustomColorItem } from '../../components/base/color/colorItem';
 import { CustomDialog } from '../../components/base/dialog/dialog';
+import { CustomSlider } from '../../components/base/slider/slider';
+import { CustomWindowContainer } from '../../components/base/windowContainer';
 import { CustomBasicToolbar } from '../../components/basic/toolbar';
 import { CustomBasicToolControlBar } from '../../components/basic/toolControlBar';
 import { CustomBasicToolItemsBar } from '../../components/basic/toolItemsBar';
@@ -62,6 +64,14 @@ export interface CustomComponents {
      * checkbox will receive CustomCheckboxProps
      */
     checkbox?: CustomCheckbox | null;
+    /**
+     * windowContainer will receive CustomWindowContainerProps
+     */
+    windowContainer?: CustomWindowContainer | null;
+    /**
+     * slider will receive CustomSliderProps
+     */
+    slider?: CustomSlider | null;
 }
 export interface CustomConfiguration {
     /**

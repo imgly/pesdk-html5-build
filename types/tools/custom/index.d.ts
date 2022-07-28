@@ -7,4 +7,9 @@ export declare type CustomToolbar = React.ElementType<CustomToolProps>;
 export declare class CustomToolConfiguration {
     icon: React.ElementType;
     toolControlBar: CustomToolbar;
+    measurements?: {
+        advancedUIToolControlBar?: {
+            width?: number;
+        };
+    };
 }

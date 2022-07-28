@@ -56,7 +56,7 @@ export declare class Configuration {
      * accepts url or HTMLImageElement or imagePath relative to assets folder
      * This is a required field, no default value
      */
-    image: string | HTMLImageElement | undefined;
+    image: string | HTMLImageElement | undefined | null;
     /**
      * The layout that should be loaded
      * accepts url or 'advanced' | 'basic'
