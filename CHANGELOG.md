@@ -6,6 +6,12 @@
 
 ### Fixed
 
+## 5.17.1
+
+### Fixed
+
+- Fixed an issue where using an HTMLImageElement in the configuration caused an infinite loading spinner
+
 ## 5.17.0
 
 ### Changed
