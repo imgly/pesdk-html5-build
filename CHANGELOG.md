@@ -6,6 +6,12 @@
 
 ### Fixed
 
+## 5.17.2
+
+### Fixed
+
+- Fixed the error message if `EditorAPI.close()` was called in the callback of `UIEvent.EXPORT`
+
 ## 5.17.1
 
 ### Fixed
@@ -29,7 +35,7 @@
 - Fixed transform interactions between two instances
 - Fixed reset button not always showing
 - Fixed the image quality of rotated images
-- Fixed states that were not removed by `EditorApi.close` and `EditorApi.dispose` 
+- Fixed states that were not removed by `EditorApi.close` and `EditorApi.dispose`
 
 ## 5.16.0
 
