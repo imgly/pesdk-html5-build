@@ -31,4 +31,4 @@ Please see [LICENSE](https://github.com/imgly/pesdk-html5-build/blob/master/LICE
 Made 2013-2022 by [img.ly](https://www.photoeditorsdk.com)
 
 ## Support and License
-Use our [service desk](https://support.img.ly) for bug reports or support requests. To request a commercial license, please use the [license request form](https://img.ly/pricing) on our website.
+Use our [service desk](https://img.ly/support) for bug reports or support requests. To request a commercial license, please use the [license request form](https://img.ly/pricing) on our website.

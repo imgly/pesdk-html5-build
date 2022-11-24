@@ -6,13 +6,34 @@
 
 ### Fixed
 
+## 5.17.3
+
+### Changed
+
+### Added
+
+### Fixed
+
+- Fixed an issue causing `TypeError: can't access property "events", e.configStore is null` during `EditorAPI.close()`
+- Fixed a `maximum call stack size exceeded` error during start-up if `container` is an HTML element
+- Fixed missing fonts if `addDefaultTextOnEnter` is set to `false`
+- Fixed an issue where `isDirtySinceSave` was not available
+
 ## 5.17.2
+
+### Changed
+
+### Added
 
 ### Fixed
 
 - Fixed the error message if `EditorAPI.close()` was called in the callback of `UIEvent.EXPORT`
 
 ## 5.17.1
+
+### Changed
+
+### Added
 
 ### Fixed
 
