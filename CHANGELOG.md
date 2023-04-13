@@ -6,6 +6,16 @@
 
 ### Fixed
 
+## 5.17.4
+
+### Changed
+
+### Added
+
+### Fixed
+
+- Fixed a deserialization issue if `resizeMode` is set to `unrestricted`
+
 ## 5.17.3
 
 ### Changed
