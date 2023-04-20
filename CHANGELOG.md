@@ -6,6 +6,16 @@
 
 ### Fixed
 
+## 5.17.5
+
+### Changed
+
+### Added
+
+### Fixed
+
+- Fixed a regression in `v5.17.4` that caused an error while deserializing text
+
 ## 5.17.4
 
 ### Changed
