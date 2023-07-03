@@ -6,6 +6,21 @@
 
 ### Fixed
 
+## 5.18.0
+
+### Changed
+
+### Added
+
+- Added an `identifier` value to each slider component for easier access in a custom component 
+- Added the `displayDiscardChangesWarning` option to the config for disabling the discard changes warning 
+
+### Fixed
+
+- Fixed the missing unsaved changes dialog if the editor was closed in the transform tool
+- Fixed a text overflow issue in Transform input fields
+- Fixed an issue where large stickers were not rendered correctly
+
 ## 5.17.5
 
 ### Changed

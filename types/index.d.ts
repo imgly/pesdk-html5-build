@@ -176,6 +176,7 @@ export * from './components/base/dropdown/dropdown';
 export * from './components/base/windowContainer';
 export * from './components/base/slider/slider';
 export * from './components/base/slider/sliderComponents';
+export * from './components/base/slider/identifier';
 export * from './components/base/checkbox/checkbox';
 export * from './components/base/checkbox/checkboxComponents';
 export * from './components/base/label';

@@ -1,8 +1,10 @@
 /// <reference types="react" />
 import { Tool } from '../../../common/tool';
+import { AdjustmentIdentifier } from '../../../tools/adjustment/identifier';
+import { SliderIdentifier } from './identifier';
 export interface CustomSliderProps {
     tool: Tool;
-    identifier?: string;
+    identifier: SliderIdentifier | AdjustmentIdentifier | string;
     label: string;
     value?: number;
     min?: number;

@@ -104,8 +104,13 @@ export declare class Configuration {
     mainCanvasActions?: Array<CanvasAction.UNDO | CanvasAction.REDO | CanvasAction.CLOSE | CanvasAction.EXPORT | undefined>;
     /** Should a message be displayed when the image has been scaled down for performance reasons */
     displayResizeWarning?: boolean;
-    /** Should a message be displayed when when Photoeditor SDK is exited with close event */
+    /** Should a message be displayed when Photoeditor SDK is exited with close event */
     displayCloseWarning?: boolean;
+    /** Should a message be displayed when a new image is loaded and changes where made to the image.
+     * If this is set to false changes will not be discarded and instead applied to the new image.
+     * The `reset` function can be used to discard changes after loading a new image.
+     */
+    displayDiscardChangesWarning?: boolean;
     /** Should a message be displayed if the unsupported canvas renderer is used */
     displayCanvasRendererWarning?: boolean;
     /** Should the toolcontrolbartitle be displayed (advancedui only) */
