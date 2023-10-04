@@ -8,7 +8,10 @@ export declare enum CardType {
 export interface CustomCardProps {
     tool: Tool;
     label: string;
+    role?: string;
     image?: string;
+    'aria-label'?: string;
+    'aria-expanded'?: boolean;
     isActive?: boolean;
     type: CardType;
     isDisabled?: boolean;

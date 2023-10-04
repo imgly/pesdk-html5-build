@@ -78,6 +78,8 @@ export interface LibraryLocale {
         buttonWebcamClose?: string;
         placeholderSearch?: string;
         noResults?: string;
+        itemAriaLabel?: string;
+        categoryAriaLabel?: string;
     };
 }
 export interface FilterLocale {
@@ -85,6 +87,8 @@ export interface FilterLocale {
     controls?: {
         buttonReset?: string;
         sliderIntensity?: string;
+        itemAriaLabel?: string;
+        categoryAriaLabel?: string;
     };
     categories?: {
         imgly_filter_category_duotone?: string;
@@ -196,6 +200,7 @@ export interface FocusLocale {
     controls?: {
         buttonReset?: string;
         sliderIntensity?: string;
+        itemAriaLabel?: string;
     };
     items?: {
         radial?: string;
@@ -228,6 +233,7 @@ export interface OverlayLocale {
         blendModeColorBurn?: string;
         tabOpacity?: string;
         tabBlendMode?: string;
+        itemAriaLabel?: string;
     };
     items?: {
         imgly_overlay_bokeh?: string;
@@ -257,6 +263,8 @@ export interface StickerLocale {
         selectColor?: string;
         tabColor?: string;
         tabOpacity?: string;
+        itemAriaLabel?: string;
+        categoryAriaLabel?: string;
     };
     categories?: {
         imgly_sticker_emoticons?: string;
@@ -411,6 +419,7 @@ export interface TextDesignLocale {
         selectColor?: string;
         tabColor?: string;
         tabShuffle?: string;
+        itemAriaLabel?: string;
     };
     canvasControls?: {
         placeholderText?: string;
@@ -446,6 +455,7 @@ export interface FrameLocale {
         tabColor?: string;
         tabOpacity?: string;
         tabSize?: string;
+        itemAriaLabel?: string;
     };
     items?: {
         imgly_frame_dia?: string;
@@ -466,6 +476,10 @@ export interface TransformLocale {
         tabFlipAndRotate?: string;
         tabResolution?: string;
         tabCropSize?: string;
+        itemAriaLabel?: string;
+        categoryAriaLabel?: string;
+        inputHeightAriaLabel?: string;
+        inputWidthAriaLabel?: string;
     };
     categories?: {
         imgly_transforms_common?: string;

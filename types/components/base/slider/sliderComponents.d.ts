@@ -19,6 +19,7 @@ export interface SliderTrackProps {
 }
 export interface SliderInputProps {
     id: string;
+    'aria-label'?: string;
     value?: number;
     decimal?: number;
     divider?: number;

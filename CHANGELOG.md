@@ -6,6 +6,16 @@
 
 ### Fixed
 
+## 5.19.0
+
+### Changed
+
+- Updated the Text and Text Design tool fonts. Please replace your old `assets` folder and fonts with the new files from `node_modules/photoeditorsdk/assets` or [here](https://github.com/imgly/pesdk-html5-build/tree/main/assets)
+
+### Added
+
+### Fixed
+
 ## 5.18.0
 
 ### Changed
