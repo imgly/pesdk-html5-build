@@ -6,6 +6,22 @@
 
 ### Fixed
 
+## 5.19.2
+
+### Changed
+
+### Added
+
+### Fixed
+
+## 5.19.1
+
+### Changed
+
+### Added
+
+### Fixed
+
 ## 5.19.0
 
 ### Changed
