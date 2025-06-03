@@ -1,6 +1,6 @@
 {
   "name": "photoeditorsdk",
-  "version": "5.19.6",
+  "version": "5.19.7",
   "description": "The most comprehensive photo editor SDK for HTML5",
   "main": "index.js",
   "module": "index.esm.js",
@@ -18,7 +18,7 @@
     "canvas"
   ],
   "homepage": "https://img.ly/",
-  "author": "PhotoEditorSDK (img.ly GmbH) <contact@img.ly>",
+  "author": "PhotoEditorSDK (IMG.LY GmbH) <contact@img.ly>",
   "license": "SEE LICENSE IN LICENSE.md",
   "peerDependencies": {
     "react": ">= 16.8.6",

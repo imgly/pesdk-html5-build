@@ -6,9 +6,19 @@
 
 ### Fixed
 
+## 5.19.7
+
+### Changed
+
+### Added
+
+### Fixed
+
 ## 5.19.6
 
 ### Changed
+
+-  Changed the black and white symbols to be more international.
 
 ### Added
 
@@ -17,6 +27,9 @@
 ## 5.19.5
 
 ### Changed
+
+-  Changed the black and white symbols to be more international.
+
 
 ### Added
 
@@ -33,6 +46,8 @@
 ## 5.19.3
 
 ### Changed
+
+- Updated serialization of stickers. Now if the sticker in the serialization has no TintMode, the TintMode of the Sticker will be used, if none can be found 'colorized; will be used.
 
 ### Added
 
