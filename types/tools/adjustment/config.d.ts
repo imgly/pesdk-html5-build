@@ -5,7 +5,7 @@ export declare enum AdvancedAdjustmentControlBarItem {
     Separator = "separator",
     Items = "items"
 }
-export declare type AdjustmentControlBarExpandable = {
+export type AdjustmentControlBarExpandable = {
     type: AdvancedAdjustmentControlBarItem.Expandable;
     children: Array<AdvancedAdjustmentControlBarItem.RemoveAdjustmentButton | AdvancedAdjustmentControlBarItem.Separator>;
 };

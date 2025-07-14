@@ -1,7 +1,7 @@
 import { DuoToneFilterAsset, LUTFilterAsset } from '../../tools/filter';
 import { FrameAsset } from '../../tools/frame';
 import { FontManager } from './fontManager';
-declare type AssetCategory = 'filter' | 'overlay' | 'font' | 'sticker' | 'textdesign' | 'frame';
+type AssetCategory = 'filter' | 'overlay' | 'font' | 'sticker' | 'textdesign' | 'frame';
 /**
  * @ignore
  */

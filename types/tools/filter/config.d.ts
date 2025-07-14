@@ -10,7 +10,7 @@ export declare enum AdvancedFilterControlBarItem {
 export declare enum BasicFilterControlBarTabs {
     FilterIntensity = "filterIntensity"
 }
-export declare type FilterControlBarExpandable = {
+export type FilterControlBarExpandable = {
     type: AdvancedFilterControlBarItem.Expandable;
     children: Array<AdvancedFilterControlBarItem.RemoveFilterButton | AdvancedFilterControlBarItem.FilterIntensitySlider | AdvancedFilterControlBarItem.Separator>;
 };

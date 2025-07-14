@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface ColorItemBaseProps {
     onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
     disabled: boolean;

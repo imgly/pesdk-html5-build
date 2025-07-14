@@ -1,4 +1,4 @@
-declare type Listener = (...args: any[]) => void;
+type Listener = (...args: any[]) => void;
 /**
  * A class used to receive and emit events.
  */

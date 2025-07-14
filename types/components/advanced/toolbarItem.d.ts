@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { Tool } from '../../common/tool';
 export interface CustomToolbarItemProps {
     tool: Tool;
@@ -11,4 +10,4 @@ export interface CustomToolbarItemProps {
     style?: React.CSSProperties;
     className?: string;
 }
-export declare type CustomAdvancedToolbarItem = React.ComponentType<CustomToolbarItemProps>;
+export type CustomAdvancedToolbarItem = React.ComponentType<CustomToolbarItemProps>;

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface CustomLabelProps {
     id?: string;
     label: string;

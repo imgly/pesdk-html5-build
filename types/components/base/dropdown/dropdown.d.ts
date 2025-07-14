@@ -1,5 +1,4 @@
-/// <reference types="react" />
-export declare type DropdownListItem = {
+export type DropdownListItem = {
     value: string;
     label: string;
     [key: string]: any;

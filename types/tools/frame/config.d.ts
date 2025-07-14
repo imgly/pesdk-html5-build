@@ -15,7 +15,7 @@ export declare enum BasicFrameControlBarTabs {
     FrameOpacity = "frameOpacity",
     FrameColor = "frameColor"
 }
-export declare type FrameControlBarExpandable = {
+export type FrameControlBarExpandable = {
     type: AdvancedFrameControlBarItem.Expandable;
     children: Array<Omit<Omit<AdvancedFrameControlBarItem, AdvancedFrameControlBarItem.Expandable>, AdvancedFrameControlBarItem.Items>>;
 };

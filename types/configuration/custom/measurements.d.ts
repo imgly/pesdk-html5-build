@@ -1,4 +1,4 @@
-export declare type FontType = 'uppercase' | 'capitalize' | 'lowercase' | 'none';
+export type FontType = 'uppercase' | 'capitalize' | 'lowercase' | 'none';
 export interface FontSystemOption {
     size?: number;
     letterSpacing?: number;
@@ -25,7 +25,7 @@ export declare const calculateAdvancedUIToolControlBarMeasurements: (width: numb
 /**
  * The values will accept the pixel amount as a number
  */
-export declare type CustomMeasurements = {
+export type CustomMeasurements = {
     advancedUIToolbar?: {
         width?: number;
         marginBottom?: number;

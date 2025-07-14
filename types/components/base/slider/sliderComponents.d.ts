@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { CustomLabelProps } from '../label';
 export interface SliderTrackProps {
     id: string;
@@ -45,4 +44,4 @@ export interface SliderBaseProps {
     className?: string;
     style?: React.CSSProperties;
 }
-export declare type SliderLabelProps = CustomLabelProps;
+export type SliderLabelProps = CustomLabelProps;

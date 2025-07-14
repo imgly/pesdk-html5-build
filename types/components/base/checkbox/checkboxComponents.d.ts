@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface CheckboxBaseProps {
     children: React.ReactNode;
     className?: string;

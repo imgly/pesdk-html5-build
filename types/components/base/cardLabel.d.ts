@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export interface CustomCardLabelProps {
     className?: string;
     caret?: boolean;

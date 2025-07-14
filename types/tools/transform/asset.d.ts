@@ -17,4 +17,4 @@ export interface CropRatio {
     forceDimensions?: boolean;
     lockDimensions?: boolean;
 }
-export declare type ExistingTransformCategory = ExistingCategory<CropRatio>;
+export type ExistingTransformCategory = ExistingCategory<CropRatio>;

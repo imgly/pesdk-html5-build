@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { ModalType } from './dialog';
 export interface DialogHeaderProps {
     children: React.ReactNode;

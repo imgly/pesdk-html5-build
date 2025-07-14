@@ -1,1 +1,1 @@
-export declare type AlignmentType = 'left' | 'center' | 'right';
+export type AlignmentType = 'left' | 'center' | 'right';

@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import { Tool } from '../../../common/tool';
 import { AdjustmentIdentifier } from '../../../tools/adjustment/identifier';
 import { SliderIdentifier } from './identifier';
@@ -27,4 +26,4 @@ export interface CustomSliderProps {
     style?: React.CSSProperties;
     children?: React.ReactNode;
 }
-export declare type CustomSlider = React.ComponentType<CustomSliderProps>;
+export type CustomSlider = React.ComponentType<CustomSliderProps>;

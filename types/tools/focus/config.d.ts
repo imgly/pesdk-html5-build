@@ -9,7 +9,7 @@ export declare enum AdvancedFocusControlBarItem {
 export declare enum BasicFocusControlBarTabs {
     FocusIntensity = "focusIntensity"
 }
-export declare type FocusControlBarExpandable = {
+export type FocusControlBarExpandable = {
     type: AdvancedFocusControlBarItem.Expandable;
     children: Array<AdvancedFocusControlBarItem.RemoveFocusButton | AdvancedFocusControlBarItem.FocusIntensitySlider | AdvancedFocusControlBarItem.Separator>;
 };

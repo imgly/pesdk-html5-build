@@ -54,4 +54,4 @@ export declare function isDuoToneFilterAsset(asset: LUTFilterAsset | DuoToneFilt
  * @ignore
  */
 export declare function isLUTFilterAsset(asset: LUTFilterAsset | DuoToneFilterAsset): asset is LUTFilterAsset;
-export declare type ExistingFilterCategory = ExistingCategory<DuoToneFilterAsset | LUTFilterAsset>;
+export type ExistingFilterCategory = ExistingCategory<DuoToneFilterAsset | LUTFilterAsset>;

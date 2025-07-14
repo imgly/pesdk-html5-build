@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { Tool } from '../../common/tool';
 import { AlignmentType } from '../../tools/text';
 export interface CustomButtonProps {
@@ -19,9 +18,9 @@ export interface CustomTextAlignmentButtonProps extends CustomButtonProps {
 export interface CustomToolControlBarButtonProps extends CustomButtonProps {
     tool: Tool;
 }
-export declare type CustomButton = React.ComponentType<CustomButtonProps>;
-export declare type CustomTextAlignmentButton = React.ComponentType<CustomTextAlignmentButtonProps>;
-export declare type CustomToolControlBarPrimaryButton = React.ComponentType<CustomToolControlBarButtonProps>;
+export type CustomButton = React.ComponentType<CustomButtonProps>;
+export type CustomTextAlignmentButton = React.ComponentType<CustomTextAlignmentButtonProps>;
+export type CustomToolControlBarPrimaryButton = React.ComponentType<CustomToolControlBarButtonProps>;
 export interface CustomButtons {
     mainCanvasActionUndo?: CustomButton | null;
     mainCanvasActionRedo?: CustomButton | null;

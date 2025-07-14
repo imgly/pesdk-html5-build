@@ -3,8 +3,8 @@ import { SerializableCustomStickerAsset, SerializableColor } from './appSerializ
 export interface SerializationColor {
     rgba: SerializableColor;
 }
-declare type NormalizedNumber = number;
-declare type PositiveNumber = number;
+type NormalizedNumber = number;
+type PositiveNumber = number;
 export interface ImageSchema {
     type?: string;
     data?: string;
@@ -61,7 +61,7 @@ export interface LinearFocusOperation {
     type: 'linear';
     options: LinearFocusOperationOptions;
 }
-export declare type FocusOptions = RadialFocusOperation | MirroredFocusOperation | LinearFocusOperation | GaussianFocusOperation;
+export type FocusOptions = RadialFocusOperation | MirroredFocusOperation | LinearFocusOperation | GaussianFocusOperation;
 export interface FocusOperation {
     type: 'focus';
     options: FocusOptions;
@@ -191,14 +191,14 @@ export interface TextDesignOperation {
     type: 'textdesign';
     options: TextDesignOperationOptions;
 }
-export declare type SpriteOptions = FrameOperation | OverlayOperation | StickerOperation | TextOperation | BrushOperation | TextDesignOperation;
+export type SpriteOptions = FrameOperation | OverlayOperation | StickerOperation | TextOperation | BrushOperation | TextDesignOperation;
 export interface SpriteOperation {
     type: 'sprite';
     options: {
         sprites: SpriteOptions[];
     };
 }
-export declare type Operation = FiltersOperation | AdjustmentsOperation | FocusOperation | SpriteOperation | TransformOperation | OrientationOperation;
+export type Operation = FiltersOperation | AdjustmentsOperation | FocusOperation | SpriteOperation | TransformOperation | OrientationOperation;
 export interface AssetLibraryInterface {
     assets: {
         stickers: SerializableCustomStickerAsset[];

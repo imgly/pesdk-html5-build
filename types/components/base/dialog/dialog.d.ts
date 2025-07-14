@@ -1,6 +1,5 @@
-/// <reference types="react" />
 import { InfoLocale, ErrorLocale, WarningLocale } from '../../../configuration/custom/language';
-export declare type ModalIdentifier = keyof ErrorLocale | keyof WarningLocale | keyof InfoLocale | 'inputText';
+export type ModalIdentifier = keyof ErrorLocale | keyof WarningLocale | keyof InfoLocale | 'inputText';
 export declare enum ModalType {
     ERROR = "error",
     WARNING = "warning",
@@ -33,4 +32,4 @@ export interface CustomDialogProps {
     footer?: React.ReactNode;
     children?: React.ReactNode;
 }
-export declare type CustomDialog = React.ComponentType<CustomDialogProps>;
+export type CustomDialog = React.ComponentType<CustomDialogProps>;

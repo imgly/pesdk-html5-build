@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { Tool } from '../../../common/tool';
 export interface CustomCheckboxProps {
     tool: Tool;
@@ -11,4 +10,4 @@ export interface CustomCheckboxProps {
     style?: React.CSSProperties;
     children?: React.ReactNode;
 }
-export declare type CustomCheckbox = React.ComponentType<CustomCheckboxProps>;
+export type CustomCheckbox = React.ComponentType<CustomCheckboxProps>;

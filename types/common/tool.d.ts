@@ -25,4 +25,4 @@ export declare enum Tool {
     /** Custom tool */
     CUSTOM = "customTool"
 }
-export declare type SpriteType = Tool.STICKER | Tool.TEXT | Tool.TEXT_DESIGN;
+export type SpriteType = Tool.STICKER | Tool.TEXT | Tool.TEXT_DESIGN;

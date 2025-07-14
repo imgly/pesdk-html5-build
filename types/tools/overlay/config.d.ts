@@ -12,7 +12,7 @@ export declare enum BasicOverlayControlBarTabs {
     OverlayOpacity = "overlayOpacity",
     OverlayBlendMode = "overlayBlendMode"
 }
-export declare type OverlayControlBarExpandable = {
+export type OverlayControlBarExpandable = {
     type: AdvancedOverlayControlBarItem.Expandable;
     children: Array<AdvancedOverlayControlBarItem.RemoveOverlayButton | AdvancedOverlayControlBarItem.OverlayOpacitySlider | AdvancedOverlayControlBarItem.OverlayBlendModeCarousel | AdvancedOverlayControlBarItem.Separator>;
 };

@@ -1,4 +1,4 @@
-export declare type FontWeight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 'normal' | 'bold' | 'lighter' | 'bolder' | 'inherit' | 'initial' | 'unset';
+export type FontWeight = 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 'normal' | 'bold' | 'lighter' | 'bolder' | 'inherit' | 'initial' | 'unset';
 export interface TextMetrics {
     unitsPerEm: number;
     ascender: number;
@@ -20,7 +20,7 @@ export interface WebFontAsset extends Font {
 export interface GoogleFontAsset extends Font {
     provider: 'google';
 }
-export declare type FontAsset = WebFontAsset | GoogleFontAsset;
+export type FontAsset = WebFontAsset | GoogleFontAsset;
 /**
  * @ignore
  */

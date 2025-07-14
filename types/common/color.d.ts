@@ -15,4 +15,4 @@ export interface NamedColor {
  * color is represented as a number array which encodes as a single gray value or a RGB(A) tuple of floating point values where
  * each channel is defined in the range of `[0, 1]
  */
-export declare type Color = [number, number, number, number];
+export type Color = [number, number, number, number];

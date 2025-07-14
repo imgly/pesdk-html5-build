@@ -11,4 +11,4 @@ export interface AdjustmentCategory {
      */
     items: AdjustmentAsset[];
 }
-export declare type ExistingAdjustmentCategory = Omit<AdjustmentCategory, 'name'>;
+export type ExistingAdjustmentCategory = Omit<AdjustmentCategory, 'name'>;

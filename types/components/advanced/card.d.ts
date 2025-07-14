@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { Tool } from '../../common/tool';
 export declare enum CardType {
     LARGE = "large",
@@ -20,4 +19,4 @@ export interface CustomCardProps {
     style?: React.CSSProperties;
     children?: React.ReactNode;
 }
-export declare type CustomCard = React.ComponentType<CustomCardProps>;
+export type CustomCard = React.ComponentType<CustomCardProps>;

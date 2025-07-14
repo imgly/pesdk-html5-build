@@ -2,7 +2,7 @@ import { Color } from '../../common/color';
 import { WatermarkConfiguration } from '../feature/watermark';
 import { AssetProvider } from './assetProvider';
 import { ImageDownscaleOptions } from './downscaleOptions';
-export declare type CrossOriginType = 'anonymous' | 'use-credentials' | '';
+export type CrossOriginType = 'anonymous' | 'use-credentials' | '';
 /**
  * Configuration options which have to be provided when creating a new Engine.
  */

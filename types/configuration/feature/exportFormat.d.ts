@@ -7,14 +7,14 @@ declare enum ExportFormat {
 /**
  * @ignore
  */
-declare type ImageExportType = HTMLImageElement;
+type ImageExportType = HTMLImageElement;
 /**
  * @ignore
  */
-declare type DataURLExportType = string;
+type DataURLExportType = string;
 /**
  * @ignore
  */
-declare type BLOBExportType = Blob;
+type BLOBExportType = Blob;
 export type { ImageExportType, DataURLExportType, BLOBExportType };
 export { ExportFormat };

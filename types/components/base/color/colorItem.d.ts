@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import type { Tool } from '../../../common/tool';
 export interface CustomColorItemProps {
     tool: Tool;
@@ -12,4 +11,4 @@ export interface CustomColorItemProps {
     style?: React.CSSProperties;
     children?: React.ReactNode;
 }
-export declare type CustomColorItem = React.ComponentType<CustomColorItemProps>;
+export type CustomColorItem = React.ComponentType<CustomColorItemProps>;

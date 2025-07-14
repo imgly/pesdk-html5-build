@@ -497,7 +497,7 @@ export class DropdownCaret extends React.Component<DropdownCaretProps> {}
  */
 // @ts-ignore:2686
 export class AdvancedUIControlsBarSection extends React.Component<
-  CustomAdvancedToolControlSectionBarProps
+  CustomAdvancedToolControlSectionBarProps & { children: React.ReactNode }
 > {}
 /**
  * @ignore

@@ -106,4 +106,4 @@ export declare class ExportConfiguration {
 /**
  * The return value of an export operation.
  */
-export declare type ExportData = string | HTMLImageElement | Blob;
+export type ExportData = string | HTMLImageElement | Blob;

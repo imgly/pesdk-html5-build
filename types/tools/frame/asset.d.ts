@@ -1,6 +1,6 @@
-declare type PatchImage = string | HTMLImageElement;
-export declare type FrameRenderMode = 'repeat' | 'stretch';
-export declare type FrameLayoutMode = 'horizontal-inside' | 'vertical-inside';
+type PatchImage = string | HTMLImageElement;
+export type FrameRenderMode = 'repeat' | 'stretch';
+export type FrameLayoutMode = 'horizontal-inside' | 'vertical-inside';
 /** An image group for the 12-patch layout of a dynamic frame. */
 export interface ImageGroup {
     /**

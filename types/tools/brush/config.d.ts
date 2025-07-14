@@ -12,7 +12,7 @@ export declare enum BasicBrushControlBarTabs {
     BrushHardness = "brushHardness",
     BrushColor = "brushColor"
 }
-export declare type BrushControlBarExpandable = {
+export type BrushControlBarExpandable = {
     type: AdvancedBrushControlBarItem.Expandable;
     children: Array<Omit<AdvancedBrushControlBarItem, AdvancedBrushControlBarItem.Expandable>>;
 };

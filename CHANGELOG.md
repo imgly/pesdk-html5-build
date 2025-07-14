@@ -6,6 +6,14 @@
 
 ### Fixed
 
+## 5.20.0
+
+### Changed
+
+### Added
+
+### Fixed
+
 ## 5.19.7
 
 ### Changed
@@ -13,6 +21,8 @@
 ### Added
 
 ### Fixed
+
+-  Changed the black and white symbols to be more international.
 
 ## 5.19.6
 

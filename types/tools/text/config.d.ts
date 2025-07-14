@@ -20,7 +20,7 @@ export declare enum BasicTextControlBarTabs {
     BackgroundColor = "backgroundColor",
     LineSpacing = "lineSpacing"
 }
-export declare type TextControlBarInline = {
+export type TextControlBarInline = {
     type: AdvancedTextControlBarItem.Inline;
     children: Array<AdvancedTextControlBarItem.FontSizeInput | AdvancedTextControlBarItem.TextAligmentList>;
 };

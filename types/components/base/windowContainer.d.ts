@@ -4,4 +4,4 @@ export interface CustomWindowContainerProps {
     tool: Tool;
     children?: React.ReactNode;
 }
-export declare type CustomWindowContainer = React.FC<CustomWindowContainerProps>;
+export type CustomWindowContainer = React.FC<CustomWindowContainerProps>;

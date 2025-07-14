@@ -18,9 +18,9 @@ import { EngineConfiguration } from './engine';
 import { ExportConfiguration } from './feature/export';
 import { SnappingConfiguration } from './feature/snapping';
 import { WatermarkConfiguration } from './feature/watermark';
-export declare type ExistingTheme = 'light' | 'dark';
-export declare type ExistingLanguage = 'en' | 'de';
-export declare type LayoutType = 'basic' | 'advanced';
+export type ExistingTheme = 'light' | 'dark';
+export type ExistingLanguage = 'en' | 'de';
+export type LayoutType = 'basic' | 'advanced';
 export interface AssetResolver {
     /**
      * Configure assets item path

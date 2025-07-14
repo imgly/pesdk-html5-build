@@ -6,7 +6,7 @@ import { ImageMimeType } from '../../configuration/feature/imageMimeType';
 import { BlendMode } from '../../tools/overlay';
 import { TintMode } from '../../tools/sticker';
 import { AlignmentType } from '../../tools/text';
-export declare type SerializableColor = [number, number, number, number];
+export type SerializableColor = [number, number, number, number];
 export interface AdjustmentSerializableState {
     brightness: number;
     saturation: number;
@@ -152,4 +152,4 @@ export interface SerializableState {
     brush?: BrushSerializableState;
     customStickers?: SerializableCustomStickerAsset[];
 }
-export declare type DeserializeErrors = 'unsupportedVersion';
+export type DeserializeErrors = 'unsupportedVersion';
